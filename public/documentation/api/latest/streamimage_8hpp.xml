@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="streamimage_8hpp" kind="file" language="C++">
+    <compoundname>streamimage.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/streamimage.h</includes>
+    <includes local="yes">cmlibs/zinc/fieldimage.hpp</includes>
+    <includes local="yes">cmlibs/zinc/stream.hpp</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>cmlibs/zinc/stream.hpp</label>
+      </node>
+      <node id="3">
+        <label>cmlibs/zinc/fieldimage.hpp</label>
+      </node>
+      <node id="2">
+        <label>cmlibs/zinc/streamimage.h</label>
+      </node>
+      <node id="1">
+        <label>auto_comments_output/streamimage.hpp</label>
+        <link refid="streamimage_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" prot="public">CMLibs::Zinc::StreaminformationImage</innerclass>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_STREAMIMAGE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_STREAMIMAGE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/streamimage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/fieldimage.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/stream.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1FieldImage" kindref="compound">FieldImage</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_streaminformation_image_id<sp/>getDerivedId()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_image_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(id);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref>()<sp/>:<sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref>(cmzn_streaminformation_image_id<sp/>streaminformation_image_id)<sp/>:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(streaminformation_image_id))</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac1279e97d98c61cd26e9e52b5624242b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac1279e97d98c61cd26e9e52b5624242b" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="59"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2" kindref="member">Attribute</ref></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a835ba710220247d72ae0f3bc1bfc1b0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a835ba710220247d72ae0f3bc1bfc1b0f" kindref="member">ATTRIBUTE_RAW_WIDTH_PIXELS</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_ATTRIBUTE_RAW_WIDTH_PIXELS,</highlight></codeline>
+<codeline lineno="73" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a3b1a003653c953a0bc71d4fbc40be80b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a3b1a003653c953a0bc71d4fbc40be80b" kindref="member">ATTRIBUTE_RAW_HEIGHT_PIXELS</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_ATTRIBUTE_RAW_HEIGHT_PIXELS,</highlight></codeline>
+<codeline lineno="77" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2af79e993321bf626bb92d4aa9ba1fcf91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2af79e993321bf626bb92d4aa9ba1fcf91" kindref="member">ATTRIBUTE_BITS_PER_COMPONENT</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_ATTRIBUTE_BITS_PER_COMPONENT,</highlight></codeline>
+<codeline lineno="81" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a14c43ababee4c47626aab7cd10e42e7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a14c43ababee4c47626aab7cd10e42e7e" kindref="member">ATTRIBUTE_COMPRESSION_QUALITY</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_ATTRIBUTE_COMPRESSION_QUALITY</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bb" kindref="member">FileFormat</ref></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba1a732eb1fd389e90cde64e6d13f9dbfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba1a732eb1fd389e90cde64e6d13f9dbfb" kindref="member">FILE_FORMAT_INVALID</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_INVALID,</highlight></codeline>
+<codeline lineno="97" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba3f33700c6310db10d56599fcc6bddfc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba3f33700c6310db10d56599fcc6bddfc5" kindref="member">FILE_FORMAT_BMP</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_BMP,</highlight></codeline>
+<codeline lineno="100" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba27c619977646198e1e34d793f8bdf46b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba27c619977646198e1e34d793f8bdf46b" kindref="member">FILE_FORMAT_DICOM</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_DICOM,</highlight></codeline>
+<codeline lineno="103" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbae2805c28c945f9b2fe02a3c0d09c2017" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbae2805c28c945f9b2fe02a3c0d09c2017" kindref="member">FILE_FORMAT_JPG</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_JPG,</highlight></codeline>
+<codeline lineno="106" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbab48feaaf0808511e7876f2356834bb61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbab48feaaf0808511e7876f2356834bb61" kindref="member">FILE_FORMAT_GIF</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_GIF,</highlight></codeline>
+<codeline lineno="109" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba9a0fc724f7ef0622634d5251ce6fdc03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba9a0fc724f7ef0622634d5251ce6fdc03" kindref="member">FILE_FORMAT_PNG</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_PNG,</highlight></codeline>
+<codeline lineno="112" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba604377d7ee20e59a841c98af4e176370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba604377d7ee20e59a841c98af4e176370" kindref="member">FILE_FORMAT_SGI</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_SGI,</highlight></codeline>
+<codeline lineno="115" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba2839046bc098922a801d3f815cc33818" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba2839046bc098922a801d3f815cc33818" kindref="member">FILE_FORMAT_TIFF</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_TIFF,</highlight></codeline>
+<codeline lineno="118" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba6d7f25e701ca53880f7117276d492f82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba6d7f25e701ca53880f7117276d492f82" kindref="member">FILE_FORMAT_ANALYZE</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_ANALYZE,</highlight></codeline>
+<codeline lineno="121" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbac930742916ee422d2b6342016a6a5607" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbac930742916ee422d2b6342016a6a5607" kindref="member">FILE_FORMAT_ANALYZE_OBJECT_MAP</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_ANALYZE_OBJECT_MAP</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ec" kindref="member">PixelFormat</ref></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca1996f1e1fed4b0077aef91c6789839b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca1996f1e1fed4b0077aef91c6789839b4" kindref="member">PIXEL_FORMAT_INVALID</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_INVALID,</highlight></codeline>
+<codeline lineno="133" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ecaf5955e20ff333306dff2d1deb61e8400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ecaf5955e20ff333306dff2d1deb61e8400" kindref="member">PIXEL_FORMAT_LUMINANCE</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_LUMINANCE,</highlight></codeline>
+<codeline lineno="136" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca44614c6cf0ead44e799f5abbce587ca4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca44614c6cf0ead44e799f5abbce587ca4" kindref="member">PIXEL_FORMAT_LUMINANCE_ALPHA</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_LUMINANCE_ALPHA,</highlight></codeline>
+<codeline lineno="139" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ecabbf50cfeffd88d6ece7e75ba3671bd50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ecabbf50cfeffd88d6ece7e75ba3671bd50" kindref="member">PIXEL_FORMAT_RGB</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_RGB,</highlight></codeline>
+<codeline lineno="142" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca819bf570f72cbc8a5a115e313d4445aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca819bf570f72cbc8a5a115e313d4445aa" kindref="member">PIXEL_FORMAT_RGBA</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_RGBA,</highlight></codeline>
+<codeline lineno="145" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca48602468ae090c28b9aa3d6cc4f470ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca48602468ae090c28b9aa3d6cc4f470ed" kindref="member">PIXEL_FORMAT_ABGR</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_ABGR,</highlight></codeline>
+<codeline lineno="148" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca6f7ef86a88b0835425108820c2b1ab9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca6f7ef86a88b0835425108820c2b1ab9b" kindref="member">PIXEL_FORMAT_BGR</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_BGR</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a7191bea7a29c9b24876290a586be3d49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a7191bea7a29c9b24876290a586be3d49" kindref="member">setAttributeInteger</ref>(<ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2" kindref="member">Attribute</ref><sp/>attribute,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_image_set_attribute_integer(getDerivedId(),</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_image_attribute</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(attribute),<sp/>value);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a028d7b440191074d019c42ad031ef261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a028d7b440191074d019c42ad031ef261" kindref="member">setAttributeReal</ref>(<ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2" kindref="member">Attribute</ref><sp/>attribute,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_image_set_attribute_real(getDerivedId(),</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_image_attribute</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(attribute),<sp/>value);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1afd878253cc4119bca0b2325a9cafa774" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1afd878253cc4119bca0b2325a9cafa774" kindref="member">setFileFormat</ref>(<ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bb" kindref="member">FileFormat</ref><sp/>imageFileFormat)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_image_set_file_format(getDerivedId(),</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_image_file_format</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(imageFileFormat));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a4527b3cafe307cf471a80369d07095c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a4527b3cafe307cf471a80369d07095c2" kindref="member">setPixelFormat</ref>(<ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ec" kindref="member">PixelFormat</ref><sp/>imagePixelFormat)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_image_set_pixel_format(getDerivedId(),</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_image_pixel_format</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(imagePixelFormat));</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ac34bdeb92766895cfdeba63af238c6e7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ac34bdeb92766895cfdeba63af238c6e7" kindref="member">Streaminformation::castImage</ref>()</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref>(cmzn_streaminformation_cast_image(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="classCMLibs_1_1Zinc_1_1FieldImage_1aedaabbc793ef301578e138f764d9dfcb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1aedaabbc793ef301578e138f764d9dfcb" kindref="member">FieldImage::createStreaminformationImage</ref>()</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref>(</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_image_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_field_image_create_streaminformation_image(getDerivedId())));</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="classCMLibs_1_1Zinc_1_1FieldImage_1a3d8679279b6e9375ba95a0866b9c230e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a3d8679279b6e9375ba95a0866b9c230e" kindref="member">FieldImage::read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref>&amp;<sp/>streaminformationImage)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_image_read(getDerivedId(),<sp/>streaminformationImage.getDerivedId());</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="classCMLibs_1_1Zinc_1_1FieldImage_1a6acc6a62e788d7a65101dddcedf25aef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a6acc6a62e788d7a65101dddcedf25aef" kindref="member">FieldImage::write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref>&amp;<sp/>streaminformationImage)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="231"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_image_write(getDerivedId(),<sp/>streaminformationImage.getDerivedId());</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/streamimage.hpp"/>
+  </compounddef>
+</doxygen>

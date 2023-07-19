@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Regionnotifier" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Regionnotifier</compoundname>
+    <includes refid="region_8hpp" local="no">region.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1a563c9e89d4a753ab3c9d1afa82277d0f" prot="protected" static="no" mutable="no">
+        <type>cmzn_regionnotifier_id</type>
+        <definition>cmzn_regionnotifier_id CMLibs::Zinc::Regionnotifier::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="608" column="24" bodyfile="auto_comments_output/region.hpp" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1a4523b86e3b7de9b1b86760190e865baa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Regionnotifier::Regionnotifier</definition>
+        <argsstring>()</argsstring>
+        <name>Regionnotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="612" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="612" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1aa2d219c1038b2c999dcbbca8ed0329eb" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Regionnotifier::Regionnotifier</definition>
+        <argsstring>(cmzn_regionnotifier_id in_regionnotifier_id)</argsstring>
+        <name>Regionnotifier</name>
+        <param>
+          <type>cmzn_regionnotifier_id</type>
+          <declname>in_regionnotifier_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="616" column="10" bodyfile="auto_comments_output/region.hpp" bodystart="616" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1a35910226f9ff39fea818999e347fc196" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Regionnotifier::Regionnotifier</definition>
+        <argsstring>(const Regionnotifier &amp;regionNotifier)</argsstring>
+        <name>Regionnotifier</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Regionnotifier" kindref="compound">Regionnotifier</ref> &amp;</type>
+          <declname>regionNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="620" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="620" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1a9cc9632186d6dd60e577df87d57b5010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Regionnotifier" kindref="compound">Regionnotifier</ref> &amp;</type>
+        <definition>Regionnotifier&amp; CMLibs::Zinc::Regionnotifier::operator=</definition>
+        <argsstring>(const Regionnotifier &amp;regionNotifier)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Regionnotifier" kindref="compound">Regionnotifier</ref> &amp;</type>
+          <declname>regionNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="624" column="16" bodyfile="auto_comments_output/region.hpp" bodystart="624" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1a97eb54d5bfa6eeac8e480cc6d4fd6b18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Regionnotifier::~Regionnotifier</definition>
+        <argsstring>()</argsstring>
+        <name>~Regionnotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="635" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="635" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1a6a246dd17d02e57e94be380b9ff904e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Regionnotifier::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Regionnotifier" kindref="compound">Regionnotifier</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="648" column="6" bodyfile="auto_comments_output/region.hpp" bodystart="648" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1a2aacd7c27496079273c25749dfccf41e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_regionnotifier_id</type>
+        <definition>cmzn_regionnotifier_id CMLibs::Zinc::Regionnotifier::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Regionnotifier" kindref="compound">Regionnotifier</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Regionnotifier" kindref="compound">Regionnotifier</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="658" column="24" bodyfile="auto_comments_output/region.hpp" bodystart="658" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1aeb76fc5ebce688db033506ce2eeb32d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Regionnotifier::setCallback</definition>
+        <argsstring>(Regioncallback &amp;callback)</argsstring>
+        <name>setCallback</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Regioncallback" kindref="compound">Regioncallback</ref> &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign the callback function and user data for the region notifier. This function also starts the callback.</para>
+<para><simplesect kind="see"><para>cmzn_regionnotifier_callback_function </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function to be called when event is triggered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Void pointer to user object. User must ensure this object&apos;s lifetime exceeds the duration for which callbacks are active. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other error on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="673" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="673" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regionnotifier_1a669404e47b63f4a64384e94f9389bd8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Regionnotifier::clearCallback</definition>
+        <argsstring>()</argsstring>
+        <name>clearCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop callbacks and remove the callback function from the region notifier.</para>
+<para><simplesect kind="return"><para>Result OK on success, any other error on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="683" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="683" bodyend="686"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages user notification of changes to a region tree. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages user notification of changes to a region tree. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/region.hpp" line="606" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="605" bodyend="687"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1a669404e47b63f4a64384e94f9389bd8d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>clearCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1a2aacd7c27496079273c25749dfccf41e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1a563c9e89d4a753ab3c9d1afa82277d0f" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1a6a246dd17d02e57e94be380b9ff904e9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1a9cc9632186d6dd60e577df87d57b5010" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1a4523b86e3b7de9b1b86760190e865baa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>Regionnotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1aa2d219c1038b2c999dcbbca8ed0329eb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>Regionnotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1a35910226f9ff39fea818999e347fc196" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>Regionnotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1aeb76fc5ebce688db033506ce2eeb32d3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>setCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1a97eb54d5bfa6eeac8e480cc6d4fd6b18" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Regionnotifier</scope><name>~Regionnotifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

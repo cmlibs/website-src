@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Regioncallback" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CMLibs::Zinc::Regioncallback</compoundname>
+    <includes refid="region_8hpp" local="no">region.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCMLibs_1_1Zinc_1_1Regioncallback_1a0d1cb3ca38e96b76b9e0d2d04d2b67eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Regionnotifier</definition>
+        <argsstring></argsstring>
+        <name>Regionnotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="577" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regioncallback_1aa0bb16bb8dbca4172b2aca7ac72b4398" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Regioncallback::Regioncallback</definition>
+        <argsstring>(const Regioncallback &amp;)</argsstring>
+        <name>Regioncallback</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Regioncallback" kindref="compound">Regioncallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="579" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regioncallback_1afa58bfca75bb7593dd8a75afe5470367" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Regioncallback" kindref="compound">Regioncallback</ref> &amp;</type>
+        <definition>Regioncallback&amp; CMLibs::Zinc::Regioncallback::operator=</definition>
+        <argsstring>(const Regioncallback &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Regioncallback" kindref="compound">Regioncallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="580" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regioncallback_1a1bd8e52f8cba3756238eb17e05450ed5" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CMLibs::Zinc::Regioncallback::operator()</definition>
+        <argsstring>(const Regionevent &amp;regionevent)=0</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Regionevent" kindref="compound">Regionevent</ref> &amp;</type>
+          <declname>regionevent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="589" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regioncallback_1ab4689148952e60545234a29e1aceb28e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CMLibs::Zinc::Regioncallback::C_callback</definition>
+        <argsstring>(cmzn_regionevent_id regionevent_id, void *callbackVoid)</argsstring>
+        <name>C_callback</name>
+        <param>
+          <type>cmzn_regionevent_id</type>
+          <declname>regionevent_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callbackVoid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="582" column="13" bodyfile="auto_comments_output/region.hpp" bodystart="582" bodyend="587"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regioncallback_1a61b8ae1aa7fcfff4119c80b888c39628" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Regioncallback::Regioncallback</definition>
+        <argsstring>()</argsstring>
+        <name>Regioncallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="592" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="592" bodyend="593"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Regioncallback_1a9c4da46cc05e328f4d27008f6b64ed1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CMLibs::Zinc::Regioncallback::~Regioncallback</definition>
+        <argsstring>()</argsstring>
+        <name>~Regioncallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="596" column="9" bodyfile="auto_comments_output/region.hpp" bodystart="596" bodyend="597"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class functor for region notifier callbacks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class functor for region notifier callbacks:<itemizedlist>
+<listitem><para>Derive from this class adding any user data required.</para>
+</listitem><listitem><para>Implement virtual operator()(const Regionevent&amp;) to handle callback. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Regionnotifier_1aeb76fc5ebce688db033506ce2eeb32d3" kindref="member">Regionnotifier::setCallback()</ref> </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/region.hpp" line="576" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="575" bodyend="598"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Regioncallback_1ab4689148952e60545234a29e1aceb28e" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Regioncallback</scope><name>C_callback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regioncallback_1a1bd8e52f8cba3756238eb17e05450ed5" prot="private" virt="pure-virtual"><scope>CMLibs::Zinc::Regioncallback</scope><name>operator()</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regioncallback_1afa58bfca75bb7593dd8a75afe5470367" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Regioncallback</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regioncallback_1aa0bb16bb8dbca4172b2aca7ac72b4398" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Regioncallback</scope><name>Regioncallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regioncallback_1a61b8ae1aa7fcfff4119c80b888c39628" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Regioncallback</scope><name>Regioncallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regioncallback_1a0d1cb3ca38e96b76b9e0d2d04d2b67eb" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Regioncallback</scope><name>Regionnotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Regioncallback_1a9c4da46cc05e328f4d27008f6b64ed1e" prot="public" virt="virtual"><scope>CMLibs::Zinc::Regioncallback</scope><name>~Regioncallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

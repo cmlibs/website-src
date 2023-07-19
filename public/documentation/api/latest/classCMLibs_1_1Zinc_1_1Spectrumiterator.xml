@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Spectrumiterator" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Spectrumiterator</compoundname>
+    <includes refid="spectrum_8hpp" local="no">spectrum.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a8405ab40675843be511de8940ecd5d28" prot="private" static="no" mutable="no">
+        <type>cmzn_spectrumiterator_id</type>
+        <definition>cmzn_spectrumiterator_id CMLibs::Zinc::Spectrumiterator::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="973" column="26" bodyfile="auto_comments_output/spectrum.hpp" bodystart="973" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a4b35e08d8d446d8cd6553f78a3244555" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrumiterator::Spectrumiterator</definition>
+        <argsstring>()</argsstring>
+        <name>Spectrumiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="977" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="977" bodyend="978"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a02d467bde8e8edd8c6b39f504757e07b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrumiterator::Spectrumiterator</definition>
+        <argsstring>(cmzn_spectrumiterator_id iterator_id)</argsstring>
+        <name>Spectrumiterator</name>
+        <param>
+          <type>cmzn_spectrumiterator_id</type>
+          <declname>iterator_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="981" column="10" bodyfile="auto_comments_output/spectrum.hpp" bodystart="981" bodyend="983"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumiterator_1af4d2c24a323cb8d26c4993e059a88844" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrumiterator::Spectrumiterator</definition>
+        <argsstring>(const Spectrumiterator &amp;spectrumiterator)</argsstring>
+        <name>Spectrumiterator</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref> &amp;</type>
+          <declname>spectrumiterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="985" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="985" bodyend="987"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a8344dae5811c8f3f6f96409fcdbcaf31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref> &amp;</type>
+        <definition>Spectrumiterator&amp; CMLibs::Zinc::Spectrumiterator::operator=</definition>
+        <argsstring>(const Spectrumiterator &amp;spectrumiterator)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref> &amp;</type>
+          <declname>spectrumiterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="989" column="18" bodyfile="auto_comments_output/spectrum.hpp" bodystart="989" bodyend="998"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a4bf9414f82a9a8d854d76eefb259f2a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrumiterator::~Spectrumiterator</definition>
+        <argsstring>()</argsstring>
+        <name>~Spectrumiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1000" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1000" bodyend="1006"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a9473fe5d8258867c426c8055e5c441fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrumiterator::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1013" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1013" bodyend="1016"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a48e5339bbca9f69992f40cf25fca7dac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref></type>
+        <definition>Spectrum CMLibs::Zinc::Spectrumiterator::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the next spectrum in the container being iterated over then advances the iterator position. The caller is required to destroy the returned spectrum handle.</para>
+<para><simplesect kind="return"><para>Handle to the next spectrum, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1026" column="10" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1026" bodyend="1029"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator for looping through all the spectrums in a spectrum module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An iterator for looping through all the spectrums in a spectrum module. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/spectrum.hpp" line="970" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="969" bodyend="1030"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a8405ab40675843be511de8940ecd5d28" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumiterator</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a9473fe5d8258867c426c8055e5c441fa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumiterator</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a48e5339bbca9f69992f40cf25fca7dac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumiterator</scope><name>next</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a8344dae5811c8f3f6f96409fcdbcaf31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumiterator</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a4b35e08d8d446d8cd6553f78a3244555" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumiterator</scope><name>Spectrumiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a02d467bde8e8edd8c6b39f504757e07b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumiterator</scope><name>Spectrumiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1af4d2c24a323cb8d26c4993e059a88844" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumiterator</scope><name>Spectrumiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a4bf9414f82a9a8d854d76eefb259f2a9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumiterator</scope><name>~Spectrumiterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Lightiterator" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Lightiterator</compoundname>
+    <includes refid="light_8hpp" local="no">light.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Lightiterator_1aabdf72d85de496c80f783ea8ac722f2c" prot="private" static="no" mutable="no">
+        <type>cmzn_lightiterator_id</type>
+        <definition>cmzn_lightiterator_id CMLibs::Zinc::Lightiterator::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="418" column="23" bodyfile="auto_comments_output/light.hpp" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Lightiterator_1afe7aeb0f4201cce00e9a37a4c8c1603d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Lightiterator::Lightiterator</definition>
+        <argsstring>()</argsstring>
+        <name>Lightiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="422" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="422" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Lightiterator_1ae09b51b766d152837fb2b8bead500cea" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Lightiterator::Lightiterator</definition>
+        <argsstring>(cmzn_lightiterator_id iterator_id)</argsstring>
+        <name>Lightiterator</name>
+        <param>
+          <type>cmzn_lightiterator_id</type>
+          <declname>iterator_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="426" column="10" bodyfile="auto_comments_output/light.hpp" bodystart="426" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Lightiterator_1a4f2c05426c7b2f31b8888cfa26285c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Lightiterator::Lightiterator</definition>
+        <argsstring>(const Lightiterator &amp;lightiterator)</argsstring>
+        <name>Lightiterator</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Lightiterator" kindref="compound">Lightiterator</ref> &amp;</type>
+          <declname>lightiterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="430" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="430" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Lightiterator_1a5a165ef6fb3b0f3eedc92a89958e039b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Lightiterator" kindref="compound">Lightiterator</ref> &amp;</type>
+        <definition>Lightiterator&amp; CMLibs::Zinc::Lightiterator::operator=</definition>
+        <argsstring>(const Lightiterator &amp;lightiterator)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Lightiterator" kindref="compound">Lightiterator</ref> &amp;</type>
+          <declname>lightiterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="434" column="15" bodyfile="auto_comments_output/light.hpp" bodystart="434" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Lightiterator_1ab85fb90e76ff1c02c56204ea1f1fd6a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Lightiterator::~Lightiterator</definition>
+        <argsstring>()</argsstring>
+        <name>~Lightiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="445" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="445" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Lightiterator_1a6e63a3ad435d6bd68fa3af7f4ed78096" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Lightiterator::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Lightiterator" kindref="compound">Lightiterator</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="458" column="6" bodyfile="auto_comments_output/light.hpp" bodystart="458" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Lightiterator_1ac4330843844ebd519bcea185c1c45a43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref></type>
+        <definition>Light CMLibs::Zinc::Lightiterator::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the next light in the container being iterated over then advances the iterator position. The caller is required to destroy the returned light handle.</para>
+<para><simplesect kind="return"><para>Handle to the next light, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="471" column="7" bodyfile="auto_comments_output/light.hpp" bodystart="471" bodyend="474"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator for looping through all the lights in a light module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An iterator for looping through all the lights in a light module. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/light.hpp" line="415" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="414" bodyend="475"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Lightiterator_1aabdf72d85de496c80f783ea8ac722f2c" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Lightiterator</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Lightiterator_1a6e63a3ad435d6bd68fa3af7f4ed78096" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Lightiterator</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Lightiterator_1afe7aeb0f4201cce00e9a37a4c8c1603d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Lightiterator</scope><name>Lightiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Lightiterator_1ae09b51b766d152837fb2b8bead500cea" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Lightiterator</scope><name>Lightiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Lightiterator_1a4f2c05426c7b2f31b8888cfa26285c67" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Lightiterator</scope><name>Lightiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Lightiterator_1ac4330843844ebd519bcea185c1c45a43" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Lightiterator</scope><name>next</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Lightiterator_1a5a165ef6fb3b0f3eedc92a89958e039b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Lightiterator</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Lightiterator_1ab85fb90e76ff1c02c56204ea1f1fd6a0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Lightiterator</scope><name>~Lightiterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

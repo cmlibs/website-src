@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a36fe070deec2289dadf836a7803dab9c" kindref="member">CMLibs::Zinc::Graphics::isExterior</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a2c40ccba5eed99a9d2946f403a16f480" kindref="member">CMLibs::Zinc::Graphics::setExterior</ref>  (bool exterior)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000002"/> </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

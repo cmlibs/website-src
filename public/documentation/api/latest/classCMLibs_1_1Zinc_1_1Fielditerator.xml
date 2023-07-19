@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Fielditerator" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Fielditerator</compoundname>
+    <includes refid="field_8hpp" local="no">field.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Fielditerator_1a7893ff0a56a83e0be6f1a2c5926f51cc" prot="private" static="no" mutable="no">
+        <type>cmzn_fielditerator_id</type>
+        <definition>cmzn_fielditerator_id CMLibs::Zinc::Fielditerator::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="889" column="23" bodyfile="auto_comments_output/field.hpp" bodystart="889" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fielditerator_1a7667c00e2a6d56bbaee822f5694dd9de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fielditerator::Fielditerator</definition>
+        <argsstring>()</argsstring>
+        <name>Fielditerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="893" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="893" bodyend="894"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fielditerator_1a05e0d2ee9db6e5b3e8058699786e75ce" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fielditerator::Fielditerator</definition>
+        <argsstring>(cmzn_fielditerator_id iterator_id)</argsstring>
+        <name>Fielditerator</name>
+        <param>
+          <type>cmzn_fielditerator_id</type>
+          <declname>iterator_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="897" column="10" bodyfile="auto_comments_output/field.hpp" bodystart="897" bodyend="899"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fielditerator_1a81a735def2b5065e0988c0e7ff0391dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fielditerator::Fielditerator</definition>
+        <argsstring>(const Fielditerator &amp;fielditerator)</argsstring>
+        <name>Fielditerator</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fielditerator" kindref="compound">Fielditerator</ref> &amp;</type>
+          <declname>fielditerator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="901" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="901" bodyend="903"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fielditerator_1a427dd50b80916efae1a8e9cd6af49ed2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fielditerator" kindref="compound">Fielditerator</ref> &amp;</type>
+        <definition>Fielditerator&amp; CMLibs::Zinc::Fielditerator::operator=</definition>
+        <argsstring>(const Fielditerator &amp;fielditerator)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fielditerator" kindref="compound">Fielditerator</ref> &amp;</type>
+          <declname>fielditerator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="905" column="15" bodyfile="auto_comments_output/field.hpp" bodystart="905" bodyend="914"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fielditerator_1a817bbeb2041cbb5edcc9e1951e177ebf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fielditerator::~Fielditerator</definition>
+        <argsstring>()</argsstring>
+        <name>~Fielditerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="916" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="916" bodyend="922"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fielditerator_1a4196ab7527df84570ca818369cc24d81" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Fielditerator::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Fielditerator" kindref="compound">Fielditerator</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="929" column="6" bodyfile="auto_comments_output/field.hpp" bodystart="929" bodyend="932"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fielditerator_1a9ddccbc36f1767f47d2704555e8fe5c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Fielditerator::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the next field in the container being iterated over then advances the iterator position. The caller is required to destroy the returned field handle.</para>
+<para><simplesect kind="return"><para>Handle to the next field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="941" column="7" bodyfile="auto_comments_output/field.hpp" bodystart="941" bodyend="944"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator for looping through all the fields in a fieldmodule. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An iterator for looping through all the fields in a fieldmodule. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/field.hpp" line="886" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="885" bodyend="945"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Fielditerator_1a7667c00e2a6d56bbaee822f5694dd9de" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fielditerator</scope><name>Fielditerator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fielditerator_1a05e0d2ee9db6e5b3e8058699786e75ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fielditerator</scope><name>Fielditerator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fielditerator_1a81a735def2b5065e0988c0e7ff0391dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fielditerator</scope><name>Fielditerator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fielditerator_1a7893ff0a56a83e0be6f1a2c5926f51cc" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Fielditerator</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fielditerator_1a4196ab7527df84570ca818369cc24d81" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fielditerator</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fielditerator_1a9ddccbc36f1767f47d2704555e8fe5c0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fielditerator</scope><name>next</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fielditerator_1a427dd50b80916efae1a8e9cd6af49ed2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fielditerator</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fielditerator_1a817bbeb2041cbb5edcc9e1951e177ebf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fielditerator</scope><name>~Fielditerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

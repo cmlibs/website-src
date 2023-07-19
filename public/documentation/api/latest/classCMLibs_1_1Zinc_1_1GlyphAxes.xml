@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1GlyphAxes" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::GlyphAxes</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Glyph" prot="public" virt="non-virtual">CMLibs::Zinc::Glyph</basecompoundref>
+    <includes refid="glyph_8hpp" local="no">glyph.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1a2b3cb8485ae307b6e34d94983c7183a6" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_glyph_axes_id</type>
+        <definition>cmzn_glyph_axes_id CMLibs::Zinc::GlyphAxes::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1GlyphAxes" kindref="compound">GlyphAxes</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1GlyphAxes" kindref="compound">GlyphAxes</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="320" column="27" bodyfile="auto_comments_output/glyph.hpp" bodystart="320" bodyend="323"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1ac8f66e5c64bd64382144057a86b3e176" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::GlyphAxes::GlyphAxes</definition>
+        <argsstring>()</argsstring>
+        <name>GlyphAxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="326" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="326" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1a39b74bacd14ecfdcc62beb2faedbb8d4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::GlyphAxes::GlyphAxes</definition>
+        <argsstring>(cmzn_glyph_axes_id axes_id)</argsstring>
+        <name>GlyphAxes</name>
+        <param>
+          <type>cmzn_glyph_axes_id</type>
+          <declname>axes_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="328" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="328" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1afb995a2215dec6fc45ac0fdd1b07f7ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::GlyphAxes::getAxisWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getAxisWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the width of each axis relative to unit length.</para>
+<para><simplesect kind="return"><para>The axis width, or 0.0 if error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="337" column="8" bodyfile="auto_comments_output/glyph.hpp" bodystart="337" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1a75a05ff250e0a10c5288714d7d366b8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphAxes::setAxisWidth</definition>
+        <argsstring>(double axisWidth)</argsstring>
+        <name>setAxisWidth</name>
+        <param>
+          <type>double</type>
+          <declname>axisWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the width of each axis relative to unit length. The default axis width is 0.1 i.e. 10% of the length and suitable for glyph &apos;axis&apos; and &apos;axis_solid&apos;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axisWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new axis width. Must be non-negative. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="350" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1a49109eed5b60104de9e7fd0aa2f5b4e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::GlyphAxes::getAxisLabel</definition>
+        <argsstring>(int axisNumber) const</argsstring>
+        <name>getAxisLabel</name>
+        <param>
+          <type>int</type>
+          <declname>axisNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the label to be drawn at the end of the given axis.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axisNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The axis number from 1 to 3. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Allocated string containing label, or NULL if none or error. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="362" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="362" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1abc2d2753ee0a45aec1bd5ea1c4ef5d75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphAxes::setAxisLabel</definition>
+        <argsstring>(int axisNumber, const char *label)</argsstring>
+        <name>setAxisLabel</name>
+        <param>
+          <type>int</type>
+          <declname>axisNumber</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the label to be drawn at the end of the given axis.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axisNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The axis number from 1 to 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The label, or NULL for none. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="374" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="374" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1a82062596942447c40323ed31a2b32c99" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::GlyphAxes::getAxisMaterial</definition>
+        <argsstring>(int axisNumber) const</argsstring>
+        <name>getAxisMaterial</name>
+        <param>
+          <type>int</type>
+          <declname>axisNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the material an axis is drawn with.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axisNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The axis number from 1 to 3. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to material, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="385" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="385" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphAxes_1aa782b99d1f155e04b2fdb69bca911d8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphAxes::setAxisMaterial</definition>
+        <argsstring>(int axisNumber, const Material &amp;material)</argsstring>
+        <name>setAxisMaterial</name>
+        <param>
+          <type>int</type>
+          <declname>axisNumber</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the material an axis is drawn with. Note if the material is NULL for any axis the default material for the graphics is used for that axis.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axisNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The axis number from 1 to 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material, or NULL to use the default material from the graphics. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="399" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="399" bodyend="402"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A specialised glyph type which renders 3-D axes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A specialised glyph type which renders 3-D axes with arbitrary labels and selected glyph repeated on 3 axes. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Glyph</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Glyph"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::GlyphAxes</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GlyphAxes"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Glyph</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Glyph"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::GlyphAxes</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GlyphAxes"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/glyph.hpp" line="314" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="313" bodyend="404"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1aaeb3567e2cb84b44d421633bf58523bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>castAxes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7fdd24cbb6d1c0c4654b13dfac05c614" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>castColourBar</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a5dc4797fa42892adcd2291b652adc050" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a1d82ba5226cb0d4f6196be8a86142e53" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05af0c1aefeb5345d96437a9ec3a30124d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05acaee405615b8b38a54587d2003d68066" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a65f74fd9c1b3b9972ac96e68fad81aef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a14dee864bf9f8420da94e5936b63f2d2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05aeb99222b0db3f65b3c91502b79ca768d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ae9791e2f84cadbc9a7f66fa755ced951" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1a49109eed5b60104de9e7fd0aa2f5b4e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>getAxisLabel</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1a82062596942447c40323ed31a2b32c99" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>getAxisMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1afb995a2215dec6fc45ac0fdd1b07f7ba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>getAxisWidth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1a2b3cb8485ae307b6e34d94983c7183a6" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1aac12ce8c46c1311d71d1af227afc601c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a9725fef051e367778fda0fe2e4d524ac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1afb9c2ad2fab062bc2abaa86fa43882b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7470708d25f56a2742e1356ab0894013" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a04b6f6447a8d3eae24b53cf20f647b07" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1ac8f66e5c64bd64382144057a86b3e176" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>GlyphAxes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1a39b74bacd14ecfdcc62beb2faedbb8d4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>GlyphAxes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1abb9c22a55ef7e8eb1c22e393c9611e00" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a8d7d90a152c6a000db79ec8bb0e15f29" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ab90792ede2edb6a76cd7835d34ce0b05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7a8c03b8543646988c63cb24327829b2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617aed363b24a85f869a9a81aeb54b8d6dc6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>REPEAT_MODE_AXES_2D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617aa3e77cb4ae0c83b57ff5b675648837ba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>REPEAT_MODE_AXES_3D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a5be3313acba32fd4b1445e814475b2aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>REPEAT_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a33503bf6ade49674d9a47045615b8c14" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>REPEAT_MODE_MIRROR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a2439a933f97269c34afdd8f96e1d4dbc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>REPEAT_MODE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>RepeatMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a4e09aa1c47dab2fd73b9b076bf10ade5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>RepeatModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a795f1da63b48e6ed4383059181b911da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>RepeatModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1abc2d2753ee0a45aec1bd5ea1c4ef5d75" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>setAxisLabel</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1aa782b99d1f155e04b2fdb69bca911d8c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>setAxisMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphAxes_1a75a05ff250e0a10c5288714d7d366b8a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>setAxisWidth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ae967204b1e812325df94d41a3df19a48" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a5c6d224f232d8ea988e96a9f719dbf16" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae9c6624be9bf5b5a91dcb779802e8a9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_ARROW</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a7c7d4dadb38511358143fe79f0306cba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_ARROW_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae4c282c02e06decad76a3abe858b268d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ab3da9577513d15d0af9f5ba852397334" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXES_123</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05aaca1a496a0209838f1542e43b970900c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXES_COLOUR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae15626c3183b17e82ee143848db3c484" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXES_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a5e59d53df505b73c45b81fd455740ce8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXES_SOLID_123</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a905e41d013a8cbaab5602167e7bee6fe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXES_SOLID_COLOUR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae79f914f0b3ed5b2d118157f61e4feed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXES_SOLID_XYZ</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6e2cc5268b6987200ea660ea662a5d93" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXES_XYZ</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a48f730d2b43a3a7c3100d8de4a1fd059" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXIS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a1b93f2e7d83c0e360f7cdc3d6581a06b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_AXIS_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a10cac6872a2d7d6aa2399500f1f20f62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_CONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05adf3a1bd4f8deee3958b9f74ea7d35770" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_CONE_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a3c0916a5c2fc69e663c0c1c17f3c3e0c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_CROSS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6fc955672deef244d2cf0010fe7a9e50" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_CUBE_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a8da2d3454746c2ac3110e094741c45bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_CUBE_WIREFRAME</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a3e93b8a0d0c1dddcdc2d1ab5efb874ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_CYLINDER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a362bbfcbddd20c98d63b3e7202097609" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_CYLINDER_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6ebcdcc294ff94eeaa5911489f9f62dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_DIAMOND</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae1eb246b75394d8dbb4bc4d079b9e030" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a889fcf77c29effe00d80dee9a209dfa7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_LINE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a7fc2923238c6796d23ba667837c01154" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05aa7d6410666cdb5f71aa2e1f101ba5119" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_POINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a33772b92ca4572229d018ba677274bd5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_SHEET</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a470587ff83766f383c16967c1aaeb019" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>SHAPE_TYPE_SPHERE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>ShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1acf6a4cf58a9f429b1b5f39b6c97e1978" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>ShapeTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a70f5e635e0c45ab2ce1641cea9d58e7f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>ShapeTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a1cf61d0581619db0df80589907da4f45" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphAxes</scope><name>~Glyph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

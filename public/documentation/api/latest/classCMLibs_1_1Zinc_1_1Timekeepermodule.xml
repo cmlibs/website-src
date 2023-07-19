@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Timekeepermodule" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Timekeepermodule</compoundname>
+    <includes refid="timekeeper_8hpp" local="no">timekeeper.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a306c93f9e4182402c252f127abfd44a8" prot="protected" static="no" mutable="no">
+        <type>cmzn_timekeepermodule_id</type>
+        <definition>cmzn_timekeepermodule_id CMLibs::Zinc::Timekeepermodule::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="225" column="26" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a1ef993c4e889b5bfc3b44a44c92a5c64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timekeepermodule::Timekeepermodule</definition>
+        <argsstring>()</argsstring>
+        <name>Timekeepermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="229" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="229" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a16e8fade57816ccd893a42e4deebd739" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timekeepermodule::Timekeepermodule</definition>
+        <argsstring>(cmzn_timekeepermodule_id in_timekeepermodule_id)</argsstring>
+        <name>Timekeepermodule</name>
+        <param>
+          <type>cmzn_timekeepermodule_id</type>
+          <declname>in_timekeepermodule_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="233" column="10" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a430da62e2ff8a7beaca6ea630e372b66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timekeepermodule::Timekeepermodule</definition>
+        <argsstring>(const Timekeepermodule &amp;timekeeperModule)</argsstring>
+        <name>Timekeepermodule</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref> &amp;</type>
+          <declname>timekeeperModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="237" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a561c708c7ce9caea979e1bda2d712997" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref> &amp;</type>
+        <definition>Timekeepermodule&amp; CMLibs::Zinc::Timekeepermodule::operator=</definition>
+        <argsstring>(const Timekeepermodule &amp;timekeeperModule)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref> &amp;</type>
+          <declname>timekeeperModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="241" column="18" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="241" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a371d75e87191d7853d3bc45b7ca3f0b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timekeepermodule::~Timekeepermodule</definition>
+        <argsstring>()</argsstring>
+        <name>~Timekeepermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="251" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="251" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1aa6a7b1372d8de408fbb59412d8554b66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Timekeepermodule::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="262" column="6" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="262" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a69db7ab0c98a0bea10f45fee21458c78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_timekeepermodule_id</type>
+        <definition>cmzn_timekeepermodule_id CMLibs::Zinc::Timekeepermodule::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="272" column="26" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a78e03f0dcbf9eaf6bd1b04a5ea12b07f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Timekeeper" kindref="compound">Timekeeper</ref></type>
+        <definition>Timekeeper CMLibs::Zinc::Timekeepermodule::getDefaultTimekeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultTimekeeper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default timekeeper.</para>
+<para><simplesect kind="return"><para>Handle to default timekeeper, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="282" column="12" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a450e555c3b15a8ea743f0d2c80026fa1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Timekeepermodule::readDescription</definition>
+        <argsstring>(const char *description)</argsstring>
+        <name>readDescription</name>
+        <param>
+          <type>const char *</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the json description to the timekeeper module. This will change the timekeeper in the timekeeper module.</para>
+<para>@description The string containing json description <simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise ERROR status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="294" column="6" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a4dcd807496a52e2e7f99cf95f78c99dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Timekeepermodule::writeDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>writeDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the json file describing the timekeepers in the timekeeper module, which can be used to store the current timekeeper settings.</para>
+<para><simplesect kind="return"><para>c string containing the json description of timekeeper module, otherwise 0; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="306" column="7" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Module for finding and managing timekeepers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Module for finding and managing timekeepers. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/timekeeper.hpp" line="223" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="222" bodyend="311"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a78e03f0dcbf9eaf6bd1b04a5ea12b07f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>getDefaultTimekeeper</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a69db7ab0c98a0bea10f45fee21458c78" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a306c93f9e4182402c252f127abfd44a8" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1aa6a7b1372d8de408fbb59412d8554b66" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a561c708c7ce9caea979e1bda2d712997" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a450e555c3b15a8ea743f0d2c80026fa1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>readDescription</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a1ef993c4e889b5bfc3b44a44c92a5c64" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>Timekeepermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a16e8fade57816ccd893a42e4deebd739" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>Timekeepermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a430da62e2ff8a7beaca6ea630e372b66" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>Timekeepermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a4dcd807496a52e2e7f99cf95f78c99dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>writeDescription</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeepermodule_1a371d75e87191d7853d3bc45b7ca3f0b5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeepermodule</scope><name>~Timekeepermodule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

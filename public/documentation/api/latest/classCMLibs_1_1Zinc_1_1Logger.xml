@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Logger" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Logger</compoundname>
+    <includes refid="logger_8hpp" local="no">logger.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ChangeFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82fa76ca67f345e68e4a2b857fa0ecf984a0" prot="public">
+          <name>CHANGE_FLAG_NONE</name>
+          <initializer>= CMZN_LOGGER_CHANGE_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>logger(s) not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82fafbe88b92899f0bdd7f96e4ac12f98f73" prot="public">
+          <name>CHANGE_FLAG_NEW_MESSAGE</name>
+          <initializer>= CMZN_LOGGER_CHANGE_FLAG_NEW_MESSAGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>logger(s) not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82fabed15bceff2f26aa0331ed31ff87d8a1" prot="public">
+          <name>CHANGE_FLAG_FINAL</name>
+          <initializer>= CMZN_LOGGER_CHANGE_FLAG_FINAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>final notification: owning logger has been destroyed </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="67" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9ab" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MessageType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9aba1ea7a4c013fca63d24cbbafab6765a16" prot="public">
+          <name>MESSAGE_TYPE_INVALID</name>
+          <initializer>= CMZN_LOGGER_MESSAGE_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified message type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9aba9bcf5ee7273e3b014dee8e4a2bb6c54e" prot="public">
+          <name>MESSAGE_TYPE_ERROR</name>
+          <initializer>= CMZN_LOGGER_MESSAGE_TYPE_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Message for critical errors </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9aba9cf04ad2fa7f20ed13c5b028213b01a4" prot="public">
+          <name>MESSAGE_TYPE_WARNING</name>
+          <initializer>= CMZN_LOGGER_MESSAGE_TYPE_WARNING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Message for warnings </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9aba39bb06d5d15eceb722df35fa35ce92d9" prot="public">
+          <name>MESSAGE_TYPE_INFORMATION</name>
+          <initializer>= CMZN_LOGGER_MESSAGE_TYPE_INFORMATION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Message for non-critical informations. <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of available logger message types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="80" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="79" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Logger_1a36811372b2c0ba706170d74dc6eb94e7" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Logger::ChangeFlags</definition>
+        <argsstring></argsstring>
+        <name>ChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82f" kindref="member">ChangeFlag</ref> <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Loggerevent_1ab8e0e5e883c34547568990d26f02bc87" kindref="member">Loggerevent::getChangeFlags</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="95" column="13" bodyfile="auto_comments_output/logger.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Logger_1afe2ba2f4366fa323a81cba01bd968d50" prot="protected" static="no" mutable="no">
+        <type>cmzn_logger_id</type>
+        <definition>cmzn_logger_id CMLibs::Zinc::Logger::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="31" column="16" bodyfile="auto_comments_output/logger.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a4b989befdfea82a50cece6d12dc6d89e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Logger::Logger</definition>
+        <argsstring>()</argsstring>
+        <name>Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="35" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="35" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a9edc13fbc916b231627cc432854e378a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Logger::Logger</definition>
+        <argsstring>(cmzn_logger_id in_logger_id)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>cmzn_logger_id</type>
+          <declname>in_logger_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="39" column="10" bodyfile="auto_comments_output/logger.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a76c90d86690d58e87d73ca3825949107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Logger::Logger</definition>
+        <argsstring>(const Logger &amp;logger)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref> &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="43" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a6c78e711fb74d169d131b4970d3e49ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref> &amp;</type>
+        <definition>Logger&amp; CMLibs::Zinc::Logger::operator=</definition>
+        <argsstring>(const Logger &amp;logger)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref> &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="47" column="8" bodyfile="auto_comments_output/logger.hpp" bodystart="47" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1aa7d0730c9e1ee6f0425132cb035a85eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Logger::~Logger</definition>
+        <argsstring>()</argsstring>
+        <name>~Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="58" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a2e7ca4ec7ec53726bdce688fb9b88621" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Logger::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="102" column="6" bodyfile="auto_comments_output/logger.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a6d924358c57c50f80d071d6dee89d890" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_logger_id</type>
+        <definition>cmzn_logger_id CMLibs::Zinc::Logger::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="112" column="16" bodyfile="auto_comments_output/logger.hpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a426c27378ed33414ca39dc8b39a0a0fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Logger::getNumberOfMessages</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfMessages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of messages currently in the logger.</para>
+<para><simplesect kind="return"><para>number of message, or 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="122" column="5" bodyfile="auto_comments_output/logger.hpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1af31d3df13f3afc4d8b9624c956ab911e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9ab" kindref="member">MessageType</ref></type>
+        <definition>MessageType CMLibs::Zinc::Logger::getMessageTypeAtIndex</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getMessageTypeAtIndex</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return type of the message at index, oldest message index being 1 and newest message index being number_of_messages;</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9ab" kindref="member">Logger::MessageType</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the message to enquire. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>type of message at index, otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="136" column="13" bodyfile="auto_comments_output/logger.hpp" bodystart="136" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1ae8b0d02f7a294536bc34e3efeaf08c45" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Logger::getMessageTextAtIndex</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getMessageTextAtIndex</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return text of the message at index, oldest message index being 1 and newest message index being number_of_messages;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the message to enquire. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>text of message at index, otherwise 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="149" column="6" bodyfile="auto_comments_output/logger.hpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a8f9b37d1bfe1f0c31dfb26775b838c93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Logger::setMaximumNumberOfMessages</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setMaximumNumberOfMessages</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the maximum number of messages stored in the logger. The default number is 500.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of messages to set to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="161" column="5" bodyfile="auto_comments_output/logger.hpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1ab3b4a80b740a44458d395758a1add6e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Logger::removeAllMessages</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMessages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all messages in logger. This will clear all messages.</para>
+<para><simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="171" column="5" bodyfile="auto_comments_output/logger.hpp" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Logger_1a21883b7bc66d2893e07dfb6ad7baaccc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Loggernotifier" kindref="compound">Loggernotifier</ref></type>
+        <definition>Loggernotifier CMLibs::Zinc::Logger::createLoggernotifier</definition>
+        <argsstring>()</argsstring>
+        <name>createLoggernotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a notifier for getting callbacks for changes to the messages in the logger.</para>
+<para><simplesect kind="return"><para>Handle to new logger notifier, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="182" column="23" bodyfile="auto_comments_output/logger.hpp" bodystart="424" bodyend="427"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> object controlling attributes of rendering text. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> object incorporating typeface, size and other attributes for rendering text in graphics. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/logger.hpp" line="29" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="28" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82fabed15bceff2f26aa0331ed31ff87d8a1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82fafbe88b92899f0bdd7f96e4ac12f98f73" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>CHANGE_FLAG_NEW_MESSAGE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82fa76ca67f345e68e4a2b857fa0ecf984a0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a59e7198109fdb28c32e1d0f904f3d82f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a36811372b2c0ba706170d74dc6eb94e7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a21883b7bc66d2893e07dfb6ad7baaccc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>createLoggernotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a6d924358c57c50f80d071d6dee89d890" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1ae8b0d02f7a294536bc34e3efeaf08c45" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>getMessageTextAtIndex</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1af31d3df13f3afc4d8b9624c956ab911e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>getMessageTypeAtIndex</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a426c27378ed33414ca39dc8b39a0a0fa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>getNumberOfMessages</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1afe2ba2f4366fa323a81cba01bd968d50" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a2e7ca4ec7ec53726bdce688fb9b88621" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a4b989befdfea82a50cece6d12dc6d89e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>Logger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a9edc13fbc916b231627cc432854e378a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>Logger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a76c90d86690d58e87d73ca3825949107" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>Logger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9aba9bcf5ee7273e3b014dee8e4a2bb6c54e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>MESSAGE_TYPE_ERROR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9aba39bb06d5d15eceb722df35fa35ce92d9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>MESSAGE_TYPE_INFORMATION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9aba1ea7a4c013fca63d24cbbafab6765a16" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>MESSAGE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9aba9cf04ad2fa7f20ed13c5b028213b01a4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>MESSAGE_TYPE_WARNING</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1af43adf1fcc5bc807c9889706e533f9ab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>MessageType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a6c78e711fb74d169d131b4970d3e49ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1ab3b4a80b740a44458d395758a1add6e4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>removeAllMessages</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1a8f9b37d1bfe1f0c31dfb26775b838c93" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>setMaximumNumberOfMessages</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Logger_1aa7d0730c9e1ee6f0425132cb035a85eb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Logger</scope><name>~Logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,612 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Font" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Font</compoundname>
+    <includes refid="font_8hpp" local="no">font.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RenderType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462af6c1ba2b06703434b4bd5eb2cacf8af9" prot="public">
+          <name>RENDER_TYPE_INVALID</name>
+          <initializer>= CMZN_FONT_RENDER_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified render type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462a5c291c51ae67439323678fc95d51d292" prot="public">
+          <name>RENDER_TYPE_BITMAP</name>
+          <initializer>= CMZN_FONT_RENDER_TYPE_BITMAP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> will be rendered using OpenGL bitmap, this is the default render type for font </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462a3729874c114e98f887ee69e167caff59" prot="public">
+          <name>RENDER_TYPE_PIXMAP</name>
+          <initializer>= CMZN_FONT_RENDER_TYPE_PIXMAP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> will be rendered using OpenGL pixmap </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462a8449c1f56cb6593cff19b6976eebd2a0" prot="public">
+          <name>RENDER_TYPE_POLYGON</name>
+          <initializer>= CMZN_FONT_RENDER_TYPE_POLYGON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> will be rendered as 2-D Polygons </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462aedfba7c55ab2fadf030f3f2f079e516d" prot="public">
+          <name>RENDER_TYPE_OUTLINE</name>
+          <initializer>= CMZN_FONT_RENDER_TYPE_OUTLINE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> will be rendered as Polygon but only the outline will be drawn </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462a44e2d05306347983cf7cc0cef0457ee5" prot="public">
+          <name>RENDER_TYPE_EXTRUDE</name>
+          <initializer>= CMZN_FONT_RENDER_TYPE_EXTRUDE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> will be rendered as Polygon with thickness </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How a font is rendered in graphics. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="60" column="1" bodyfile="auto_comments_output/font.hpp" bodystart="59" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Font_1ac7665c63909cc67bb0f41e7756255957" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TypefaceType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Font_1ac7665c63909cc67bb0f41e7756255957af7d9bab46a855c0877f1b9e6b924dda8" prot="public">
+          <name>TYPEFACE_TYPE_INVALID</name>
+          <initializer>= CMZN_FONT_TYPEFACE_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified typeface </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Font_1ac7665c63909cc67bb0f41e7756255957a9ac474d0374340f3b3cbaaff79254783" prot="public">
+          <name>TYPEFACE_TYPE_OPENSANS</name>
+          <initializer>= CMZN_FONT_TYPEFACE_TYPE_OPENSANS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> to be rendered with OpenSans typeface </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of available font typefaces. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="81" column="1" bodyfile="auto_comments_output/font.hpp" bodystart="80" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Font_1a23366a69160cf2a659b4ed0e36088b1c" prot="protected" static="no" mutable="no">
+        <type>cmzn_font_id</type>
+        <definition>cmzn_font_id CMLibs::Zinc::Font::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="29" column="14" bodyfile="auto_comments_output/font.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a475bf4e3a785711df55f62a5330e0365" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Font::Font</definition>
+        <argsstring>()</argsstring>
+        <name>Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="33" column="1" bodyfile="auto_comments_output/font.hpp" bodystart="33" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1aa7bc2aa6cd7535ff1164cf1c54b3a93c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Font::Font</definition>
+        <argsstring>(cmzn_font_id font_id)</argsstring>
+        <name>Font</name>
+        <param>
+          <type>cmzn_font_id</type>
+          <declname>font_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="37" column="10" bodyfile="auto_comments_output/font.hpp" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a0d42e9eaa188ec0f0407dec996994529" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Font::Font</definition>
+        <argsstring>(const Font &amp;font)</argsstring>
+        <name>Font</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> &amp;</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="40" column="1" bodyfile="auto_comments_output/font.hpp" bodystart="40" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1aa9d6202e8ce05e6dc9fa468f680704da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> &amp;</type>
+        <definition>Font&amp; CMLibs::Zinc::Font::operator=</definition>
+        <argsstring>(const Font &amp;font)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> &amp;</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="43" column="6" bodyfile="auto_comments_output/font.hpp" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1af9a13efce789c142eb3dfb38ddec83bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Font::~Font</definition>
+        <argsstring>()</argsstring>
+        <name>~Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="51" column="1" bodyfile="auto_comments_output/font.hpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1ab0ec10429541eb4ca3151b4b7a17e099" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Font::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="93" column="6" bodyfile="auto_comments_output/font.hpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1af841c02e124db84bc6a020dd04a238c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_font_id</type>
+        <definition>cmzn_font_id CMLibs::Zinc::Font::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="103" column="14" bodyfile="auto_comments_output/font.hpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a18f0c8170a9ee077c2668d05c3c412bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Font::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an allocated string containing font name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spectrum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handle to the zinc graphics font. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>allocated string containing font name, otherwise NULL. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="115" column="6" bodyfile="auto_comments_output/font.hpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1aa741a929bdd76fe14819df7161355abc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Font::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/change name for &lt;font&gt;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name to be set to the font </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set/change name for font, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="127" column="5" bodyfile="auto_comments_output/font.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1af44678addd1956bd9ce0bceb0ba9c3a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Font::isBold</definition>
+        <argsstring>() const</argsstring>
+        <name>isBold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query whether the font is bold.</para>
+<para><simplesect kind="return"><para>Boolean true if font is bold, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="137" column="6" bodyfile="auto_comments_output/font.hpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a79b0484d834075b2a0e15caec72375b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Font::setBold</definition>
+        <argsstring>(bool bold)</argsstring>
+        <name>setBold</name>
+        <param>
+          <type>bool</type>
+          <declname>bold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether the font is bold.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New state of bold flag, true = bold, false = normal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>On success <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref>, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="148" column="5" bodyfile="auto_comments_output/font.hpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1af9f185d678a99ab33820c51bd74ac8a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Font::getDepth</definition>
+        <argsstring>() const</argsstring>
+        <name>getDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the depth for extrude font type.</para>
+<para><simplesect kind="return"><para>depth of the font. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="158" column="8" bodyfile="auto_comments_output/font.hpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1af620133831c720969e5d58f0805f8dd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Font::setDepth</definition>
+        <argsstring>(double depth)</argsstring>
+        <name>setDepth</name>
+        <param>
+          <type>double</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the depth for extrude font type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>depth of the font to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set depth for font, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="170" column="5" bodyfile="auto_comments_output/font.hpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1af9feaad5edb5dbe2fad57a5c6a159b9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Font::isItalic</definition>
+        <argsstring>() const</argsstring>
+        <name>isItalic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query whether the font is italic.</para>
+<para><simplesect kind="return"><para>Boolean true if font is italic, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="180" column="6" bodyfile="auto_comments_output/font.hpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a04629c22989edd63c1528f5e58c03d52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Font::setItalic</definition>
+        <argsstring>(bool italic)</argsstring>
+        <name>setItalic</name>
+        <param>
+          <type>bool</type>
+          <declname>italic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether the font is italic.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>italic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New state of italic flag, true = italic, false = normal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>On success <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref>, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="191" column="5" bodyfile="auto_comments_output/font.hpp" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1accb1628b4da0a628e387751df0a2ef60" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Font::getPointSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the point size for the font.</para>
+<para><simplesect kind="return"><para>Point size of the font. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="201" column="5" bodyfile="auto_comments_output/font.hpp" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a61c027b58a34bac407b718e0ea27a2bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Font::setPointSize</definition>
+        <argsstring>(int size)</argsstring>
+        <name>setPointSize</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the point size for font type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point size of the font to be set, &gt; 0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="212" column="5" bodyfile="auto_comments_output/font.hpp" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a346646af9d4edeb1a57f3db1e51fd0b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462" kindref="member">RenderType</ref></type>
+        <definition>RenderType CMLibs::Zinc::Font::getRenderType</definition>
+        <argsstring>() const</argsstring>
+        <name>getRenderType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the render type of the given font.</para>
+<para><simplesect kind="return"><para>The render type of font, or CMZN_FONT_RENDER_TYPE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="222" column="12" bodyfile="auto_comments_output/font.hpp" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a0e4aac839e02957608c95cbdcbf6fa41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Font::setRenderType</definition>
+        <argsstring>(RenderType renderType)</argsstring>
+        <name>setRenderType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462" kindref="member">RenderType</ref></type>
+          <declname>renderType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the rendering type of the given font.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>renderType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the render type to use for font. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set the font type, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="234" column="5" bodyfile="auto_comments_output/font.hpp" bodystart="234" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1abd2e595cb6c540e118b640331000a44d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Font_1ac7665c63909cc67bb0f41e7756255957" kindref="member">TypefaceType</ref></type>
+        <definition>TypefaceType CMLibs::Zinc::Font::getTypefaceType</definition>
+        <argsstring>() const</argsstring>
+        <name>getTypefaceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the True Type typeface type of the font.</para>
+<para><simplesect kind="return"><para>The enumerated typeface type, or CMZN_FONT_TYPEFACE_TYPE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="245" column="14" bodyfile="auto_comments_output/font.hpp" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Font_1a63636950b66842a629501bf373dbb7d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Font::setTypefaceType</definition>
+        <argsstring>(TypefaceType typefaceType)</argsstring>
+        <name>setTypefaceType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Font_1ac7665c63909cc67bb0f41e7756255957" kindref="member">TypefaceType</ref></type>
+          <declname>typefaceType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the True Type typeface type of the font.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typefaceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enumerator of the TrueType typeface to use for font. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set the true type for font, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="257" column="5" bodyfile="auto_comments_output/font.hpp" bodystart="257" bodyend="260"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> object controlling attributes of rendering text. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> object incorporating typeface, size and other attributes for rendering text in graphics. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/font.hpp" line="27" column="1" bodyfile="auto_comments_output/font.hpp" bodystart="26" bodyend="261"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a475bf4e3a785711df55f62a5330e0365" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>Font</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1aa7bc2aa6cd7535ff1164cf1c54b3a93c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>Font</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a0d42e9eaa188ec0f0407dec996994529" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>Font</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1af9f185d678a99ab33820c51bd74ac8a4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>getDepth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1af841c02e124db84bc6a020dd04a238c8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a18f0c8170a9ee077c2668d05c3c412bc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1accb1628b4da0a628e387751df0a2ef60" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>getPointSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a346646af9d4edeb1a57f3db1e51fd0b3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>getRenderType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1abd2e595cb6c540e118b640331000a44d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>getTypefaceType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a23366a69160cf2a659b4ed0e36088b1c" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1af44678addd1956bd9ce0bceb0ba9c3a0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>isBold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1af9feaad5edb5dbe2fad57a5c6a159b9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>isItalic</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1ab0ec10429541eb4ca3151b4b7a17e099" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1aa9d6202e8ce05e6dc9fa468f680704da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462a5c291c51ae67439323678fc95d51d292" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>RENDER_TYPE_BITMAP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462a44e2d05306347983cf7cc0cef0457ee5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>RENDER_TYPE_EXTRUDE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462af6c1ba2b06703434b4bd5eb2cacf8af9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>RENDER_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462aedfba7c55ab2fadf030f3f2f079e516d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>RENDER_TYPE_OUTLINE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462a3729874c114e98f887ee69e167caff59" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>RENDER_TYPE_PIXMAP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462a8449c1f56cb6593cff19b6976eebd2a0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>RENDER_TYPE_POLYGON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a074a7f111ddcb16c92d7f6ff981a9462" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>RenderType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a79b0484d834075b2a0e15caec72375b1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>setBold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1af620133831c720969e5d58f0805f8dd6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>setDepth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a04629c22989edd63c1528f5e58c03d52" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>setItalic</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1aa741a929bdd76fe14819df7161355abc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a61c027b58a34bac407b718e0ea27a2bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>setPointSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a0e4aac839e02957608c95cbdcbf6fa41" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>setRenderType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1a63636950b66842a629501bf373dbb7d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>setTypefaceType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1ac7665c63909cc67bb0f41e7756255957af7d9bab46a855c0877f1b9e6b924dda8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>TYPEFACE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1ac7665c63909cc67bb0f41e7756255957a9ac474d0374340f3b3cbaaff79254783" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>TYPEFACE_TYPE_OPENSANS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1ac7665c63909cc67bb0f41e7756255957" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>TypefaceType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Font_1af9a13efce789c142eb3dfb38ddec83bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Font</scope><name>~Font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

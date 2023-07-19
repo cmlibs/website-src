@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1GraphicsLines" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::GraphicsLines</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Graphics" prot="public" virt="non-virtual">CMLibs::Zinc::Graphics</basecompoundref>
+    <includes refid="graphics_8hpp" local="no">graphics.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCMLibs_1_1Zinc_1_1GraphicsLines_1a032858ae1fe02d2d1170981c2af2d67c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Scene</definition>
+        <argsstring></argsstring>
+        <name>Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="945" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="945" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GraphicsLines_1a3e736778ce1aeae81b73fd480ae8119c" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::GraphicsLines::GraphicsLines</definition>
+        <argsstring>(cmzn_graphics_id graphics_id)</argsstring>
+        <name>GraphicsLines</name>
+        <param>
+          <type>cmzn_graphics_id</type>
+          <declname>graphics_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="947" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="947" bodyend="947"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GraphicsLines_1a8676522fbb12c067a170cde4bdea2718" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::GraphicsLines::GraphicsLines</definition>
+        <argsstring>()</argsstring>
+        <name>GraphicsLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="950" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="950" bodyend="950"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GraphicsLines_1a09f4421c70c4544b5d7419346ef33b05" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::GraphicsLines::GraphicsLines</definition>
+        <argsstring>(cmzn_graphics_lines_id lines_id)</argsstring>
+        <name>GraphicsLines</name>
+        <param>
+          <type>cmzn_graphics_lines_id</type>
+          <declname>lines_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="952" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="952" bodyend="954"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Lines visualise 1-D elements in the model. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Lines visualise 1-D elements in the model, including lines/faces of higher-dimensional elements (if read in or defined via the field module). These can be displayed as lines or extruded circles, as specified by the graphics line attributes. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes" kindref="compound">Graphicslineattributes</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Graphics</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Graphics"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::GraphicsLines</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GraphicsLines"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Graphics</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Graphics"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::GraphicsLines</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GraphicsLines"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/graphics.hpp" line="944" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="943" bodyend="955"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4abef4bda3b2facf15321994d1a7124fe7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BOUNDARY_MODE_ALL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a729f9559d62f87c3cf956bbdae23f3ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BOUNDARY_MODE_BOUNDARY</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a1d75c9e080106666b57551331aebac2a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BOUNDARY_MODE_INTERIOR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a8ea8288de9eddb27e5744a8dfa8b6880" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BOUNDARY_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a192d422686308e124dbf413a67664e98" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BOUNDARY_MODE_SUBGROUP_BOUNDARY</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a8873545be270294390b3e77f0419e289" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BOUNDARY_MODE_SUBGROUP_INTERIOR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BoundaryMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a90b390ec339f348c9fd7ca17a85ac506" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BoundaryModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ae1a1b67320f9836caf86f047f4364ab4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>BoundaryModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a0d2f67fb57be1cab5a5f117211bcbf13" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>castContours</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a97e06c36f008a38bb2fccaf01e24dad6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>castLines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a7780a73088f4fadf33e69e4f9e5037ed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>castPoints</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab21b551f953cc4b6c11ceddada185ef8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>castStreamlines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa7438dfb4672466aa97cd61ac8721656" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>castSurfaces</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a566b61f64d972f99317fa3b8c0372186" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getBoundaryMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a336c885b0f75725776c53d1cc8e42f3a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getCoordinateField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa948efb735e761d527b957714acdaf06" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getDataField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aec2f9dca53632d8d6748c559694af404" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getElementFaceType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5f7ab37d0dcce91c95b5d0c476c46e52" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getFieldDomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab6d978c9565715506c8312086bb4d522" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getGraphicslineattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1af7338d267b44ab86fd9df008e63ab777" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getGraphicspointattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a58f7baa9c58018975c0eb9225428f5c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getGraphicssamplingattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a042eb0d22022371d387685370c851bb6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1af0cf1e6ae813c2a75accdc343d065c32" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a2dbb61769b06aacb389fddc179bbec11" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a3a597e5445b4463e3ea42db829d3ea46" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getRenderLineWidth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a2e012fc5a4bd6ba3a821c2e20a560232" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getRenderPointSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a54236585a8e74b55d4fe80acae35670a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getRenderPolygonMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa383d54d2b0e42502d07d28b965a9f16" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1acc7a0997b3136a195d6e6cb7c4a1c873" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getScenecoordinatesystem</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a54931a487be326e5c9ca43af98875e56" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getSelectedMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aceec302d7ff95a439e1dc530e694b408" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getSelectMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a8fd931206476d5fc5711e5ea33889496" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getSpectrum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa0ac26a228fb5cd0d6df2c88747f2f59" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getSubgroupField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a0c7131710b50dcd3b54aa5eeef377a70" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getTessellation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a4f99459f39f369149e5598fa77086837" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getTessellationField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a4c75a90e73176f355147864a0357f9f8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getTextureCoordinateField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a66e575d0a08aa990833c5485ea73c6aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a1ac2580f7c4c28948110936c5f0a8d32" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>getVisibilityFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aecdcb1bb1bac593dd5bb0bf51b578457" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>Graphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1abc0a51e305ecce21dff2a6b9e97178ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>Graphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a33f52b786197db7e17aa58b32885f2cf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>Graphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GraphicsLines_1a3e736778ce1aeae81b73fd480ae8119c" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>GraphicsLines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GraphicsLines_1a8676522fbb12c067a170cde4bdea2718" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>GraphicsLines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GraphicsLines_1a09f4421c70c4544b5d7419346ef33b05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>GraphicsLines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a97cf1712429a68b15a24d52f068e9c0a" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a36fe070deec2289dadf836a7803dab9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>isExterior</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aff667085baba3e6b4a8a7b1594cddf62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aba2e86221b99b883514394e826eb0fee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fae1bbd1e275d08ba2a6f3a3ca3e3dec3d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>RENDER_POLYGON_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fa2074283247b48e7603db9ed243961552" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>RENDER_POLYGON_MODE_SHADED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fa3a641cc035baf091faf91fede1601e6a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>RENDER_POLYGON_MODE_WIREFRAME</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>RenderPolygonMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a2767d70398c5c97c400c27b3f9da548c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>RenderPolygonModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ac84d7b99bb2536e190887011cd528b93" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>RenderPolygonModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GraphicsLines_1a032858ae1fe02d2d1170981c2af2d67c" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>Scene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a8cf08a3b2e96ea9d8a2e95b8492f6ce6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>SELECT_MODE_DRAW_SELECTED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a30b626eae6cdb209a0dad5a64cec0125" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>SELECT_MODE_DRAW_UNSELECTED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a4cbfdcac0d9b8b12f9167121005fe171" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>SELECT_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a29c62c1a00a8244b0ab7ded7ef9406ee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>SELECT_MODE_OFF</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a950081bf62fa62a4c87d72eb2ff46442" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>SELECT_MODE_ON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>SelectMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5d2739e91b08a8cd5eb5bb944dae9c8a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>SelectModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a48681f08318d5d806e62d5b645f713be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>SelectModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a18f7720ee37c8ac58cf673cf87b925e1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setBoundaryMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a8727716495e46cda752514fba111a10f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setCoordinateField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a7d7b117dd6c0d42e8a62d6b725d75a56" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setDataField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a36b7a9c5d51e81341c38dd26926dd046" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setElementFaceType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a2c40ccba5eed99a9d2946f403a16f480" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setExterior</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a60136842d4d80c13748cfde1221ce999" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setFieldDomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1af2f115d7056287026e0214c8170b91d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a251bd37d1aac81f3a4c2a33b5ae5f6dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a0f1aeac578a90b35d9f7066fbf136a06" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setRenderLineWidth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a91a90faa131d371e19e72a9886636b03" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setRenderPointSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a52059e7bf3720391b1bf0ce880dd89e6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setRenderPolygonMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5cba63d298610fc2c92d73364790a550" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setScenecoordinatesystem</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a273f2f93dff3134a9701b43d76a52d4d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setSelectedMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a6a2abc2eb72c17c6c3c4aac0fe2893cd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setSelectMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ac4131fe7d819e99379d9d8ab96f05ecc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setSpectrum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ac5172b0d8d7c9e0492120fbe5ad6d3dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setSubgroupField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a4e543c4c9613187e08919da0807dd43d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setTessellation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a41c0eb3a9dfc6ad263efc19950f6ec43" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setTessellationField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a4e8bc7ce2d4cce5643d8d1a08346cd92" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setTextureCoordinateField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ade33525f14355ad2078f1ca5c62e7ff0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>setVisibilityFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>Type</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea779d4ca24b8ce1a34b2f356a52a2293d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>TYPE_CONTOURS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea1d96adba787ccd83d662e41a2a12c5cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea6394814c38bb6ebda2cdbe1bea4d5ad7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>TYPE_LINES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173eae28f794a38736eedc24b52c17cc196a3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>TYPE_POINTS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea4e8ad66d9155660bc4f8e186dd691ca7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>TYPE_STREAMLINES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ead66c6b522a2c716091d0df1df43d1d85" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>TYPE_SURFACES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa9828bbc52db224795a5ec73078c03a1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>TypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a82acc02ad10e3f8c8910b7ab9da4c610" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>TypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aae578918fa912a0c2033762cb4a1acec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GraphicsLines</scope><name>~Graphics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

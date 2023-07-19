@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Scenefiltermodule</compoundname>
+    <includes refid="scenefilter_8hpp" local="no">scenefilter.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1ae37699c372f00e0ef3c95c490869fe12" prot="protected" static="no" mutable="no">
+        <type>cmzn_scenefiltermodule_id</type>
+        <definition>cmzn_scenefiltermodule_id CMLibs::Zinc::Scenefiltermodule::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="316" column="27" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a11b8b5dbff877492fb5116c7d1f3cd78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scenefiltermodule::Scenefiltermodule</definition>
+        <argsstring>()</argsstring>
+        <name>Scenefiltermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="320" column="1" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="320" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a0bda62eb7064dfb0d39a27743ec63ee3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scenefiltermodule::Scenefiltermodule</definition>
+        <argsstring>(cmzn_scenefiltermodule_id in_filtermodule_id)</argsstring>
+        <name>Scenefiltermodule</name>
+        <param>
+          <type>cmzn_scenefiltermodule_id</type>
+          <declname>in_filtermodule_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="324" column="10" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="324" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1ab38c64aabf642037d8b7b3fca8007d4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scenefiltermodule::Scenefiltermodule</definition>
+        <argsstring>(const Scenefiltermodule &amp;scenefiltermodule)</argsstring>
+        <name>Scenefiltermodule</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref> &amp;</type>
+          <declname>scenefiltermodule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="328" column="1" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="328" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a1764a3bc59a48733a8d5540d845c7107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref> &amp;</type>
+        <definition>Scenefiltermodule&amp; CMLibs::Zinc::Scenefiltermodule::operator=</definition>
+        <argsstring>(const Scenefiltermodule &amp;scenefiltermodule)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref> &amp;</type>
+          <declname>scenefiltermodule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="332" column="19" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="332" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a7d374b229c82d7afe4298aaeb1801847" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scenefiltermodule::~Scenefiltermodule</definition>
+        <argsstring>()</argsstring>
+        <name>~Scenefiltermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="344" column="1" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="344" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a219380c19bcd429ac0c23e0d726e69c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Scenefiltermodule::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="357" column="6" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="357" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a4be020c126fcf8be84bd2907eb63e154" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_scenefiltermodule_id</type>
+        <definition>cmzn_scenefiltermodule_id CMLibs::Zinc::Scenefiltermodule::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="367" column="27" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="367" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a3f1bdf998cc0175d18fd2977e2f8e42c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Scenefiltermodule::createScenefilterVisibilityFlags</definition>
+        <argsstring>()</argsstring>
+        <name>createScenefilterVisibilityFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates and returns a scene filter which matches any graphics with visibility flag set AND its owning region and all ancestor region scenes&apos; visibility flags set i.e. scene visibility flags work hierarchically.</para>
+<para><simplesect kind="return"><para>Handle to new scene filter, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="379" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="379" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1abad20433f304f602fcc0ee323c2425c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Scenefiltermodule::createScenefilterFieldDomainType</definition>
+        <argsstring>(Field::DomainType domainType)</argsstring>
+        <name>createScenefilterFieldDomainType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" kindref="member">Field::DomainType</ref></type>
+          <declname>domainType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates and returns a scene filter which matches any graphics with given field domain type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>domainType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field domain type graphics attribute to be matched by this filter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new scene filter, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="391" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="391" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a16bdc10a4c219bd27018a8dc27aef563" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Scenefiltermodule::createScenefilterGraphicsName</definition>
+        <argsstring>(const char *matchName)</argsstring>
+        <name>createScenefilterGraphicsName</name>
+        <param>
+          <type>const char *</type>
+          <declname>matchName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a scene filter which matches any graphics with the supplied name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matchName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of a graphics must be matched by this filter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new scene filter, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="403" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="403" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a6b93916a0251fb42b4644975a205a696" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Scenefiltermodule::createScenefilterGraphicsType</definition>
+        <argsstring>(Graphics::Type graphicsType)</argsstring>
+        <name>createScenefilterGraphicsType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" kindref="member">Graphics::Type</ref></type>
+          <declname>graphicsType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a scene filter which matches any graphics with matching type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphicsType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of a graphics must be matched by this filter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new scene filter, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="414" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="414" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1ad68594dc0d00a425c83f2722b1f012cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Scenefiltermodule::createScenefilterRegion</definition>
+        <argsstring>(const Region &amp;matchRegion)</argsstring>
+        <name>createScenefilterRegion</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>matchRegion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a scene filter which matches any graphics in region or any of its sub-regions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matchRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The region to be matched by this filter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new scene filter, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="427" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="427" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a4b41a89721db2267729ab9ee772f649e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator" kindref="compound">ScenefilterOperator</ref></type>
+        <definition>ScenefilterOperator CMLibs::Zinc::Scenefiltermodule::createScenefilterOperatorAnd</definition>
+        <argsstring>()</argsstring>
+        <name>createScenefilterOperatorAnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates and returns a scene filter which returns the logical AND of a collective of operand filters, i.e. true if all operand filters are true.</para>
+<para><simplesect kind="return"><para>Handle to new scene filter, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="439" column="21" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="439" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a1ed257d77acad6bdcf9ecbb51092e567" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator" kindref="compound">ScenefilterOperator</ref></type>
+        <definition>ScenefilterOperator CMLibs::Zinc::Scenefiltermodule::createScenefilterOperatorOr</definition>
+        <argsstring>()</argsstring>
+        <name>createScenefilterOperatorOr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates and returns a scene filter which returns the logical OR of a collective of operand filters, i.e. true if any operand filter is true.</para>
+<para><simplesect kind="return"><para>Handle to new scene filter, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="451" column="21" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="451" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a79411dc0cd558279c433f4d79fc615e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Scenefiltermodule::findScenefilterByName</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>findScenefilterByName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the scene filter with the specified name, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the scene filter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to scene filter, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="463" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="463" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a345e412310d117d00cfc9047596e54ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenefiltermodule::beginChange</definition>
+        <argsstring>()</argsstring>
+        <name>beginChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Begin caching or increment cache level for this scene filter module. Call this function before making multiple changes to minimise number of change messages sent to clients. Must remember to end_change after completing changes. Can be nested. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a273f918c5ea4dc3c0ebc57313e5416c2" kindref="member">Scenefiltermodule::endChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="477" column="5" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="477" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a273f918c5ea4dc3c0ebc57313e5416c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenefiltermodule::endChange</definition>
+        <argsstring>()</argsstring>
+        <name>endChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrement cache level or end caching of changes for the scene filter module. Call scene filter module begin change method before making multiple changes and call this afterwards. When change level is restored to zero, cached change messages are sent out to clients. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a345e412310d117d00cfc9047596e54ea" kindref="member">Scenefiltermodule::beginChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="491" column="5" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="491" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1ac74ed83858716738d0a8f9d22bc9b5b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Scenefiltermodule::getDefaultScenefilter</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultScenefilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default scene filter, if any.</para>
+<para><simplesect kind="return"><para>Handle to default scene filter, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="501" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="501" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a624d8d9af9c0c9dc917d68aff3010b4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenefiltermodule::setDefaultScenefilter</definition>
+        <argsstring>(const Scenefilter &amp;filter)</argsstring>
+        <name>setDefaultScenefilter</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default scene filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene filter to set as default. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="512" column="5" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="512" bodyend="515"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Module managing all scene filters. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Module managing all scene filters. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/scenefilter.hpp" line="314" column="1" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="313" bodyend="516"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a345e412310d117d00cfc9047596e54ea" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>beginChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1abad20433f304f602fcc0ee323c2425c5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>createScenefilterFieldDomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a16bdc10a4c219bd27018a8dc27aef563" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>createScenefilterGraphicsName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a6b93916a0251fb42b4644975a205a696" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>createScenefilterGraphicsType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a4b41a89721db2267729ab9ee772f649e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>createScenefilterOperatorAnd</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a1ed257d77acad6bdcf9ecbb51092e567" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>createScenefilterOperatorOr</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1ad68594dc0d00a425c83f2722b1f012cd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>createScenefilterRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a3f1bdf998cc0175d18fd2977e2f8e42c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>createScenefilterVisibilityFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a273f918c5ea4dc3c0ebc57313e5416c2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>endChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a79411dc0cd558279c433f4d79fc615e1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>findScenefilterByName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1ac74ed83858716738d0a8f9d22bc9b5b6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>getDefaultScenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a4be020c126fcf8be84bd2907eb63e154" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1ae37699c372f00e0ef3c95c490869fe12" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a219380c19bcd429ac0c23e0d726e69c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a1764a3bc59a48733a8d5540d845c7107" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a11b8b5dbff877492fb5116c7d1f3cd78" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>Scenefiltermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a0bda62eb7064dfb0d39a27743ec63ee3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>Scenefiltermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1ab38c64aabf642037d8b7b3fca8007d4b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>Scenefiltermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a624d8d9af9c0c9dc917d68aff3010b4d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>setDefaultScenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a7d374b229c82d7afe4298aaeb1801847" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenefiltermodule</scope><name>~Scenefiltermodule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

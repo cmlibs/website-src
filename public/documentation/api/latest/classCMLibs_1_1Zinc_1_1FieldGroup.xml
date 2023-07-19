@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1FieldGroup" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::FieldGroup</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Field" prot="public" virt="non-virtual">CMLibs::Zinc::Field</basecompoundref>
+    <includes refid="fieldgroup_8hpp" local="no">fieldgroup.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SubelementHandlingMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca71b30ead5cb95ba9a6e37640f558d5ce" prot="public">
+          <name>SUBELEMENT_HANDLING_MODE_INVALID</name>
+          <initializer>= CMZN_FIELD_GROUP_SUBELEMENT_HANDLING_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca8eb2f1d0c0a0fb18dbeea25505f4cf1f" prot="public">
+          <name>SUBELEMENT_HANDLING_MODE_NONE</name>
+          <initializer>= CMZN_FIELD_GROUP_SUBELEMENT_HANDLING_MODE_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not add/remove faces, lines or nodes with parent elements. This is the default mode for new groups. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca47fef7dad3b73266ae83f5c01647a428" prot="public">
+          <name>SUBELEMENT_HANDLING_MODE_FULL</name>
+          <initializer>= CMZN_FIELD_GROUP_SUBELEMENT_HANDLING_MODE_FULL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ensure group contains all faces, lines and nodes for any higher dimension element added to the group; on removal of an element remove any of its faces, lines and nodes not part of any neighbour element. More expensive to maintain. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration controlling how subelements (faces, lines, nodes) are handled when parent elements are added or removed from subobject groups. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="63" column="1" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="62" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a6b4aa0f28af95fa083ac47aca87ec85e" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_field_group_id</type>
+        <definition>cmzn_field_group_id CMLibs::Zinc::FieldGroup::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="43" column="28" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a2d5724b6c6600735724816fffbfd6a23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::FieldGroup::FieldGroup</definition>
+        <argsstring>()</argsstring>
+        <name>FieldGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="50" column="1" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="50" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1aa93147e173e75e24c054c24f62c4dbda" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::FieldGroup::FieldGroup</definition>
+        <argsstring>(cmzn_field_group_id field_group_id)</argsstring>
+        <name>FieldGroup</name>
+        <param>
+          <type>cmzn_field_group_id</type>
+          <declname>field_group_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="54" column="10" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a9e574705ca446df7fd7b29098b6d8be3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::FieldGroup::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query if this group and all its subregion and sub-object groups are empty.</para>
+<para><simplesect kind="return"><para>Boolean true if group and its subgroups are empty, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="81" column="6" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1aa3c322e506137566ec915bf40110ff7c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::FieldGroup::isEmptyLocal</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmptyLocal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query if this group contains no objects from the local region.</para>
+<para><simplesect kind="return"><para>Boolean true if group is empty locally, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="91" column="6" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a7c17a92c64583196a2d4abfc1d0bbed0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldGroup::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all objects from this group, clear all its subgroups, and remove &amp; destroy them if possible.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if group and its child groups cleared successfully, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="103" column="5" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a8dc4a999dc6ca02ae26cf4e8fa112ba6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldGroup::clearLocal</definition>
+        <argsstring>()</argsstring>
+        <name>clearLocal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all local objects from group, but leave subregion subgroups intact.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if group is successfully cleared locally, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="114" column="5" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1af87a7a4a24da53a52a06bab9421185e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldGroup::removeEmptySubgroups</definition>
+        <argsstring>()</argsstring>
+        <name>removeEmptySubgroups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove and destroy all empty subregion and subobject groups of this group. Empty subgroups in use by other clients may remain after call.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="125" column="5" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a9074a76f98388a90941f22a6c8c81081" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldGroup::addLocalRegion</definition>
+        <argsstring>()</argsstring>
+        <name>addLocalRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the local/owning region of this group field to the group, i.e. all local objects/domains. This function is not hierarchical: subregions are not added. Note that subobject groups such as node and element groups attached to this group field are left intact by this function.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="138" column="5" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a4da9a8c135451b51f97dee2c7c6f4fc3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::FieldGroup::containsLocalRegion</definition>
+        <argsstring>() const</argsstring>
+        <name>containsLocalRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query if group contains its local/owning region, i.e. all local objects/ domains. This function is not hierarchical: subregions are not checked.</para>
+<para><simplesect kind="return"><para>Boolean true if all of local region is in group, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="150" column="6" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a8a5618b7d34e60826496a55960e15468" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldGroup::removeLocalRegion</definition>
+        <argsstring>()</argsstring>
+        <name>removeLocalRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove the local/owning region of this group field from the group, i.e. all local objects/domains. This function is not hierarchical: subregions are not removed. Note that subobject groups such as node and element groups attached to this group field are left intact by this function.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="163" column="5" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a466d33ca24cacb3c2862219e3aff31b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldGroup::addRegion</definition>
+        <argsstring>(const Region &amp;region)</argsstring>
+        <name>addRegion</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the specified region to the group i.e. all its objects/domains. The specified region must be in the tree of this group&apos;s local/owning region and not already in the group. This function is not hierarchical: subregions are not added.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to region to be added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully add region into group, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="178" column="5" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a3e93455260200ce0eca222cb2e70314f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldGroup::removeRegion</definition>
+        <argsstring>(const Region &amp;region)</argsstring>
+        <name>removeRegion</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove specified region from group if currently in it. The specified region must be in the tree of this group&apos;s local/owning region. This function is not hierarchical: subregions are not removed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to region to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if region successfully removed from group, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="193" column="5" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1aeeeb0ce178ce360ddcfef1bd92d99542" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::FieldGroup::containsRegion</definition>
+        <argsstring>(const Region &amp;region) const</argsstring>
+        <name>containsRegion</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query if specified region is in the group i.e. all its objects/domains. The specified region must be in the tree of this group&apos;s local/owning region. This function is not hierarchical: subregions are not checked.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to region to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean true if group contains region, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="206" column="6" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a39e68ee78e4b7a0a91c571e5383b9e7d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" kindref="member">SubelementHandlingMode</ref></type>
+        <definition>SubelementHandlingMode CMLibs::Zinc::FieldGroup::getSubelementHandlingMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getSubelementHandlingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get mode controlling how subelements (faces, lines, nodes) are handled when parent elements are added or removed from subobject groups.</para>
+<para><simplesect kind="return"><para>The subelement handling mode, or SUBELEMENT_HANDLING_MODE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="218" column="24" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="218" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a5ce903272a72f8ea81aff7e5224795ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldGroup::setSubelementHandlingMode</definition>
+        <argsstring>(SubelementHandlingMode mode)</argsstring>
+        <name>setSubelementHandlingMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" kindref="member">SubelementHandlingMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set mode controlling how subelements (faces, lines, nodes) are handled when parent elements are added or removed from subobject groups. Note this mode only affects what happens for subsequently added or removed elements - it does not change the contents of the group.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new subelement handling mode. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="233" column="5" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="233" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a120d7f46807ca5e14daccc1d7fa232bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref></type>
+        <definition>FieldGroup CMLibs::Zinc::FieldGroup::createSubregionFieldGroup</definition>
+        <argsstring>(const Region &amp;region)</argsstring>
+        <name>createSubregionFieldGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a group field for the specified subregion, include it in the specified group and return a handle to the newly created sub-group field. The subregion must be in the tree of this group&apos;s local/owning region and not already in the group.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to region to create a subgroup for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new, empty subregion group field, or invalid handle on failure, including if subregion field group already exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="249" column="12" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="249" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1acb48795f1f4fbca741ebcfb79670521c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref></type>
+        <definition>FieldGroup CMLibs::Zinc::FieldGroup::getSubregionFieldGroup</definition>
+        <argsstring>(const Region &amp;region) const</argsstring>
+        <name>getSubregionFieldGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the group field for subregion in the specified group if it exists. The subregion must be in the tree of this group&apos;s local/owning region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to region to get the subgroup for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to subregion group field, or invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="263" column="12" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="263" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1aff69fd97d0da4a21180d59a4401edfdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref></type>
+        <definition>FieldGroup CMLibs::Zinc::FieldGroup::getOrCreateSubregionFieldGroup</definition>
+        <argsstring>(const Region &amp;region)</argsstring>
+        <name>getOrCreateSubregionFieldGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get or create a group field for the specified subregion, include it in the specified group and return a handle to the newly created sub-group field. The subregion must be in the tree of this group&apos;s local/owning region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to region to create a subgroup for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to subregion group field, or invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="277" column="12" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="277" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1af37dbcb2e5361db47ce67863e6767d65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref></type>
+        <definition>NodesetGroup CMLibs::Zinc::FieldGroup::createNodesetGroup</definition>
+        <argsstring>(const Nodeset &amp;nodeset)</argsstring>
+        <name>createNodesetGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a nodeset group in this group which holds nodes compatible with the supplied nodeset, if not already existing. Can create nodeset group for a subregion, along with any subregion groups for it and intermediate regions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodeset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A nodeset from the region or any subregion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new, empty nodeset group, or invalid handle on failure, including if nodeset group already exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="292" column="14" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="292" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1ae9dd5e7a80296a03cfdbf82cce56e154" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref></type>
+        <definition>NodesetGroup CMLibs::Zinc::FieldGroup::getNodesetGroup</definition>
+        <argsstring>(const Nodeset &amp;nodeset) const</argsstring>
+        <name>getNodesetGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nodeset group in this group which holds nodes compatible with the supplied nodeset, if it exists. Can get nodeset group from a subregion.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodeset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A nodeset from the region or any subregion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to existing nodeset group field, or invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="306" column="14" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="306" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a83c0cf3498f935f274dd0cf93f7058c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref></type>
+        <definition>NodesetGroup CMLibs::Zinc::FieldGroup::getOrCreateNodesetGroup</definition>
+        <argsstring>(const Nodeset &amp;nodeset) const</argsstring>
+        <name>getOrCreateNodesetGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get or create a nodeset group in this group which holds nodes compatible with the supplied nodeset. Can get or create nodeset group for a subregion, and create any subregion groups for it and intermediate regions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodeset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A nodeset from the region or any subregion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to nodeset group, or invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="320" column="14" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="320" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1aaf15b5c4e583da8d8be0a5c0930f8080" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref></type>
+        <definition>MeshGroup CMLibs::Zinc::FieldGroup::createMeshGroup</definition>
+        <argsstring>(const Mesh &amp;mesh)</argsstring>
+        <name>createMeshGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a mesh group in this group which holds elements compatible with the supplied mesh, if not already existing. Can create mesh group for a subregion, along with any subregion groups for it and intermediate regions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A mesh from the region or any subregion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new, empty mesh group, or invalid handle on failure, including if mesh group already exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="335" column="11" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="335" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a092b4f2c5039e64049c16414d1d922e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref></type>
+        <definition>MeshGroup CMLibs::Zinc::FieldGroup::getMeshGroup</definition>
+        <argsstring>(const Mesh &amp;mesh) const</argsstring>
+        <name>getMeshGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the mesh group in this group which holds nodes compatible with the supplied mesh, if it exists. Can get mesh group from a subregion.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A mesh from the region or any subregion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to existing mesh group field, or invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="349" column="11" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="349" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1af4cfee756f88e7cdc8b5158b2811e3ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref></type>
+        <definition>MeshGroup CMLibs::Zinc::FieldGroup::getOrCreateMeshGroup</definition>
+        <argsstring>(const Mesh &amp;mesh) const</argsstring>
+        <name>getOrCreateMeshGroup</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get or create a mesh group in this group which holds nodes compatible with the supplied mesh. Can get or create mesh group for a subregion, and create any subregion groups for it and intermediate regions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A mesh from the region or any subregion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to mesh group, or invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="363" column="11" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="363" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldGroup_1a01bf0b7ddeba6864e040b99c0a1326da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref></type>
+        <definition>FieldGroup CMLibs::Zinc::FieldGroup::getFirstNonEmptySubregionFieldGroup</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstNonEmptySubregionFieldGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the first non-empty subregion group in the group tree including itself.</para>
+<para><simplesect kind="return"><para>Handle to first non-empty subregion group field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldgroup.hpp" line="374" column="12" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="374" bodyend="378"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A generic group field used for grouping local subobjects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A generic group field type able to record which local subobjects are in the group (recorded by attached node group and element group fields), or whether the entire local region is in the group. This field returns true/1 at domain locations in the group, false/0 otherwise. The group field also maintains links to child groups in child regions, for building subsets of entire region trees. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CMLibs::Zinc::FieldGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Field</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Field"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CMLibs::Zinc::FieldGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Field</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Field"/>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/fieldgroup.hpp" line="37" column="1" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="36" bodyend="380"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a9074a76f98388a90941f22a6c8c81081" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>addLocalRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a466d33ca24cacb3c2862219e3aff31b7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>addRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aa196d5ee3131a96af4c66a292d2ee5fe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>assignMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad98c53fa38482f27be33d5915d2eb57d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>assignReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a723e4fce933ebb2a18c289e2f1ca2f8b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>assignString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a73d20220ed104d06c763eea3977cbb62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castApply</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1abbd74200465c3274876297993e81b3a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castArgumentReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aeba8a5c6388cc9e0d950e60715b5c711" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castComponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aca5b8313b90cef26e85d0e4043bd29c5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castConstant</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0add61e23aeb1abed39e81236a2110e0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castDerivative</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a04d7230adbc926c059fc613dfce61283" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castEdgeDiscontinuity</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0529e22a4ee68a8e5541e742f9e64d92" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castEigenvalues</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a48faaa0911008beaaa020f3eaf4d3726" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castFindMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a67ee725859c2fbba1aa3ab803229d351" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castFiniteElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1acfae911d921aaf25afe82dfcad06906e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1afc4f36839a033e8ba83bed8f66e9c16c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ae36bd1ce83e5974fa66fe7935861e0a8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castImagefilterBinaryThreshold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a65a59af29239ce48d12c06b890b47cfc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castImagefilterDiscreteGaussian</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac551dc48f1ddc1308ae1f46c666c1864" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castImagefilterHistogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a755ad56d303a00d42fcba374ad190a51" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castImagefilterThreshold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac670986456850f6398b0d349dd0f029a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castIsOnFace</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a00beae33247d80969cb3aacef0479451" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castMatrixMultiply</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a4dd9c86900e0afb20c366b83c272c963" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castMeshIntegral</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af56db79bc7bbd1eee40760656de0e5e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castNodesetOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a2327126e9b535d977fa793606df2afb0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castNodeValue</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a48282ab04dbe43c62822cb5064cee39e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castStoredMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8e247a82cd18f1156f7f485e641010f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castStoredString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0223c8679453afc7f580ea3ccb2728f3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castStringConstant</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a761842dc0f507c939c6f8837eb909000" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>castTranspose</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa9b8f437e3ad5c1d13f8ce371d343cb44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa74552c6dc888514f2173f0ab80630010" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfadbc5f7957ab256631bd0d0cd36a894e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa3f2e4f462790358cb1bdc5a4196519d6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfad384cc26b171814bc564158887ee316c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfaa288a9ef6b86626e6c08cbada560e15d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa78bd50b35859cc9ca3bdfca6c5140642" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_PARTIAL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2c9f34eed1bee5772e9fdf2eec99552a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2edd39db683f0d10ee0c9e333708c60b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CHANGE_FLAG_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8403aa300e3620a468043658194301e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a7c17a92c64583196a2d4abfc1d0bbed0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>clear</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a8dc4a999dc6ca02ae26cf4e8fa112ba6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>clearLocal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a4da9a8c135451b51f97dee2c7c6f4fc3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>containsLocalRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aeeeb0ce178ce360ddcfef1bd92d99542" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>containsRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbafed2887b776d03271450f81bdd2aee5d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>COORDINATE_SYSTEM_TYPE_CYLINDRICAL_POLAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba5ed6536930afae2eb2fff17130cb504e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>COORDINATE_SYSTEM_TYPE_FIBRE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba31dc4f73378e531912b282f9592fe282" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>COORDINATE_SYSTEM_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbac055de51dd4fee70caeb4984b15f17d1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>COORDINATE_SYSTEM_TYPE_NOT_APPLICABLE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaba4bfa06d31e6385786ea6290297c538" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>COORDINATE_SYSTEM_TYPE_OBLATE_SPHEROIDAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbada14af040524471f0dd8d8d3812314fa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>COORDINATE_SYSTEM_TYPE_PROLATE_SPHEROIDAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaf9f4070081c534c6a7a74f3a13004ddc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>COORDINATE_SYSTEM_TYPE_RECTANGULAR_CARTESIAN</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba9068dc9208c86ec418b7497f9806c7a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>COORDINATE_SYSTEM_TYPE_SPHERICAL_POLAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a32f5a77b3b9beb347a06c40029997fee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CoordinateSystemTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a3b39741c524c53c6f1b8e355460b4959" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>CoordinateSystemTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a42bf82160dc2d3a7d783f4631c642bb2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>createFieldassignment</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aaf15b5c4e583da8d8be0a5c0930f8080" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>createMeshGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af37dbcb2e5361db47ce67863e6767d65" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>createNodesetGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a120d7f46807ca5e14daccc1d7fa232bc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>createSubregionFieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a19db38f9c5f86347f52ade324e421f90" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>dependsOnField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a32fcfd65c0786e345bb61a2c719d321e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DOMAIN_TYPE_DATAPOINTS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a50ecf08328c7328e7ad0262882dedf45" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DOMAIN_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a396f307d0c895e5a6629ec5450228a19" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DOMAIN_TYPE_MESH1D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6ab52c6d5cf0d338307fe9a13b5bc8ebcc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DOMAIN_TYPE_MESH2D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a721cef8f0081ead37a9ba7291206a4f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DOMAIN_TYPE_MESH3D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a0c04d3daeacbb17e97fc449db1985caa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DOMAIN_TYPE_MESH_HIGHEST_DIMENSION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6aa3754a1c1c8a52288c3cf7eda00c9025" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DOMAIN_TYPE_NODES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a4628366c2ce93c71090f79bb01ac5738" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DOMAIN_TYPE_POINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a277740c041ae2f38dcb468fbfe8d6ea0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DomainTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a72ee0af0a3a7d50008f89cd20238274d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DomainTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac6ad96b3d0685fc46455bba8158fa1fd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>DomainTypes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad7bce01404cf1a9428c675501d360921" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>evaluateDerivative</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a35cda5a7c9f42e93ff448d716db807bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>evaluateFieldrange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a9b46525ae6c3c4900e8c85bc555e907e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>evaluateMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a21764bc8fcb2a1f07ba79eb31c6bb755" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>evaluateReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a710c3ed9e1e43fea537726ff7ada8dbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>evaluateString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1adf617257a39c7c4939427fc1400967ab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6fc4e264e0a627111e336c5b8f7a7ab2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af0801aaa6a94f3fb1cc45c2193a4824d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a2d5724b6c6600735724816fffbfd6a23" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>FieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aa93147e173e75e24c054c24f62c4dbda" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>FieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad5e2221e40b86a62506c691be271690d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getClassName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6bd4db297171cc5175e56cd7279aae31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getComponentName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0637975f5114dd3e49c6ed4ae9772c28" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getCoordinateSystemFocus</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af379a711cca3c549eba305544891989c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getCoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a6b4aa0f28af95fa083ac47aca87ec85e" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a4e8a6d92a0433140f9a3b11eed36a30a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a509212e6067e9c2999ced60d8beffc25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getFieldparameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a01bf0b7ddeba6864e040b99c0a1326da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getFirstNonEmptySubregionFieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a092b4f2c5039e64049c16414d1d922e8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getMeshGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a852882613f6d8be1a09eedecf1aa9ad6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ae9dd5e7a80296a03cfdbf82cce56e154" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getNodesetGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a166451e16c4694e523a4143a64cef313" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getNumberOfComponents</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a23e574454b96f13dc8cc2a57ffac7efb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getNumberOfSourceFields</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af4cfee756f88e7cdc8b5158b2811e3ae" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getOrCreateMeshGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a83c0cf3498f935f274dd0cf93f7058c8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getOrCreateNodesetGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aff69fd97d0da4a21180d59a4401edfdc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getOrCreateSubregionFieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a47b654b92689d4954583272f84073b61" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getSourceField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a39e68ee78e4b7a0a91c571e5383b9e7d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getSubelementHandlingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1acb48795f1f4fbca741ebcfb79670521c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getSubregionFieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1afcfdab410d31e025a80591488b0d3633" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>getValueType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a86be6bdc8d2c8ef8813367dbd39909be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>hasClassName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a5f5901992c2b67e71a41aa63bfa42a43" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad9183e1ee3be7fa6a5be7b4c9d1d3402" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>isDefinedAtLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a9e574705ca446df7fd7b29098b6d8be3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>isEmpty</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aa3c322e506137566ec915bf40110ff7c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>isEmptyLocal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac7c2fcde9036c8f3dbd1757181d47842" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aad16cd4f1acb66f04996beba1c8b21ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>isTypeCoordinate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a18ebc3f97e6c352a91776a8a752d1171" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6165379988c2924acd10207e6b6d286f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af87a7a4a24da53a52a06bab9421185e8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>removeEmptySubgroups</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a8a5618b7d34e60826496a55960e15468" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>removeLocalRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a3e93455260200ce0eca222cb2e70314f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>removeRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad813ef6fcabedb5ddf1a1ff5b897eb9a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>setComponentName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac09d1d65b3af6aeeff3a6b855351ee0a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>setCoordinateSystemFocus</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8d01b1bff6eaa0d8860c0ac6a393f614" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>setCoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a836e0c28e4558d1d14eb72e6d6c96f31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab6aa2520f106406e1205f799d992e29e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a5ce903272a72f8ea81aff7e5224795ec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>setSubelementHandlingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1c1fc2dac208c9bf55a3032ea1fe9066" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>setTypeCoordinate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a3cc6edbc68ea5c5492b28f1b285fc432" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>smooth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca47fef7dad3b73266ae83f5c01647a428" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>SUBELEMENT_HANDLING_MODE_FULL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca71b30ead5cb95ba9a6e37640f558d5ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>SUBELEMENT_HANDLING_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca8eb2f1d0c0a0fb18dbeea25505f4cf1f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>SUBELEMENT_HANDLING_MODE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>SubelementHandlingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335acccc613810b339fffd93728911c3305b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>VALUE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335aabc83b79f0c046191ec49eaa7b3f957b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>VALUE_TYPE_MESH_LOCATION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335ac09365d4871dbdb1510bdf16ca5c9967" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>VALUE_TYPE_REAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335a015108650de6601ef747cbb04e55130e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>VALUE_TYPE_STRING</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>ValueType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aa82d5073ce41f28a3aa35dfe07c904dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldGroup</scope><name>~Field</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

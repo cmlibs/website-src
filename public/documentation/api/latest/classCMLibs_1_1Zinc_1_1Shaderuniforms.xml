@@ -1,0 +1,596 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Shaderuniforms" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Shaderuniforms</compoundname>
+    <includes refid="shader_8hpp" local="no">shader.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a8d8bd2600c5e73fac6ebdfb83a7c3fe4" prot="protected" static="no" mutable="no">
+        <type>cmzn_shaderuniforms_id</type>
+        <definition>cmzn_shaderuniforms_id CMLibs::Zinc::Shaderuniforms::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="209" column="24" bodyfile="auto_comments_output/shader.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a818ace62749ffe968b09c8d074709cf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shaderuniforms::Shaderuniforms</definition>
+        <argsstring>()</argsstring>
+        <name>Shaderuniforms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="213" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="213" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a5fc81887f96cbcb2faf09d0fef3ab782" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shaderuniforms::Shaderuniforms</definition>
+        <argsstring>(cmzn_shaderuniforms_id in_shaderuniforms_id)</argsstring>
+        <name>Shaderuniforms</name>
+        <param>
+          <type>cmzn_shaderuniforms_id</type>
+          <declname>in_shaderuniforms_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="217" column="10" bodyfile="auto_comments_output/shader.hpp" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a101898c48b42265f1f20ece753b1cb37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shaderuniforms::Shaderuniforms</definition>
+        <argsstring>(const Shaderuniforms &amp;shaderuniforms)</argsstring>
+        <name>Shaderuniforms</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> &amp;</type>
+          <declname>shaderuniforms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="221" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="221" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1abca6ea010965065481240a2beefcdc4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> &amp;</type>
+        <definition>Shaderuniforms&amp; CMLibs::Zinc::Shaderuniforms::operator=</definition>
+        <argsstring>(const Shaderuniforms &amp;shaderuniforms)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> &amp;</type>
+          <declname>shaderuniforms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="225" column="16" bodyfile="auto_comments_output/shader.hpp" bodystart="225" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a227c9d48b700d376f12488bf81dd061d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shaderuniforms::~Shaderuniforms</definition>
+        <argsstring>()</argsstring>
+        <name>~Shaderuniforms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="236" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="236" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a029d11ae0269c97372c19453c882b5c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Shaderuniforms::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="249" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1ad5ff1055d0801750eb397a00e1ac93ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_shaderuniforms_id</type>
+        <definition>cmzn_shaderuniforms_id CMLibs::Zinc::Shaderuniforms::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="259" column="24" bodyfile="auto_comments_output/shader.hpp" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1aa53ee2fcc8e80cb6b45488bb56d2980d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Shaderuniforms::isManaged</definition>
+        <argsstring>() const</argsstring>
+        <name>isManaged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get managed status of shader uniforms in its owning shader module. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a09df9374b74730625152ce40e336b26a" kindref="member">Shaderuniforms::setManaged</ref></para>
+</simplesect>
+<simplesect kind="return"><para>1 (true) if shader uniforms is managed, otherwise 0 (false). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="270" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="270" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a09df9374b74730625152ce40e336b26a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::setManaged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setManaged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set managed status of shader uniforms in its owning shader module. If set (managed) the shader uniforms will remain indefinitely in the shader uniforms module even if no external references are held. If not set (unmanaged) the shader uniforms will be automatically removed from the module when no longer referenced externally, effectively marking it as pending destruction. All new objects are unmanaged unless stated otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the managed flag: true or false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="287" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="287" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a1901bfaa903e99cf856a80a484ede326" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Shaderuniforms::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an allocated string containing shaderuniforms name.</para>
+<para><simplesect kind="return"><para>allocated string containing shaderuniforms name, or NULL on failure. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="298" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a6b0be842de7a4e7c21198c870f06c2ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/change name for shaderuniforms. Must be unique in the shaderuniforms module.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name to be set to the shaderuniforms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set/change name for shaderuniforms, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="310" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="310" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1aa6985afa44218e171b7c80784109ac7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::removeUniform</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>removeUniform</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a set of uniform values from the uniforms object,</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of uniform to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="321" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="321" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1ae65ae942bffa1fba732495c39d5b7621" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::getUniformReal</definition>
+        <argsstring>(const char *name, int valuesCount, double *valuesOut) const</argsstring>
+        <name>getUniformReal</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the size and values of the specified uniform if present.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array to fill, from 1 to 4. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive uniform values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The actual number of values in the uniform, or 0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="333" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="333" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a33db7e9fc125fefa16dce2ae01e01197" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::addUniformReal</definition>
+        <argsstring>(const char *name, int valuesCount, const double *valuesIn)</argsstring>
+        <name>addUniformReal</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new set of double precision uniform to the uniforms object. This set of values will be written into the shaders at runtime when it is used by the shader program. If an uniform with the same name already exist, nothing will be added to the uniforms object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the uniform to add </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesIn array to fill, from 1 to 4. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial values to be set for the uniform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="351" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="351" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a38e160234d59b6c880c04b09a152348c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::setUniformReal</definition>
+        <argsstring>(const char *name, int valuesCount, const double *valuesIn)</argsstring>
+        <name>setUniformReal</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set values of the specified uniform if it is found with the specified name. This will not change the size nor type of the uniform values. If valuesCount is not the same as the size of the uniforms value found, it will only set the minimal number of values possible. The operation fails when an uniform with the same name and value type is not found.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the uniform to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesInCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesIn array to fill, from 1 to 4. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing values to be set for the uniform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="370" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="370" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1abe78d28d926a3f14edcc5f8a6f3e6edf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::getUniformInteger</definition>
+        <argsstring>(const char *name, int valuesCount, int *valuesOut) const</argsstring>
+        <name>getUniformInteger</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the size and values of the specified uniform if present.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array to fill, from 1 to 4. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive uniform values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The actual number of values in the uniform, or 0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="383" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="383" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1aa9274d03f858b194d92e73dcb4189037" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::addUniformInteger</definition>
+        <argsstring>(const char *name, int valuesCount, const int *valuesIn)</argsstring>
+        <name>addUniformInteger</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new set of integer uniform to the uniforms object. This set of values will be written into the shaders at runtime when it is used by the shader program. If an uniform with the same name already exists, nothing will be added to the uniforms object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the uniform to add </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesIn array to fill, from 1 to 4. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial values to be set for the uniform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="401" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="401" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderuniforms_1ac8c6f62052d29fbd73210d1e56954c8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderuniforms::setUniformInteger</definition>
+        <argsstring>(const char *name, int valuesCount, const int *valuesIn)</argsstring>
+        <name>setUniformInteger</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set values of the specified uniform if it is found with the specified name. This will not change the size nor type of the uniform values. If valuesCount is not the same as the size of the uniforms value found, it will only set the minimal number of values possible. The operation fails when an uniform with the same name and value type is not found.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the uniform to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesInCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesIn array to fill, from 1 to 4. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing values to be set for the uniform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="420" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="420" bodyend="424"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> shader uniforms provide an object to work with opengl shaders uniforms. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> shader uniforms specify uniforms that will pass into the shaders and used by vertex/fragment shaders if a variable with matching name is found. Only scalar to 4-component vectors integer/real values are supported at this moment. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/shader.hpp" line="207" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="206" bodyend="426"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1aa9274d03f858b194d92e73dcb4189037" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>addUniformInteger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a33db7e9fc125fefa16dce2ae01e01197" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>addUniformReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1ad5ff1055d0801750eb397a00e1ac93ad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a1901bfaa903e99cf856a80a484ede326" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1abe78d28d926a3f14edcc5f8a6f3e6edf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>getUniformInteger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1ae65ae942bffa1fba732495c39d5b7621" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>getUniformReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a8d8bd2600c5e73fac6ebdfb83a7c3fe4" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1aa53ee2fcc8e80cb6b45488bb56d2980d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a029d11ae0269c97372c19453c882b5c2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1abca6ea010965065481240a2beefcdc4a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1aa6985afa44218e171b7c80784109ac7d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>removeUniform</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a09df9374b74730625152ce40e336b26a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a6b0be842de7a4e7c21198c870f06c2ab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1ac8c6f62052d29fbd73210d1e56954c8e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>setUniformInteger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a38e160234d59b6c880c04b09a152348c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>setUniformReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a818ace62749ffe968b09c8d074709cf5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>Shaderuniforms</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a5fc81887f96cbcb2faf09d0fef3ab782" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>Shaderuniforms</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a101898c48b42265f1f20ece753b1cb37" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>Shaderuniforms</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderuniforms_1a227c9d48b700d376f12488bf81dd061d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderuniforms</scope><name>~Shaderuniforms</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

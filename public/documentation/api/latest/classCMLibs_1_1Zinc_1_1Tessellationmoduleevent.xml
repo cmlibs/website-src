@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Tessellationmoduleevent</compoundname>
+    <includes refid="tessellation_8hpp" local="no">tessellation.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a69296a1ec23dd56ef857afcd90ad3bc9" prot="protected" static="no" mutable="no">
+        <type>cmzn_tessellationmoduleevent_id</type>
+        <definition>cmzn_tessellationmoduleevent_id CMLibs::Zinc::Tessellationmoduleevent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="573" column="33" bodyfile="auto_comments_output/tessellation.hpp" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1ab9bcd924d407284f5e47f5952028182a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellationmoduleevent::Tessellationmoduleevent</definition>
+        <argsstring>()</argsstring>
+        <name>Tessellationmoduleevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="577" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="577" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a0ec390032e8141c66cb922b19b7011dc" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellationmoduleevent::Tessellationmoduleevent</definition>
+        <argsstring>(cmzn_tessellationmoduleevent_id in_tessellationmodule_event_id)</argsstring>
+        <name>Tessellationmoduleevent</name>
+        <param>
+          <type>cmzn_tessellationmoduleevent_id</type>
+          <declname>in_tessellationmodule_event_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="581" column="10" bodyfile="auto_comments_output/tessellation.hpp" bodystart="581" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1aefa5292c6a995d50b3bba034dc11ef8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellationmoduleevent::Tessellationmoduleevent</definition>
+        <argsstring>(const Tessellationmoduleevent &amp;tessellationmoduleEvent)</argsstring>
+        <name>Tessellationmoduleevent</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref> &amp;</type>
+          <declname>tessellationmoduleEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="585" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="585" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a451f76714688919b1f5f55858443cbec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref> &amp;</type>
+        <definition>Tessellationmoduleevent&amp; CMLibs::Zinc::Tessellationmoduleevent::operator=</definition>
+        <argsstring>(const Tessellationmoduleevent &amp;tessellationmoduleEvent)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref> &amp;</type>
+          <declname>tessellationmoduleEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="589" column="25" bodyfile="auto_comments_output/tessellation.hpp" bodystart="589" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a64676585e5e72380edec4b27969f257a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellationmoduleevent::~Tessellationmoduleevent</definition>
+        <argsstring>()</argsstring>
+        <name>~Tessellationmoduleevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="598" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="598" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a76209e6927fa3b1c16727153d1ad9268" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Tessellationmoduleevent::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="611" column="6" bodyfile="auto_comments_output/tessellation.hpp" bodystart="611" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a0a2b388c5d97b22669f5dcef18760adf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_tessellationmoduleevent_id</type>
+        <definition>cmzn_tessellationmoduleevent_id CMLibs::Zinc::Tessellationmoduleevent::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="621" column="33" bodyfile="auto_comments_output/tessellation.hpp" bodystart="621" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1acf922e8505f07c623577a00900288a91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6fc972e044ee184f481ca8c1cab5ae4a" kindref="member">Tessellation::ChangeFlags</ref></type>
+        <definition>Tessellation::ChangeFlags CMLibs::Zinc::Tessellationmoduleevent::getTessellationChangeFlags</definition>
+        <argsstring>(const Tessellation &amp;tessellation) const</argsstring>
+        <name>getTessellationChangeFlags</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> &amp;</type>
+          <declname>tessellation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how the tessellation has changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" kindref="member">Tessellation::ChangeFlag</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tessellation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tessellation to query about. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" kindref="member">Tessellation::ChangeFlag</ref> values. Returns CMZN_SPECTRUM_CHANGE_FLAG_NONE in case of invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="635" column="27" bodyfile="auto_comments_output/tessellation.hpp" bodystart="635" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a432c3759d3e2291e04f8df217ff56dc9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6fc972e044ee184f481ca8c1cab5ae4a" kindref="member">Tessellation::ChangeFlags</ref></type>
+        <definition>Tessellation::ChangeFlags CMLibs::Zinc::Tessellationmoduleevent::getSummaryTessellationChangeFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getSummaryTessellationChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how tessellations in the tessellation module have changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" kindref="member">Tessellation::ChangeFlag</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" kindref="member">Tessellation::ChangeFlag</ref> values. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="647" column="27" bodyfile="auto_comments_output/tessellation.hpp" bodystart="647" bodyend="650"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about changes to tessellations in the tessellation module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Information about changes to tessellations in the tessellation module, sent with each callback from the tessellationmodule notifier. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/tessellation.hpp" line="571" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="570" bodyend="652"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a0a2b388c5d97b22669f5dcef18760adf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a432c3759d3e2291e04f8df217ff56dc9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>getSummaryTessellationChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1acf922e8505f07c623577a00900288a91" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>getTessellationChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a69296a1ec23dd56ef857afcd90ad3bc9" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a76209e6927fa3b1c16727153d1ad9268" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a451f76714688919b1f5f55858443cbec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1ab9bcd924d407284f5e47f5952028182a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>Tessellationmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a0ec390032e8141c66cb922b19b7011dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>Tessellationmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1aefa5292c6a995d50b3bba034dc11ef8d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>Tessellationmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a64676585e5e72380edec4b27969f257a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmoduleevent</scope><name>~Tessellationmoduleevent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

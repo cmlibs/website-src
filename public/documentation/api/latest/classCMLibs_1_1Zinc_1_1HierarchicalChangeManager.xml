@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1HierarchicalChangeManager" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::HierarchicalChangeManager</compoundname>
+    <includes refid="changemanager_8hpp" local="no">changemanager.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class Manager</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1HierarchicalChangeManager_1a4689b2c32c953655aefb402c2fda9b57" prot="private" static="no" mutable="no">
+        <type>Manager &amp;</type>
+        <definition>Manager&amp; CMLibs::Zinc::HierarchicalChangeManager&lt; Manager &gt;::manager</definition>
+        <argsstring></argsstring>
+        <name>manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/changemanager.hpp" line="71" column="9" bodyfile="auto_comments_output/changemanager.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1HierarchicalChangeManager_1acc8b9d579ca05e2cd53014018b092239" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::HierarchicalChangeManager&lt; Manager &gt;::HierarchicalChangeManager</definition>
+        <argsstring>(Manager &amp;managerIn)</argsstring>
+        <name>HierarchicalChangeManager</name>
+        <param>
+          <type>Manager &amp;</type>
+          <declname>managerIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/changemanager.hpp" line="74" column="1" bodyfile="auto_comments_output/changemanager.hpp" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1HierarchicalChangeManager_1a340216d48bbac6d10ad9b81c5ccff606" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::HierarchicalChangeManager&lt; Manager &gt;::~HierarchicalChangeManager</definition>
+        <argsstring>()</argsstring>
+        <name>~HierarchicalChangeManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/changemanager.hpp" line="80" column="1" bodyfile="auto_comments_output/changemanager.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Template class calling beginHierarchicalChange() method on supplied object during construction, and endHierarchicalChange() on it on destruction. For safely making multiple changes to objects in a manager object when exceptions may occur. Usage example for <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> region: CMLibs::Zinc::HierarchicalChangeManager&lt;Region&gt; changeRegion(region); // make multiple changes region.endHierarchicalChange() is called when leaving scope or on exception. Enclose in { } to force scope to end earlier. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/changemanager.hpp" line="70" column="1" bodyfile="auto_comments_output/changemanager.hpp" bodystart="69" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1HierarchicalChangeManager_1acc8b9d579ca05e2cd53014018b092239" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::HierarchicalChangeManager</scope><name>HierarchicalChangeManager</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1HierarchicalChangeManager_1a4689b2c32c953655aefb402c2fda9b57" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::HierarchicalChangeManager</scope><name>manager</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1HierarchicalChangeManager_1a340216d48bbac6d10ad9b81c5ccff606" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::HierarchicalChangeManager</scope><name>~HierarchicalChangeManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Sceneviewerevent" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Sceneviewerevent</compoundname>
+    <includes refid="sceneviewer_8hpp" local="no">sceneviewer.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3ef" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ChangeFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3efa509c91ab322c73d98ef3e8af7f0ba47d" prot="public">
+          <name>CHANGE_FLAG_NONE</name>
+          <initializer>= CMZN_SCENEVIEWEREVENT_CHANGE_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>object not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3efae870bbfd2653e51b9d1820b02fc5ad4e" prot="public">
+          <name>CHANGE_FLAG_REPAINT_REQUIRED</name>
+          <initializer>= CMZN_SCENEVIEWEREVENT_CHANGE_FLAG_REPAINT_REQUIRED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>repaint required evenet </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3efa62c74b91ba1182a77f74b56ee0d59d43" prot="public">
+          <name>CHANGE_FLAG_TRANSFORM</name>
+          <initializer>= CMZN_SCENEVIEWEREVENT_CHANGE_FLAG_TRANSFORM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sceneviewer receive input </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3efa60e8ddf15a8cb5d914645d187e326c2f" prot="public">
+          <name>CHANGE_FLAG_FINAL</name>
+          <initializer>= CMZN_SCENEVIEWEREVENT_CHANGE_FLAG_FINAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sceneviewer is currently being destroyed </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit flags summarising changes to fields in the field module. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="54" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="53" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1af7800c6262137c313875c203a5185839" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Sceneviewerevent::ChangeFlags</definition>
+        <argsstring></argsstring>
+        <name>ChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3ef" kindref="member">ChangeFlag</ref> <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1ab7a98596d053c3cecff142f19dcf45c1" kindref="member">getChangeFlags</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="69" column="13" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1ac89c00694b65894ce6b268c1045c6870" prot="protected" static="no" mutable="no">
+        <type>cmzn_sceneviewerevent_id</type>
+        <definition>cmzn_sceneviewerevent_id CMLibs::Zinc::Sceneviewerevent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="34" column="26" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1aa894d9741c59252e9a25763f4b131fcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewerevent::Sceneviewerevent</definition>
+        <argsstring>()</argsstring>
+        <name>Sceneviewerevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="38" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="38" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1aca4727cd162911e6f7e31ee6d6b1c8a4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewerevent::Sceneviewerevent</definition>
+        <argsstring>(cmzn_sceneviewerevent_id in_sceneviewer_event_id)</argsstring>
+        <name>Sceneviewerevent</name>
+        <param>
+          <type>cmzn_sceneviewerevent_id</type>
+          <declname>in_sceneviewer_event_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="42" column="10" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1af373096dd03ec63ba4d9fb786920f852" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewerevent::Sceneviewerevent</definition>
+        <argsstring>(const Sceneviewerevent &amp;sceneviewerEvent)</argsstring>
+        <name>Sceneviewerevent</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent" kindref="compound">Sceneviewerevent</ref> &amp;</type>
+          <declname>sceneviewerEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="46" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a84c146411506755165a908c322d1c60e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent" kindref="compound">Sceneviewerevent</ref> &amp;</type>
+        <definition>Sceneviewerevent&amp; CMLibs::Zinc::Sceneviewerevent::operator=</definition>
+        <argsstring>(const Sceneviewerevent &amp;sceneviewerEvent)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent" kindref="compound">Sceneviewerevent</ref> &amp;</type>
+          <declname>sceneviewerEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="71" column="18" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="71" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a96f9a98d093a7cb359980f3fb02d70ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewerevent::~Sceneviewerevent</definition>
+        <argsstring>()</argsstring>
+        <name>~Sceneviewerevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="82" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="82" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a5244d666e43800e83c876f0ed1f255ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewerevent::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent" kindref="compound">Sceneviewerevent</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="95" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a07eac0d80d725c75d4f5e16f8718f8af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_sceneviewerevent_id</type>
+        <definition>cmzn_sceneviewerevent_id CMLibs::Zinc::Sceneviewerevent::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent" kindref="compound">Sceneviewerevent</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent" kindref="compound">Sceneviewerevent</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="105" column="26" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1ab7a98596d053c3cecff142f19dcf45c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1af7800c6262137c313875c203a5185839" kindref="member">ChangeFlags</ref></type>
+        <definition>ChangeFlags CMLibs::Zinc::Sceneviewerevent::getChangeFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how fields in the scene viewer have changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3ef" kindref="member">Sceneviewerevent::ChangeFlag</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3ef" kindref="member">Sceneviewerevent::ChangeFlag</ref> values. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="117" column="13" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about changes to fields and other objects in the scene viewer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Information about changes to fields and other objects in the scene viewer, sent with each callback from the sceneviewer notifier. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/sceneviewer.hpp" line="32" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="31" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3efa60e8ddf15a8cb5d914645d187e326c2f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3efa509c91ab322c73d98ef3e8af7f0ba47d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3efae870bbfd2653e51b9d1820b02fc5ad4e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>CHANGE_FLAG_REPAINT_REQUIRED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3efa62c74b91ba1182a77f74b56ee0d59d43" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>CHANGE_FLAG_TRANSFORM</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a6804f4e4ed3e3061145d940414def3ef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1af7800c6262137c313875c203a5185839" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1ab7a98596d053c3cecff142f19dcf45c1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>getChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a07eac0d80d725c75d4f5e16f8718f8af" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1ac89c00694b65894ce6b268c1045c6870" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a5244d666e43800e83c876f0ed1f255ae" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a84c146411506755165a908c322d1c60e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1aa894d9741c59252e9a25763f4b131fcc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>Sceneviewerevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1aca4727cd162911e6f7e31ee6d6b1c8a4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>Sceneviewerevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1af373096dd03ec63ba4d9fb786920f852" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>Sceneviewerevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent_1a96f9a98d093a7cb359980f3fb02d70ad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerevent</scope><name>~Sceneviewerevent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

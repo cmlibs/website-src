@@ -1,0 +1,1757 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Graphics" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Graphics</compoundname>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1GraphicsContours" prot="public" virt="non-virtual">CMLibs::Zinc::GraphicsContours</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1GraphicsLines" prot="public" virt="non-virtual">CMLibs::Zinc::GraphicsLines</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1GraphicsPoints" prot="public" virt="non-virtual">CMLibs::Zinc::GraphicsPoints</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1GraphicsStreamlines" prot="public" virt="non-virtual">CMLibs::Zinc::GraphicsStreamlines</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1GraphicsSurfaces" prot="public" virt="non-virtual">CMLibs::Zinc::GraphicsSurfaces</derivedcompoundref>
+    <includes refid="graphics_8hpp" local="no">graphics.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BoundaryMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a8ea8288de9eddb27e5744a8dfa8b6880" prot="public">
+          <name>BOUNDARY_MODE_INVALID</name>
+          <initializer>= CMZN_GRAPHICS_BOUNDARY_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid boundary mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4abef4bda3b2facf15321994d1a7124fe7" prot="public">
+          <name>BOUNDARY_MODE_ALL</name>
+          <initializer>= CMZN_GRAPHICS_BOUNDARY_MODE_ALL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default: all faces are included </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a729f9559d62f87c3cf956bbdae23f3ce" prot="public">
+          <name>BOUNDARY_MODE_BOUNDARY</name>
+          <initializer>= CMZN_GRAPHICS_BOUNDARY_MODE_BOUNDARY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only faces on the boundary of the mesh are included </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a1d75c9e080106666b57551331aebac2a" prot="public">
+          <name>BOUNDARY_MODE_INTERIOR</name>
+          <initializer>= CMZN_GRAPHICS_BOUNDARY_MODE_INTERIOR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only faces in the interior of the mesh are included </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a192d422686308e124dbf413a67664e98" prot="public">
+          <name>BOUNDARY_MODE_SUBGROUP_BOUNDARY</name>
+          <initializer>= CMZN_GRAPHICS_BOUNDARY_MODE_SUBGROUP_BOUNDARY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only faces on the boundary of the subgroup are included </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a8873545be270294390b3e77f0419e289" prot="public">
+          <name>BOUNDARY_MODE_SUBGROUP_INTERIOR</name>
+          <initializer>= CMZN_GRAPHICS_BOUNDARY_MODE_SUBGROUP_INTERIOR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only faces in the interior of the subgroup are included </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode limiting display of faces or lines to boundary, interior etc. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="96" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="95" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RenderPolygonMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fae1bbd1e275d08ba2a6f3a3ca3e3dec3d" prot="public">
+          <name>RENDER_POLYGON_MODE_INVALID</name>
+          <initializer>= CMZN_GRAPHICS_RENDER_POLYGON_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified polygon mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fa2074283247b48e7603db9ed243961552" prot="public">
+          <name>RENDER_POLYGON_MODE_SHADED</name>
+          <initializer>= CMZN_GRAPHICS_RENDER_POLYGON_MODE_SHADED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Draw filled polygons </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fa3a641cc035baf091faf91fede1601e6a" prot="public">
+          <name>RENDER_POLYGON_MODE_WIREFRAME</name>
+          <initializer>= CMZN_GRAPHICS_RENDER_POLYGON_MODE_WIREFRAME</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Draw polygon wireframe edge lines </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration controlling how polygons are rendered in GL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="115" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="114" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SelectMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a4cbfdcac0d9b8b12f9167121005fe171" prot="public">
+          <name>SELECT_MODE_INVALID</name>
+          <initializer>= CMZN_GRAPHICS_SELECT_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified select mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a950081bf62fa62a4c87d72eb2ff46442" prot="public">
+          <name>SELECT_MODE_ON</name>
+          <initializer>= CMZN_GRAPHICS_SELECT_MODE_ON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>draw all objects with unselected objects drawn in standard material, selected objects in selected_material, and with picking enabled. Default mode for any new graphics. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a29c62c1a00a8244b0ab7ded7ef9406ee" prot="public">
+          <name>SELECT_MODE_OFF</name>
+          <initializer>= CMZN_GRAPHICS_SELECT_MODE_OFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>object IDs are not generated so individual nodes/elements cannot be picked nor highlighted. More efficient if picking and highlighting are not required. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a8cf08a3b2e96ea9d8a2e95b8492f6ce6" prot="public">
+          <name>SELECT_MODE_DRAW_SELECTED</name>
+          <initializer>= CMZN_GRAPHICS_SELECT_MODE_DRAW_SELECTED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>draw only selected objects in selected_material, with picking enabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a30b626eae6cdb209a0dad5a64cec0125" prot="public">
+          <name>SELECT_MODE_DRAW_UNSELECTED</name>
+          <initializer>= CMZN_GRAPHICS_SELECT_MODE_DRAW_UNSELECTED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>draw only unselected objects in standard material, with picking enabled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration controlling how graphics interact with selection: whether the objects can be picked, the selection highlighted or only the selected or unselected primitives are drawn. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="130" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="129" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Type</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea1d96adba787ccd83d662e41a2a12c5cb" prot="public">
+          <name>TYPE_INVALID</name>
+          <initializer>= CMZN_GRAPHICS_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified graphics type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173eae28f794a38736eedc24b52c17cc196a3" prot="public">
+          <name>TYPE_POINTS</name>
+          <initializer>= CMZN_GRAPHICS_TYPE_POINTS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Points graphics visualise discrete locations in the model. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea6394814c38bb6ebda2cdbe1bea4d5ad7" prot="public">
+          <name>TYPE_LINES</name>
+          <initializer>= CMZN_GRAPHICS_TYPE_LINES</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lines visualise 1-D elements in the model. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ead66c6b522a2c716091d0df1df43d1d85" prot="public">
+          <name>TYPE_SURFACES</name>
+          <initializer>= CMZN_GRAPHICS_TYPE_SURFACES</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Surfaces visualise 2-D elements in the model. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea779d4ca24b8ce1a34b2f356a52a2293d" prot="public">
+          <name>TYPE_CONTOURS</name>
+          <initializer>= CMZN_GRAPHICS_TYPE_CONTOURS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Visualises where a scalar field is equal to a constant. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea4e8ad66d9155660bc4f8e186dd691ca7" prot="public">
+          <name>TYPE_STREAMLINES</name>
+          <initializer>= CMZN_GRAPHICS_TYPE_STREAMLINES</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Streamlines visualise the path of a fluid particle tracking along a vector field. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration giving the algorithm used to create graphics. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="151" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="150" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Graphics_1a97cf1712429a68b15a24d52f068e9c0a" prot="protected" static="no" mutable="no">
+        <type>cmzn_graphics_id</type>
+        <definition>cmzn_graphics_id CMLibs::Zinc::Graphics::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="49" column="18" bodyfile="auto_comments_output/graphics.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aecdcb1bb1bac593dd5bb0bf51b578457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphics::Graphics</definition>
+        <argsstring>()</argsstring>
+        <name>Graphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="53" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="53" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1abc0a51e305ecce21dff2a6b9e97178ff" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphics::Graphics</definition>
+        <argsstring>(cmzn_graphics_id graphics_id)</argsstring>
+        <name>Graphics</name>
+        <param>
+          <type>cmzn_graphics_id</type>
+          <declname>graphics_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="57" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="57" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a33f52b786197db7e17aa58b32885f2cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphics::Graphics</definition>
+        <argsstring>(const Graphics &amp;graphics)</argsstring>
+        <name>Graphics</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="60" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="60" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aba2e86221b99b883514394e826eb0fee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+        <definition>Graphics&amp; CMLibs::Zinc::Graphics::operator=</definition>
+        <argsstring>(const Graphics &amp;graphics)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="63" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="63" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aae578918fa912a0c2033762cb4a1acec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphics::~Graphics</definition>
+        <argsstring>()</argsstring>
+        <name>~Graphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="74" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aff667085baba3e6b4a8a7b1594cddf62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Graphics::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="87" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a042eb0d22022371d387685370c851bb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_graphics_id</type>
+        <definition>cmzn_graphics_id CMLibs::Zinc::Graphics::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="172" column="18" bodyfile="auto_comments_output/graphics.hpp" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a336c885b0f75725776c53d1cc8e42f3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphics::getCoordinateField</definition>
+        <argsstring>() const</argsstring>
+        <name>getCoordinateField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the field supplying coordinates for the graphics.</para>
+<para><simplesect kind="return"><para>Handle to coordinate field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="182" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a8727716495e46cda752514fba111a10f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setCoordinateField</definition>
+        <argsstring>(const Field &amp;coordinateField)</argsstring>
+        <name>setCoordinateField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>coordinateField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the field supplying coordinates for the graphics. Non rectangular- Cartesian coordinates are automatically converted to RC for the graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinateField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to use as the coordinate field. May have from 1 to 3 components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="195" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aa948efb735e761d527b957714acdaf06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphics::getDataField</definition>
+        <argsstring>() const</argsstring>
+        <name>getDataField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the data field used with the spectrum to colour the graphics.</para>
+<para><simplesect kind="return"><para>Handle to data field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="205" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a7d7b117dd6c0d42e8a62d6b725d75a56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setDataField</definition>
+        <argsstring>(const Field &amp;dataField)</argsstring>
+        <name>setDataField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>dataField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the data field used with the spectrum to colour the graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to use as the data field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="216" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a3a597e5445b4463e3ea42db829d3ea46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Graphics::getRenderLineWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getRenderLineWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the width used for rendering line primitives in GL in renderer &apos;point units&apos;, typically pixels for on-screen display.</para>
+<para><simplesect kind="return"><para>The line render width in pixels, or 0.0 if bad argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="227" column="8" bodyfile="auto_comments_output/graphics.hpp" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a0f1aeac578a90b35d9f7066fbf136a06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setRenderLineWidth</definition>
+        <argsstring>(double width)</argsstring>
+        <name>setRenderLineWidth</name>
+        <param>
+          <type>double</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the width used for rendering line primitives in GL in renderer &apos;point units&apos;, typically pixels for on-screen display but scalable to ensure lines are of appropriate thickness on high resolution output. Note there may be arbitrary limits on values depending on the GL implementation, and for non-antialised rendering the nearest integer is used. The default value is 1.0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The line render width in pixels. Value &gt; 0.0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="243" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a2e012fc5a4bd6ba3a821c2e20a560232" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Graphics::getRenderPointSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getRenderPointSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the size used for rendering point primitives in GL in renderer &apos;point units&apos;, typically pixels for on-screen display.</para>
+<para><simplesect kind="return"><para>The point render size in pixels, or 0.0 if bad argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="254" column="8" bodyfile="auto_comments_output/graphics.hpp" bodystart="254" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a91a90faa131d371e19e72a9886636b03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setRenderPointSize</definition>
+        <argsstring>(double size)</argsstring>
+        <name>setRenderPointSize</name>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the size used for rendering point primitives in GL in renderer &apos;point units&apos;, typically pixels for on-screen display but scalable to ensure points are of appropriate size on high resolution output. Note there may be arbitrary limits on values depending on the GL implementation, and may be rounded to the nearest integer in use. The default value is 1.0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point render size in pixels. Value &gt; 0.0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="270" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="270" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a54236585a8e74b55d4fe80acae35670a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894f" kindref="member">RenderPolygonMode</ref></type>
+        <definition>RenderPolygonMode CMLibs::Zinc::Graphics::getRenderPolygonMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getRenderPolygonMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get mode controlling how polygons in the graphics are rendered in GL.</para>
+<para><simplesect kind="return"><para>The render polygon mode, or CMZN_GRAPHICS_RENDER_POLYGON_MODE_INVALID if bad arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="291" column="19" bodyfile="auto_comments_output/graphics.hpp" bodystart="291" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a52059e7bf3720391b1bf0ce880dd89e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setRenderPolygonMode</definition>
+        <argsstring>(RenderPolygonMode renderPolygonMode)</argsstring>
+        <name>setRenderPolygonMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894f" kindref="member">RenderPolygonMode</ref></type>
+          <declname>renderPolygonMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set mode controlling how polygons in the graphics are rendered in GL: shaded/filled, wireframe etc. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894f" kindref="member">Graphics::RenderPolygonMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>renderPolygonMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mode of polygon rendering: shaded, wireframe. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="304" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="304" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aa383d54d2b0e42502d07d28b965a9f16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref></type>
+        <definition>Scene CMLibs::Zinc::Graphics::getScene</definition>
+        <argsstring>() const</argsstring>
+        <name>getScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the scene owning this graphics.</para>
+<para><simplesect kind="return"><para>Handle to scene owning graphics, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="315" column="14" bodyfile="auto_comments_output/scene.hpp" bodystart="757" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aceec302d7ff95a439e1dc530e694b408" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6" kindref="member">SelectMode</ref></type>
+        <definition>SelectMode CMLibs::Zinc::Graphics::getSelectMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the mode controlling how graphics are drawn depending on whether the underlying object is selected, and also whether picking is enabled.</para>
+<para><simplesect kind="return"><para>The select mode, or MODE_INVALID if bad argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="333" column="12" bodyfile="auto_comments_output/graphics.hpp" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a6a2abc2eb72c17c6c3c4aac0fe2893cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setSelectMode</definition>
+        <argsstring>(SelectMode selectMode)</argsstring>
+        <name>setSelectMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6" kindref="member">SelectMode</ref></type>
+          <declname>selectMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the mode controlling how graphics are drawn depending on whether the underlying object is selected, and also whether picking is enabled. An object is selected if it is in the current selection_group for the scene which owns the graphics. The default select mode for new graphics is CMZN_GRAPHICS_SELECT_MODE_ON.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selectMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid select mode for the graphics. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>On success <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref>, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="348" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="348" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aa0ac26a228fb5cd0d6df2c88747f2f59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphics::getSubgroupField</definition>
+        <argsstring>() const</argsstring>
+        <name>getSubgroupField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the field which returns true/non-zero for primitive to be created.</para>
+<para><simplesect kind="return"><para>Handle to subgroup field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="358" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1ac5172b0d8d7c9e0492120fbe5ad6d3dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setSubgroupField</definition>
+        <argsstring>(const Field &amp;subgroupField)</argsstring>
+        <name>setSubgroupField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>subgroupField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets optional field which causes graphics to be generated only for parts of the domain where its value is true/non-zero. Commonly a group, node_group or element_group field which is efficiently iterated over. Note general fields are evaluated at an arbitrary location in elements.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subgroupField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scalar subgroup field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="372" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="372" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a4c75a90e73176f355147864a0357f9f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphics::getTextureCoordinateField</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextureCoordinateField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the texture coordinate field of the graphics. Caller must destroy handle.</para>
+<para><simplesect kind="return"><para>Handle to texture coordinate field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="384" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="384" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a4e8bc7ce2d4cce5643d8d1a08346cd92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setTextureCoordinateField</definition>
+        <argsstring>(const Field &amp;textureCoordinateField)</argsstring>
+        <name>setTextureCoordinateField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>textureCoordinateField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the texture coordinate field of the graphics. Values of this field specify mapping of the material&apos;s image field to coordinates in the graphics. The texture coordinate field is currently unused by POINTS and STREAMLINES.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textureCoordinateField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to be set as the texture coordinate field, or 0 for none. <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> must have from 1 to 3 components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="398" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="398" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1af0cf1e6ae813c2a75accdc343d065c32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::Graphics::getMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the material giving the colour/shading of the graphics when unselected.</para>
+<para><simplesect kind="return"><para>Handle to material, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="408" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="408" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1af2f115d7056287026e0214c8170b91d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setMaterial</definition>
+        <argsstring>(const Material &amp;material)</argsstring>
+        <name>setMaterial</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the material giving the colour/shading of the graphics when unselected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The standard/unselected material. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="419" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="419" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1ab6d978c9565715506c8312086bb4d522" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes" kindref="compound">Graphicslineattributes</ref></type>
+        <definition>Graphicslineattributes CMLibs::Zinc::Graphics::getGraphicslineattributes</definition>
+        <argsstring>() const</argsstring>
+        <name>getGraphicslineattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the graphics produces lines or extrusions then returns a handle to the line attribute object for specifying section profile and scaling.</para>
+<para><simplesect kind="return"><para>Handle to graphics line attributes, or NULL/invalid handle if not supported by graphics type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="431" column="24" bodyfile="auto_comments_output/graphics.hpp" bodystart="1434" bodyend="1437"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1af7338d267b44ab86fd9df008e63ab777" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes" kindref="compound">Graphicspointattributes</ref></type>
+        <definition>Graphicspointattributes CMLibs::Zinc::Graphics::getGraphicspointattributes</definition>
+        <argsstring>() const</argsstring>
+        <name>getGraphicspointattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the graphics produces points then returns a handle to point attribute object for specifying glyph, scaling fields, scale factors and labels.</para>
+<para><simplesect kind="return"><para>Handle to graphics point attributes, or NULL/invalid handle if not supported by graphics type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="440" column="25" bodyfile="auto_comments_output/graphics.hpp" bodystart="1854" bodyend="1857"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a58f7baa9c58018975c0eb9225428f5c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes" kindref="compound">Graphicssamplingattributes</ref></type>
+        <definition>Graphicssamplingattributes CMLibs::Zinc::Graphics::getGraphicssamplingattributes</definition>
+        <argsstring>() const</argsstring>
+        <name>getGraphicssamplingattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the graphics samples points from elements then returns a handle to sampling attribute object for specifying sampling mode, density field etc.</para>
+<para><simplesect kind="return"><para>Handle to graphics sampling attributes, or NULL/invalid handle if not supported by graphics type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="449" column="28" bodyfile="auto_comments_output/graphics.hpp" bodystart="1991" bodyend="1994"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a54931a487be326e5c9ca43af98875e56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::Graphics::getSelectedMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectedMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the material giving the colour/shading of the graphics when selected.</para>
+<para><simplesect kind="return"><para>Handle to material, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="456" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="456" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a273f2f93dff3134a9701b43d76a52d4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setSelectedMaterial</definition>
+        <argsstring>(const Material &amp;material)</argsstring>
+        <name>setSelectedMaterial</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the material giving the colour/shading of the graphics when selected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The selected/highlight material. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="467" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="467" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a8fd931206476d5fc5711e5ea33889496" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref></type>
+        <definition>Spectrum CMLibs::Zinc::Graphics::getSpectrum</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpectrum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the spectrum used with the data field to colour the graphics.</para>
+<para><simplesect kind="return"><para>Handle to spectrum, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="477" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="477" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1ac4131fe7d819e99379d9d8ab96f05ecc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setSpectrum</definition>
+        <argsstring>(const Spectrum &amp;spectrum)</argsstring>
+        <name>setSpectrum</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spectrum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the spectrum used with the data field to colour the graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spectrum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spectrum to use to map colours. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="488" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="488" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a66e575d0a08aa990833c5485ea73c6aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" kindref="member">Type</ref></type>
+        <definition>Type CMLibs::Zinc::Graphics::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the graphics type: POINTS, LINES, SURFACES, CONTOURS, STREAMLINES</para>
+<para><simplesect kind="return"><para>The enumerated graphics type, or TYPE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="508" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="508" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a0c7131710b50dcd3b54aa5eeef377a70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref></type>
+        <definition>Tessellation CMLibs::Zinc::Graphics::getTessellation</definition>
+        <argsstring>() const</argsstring>
+        <name>getTessellation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the tessellation object of the graphics. Caller must destroy returned handle.</para>
+<para><simplesect kind="return"><para>Handle to tessellation, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="519" column="14" bodyfile="auto_comments_output/graphics.hpp" bodystart="519" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a4e543c4c9613187e08919da0807dd43d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setTessellation</definition>
+        <argsstring>(const Tessellation &amp;tessellation)</argsstring>
+        <name>setTessellation</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> &amp;</type>
+          <declname>tessellation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the tessellation object of the graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tessellation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tessellation object to be set for graphics.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="531" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="531" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a4f99459f39f369149e5598fa77086837" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphics::getTessellationField</definition>
+        <argsstring>() const</argsstring>
+        <name>getTessellationField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the field controlling tessellation quality.</para>
+<para><simplesect kind="return"><para>Handle to tessellation field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="541" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="541" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a41c0eb3a9dfc6ad263efc19950f6ec43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setTessellationField</definition>
+        <argsstring>(const Field &amp;tessellationField)</argsstring>
+        <name>setTessellationField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>tessellationField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a field which sets tessellation quality to match its native refinement in any element (if any) and also apply refinement factors if the field function is non-linear at its native refinement. If no tessellation field is supplied, the coordinate field is checked for non-linearity of function OR coordinate system, but not native refinement.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tessellationField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field which sets tessellation quality. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="556" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="556" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a1ac2580f7c4c28948110936c5f0a8d32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Graphics::getVisibilityFlag</definition>
+        <argsstring>() const</argsstring>
+        <name>getVisibilityFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return status of graphics visibility flag attribute.</para>
+<para><simplesect kind="return"><para>Boolean value true if visibility flag is set, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="566" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="566" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1ade33525f14355ad2078f1ca5c62e7ff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setVisibilityFlag</definition>
+        <argsstring>(bool visibilityFlag)</argsstring>
+        <name>setVisibilityFlag</name>
+        <param>
+          <type>bool</type>
+          <declname>visibilityFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets status of graphics visibility flag attribute. Note this only affects visibility of graphics when a scene filter is acting on it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visibilityFlag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean true to set, false to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="578" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="578" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1acc7a0997b3136a195d6e6cb7c4a1c873" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></type>
+        <definition>Scenecoordinatesystem CMLibs::Zinc::Graphics::getScenecoordinatesystem</definition>
+        <argsstring>() const</argsstring>
+        <name>getScenecoordinatesystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the scene coordinate system in which to render the coordinates of graphics.</para>
+<para><simplesect kind="return"><para>coordinate system used in graphics. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="588" column="23" bodyfile="auto_comments_output/graphics.hpp" bodystart="588" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a5cba63d298610fc2c92d73364790a550" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setScenecoordinatesystem</definition>
+        <argsstring>(Scenecoordinatesystem coordinateSystem)</argsstring>
+        <name>setScenecoordinatesystem</name>
+        <param>
+          <type><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></type>
+          <declname>coordinateSystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the scene coordinate system in which to render the coordinates of graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinateSystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>enumerator describing coordinate system to be set for graphics. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="600" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="600" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a5f7ab37d0dcce91c95b5d0c476c46e52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" kindref="member">Field::DomainType</ref></type>
+        <definition>Field::DomainType CMLibs::Zinc::Graphics::getFieldDomainType</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldDomainType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the field domain type graphics are created from with the graphics.</para>
+<para><simplesect kind="return"><para>The domain type of the graphics or CMZN_FIELD_DOMAIN_TYPE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="612" column="19" bodyfile="auto_comments_output/graphics.hpp" bodystart="612" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a60136842d4d80c13748cfde1221ce999" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setFieldDomainType</definition>
+        <argsstring>(Field::DomainType domainType)</argsstring>
+        <name>setFieldDomainType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" kindref="member">Field::DomainType</ref></type>
+          <declname>domainType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the field domain type to create graphics from with the graphics. Note that all domain types are applicable to all graphics types, for example this attribute cannot be changed for LINES and SURFACES, which always use 1D and 2D elements domains, respectively.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>domainType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enumerated value of the field domain type to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="626" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="626" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a2dbb61769b06aacb389fddc179bbec11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Graphics::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the name of the graphics. The graphics has no name until user sets it.</para>
+<para><simplesect kind="return"><para>On success: allocated string containing name, or NULL if none. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="637" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="637" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a251bd37d1aac81f3a4c2a33b5ae5f6dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the name of the graphics. Unlike other containers, scene can contain multiple graphics with the same name. New graphics default to having no name. A common use of the name is to mark the graphics for filtering, like metadata. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule_1a16bdc10a4c219bd27018a8dc27aef563" kindref="member">Scenefiltermodule::createScenefilterGraphicsName</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new name for the graphics, OR NULL to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="651" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="651" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a566b61f64d972f99317fa3b8c0372186" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4" kindref="member">BoundaryMode</ref></type>
+        <definition>BoundaryMode CMLibs::Zinc::Graphics::getBoundaryMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getBoundaryMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get boundary mode controlling whether showing graphics only on boundary, interior etc.</para>
+<para><simplesect kind="return"><para>The boundary mode of the graphics, or BOUNDARY_MODE_INVALID if invalid graphics supplied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="673" column="14" bodyfile="auto_comments_output/graphics.hpp" bodystart="673" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a18f7720ee37c8ac58cf673cf87b925e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setBoundaryMode</definition>
+        <argsstring>(BoundaryMode boundaryMode)</argsstring>
+        <name>setBoundaryMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4" kindref="member">BoundaryMode</ref></type>
+          <declname>boundaryMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set boundary mode controlling whether showing graphics only on boundary, interior etc.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boundaryMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New boundary mode. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="685" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="685" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a36b7a9c5d51e81341c38dd26926dd046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setElementFaceType</definition>
+        <argsstring>(Element::FaceType faceType)</argsstring>
+        <name>setElementFaceType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9" kindref="member">Element::FaceType</ref></type>
+          <declname>faceType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the element face type the graphics is limited to generating graphics for. e.g. FACE_TYPE_XI1_0 generates graphics only on faces and lines where the top-level element &apos;xi1&apos; coordinate equals 0. Value FACE_TYPE_ALL disables the face check so all elements of dimension - face or non-face - are accepted.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>faceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid element face type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="700" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="700" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aec2f9dca53632d8d6748c559694af404" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9" kindref="member">Element::FaceType</ref></type>
+        <definition>Element::FaceType CMLibs::Zinc::Graphics::getElementFaceType</definition>
+        <argsstring>() const</argsstring>
+        <name>getElementFaceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the element face type the graphics is limited to generating graphics for.</para>
+<para><simplesect kind="return"><para>The face type of the graphics, or FACE_TYPE_INVALID if invalid graphics supplied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="711" column="19" bodyfile="auto_comments_output/graphics.hpp" bodystart="711" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a36fe070deec2289dadf836a7803dab9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Graphics::isExterior</definition>
+        <argsstring>() const</argsstring>
+        <name>isExterior</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query if generating face or line graphics on the exterior boundary of the mesh only. Deprecated; just returns whether boundary mode is BOUNDARY_MODE_BOUNDARY. <xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription></xrefdescription></xrefsect><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a566b61f64d972f99317fa3b8c0372186" kindref="member">Graphics::getBoundaryMode</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Boolean true if showing graphics on the mesh boundary only, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="726" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="726" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a2c40ccba5eed99a9d2946f403a16f480" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphics::setExterior</definition>
+        <argsstring>(bool exterior)</argsstring>
+        <name>setExterior</name>
+        <param>
+          <type>bool</type>
+          <declname>exterior</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set to generate face or line graphics on the exterior boundary of the mesh only. Deprecated; just sets boundary mode to BOUNDARY_MODE_BOUNDARY. <xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription></xrefdescription></xrefsect><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a18f7720ee37c8ac58cf673cf87b925e1" kindref="member">Graphics::setBoundaryMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exterior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New boolean value: true to set, false to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="741" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="741" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a0d2f67fb57be1cab5a5f117211bcbf13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsContours" kindref="compound">GraphicsContours</ref></type>
+        <definition>GraphicsContours CMLibs::Zinc::Graphics::castContours</definition>
+        <argsstring>()</argsstring>
+        <name>castContours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the graphics is of type contours then this function returns the derived contours graphics handle.</para>
+<para><simplesect kind="return"><para>Handle to derived contours graphics, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="753" column="25" bodyfile="auto_comments_output/graphics.hpp" bodystart="1198" bodyend="1201"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a97e06c36f008a38bb2fccaf01e24dad6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsLines" kindref="compound">GraphicsLines</ref></type>
+        <definition>GraphicsLines CMLibs::Zinc::Graphics::castLines</definition>
+        <argsstring>()</argsstring>
+        <name>castLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the graphics is of type lines then this function returns the derived lines graphics handle.</para>
+<para><simplesect kind="return"><para>Handle to derived lines graphics, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="761" column="22" bodyfile="auto_comments_output/graphics.hpp" bodystart="1203" bodyend="1206"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a7780a73088f4fadf33e69e4f9e5037ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsPoints" kindref="compound">GraphicsPoints</ref></type>
+        <definition>GraphicsPoints CMLibs::Zinc::Graphics::castPoints</definition>
+        <argsstring>()</argsstring>
+        <name>castPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the graphics is of type points then this function returns the derived points graphics handle.</para>
+<para><simplesect kind="return"><para>Handle to derived points graphics, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="769" column="23" bodyfile="auto_comments_output/graphics.hpp" bodystart="1208" bodyend="1211"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1ab21b551f953cc4b6c11ceddada185ef8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsStreamlines" kindref="compound">GraphicsStreamlines</ref></type>
+        <definition>GraphicsStreamlines CMLibs::Zinc::Graphics::castStreamlines</definition>
+        <argsstring>()</argsstring>
+        <name>castStreamlines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the graphics is of type streamlines then this function returns the derived streamlines graphics handle.</para>
+<para><simplesect kind="return"><para>Handle to derived streamlines graphics, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="777" column="28" bodyfile="auto_comments_output/graphics.hpp" bodystart="1213" bodyend="1216"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aa7438dfb4672466aa97cd61ac8721656" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsSurfaces" kindref="compound">GraphicsSurfaces</ref></type>
+        <definition>GraphicsSurfaces CMLibs::Zinc::Graphics::castSurfaces</definition>
+        <argsstring>()</argsstring>
+        <name>castSurfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the graphics is of type surfaces then this function returns the derived surfaces graphics handle.</para>
+<para><simplesect kind="return"><para>Handle to derived surfaces graphics, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="785" column="25" bodyfile="auto_comments_output/graphics.hpp" bodystart="1218" bodyend="1221"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a2767d70398c5c97c400c27b3f9da548c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894f" kindref="member">RenderPolygonMode</ref></type>
+        <definition>static RenderPolygonMode CMLibs::Zinc::Graphics::RenderPolygonModeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>RenderPolygonModeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="275" column="26" bodyfile="auto_comments_output/graphics.hpp" bodystart="275" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1ac84d7b99bb2536e190887011cd528b93" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Graphics::RenderPolygonModeEnumToString</definition>
+        <argsstring>(RenderPolygonMode mode)</argsstring>
+        <name>RenderPolygonModeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894f" kindref="member">RenderPolygonMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="280" column="13" bodyfile="auto_comments_output/graphics.hpp" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a5d2739e91b08a8cd5eb5bb944dae9c8a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6" kindref="member">SelectMode</ref></type>
+        <definition>static SelectMode CMLibs::Zinc::Graphics::SelectModeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>SelectModeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="317" column="19" bodyfile="auto_comments_output/graphics.hpp" bodystart="317" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a48681f08318d5d806e62d5b645f713be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Graphics::SelectModeEnumToString</definition>
+        <argsstring>(SelectMode mode)</argsstring>
+        <name>SelectModeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6" kindref="member">SelectMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="322" column="13" bodyfile="auto_comments_output/graphics.hpp" bodystart="322" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1aa9828bbc52db224795a5ec73078c03a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" kindref="member">Type</ref></type>
+        <definition>static Type CMLibs::Zinc::Graphics::TypeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>TypeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="493" column="13" bodyfile="auto_comments_output/graphics.hpp" bodystart="493" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a82acc02ad10e3f8c8910b7ab9da4c610" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Graphics::TypeEnumToString</definition>
+        <argsstring>(Type type)</argsstring>
+        <name>TypeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="498" column="13" bodyfile="auto_comments_output/graphics.hpp" bodystart="498" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1a90b390ec339f348c9fd7ca17a85ac506" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4" kindref="member">BoundaryMode</ref></type>
+        <definition>static BoundaryMode CMLibs::Zinc::Graphics::BoundaryModeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>BoundaryModeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="656" column="21" bodyfile="auto_comments_output/graphics.hpp" bodystart="656" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphics_1ae1a1b67320f9836caf86f047f4364ab4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Graphics::BoundaryModeEnumToString</definition>
+        <argsstring>(BoundaryMode mode)</argsstring>
+        <name>BoundaryModeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4" kindref="member">BoundaryMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="661" column="13" bodyfile="auto_comments_output/graphics.hpp" bodystart="661" bodyend="664"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base graphics type: produces 3-D graphics visualising domains and fields. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base graphics type: produces 3-D graphics visualising domains and fields from the owning scene&apos;s region. Derived types (points, lines, surfaces, contours and streamlines) specify the algorithm used to create the graphics and may have additional type-specific attributes. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>CMLibs::Zinc::GraphicsSurfaces</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GraphicsSurfaces"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CMLibs::Zinc::GraphicsStreamlines</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GraphicsStreamlines"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::Graphics</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Graphics"/>
+      </node>
+      <node id="4">
+        <label>CMLibs::Zinc::GraphicsPoints</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GraphicsPoints"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::GraphicsContours</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GraphicsContours"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CMLibs::Zinc::GraphicsLines</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GraphicsLines"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="auto_comments_output/graphics.hpp" line="46" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="45" bodyend="786"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4abef4bda3b2facf15321994d1a7124fe7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BOUNDARY_MODE_ALL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a729f9559d62f87c3cf956bbdae23f3ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BOUNDARY_MODE_BOUNDARY</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a1d75c9e080106666b57551331aebac2a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BOUNDARY_MODE_INTERIOR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a8ea8288de9eddb27e5744a8dfa8b6880" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BOUNDARY_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a192d422686308e124dbf413a67664e98" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BOUNDARY_MODE_SUBGROUP_BOUNDARY</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4a8873545be270294390b3e77f0419e289" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BOUNDARY_MODE_SUBGROUP_INTERIOR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab009aa202e3ff23babc4c7e590d656f4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BoundaryMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a90b390ec339f348c9fd7ca17a85ac506" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BoundaryModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ae1a1b67320f9836caf86f047f4364ab4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>BoundaryModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a0d2f67fb57be1cab5a5f117211bcbf13" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>castContours</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a97e06c36f008a38bb2fccaf01e24dad6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>castLines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a7780a73088f4fadf33e69e4f9e5037ed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>castPoints</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab21b551f953cc4b6c11ceddada185ef8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>castStreamlines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa7438dfb4672466aa97cd61ac8721656" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>castSurfaces</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a566b61f64d972f99317fa3b8c0372186" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getBoundaryMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a336c885b0f75725776c53d1cc8e42f3a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getCoordinateField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa948efb735e761d527b957714acdaf06" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getDataField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aec2f9dca53632d8d6748c559694af404" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getElementFaceType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5f7ab37d0dcce91c95b5d0c476c46e52" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getFieldDomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab6d978c9565715506c8312086bb4d522" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getGraphicslineattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1af7338d267b44ab86fd9df008e63ab777" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getGraphicspointattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a58f7baa9c58018975c0eb9225428f5c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getGraphicssamplingattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a042eb0d22022371d387685370c851bb6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1af0cf1e6ae813c2a75accdc343d065c32" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a2dbb61769b06aacb389fddc179bbec11" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a3a597e5445b4463e3ea42db829d3ea46" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getRenderLineWidth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a2e012fc5a4bd6ba3a821c2e20a560232" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getRenderPointSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a54236585a8e74b55d4fe80acae35670a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getRenderPolygonMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa383d54d2b0e42502d07d28b965a9f16" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1acc7a0997b3136a195d6e6cb7c4a1c873" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getScenecoordinatesystem</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a54931a487be326e5c9ca43af98875e56" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getSelectedMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aceec302d7ff95a439e1dc530e694b408" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getSelectMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a8fd931206476d5fc5711e5ea33889496" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getSpectrum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa0ac26a228fb5cd0d6df2c88747f2f59" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getSubgroupField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a0c7131710b50dcd3b54aa5eeef377a70" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getTessellation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a4f99459f39f369149e5598fa77086837" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getTessellationField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a4c75a90e73176f355147864a0357f9f8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getTextureCoordinateField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a66e575d0a08aa990833c5485ea73c6aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a1ac2580f7c4c28948110936c5f0a8d32" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>getVisibilityFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aecdcb1bb1bac593dd5bb0bf51b578457" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>Graphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1abc0a51e305ecce21dff2a6b9e97178ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>Graphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a33f52b786197db7e17aa58b32885f2cf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>Graphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a97cf1712429a68b15a24d52f068e9c0a" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a36fe070deec2289dadf836a7803dab9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>isExterior</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aff667085baba3e6b4a8a7b1594cddf62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aba2e86221b99b883514394e826eb0fee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fae1bbd1e275d08ba2a6f3a3ca3e3dec3d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>RENDER_POLYGON_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fa2074283247b48e7603db9ed243961552" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>RENDER_POLYGON_MODE_SHADED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894fa3a641cc035baf091faf91fede1601e6a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>RENDER_POLYGON_MODE_WIREFRAME</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ab290cf0316536a5780795ab93269894f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>RenderPolygonMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a2767d70398c5c97c400c27b3f9da548c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>RenderPolygonModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ac84d7b99bb2536e190887011cd528b93" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>RenderPolygonModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a8cf08a3b2e96ea9d8a2e95b8492f6ce6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>SELECT_MODE_DRAW_SELECTED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a30b626eae6cdb209a0dad5a64cec0125" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>SELECT_MODE_DRAW_UNSELECTED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a4cbfdcac0d9b8b12f9167121005fe171" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>SELECT_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a29c62c1a00a8244b0ab7ded7ef9406ee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>SELECT_MODE_OFF</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6a950081bf62fa62a4c87d72eb2ff46442" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>SELECT_MODE_ON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a770f63717cafc66e747d518e5abefbf6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>SelectMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5d2739e91b08a8cd5eb5bb944dae9c8a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>SelectModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a48681f08318d5d806e62d5b645f713be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>SelectModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a18f7720ee37c8ac58cf673cf87b925e1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setBoundaryMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a8727716495e46cda752514fba111a10f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setCoordinateField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a7d7b117dd6c0d42e8a62d6b725d75a56" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setDataField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a36b7a9c5d51e81341c38dd26926dd046" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setElementFaceType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a2c40ccba5eed99a9d2946f403a16f480" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setExterior</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a60136842d4d80c13748cfde1221ce999" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setFieldDomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1af2f115d7056287026e0214c8170b91d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a251bd37d1aac81f3a4c2a33b5ae5f6dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a0f1aeac578a90b35d9f7066fbf136a06" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setRenderLineWidth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a91a90faa131d371e19e72a9886636b03" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setRenderPointSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a52059e7bf3720391b1bf0ce880dd89e6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setRenderPolygonMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5cba63d298610fc2c92d73364790a550" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setScenecoordinatesystem</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a273f2f93dff3134a9701b43d76a52d4d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setSelectedMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a6a2abc2eb72c17c6c3c4aac0fe2893cd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setSelectMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ac4131fe7d819e99379d9d8ab96f05ecc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setSpectrum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ac5172b0d8d7c9e0492120fbe5ad6d3dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setSubgroupField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a4e543c4c9613187e08919da0807dd43d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setTessellation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a41c0eb3a9dfc6ad263efc19950f6ec43" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setTessellationField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a4e8bc7ce2d4cce5643d8d1a08346cd92" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setTextureCoordinateField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1ade33525f14355ad2078f1ca5c62e7ff0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>setVisibilityFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>Type</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea779d4ca24b8ce1a34b2f356a52a2293d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>TYPE_CONTOURS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea1d96adba787ccd83d662e41a2a12c5cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea6394814c38bb6ebda2cdbe1bea4d5ad7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>TYPE_LINES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173eae28f794a38736eedc24b52c17cc196a3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>TYPE_POINTS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ea4e8ad66d9155660bc4f8e186dd691ca7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>TYPE_STREAMLINES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173ead66c6b522a2c716091d0df1df43d1d85" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>TYPE_SURFACES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aa9828bbc52db224795a5ec73078c03a1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>TypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1a82acc02ad10e3f8c8910b7ab9da4c610" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>TypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphics_1aae578918fa912a0c2033762cb4a1acec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphics</scope><name>~Graphics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

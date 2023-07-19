@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274faf16771060d26c67939e6f8175d56c106" kindref="member">CMLibs::Zinc::Optimisation::ATTRIBUTE_TRUST_REGION_SIZE</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>Need to better initialise the default value, see <ulink url="https://software.sandia.gov/opt++/opt++2.4_doc/html/ControlParameters.html">https://software.sandia.gov/opt++/opt++2.4_doc/html/ControlParameters.html</ulink>)</para>
+<para><anchor id="todo_1_todo000003"/>Reserving this one for when trust region methods are available via the API. Currently everything uses linesearch methods only.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28" kindref="member">CMLibs::Zinc::Optimisation::Method</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>Might be worth separating the non-linear problem setup from the optimisation algorithm to mirror the underlying Opt++ structure? </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

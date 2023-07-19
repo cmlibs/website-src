@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_bf0c7a0c9bb3508f80d905be9a481ab2" kind="dir">
+    <compoundname>auto_comments_output</compoundname>
+    <innerfile refid="changemanager_8hpp">changemanager.hpp</innerfile>
+    <innerfile refid="context_8hpp">context.hpp</innerfile>
+    <innerfile refid="differentialoperator_8hpp">differentialoperator.hpp</innerfile>
+    <innerfile refid="element_8hpp">element.hpp</innerfile>
+    <innerfile refid="elementbasis_8hpp">elementbasis.hpp</innerfile>
+    <innerfile refid="elementfieldtemplate_8hpp">elementfieldtemplate.hpp</innerfile>
+    <innerfile refid="elementtemplate_8hpp">elementtemplate.hpp</innerfile>
+    <innerfile refid="field_8hpp">field.hpp</innerfile>
+    <innerfile refid="fieldapply_8hpp">fieldapply.hpp</innerfile>
+    <innerfile refid="fieldarithmeticoperators_8hpp">fieldarithmeticoperators.hpp</innerfile>
+    <innerfile refid="fieldassignment_8hpp">fieldassignment.hpp</innerfile>
+    <innerfile refid="fieldcache_8hpp">fieldcache.hpp</innerfile>
+    <innerfile refid="fieldcomposite_8hpp">fieldcomposite.hpp</innerfile>
+    <innerfile refid="fieldconditional_8hpp">fieldconditional.hpp</innerfile>
+    <innerfile refid="fieldconstant_8hpp">fieldconstant.hpp</innerfile>
+    <innerfile refid="fieldcoordinatetransformation_8hpp">fieldcoordinatetransformation.hpp</innerfile>
+    <innerfile refid="fieldderivatives_8hpp">fieldderivatives.hpp</innerfile>
+    <innerfile refid="fieldfibres_8hpp">fieldfibres.hpp</innerfile>
+    <innerfile refid="fieldfiniteelement_8hpp">fieldfiniteelement.hpp</innerfile>
+    <innerfile refid="fieldgroup_8hpp">fieldgroup.hpp</innerfile>
+    <innerfile refid="fieldimage_8hpp">fieldimage.hpp</innerfile>
+    <innerfile refid="fieldimageprocessing_8hpp">fieldimageprocessing.hpp</innerfile>
+    <innerfile refid="fieldlogicaloperators_8hpp">fieldlogicaloperators.hpp</innerfile>
+    <innerfile refid="fieldmatrixoperators_8hpp">fieldmatrixoperators.hpp</innerfile>
+    <innerfile refid="fieldmeshoperators_8hpp">fieldmeshoperators.hpp</innerfile>
+    <innerfile refid="fieldmodule_8hpp">fieldmodule.hpp</innerfile>
+    <innerfile refid="fieldnodesetoperators_8hpp">fieldnodesetoperators.hpp</innerfile>
+    <innerfile refid="fieldparameters_8hpp">fieldparameters.hpp</innerfile>
+    <innerfile refid="fieldrange_8hpp">fieldrange.hpp</innerfile>
+    <innerfile refid="fieldsceneviewerprojection_8hpp">fieldsceneviewerprojection.hpp</innerfile>
+    <innerfile refid="fieldsmoothing_8hpp">fieldsmoothing.hpp</innerfile>
+    <innerfile refid="fieldtime_8hpp">fieldtime.hpp</innerfile>
+    <innerfile refid="fieldtrigonometry_8hpp">fieldtrigonometry.hpp</innerfile>
+    <innerfile refid="fieldvectoroperators_8hpp">fieldvectoroperators.hpp</innerfile>
+    <innerfile refid="font_8hpp">font.hpp</innerfile>
+    <innerfile refid="glyph_8hpp">glyph.hpp</innerfile>
+    <innerfile refid="graphics_8hpp">graphics.hpp</innerfile>
+    <innerfile refid="light_8hpp">light.hpp</innerfile>
+    <innerfile refid="logger_8hpp">logger.hpp</innerfile>
+    <innerfile refid="material_8hpp">material.hpp</innerfile>
+    <innerfile refid="mesh_8hpp">mesh.hpp</innerfile>
+    <innerfile refid="node_8hpp">node.hpp</innerfile>
+    <innerfile refid="nodeset_8hpp">nodeset.hpp</innerfile>
+    <innerfile refid="nodetemplate_8hpp">nodetemplate.hpp</innerfile>
+    <innerfile refid="optimisation_8hpp">optimisation.hpp</innerfile>
+    <innerfile refid="region_8hpp">region.hpp</innerfile>
+    <innerfile refid="result_8hpp">result.hpp</innerfile>
+    <innerfile refid="scene_8hpp">scene.hpp</innerfile>
+    <innerfile refid="scenecoordinatesystem_8hpp">scenecoordinatesystem.hpp</innerfile>
+    <innerfile refid="scenefilter_8hpp">scenefilter.hpp</innerfile>
+    <innerfile refid="scenepicker_8hpp">scenepicker.hpp</innerfile>
+    <innerfile refid="sceneviewer_8hpp">sceneviewer.hpp</innerfile>
+    <innerfile refid="sceneviewerinput_8hpp">sceneviewerinput.hpp</innerfile>
+    <innerfile refid="selection_8hpp">selection.hpp</innerfile>
+    <innerfile refid="shader_8hpp">shader.hpp</innerfile>
+    <innerfile refid="spectrum_8hpp">spectrum.hpp</innerfile>
+    <innerfile refid="status_8hpp">status.hpp</innerfile>
+    <innerfile refid="stream_8hpp">stream.hpp</innerfile>
+    <innerfile refid="streamimage_8hpp">streamimage.hpp</innerfile>
+    <innerfile refid="streamregion_8hpp">streamregion.hpp</innerfile>
+    <innerfile refid="streamscene_8hpp">streamscene.hpp</innerfile>
+    <innerfile refid="tessellation_8hpp">tessellation.hpp</innerfile>
+    <innerfile refid="timekeeper_8hpp">timekeeper.hpp</innerfile>
+    <innerfile refid="timenotifier_8hpp">timenotifier.hpp</innerfile>
+    <innerfile refid="timesequence_8hpp">timesequence.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="auto_comments_output/"/>
+  </compounddef>
+</doxygen>

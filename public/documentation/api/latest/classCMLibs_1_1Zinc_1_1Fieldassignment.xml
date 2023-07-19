@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Fieldassignment" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Fieldassignment</compoundname>
+    <includes refid="fieldassignment_8hpp" local="no">fieldassignment.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a023fb63919e6aafa23e0ce679865692b" prot="protected" static="no" mutable="no">
+        <type>cmzn_fieldassignment_id</type>
+        <definition>cmzn_fieldassignment_id CMLibs::Zinc::Fieldassignment::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="47" column="25" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a2d2bd51841b36248509f0a1fa9677afc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldassignment::Fieldassignment</definition>
+        <argsstring>()</argsstring>
+        <name>Fieldassignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="51" column="1" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1acd04212d6ad0ee020951d765a5612a5f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldassignment::Fieldassignment</definition>
+        <argsstring>(cmzn_fieldassignment_id fieldassignment_id)</argsstring>
+        <name>Fieldassignment</name>
+        <param>
+          <type>cmzn_fieldassignment_id</type>
+          <declname>fieldassignment_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="57" column="10" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a253b2ac6dc2587e2de860e5add114c14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldassignment::Fieldassignment</definition>
+        <argsstring>(const Fieldassignment &amp;fieldassignment)</argsstring>
+        <name>Fieldassignment</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment" kindref="compound">Fieldassignment</ref> &amp;</type>
+          <declname>fieldassignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="62" column="1" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a81a8969ae2f118cf9012f2dfe60b645a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment" kindref="compound">Fieldassignment</ref> &amp;</type>
+        <definition>Fieldassignment&amp; CMLibs::Zinc::Fieldassignment::operator=</definition>
+        <argsstring>(const Fieldassignment &amp;fieldassignment)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment" kindref="compound">Fieldassignment</ref> &amp;</type>
+          <declname>fieldassignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="67" column="17" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="67" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a484e93c84f69518f880e7ffde6d134f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldassignment::~Fieldassignment</definition>
+        <argsstring>()</argsstring>
+        <name>~Fieldassignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="78" column="1" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="78" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1adda2987723bab2ccf9e35d5e41e6b515" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Fieldassignment::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment" kindref="compound">Fieldassignment</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="91" column="6" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a35dc26ee5c39721a48cfcdce9567170a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_fieldassignment_id</type>
+        <definition>cmzn_fieldassignment_id CMLibs::Zinc::Fieldassignment::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment" kindref="compound">Fieldassignment</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment" kindref="compound">Fieldassignment</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="101" column="25" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a59579c4e96fdead878366be90c30be01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldassignment::assign</definition>
+        <argsstring>()</argsstring>
+        <name>assign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform assignment of values from source to target field.</para>
+<para><simplesect kind="return"><para>Result OK on success, WARNING_PART_DONE if partial success, otherwise any other error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="112" column="5" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a4bca500951cf35aba4ad476d6b472480" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Fieldassignment::getConditionalField</definition>
+        <argsstring>() const</argsstring>
+        <name>getConditionalField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current conditional field for the field assignment. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a3a92e5715d02c6bfe938cffc0afbf2fc" kindref="member">Fieldassignment::setConditionalField</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to conditional field, or NULL/invalid handle if none or invalid field assignment object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="124" column="7" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a3a92e5715d02c6bfe938cffc0afbf2fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldassignment::setConditionalField</definition>
+        <argsstring>(const Field &amp;conditionalField)</argsstring>
+        <name>setConditionalField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>conditionalField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set conditional field determining which parts of the target field domain, or domain where DOFs are defined, to assign values over.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conditionalField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The conditional field to set, or invalid handle to clear. This is commonly a generic or node group field, but may be any field expression returning non-zero/true at domain locations of the target field where values are to be assigned, zero/false where no assignment is done. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="139" column="5" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a84215223b84cea0e71eff49d02cc3516" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref></type>
+        <definition>Nodeset CMLibs::Zinc::Fieldassignment::getNodeset</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodeset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nodeset for the field assignment, if set. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a86c5005a05b5e78e4bb06fb3704f7ef4" kindref="member">Fieldassignment::setNodeset</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to conditional field, or NULL/invalid handle if none or invalid field assignment object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="151" column="9" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a86c5005a05b5e78e4bb06fb3704f7ef4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldassignment::setNodeset</definition>
+        <argsstring>(const Nodeset &amp;nodeset)</argsstring>
+        <name>setNodeset</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set nodeset over which DOFs are assigned. Pass NULL/invalid nodeset to assign over default nodeset &apos;nodes&apos;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodeset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodeset or nodeset group to assign over, or NULL/invalid to clear to default. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="164" column="5" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1afbe962dbf60b9fe4a587199563d062b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Fieldassignment::getSourceField</definition>
+        <argsstring>() const</argsstring>
+        <name>getSourceField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the source field for the field assignment.</para>
+<para><simplesect kind="return"><para>Handle to source field, or NULL/invalid handle if invalid field assignment object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="175" column="7" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldassignment_1a6d8d6c602cf487c4d88da4057a5879c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Fieldassignment::getTargetField</definition>
+        <argsstring>() const</argsstring>
+        <name>getTargetField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the target field for the field assignment.</para>
+<para><simplesect kind="return"><para>Handle to target field, or NULL/invalid handle if invalid field assignment object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldassignment.hpp" line="186" column="7" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="186" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Object for assigning values of a field from a source field. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Object performing assignment of a source field to a target field so that the target field will afterwards give as near as possible the same values over its domain as the source. Beware this object may not handle all cases, notably element-based fields. It is initially designed to assign node parameters, and normally only the node field value is assigned to. If the target field is real-valued finite element type then three special cases are handled:<orderedlist>
+<listitem><para>If the source field is finite element type, derivatives and versions are copied directly. Only derivatives/versions present in both source and target field at the node are evaluated and assigned.</para>
+</listitem><listitem><para>If the source field is a function of the target field, it attempts to assign appropriately to different value versions and derivatives, latter by computing the gradient of the source w.r.t. target. In both cases only simple functions of target field value are currently expected to work.</para>
+</listitem><listitem><para>If the source field is not a function of the target field, the source field values are simply evaluated and assigned to all versions of the value parameter of the target field at the node. </para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/fieldassignment.hpp" line="45" column="1" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="44" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a59579c4e96fdead878366be90c30be01" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>assign</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a2d2bd51841b36248509f0a1fa9677afc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>Fieldassignment</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1acd04212d6ad0ee020951d765a5612a5f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>Fieldassignment</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a253b2ac6dc2587e2de860e5add114c14" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>Fieldassignment</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a4bca500951cf35aba4ad476d6b472480" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>getConditionalField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a35dc26ee5c39721a48cfcdce9567170a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a84215223b84cea0e71eff49d02cc3516" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>getNodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1afbe962dbf60b9fe4a587199563d062b1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>getSourceField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a6d8d6c602cf487c4d88da4057a5879c0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>getTargetField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a023fb63919e6aafa23e0ce679865692b" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1adda2987723bab2ccf9e35d5e41e6b515" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a81a8969ae2f118cf9012f2dfe60b645a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a3a92e5715d02c6bfe938cffc0afbf2fc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>setConditionalField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a86c5005a05b5e78e4bb06fb3704f7ef4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>setNodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldassignment_1a484e93c84f69518f880e7ffde6d134f0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldassignment</scope><name>~Fieldassignment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

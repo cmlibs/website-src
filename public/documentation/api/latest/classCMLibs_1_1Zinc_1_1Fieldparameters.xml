@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Fieldparameters" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Fieldparameters</compoundname>
+    <includes refid="fieldparameters_8hpp" local="no">fieldparameters.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a8fe24f92ae3a14fc8fe0ff449d6174a1" prot="protected" static="no" mutable="no">
+        <type>cmzn_fieldparameters_id</type>
+        <definition>cmzn_fieldparameters_id CMLibs::Zinc::Fieldparameters::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="33" column="25" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a0af53ab70916ec711103c46230ed8055" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldparameters::Fieldparameters</definition>
+        <argsstring>()</argsstring>
+        <name>Fieldparameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="37" column="1" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1ac8cd241325f100eae8adc4ba3eaed9d4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldparameters::Fieldparameters</definition>
+        <argsstring>(cmzn_fieldparameters_id fieldparameters_id)</argsstring>
+        <name>Fieldparameters</name>
+        <param>
+          <type>cmzn_fieldparameters_id</type>
+          <declname>fieldparameters_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="43" column="10" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1ab0aa0005ad5bb1a0cdf85472f64f0e4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldparameters::Fieldparameters</definition>
+        <argsstring>(const Fieldparameters &amp;fieldparameters)</argsstring>
+        <name>Fieldparameters</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters" kindref="compound">Fieldparameters</ref> &amp;</type>
+          <declname>fieldparameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="48" column="1" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a0cc53631dfc8592c69c00b937577a933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters" kindref="compound">Fieldparameters</ref> &amp;</type>
+        <definition>Fieldparameters&amp; CMLibs::Zinc::Fieldparameters::operator=</definition>
+        <argsstring>(const Fieldparameters &amp;fieldparameters)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters" kindref="compound">Fieldparameters</ref> &amp;</type>
+          <declname>fieldparameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="53" column="17" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a8fb10d0f34a7d2a64b182b0c31b217a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldparameters::~Fieldparameters</definition>
+        <argsstring>()</argsstring>
+        <name>~Fieldparameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="64" column="1" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a30a6dbe8f27fdfb2f3a8afa7558b9161" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Fieldparameters::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters" kindref="compound">Fieldparameters</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="77" column="6" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a6581b5e067eb2e7d0952a692c6502bd6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_fieldparameters_id</type>
+        <definition>cmzn_fieldparameters_id CMLibs::Zinc::Fieldparameters::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters" kindref="compound">Fieldparameters</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters" kindref="compound">Fieldparameters</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="87" column="25" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a82306fc06325527688f0d71bd9b487fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref></type>
+        <definition>Differentialoperator CMLibs::Zinc::Fieldparameters::getDerivativeOperator</definition>
+        <argsstring>(int order) const</argsstring>
+        <name>getDerivativeOperator</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a differential operator for evaluating derivatives of a field with respect to these field parameters, generally per-element.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The order of the derivative. Currently must be 1 or 2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to differential operator, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="99" column="22" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a497287719464583ab07de358c706ac51" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref></type>
+        <definition>Differentialoperator CMLibs::Zinc::Fieldparameters::getHigherDerivativeOperator</definition>
+        <argsstring>(const Differentialoperator &amp;sourceOperator, int addOrder) const</argsstring>
+        <name>getHigherDerivativeOperator</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref> &amp;</type>
+          <declname>sourceOperator</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>addOrder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a differential operator applying the derivative of the source differential operator with respect to these field parameters, generally per-element. Note when evaluated, parameter derivatives are always nested within and cycle faster than prior derivatives, as performed last.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;sourceOperator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Existing differential operator to take further derivative of. Currently limited to be a derivative w.r.t. mesh chart from this region with all terms (-1) present and/or derivatives w.r.t. these parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addOrder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The order of the parameter derivative to add to existing derivative. Sum of this and current parameter differential operator order may be 1 or 2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to differential operator, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="120" column="22" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a2c352d7cd08f10431655e51ce5366c66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldparameters::getElementParameterIndexes</definition>
+        <argsstring>(const Element &amp;element, int valuesCount, int *valuesOut) const</argsstring>
+        <name>getElementParameterIndexes</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the array of parameter indexes in the order used in element, used to assemble vector and matrix values obtained from parameter derivatives. This variant returns one-based indexes (first index is 1).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array to fill, must be at least the number of element parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive one-based indexes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if field not defined at element, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="137" column="5" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1ab05d14927a7e639e2893f077a7bbaaf5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldparameters::getElementParameterIndexesZero</definition>
+        <argsstring>(const Element &amp;element, int valuesCount, int *valuesOut) const</argsstring>
+        <name>getElementParameterIndexesZero</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the array of parameter indexes in the order used in element, used to assemble vector and matrix values obtained from parameter derivatives. This variant returns zero-based indexes (first index is 0).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array to fill, must be at least the number of element parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive zero-based indexes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if field not defined at element, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="154" column="5" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a109cf38928a9c11c102bcecb37eb7e27" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Fieldparameters::getField</definition>
+        <argsstring>() const</argsstring>
+        <name>getField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the field these field parameters are for.</para>
+<para><simplesect kind="return"><para>Handle to field, or NULL/invalid handle if invalid field parameters object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="165" column="7" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a827b760e96e15a52cd4c4ba2bb92fdba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldparameters::getNumberOfElementParameters</definition>
+        <argsstring>(const Element &amp;element) const</argsstring>
+        <name>getNumberOfElementParameters</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of parameters for the field in element.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to query. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of field parameters in element, including 0 if not defined or no parameters, or -1 if invalid arguments given. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="177" column="5" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a3ff7f4ea307a80a4251a6050291994c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldparameters::getNumberOfParameters</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the total number of parameters for the field, typically used to initialise sizes of the global solution matrix and vector. A call to this function is needed to build internal parameter maps, both initially and after changing definition of the field e.g. at nodes. This must be done before using other APIs for getting numbers and indexes of element parameters or to get/set/add parameters; the use of those other APIs is expected to be carried out only while the field is unchanging.</para>
+<para><simplesect kind="return"><para>Number of field parameters or -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="193" column="5" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1ab844fa67ffee5ee2c0a38c366299848f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldparameters::addParameters</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>addParameters</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add incremental values to all field parameters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesIn array, must be at least the total number of parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing increments to add to all field parameters, in their default index order i.e. given by get element parameter indexes functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="208" column="5" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a9a4e91473d40c4af38b2626b61949f74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldparameters::getParameters</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getParameters</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get all field parameters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array, must be at least the total number of parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to contain values of all field parameters, in their default index order i.e. given by get element parameter indexes functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="222" column="5" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1aaf41ae4de9390bdaeddb8178c72de60f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldparameters::setParameters</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setParameters</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set all field parameters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesIn array, must be at least the total number of parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing new values for all field parameters, in their default index order i.e. given by get element parameter indexes functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="237" column="5" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1aaea893d778fabc286442be050224cb10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Fieldparameters::getTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get time at which parameters are being used.</para>
+<para><simplesect kind="return"><para>Time being used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="247" column="8" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldparameters_1a8baf89edb2dfae41ec002820e64dd1c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldparameters::setTime</definition>
+        <argsstring>(double timeIn)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>double</type>
+          <declname>timeIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set time at which parameters are to be used. Default is 0.0. Client should get number of parameters after this call in case different.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time to set. Expected to match a time that parameters are held for the field at nodes. This is not currently checked but a check may be added in future. If it is not a valid time, errors will result when used in subsequent API calls. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldparameters.hpp" line="262" column="5" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="262" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface to parameters of a field. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface to parameters of a field allowing solvers to index them, and to access derivative operators with respect to element parameters. Note that only node-based field parameters are supported at present. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/fieldparameters.hpp" line="31" column="1" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="30" bodyend="266"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1ab844fa67ffee5ee2c0a38c366299848f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>addParameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a0af53ab70916ec711103c46230ed8055" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>Fieldparameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1ac8cd241325f100eae8adc4ba3eaed9d4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>Fieldparameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1ab0aa0005ad5bb1a0cdf85472f64f0e4a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>Fieldparameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a82306fc06325527688f0d71bd9b487fc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getDerivativeOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a2c352d7cd08f10431655e51ce5366c66" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getElementParameterIndexes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1ab05d14927a7e639e2893f077a7bbaaf5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getElementParameterIndexesZero</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a109cf38928a9c11c102bcecb37eb7e27" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a497287719464583ab07de358c706ac51" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getHigherDerivativeOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a6581b5e067eb2e7d0952a692c6502bd6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a827b760e96e15a52cd4c4ba2bb92fdba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getNumberOfElementParameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a3ff7f4ea307a80a4251a6050291994c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getNumberOfParameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a9a4e91473d40c4af38b2626b61949f74" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getParameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1aaea893d778fabc286442be050224cb10" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>getTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a8fe24f92ae3a14fc8fe0ff449d6174a1" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a30a6dbe8f27fdfb2f3a8afa7558b9161" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a0cc53631dfc8592c69c00b937577a933" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1aaf41ae4de9390bdaeddb8178c72de60f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>setParameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a8baf89edb2dfae41ec002820e64dd1c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>setTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a8fb10d0f34a7d2a64b182b0c31b217a0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldparameters</scope><name>~Fieldparameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

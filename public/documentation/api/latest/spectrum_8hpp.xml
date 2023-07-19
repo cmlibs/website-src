@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="spectrum_8hpp" kind="file" language="C++">
+    <compoundname>spectrum.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/spectrum.h</includes>
+    <includes local="yes">cmlibs/zinc/context.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>cmlibs/zinc/spectrum.h</label>
+      </node>
+      <node id="3">
+        <label>cmlibs/zinc/context.hpp</label>
+      </node>
+      <node id="1">
+        <label>auto_comments_output/spectrum.hpp</label>
+        <link refid="spectrum_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" prot="public">CMLibs::Zinc::Spectrumcomponent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrum" prot="public">CMLibs::Zinc::Spectrum</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" prot="public">CMLibs::Zinc::Spectrumiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrummodule" prot="public">CMLibs::Zinc::Spectrummodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" prot="public">CMLibs::Zinc::Spectrummoduleevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" prot="public">CMLibs::Zinc::Spectrummodulecallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" prot="public">CMLibs::Zinc::Spectrummodulenotifier</innerclass>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_SPECTRUM_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_SPECTRUM_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/spectrum.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/context.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Scene;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Scenefilter;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Spectrummodulenotifier;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrumcomponent_id<sp/>id;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(0)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>(</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrumcomponent_id<sp/>in_spectrumcomponent_id)<sp/>:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_spectrumcomponent_id)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>&amp;<sp/>spectrumComponent)<sp/>:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_spectrumcomponent_access(spectrumComponent.id))</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>&amp;<sp/>spectrumComponent)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrumcomponent_id<sp/>temp_id<sp/>=<sp/>cmzn_spectrumcomponent_access(</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spectrumComponent.id);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrumcomponent_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrumcomponent_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6f4d970f54972f53079697b5c4f9508f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6f4d970f54972f53079697b5c4f9508f" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" kindref="member">ScaleType</ref></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1a8cbf045aece078f4dcb5345f0b925e9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1a8cbf045aece078f4dcb5345f0b925e9c" kindref="member">SCALE_TYPE_INVALID</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_SCALE_TYPE_INVALID,</highlight></codeline>
+<codeline lineno="92" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1a54092c065b9444c41a89bb6d07558474" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1a54092c065b9444c41a89bb6d07558474" kindref="member">SCALE_TYPE_LINEAR</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_SCALE_TYPE_LINEAR,</highlight></codeline>
+<codeline lineno="98" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1afdf270be29a6c46cba40386e0d5c13a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1afdf270be29a6c46cba40386e0d5c13a4" kindref="member">SCALE_TYPE_LOG</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_SCALE_TYPE_LOG</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" kindref="member">ColourMappingType</ref></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a9822c1d7506b732f04c724adb441f702" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a9822c1d7506b732f04c724adb441f702" kindref="member">COLOUR_MAPPING_TYPE_INVALID</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_INVALID,</highlight></codeline>
+<codeline lineno="114" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a1f921bb2357cb2395261cc10de659d4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a1f921bb2357cb2395261cc10de659d4d" kindref="member">COLOUR_MAPPING_TYPE_ALPHA</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_ALPHA,</highlight></codeline>
+<codeline lineno="121" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3c0272dfe22b68a44b9f1eb68e2c40bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3c0272dfe22b68a44b9f1eb68e2c40bb" kindref="member">COLOUR_MAPPING_TYPE_BANDED</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_BANDED,</highlight></codeline>
+<codeline lineno="130" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ad7675d18fd32f7a03abfc17d5c7853b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ad7675d18fd32f7a03abfc17d5c7853b4" kindref="member">COLOUR_MAPPING_TYPE_BLUE</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_BLUE,</highlight></codeline>
+<codeline lineno="133" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a98ce47d88658c9ada0994f833619f400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a98ce47d88658c9ada0994f833619f400" kindref="member">COLOUR_MAPPING_TYPE_GREEN</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_GREEN,</highlight></codeline>
+<codeline lineno="136" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a28c70f6060e1a3105d4734fe5446fdbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a28c70f6060e1a3105d4734fe5446fdbb" kindref="member">COLOUR_MAPPING_TYPE_MONOCHROME</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_MONOCHROME,</highlight></codeline>
+<codeline lineno="139" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ae34629ce0f891d2edf7a2a3dde130b4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ae34629ce0f891d2edf7a2a3dde130b4d" kindref="member">COLOUR_MAPPING_TYPE_RAINBOW</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_RAINBOW,</highlight></codeline>
+<codeline lineno="145" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ae7a202731494ba18004cda17ff54d316" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ae7a202731494ba18004cda17ff54d316" kindref="member">COLOUR_MAPPING_TYPE_RED</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_RED,</highlight></codeline>
+<codeline lineno="148" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841aa1bdc14efae2c1076fff1903a2e24a9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841aa1bdc14efae2c1076fff1903a2e24a9e" kindref="member">COLOUR_MAPPING_TYPE_STEP</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_STEP,</highlight></codeline>
+<codeline lineno="153" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3556299e51d8a1ab255aae4efa85db03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3556299e51d8a1ab255aae4efa85db03" kindref="member">COLOUR_MAPPING_TYPE_WHITE_TO_BLUE</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_WHITE_TO_BLUE,</highlight></codeline>
+<codeline lineno="156" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a938a66769b80fbd5e952ea565e149fc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a938a66769b80fbd5e952ea565e149fc5" kindref="member">COLOUR_MAPPING_TYPE_WHITE_TO_RED</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_WHITE_TO_RED,</highlight></codeline>
+<codeline lineno="159" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a8b32b214531eb19ae8b353f40777493b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a8b32b214531eb19ae8b353f40777493b" kindref="member">COLOUR_MAPPING_TYPE_WHITE_TO_GREEN</ref><sp/>=<sp/>CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_WHITE_TO_GREEN</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrumcomponent_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="170"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9865858a4ba69517af0bd3384cd0f4d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9865858a4ba69517af0bd3384cd0f4d2" kindref="member">getRangeMinimum</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="182"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_range_minimum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae36931d3247a75606f4a7e8f2bb03a66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae36931d3247a75606f4a7e8f2bb03a66" kindref="member">setRangeMinimum</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_range_minimum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9912c503e05b2c8ba3ff394f309ba86d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9912c503e05b2c8ba3ff394f309ba86d" kindref="member">getRangeMaximum</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="208"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_range_maximum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9465bb45b3c788d385b82f16227ca4da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9465bb45b3c788d385b82f16227ca4da" kindref="member">setRangeMaximum</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_range_maximum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0d0ecebb40c3897842e1f81b1a8b04e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0d0ecebb40c3897842e1f81b1a8b04e8" kindref="member">getColourMinimum</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="233"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_colour_minimum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0d05ba58f66a3e2dcd26511f7a6d3226" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0d05ba58f66a3e2dcd26511f7a6d3226" kindref="member">setColourMinimum</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_colour_minimum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,value);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0e438c5b9dfade1f73e4c55c326df0c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0e438c5b9dfade1f73e4c55c326df0c4" kindref="member">getColourMaximum</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="265"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_colour_maximum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a5dc954ab0f88a3eb382ddad5cff0f3d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a5dc954ab0f88a3eb382ddad5cff0f3d1" kindref="member">setColourMaximum</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_colour_maximum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae4c5a7f090be93ca7571d3d79da05d97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae4c5a7f090be93ca7571d3d79da05d97" kindref="member">getStepValue</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="298"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_step_value(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7704f9fbffdadb37b155a6bfe8bc0a5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7704f9fbffdadb37b155a6bfe8bc0a5a" kindref="member">setStepValue</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_step_value(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abde6c4eceef29ee7202fa1796e96a798" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abde6c4eceef29ee7202fa1796e96a798" kindref="member">getExaggeration</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="324"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_exaggeration(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aac95cf31e1801602c5429e38196b443e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aac95cf31e1801602c5429e38196b443e" kindref="member">setExaggeration</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_exaggeration(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ace7710adb61f3eb8372056474b38d4a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ace7710adb61f3eb8372056474b38d4a9" kindref="member">getBandedRatio</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="350"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_banded_ratio(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a153f33c8aa2099e4428227ad7fb8c8db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a153f33c8aa2099e4428227ad7fb8c8db" kindref="member">setBandedRatio</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_banded_ratio(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab46337cfdd0d7e3efce5f740ca896234" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab46337cfdd0d7e3efce5f740ca896234" kindref="member">isActive</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="376"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_is_active(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a01f9314fa4191a15361e52fc0394f5ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a01f9314fa4191a15361e52fc0394f5ef" kindref="member">setActive</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>active)</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_active(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>active);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9d40015bcee3648c84d8420aa06559ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9d40015bcee3648c84d8420aa06559ca" kindref="member">isColourReverse</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="401"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_is_colour_reverse(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a1470f095bd6ee4ff5e660cfbc2994823" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a1470f095bd6ee4ff5e660cfbc2994823" kindref="member">setColourReverse</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reverse)</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_colour_reverse(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>reverse);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1af9c5050999d89e10daa0117529fd2925" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1af9c5050999d89e10daa0117529fd2925" kindref="member">isExtendAbove</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="430"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_is_extend_above(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a541ea9f5dd16a28bd8b845864064a59b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a541ea9f5dd16a28bd8b845864064a59b" kindref="member">setExtendAbove</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>extend_above)</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_extend_above(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>extend_above);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a3c56c7dee16132800eed878584046ae2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a3c56c7dee16132800eed878584046ae2" kindref="member">isExtendBelow</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="459"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_is_extend_below(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abc0008de658fb21525a1590cebce6f0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abc0008de658fb21525a1590cebce6f0a" kindref="member">setExtendBelow</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>extend_below)</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_extend_below(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>extend_below);</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa3f53ef08fb6eda6eafbad01cf2501d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa3f53ef08fb6eda6eafbad01cf2501d4" kindref="member">getFieldComponent</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="489"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_field_component(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a2cff4f22dde3e20abf03bc74146c81ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a2cff4f22dde3e20abf03bc74146c81ce" kindref="member">setFieldComponent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>componentNumber)</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_field_component(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>componentNumber);</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a71eb9b0be7a635c5e4733dcc63d0b901" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a71eb9b0be7a635c5e4733dcc63d0b901" kindref="member">isFixMaximum</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="516"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_is_fix_maximum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa14a56adef3ce74afb4ed7d48526c017" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa14a56adef3ce74afb4ed7d48526c017" kindref="member">setFixMaximum</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fixMaximum)</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_fix_maximum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>fixMaximum);</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="542" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a3fd5345d4214e97b2a74034f18f24c1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a3fd5345d4214e97b2a74034f18f24c1a" kindref="member">isFixMinimum</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="543"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_is_fix_minimum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab838d85639393d1ed6a23cb5b6e2f898" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab838d85639393d1ed6a23cb5b6e2f898" kindref="member">setFixMinimum</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fixMinimum)</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_fix_minimum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>fixMinimum);</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="571" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a20dbb1ed32f9d4989e25153c3564121d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a20dbb1ed32f9d4989e25153c3564121d" kindref="member">getNumberOfBands</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="572"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_get_number_of_bands(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aaa6af85b534d00268c909ddac3492866" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aaa6af85b534d00268c909ddac3492866" kindref="member">setNumberOfBands</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numberOfBands)</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_number_of_bands(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>numberOfBands);</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae735884d6d35ac76819db6b4a574a794" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" kindref="member">ScaleType</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae735884d6d35ac76819db6b4a574a794" kindref="member">getScaleType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="599"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" kindref="member">ScaleType</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cmzn_spectrumcomponent_get_scale_type(</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight></codeline>
+<codeline lineno="612" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7f1fd966edf4aa4cdb8fa394621cc3e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7f1fd966edf4aa4cdb8fa394621cc3e7" kindref="member">setScaleType</ref>(<ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" kindref="member">ScaleType</ref><sp/>scaleType)</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_scale_type(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_spectrumcomponent_scale_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(scaleType));</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a80e9de045cde923f5f4292b7d6950c8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" kindref="member">ColourMappingType</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a80e9de045cde923f5f4292b7d6950c8a" kindref="member">getColourMappingType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="627"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" kindref="member">ColourMappingType</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cmzn_spectrumcomponent_get_colour_mapping_type(</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"></highlight></codeline>
+<codeline lineno="640" refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a09e04794747b3a3d130760048ea9a7b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a09e04794747b3a3d130760048ea9a7b8" kindref="member">setColourMappingType</ref>(<ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" kindref="member">ColourMappingType</ref><sp/>colourMapping)</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrumcomponent_set_colour_mapping_type(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_spectrumcomponent_colour_mapping_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(colourMapping));</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656" refid="classCMLibs_1_1Zinc_1_1Spectrum" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref></highlight></codeline>
+<codeline lineno="657"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrum_id<sp/>id;</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(0)</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>(cmzn_spectrum_id<sp/>in_spectrum_id)<sp/>:</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_spectrum_id)</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>&amp;<sp/>spectrum)<sp/>:</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_spectrum_access(spectrum.id))</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>&amp;<sp/>spectrum)</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrum_id<sp/>temp_id<sp/>=<sp/>cmzn_spectrum_access(spectrum.id);</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrum_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>()</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrum_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1" kindref="member">ChangeFlag</ref></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="703" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1af455fcc3775f8bb29025e15dd7730721" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1af455fcc3775f8bb29025e15dd7730721" kindref="member">CHANGE_FLAG_NONE</ref><sp/>=<sp/>CMZN_SPECTRUM_CHANGE_FLAG_NONE,</highlight></codeline>
+<codeline lineno="705" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1a080bef7b71f078836bc81edf07544e62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1a080bef7b71f078836bc81edf07544e62" kindref="member">CHANGE_FLAG_ADD</ref><sp/>=<sp/>CMZN_SPECTRUM_CHANGE_FLAG_ADD,</highlight></codeline>
+<codeline lineno="707" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1a33974a5714117b5d7adfdf600d7691ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1a33974a5714117b5d7adfdf600d7691ba" kindref="member">CHANGE_FLAG_REMOVE</ref><sp/>=<sp/>CMZN_SPECTRUM_CHANGE_FLAG_REMOVE,</highlight></codeline>
+<codeline lineno="709" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1a354dd2a92455c83a2ca44b4e98ddf820" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1a354dd2a92455c83a2ca44b4e98ddf820" kindref="member">CHANGE_FLAG_IDENTIFIER</ref><sp/>=<sp/>CMZN_SPECTRUM_CHANGE_FLAG_IDENTIFIER,</highlight></codeline>
+<codeline lineno="711" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1a5110b4cb69d90ee1998ccaaa17759393" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1a5110b4cb69d90ee1998ccaaa17759393" kindref="member">CHANGE_FLAG_DEFINITION</ref><sp/>=<sp/>CMZN_SPECTRUM_CHANGE_FLAG_DEFINITION,</highlight></codeline>
+<codeline lineno="713" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1ae5c54c45860d42e2a7ad0c217627c235" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1ae5c54c45860d42e2a7ad0c217627c235" kindref="member">CHANGE_FLAG_FULL_RESULT</ref><sp/>=<sp/>CMZN_SPECTRUM_CHANGE_FLAG_FULL_RESULT,</highlight></codeline>
+<codeline lineno="715" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1aa75a9e612946fc11ee2e1cc8c4e6a3b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1aa75a9e612946fc11ee2e1cc8c4e6a3b6" kindref="member">CHANGE_FLAG_FINAL</ref><sp/>=<sp/>CMZN_SPECTRUM_CHANGE_FLAG_FINAL</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724" refid="classCMLibs_1_1Zinc_1_1Spectrum_1abf9f390f5704d50cd2f63cce9ae97383" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1abf9f390f5704d50cd2f63cce9ae97383" kindref="member">ChangeFlags</ref>;</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"></highlight></codeline>
+<codeline lineno="731" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a9114a9fbef6a6f0359d3b0a200bc947c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a9114a9fbef6a6f0359d3b0a200bc947c" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="732"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"></highlight></codeline>
+<codeline lineno="741" refid="classCMLibs_1_1Zinc_1_1Spectrum_1acab05e3344e6884509e14b778f033b19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrum_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1acab05e3344e6884509e14b778f033b19" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="742"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="745"><highlight class="normal"></highlight></codeline>
+<codeline lineno="752" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a6d06504f5a451a0967df50f5d3e9515e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a6d06504f5a451a0967df50f5d3e9515e" kindref="member">isManaged</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="753"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_is_managed(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="766" refid="classCMLibs_1_1Zinc_1_1Spectrum_1aaa15fd3a31e265fb9b4db0aaa5179fe2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1aaa15fd3a31e265fb9b4db0aaa5179fe2" kindref="member">setManaged</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_set_managed(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight></codeline>
+<codeline lineno="780" refid="classCMLibs_1_1Zinc_1_1Spectrum_1aff31ec94e5b631a18080538a4ff1398c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1aff31ec94e5b631a18080538a4ff1398c" kindref="member">beginChange</ref>()</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_begin_change(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"></highlight></codeline>
+<codeline lineno="793" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a9c9db09aa187dca6181b8035972a144e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a9c9db09aa187dca6181b8035972a144e" kindref="member">endChange</ref>()</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_end_change(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"></highlight></codeline>
+<codeline lineno="804" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a8e115828996575ecee11d1f667a4c6c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a8e115828996575ecee11d1f667a4c6c5" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="805"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_get_name(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"></highlight></codeline>
+<codeline lineno="816" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a4eade1fb9042ccfb42a9b24b27ee0236" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a4eade1fb9042ccfb42a9b24b27ee0236" kindref="member">setName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)</highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_set_name(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>name);</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"></highlight></codeline>
+<codeline lineno="826" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a701ced22ba41c94fecb24f8934530bf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a701ced22ba41c94fecb24f8934530bf4" kindref="member">getNumberOfSpectrumcomponents</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="827"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_get_number_of_spectrumcomponents(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"></highlight></codeline>
+<codeline lineno="836" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a919f7a71d0e09d71b417d87e3dd5ad6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a919f7a71d0e09d71b417d87e3dd5ad6a" kindref="member">createSpectrumcomponent</ref>()</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>(cmzn_spectrum_create_spectrumcomponent(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="839"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"></highlight></codeline>
+<codeline lineno="846" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a894911641df88d46fd00b103ffc221ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a894911641df88d46fd00b103ffc221ef" kindref="member">getFirstSpectrumcomponent</ref>()</highlight></codeline>
+<codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>(cmzn_spectrum_get_first_spectrumcomponent(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="849"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"></highlight></codeline>
+<codeline lineno="857" refid="classCMLibs_1_1Zinc_1_1Spectrum_1afbf5783a643c0fc756bd7e5b9a070832" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1afbf5783a643c0fc756bd7e5b9a070832" kindref="member">getNextSpectrumcomponent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>&amp;<sp/>refComponent)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="858"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>(</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrum_get_next_spectrumcomponent(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>refComponent.<ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight></codeline>
+<codeline lineno="869" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a340106ebce361417bbbdedffdcb5b683" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a340106ebce361417bbbdedffdcb5b683" kindref="member">getPreviousSpectrumcomponent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>&amp;<sp/>refComponent)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="870"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="871"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>(</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrum_get_previous_spectrumcomponent(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>refComponent.<ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="873"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="874"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a0020708928434976a0c9a1fb5a8cc021" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a0020708928434976a0c9a1fb5a8cc021" kindref="member">moveSpectrumcomponentBefore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>&amp;<sp/>component,</highlight></codeline>
+<codeline lineno="885"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>&amp;<sp/>refComponent)</highlight></codeline>
+<codeline lineno="886"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="887"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_move_spectrumcomponent_before(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>component.<ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" kindref="member">getId</ref>(),</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refComponent.<ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="889"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"></highlight></codeline>
+<codeline lineno="901" refid="classCMLibs_1_1Zinc_1_1Spectrum_1aa5f06618c58dce40e39a4dd1ee64213a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1aa5f06618c58dce40e39a4dd1ee64213a" kindref="member">removeSpectrumcomponent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref>&amp;<sp/>component)</highlight></codeline>
+<codeline lineno="902"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="903"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_remove_spectrumcomponent(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>component.<ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="904"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="905"><highlight class="normal"></highlight></codeline>
+<codeline lineno="913" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a9817efc66c3b9d300a822afd6ba603d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a9817efc66c3b9d300a822afd6ba603d3" kindref="member">removeAllSpectrumcomponents</ref>()</highlight></codeline>
+<codeline lineno="914"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="915"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_remove_all_spectrumcomponents(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="916"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="917"><highlight class="normal"></highlight></codeline>
+<codeline lineno="927" refid="classCMLibs_1_1Zinc_1_1Spectrum_1ab4827d4e705c3673fe13233dec72d6f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1ab4827d4e705c3673fe13233dec72d6f3" kindref="member">isMaterialOverwrite</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="928"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="929"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_is_material_overwrite(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="930"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="931"><highlight class="normal"></highlight></codeline>
+<codeline lineno="938" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a79ffcb23230abe37c95b9e8c41997a32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a79ffcb23230abe37c95b9e8c41997a32" kindref="member">setMaterialOverwrite</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>overwrite)</highlight></codeline>
+<codeline lineno="939"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="940"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_set_material_overwrite(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>overwrite);</highlight></codeline>
+<codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="942"><highlight class="normal"></highlight></codeline>
+<codeline lineno="953"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a360e1ad7d8602cd0b68c321fc6ef1d25" kindref="member">autorange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref><sp/>&amp;scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref><sp/>&amp;scenefilter);</highlight></codeline>
+<codeline lineno="954"><highlight class="normal"></highlight></codeline>
+<codeline lineno="955"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="956"><highlight class="normal"></highlight></codeline>
+<codeline lineno="957"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Spectrum&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Spectrum&amp;<sp/>b)</highlight></codeline>
+<codeline lineno="958"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="959"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.getId()<sp/>==<sp/>b.getId();</highlight></codeline>
+<codeline lineno="960"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="961"><highlight class="normal"></highlight></codeline>
+<codeline lineno="969" refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref></highlight></codeline>
+<codeline lineno="970"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="971"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="972"><highlight class="normal"></highlight></codeline>
+<codeline lineno="973"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrumiterator_id<sp/>id;</highlight></codeline>
+<codeline lineno="974"><highlight class="normal"></highlight></codeline>
+<codeline lineno="975"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="976"><highlight class="normal"></highlight></codeline>
+<codeline lineno="977"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="978"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="979"><highlight class="normal"></highlight></codeline>
+<codeline lineno="980"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="981"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref>(cmzn_spectrumiterator_id<sp/>iterator_id)<sp/>:</highlight></codeline>
+<codeline lineno="982"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(iterator_id)</highlight></codeline>
+<codeline lineno="983"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="984"><highlight class="normal"></highlight></codeline>
+<codeline lineno="985"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref>&amp;<sp/>spectrumiterator)<sp/>:</highlight></codeline>
+<codeline lineno="986"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_spectrumiterator_access(spectrumiterator.id))</highlight></codeline>
+<codeline lineno="987"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="988"><highlight class="normal"></highlight></codeline>
+<codeline lineno="989"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref>&amp;<sp/>spectrumiterator)</highlight></codeline>
+<codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="991"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrumiterator_id<sp/>temp_id<sp/>=<sp/>cmzn_spectrumiterator_access(spectrumiterator.id);</highlight></codeline>
+<codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="993"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="994"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrumiterator_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="996"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="997"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="998"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="999"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1000"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref>()</highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1002"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1004"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrumiterator_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1005"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1006"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1007"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1013" refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a9473fe5d8258867c426c8055e5c441fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a9473fe5d8258867c426c8055e5c441fa" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1014"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1015"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1016"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1026" refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a48e5339bbca9f69992f40cf25fca7dac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator_1a48e5339bbca9f69992f40cf25fca7dac" kindref="member">next</ref>()</highlight></codeline>
+<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1028"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>(cmzn_spectrumiterator_next(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1030"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1031"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1037" refid="classCMLibs_1_1Zinc_1_1Spectrummodule" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref></highlight></codeline>
+<codeline lineno="1038"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1039"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1040"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrummodule_id<sp/>id;</highlight></codeline>
+<codeline lineno="1041"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1042"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1043"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1044"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="1045"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(0)</highlight></codeline>
+<codeline lineno="1046"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1047"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1048"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1049"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1050"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>(cmzn_spectrummodule_id<sp/>in_spectrummodule_id)<sp/>:</highlight></codeline>
+<codeline lineno="1051"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_spectrummodule_id)</highlight></codeline>
+<codeline lineno="1052"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1053"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1054"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1055"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>&amp;<sp/>spectrummodule)<sp/>:</highlight></codeline>
+<codeline lineno="1056"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_spectrummodule_access(spectrummodule.id))</highlight></codeline>
+<codeline lineno="1057"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1058"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1059"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1060"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>&amp;<sp/>spectrummodule)</highlight></codeline>
+<codeline lineno="1061"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1062"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummodule_id<sp/>temp_id<sp/>=<sp/>cmzn_spectrummodule_access(</highlight></codeline>
+<codeline lineno="1063"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spectrummodule.id);</highlight></codeline>
+<codeline lineno="1064"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="1065"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1066"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummodule_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1067"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1068"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="1069"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1070"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1071"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1072"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>()</highlight></codeline>
+<codeline lineno="1073"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1074"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="1075"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1076"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummodule_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1077"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1078"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1079"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1085" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a88529f1a73eeb6eca3f01688fc1330db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a88529f1a73eeb6eca3f01688fc1330db" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1086"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1087"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1088"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1089"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1095" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a792c1cdeb7d20cf45d21409c2cb57dd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrummodule_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a792c1cdeb7d20cf45d21409c2cb57dd0" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1096"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1097"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="1098"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1099"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1106" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a3d730e966035ec37e41e147cac0f7add" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a3d730e966035ec37e41e147cac0f7add" kindref="member">createSpectrum</ref>()</highlight></codeline>
+<codeline lineno="1107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>(cmzn_spectrummodule_create_spectrum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="1109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1123" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a487cdab5653d9e763721402aef1f1e2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a487cdab5653d9e763721402aef1f1e2f" kindref="member">createSpectrumiterator</ref>()</highlight></codeline>
+<codeline lineno="1124"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" kindref="compound">Spectrumiterator</ref>(cmzn_spectrummodule_create_spectrumiterator(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="1126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1135" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a309cbb08b3eececa444df77beff7c1fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a309cbb08b3eececa444df77beff7c1fc" kindref="member">defineStandardSpectrums</ref>()</highlight></codeline>
+<codeline lineno="1136"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummodule_define_standard_spectrums(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1146" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a9ae8863dda01fc2dd387b692eac59686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a9ae8863dda01fc2dd387b692eac59686" kindref="member">findSpectrumByName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1147"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>(cmzn_spectrummodule_find_spectrum_by_name(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>name));</highlight></codeline>
+<codeline lineno="1149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1160" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a3258d656f8f17034cc83cdf34b2026f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a3258d656f8f17034cc83cdf34b2026f2" kindref="member">beginChange</ref>()</highlight></codeline>
+<codeline lineno="1161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummodule_begin_change(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1174" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1aada19a9f2b7ea2cbf88e393b9d421738" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1aada19a9f2b7ea2cbf88e393b9d421738" kindref="member">endChange</ref>()</highlight></codeline>
+<codeline lineno="1175"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummodule_end_change(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1187" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a6b2ce9463d3f08a73cc13c6788aa00b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a6b2ce9463d3f08a73cc13c6788aa00b3" kindref="member">getDefaultSpectrum</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1188"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>(cmzn_spectrummodule_get_default_spectrum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="1190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1198" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a8ce406ab52a70fb7d5969bf4fcd77a26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a8ce406ab52a70fb7d5969bf4fcd77a26" kindref="member">setDefaultSpectrum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>&amp;<sp/>spectrum)</highlight></codeline>
+<codeline lineno="1199"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummodule_set_default_spectrum(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>spectrum.<ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1acab05e3344e6884509e14b778f033b19" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="1201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1210" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a44219578eba6f34a110f7affecf32c4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a44219578eba6f34a110f7affecf32c4d" kindref="member">readDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*description)</highlight></codeline>
+<codeline lineno="1211"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummodule_read_description(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>description);</highlight></codeline>
+<codeline lineno="1213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1221" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a27edb9ab98f8d2f0448c1656daf2f870" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a27edb9ab98f8d2f0448c1656daf2f870" kindref="member">writeDescription</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1222"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummodule_write_description(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a3220ef304ea842a68249bb8912b1882c" kindref="member">createSpectrummodulenotifier</ref>();</highlight></codeline>
+<codeline lineno="1233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1234"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1242" refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref></highlight></codeline>
+<codeline lineno="1243"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1244"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1245"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrummoduleevent_id<sp/>id;</highlight></codeline>
+<codeline lineno="1246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1247"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1249"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="1250"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="1251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref>(cmzn_spectrummoduleevent_id<sp/>in_spectrummodule_event_id)<sp/>:</highlight></codeline>
+<codeline lineno="1254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_spectrummodule_event_id)</highlight></codeline>
+<codeline lineno="1255"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="1256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref>&amp;<sp/>spectrummoduleEvent)<sp/>:</highlight></codeline>
+<codeline lineno="1258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_spectrummoduleevent_access(spectrummoduleEvent.id))</highlight></codeline>
+<codeline lineno="1259"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="1260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1261"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref>&amp;<sp/>spectrummoduleEvent)</highlight></codeline>
+<codeline lineno="1262"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummoduleevent_id<sp/>temp_id<sp/>=<sp/>cmzn_spectrummoduleevent_access(spectrummoduleEvent.id);</highlight></codeline>
+<codeline lineno="1264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="1265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummoduleevent_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="1267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1268"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1270"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref>()</highlight></codeline>
+<codeline lineno="1271"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="1273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummoduleevent_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1276"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1283" refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a14c429040e15c24cd7cd8fa2f081f025" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a14c429040e15c24cd7cd8fa2f081f025" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1284"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1293" refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a9eb4f20003262cc13add75ff5c23a659" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrummoduleevent_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a9eb4f20003262cc13add75ff5c23a659" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1294"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="1296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1307" refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1af8e2e0d6137a17d9d6a4553fec05d706" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1abf9f390f5704d50cd2f63cce9ae97383" kindref="member">Spectrum::ChangeFlags</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1af8e2e0d6137a17d9d6a4553fec05d706" kindref="member">getSpectrumChangeFlags</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>&amp;<sp/>spectrum)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1308"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummoduleevent_get_spectrum_change_flags(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>spectrum.<ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1acab05e3344e6884509e14b778f033b19" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="1310"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1319" refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a7b1fbdf9870a5ec1b5080260053555af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1abf9f390f5704d50cd2f63cce9ae97383" kindref="member">Spectrum::ChangeFlags</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a7b1fbdf9870a5ec1b5080260053555af" kindref="member">getSummarySpectrumChangeFlags</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1320"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummoduleevent_get_summary_spectrum_change_flags(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1322"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1324"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1334" refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref></highlight></codeline>
+<codeline lineno="1335"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1336"><highlight class="normal"></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>;</highlight></codeline>
+<codeline lineno="1337"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1338"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref>&amp;);<sp/></highlight><highlight class="comment">//<sp/>not<sp/>implemented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1339"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref>&amp;);<sp/></highlight><highlight class="comment">//<sp/>not<sp/>implemented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>C_callback(cmzn_spectrummoduleevent_id<sp/>spectrummoduleevent_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*callbackVoid)</highlight></codeline>
+<codeline lineno="1342"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref><sp/>spectrummoduleevent(cmzn_spectrummoduleevent_access(spectrummoduleevent_id));</highlight></codeline>
+<codeline lineno="1344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref><sp/>*callback<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(callbackVoid);</highlight></codeline>
+<codeline lineno="1345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*callback)(spectrummoduleevent);</highlight></codeline>
+<codeline lineno="1346"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1348"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref><sp/>&amp;spectrummoduleevent)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1350"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1351"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref>()</highlight></codeline>
+<codeline lineno="1352"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="1353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1354"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref>()</highlight></codeline>
+<codeline lineno="1356"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="1357"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1364" refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref></highlight></codeline>
+<codeline lineno="1365"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1366"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1367"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrummodulenotifier_id<sp/>id;</highlight></codeline>
+<codeline lineno="1368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1369"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1371"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="1372"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="1373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1374"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1375"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>(cmzn_spectrummodulenotifier_id<sp/>in_spectrummodulenotifier_id)<sp/>:</highlight></codeline>
+<codeline lineno="1376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_spectrummodulenotifier_id)</highlight></codeline>
+<codeline lineno="1377"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="1378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1379"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>&amp;<sp/>spectrummoduleNotifier)<sp/>:</highlight></codeline>
+<codeline lineno="1380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_spectrummodulenotifier_access(spectrummoduleNotifier.id))</highlight></codeline>
+<codeline lineno="1381"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="1382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1383"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>&amp;<sp/>spectrummoduleNotifier)</highlight></codeline>
+<codeline lineno="1384"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummodulenotifier_id<sp/>temp_id<sp/>=<sp/>cmzn_spectrummodulenotifier_access(spectrummoduleNotifier.id);</highlight></codeline>
+<codeline lineno="1386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="1387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummodulenotifier_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="1391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1392"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1394"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>()</highlight></codeline>
+<codeline lineno="1395"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="1397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_spectrummodulenotifier_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1400"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1407" refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier_1a47686eab163e3b137458aaa5572c2d2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier_1a47686eab163e3b137458aaa5572c2d2d" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1408"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1410"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1417" refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier_1ab33b6434a97716716b3b44028a67be29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_spectrummodulenotifier_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier_1ab33b6434a97716716b3b44028a67be29" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1418"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="1420"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1432" refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier_1a29b8856f22adb7fbd9fd5e0dc8e12792" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier_1a29b8856f22adb7fbd9fd5e0dc8e12792" kindref="member">setCallback</ref>(<ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" kindref="compound">Spectrummodulecallback</ref>&amp;<sp/>callback)</highlight></codeline>
+<codeline lineno="1433"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummodulenotifier_set_callback(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>callback.C_callback,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;callback));</highlight></codeline>
+<codeline lineno="1435"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1443" refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier_1a175a192888580111a13c0e1218d202fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier_1a175a192888580111a13c0e1218d202fc" kindref="member">clearCallback</ref>()</highlight></codeline>
+<codeline lineno="1444"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrummodulenotifier_clear_callback(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1446"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1447"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1449" refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a3220ef304ea842a68249bb8912b1882c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule_1a3220ef304ea842a68249bb8912b1882c" kindref="member">Spectrummodule::createSpectrummodulenotifier</ref>()</highlight></codeline>
+<codeline lineno="1450"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1451"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" kindref="compound">Spectrummodulenotifier</ref>(cmzn_spectrummodule_create_spectrummodulenotifier(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="1452"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1454" refid="classCMLibs_1_1Zinc_1_1Context_1a6cc8a47069526c263b24c4430cabba94" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Context_1a6cc8a47069526c263b24c4430cabba94" kindref="member">Context::getSpectrummodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1455"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>(cmzn_context_get_spectrummodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="1457"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1459"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1460"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1462"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/spectrum.hpp"/>
+  </compounddef>
+</doxygen>

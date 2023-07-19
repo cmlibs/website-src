@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Fieldrange" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Fieldrange</compoundname>
+    <includes refid="fieldrange_8hpp" local="no">fieldrange.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Fieldrange_1abae8bda753008a4bacc405a3da014ada" prot="protected" static="no" mutable="no">
+        <type>cmzn_fieldrange_id</type>
+        <definition>cmzn_fieldrange_id CMLibs::Zinc::Fieldrange::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="32" column="20" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a662c57b67f7ac048a4bb6104c3f7ab5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldrange::Fieldrange</definition>
+        <argsstring>()</argsstring>
+        <name>Fieldrange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="36" column="1" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="36" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a94bf6ace1cc4804cc3857d22c1e7a15a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldrange::Fieldrange</definition>
+        <argsstring>(cmzn_fieldrange_id in_fieldrange_id)</argsstring>
+        <name>Fieldrange</name>
+        <param>
+          <type>cmzn_fieldrange_id</type>
+          <declname>in_fieldrange_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="40" column="10" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1ad72276ff4d56f971cdb345c1d0267e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldrange::Fieldrange</definition>
+        <argsstring>(const Fieldrange &amp;range)</argsstring>
+        <name>Fieldrange</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldrange" kindref="compound">Fieldrange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="44" column="1" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a5b553d304985accbef9a422e677de8c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldrange" kindref="compound">Fieldrange</ref> &amp;</type>
+        <definition>Fieldrange&amp; CMLibs::Zinc::Fieldrange::operator=</definition>
+        <argsstring>(const Fieldrange &amp;range)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldrange" kindref="compound">Fieldrange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="48" column="12" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1aac7176aad27f8df7da6c7fee77735843" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldrange::~Fieldrange</definition>
+        <argsstring>()</argsstring>
+        <name>~Fieldrange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="59" column="1" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a3452c03980b296bd061b87a60b680c0b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Fieldrange::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Fieldrange" kindref="compound">Fieldrange</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="72" column="6" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1aa7cf7df331413ca7c604b848d9f064be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_fieldrange_id</type>
+        <definition>cmzn_fieldrange_id CMLibs::Zinc::Fieldrange::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Fieldrange" kindref="compound">Fieldrange</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Fieldrange" kindref="compound">Fieldrange</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="82" column="20" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a31207a351fcbcf3d4d260cda65949c9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref></type>
+        <definition>Element CMLibs::Zinc::Fieldrange::getComponentMinimumMeshLocation</definition>
+        <argsstring>(int componentNumber, int coordinatesCount, double *coordinatesOut)</argsstring>
+        <name>getComponentMinimumMeshLocation</name>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coordinatesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>coordinatesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the element and element local coordinates of the point where the minimum value for the component was found, if found on a mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component of the field starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the coordinatesOut array, must be at least element dimension, or 3 for any supported dimension. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive element local xi coordinates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to element on success with coordinatesOut filled, or NULL/invalid element handle if no range or not found at a mesh location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="98" column="9" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1aad90d467285a7dfe093282bc6486bcab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref></type>
+        <definition>Element CMLibs::Zinc::Fieldrange::getComponentMaximumMeshLocation</definition>
+        <argsstring>(int componentNumber, int coordinatesCount, double *coordinatesOut)</argsstring>
+        <name>getComponentMaximumMeshLocation</name>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coordinatesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>coordinatesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the element and element local coordinates of the point where the maximum value for the component was found, if found on a mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component of the field starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the coordinatesOut array, must be at least element dimension, or 3 for any supported dimension. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive element local xi coordinates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to element on success with coordinatesOut filled, or NULL/invalid element handle if no range or not found at a mesh location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="116" column="9" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="116" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1afb4d69d3987502c9808176f6caee579c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldrange::getComponentMinimumValuesReal</definition>
+        <argsstring>(int componentNumber, int coordinatesCount, double *coordinatesOut)</argsstring>
+        <name>getComponentMinimumValuesReal</name>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coordinatesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>coordinatesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the field values at the point where the minimum value of the component of the field was found.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component of the field starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array, must be at least the number of components of the field the range is for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive field values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if no valid range, ERROR_ARGUMENT if invalid arguments supplied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="134" column="5" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="134" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a2f1c48b7a6f2f98f970e99413e831439" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldrange::getComponentMaximumValuesReal</definition>
+        <argsstring>(int componentNumber, int coordinatesCount, double *coordinatesOut)</argsstring>
+        <name>getComponentMaximumValuesReal</name>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coordinatesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>coordinatesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the field values at the point where the maximum value of the component of the field was found.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component of the field starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array, must be at least the number of components of the field the range is for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive field values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if no valid range, ERROR_ARGUMENT if invalid arguments supplied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="152" column="5" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="152" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a99bb08460cba5bbd21810813a61e8667" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Fieldrange::getField</definition>
+        <argsstring>() const</argsstring>
+        <name>getField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the field the range was calculated for.</para>
+<para><simplesect kind="return"><para>Handle to field the range is for, or NULL/invalid handle if no range has been calculated or the supplied range is NULL/invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="165" column="7" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a71f4ef7806650c0db6005cc8892cd8de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldrange::getRangeReal</definition>
+        <argsstring>(int valuesCount, double *minimumValuesOut, double *maximumValuesOut) const</argsstring>
+        <name>getRangeReal</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>minimumValuesOut</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>maximumValuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum and maximum values of the field on the domain it was evaluated over.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sizes of the values arrays to fill &gt;= the number of components of the field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minimumValuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive minimum values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximumValuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive maximum values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if no valid range, ERROR_ARGUMENT if invalid arguments supplied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="181" column="5" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="181" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldrange_1a79f137d8f60366a3cd5e09d89d83bd59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Fieldrange::hasValidRange</definition>
+        <argsstring>() const</argsstring>
+        <name>hasValidRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether a valid range is held.</para>
+<para><simplesect kind="return"><para>Boolean true if range is valid otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldrange.hpp" line="193" column="6" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores range of field over a domain. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores range of a field&apos;s values over a chosen domain, the locations at which each component minimum or maximum occurs and the field values there. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/fieldrange.hpp" line="30" column="1" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="29" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a662c57b67f7ac048a4bb6104c3f7ab5a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>Fieldrange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a94bf6ace1cc4804cc3857d22c1e7a15a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>Fieldrange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1ad72276ff4d56f971cdb345c1d0267e79" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>Fieldrange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1aad90d467285a7dfe093282bc6486bcab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>getComponentMaximumMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a2f1c48b7a6f2f98f970e99413e831439" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>getComponentMaximumValuesReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a31207a351fcbcf3d4d260cda65949c9b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>getComponentMinimumMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1afb4d69d3987502c9808176f6caee579c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>getComponentMinimumValuesReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a99bb08460cba5bbd21810813a61e8667" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>getField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1aa7cf7df331413ca7c604b848d9f064be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a71f4ef7806650c0db6005cc8892cd8de" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>getRangeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a79f137d8f60366a3cd5e09d89d83bd59" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>hasValidRange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1abae8bda753008a4bacc405a3da014ada" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a3452c03980b296bd061b87a60b680c0b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1a5b553d304985accbef9a422e677de8c6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldrange_1aac7176aad27f8df7da6c7fee77735843" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldrange</scope><name>~Fieldrange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

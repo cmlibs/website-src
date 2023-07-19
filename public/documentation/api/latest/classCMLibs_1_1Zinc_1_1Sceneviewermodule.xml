@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Sceneviewermodule</compoundname>
+    <includes refid="sceneviewer_8hpp" local="no">sceneviewer.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a6ce83135369149249d9bf423382abc12" prot="protected" static="no" mutable="no">
+        <type>cmzn_sceneviewermodule_id</type>
+        <definition>cmzn_sceneviewermodule_id CMLibs::Zinc::Sceneviewermodule::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1327" column="27" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1327" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a7952beea942054bb8421845a17f45262" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewermodule::Sceneviewermodule</definition>
+        <argsstring>()</argsstring>
+        <name>Sceneviewermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1331" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1331" bodyend="1332"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1aa6b35de23b1e7b17fa7e50b90d65b5e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewermodule::Sceneviewermodule</definition>
+        <argsstring>(cmzn_sceneviewermodule_id in_sceneviewermodule_id)</argsstring>
+        <name>Sceneviewermodule</name>
+        <param>
+          <type>cmzn_sceneviewermodule_id</type>
+          <declname>in_sceneviewermodule_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1335" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1335" bodyend="1337"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ad9dd538f2d6e29594d697dbfeb617e05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewermodule::Sceneviewermodule</definition>
+        <argsstring>(const Sceneviewermodule &amp;sceneviewermodule)</argsstring>
+        <name>Sceneviewermodule</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref> &amp;</type>
+          <declname>sceneviewermodule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1339" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1339" bodyend="1341"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ac4c742e690c625dd7e77a2a3e22fc204" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref> &amp;</type>
+        <definition>Sceneviewermodule&amp; CMLibs::Zinc::Sceneviewermodule::operator=</definition>
+        <argsstring>(const Sceneviewermodule &amp;sceneviewermodule)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref> &amp;</type>
+          <declname>sceneviewermodule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1343" column="19" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1343" bodyend="1352"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a8a5997d57d8eb24c3e4020fe465489aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewermodule::~Sceneviewermodule</definition>
+        <argsstring>()</argsstring>
+        <name>~Sceneviewermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1354" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1354" bodyend="1360"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a9925dd8d562056f9a028849b71e72487" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewermodule::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1367" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1367" bodyend="1370"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1aab8a71fbda3f4639e01ec151f306fca4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_sceneviewermodule_id</type>
+        <definition>cmzn_sceneviewermodule_id CMLibs::Zinc::Sceneviewermodule::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1377" column="27" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1377" bodyend="1380"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ade890bced5fb144dfb5c95ec0005ec60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer" kindref="compound">Sceneviewer</ref></type>
+        <definition>Sceneviewer CMLibs::Zinc::Sceneviewermodule::createSceneviewer</definition>
+        <argsstring>(Sceneviewer::BufferingMode buffering_mode, Sceneviewer::StereoMode stereo_mode)</argsstring>
+        <name>createSceneviewer</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4" kindref="member">Sceneviewer::BufferingMode</ref></type>
+          <declname>buffering_mode</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08" kindref="member">Sceneviewer::StereoMode</ref></type>
+          <declname>stereo_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to a scene viewer object. The scene viewer attributes for buffering mode and stereo mode are also set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffering_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffering mode in use for the OpenGL context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stereo_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stereo mode in use for the OpenGL context. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new sceneviewer, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1390" column="13" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1390" bodyend="1395"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a83f5a4a43fa0eec5ba13f8293d2fbdee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewermodule::getDefaultBackgroundColourAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultBackgroundColourAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the alpha opacity component of the default background colour for new scene viewers created from this scene viewer module. The initial default is 1.0 i.e. opaque.</para>
+<para><simplesect kind="return"><para>Alpha value in [0.0, 1.0]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1404" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1404" bodyend="1407"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1af38dbf797ae45e989e18a003cf138a96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewermodule::setDefaultBackgroundColourAlpha</definition>
+        <argsstring>(const double alpha)</argsstring>
+        <name>setDefaultBackgroundColourAlpha</name>
+        <param>
+          <type>const double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the alpha opacity component of the default background colour for new scene viewers created from this scene viewer module. The remaining components of the default background colour are unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value in [0, 1.0] where 0.0 is transparent, 1.0 is opaque. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if successful, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1418" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1418" bodyend="1421"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a1207a4093967d4b97508617a8b86d3f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewermodule::getDefaultBackgroundColourRGB</definition>
+        <argsstring>(double *valuesOut3) const</argsstring>
+        <name>getDefaultBackgroundColourRGB</name>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default background colour for new scene viewers created from this scene viewer module. The initial defaults are [0.0, 0.0, 0.0] i.e. black.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Three colour components in order [red, green, blue], with values in [0, 1.0]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if successful, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1432" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1432" bodyend="1435"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a9c484950e2071e144cee060413166b15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewermodule::setDefaultBackgroundColourRGB</definition>
+        <argsstring>(const double *valuesIn3)</argsstring>
+        <name>setDefaultBackgroundColourRGB</name>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default background colour for new scene viewers created from this scene viewer module. Background colour alpha is unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Three colour components in order [red, green, blue], with values in [0, 1.0]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if successful, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1445" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1445" bodyend="1448"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ac46d0fb7e80a0dbd79ea570c913a751a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewermodule::getDefaultBackgroundColourRGBA</definition>
+        <argsstring>(double *valuesOut4) const</argsstring>
+        <name>getDefaultBackgroundColourRGBA</name>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1450" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1450" bodyend="1453"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ae4b4baa0b2e29f67c2da0cbfafa90bdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewermodule::setDefaultBackgroundColourRGBA</definition>
+        <argsstring>(const double *valuesIn4)</argsstring>
+        <name>setDefaultBackgroundColourRGBA</name>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1455" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1455" bodyend="1458"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Module object for creating and managing scene viewers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Module object for creating and managing scene viewers. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/sceneviewer.hpp" line="1325" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1324" bodyend="1460"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ade890bced5fb144dfb5c95ec0005ec60" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>createSceneviewer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a83f5a4a43fa0eec5ba13f8293d2fbdee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>getDefaultBackgroundColourAlpha</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a1207a4093967d4b97508617a8b86d3f1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>getDefaultBackgroundColourRGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ac46d0fb7e80a0dbd79ea570c913a751a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>getDefaultBackgroundColourRGBA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1aab8a71fbda3f4639e01ec151f306fca4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a6ce83135369149249d9bf423382abc12" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a9925dd8d562056f9a028849b71e72487" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ac4c742e690c625dd7e77a2a3e22fc204" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a7952beea942054bb8421845a17f45262" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>Sceneviewermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1aa6b35de23b1e7b17fa7e50b90d65b5e5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>Sceneviewermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ad9dd538f2d6e29594d697dbfeb617e05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>Sceneviewermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1af38dbf797ae45e989e18a003cf138a96" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>setDefaultBackgroundColourAlpha</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a9c484950e2071e144cee060413166b15" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>setDefaultBackgroundColourRGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1ae4b4baa0b2e29f67c2da0cbfafa90bdb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>setDefaultBackgroundColourRGBA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule_1a8a5997d57d8eb24c3e4020fe465489aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewermodule</scope><name>~Sceneviewermodule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

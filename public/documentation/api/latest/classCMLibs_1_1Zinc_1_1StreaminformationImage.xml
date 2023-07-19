@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1StreaminformationImage" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::StreaminformationImage</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Streaminformation" prot="public" virt="non-virtual">CMLibs::Zinc::Streaminformation</basecompoundref>
+    <includes refid="streamimage_8hpp" local="no">streamimage.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Attribute</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a835ba710220247d72ae0f3bc1bfc1b0f" prot="public">
+          <name>ATTRIBUTE_RAW_WIDTH_PIXELS</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_ATTRIBUTE_RAW_WIDTH_PIXELS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Integer specifies the pixel width for binary data reading in using this stream information. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a3b1a003653c953a0bc71d4fbc40be80b" prot="public">
+          <name>ATTRIBUTE_RAW_HEIGHT_PIXELS</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_ATTRIBUTE_RAW_HEIGHT_PIXELS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Integer specifies the pixel height for binary data reading in using this stream information. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2af79e993321bf626bb92d4aa9ba1fcf91" prot="public">
+          <name>ATTRIBUTE_BITS_PER_COMPONENT</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_ATTRIBUTE_BITS_PER_COMPONENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Integer specifies the number of bytes per component for binary data using this stream information. Only 8 and 16 bits are supported at the moment. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a14c43ababee4c47626aab7cd10e42e7e" prot="public">
+          <name>ATTRIBUTE_COMPRESSION_QUALITY</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_ATTRIBUTE_COMPRESSION_QUALITY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Real number specifies the quality for binary data using this stream information. This parameter controls compression for compressed lossy formats, where a quality of 1.0 specifies the least lossy output for a given format and a quality of 0.0 specifies the most compression. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of attributes that can be set by generic stream information image methods. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="68" column="1" bodyfile="auto_comments_output/streamimage.hpp" bodystart="67" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FileFormat</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba1a732eb1fd389e90cde64e6d13f9dbfb" prot="public">
+          <name>FILE_FORMAT_INVALID</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified image file format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba3f33700c6310db10d56599fcc6bddfc5" prot="public">
+          <name>FILE_FORMAT_BMP</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_BMP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as bitmap image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba27c619977646198e1e34d793f8bdf46b" prot="public">
+          <name>FILE_FORMAT_DICOM</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_DICOM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as dicom image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbae2805c28c945f9b2fe02a3c0d09c2017" prot="public">
+          <name>FILE_FORMAT_JPG</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_JPG</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as jpeg image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbab48feaaf0808511e7876f2356834bb61" prot="public">
+          <name>FILE_FORMAT_GIF</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_GIF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as gif image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba9a0fc724f7ef0622634d5251ce6fdc03" prot="public">
+          <name>FILE_FORMAT_PNG</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_PNG</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as png image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba604377d7ee20e59a841c98af4e176370" prot="public">
+          <name>FILE_FORMAT_SGI</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_SGI</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as sgi image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba2839046bc098922a801d3f815cc33818" prot="public">
+          <name>FILE_FORMAT_TIFF</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_TIFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as tiff image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba6d7f25e701ca53880f7117276d492f82" prot="public">
+          <name>FILE_FORMAT_ANALYZE</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_ANALYZE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as Analyze image. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbac930742916ee422d2b6342016a6a5607" prot="public">
+          <name>FILE_FORMAT_ANALYZE_OBJECT_MAP</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_FILE_FORMAT_ANALYZE_OBJECT_MAP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the file to be reading in or writing to as Analyze object map. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Describes the format for image storage. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1afd878253cc4119bca0b2325a9cafa774" kindref="member">StreaminformationImage::setFileFormat</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="94" column="1" bodyfile="auto_comments_output/streamimage.hpp" bodystart="93" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ec" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PixelFormat</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca1996f1e1fed4b0077aef91c6789839b4" prot="public">
+          <name>PIXEL_FORMAT_INVALID</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified image pixel format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ecaf5955e20ff333306dff2d1deb61e8400" prot="public">
+          <name>PIXEL_FORMAT_LUMINANCE</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_LUMINANCE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be single component grey scale. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca44614c6cf0ead44e799f5abbce587ca4" prot="public">
+          <name>PIXEL_FORMAT_LUMINANCE_ALPHA</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_LUMINANCE_ALPHA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be two components: grey scale and alpha. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ecabbf50cfeffd88d6ece7e75ba3671bd50" prot="public">
+          <name>PIXEL_FORMAT_RGB</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_RGB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be three components: red, green and blue. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca819bf570f72cbc8a5a115e313d4445aa" prot="public">
+          <name>PIXEL_FORMAT_RGBA</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_RGBA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be four components: red, green, blue and alpha. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca48602468ae090c28b9aa3d6cc4f470ed" prot="public">
+          <name>PIXEL_FORMAT_ABGR</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_ABGR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be four components: alpha, blue, green and red. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca6f7ef86a88b0835425108820c2b1ab9b" prot="public">
+          <name>PIXEL_FORMAT_BGR</name>
+          <initializer>= CMZN_STREAMINFORMATION_IMAGE_PIXEL_FORMAT_BGR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be three components: blue, green and red. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional information used to describe the binary data supplied to the images. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="130" column="1" bodyfile="auto_comments_output/streamimage.hpp" bodystart="129" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac2464639189c4e42022765787b8edadb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class FieldImage</definition>
+        <argsstring></argsstring>
+        <name>FieldImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="32" column="1" bodyfile="auto_comments_output/streamimage.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1af1cab8080a650ee4a5acfb68d34ddb3b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_streaminformation_image_id</type>
+        <definition>cmzn_streaminformation_image_id CMLibs::Zinc::StreaminformationImage::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="39" column="33" bodyfile="auto_comments_output/streamimage.hpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a34dd2814007eed366d5399905a693b93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::StreaminformationImage::StreaminformationImage</definition>
+        <argsstring>()</argsstring>
+        <name>StreaminformationImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="45" column="1" bodyfile="auto_comments_output/streamimage.hpp" bodystart="45" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a1aaecb4ac3ed6826351b7515cbd8c3b8" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::StreaminformationImage::StreaminformationImage</definition>
+        <argsstring>(cmzn_streaminformation_image_id streaminformation_image_id)</argsstring>
+        <name>StreaminformationImage</name>
+        <param>
+          <type>cmzn_streaminformation_image_id</type>
+          <declname>streaminformation_image_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="49" column="10" bodyfile="auto_comments_output/streamimage.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac1279e97d98c61cd26e9e52b5624242b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::StreaminformationImage::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="58" column="6" bodyfile="auto_comments_output/streamimage.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a7191bea7a29c9b24876290a586be3d49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationImage::setAttributeInteger</definition>
+        <argsstring>(Attribute attribute, int value)</argsstring>
+        <name>setAttributeInteger</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an integer or Boolean attribute of the streaminformation_image.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the integer attribute to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the attribute. For Boolean values use 1 for true.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if attribute successfully set, any other value if failed or attribute not valid or unable to be set for this streaminformation_image. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="164" column="5" bodyfile="auto_comments_output/streamimage.hpp" bodystart="164" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a028d7b440191074d019c42ad031ef261" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationImage::setAttributeReal</definition>
+        <argsstring>(Attribute attribute, double value)</argsstring>
+        <name>setAttributeReal</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an double attribute of the streaminformation_image.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the double attribute to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the attribute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if attribute successfully set, any other value if failed or attribute not valid or unable to be set for this streaminformation_image. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="179" column="5" bodyfile="auto_comments_output/streamimage.hpp" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1afd878253cc4119bca0b2325a9cafa774" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationImage::setFileFormat</definition>
+        <argsstring>(FileFormat imageFileFormat)</argsstring>
+        <name>setFileFormat</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bb" kindref="member">FileFormat</ref></type>
+          <declname>imageFileFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the format for binary data to be read/written using this streaminformation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>imageFileFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image file format. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="192" column="5" bodyfile="auto_comments_output/streamimage.hpp" bodystart="192" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a4527b3cafe307cf471a80369d07095c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationImage::setPixelFormat</definition>
+        <argsstring>(PixelFormat imagePixelFormat)</argsstring>
+        <name>setPixelFormat</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ec" kindref="member">PixelFormat</ref></type>
+          <declname>imagePixelFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the pixel format for binary data of the images to be read/written using this streaminformation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>imagePixelFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pixel_format of the formatted data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamimage.hpp" line="205" column="5" bodyfile="auto_comments_output/streamimage.hpp" bodystart="205" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An image-specific stream information object. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An image-specific stream information object, used to specify one or more image files/resources for an image field to read from or write to, with any attributes specified for them such as format, size etc.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1aedaabbc793ef301578e138f764d9dfcb" kindref="member">FieldImage::createStreaminformationImage</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CMLibs::Zinc::StreaminformationImage</label>
+        <link refid="classCMLibs_1_1Zinc_1_1StreaminformationImage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Streaminformation</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Streaminformation"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CMLibs::Zinc::StreaminformationImage</label>
+        <link refid="classCMLibs_1_1Zinc_1_1StreaminformationImage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Streaminformation</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Streaminformation"/>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/streamimage.hpp" line="31" column="1" bodyfile="auto_comments_output/streamimage.hpp" bodystart="30" bodyend="211"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>Attribute</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2af79e993321bf626bb92d4aa9ba1fcf91" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>ATTRIBUTE_BITS_PER_COMPONENT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a14c43ababee4c47626aab7cd10e42e7e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>ATTRIBUTE_COMPRESSION_QUALITY</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a3b1a003653c953a0bc71d4fbc40be80b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>ATTRIBUTE_RAW_HEIGHT_PIXELS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a925a962c27651c811cc97311eee968e2a835ba710220247d72ae0f3bc1bfc1b0f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>ATTRIBUTE_RAW_WIDTH_PIXELS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ac34bdeb92766895cfdeba63af238c6e7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>castImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ada4e8d8e22da2bd0ec7602b795bf6ddb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>castRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a5f4ffb13c6f36ac3e015b4921d72b64c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>castScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a33ce88ff504baefbde71fe1078e0ab97" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>createStreamresourceFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a470001cec2f57a069ad399fb97c583cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>createStreamresourceMemory</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1afd09ff3d22436d0fa6ec48f1d2c6062c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>createStreamresourceMemoryBuffer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a81656c2dbc52ac72a4a14959e9e9494d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>createStreamresourceMemoryBufferCopy</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaacecc9b43f09c67a73069cdcc8b360451" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>DATA_COMPRESSION_TYPE_BZ2</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa2757cfd5924259928775b4fb4919ddc3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>DATA_COMPRESSION_TYPE_DEFAULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaae001aaab544252b9ab6e60edf08caae3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>DATA_COMPRESSION_TYPE_GZIP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa02d593f275b7d5386245361e3f0a83ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>DATA_COMPRESSION_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa2f3de29afcde36b8e8cae8bd7fc24b25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>DATA_COMPRESSION_TYPE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>DataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac2464639189c4e42022765787b8edadb" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FieldImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba6d7f25e701ca53880f7117276d492f82" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_ANALYZE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbac930742916ee422d2b6342016a6a5607" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_ANALYZE_OBJECT_MAP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba3f33700c6310db10d56599fcc6bddfc5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_BMP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba27c619977646198e1e34d793f8bdf46b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_DICOM</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbab48feaaf0808511e7876f2356834bb61" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_GIF</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba1a732eb1fd389e90cde64e6d13f9dbfb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bbae2805c28c945f9b2fe02a3c0d09c2017" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_JPG</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba9a0fc724f7ef0622634d5251ce6fdc03" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_PNG</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba604377d7ee20e59a841c98af4e176370" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_SGI</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bba2839046bc098922a801d3f815cc33818" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FILE_FORMAT_TIFF</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac046b7eedb34b65a0245b2c1f4c9a3bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>FileFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aa969e89d3801fdad9ed1d2b725d940dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>getDataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1af1cab8080a650ee4a5acfb68d34ddb3b" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a18f2dbdae57889318e200edc5e8c26b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a64c561ae3e5491b320cd8c156da365b2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>getResourceDataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a67724ea33aaf0b55e0e4807b3426fe3f" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ac1279e97d98c61cd26e9e52b5624242b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aa8f9d159d4d6b1ba9d8435d6ed3627d5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca48602468ae090c28b9aa3d6cc4f470ed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>PIXEL_FORMAT_ABGR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca6f7ef86a88b0835425108820c2b1ab9b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>PIXEL_FORMAT_BGR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca1996f1e1fed4b0077aef91c6789839b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>PIXEL_FORMAT_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ecaf5955e20ff333306dff2d1deb61e8400" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>PIXEL_FORMAT_LUMINANCE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca44614c6cf0ead44e799f5abbce587ca4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>PIXEL_FORMAT_LUMINANCE_ALPHA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ecabbf50cfeffd88d6ece7e75ba3671bd50" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>PIXEL_FORMAT_RGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2eca819bf570f72cbc8a5a115e313d4445aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>PIXEL_FORMAT_RGBA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1ad70d5fe55a063d744066cb7fe329d2ec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>PixelFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a7191bea7a29c9b24876290a586be3d49" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>setAttributeInteger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a028d7b440191074d019c42ad031ef261" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>setAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a1f8a0fd5b65bfbee1ed1594e670f914a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>setDataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1afd878253cc4119bca0b2325a9cafa774" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>setFileFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a4527b3cafe307cf471a80369d07095c2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>setPixelFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aff3c317760b8a77f472dfd5b94bb21b8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>setResourceDataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a0a73d80ee4e2d630ab82ab1fbe4b475e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>Streaminformation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aabc9ad5f8451bc500f03f5bc8edd5ebc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>Streaminformation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ac804a8fe148efb5a102c9f9657c44797" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>Streaminformation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a34dd2814007eed366d5399905a693b93" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>StreaminformationImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationImage_1a1aaecb4ac3ed6826351b7515cbd8c3b8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>StreaminformationImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a8379a9df28c8078a10681962584b8271" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationImage</scope><name>~Streaminformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Region" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Region</compoundname>
+    <includes refid="region_8hpp" local="no">region.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Region_1a20eb67e93e8b5c509572f4bcc30f4ffc" prot="protected" static="no" mutable="no">
+        <type>cmzn_region_id</type>
+        <definition>cmzn_region_id CMLibs::Zinc::Region::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="37" column="16" bodyfile="auto_comments_output/region.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1adb4376b0a788bd140ee87e8753bf924a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Region::Region</definition>
+        <argsstring>()</argsstring>
+        <name>Region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="41" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="41" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a7f4d1003fe79e8ad3a587f0ba623ead3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Region::Region</definition>
+        <argsstring>(cmzn_region_id in_region_id)</argsstring>
+        <name>Region</name>
+        <param>
+          <type>cmzn_region_id</type>
+          <declname>in_region_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="45" column="10" bodyfile="auto_comments_output/region.hpp" bodystart="45" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a66e11be178463d113a454bcde6fea174" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Region::Region</definition>
+        <argsstring>(const Region &amp;region)</argsstring>
+        <name>Region</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="48" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="48" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a800295339849007ada3ddd674698146e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+        <definition>Region&amp; CMLibs::Zinc::Region::operator=</definition>
+        <argsstring>(const Region &amp;region)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="51" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="51" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a59919c1f4f7fb2590672eec7f3af69b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Region::~Region</definition>
+        <argsstring>()</argsstring>
+        <name>~Region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="62" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a13729333e9226e08b0723d1c89db7f5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Region::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="75" column="6" bodyfile="auto_comments_output/region.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a3b1f5b7c373d4cbde324d7b72031a5da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_region_id</type>
+        <definition>cmzn_region_id CMLibs::Zinc::Region::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="85" column="16" bodyfile="auto_comments_output/region.hpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a942c62b8b068524e1725bbaff79e9467" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::beginChange</definition>
+        <argsstring>()</argsstring>
+        <name>beginChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Begin caching or increment cache level for this region only. Call this function before making multiple changes to the region or its fields and objects via its field_module to minimise number of change messages sent to clients. Must call region end change method after making changes. Important: Do not pair with region end hierarchical change method! Note: region change caching encompasses field_module change caching so there is no need to call fieldmodule begin/end change methods as well. Can be nested. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1ab1beee9d4dce2908bc2317985947390a" kindref="member">Region::endChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="103" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1ab1beee9d4dce2908bc2317985947390a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::endChange</definition>
+        <argsstring>()</argsstring>
+        <name>endChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrement cache level or end caching of changes for this region only. Call region begin change method before making multiple field or region changes and call this afterwards. When change level is restored to zero in region, cached change messages are sent out to clients. Important: Do not pair with region begin hierarchical change method! <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1a942c62b8b068524e1725bbaff79e9467" kindref="member">Region::beginChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="118" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a3e7e67f481726c468178bf80cb0d2912" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::beginHierarchicalChange</definition>
+        <argsstring>()</argsstring>
+        <name>beginHierarchicalChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Begin caching or increment cache level for all regions in a tree, used to efficiently and safely make hierarchical field changes or modify the tree. Must call region end hierarchical_change method after modifications made. Can be nested. Important: Do not pair with non-hierarchical region end change method! <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1aaa63861205d0dc05f922d6df5555ec2a" kindref="member">Region::endHierarchicalChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="133" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1aaa63861205d0dc05f922d6df5555ec2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::endHierarchicalChange</definition>
+        <argsstring>()</argsstring>
+        <name>endHierarchicalChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrement cache level or end caching of changes for all regions in a tree. Call region begin hierarchical change method before making hierarchical field changes or modifying the region tree, and call this afterwards. When change level is restored to zero in any region, cached change messages are sent out. Important: Do not pair with non-hierarchical region begin change method! <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1a3e7e67f481726c468178bf80cb0d2912" kindref="member">Region::beginHierarchicalChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="148" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1ab1c8a207aa763654326e1ed2a7c04179" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::createChild</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>createChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a child region with provided name in region. Fails if a child of that name exists already.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1adb1f70a711cecbea70375f75cc689184" kindref="member">Region::setName</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name for the new child region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new child region, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="161" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1ad5944bd3272749a6c19186a1a1d6ac25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::createSubregion</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>createSubregion</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a region at the specified relative path, creating any intermediary regions if required. This is able to create child, sibling or cousin regions. Fails if a subregion exists at that path already, or if the relative path goes above the root region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> path, a series of valid region names separated by forward slashes &apos;/&apos;. Leading and trailing separators are optional. Name &quot;..&quot; identifies a parent region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new subregion, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="178" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1aaed20eb7d15fd51d8491ae585160132f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::createRegion</definition>
+        <argsstring>()</argsstring>
+        <name>createRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates and returns a reference to a region compatible with base_region, i.e. able to exist in the same region tree.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Context_1af560c7e5a65b0e63d87ad20059d82aee" kindref="member">Context::createRegion</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>Handle to new region, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="190" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1af6f8c0751ffbe6767e07dd2e9aa596a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule" kindref="compound">Fieldmodule</ref></type>
+        <definition>Fieldmodule CMLibs::Zinc::Region::getFieldmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get field module which manages this region&apos;s fields, which must be passed to field factory create methods.</para>
+<para><simplesect kind="return"><para>Handle to field module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="201" column="20" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1779" bodyend="1782"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a1154b42bbbb58e1a317411dcba1284c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::readFile</definition>
+        <argsstring>(const char *fileName)</argsstring>
+        <name>readFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenient function to read a file with the provided name into a region directly.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to read from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if data successfully read and merged into specified region, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="211" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1aacfe8e99cd6eaba14c3cbd50f14b7dbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref></type>
+        <definition>Context CMLibs::Zinc::Region::getContext</definition>
+        <argsstring>() const</argsstring>
+        <name>getContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the owning context for the region.</para>
+<para><simplesect kind="return"><para>Handle to context, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="221" column="9" bodyfile="auto_comments_output/region.hpp" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a594bc5aadde564a90caf8a73ff710615" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Region::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the name of the region.</para>
+<para><simplesect kind="return"><para>On success: allocated string containing region name. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="232" column="6" bodyfile="auto_comments_output/region.hpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1adb1f70a711cecbea70375f75cc689184" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the name of the region. Any name is valid as long as it is unique in the parent region, however avoid using forward slash characters &apos;/&apos; in names as this is used as the region path separator, and avoid name &quot;..&quot; which is used to identify the parent region in region paths.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new name for the region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="246" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1aa80fad8c8e96e1ca69866d2a0db07ac8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the parent region of this region.</para>
+<para><simplesect kind="return"><para>Handle to parent region, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="256" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="256" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a0e73ec5a0f98342761bb2596ccfb8f16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Region::getPath</definition>
+        <argsstring>() const</argsstring>
+        <name>getPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="261" column="6" bodyfile="auto_comments_output/region.hpp" bodystart="261" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1aefac03a601771f71d839e701869e74dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Region::getRelativePath</definition>
+        <argsstring>(const Region &amp;baseRegion) const</argsstring>
+        <name>getRelativePath</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>baseRegion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="266" column="6" bodyfile="auto_comments_output/region.hpp" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a09cd42a97e7376021f2c823dfded67ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::getRoot</definition>
+        <argsstring>() const</argsstring>
+        <name>getRoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the root or top parent region for this region, which may be itself.</para>
+<para><simplesect kind="return"><para>Handle to root region which will be the region itself if it has no parents, or NULL/invalid handle if invalid argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="277" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1ac01d3692d3fcfdd3b0343b0832b5a877" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::getFirstChild</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the first child region of this region.</para>
+<para><simplesect kind="return"><para>Handle to first child region, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="287" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="287" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a46d9444ecfe30e77040fd5dd893a80be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::getNextSibling</definition>
+        <argsstring>() const</argsstring>
+        <name>getNextSibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a reference to this region&apos;s next sibling region.</para>
+<para><simplesect kind="return"><para>Handle to next sibling region, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="297" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="297" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a94143d7b598c1707ee38f2e88207dc12" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::getPreviousSibling</definition>
+        <argsstring>() const</argsstring>
+        <name>getPreviousSibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a reference to this region&apos;s previous sibling region.</para>
+<para><simplesect kind="return"><para>Handle to previous sibling region, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="307" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="307" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a62322d9135807e4a9329718bb715705b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::appendChild</definition>
+        <argsstring>(const Region &amp;newChild)</argsstring>
+        <name>appendChild</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>newChild</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new_child to the end of the list of child regions of this region. If the new_child is already in a region tree, it is first removed. Fails if new_child contains this region. Fails if new_child is unnamed or the name is already used by another child of this region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newChild</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The child to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="322" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="322" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a80124a297d0a76dcc72c8ae7901b8f07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::insertChildBefore</definition>
+        <argsstring>(const Region &amp;newChild, const Region &amp;refChild)</argsstring>
+        <name>insertChildBefore</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>newChild</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>refChild</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserts new_child before the existing ref_child in the list of child regions of this region. If ref_child is NULL new_child is added at the end of the list. If the new_child is already in the region tree, it is first removed. Fails if new_child contains this region. Fails if new_child is unnamed or the name is already used by another child of this region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newChild</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The child to append. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="338" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a3c743afef620f48ecd54bf291a561f8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::removeChild</definition>
+        <argsstring>(const Region &amp;oldChild)</argsstring>
+        <name>removeChild</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>oldChild</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes old_child from the list of child regions of this region. Fails if old_child is not a child of this region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>oldChild</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The child to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="350" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1aae3d12de7fad1cdc2688a21773a96417" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::findChildByName</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>findChildByName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finds child region with supplied name, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the child. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to child region, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="361" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="361" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a28e05096a63f32041c150fec2533fc12" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Region::findSubregionAtPath</definition>
+        <argsstring>(const char *path) const</argsstring>
+        <name>findSubregionAtPath</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the subregion at the path relative to this region. This is able to find child, parent, sibling or cousin regions, or the region itself.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> path, a series of valid region names separated by forward slashes &apos;/&apos;. Leading and trailing separators are optional. Name &quot;..&quot; identifies a parent region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to subregion, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="376" column="8" bodyfile="auto_comments_output/region.hpp" bodystart="376" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1ab6869e41c41387d73037c9b1113c97f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Region::containsSubregion</definition>
+        <argsstring>(const Region &amp;subregion) const</argsstring>
+        <name>containsSubregion</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>subregion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if region is or contains the subregion.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subregion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The region being tested for containment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean true if this region is or contains subregion, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="387" column="6" bodyfile="auto_comments_output/region.hpp" bodystart="387" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a5c79d602c70a8af1a8bffd389e327845" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::writeFile</definition>
+        <argsstring>(const char *fileName) const</argsstring>
+        <name>writeFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenient function to write the region into a file with the provided name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to write to..</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if data is successfully written out, any other value otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="400" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a3d42282038ccad15318afa311184d824" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref></type>
+        <definition>Scene CMLibs::Zinc::Region::getScene</definition>
+        <argsstring>() const</argsstring>
+        <name>getScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return handle to the scene for this region, which contains graphics for visualising fields in the region.</para>
+<para><simplesect kind="return"><para>Handle to scene, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="411" column="14" bodyfile="auto_comments_output/scene.hpp" bodystart="752" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a45b3ccc0de972a336a686fddedbb2e1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kindref="compound">StreaminformationRegion</ref></type>
+        <definition>StreaminformationRegion CMLibs::Zinc::Region::createStreaminformationRegion</definition>
+        <argsstring>()</argsstring>
+        <name>createStreaminformationRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a stream information object for specifying files/resources and options for reading and writing field data to/from this region and child regions.</para>
+<para><simplesect kind="return"><para>Handle to new stream information, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="419" column="32" bodyfile="auto_comments_output/streamregion.hpp" bodystart="380" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a0c62c7af99966e3e35084156fd195e46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::read</definition>
+        <argsstring>(const StreaminformationRegion &amp;streaminformationRegion)</argsstring>
+        <name>read</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kindref="compound">StreaminformationRegion</ref> &amp;</type>
+          <declname>streaminformationRegion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads region data using stream resource objects provided in the stream information object. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streaminformationRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream information region containing information about resources to read from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if data successfully read and merged into specified region, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="431" column="12" bodyfile="auto_comments_output/streamregion.hpp" bodystart="386" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1ad2406f93f1d05e966f5b103ba2e94e7c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::write</definition>
+        <argsstring>(const StreaminformationRegion &amp;streaminformationRegion) const</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kindref="compound">StreaminformationRegion</ref> &amp;</type>
+          <declname>streaminformationRegion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes region data to stream resource objects described in the stream information object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streaminformationRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream information region containing information about resources to write to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if data is successfully written out, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="442" column="12" bodyfile="auto_comments_output/streamregion.hpp" bodystart="391" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a9e94dd35f29d906ca4c0e09027da5324" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::getTimeRange</definition>
+        <argsstring>(double *minimumValueOut, double *maximumValueOut)</argsstring>
+        <name>getTimeRange</name>
+        <param>
+          <type>double *</type>
+          <declname>minimumValueOut</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>maximumValueOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get range of times present in time sequences owned by this region. Includes time sequences parameters are mapped to plus those held by the client.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimumValueOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location to store minimum time on success. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximumValueOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location to store maximum time on success. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if no time-varying parameters, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="453" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="453" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a743e752b8049fb83a2e75d6283fc5b46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Region::getHierarchicalTimeRange</definition>
+        <argsstring>(double *minimumValueOut, double *maximumValueOut)</argsstring>
+        <name>getHierarchicalTimeRange</name>
+        <param>
+          <type>double *</type>
+          <declname>minimumValueOut</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>maximumValueOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get range of times present in time sequences owned by this region and all of its descendents. Includes time sequences parameters are mapped to plus those held by the client.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimumValueOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location to store minimum time on success. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximumValueOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location to store maximum time on success. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if no time-varying parameters, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="468" column="5" bodyfile="auto_comments_output/region.hpp" bodystart="468" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Region_1a7bee5e333815780f5b1c4417165cd43f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Regionnotifier" kindref="compound">Regionnotifier</ref></type>
+        <definition>Regionnotifier CMLibs::Zinc::Region::createRegionnotifier</definition>
+        <argsstring>()</argsstring>
+        <name>createRegionnotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a notifier for getting callbacks for changes to the region tree structure.</para>
+<para><simplesect kind="return"><para>Handle to new region notifier, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="479" column="23" bodyfile="auto_comments_output/region.hpp" bodystart="689" bodyend="692"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A hierarchical block/namespace owning domains and fields. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A region represents a block of a hierarchical model. It owns a local set of domains and fields describing the model (each accessed from its fieldmodule), and a scene for building graphics to visualise the model. Each region has any number of uniquely named child regions, allowing tree-like models to be constructed. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/region.hpp" line="35" column="1" bodyfile="auto_comments_output/region.hpp" bodystart="34" bodyend="481"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a62322d9135807e4a9329718bb715705b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>appendChild</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a942c62b8b068524e1725bbaff79e9467" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>beginChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a3e7e67f481726c468178bf80cb0d2912" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>beginHierarchicalChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1ab6869e41c41387d73037c9b1113c97f8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>containsSubregion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1ab1c8a207aa763654326e1ed2a7c04179" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>createChild</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1aaed20eb7d15fd51d8491ae585160132f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>createRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a7bee5e333815780f5b1c4417165cd43f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>createRegionnotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a45b3ccc0de972a336a686fddedbb2e1f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>createStreaminformationRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1ad5944bd3272749a6c19186a1a1d6ac25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>createSubregion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1ab1beee9d4dce2908bc2317985947390a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>endChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1aaa63861205d0dc05f922d6df5555ec2a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>endHierarchicalChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1aae3d12de7fad1cdc2688a21773a96417" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>findChildByName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a28e05096a63f32041c150fec2533fc12" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>findSubregionAtPath</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1aacfe8e99cd6eaba14c3cbd50f14b7dbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getContext</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1af6f8c0751ffbe6767e07dd2e9aa596a9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1ac01d3692d3fcfdd3b0343b0832b5a877" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getFirstChild</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a743e752b8049fb83a2e75d6283fc5b46" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getHierarchicalTimeRange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a3b1f5b7c373d4cbde324d7b72031a5da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a594bc5aadde564a90caf8a73ff710615" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a46d9444ecfe30e77040fd5dd893a80be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getNextSibling</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1aa80fad8c8e96e1ca69866d2a0db07ac8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getParent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a0e73ec5a0f98342761bb2596ccfb8f16" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getPath</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a94143d7b598c1707ee38f2e88207dc12" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getPreviousSibling</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1aefac03a601771f71d839e701869e74dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getRelativePath</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a09cd42a97e7376021f2c823dfded67ba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getRoot</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a3d42282038ccad15318afa311184d824" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a9e94dd35f29d906ca4c0e09027da5324" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>getTimeRange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a20eb67e93e8b5c509572f4bcc30f4ffc" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a80124a297d0a76dcc72c8ae7901b8f07" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>insertChildBefore</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a13729333e9226e08b0723d1c89db7f5d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a800295339849007ada3ddd674698146e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a0c62c7af99966e3e35084156fd195e46" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>read</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a1154b42bbbb58e1a317411dcba1284c2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>readFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1adb4376b0a788bd140ee87e8753bf924a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>Region</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a7f4d1003fe79e8ad3a587f0ba623ead3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>Region</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a66e11be178463d113a454bcde6fea174" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>Region</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a3c743afef620f48ecd54bf291a561f8f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>removeChild</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1adb1f70a711cecbea70375f75cc689184" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1ad2406f93f1d05e966f5b103ba2e94e7c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>write</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a5c79d602c70a8af1a8bffd389e327845" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>writeFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Region_1a59919c1f4f7fb2590672eec7f3af69b9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Region</scope><name>~Region</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

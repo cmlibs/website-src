@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Elementtemplate" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Elementtemplate</compoundname>
+    <includes refid="elementtemplate_8hpp" local="no">elementtemplate.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1ab1cb46254c8888e7bc886af35f679347" prot="private" static="no" mutable="no">
+        <type>cmzn_elementtemplate_id</type>
+        <definition>cmzn_elementtemplate_id CMLibs::Zinc::Elementtemplate::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="35" column="25" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1a512135e2de5fdf801b2da0b1c43081de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementtemplate::Elementtemplate</definition>
+        <argsstring>()</argsstring>
+        <name>Elementtemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="39" column="1" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="39" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1a870c781f151f29e95015b4da0e78aaef" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementtemplate::Elementtemplate</definition>
+        <argsstring>(cmzn_elementtemplate_id element_template_id)</argsstring>
+        <name>Elementtemplate</name>
+        <param>
+          <type>cmzn_elementtemplate_id</type>
+          <declname>element_template_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="43" column="10" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1a4a18bab22ec699c05a2a902d00442e03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementtemplate::Elementtemplate</definition>
+        <argsstring>(const Elementtemplate &amp;elementTemplate)</argsstring>
+        <name>Elementtemplate</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> &amp;</type>
+          <declname>elementTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="47" column="1" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1ab0610f0e5420523a544d6be0a4b33250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> &amp;</type>
+        <definition>Elementtemplate&amp; CMLibs::Zinc::Elementtemplate::operator=</definition>
+        <argsstring>(const Elementtemplate &amp;elementTemplate)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> &amp;</type>
+          <declname>elementTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="51" column="17" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="51" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1aee565bd80828385cd2b5afbae54b754a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementtemplate::~Elementtemplate</definition>
+        <argsstring>()</argsstring>
+        <name>~Elementtemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="62" column="1" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1a76c9f5be152bab5a6f23d52396d3b571" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Elementtemplate::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="75" column="6" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1a029f456ea9d25bafe691c2f4d2ef0050" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_elementtemplate_id</type>
+        <definition>cmzn_elementtemplate_id CMLibs::Zinc::Elementtemplate::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="85" column="25" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1a97072b025fd6b358c7610211ec632ff4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" kindref="member">Element::ShapeType</ref></type>
+        <definition>Element::ShapeType CMLibs::Zinc::Elementtemplate::getElementShapeType</definition>
+        <argsstring>() const</argsstring>
+        <name>getElementShapeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current element shape type set in the element template.</para>
+<para><simplesect kind="return"><para>The element shape type, or INVALID if not set or error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="95" column="20" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1a1b3b76f30f03ab9440a9e9aec44c45e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementtemplate::setElementShapeType</definition>
+        <argsstring>(Element::ShapeType shapeType)</argsstring>
+        <name>setElementShapeType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" kindref="member">Element::ShapeType</ref></type>
+          <declname>shapeType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the element shape to a standard element shape type. The shape must have the same dimension as the mesh from which the element template was created. Beware that face mappings are lost if shape changes are merged into elements.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shapeType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Standard element shapes enumerated value. Note can be INVALID which means the shape is not set when merged into an element, but new elements cannot be created unless they have a valid shape. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="110" column="5" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1aa22fafceb88ecb0594c95249bb8f71fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementtemplate::defineField</definition>
+        <argsstring>(const Field &amp;field, int componentNumber, const Elementfieldtemplate &amp;eft)</argsstring>
+        <name>defineField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>eft</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the field component(s) on the element template using the element field template. The element template is not valid until all components are defined for all fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to define. May be finite element type only. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to define from 1 to the number of field components, or -1 to define all components. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element field template. Must be for mesh this element template was created from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="128" column="5" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="128" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1aaa38d567318dda05f542cc9a6461f262" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementtemplate::removeField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>removeField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes field from list of fields to define or undefine in element template.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to remove. May be finite element type only. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="140" column="5" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementtemplate_1ab38f7f20d87568f466316c8af6330bec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementtemplate::undefineField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>undefineField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Marks field to be undefined when next merged into an existing element. Has no effect on newly created elements. Removes field from define list if present.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to undefine. May be finite element type only. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementtemplate.hpp" line="153" column="5" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A description of element shape and field definitions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A description of element shape and field definitions (incl. basis, parameter mappings), used as a template for creating new elements in a mesh, or merging into an element to define additional fields on it. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/elementtemplate.hpp" line="32" column="1" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="31" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1aa22fafceb88ecb0594c95249bb8f71fd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>defineField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a512135e2de5fdf801b2da0b1c43081de" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>Elementtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a870c781f151f29e95015b4da0e78aaef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>Elementtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a4a18bab22ec699c05a2a902d00442e03" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>Elementtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a97072b025fd6b358c7610211ec632ff4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>getElementShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a029f456ea9d25bafe691c2f4d2ef0050" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1ab1cb46254c8888e7bc886af35f679347" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a76c9f5be152bab5a6f23d52396d3b571" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1ab0610f0e5420523a544d6be0a4b33250" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1aaa38d567318dda05f542cc9a6461f262" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>removeField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a1b3b76f30f03ab9440a9e9aec44c45e7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>setElementShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1ab38f7f20d87568f466316c8af6330bec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>undefineField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1aee565bd80828385cd2b5afbae54b754a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementtemplate</scope><name>~Elementtemplate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

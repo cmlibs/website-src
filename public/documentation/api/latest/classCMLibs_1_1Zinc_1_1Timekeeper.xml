@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Timekeeper" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Timekeeper</compoundname>
+    <includes refid="timekeeper_8hpp" local="no">timekeeper.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PlayDirection</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3a3f4d8ff1cc26321328e5f249d3affd22" prot="public">
+          <name>PLAY_DIRECTION_INVALID</name>
+          <initializer>= CMZN_TIMEKEEPER_PLAY_DIRECTION_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified play direction </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3a8cb4457ce5e62048cd3a4aac75d048ef" prot="public">
+          <name>PLAY_DIRECTION_FORWARD</name>
+          <initializer>= CMZN_TIMEKEEPER_PLAY_DIRECTION_FORWARD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the time keeper to progress at increasing time value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3a4f955a54b6058239ef89a30d8e50d0bb" prot="public">
+          <name>PLAY_DIRECTION_REVERSE</name>
+          <initializer>= CMZN_TIMEKEEPER_PLAY_DIRECTION_REVERSE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the time keeper to progress at decreasing time value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the direction of play when querying the next callback time preferred for internal zinc objects. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Timekeeper_1ae8e124a0b92bd344b6b36f5ed36a6cc0" kindref="member">Timekeeper::getNextCallbackTime</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="85" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="84" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a55d26754758d78f3603a50ee97d9fc9f" prot="protected" static="no" mutable="no">
+        <type>cmzn_timekeeper_id</type>
+        <definition>cmzn_timekeeper_id CMLibs::Zinc::Timekeeper::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="44" column="20" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a63d02109daeed871c5148d72cd5e1343" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timekeeper::Timekeeper</definition>
+        <argsstring>()</argsstring>
+        <name>Timekeeper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="48" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="48" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a0255981663a0671b2ab57cd335819e0b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timekeeper::Timekeeper</definition>
+        <argsstring>(cmzn_timekeeper_id in_timekeeper_id)</argsstring>
+        <name>Timekeeper</name>
+        <param>
+          <type>cmzn_timekeeper_id</type>
+          <declname>in_timekeeper_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="52" column="10" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a13d3431736546020764caa7ead954791" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timekeeper::Timekeeper</definition>
+        <argsstring>(const Timekeeper &amp;timeKeeper)</argsstring>
+        <name>Timekeeper</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timekeeper" kindref="compound">Timekeeper</ref> &amp;</type>
+          <declname>timeKeeper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="56" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a5fc3f82a89f303d7d14ee35429812504" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Timekeeper" kindref="compound">Timekeeper</ref> &amp;</type>
+        <definition>Timekeeper&amp; CMLibs::Zinc::Timekeeper::operator=</definition>
+        <argsstring>(const Timekeeper &amp;timeKeeper)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timekeeper" kindref="compound">Timekeeper</ref> &amp;</type>
+          <declname>timeKeeper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="60" column="12" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="60" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1adaba31451459528752e176ed5bae1995" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timekeeper::~Timekeeper</definition>
+        <argsstring>()</argsstring>
+        <name>~Timekeeper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="71" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="71" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a22bc4844e88cb04a76cf8215aaeba64e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Timekeeper::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Timekeeper" kindref="compound">Timekeeper</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="99" column="6" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a13ffcdca8f21ba4109a31b042dee2894" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_timekeeper_id</type>
+        <definition>cmzn_timekeeper_id CMLibs::Zinc::Timekeeper::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Timekeeper" kindref="compound">Timekeeper</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Timekeeper" kindref="compound">Timekeeper</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="109" column="20" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a8711187b233e23a7bf4381e4dc1d2b0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1TimenotifierRegular" kindref="compound">TimenotifierRegular</ref></type>
+        <definition>TimenotifierRegular CMLibs::Zinc::Timekeeper::createTimenotifierRegular</definition>
+        <argsstring>(double updateFrequency, double timeOffset)</argsstring>
+        <name>createTimenotifierRegular</name>
+        <param>
+          <type>double</type>
+          <declname>updateFrequency</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create and returns a time notifier with regular update time in time keeper. The returned time notifier will automatically be added to the time keeper.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>updateFrequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of times which time notifier will receive callback per unit of time in the time keeper. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This value will set the exact time the notification happenes and allow setting the callback time other than t=0. Time notifier will receive/send out notification when time_offset + original callback time is reached. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new timekeeper, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="126" column="28" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="325" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a26ab014ab65dd5ff9752886e896567c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Timekeeper::getMaximumTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaximumTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the maximum time in the timekeeper.</para>
+<para><simplesect kind="return"><para>Current time or 0 if invalid argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="133" column="8" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1af871bfb1a09dd8ae5e5a58b10c637e18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Timekeeper::setMaximumTime</definition>
+        <argsstring>(double maximumTime)</argsstring>
+        <name>setMaximumTime</name>
+        <param>
+          <type>double</type>
+          <declname>maximumTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the maximum time in the timekeeper.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maximumTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timekeeper to modify. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximum_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new maximum time. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="145" column="5" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a3651f8677d197243db6518559c85e9ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Timekeeper::getMinimumTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinimumTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the minimum time in the timekeeper.</para>
+<para><simplesect kind="return"><para>Current time or 0 if invalid argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="155" column="8" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a0cd80c9d7c19972a3da6fdd8df3c7a68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Timekeeper::setMinimumTime</definition>
+        <argsstring>(double minimumTime)</argsstring>
+        <name>setMinimumTime</name>
+        <param>
+          <type>double</type>
+          <declname>minimumTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the minimum time in the timekeeper.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimumTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timekeeper to modify. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minimum_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new minimum time. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="167" column="5" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1a963e601d9e1553b72930d8135d74a4d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Timekeeper::getTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the current time from the timekeeper.</para>
+<para><simplesect kind="return"><para>Current time or 0 if invalid argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="177" column="8" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1ab85f52f51d622270a5d452809670693c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Timekeeper::setTime</definition>
+        <argsstring>(double time)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the current time in the timekeeper. Timenotifiers are informed of the time change.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new current time. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="189" column="5" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timekeeper_1ae8e124a0b92bd344b6b36f5ed36a6cc0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Timekeeper::getNextCallbackTime</definition>
+        <argsstring>(PlayDirection playDirection) const</argsstring>
+        <name>getNextCallbackTime</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3" kindref="member">PlayDirection</ref></type>
+          <declname>playDirection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the next callback time required by any of the time notifiers in the timekeeper. This function takes the minimum and maximum time into consideration. If the direction of playback is forward and next callback time exceeds the maximum time, the next callback time will be timekeeper_minimum + (callback_time - timekeeper_maximum). If the direction of playback is reverse and next callback time is smaller than the minimum time, the next callback time will be timekeeper_maximum + (timekeeper_minimum - callback_time).</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Timenotifier_1a510177c63546947890009d5c8c834e0b" kindref="member">Timenotifier::getNextCallbackTime</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enumeration indicating rather next forward/reverse time will be calculated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>next callback time on success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timekeeper.hpp" line="209" column="8" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="209" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The timekeeper synchronises a current time across <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> objects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The timekeeper maintains a current time that is communicated to objects within <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref>. For example, time-varying graphics are shown at the current timekeeper time; also, the time value field allows the current timekeeper time to be used in field expressions. Responsibility for timing animations is left to client code (as it is UI or OS-dependent), however the timekeeper API assists clients to determine the ideal callback time and to set the current time just before rendering to synchronise animation. Time notifiers allow clients to also use the timekeeper features including callbacks.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Timekeeper_1ae8e124a0b92bd344b6b36f5ed36a6cc0" kindref="member">Timekeeper::getNextCallbackTime</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Timekeeper_1ab85f52f51d622270a5d452809670693c" kindref="member">Timekeeper::setTime</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Timenotifier" kindref="compound">Timenotifier</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/timekeeper.hpp" line="42" column="1" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="41" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a8711187b233e23a7bf4381e4dc1d2b0d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>createTimenotifierRegular</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a13ffcdca8f21ba4109a31b042dee2894" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a26ab014ab65dd5ff9752886e896567c3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>getMaximumTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a3651f8677d197243db6518559c85e9ad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>getMinimumTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1ae8e124a0b92bd344b6b36f5ed36a6cc0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>getNextCallbackTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a963e601d9e1553b72930d8135d74a4d4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>getTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a55d26754758d78f3603a50ee97d9fc9f" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a22bc4844e88cb04a76cf8215aaeba64e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a5fc3f82a89f303d7d14ee35429812504" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3a8cb4457ce5e62048cd3a4aac75d048ef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>PLAY_DIRECTION_FORWARD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3a3f4d8ff1cc26321328e5f249d3affd22" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>PLAY_DIRECTION_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3a4f955a54b6058239ef89a30d8e50d0bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>PLAY_DIRECTION_REVERSE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1acb5732692a5eb8acabd5b519708cc2d3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>PlayDirection</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1af871bfb1a09dd8ae5e5a58b10c637e18" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>setMaximumTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a0cd80c9d7c19972a3da6fdd8df3c7a68" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>setMinimumTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1ab85f52f51d622270a5d452809670693c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>setTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a63d02109daeed871c5148d72cd5e1343" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>Timekeeper</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a0255981663a0671b2ab57cd335819e0b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>Timekeeper</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1a13d3431736546020764caa7ead954791" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>Timekeeper</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timekeeper_1adaba31451459528752e176ed5bae1995" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timekeeper</scope><name>~Timekeeper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

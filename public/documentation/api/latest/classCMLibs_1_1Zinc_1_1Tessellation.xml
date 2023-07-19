@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Tessellation" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Tessellation</compoundname>
+    <includes refid="tessellation_8hpp" local="no">tessellation.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ChangeFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a9f3711ea5c580813dd24618cc1dad92f" prot="public">
+          <name>CHANGE_FLAG_NONE</name>
+          <initializer>= CMZN_TESSELLATION_CHANGE_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>tessellation(s) not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a5301956205778ec533e8193c6dabb760" prot="public">
+          <name>CHANGE_FLAG_ADD</name>
+          <initializer>= CMZN_TESSELLATION_CHANGE_FLAG_ADD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>one or more tessellations added </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a14afcdc65f5679241df77aa14de7bf6d" prot="public">
+          <name>CHANGE_FLAG_REMOVE</name>
+          <initializer>= CMZN_TESSELLATION_CHANGE_FLAG_REMOVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>one or more tessellations removed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a1f426286a4160b23f7d6c08b0b071291" prot="public">
+          <name>CHANGE_FLAG_IDENTIFIER</name>
+          <initializer>= CMZN_TESSELLATION_CHANGE_FLAG_IDENTIFIER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>tessellation identifier changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622ac949fb03acbfb03b238c0fc6c332a1ae" prot="public">
+          <name>CHANGE_FLAG_DEFINITION</name>
+          <initializer>= CMZN_TESSELLATION_CHANGE_FLAG_DEFINITION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>change to tessellation attributes other than identifier. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a686d2c0daf895a79c33df10c0e980473" prot="public">
+          <name>CHANGE_FLAG_FULL_RESULT</name>
+          <initializer>= CMZN_TESSELLATION_CHANGE_FLAG_FULL_RESULT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>all resultant values of tessellation changed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622afda44665016d2d315a932632294e41d5" prot="public">
+          <name>CHANGE_FLAG_FINAL</name>
+          <initializer>= CMZN_TESSELLATION_CHANGE_FLAG_FINAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>final notification: owning tessellation module i.e. tessellation module has been destroyed </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit flags summarising changes to a tessellation or tessellations in a tessellationmodule. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="73" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="72" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Tessellation_1a6fc972e044ee184f481ca8c1cab5ae4a" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Tessellation::ChangeFlags</definition>
+        <argsstring></argsstring>
+        <name>ChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" kindref="member">ChangeFlag</ref> <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1acf922e8505f07c623577a00900288a91" kindref="member">Tessellationmoduleevent::getTessellationChangeFlags</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="95" column="13" bodyfile="auto_comments_output/tessellation.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Tessellation_1a29af99b9b85f0fdee2865c2d3b63b8de" prot="protected" static="no" mutable="no">
+        <type>cmzn_tessellation_id</type>
+        <definition>cmzn_tessellation_id CMLibs::Zinc::Tessellation::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="33" column="22" bodyfile="auto_comments_output/tessellation.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a229666e67d6bbab6cebf1da0d9e9fefc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellation::Tessellation</definition>
+        <argsstring>()</argsstring>
+        <name>Tessellation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="37" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a6432071cb96760f6e08cab31ae7b68ad" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellation::Tessellation</definition>
+        <argsstring>(cmzn_tessellation_id in_tessellation_id)</argsstring>
+        <name>Tessellation</name>
+        <param>
+          <type>cmzn_tessellation_id</type>
+          <declname>in_tessellation_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="41" column="10" bodyfile="auto_comments_output/tessellation.hpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1aa0437adbaaa43c7fd6888d9a77bcbb6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellation::Tessellation</definition>
+        <argsstring>(const Tessellation &amp;tessellation)</argsstring>
+        <name>Tessellation</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> &amp;</type>
+          <declname>tessellation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="45" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1ab75b93a45d7d9b577e6d6b36558ac374" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> &amp;</type>
+        <definition>Tessellation&amp; CMLibs::Zinc::Tessellation::operator=</definition>
+        <argsstring>(const Tessellation &amp;tessellation)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> &amp;</type>
+          <declname>tessellation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="49" column="14" bodyfile="auto_comments_output/tessellation.hpp" bodystart="49" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a3a935d651dcfde488765b5faff087d2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellation::~Tessellation</definition>
+        <argsstring>()</argsstring>
+        <name>~Tessellation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="60" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a384df11118a1bc05996feea1d02beebe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Tessellation::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="102" column="6" bodyfile="auto_comments_output/tessellation.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a2b69f48449eedcdd6fa9a7b6f4b6eef3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_tessellation_id</type>
+        <definition>cmzn_tessellation_id CMLibs::Zinc::Tessellation::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="112" column="22" bodyfile="auto_comments_output/tessellation.hpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a10a11c916071e353a6e90de2a37b9574" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Tessellation::isManaged</definition>
+        <argsstring>() const</argsstring>
+        <name>isManaged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get managed status of tessellation in its owning tessellation module. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a1c3e14d9975d393c67ccc65e56ae140f" kindref="member">Tessellation::setManaged</ref></para>
+</simplesect>
+<simplesect kind="return"><para>1 (true) if tessellation is managed, otherwise 0 (false). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="123" column="6" bodyfile="auto_comments_output/tessellation.hpp" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a1c3e14d9975d393c67ccc65e56ae140f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Tessellation::setManaged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setManaged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set managed status of tessellation in its owning tessellation module. If set (managed) the tessellation will remain indefinitely in the tessellation module even if no external references are held. If not set (unmanaged) the tessellation will be automatically removed from the module when no longer referenced externally, effectively marking it as pending destruction. All new objects are unmanaged unless stated otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the managed flag: true or false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="140" column="5" bodyfile="auto_comments_output/tessellation.hpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a47b6ff61a7eb60fb2d03d53cc9d4c80b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Tessellation::getCircleDivisions</definition>
+        <argsstring>() const</argsstring>
+        <name>getCircleDivisions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of line segments used to approximate circles in graphics produced with this tessellation. This applies to lines with a circle profile, and to sphere, cylinder and other glyphs with circular features.</para>
+<para><simplesect kind="return"><para>The number of circle divisions, or 0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="152" column="5" bodyfile="auto_comments_output/tessellation.hpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1ac1daed2c74ce68de6d2ace0c9eb184a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Tessellation::setCircleDivisions</definition>
+        <argsstring>(int circleDivisions)</argsstring>
+        <name>setCircleDivisions</name>
+        <param>
+          <type>int</type>
+          <declname>circleDivisions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the number of line segments used to approximate circles in graphics produced with this tessellation. This applies to lines with a circle profile, and to sphere, cylinder and other glyphs with circular features.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>circleDivisions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of line segments used to approximate a a circle, at least 3, but larger even numbers are recommended. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="166" column="5" bodyfile="auto_comments_output/tessellation.hpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a4f6754d3c901737def17cd047b0512c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Tessellation::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an allocated string containing tessellation name.</para>
+<para><simplesect kind="return"><para>allocated string containing tessellation name, or NULL on failure. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="177" column="6" bodyfile="auto_comments_output/tessellation.hpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a5e53f902239e7708179e1ca852469be7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Tessellation::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/change name for tessellation. Must be unique in the tessellation module.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name to be set to the tessellation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set/change name for tessellation, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="189" column="5" bodyfile="auto_comments_output/tessellation.hpp" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1adafa72d7dec716d4b648262c71dc46b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Tessellation::getMinimumDivisions</definition>
+        <argsstring>(int valuesCount, int *valuesOut) const</argsstring>
+        <name>getMinimumDivisions</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the minimum number of line segments used to approximate curves in each element dimension for coarse tessellation.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1ad1f8c169ea1fea3d3110d8f6f774bdf1" kindref="member">Tessellation::setMinimumDivisions</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the minimum_divisions array to fill. Values for dimensions beyond the size set use the last divisions value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive numbers of divisions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The actual number of minimum divisions values that have been explicitly set using <ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1ad1f8c169ea1fea3d3110d8f6f774bdf1" kindref="member">Tessellation::setMinimumDivisions</ref>. This can be more than the number requested, so a second call may be needed with a larger array. Returns 0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="207" column="5" bodyfile="auto_comments_output/tessellation.hpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1ad1f8c169ea1fea3d3110d8f6f774bdf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Tessellation::setMinimumDivisions</definition>
+        <argsstring>(int valuesCount, const int *valuesIn)</argsstring>
+        <name>setMinimumDivisions</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the minimum number of line segments used to approximate curves in each element dimension of tessellation. Intended to be used where coarse tessellation is acceptable, e.g. where fields vary linearly over elements. The default minimum_divisions value for new tessellations is 1, size 1. Note: The value set for the last dimension applies to all higher dimensions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesIn array, &gt;= 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of number of divisions (&gt;=1) for each dimension, with the last number in array applying to all higher dimensions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="224" column="5" bodyfile="auto_comments_output/tessellation.hpp" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1a9d5712e3ec96e729bf31cf8f10e2cee5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Tessellation::getRefinementFactors</definition>
+        <argsstring>(int valuesCount, int *valuesOut) const</argsstring>
+        <name>getRefinementFactors</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the refinements to be used in product with the minimum divisions to approximate curves in each element dimension for fine tessellation.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1ab32b1bdebb9c0484e74350a0e4da6547" kindref="member">Tessellation::setRefinementFactors</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the refinement_factors array to fill. Values for dimensions beyond the size set use the last refinement value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive refinement factors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The actual number of refinement factor values that have been explicitly set using <ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1ab32b1bdebb9c0484e74350a0e4da6547" kindref="member">Tessellation::setRefinementFactors</ref>. This can be more than the number requested, so a second call may be needed with a larger array. Returns 0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="242" column="5" bodyfile="auto_comments_output/tessellation.hpp" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellation_1ab32b1bdebb9c0484e74350a0e4da6547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Tessellation::setRefinementFactors</definition>
+        <argsstring>(int valuesCount, const int *valuesIn)</argsstring>
+        <name>setRefinementFactors</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the refinements to be used in product with the minimum divisions to approximate curves in each element dimension for fine tessellation. The refinement factors are applied whenever the basis functions of the graphics coordinate field (replaced by tessellation field if specified) are non-linear anywhere. If there is no tessellation field or if it matches the coordinate field, a non-linear coordinate system also triggers refinement. The default refinement_factors value for new tessellations is 1, size 1. Note: The value set for the last dimension applies to all higher dimensions.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1ad1f8c169ea1fea3d3110d8f6f774bdf1" kindref="member">Tessellation::setMinimumDivisions</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the refinement_factors array, &gt;= 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of number of fine subdivisions (&gt;=1) per minimum_division for each dimension, with the last number in array applying to all higher dimensions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="264" column="5" bodyfile="auto_comments_output/tessellation.hpp" bodystart="264" bodyend="267"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The tessellation controls the number of polygons or line segments. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The tessellation controls the number of polygons or line segments used to draw element surfaces and lines, and circular forms in graphics; the density of point sampling and the piecewise linear approximation of elements generally. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/tessellation.hpp" line="31" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="30" bodyend="269"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a5301956205778ec533e8193c6dabb760" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622ac949fb03acbfb03b238c0fc6c332a1ae" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622afda44665016d2d315a932632294e41d5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a686d2c0daf895a79c33df10c0e980473" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a1f426286a4160b23f7d6c08b0b071291" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a9f3711ea5c580813dd24618cc1dad92f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a14afcdc65f5679241df77aa14de7bf6d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6fc972e044ee184f481ca8c1cab5ae4a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a47b6ff61a7eb60fb2d03d53cc9d4c80b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>getCircleDivisions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a2b69f48449eedcdd6fa9a7b6f4b6eef3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1adafa72d7dec716d4b648262c71dc46b5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>getMinimumDivisions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a4f6754d3c901737def17cd047b0512c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a9d5712e3ec96e729bf31cf8f10e2cee5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>getRefinementFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a29af99b9b85f0fdee2865c2d3b63b8de" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a10a11c916071e353a6e90de2a37b9574" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a384df11118a1bc05996feea1d02beebe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1ab75b93a45d7d9b577e6d6b36558ac374" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1ac1daed2c74ce68de6d2ace0c9eb184a4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>setCircleDivisions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a1c3e14d9975d393c67ccc65e56ae140f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1ad1f8c169ea1fea3d3110d8f6f774bdf1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>setMinimumDivisions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a5e53f902239e7708179e1ca852469be7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1ab32b1bdebb9c0484e74350a0e4da6547" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>setRefinementFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a229666e67d6bbab6cebf1da0d9e9fefc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>Tessellation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6432071cb96760f6e08cab31ae7b68ad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>Tessellation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1aa0437adbaaa43c7fd6888d9a77bcbb6f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>Tessellation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellation_1a3a935d651dcfde488765b5faff087d2a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Tessellation</scope><name>~Tessellation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

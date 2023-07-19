@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Nodetemplate" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Nodetemplate</compoundname>
+    <includes refid="nodetemplate_8hpp" local="no">nodetemplate.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a26dbee81c27d45c3dcbdf65f3d16008f" prot="private" static="no" mutable="no">
+        <type>cmzn_nodetemplate_id</type>
+        <definition>cmzn_nodetemplate_id CMLibs::Zinc::Nodetemplate::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="33" column="22" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1aed2837bc606c15aa1ef77e7981c466cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodetemplate::Nodetemplate</definition>
+        <argsstring>()</argsstring>
+        <name>Nodetemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="37" column="1" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1ae5120a171cbe0f607e911cd8b6dc9472" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodetemplate::Nodetemplate</definition>
+        <argsstring>(cmzn_nodetemplate_id node_template_id)</argsstring>
+        <name>Nodetemplate</name>
+        <param>
+          <type>cmzn_nodetemplate_id</type>
+          <declname>node_template_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="41" column="10" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a2cc535f9fb28e55053074ee042e4dbcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodetemplate::Nodetemplate</definition>
+        <argsstring>(const Nodetemplate &amp;nodeTemplate)</argsstring>
+        <name>Nodetemplate</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref> &amp;</type>
+          <declname>nodeTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="45" column="1" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a554fa7e6f29f0c7f2e43c7097d8740d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref> &amp;</type>
+        <definition>Nodetemplate&amp; CMLibs::Zinc::Nodetemplate::operator=</definition>
+        <argsstring>(const Nodetemplate &amp;nodeTemplate)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref> &amp;</type>
+          <declname>nodeTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="49" column="14" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="49" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a882ef7e8b97a1f154d868fb42d3b8b6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodetemplate::~Nodetemplate</definition>
+        <argsstring>()</argsstring>
+        <name>~Nodetemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="60" column="1" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1aee336bf102ae611aa7a011e3642c8c28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Nodetemplate::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="73" column="6" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a2bc57408b93beac7c8e5d5b03f5055c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_nodetemplate_id</type>
+        <definition>cmzn_nodetemplate_id CMLibs::Zinc::Nodetemplate::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="83" column="22" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a9323a9101cd89aa4a21df130b8b4eb28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodetemplate::defineField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>defineField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the field on the node_template with just a single node value per field component with no time variation. Replaces any existing definition (or undefine state) of the field in the template. Per-component derivatives and multiple versions can be added subsequently.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to define. May be finite_element, stored_string or stored_mesh_location type only. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="98" column="5" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a664c0cbfedcb7b46fce57b3e816e4be1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodetemplate::defineFieldFromNode</definition>
+        <argsstring>(const Field &amp;field, const Node &amp;node)</argsstring>
+        <name>defineFieldFromNode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the field on the node template based on its definition in the supplied node. Replaces any existing definition (or undefine state) in the template. If the field is not defined on the node it is removed as a defined/undefined field in the template.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to define. May be finite_element, stored_string or stored_mesh_location type only. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node to obtain the field definition from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ab0928ff1924d73c9aaff1cd6f4f2bb97" kindref="member">CMLibs::Zinc::ERROR_NOT_FOUND</ref> if field was not defined on node, and any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="115" column="5" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1ab684b1a879254eec294948e580f7d7f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref></type>
+        <definition>Timesequence CMLibs::Zinc::Nodetemplate::getTimesequence</definition>
+        <argsstring>(const Field &amp;field) const</argsstring>
+        <name>getTimesequence</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the time sequence defined for field in node_template, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to get time sequence for. May be finite_element type only. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to time sequence, or NULL/invalid handle if none set or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="127" column="14" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a1db3241232aecb5a36ebeab4806aae5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodetemplate::setTimesequence</definition>
+        <argsstring>(const Field &amp;field, const Timesequence &amp;timesequence)</argsstring>
+        <name>setTimesequence</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> &amp;</type>
+          <declname>timesequence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines variation of all nodal values/derivatives * versions with the supplied time sequence for all components of the field in the node template. Hence there will be as many of each parameter as times in the time sequence.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to define versions for. May be finite_element type only. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timesequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time sequence object defining the number of times for which field parameters are stored, and the times they are for (increasing). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node_field_creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optionally defines different versions and/or derivative types. If it is NULL then a single nodal value for each component will be defined. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="146" column="5" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a271d8492b1fa5d60390b561b24263e94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodetemplate::getValueNumberOfVersions</definition>
+        <argsstring>(const Field &amp;field, int componentNumber, Node::ValueLabel valueLabel) const</argsstring>
+        <name>getValueNumberOfVersions</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" kindref="member">Node::ValueLabel</ref></type>
+          <declname>valueLabel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of value/derivative parameters under a given node value label for a field component in the node template.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to query value/derivative parameters for. Must be finite_element type only. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component from 1 to the number of field components, or -1 to get the number of versions if consistent for all components. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valueLabel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The label of the node value/derivative to query. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of versions for value label in component of field, or all components -1 supplied and components are consistent. Valid return value can be 0 if there are no versions for the supplied node value label. Returns -1 if field not defined, has inconsistent components if all components queried, or invalid arguments are supplied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="167" column="5" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="167" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1ab8150def115b50715783745013879250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodetemplate::setValueNumberOfVersions</definition>
+        <argsstring>(const Field &amp;field, int componentNumber, Node::ValueLabel valueLabel, int numberOfVersions)</argsstring>
+        <name>setValueNumberOfVersions</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" kindref="member">Node::ValueLabel</ref></type>
+          <declname>valueLabel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numberOfVersions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the number of value/derivative parameters under a given node value label for a field component in the node template. Must have first called cmzn_nodetemplate_define_field() for field. Note that a field is initially defined with a single VALUE label version, which may be changed using this function, including passing 0 versions to remove storage for the VALUE.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to define value/derivative parameters for. Must be finite_element type only. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component from 1 to the number of field components, or -1 to define identically for all components. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valueLabel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The label of the node value/derivative to define. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numberOfVersions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of versions of the derivative/value label to store. Can be 0 to request no parameters be stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if field is not defined, or any other error result for other reasons of failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="192" column="5" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="192" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1aa4f742c2dc1513c85db325992300a9ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodetemplate::removeField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>removeField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes field from list of fields to define or undefine in node template.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="205" column="5" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodetemplate_1a6503894c24266f4a38456f857cfb9922" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodetemplate::undefineField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>undefineField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Marks field to be undefined when next merged into an existing node. Has no effect on newly created nodes. Removes field from define list if present.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to undefine. May be finite_element, stored_string or stored_mesh_location type only. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodetemplate.hpp" line="217" column="5" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="217" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A description of field parameters to define at a node. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A description of field parameters to define at a node (incl. value/derivative types, versions), used as a template for creating new nodes in a nodeset, or merging into a node to define or undefine fields on it. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/nodetemplate.hpp" line="30" column="1" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="29" bodyend="221"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a9323a9101cd89aa4a21df130b8b4eb28" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>defineField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a664c0cbfedcb7b46fce57b3e816e4be1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>defineFieldFromNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a2bc57408b93beac7c8e5d5b03f5055c6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1ab684b1a879254eec294948e580f7d7f3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>getTimesequence</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a271d8492b1fa5d60390b561b24263e94" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>getValueNumberOfVersions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a26dbee81c27d45c3dcbdf65f3d16008f" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1aee336bf102ae611aa7a011e3642c8c28" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1aed2837bc606c15aa1ef77e7981c466cd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>Nodetemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1ae5120a171cbe0f607e911cd8b6dc9472" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>Nodetemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a2cc535f9fb28e55053074ee042e4dbcd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>Nodetemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a554fa7e6f29f0c7f2e43c7097d8740d6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1aa4f742c2dc1513c85db325992300a9ad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>removeField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a1db3241232aecb5a36ebeab4806aae5e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>setTimesequence</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1ab8150def115b50715783745013879250" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>setValueNumberOfVersions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a6503894c24266f4a38456f857cfb9922" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>undefineField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a882ef7e8b97a1f154d868fb42d3b8b6c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodetemplate</scope><name>~Nodetemplate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

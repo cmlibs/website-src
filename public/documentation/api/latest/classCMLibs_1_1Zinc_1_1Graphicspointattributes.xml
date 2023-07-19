@@ -1,0 +1,914 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Graphicspointattributes" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Graphicspointattributes</compoundname>
+    <includes refid="graphics_8hpp" local="no">graphics.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad995ddede8008abb775a211896227e17" prot="protected" static="no" mutable="no">
+        <type>cmzn_graphicspointattributes_id</type>
+        <definition>cmzn_graphicspointattributes_id CMLibs::Zinc::Graphicspointattributes::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1449" column="33" bodyfile="auto_comments_output/graphics.hpp" bodystart="1449" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1aacab3d68f9323228c1ae536209426145" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicspointattributes::Graphicspointattributes</definition>
+        <argsstring>()</argsstring>
+        <name>Graphicspointattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1452" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1452" bodyend="1453"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a01cbda88c541b6451695065ed01fb181" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicspointattributes::Graphicspointattributes</definition>
+        <argsstring>(cmzn_graphicspointattributes_id point_attributes_id)</argsstring>
+        <name>Graphicspointattributes</name>
+        <param>
+          <type>cmzn_graphicspointattributes_id</type>
+          <declname>point_attributes_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1456" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="1456" bodyend="1458"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a08b12dea12f702e64f58bc491f5eaf5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicspointattributes::Graphicspointattributes</definition>
+        <argsstring>(const Graphicspointattributes &amp;pointAttributes)</argsstring>
+        <name>Graphicspointattributes</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes" kindref="compound">Graphicspointattributes</ref> &amp;</type>
+          <declname>pointAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1460" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1460" bodyend="1462"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad3024292714b20c8b09121d8a3a35807" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes" kindref="compound">Graphicspointattributes</ref> &amp;</type>
+        <definition>Graphicspointattributes&amp; CMLibs::Zinc::Graphicspointattributes::operator=</definition>
+        <argsstring>(const Graphicspointattributes &amp;graphicspointattributes)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes" kindref="compound">Graphicspointattributes</ref> &amp;</type>
+          <declname>graphicspointattributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1464" column="25" bodyfile="auto_comments_output/graphics.hpp" bodystart="1464" bodyend="1471"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a2f0d95084223504a060e326bb4546993" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicspointattributes::~Graphicspointattributes</definition>
+        <argsstring>()</argsstring>
+        <name>~Graphicspointattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1473" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1473" bodyend="1476"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a38186f0008771b334e68547a1cbbc9ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Graphicspointattributes::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes" kindref="compound">Graphicspointattributes</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1483" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="1483" bodyend="1486"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a3027e105c56121734fcd025c81794861" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::getBaseSize</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getBaseSize</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the base size of the point glyph, up to 3 values, one for each axis. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a213fc46f8e04705c0060eb541814481e" kindref="member">Graphicspointattributes::setBaseSize</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of base size values to request, starting with the first axis. If fewer values have been set it is padded with the last base size value. 1 to 3 values can be obtained. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive base sizes. Must be big enough to contain the specified number of values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1499" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1499" bodyend="1502"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a213fc46f8e04705c0060eb541814481e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setBaseSize</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setBaseSize</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the base size of the point glyph, up to 3 values, one for each axis. For a unit sized glyph, the final size in each direction is: base_size + scale_factor * field_scalar where field_scalar is determined from the orientation_scale_field. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ab8bbe25f9892992d37c95e809fdc43e9" kindref="member">Graphicspointattributes::setOrientationScaleField</ref>. The default base size is zero. Tip: to visualise a 2- or 3-component vector orientation_scale_field, use a base size of 0,D,D with scale factors 1,0,0. This ensures the length equals the magnitude and the glyph is fixed to size D on the orthogonal axes.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of base size values to set, starting with the first axis. If fewer values are set than the number of axes, the last value is assumed for subsequent axes. Hence a single value can be used to set the diameter for a unit sphere glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of base sizes with the number of values specified. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1522" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1522" bodyend="1525"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a1b9b7426e0f872c28195cea5fc25b266" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref></type>
+        <definition>Font CMLibs::Zinc::Graphicspointattributes::getFont</definition>
+        <argsstring>() const</argsstring>
+        <name>getFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the font in the graphics point attributes used to draw the label field.</para>
+<para><simplesect kind="return"><para>Handle to font, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1532" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="1532" bodyend="1535"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ada2cbe8dd0781182aa5760db14224d69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setFont</definition>
+        <argsstring>(const Font &amp;font)</argsstring>
+        <name>setFont</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> &amp;</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the font in the graphics point attributes used to draw the label field.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1543" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1543" bodyend="1546"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a8f388a55d9e0e651fc050e35cf7ae69f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref></type>
+        <definition>Glyph CMLibs::Zinc::Graphicspointattributes::getGlyph</definition>
+        <argsstring>() const</argsstring>
+        <name>getGlyph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the glyph in the graphics point attributes used to visualise points.</para>
+<para><simplesect kind="return"><para>Handle to glyph, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1553" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="1553" bodyend="1556"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a4d167938cdc37b1232a544986fa7acb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setGlyph</definition>
+        <argsstring>(const Glyph &amp;glyph)</argsstring>
+        <name>setGlyph</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+          <declname>glyph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the glyph in the graphics point attributes used to visualise points.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyph to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1564" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1564" bodyend="1567"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a28a22868f2d23165a0dd63d31bb84ec2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::getGlyphOffset</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getGlyphOffset</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the offset from the point coordinates to where the glyph origin is drawn, in glyph units along the glyph local axes. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad03744701b6323c223236d3defcf26d1" kindref="member">Graphicspointattributes::setGlyphOffset</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of offset values to request, up to 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive offset values, starting with the first axis. Must be big enough to contain the specified number of values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1579" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1579" bodyend="1582"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad03744701b6323c223236d3defcf26d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setGlyphOffset</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setGlyphOffset</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the offset from the point coordinates to where the glyph origin is drawn, in glyph units along the glyph local axes. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ab8bbe25f9892992d37c95e809fdc43e9" kindref="member">Graphicspointattributes::setOrientationScaleField</ref>. Tip: offset values can give the effect of moving the centre point / origin of the glyph: just pass in negative coordinates for the new origin.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of offset values to set, up to 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of offset values, starting with the first axis. If fewer than 3 then zero is assumed for all other offset values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1596" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1596" bodyend="1599"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1aea33e39dd59d5be3da814be851e1d52d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" kindref="member">Glyph::RepeatMode</ref></type>
+        <definition>Glyph::RepeatMode CMLibs::Zinc::Graphicspointattributes::getGlyphRepeatMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getGlyphRepeatMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the current glyph repeat mode. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a34fa8929b39426e3289cfb5a0ee34313" kindref="member">Graphicspointattributes::setGlyphRepeatMode</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The current glyph repeat mode. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1607" column="19" bodyfile="auto_comments_output/graphics.hpp" bodystart="1607" bodyend="1610"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a34fa8929b39426e3289cfb5a0ee34313" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setGlyphRepeatMode</definition>
+        <argsstring>(Glyph::RepeatMode glyphRepeatMode)</argsstring>
+        <name>setGlyphRepeatMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" kindref="member">Glyph::RepeatMode</ref></type>
+          <declname>glyphRepeatMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the glyph repeat mode which controls whether multiple glyphs are drawn at each point and how. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" kindref="member">Glyph::RepeatMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>glyphRepeatMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new repeat mode. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1620" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1620" bodyend="1624"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a7b810071135316e4c80161569ba648d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" kindref="member">Glyph::ShapeType</ref></type>
+        <definition>Glyph::ShapeType CMLibs::Zinc::Graphicspointattributes::getGlyphShapeType</definition>
+        <argsstring>() const</argsstring>
+        <name>getGlyphShapeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the enumerated value identifying the current glyph used in the point attributes.</para>
+<para><simplesect kind="return"><para>The glyph type identifier, or CMZN_GLYPH_SHAPE_TYPE_INVALID if invalid arguments or glyph does not have a valid type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1633" column="18" bodyfile="auto_comments_output/graphics.hpp" bodystart="1633" bodyend="1636"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ac6ab8784fff2bb7dbfef581e90f58c8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setGlyphShapeType</definition>
+        <argsstring>(Glyph::ShapeType shapeType)</argsstring>
+        <name>setGlyphShapeType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" kindref="member">Glyph::ShapeType</ref></type>
+          <declname>shapeType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the glyph used for visualising a graphics point from a set of enumerations. Requires standard glyphs to first be created. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a5742825a36c2589949ac1f0b73e277ce" kindref="member">Glyphmodule::defineStandardGlyphs</ref> If no glyph exists with the type identifier, the glyph is unchanged.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shapeType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyph shape type identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1647" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1647" bodyend="1651"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1af3bfdd5a5c70bc75465425ed424e9d99" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphicspointattributes::getLabelField</definition>
+        <argsstring>() const</argsstring>
+        <name>getLabelField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the label field from the graphics point attributes.</para>
+<para><simplesect kind="return"><para>Handle to label field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1658" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="1658" bodyend="1661"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a43de1bb721ada0e569c933e3559c4306" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setLabelField</definition>
+        <argsstring>(const Field &amp;labelField)</argsstring>
+        <name>setLabelField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>labelField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the label field in the graphics point attributes. A string representation of this field&apos;s value (if defined) is drawn with the current font at the glyph offset.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>labelField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The label field to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1671" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1671" bodyend="1674"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad5584488c9bd12af7c50d9254b996ce7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::getLabelOffset</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getLabelOffset</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the label offset relative to the glyph axes from its origin. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1acfeeaddbc4a959ffdd82ab5f0ad55464" kindref="member">Graphicspointattributes::setLabelOffset</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of offset values to request, up to 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive offset values, starting with the first axis. Must be big enough to contain the specified number of values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1685" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1685" bodyend="1688"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1acfeeaddbc4a959ffdd82ab5f0ad55464" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setLabelOffset</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setLabelOffset</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the label offset relative to the glyph axes from its origin set by the glyph offset. A unit offset moves the label the length of the axis vector. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ab8bbe25f9892992d37c95e809fdc43e9" kindref="member">Graphicspointattributes::setOrientationScaleField</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of offset values to set, up to 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of offset values, starting with the first axis. If fewer than 3 then zero is assumed for all other offset values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1700" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1700" bodyend="1703"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a187cf58295b5c20b3be94681e952682c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Graphicspointattributes::getLabelText</definition>
+        <argsstring>(int labelNumber) const</argsstring>
+        <name>getLabelText</name>
+        <param>
+          <type>int</type>
+          <declname>labelNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get static label text to be shown near each glyph. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a2962cf050a96f058a9c7158cfbb44d30" kindref="member">Graphicspointattributes::setLabelText</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>labelNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The label_number to get, from 1 to 3. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Allocated string containing label text, or NULL if none or error. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1713" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="1713" bodyend="1716"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a2962cf050a96f058a9c7158cfbb44d30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setLabelText</definition>
+        <argsstring>(int labelNumber, const char *labelText)</argsstring>
+        <name>setLabelText</name>
+        <param>
+          <type>int</type>
+          <declname>labelNumber</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>labelText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set static label text to be shown near each glyph. The number of labels depends on the glyph repeat mode, one label per glyph for REPEAT_MODE_AXES, one label for REPEAT_MODE_NONE and REPEAT_MODE_MIRROR. Note the label field value is written for the first label only, prefixed by the first static label text. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a34fa8929b39426e3289cfb5a0ee34313" kindref="member">Graphicspointattributes::setGlyphRepeatMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>labelNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The label_number to set, from 1 to 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>labelText</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to set as static label text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1729" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1729" bodyend="1732"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1acc8b1bd98324e505f7a144572e20df3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphicspointattributes::getOrientationScaleField</definition>
+        <argsstring>() const</argsstring>
+        <name>getOrientationScaleField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the orientation scale field from the graphics point attributes. This controls scaling and orientation of point glyphs. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ab8bbe25f9892992d37c95e809fdc43e9" kindref="member">Graphicspointattributes::setOrientationScaleField</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to orientation scale field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1741" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="1741" bodyend="1744"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ab8bbe25f9892992d37c95e809fdc43e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setOrientationScaleField</definition>
+        <argsstring>(const Field &amp;orientationScaleField)</argsstring>
+        <name>setOrientationScaleField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>orientationScaleField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the orientation scale field in the graphics point attributes. This controls scaling and orientation of point glyphs. Only fields with the following numbers of components are allowed, with the prescribed behaviour: 1 : default orientation in line with local x, y and z axes, with scalar value equally applied in all 3 axes. 2 : 2-D vector giving orientation of 1st axis. 2nd vector is 90 degrees anticlockwise in 2-D plane, and 3rd vector is v1 (x) v2. Scale in all directions is magnitude of vector; use a zero scale factor to not scale in any axis. 3 : 3-D vector giving orientation of first axis. 2nd vector is arbitrary normal to this, and 3rd vector is v1 (x) v2. Scale in all directions is magnitude of vector; use a zero scale factor to not scale in any axis. 4 : 2 2-D vectors each giving orientation and scale (from magnitude) of 1st and 2nd axes. 3rd axis is v1 (x) v2 including scale from its magnitude. 6 : 2 3-D vectors each giving orientation and scale (from magnitude) of 1st and 2nd axes. 3rd axis is v1 (x) v2 including scale from its magnitude. 9 : 3 3-D vectors giving orientation and scale (from magnitude) of all 3 axes, in a right-handed sense. Note the signed scale field provides additional scaling and orientation reversal for negative values. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a4f2dc60334a60d5afa794ab9fdbc1de0" kindref="member">Graphicspointattributes::setSignedScaleField</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientationScaleField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation scale field to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1773" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1773" bodyend="1776"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a7cf81d2286ab0b1f5a8d4833c1c806ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::getScaleFactors</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getScaleFactors</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the scale factors used in sizing the point glyph, up to 3 values, one for each axis. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a147d4246892ada0dbfa4b5d43bc8a965" kindref="member">Graphicspointattributes::setScaleFactors</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of scale_factors to request, starting with the first axis. If fewer values have been set it is padded with the last scale factor value. 1 to 3 values can be obtained. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive scale factors. Must be big enough to contain the specified number of values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1790" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1790" bodyend="1793"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a147d4246892ada0dbfa4b5d43bc8a965" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setScaleFactors</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setScaleFactors</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the scale factors used in sizing the point glyph, up to 3 values, one for each axis. For a unit sized glyph, the final size in each direction is: base_size + scale_factor * field_scalar where field_scalar is determined from the orientation_scale_field. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ab8bbe25f9892992d37c95e809fdc43e9" kindref="member">Graphicspointattributes::setOrientationScaleField</ref>. Scale factor values default to 1. Tip: to visualise a 2- or 3-component vector orientation_scale_field, use a base size of 0,D,D with scale factors 1,0,0. This ensures the length equals the magnitude and the glyph is fixed to size D on the orthogonal axes.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of scale factor values to set, starting with the first axis. If fewer values are set than the number of axes, the last value is assumed for subsequent axes. Hence a single value applies to all axes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of scale factors with the number of values specified. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1814" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1814" bodyend="1817"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1aae47d8821f2cd3bc98192b38ba6c3a9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphicspointattributes::getSignedScaleField</definition>
+        <argsstring>() const</argsstring>
+        <name>getSignedScaleField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the signed scale field from the graphics point attributes. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a4f2dc60334a60d5afa794ab9fdbc1de0" kindref="member">Graphicspointattributes::setSignedScaleField</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to signed scale field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1825" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="1825" bodyend="1828"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a4f2dc60334a60d5afa794ab9fdbc1de0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicspointattributes::setSignedScaleField</definition>
+        <argsstring>(const Field &amp;signedScaleField)</argsstring>
+        <name>setSignedScaleField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>signedScaleField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the signed scale field in the graphics point attributes. Can have from 1 to 3 components which multiply the scaling from the orientation scale field on the corresponding axis. Note special behaviour applies when used with the GLYPH_REPEAT_MODE_MIRROR mode: If value is negative on the first axis, the origin of the glyph is moved to the end of the first axis and its direction is reversed. This is commonly used to draw stress and strain with mirrored arrow-like glyphs pointing inward for compression, and outward for tension. Do this by passing a single eigenvalue (of stress or strain tensor) as the signed_scale and the corresponding eigenvector as the orientation_scale field, with repeat mirror. Use a separate points graphics for each eigenvalue. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a34fa8929b39426e3289cfb5a0ee34313" kindref="member">Graphicspointattributes::setGlyphRepeatMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>signedScaleField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The signed scale field to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1847" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1847" bodyend="1850"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attributes object specifying how points are visualised. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Attributes object specifying how points are visualised in the graphics including glyph, scaling, labels and font. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1af7338d267b44ab86fd9df008e63ab777" kindref="member">Graphics::getGraphicspointattributes</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/graphics.hpp" line="1447" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1446" bodyend="1852"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a3027e105c56121734fcd025c81794861" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getBaseSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a1b9b7426e0f872c28195cea5fc25b266" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getFont</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a8f388a55d9e0e651fc050e35cf7ae69f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getGlyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a28a22868f2d23165a0dd63d31bb84ec2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getGlyphOffset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1aea33e39dd59d5be3da814be851e1d52d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getGlyphRepeatMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a7b810071135316e4c80161569ba648d2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getGlyphShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1af3bfdd5a5c70bc75465425ed424e9d99" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getLabelField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad5584488c9bd12af7c50d9254b996ce7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getLabelOffset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a187cf58295b5c20b3be94681e952682c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getLabelText</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1acc8b1bd98324e505f7a144572e20df3b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getOrientationScaleField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a7cf81d2286ab0b1f5a8d4833c1c806ee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getScaleFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1aae47d8821f2cd3bc98192b38ba6c3a9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>getSignedScaleField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1aacab3d68f9323228c1ae536209426145" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>Graphicspointattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a01cbda88c541b6451695065ed01fb181" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>Graphicspointattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a08b12dea12f702e64f58bc491f5eaf5d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>Graphicspointattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad995ddede8008abb775a211896227e17" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a38186f0008771b334e68547a1cbbc9ac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad3024292714b20c8b09121d8a3a35807" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a213fc46f8e04705c0060eb541814481e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setBaseSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ada2cbe8dd0781182aa5760db14224d69" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setFont</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a4d167938cdc37b1232a544986fa7acb5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setGlyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad03744701b6323c223236d3defcf26d1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setGlyphOffset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a34fa8929b39426e3289cfb5a0ee34313" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setGlyphRepeatMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ac6ab8784fff2bb7dbfef581e90f58c8e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setGlyphShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a43de1bb721ada0e569c933e3559c4306" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setLabelField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1acfeeaddbc4a959ffdd82ab5f0ad55464" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setLabelOffset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a2962cf050a96f058a9c7158cfbb44d30" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setLabelText</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ab8bbe25f9892992d37c95e809fdc43e9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setOrientationScaleField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a147d4246892ada0dbfa4b5d43bc8a965" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setScaleFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a4f2dc60334a60d5afa794ab9fdbc1de0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>setSignedScaleField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a2f0d95084223504a060e326bb4546993" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicspointattributes</scope><name>~Graphicspointattributes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

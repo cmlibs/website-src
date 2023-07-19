@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Nodeset" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Nodeset</compoundname>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" prot="public" virt="non-virtual">CMLibs::Zinc::NodesetGroup</derivedcompoundref>
+    <includes refid="nodeset_8hpp" local="no">nodeset.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Nodeset_1a21e3ecbac5870431e7afcfb67337695f" prot="protected" static="no" mutable="no">
+        <type>cmzn_nodeset_id</type>
+        <definition>cmzn_nodeset_id CMLibs::Zinc::Nodeset::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="33" column="17" bodyfile="auto_comments_output/nodeset.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a15c10a81769aafd04eec6c994575cb08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodeset::Nodeset</definition>
+        <argsstring>()</argsstring>
+        <name>Nodeset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="37" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a695dafa1b0300b14367a4f6c40869d9b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodeset::Nodeset</definition>
+        <argsstring>(cmzn_nodeset_id nodeset_id)</argsstring>
+        <name>Nodeset</name>
+        <param>
+          <type>cmzn_nodeset_id</type>
+          <declname>nodeset_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="41" column="10" bodyfile="auto_comments_output/nodeset.hpp" bodystart="41" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a48291134286284b7fe1bedb144c529ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodeset::Nodeset</definition>
+        <argsstring>(const Nodeset &amp;nodeset)</argsstring>
+        <name>Nodeset</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="44" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a6152a8457423cdd2d1eab19e407fddea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+        <definition>Nodeset&amp; CMLibs::Zinc::Nodeset::operator=</definition>
+        <argsstring>(const Nodeset &amp;nodeset)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="48" column="9" bodyfile="auto_comments_output/nodeset.hpp" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a0a2b0b0cf8139a95dcb4c20837d02b44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodeset::~Nodeset</definition>
+        <argsstring>()</argsstring>
+        <name>~Nodeset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="59" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1ae46e242e8c59aa9e33cc65490803b30e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Nodeset::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="72" column="6" bodyfile="auto_comments_output/nodeset.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1aa44872fef06741ead387c6896133c395" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_nodeset_id</type>
+        <definition>cmzn_nodeset_id CMLibs::Zinc::Nodeset::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="82" column="17" bodyfile="auto_comments_output/nodeset.hpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a991cc9a1d93f9a47162bed110304d1d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref></type>
+        <definition>NodesetGroup CMLibs::Zinc::Nodeset::castGroup</definition>
+        <argsstring>()</argsstring>
+        <name>castGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the nodeset is a nodeset group i.e. subset of nodes from a master nodeset, get the nodeset group specific interface for add/remove functions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodeset to be cast. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to derived nodeset group, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="94" column="21" bodyfile="auto_comments_output/nodeset.hpp" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a627f9f2240053de9ea3b4eeb63fc06fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Nodeset::containsNode</definition>
+        <argsstring>(const Node &amp;node) const</argsstring>
+        <name>containsNode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether the node is from the nodeset.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node to query about. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean true if node is in the nodeset, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="102" column="6" bodyfile="auto_comments_output/nodeset.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a9004408b62e61ca8c4ccf4107eed9dee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref></type>
+        <definition>Nodetemplate CMLibs::Zinc::Nodeset::createNodetemplate</definition>
+        <argsstring>()</argsstring>
+        <name>createNodetemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a blank template from which new nodes can be created in this nodeset. Used to describe how finite element fields are defined. Also used for defining new fields on existing nodes.</para>
+<para><simplesect kind="return"><para>Handle to new nodetemplate, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="114" column="14" bodyfile="auto_comments_output/nodeset.hpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1ab299bc6b0470855480681ff4f132f8c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref></type>
+        <definition>Node CMLibs::Zinc::Nodeset::createNode</definition>
+        <argsstring>(int identifier, const Nodetemplate &amp;nodeTemplate)</argsstring>
+        <name>createNode</name>
+        <param>
+          <type>int</type>
+          <declname>identifier</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref> &amp;</type>
+          <declname>nodeTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new node in this nodeset with fields defined as in the node_template. Returns handle to new node.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-negative integer identifier of new node, or -1 to automatically generate, starting from 1. Fails if supplied identifier already used by an existing node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeTemplate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Template for defining node fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new node, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="129" column="6" bodyfile="auto_comments_output/nodeset.hpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a55c2e1ded31e39a4cb85754783432677" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodeiterator" kindref="compound">Nodeiterator</ref></type>
+        <definition>Nodeiterator CMLibs::Zinc::Nodeset::createNodeiterator</definition>
+        <argsstring>()</argsstring>
+        <name>createNodeiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a node iterator object for iterating through the nodes in the nodeset which are ordered from lowest to highest identifier. The iterator initially points at the position before the first node, so the first call to cmzn_nodeiterator_next() returns the first node and advances the iterator. Iterator becomes invalid if nodeset is modified or any of its nodes are given new identifiers.</para>
+<para><simplesect kind="return"><para>Handle to new node iterator, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="144" column="14" bodyfile="auto_comments_output/nodeset.hpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1ad6b9d535aa461a108932e9b9f3b93e07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodeset::destroyAllNodes</definition>
+        <argsstring>()</argsstring>
+        <name>destroyAllNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy all nodes in nodeset, also removing them from any related groups. Any nodes in use by elements are prevented from being destroyed. All affected node iterators for the nodeset or groups are invalidated. All handles to the destroyed nodes become invalid.</para>
+<para><simplesect kind="return"><para>Result OK if all nodes destroyed, ERROR_IN_USE if partial success with some nodes not destroyed due to being in use by elements, or any other error code if more serious failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="159" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1afd1233c583c1958c8762181300905da4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodeset::destroyNode</definition>
+        <argsstring>(const Node &amp;node)</argsstring>
+        <name>destroyNode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy the node if it is in the nodeset and not in use by elements. Removes node from any related groups it is in. All affected node iterators for the nodeset or groups are invalidated. All handles to the destroyed node become invalid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node to destroy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if node destroyed, ERROR_IN_USE if it could not be destroyed due to being in use by elements, or any other error code if more serious failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="175" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a5ad363c1ea96ae8692ea7a7da1db1503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodeset::destroyNodesConditional</definition>
+        <argsstring>(const Field &amp;conditionalField)</argsstring>
+        <name>destroyNodesConditional</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>conditionalField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy all nodes in the nodeset for which the conditional field is true i.e. non-zero valued. These nodes are removed from any related groups they are in. Nodes are only removed if not in use by elements in region. All affected node iterators for the nodeset or groups are invalidated. All handles to destroyed nodes become invalid. Note that group and node group fields are valid conditional fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conditionalField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> which if non-zero at any node indicates it is to be destroyed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if all nodes passing condition destroyed, ERROR_IN_USE if partial success with some nodes not destroyed due to being in use by elements, or any other error code if more serious failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="194" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="194" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1af589a172f86cd8a29fb862083e980d37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref></type>
+        <definition>Node CMLibs::Zinc::Nodeset::findNodeByIdentifier</definition>
+        <argsstring>(int identifier) const</argsstring>
+        <name>findNodeByIdentifier</name>
+        <param>
+          <type>int</type>
+          <declname>identifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a handle to the node in the nodeset with this identifier.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-negative integer identifier of node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to node, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="205" column="6" bodyfile="auto_comments_output/nodeset.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1a3b3960b1c64912021f023f98f321a378" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule" kindref="compound">Fieldmodule</ref></type>
+        <definition>Fieldmodule CMLibs::Zinc::Nodeset::getFieldmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns handle to field module for region this nodeset belongs to.</para>
+<para><simplesect kind="return"><para>Handle to field module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="215" column="20" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1794" bodyend="1797"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1ac75d90340ed7b6f3bed0c24ce037dfbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref></type>
+        <definition>Nodeset CMLibs::Zinc::Nodeset::getMasterNodeset</definition>
+        <argsstring>() const</argsstring>
+        <name>getMasterNodeset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the master nodeset which owns the nodes for this nodeset. Can be the same as the supplied nodeset if it is a master.</para>
+<para><simplesect kind="return"><para>Handle to master nodeset, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="223" column="9" bodyfile="auto_comments_output/nodeset.hpp" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1ab58b931df8f212fb6e3d4e186dd8a7c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Nodeset::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the name of the nodeset.</para>
+<para><simplesect kind="see"><para>Void::cmznDeallocate </para>
+</simplesect>
+<simplesect kind="return"><para>On success: allocated string containing nodeset name. Up to caller to free using Void::cmznDeallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="235" column="6" bodyfile="auto_comments_output/nodeset.hpp" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeset_1ae06a4a84134e248708fac42b1a66b4c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodeset::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of nodes in the nodeset.</para>
+<para><simplesect kind="return"><para>Number of nodes in nodeset. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="245" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="245" bodyend="248"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A set of nodes or points. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A set of nodes or points, equivalent to a zero-dimensional mesh. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CMLibs::Zinc::Nodeset</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Nodeset"/>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::NodesetGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1NodesetGroup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="auto_comments_output/nodeset.hpp" line="30" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="29" bodyend="250"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a991cc9a1d93f9a47162bed110304d1d8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>castGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a627f9f2240053de9ea3b4eeb63fc06fb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>containsNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ab299bc6b0470855480681ff4f132f8c8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>createNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a55c2e1ded31e39a4cb85754783432677" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>createNodeiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a9004408b62e61ca8c4ccf4107eed9dee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>createNodetemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ad6b9d535aa461a108932e9b9f3b93e07" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>destroyAllNodes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1afd1233c583c1958c8762181300905da4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>destroyNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a5ad363c1ea96ae8692ea7a7da1db1503" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>destroyNodesConditional</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1af589a172f86cd8a29fb862083e980d37" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>findNodeByIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a3b3960b1c64912021f023f98f321a378" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1aa44872fef06741ead387c6896133c395" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ac75d90340ed7b6f3bed0c24ce037dfbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>getMasterNodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ab58b931df8f212fb6e3d4e186dd8a7c7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ae06a4a84134e248708fac42b1a66b4c1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>getSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a21e3ecbac5870431e7afcfb67337695f" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ae46e242e8c59aa9e33cc65490803b30e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a15c10a81769aafd04eec6c994575cb08" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>Nodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a695dafa1b0300b14367a4f6c40869d9b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>Nodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a48291134286284b7fe1bedb144c529ec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>Nodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a6152a8457423cdd2d1eab19e407fddea" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a0a2b0b0cf8139a95dcb4c20837d02b44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeset</scope><name>~Nodeset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

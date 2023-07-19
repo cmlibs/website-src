@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Sceneviewerinput</compoundname>
+    <includes refid="sceneviewerinput_8hpp" local="no">sceneviewerinput.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ButtonType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6a25a0b8f559bdd63bd00bb68c7c79648a" prot="public">
+          <name>BUTTON_TYPE_INVALID</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_BUTTON_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scene viewer input button type. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6a4acee2d5809790ed8f87f3516590afb9" prot="public">
+          <name>BUTTON_TYPE_LEFT</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_BUTTON_TYPE_LEFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates left mouse click event. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6a24b4d25c8edfa3106406abaf9859257b" prot="public">
+          <name>BUTTON_TYPE_MIDDLE</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_BUTTON_TYPE_MIDDLE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates middle mouse click event. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6acf560cde0a671be5b22980fc94acf734" prot="public">
+          <name>BUTTON_TYPE_RIGHT</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_BUTTON_TYPE_RIGHT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates right mouse click event. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6ae65ffcff57b3bd559701507bb3e32519" prot="public">
+          <name>BUTTON_TYPE_SCROLL_DOWN</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_BUTTON_TYPE_SCROLL_DOWN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates scroll down event. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6aaaf22ca80a186703e37a0f74a57f2966" prot="public">
+          <name>BUTTON_TYPE_SCROLL_UP</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_BUTTON_TYPE_SCROLL_UP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates scroll up event. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of scene viewer input button. It describes the type of mouse buttons interaction to be processed on scene viewer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="38" column="1" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="37" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>EventType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9a94f7b8642ec46de8090715d67dccea9c" prot="public">
+          <name>EVENT_TYPE_INVALID</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_EVENT_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scene viewer input event type. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9afa2f945b0c2b0f45b2874f723aa1ef96" prot="public">
+          <name>EVENT_TYPE_MOTION_NOTIFY</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_EVENT_TYPE_MOTION_NOTIFY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates the cursor has moved. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9af25632d52f8d81b593831a35d6401425" prot="public">
+          <name>EVENT_TYPE_BUTTON_PRESS</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_EVENT_TYPE_BUTTON_PRESS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates a button on the mouse has been pressed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9a9c6e75b62efc53d15f1dd4393491c40e" prot="public">
+          <name>EVENT_TYPE_BUTTON_RELEASE</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_EVENT_TYPE_BUTTON_RELEASE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates a button on the mouse has been released. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9a6a4fd3ed6f272ee2f902e636e6531fd5" prot="public">
+          <name>EVENT_TYPE_KEY_PRESS</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_EVENT_TYPE_KEY_PRESS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates a button on the keyboard has been pressed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9a8a1721b9ba5f9f0e7ecdcb27f41aebc0" prot="public">
+          <name>EVENT_TYPE_KEY_RELEASE</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_EVENT_TYPE_KEY_RELEASE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates a button on the mouse has been released. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the scene viewer input event type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="57" column="1" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="56" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ModifierFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4a64c1e4e0c193831e68a234b0ac0ef613" prot="public">
+          <name>MODIFIER_FLAG_NONE</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_MODIFIER_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scene viewer modifier type. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4aa88f338744952c620d0e51adeb08d7ac" prot="public">
+          <name>MODIFIER_FLAG_SHIFT</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_MODIFIER_FLAG_SHIFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates shift on keyboard has been pressed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4a69e7629e50590ece1971ad1fe72100bb" prot="public">
+          <name>MODIFIER_FLAG_CONTROL</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_MODIFIER_FLAG_CONTROL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates control on keyboard has been pressed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4ae0fd54e9528e563ddb3b11adccf0457d" prot="public">
+          <name>MODIFIER_FLAG_ALT</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_MODIFIER_FLAG_ALT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates alt on keyboard has been pressed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4a2e7d5aa738af39dd2b4651a5625b9d3d" prot="public">
+          <name>MODIFIER_FLAG_BUTTON1</name>
+          <initializer>= CMZN_SCENEVIEWERINPUT_MODIFIER_FLAG_BUTTON1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>indicates button1 on keyboard has been pressed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the scene viewer input modifier flags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="76" column="1" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="75" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a5e152df9bd97edba8be69d46c17487f7" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Sceneviewerinput::ModifierFlags</definition>
+        <argsstring></argsstring>
+        <name>ModifierFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4" kindref="member">ModifierFlag</ref> <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a09e70b40eb9a943a80243cb62a031bba" kindref="member">setModifierFlags</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="93" column="13" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1ac7c75f6e2300b6b6f3673256fc0257ca" prot="protected" static="no" mutable="no">
+        <type>cmzn_sceneviewerinput_id</type>
+        <definition>cmzn_sceneviewerinput_id CMLibs::Zinc::Sceneviewerinput::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="30" column="26" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a461b0f29b532ffc72e55373f1bcfca70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewerinput::Sceneviewerinput</definition>
+        <argsstring>()</argsstring>
+        <name>Sceneviewerinput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="95" column="1" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="95" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a5feea02e3f662e6f54c9b1f144f8ddc6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewerinput::Sceneviewerinput</definition>
+        <argsstring>(cmzn_sceneviewerinput_id in_sceneviewerinput_id)</argsstring>
+        <name>Sceneviewerinput</name>
+        <param>
+          <type>cmzn_sceneviewerinput_id</type>
+          <declname>in_sceneviewerinput_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="99" column="10" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6adcaed7e5c6d5f15d868797624ed54e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewerinput::Sceneviewerinput</definition>
+        <argsstring>(const Sceneviewerinput &amp;sceneviewerinput)</argsstring>
+        <name>Sceneviewerinput</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kindref="compound">Sceneviewerinput</ref> &amp;</type>
+          <declname>sceneviewerinput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="103" column="1" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1adc090cceaac1ef09adf05a35cb5569c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kindref="compound">Sceneviewerinput</ref> &amp;</type>
+        <definition>Sceneviewerinput&amp; CMLibs::Zinc::Sceneviewerinput::operator=</definition>
+        <argsstring>(const Sceneviewerinput &amp;sceneviewerinput)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kindref="compound">Sceneviewerinput</ref> &amp;</type>
+          <declname>sceneviewerinput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="107" column="18" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="107" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a746dc36f095366aafc0acd37922720fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewerinput::~Sceneviewerinput</definition>
+        <argsstring>()</argsstring>
+        <name>~Sceneviewerinput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="118" column="1" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="118" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8cef50aeea351380d177050179886d60" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewerinput::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kindref="compound">Sceneviewerinput</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="131" column="6" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a66ebf6491f7fe6ce47e7a6c7d063bc26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_sceneviewerinput_id</type>
+        <definition>cmzn_sceneviewerinput_id CMLibs::Zinc::Sceneviewerinput::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kindref="compound">Sceneviewerinput</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kindref="compound">Sceneviewerinput</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="141" column="26" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a2f82b47ba95310cfa759e43cca364b39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewerinput::setPosition</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the position of the input.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the input position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the input position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successful, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="153" column="5" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1aa34136836d30e099061ae5a3cff03268" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewerinput::setButtonType</definition>
+        <argsstring>(ButtonType buttonType)</argsstring>
+        <name>setButtonType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6" kindref="member">ButtonType</ref></type>
+          <declname>buttonType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the button for the scene viewer input.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zinc scene viewer input button enumeration value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="164" column="5" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a2ab6b0167141a54679e19df3e96e0cf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewerinput::setEventType</definition>
+        <argsstring>(EventType eventType)</argsstring>
+        <name>setEventType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9" kindref="member">EventType</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the scene viewer input event type: button press, motion, etc.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enumerator for the input event type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successful, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="175" column="5" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a09e70b40eb9a943a80243cb62a031bba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewerinput::setModifierFlags</definition>
+        <argsstring>(ModifierFlags modifierFlags)</argsstring>
+        <name>setModifierFlags</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a5e152df9bd97edba8be69d46c17487f7" kindref="member">ModifierFlags</ref></type>
+          <declname>modifierFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set modifier flags for the input, e.g. shift, ctrl, alt.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modifierFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input modifier flags to set: logical OR of enum cmzn_sceneviewerinput_modifier_flag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successful, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewerinput.hpp" line="187" column="5" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes a mouse event for processing by the sceneviewer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes a mouse event for processing by the sceneviewer to produce viewer transformations: tumble, pan, zoom. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8b54f0afe2eea2161b9de1f7580b9711" kindref="member">Sceneviewer::processSceneviewerinput</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/sceneviewerinput.hpp" line="28" column="1" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="27" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6a25a0b8f559bdd63bd00bb68c7c79648a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>BUTTON_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6a4acee2d5809790ed8f87f3516590afb9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>BUTTON_TYPE_LEFT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6a24b4d25c8edfa3106406abaf9859257b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>BUTTON_TYPE_MIDDLE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6acf560cde0a671be5b22980fc94acf734" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>BUTTON_TYPE_RIGHT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6ae65ffcff57b3bd559701507bb3e32519" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>BUTTON_TYPE_SCROLL_DOWN</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6aaaf22ca80a186703e37a0f74a57f2966" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>BUTTON_TYPE_SCROLL_UP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6aff637e1c2fb832a09cf7da429fe4a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>ButtonType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9af25632d52f8d81b593831a35d6401425" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>EVENT_TYPE_BUTTON_PRESS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9a9c6e75b62efc53d15f1dd4393491c40e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>EVENT_TYPE_BUTTON_RELEASE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9a94f7b8642ec46de8090715d67dccea9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>EVENT_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9a6a4fd3ed6f272ee2f902e636e6531fd5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>EVENT_TYPE_KEY_PRESS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9a8a1721b9ba5f9f0e7ecdcb27f41aebc0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>EVENT_TYPE_KEY_RELEASE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9afa2f945b0c2b0f45b2874f723aa1ef96" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>EVENT_TYPE_MOTION_NOTIFY</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a146ca9123cd3a589b69ea424121669c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>EventType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a66ebf6491f7fe6ce47e7a6c7d063bc26" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1ac7c75f6e2300b6b6f3673256fc0257ca" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8cef50aeea351380d177050179886d60" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4ae0fd54e9528e563ddb3b11adccf0457d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>MODIFIER_FLAG_ALT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4a2e7d5aa738af39dd2b4651a5625b9d3d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>MODIFIER_FLAG_BUTTON1</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4a69e7629e50590ece1971ad1fe72100bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>MODIFIER_FLAG_CONTROL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4a64c1e4e0c193831e68a234b0ac0ef613" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>MODIFIER_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4aa88f338744952c620d0e51adeb08d7ac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>MODIFIER_FLAG_SHIFT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a8b1854c58b89b06838a0f4fd6c1966a4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>ModifierFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a5e152df9bd97edba8be69d46c17487f7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>ModifierFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1adc090cceaac1ef09adf05a35cb5569c1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a461b0f29b532ffc72e55373f1bcfca70" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>Sceneviewerinput</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a5feea02e3f662e6f54c9b1f144f8ddc6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>Sceneviewerinput</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a6adcaed7e5c6d5f15d868797624ed54e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>Sceneviewerinput</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1aa34136836d30e099061ae5a3cff03268" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>setButtonType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a2ab6b0167141a54679e19df3e96e0cf0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>setEventType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a09e70b40eb9a943a80243cb62a031bba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>setModifierFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a2f82b47ba95310cfa759e43cca364b39" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>setPosition</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput_1a746dc36f095366aafc0acd37922720fd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewerinput</scope><name>~Sceneviewerinput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

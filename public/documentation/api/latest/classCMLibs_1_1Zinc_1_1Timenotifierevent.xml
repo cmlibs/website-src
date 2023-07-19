@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Timenotifierevent" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Timenotifierevent</compoundname>
+    <includes refid="timenotifier_8hpp" local="no">timenotifier.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1ab450618d1e21277062ceaee8edda940f" prot="protected" static="no" mutable="no">
+        <type>cmzn_timenotifierevent_id</type>
+        <definition>cmzn_timenotifierevent_id CMLibs::Zinc::Timenotifierevent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="29" column="27" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a9291063843daa307e9cc3dece16c349d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timenotifierevent::Timenotifierevent</definition>
+        <argsstring>()</argsstring>
+        <name>Timenotifierevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="33" column="1" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="33" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a79742b0d0fd26da25adb134d7229e60f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timenotifierevent::Timenotifierevent</definition>
+        <argsstring>(cmzn_timenotifierevent_id in_timenotifier_event_id)</argsstring>
+        <name>Timenotifierevent</name>
+        <param>
+          <type>cmzn_timenotifierevent_id</type>
+          <declname>in_timenotifier_event_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="37" column="10" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1aaa24e81ca4d752266656b9dc82052d93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timenotifierevent::Timenotifierevent</definition>
+        <argsstring>(const Timenotifierevent &amp;timenotifierEvent)</argsstring>
+        <name>Timenotifierevent</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timenotifierevent" kindref="compound">Timenotifierevent</ref> &amp;</type>
+          <declname>timenotifierEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="41" column="1" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a7ad177b94d9bd74110a42cde9718c4ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Timenotifierevent" kindref="compound">Timenotifierevent</ref> &amp;</type>
+        <definition>Timenotifierevent&amp; CMLibs::Zinc::Timenotifierevent::operator=</definition>
+        <argsstring>(const Timenotifierevent &amp;timenotifierEvent)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timenotifierevent" kindref="compound">Timenotifierevent</ref> &amp;</type>
+          <declname>timenotifierEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="45" column="19" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a7e858e9cff04bc69c4272aa8a24cd925" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timenotifierevent::~Timenotifierevent</definition>
+        <argsstring>()</argsstring>
+        <name>~Timenotifierevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="56" column="1" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a507279f99e3d2339525fcc5af3188daf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Timenotifierevent::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Timenotifierevent" kindref="compound">Timenotifierevent</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="69" column="6" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a095095f494d9b57299b1c068dd36e1c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_timenotifierevent_id</type>
+        <definition>cmzn_timenotifierevent_id CMLibs::Zinc::Timenotifierevent::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Timenotifierevent" kindref="compound">Timenotifierevent</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Timenotifierevent" kindref="compound">Timenotifierevent</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="79" column="27" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a5643eb523d61681d697a4d5925f2779d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Timenotifierevent::getTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the time when this timenotifier event is triggered.</para>
+<para><simplesect kind="return"><para>The time when this timenotifier event is triggered </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timenotifier.hpp" line="89" column="8" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about changes to the timekeeper/time. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Information about changes to the timekeeper/time, sent with each callback from the time notifier. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/timenotifier.hpp" line="27" column="1" bodyfile="auto_comments_output/timenotifier.hpp" bodystart="26" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a095095f494d9b57299b1c068dd36e1c2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a5643eb523d61681d697a4d5925f2779d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>getTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1ab450618d1e21277062ceaee8edda940f" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a507279f99e3d2339525fcc5af3188daf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a7ad177b94d9bd74110a42cde9718c4ed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a9291063843daa307e9cc3dece16c349d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>Timenotifierevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a79742b0d0fd26da25adb134d7229e60f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>Timenotifierevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1aaa24e81ca4d752266656b9dc82052d93" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>Timenotifierevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timenotifierevent_1a7e858e9cff04bc69c4272aa8a24cd925" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timenotifierevent</scope><name>~Timenotifierevent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

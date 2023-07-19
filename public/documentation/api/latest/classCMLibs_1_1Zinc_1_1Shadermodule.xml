@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Shadermodule" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Shadermodule</compoundname>
+    <includes refid="shader_8hpp" local="no">shader.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Shadermodule_1a3b25c8886f9e4de3b7d04e6fc7829f21" prot="protected" static="no" mutable="no">
+        <type>cmzn_shadermodule_id</type>
+        <definition>cmzn_shadermodule_id CMLibs::Zinc::Shadermodule::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="443" column="22" bodyfile="auto_comments_output/shader.hpp" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1a444f8cf4e226d56881db05915fefe16a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shadermodule::Shadermodule</definition>
+        <argsstring>()</argsstring>
+        <name>Shadermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="447" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="447" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1a92a36493f016f74b48a0fbe017af6f0b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shadermodule::Shadermodule</definition>
+        <argsstring>(cmzn_shadermodule_id in_shadermodule_id)</argsstring>
+        <name>Shadermodule</name>
+        <param>
+          <type>cmzn_shadermodule_id</type>
+          <declname>in_shadermodule_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="451" column="10" bodyfile="auto_comments_output/shader.hpp" bodystart="451" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1ab1c86211d1988cf6322ee3aca5e06dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shadermodule::Shadermodule</definition>
+        <argsstring>(const Shadermodule &amp;shaderModule)</argsstring>
+        <name>Shadermodule</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref> &amp;</type>
+          <declname>shaderModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="455" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="455" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1a42b493f796306a5102f26f7915aff338" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref> &amp;</type>
+        <definition>Shadermodule&amp; CMLibs::Zinc::Shadermodule::operator=</definition>
+        <argsstring>(const Shadermodule &amp;shaderModule)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref> &amp;</type>
+          <declname>shaderModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="459" column="14" bodyfile="auto_comments_output/shader.hpp" bodystart="459" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1a171e986c29ede38252480994b2807ee5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shadermodule::~Shadermodule</definition>
+        <argsstring>()</argsstring>
+        <name>~Shadermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="471" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="471" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1aaa2cd261b816b7ad636bcb3e787059bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Shadermodule::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="484" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="484" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1ab6211bf2f829947eeef267219422b187" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_shadermodule_id</type>
+        <definition>cmzn_shadermodule_id CMLibs::Zinc::Shadermodule::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="494" column="22" bodyfile="auto_comments_output/shader.hpp" bodystart="494" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1ad3fe9b7152114fb4e4ef6cabaadcae9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref></type>
+        <definition>Shaderprogram CMLibs::Zinc::Shadermodule::createShaderprogram</definition>
+        <argsstring>()</argsstring>
+        <name>createShaderprogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create and return a new shader program.</para>
+<para>shader will belong to. <simplesect kind="return"><para>Handle to new shader program, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="505" column="15" bodyfile="auto_comments_output/shader.hpp" bodystart="505" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1ac604d6e6060448be3bf3fe532ea3912c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref></type>
+        <definition>Shaderprogram CMLibs::Zinc::Shadermodule::findShaderprogramByName</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>findShaderprogramByName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the shader program with the specified name, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the shader program. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to shader program, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="516" column="15" bodyfile="auto_comments_output/shader.hpp" bodystart="516" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1a8b419325f93e4dc281ce4ffc7b7eb9c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref></type>
+        <definition>Shaderuniforms CMLibs::Zinc::Shadermodule::createShaderuniforms</definition>
+        <argsstring>()</argsstring>
+        <name>createShaderuniforms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create and return shader uniforms.</para>
+<para>shader will belong to. <simplesect kind="return"><para>Handle to new shader uniforms, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="527" column="16" bodyfile="auto_comments_output/shader.hpp" bodystart="527" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shadermodule_1ab5185162678e401ed0c806ebd84e0159" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref></type>
+        <definition>Shaderuniforms CMLibs::Zinc::Shadermodule::findShaderuniformsByName</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>findShaderuniformsByName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the shader uniforms with the specified name, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the shader uniforms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to shader uniforms, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="538" column="16" bodyfile="auto_comments_output/shader.hpp" bodystart="538" bodyend="541"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Module managing all shader objects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Module managing all shader objects. It maintains shader uniforms and shader program which can be used by material to add special effects to graphics. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/shader.hpp" line="441" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="440" bodyend="543"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1ad3fe9b7152114fb4e4ef6cabaadcae9f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>createShaderprogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1a8b419325f93e4dc281ce4ffc7b7eb9c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>createShaderuniforms</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1ac604d6e6060448be3bf3fe532ea3912c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>findShaderprogramByName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1ab5185162678e401ed0c806ebd84e0159" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>findShaderuniformsByName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1ab6211bf2f829947eeef267219422b187" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1a3b25c8886f9e4de3b7d04e6fc7829f21" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1aaa2cd261b816b7ad636bcb3e787059bc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1a42b493f796306a5102f26f7915aff338" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1a444f8cf4e226d56881db05915fefe16a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>Shadermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1a92a36493f016f74b48a0fbe017af6f0b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>Shadermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1ab1c86211d1988cf6322ee3aca5e06dfa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>Shadermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shadermodule_1a171e986c29ede38252480994b2807ee5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shadermodule</scope><name>~Shadermodule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

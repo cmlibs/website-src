@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Node" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Node</compoundname>
+    <includes refid="node_8hpp" local="no">node.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ChangeFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1aee872a8aceae1068869914b50c197fa1" prot="public">
+          <name>CHANGE_FLAG_NONE</name>
+          <initializer>= CMZN_NODE_CHANGE_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>node(s) not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1a14e02d00cb0a98003cfbc841c58b52ba" prot="public">
+          <name>CHANGE_FLAG_ADD</name>
+          <initializer>= CMZN_NODE_CHANGE_FLAG_ADD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>node(s) added </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1ab4ef58af8a9064846260dfe25e5dbbe3" prot="public">
+          <name>CHANGE_FLAG_REMOVE</name>
+          <initializer>= CMZN_NODE_CHANGE_FLAG_REMOVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>node(s) removed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1a4c44c7164139aee73197675edbae8f4e" prot="public">
+          <name>CHANGE_FLAG_IDENTIFIER</name>
+          <initializer>= CMZN_NODE_CHANGE_FLAG_IDENTIFIER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>node(s) identifier changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1a6ddc525c7afc5e15c2fbbb0eb72984e4" prot="public">
+          <name>CHANGE_FLAG_DEFINITION</name>
+          <initializer>= CMZN_NODE_CHANGE_FLAG_DEFINITION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>node(s) definition other than identifier changed; currently none </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1a718c9b46ef2ae82af0dcaef4932abc32" prot="public">
+          <name>CHANGE_FLAG_FIELD</name>
+          <initializer>= CMZN_NODE_CHANGE_FLAG_FIELD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>change to field values mapped to node(s) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit flags summarising changes to a node or nodes in a nodeset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="57" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="56" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ValueLabel</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a157a559f86dbf066d72998ea1a1a36b3" prot="public">
+          <name>VALUE_LABEL_INVALID</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified node value label </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a77d860d376d86f322b747c44bf1ebaf2" prot="public">
+          <name>VALUE_LABEL_VALUE</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_VALUE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>literal field value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a1f87ce9c6d9a6e79acef5e888dc49859" prot="public">
+          <name>VALUE_LABEL_D_DS1</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_D_DS1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>derivative w.r.t. arc length S1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a90f9a4f83970f2568b6cca8c060f5378" prot="public">
+          <name>VALUE_LABEL_D_DS2</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_D_DS2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>derivative w.r.t. arc length S2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a74769d150fe0a148bcf597263d523923" prot="public">
+          <name>VALUE_LABEL_D2_DS1DS2</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_D2_DS1DS2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>cross derivative w.r.t. arc lengths S1,S2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378ab1c7593494ea717a4ac69a6294ec4685" prot="public">
+          <name>VALUE_LABEL_D_DS3</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_D_DS3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>derivative w.r.t. arc length S3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378aacdbf67bb9023c7c87385edb8413b5b5" prot="public">
+          <name>VALUE_LABEL_D2_DS1DS3</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_D2_DS1DS3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>cross derivative w.r.t. arc lengths S1,S3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a224112fcff1bb71127d15ba1c3c5cf03" prot="public">
+          <name>VALUE_LABEL_D2_DS2DS3</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_D2_DS2DS3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>cross derivative w.r.t. arc lengths S2,S3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a17a0ca377096c961abdf45ce3e27aed9" prot="public">
+          <name>VALUE_LABEL_D3_DS1DS2DS3</name>
+          <initializer>= CMZN_NODE_VALUE_LABEL_D3_DS1DS2DS3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>triple cross derivative w.r.t. arc lengths S1,S2,S3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumerated labels for field value/derivative parameters held at nodes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="81" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="80" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Node_1af409bedb7cdb9bd1e5bcffd4cab6ca71" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Node::ChangeFlags</definition>
+        <argsstring></argsstring>
+        <name>ChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1" kindref="member">ChangeFlag</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="75" column="13" bodyfile="auto_comments_output/node.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Node_1a2c8dfd7a73546ef2770556c98eeb2a44" prot="private" static="no" mutable="no">
+        <type>cmzn_node_id</type>
+        <definition>cmzn_node_id CMLibs::Zinc::Node::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="38" column="14" bodyfile="auto_comments_output/node.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1a719a6a88c8fabae883aebd5b1811b7d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Node::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="42" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="42" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1afe489524768d5f359501e0685740408c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Node::Node</definition>
+        <argsstring>(cmzn_node_id node_id)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>cmzn_node_id</type>
+          <declname>node_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="46" column="10" bodyfile="auto_comments_output/node.hpp" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1a15aee55ff53cc2ff93042b7e758d23be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Node::Node</definition>
+        <argsstring>(const Node &amp;node)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="49" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1a9d16ceeeac4f1a10daf897af5e29ddb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+        <definition>Node&amp; CMLibs::Zinc::Node::operator=</definition>
+        <argsstring>(const Node &amp;node)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="102" column="6" bodyfile="auto_comments_output/node.hpp" bodystart="102" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1abe525710dd63bedbfd8e2e8859f9a8e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Node::~Node</definition>
+        <argsstring>()</argsstring>
+        <name>~Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="113" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="113" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1a743955f48bc8e955f2794e02ec07b2ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Node::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="126" column="6" bodyfile="auto_comments_output/node.hpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1af98fbb3e5d67dc2fae45f2f15b550a9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_node_id</type>
+        <definition>cmzn_node_id CMLibs::Zinc::Node::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="136" column="14" bodyfile="auto_comments_output/node.hpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1abd5cd472f994164243d5aeccc07ff90d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Node::getIdentifier</definition>
+        <argsstring>() const</argsstring>
+        <name>getIdentifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the non-negative integer uniquely identifying the node in its nodeset.</para>
+<para><simplesect kind="return"><para>The non-negative integer identifier of the node, or a negative value if node is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="148" column="5" bodyfile="auto_comments_output/node.hpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1a615879b2ab5b83bf801e8e9212ddff4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Node::setIdentifier</definition>
+        <argsstring>(int identifier)</argsstring>
+        <name>setIdentifier</name>
+        <param>
+          <type>int</type>
+          <declname>identifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an integer uniquely identifying the node in its nodeset.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique identifier to be set for the node</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if set the identifier successfully, any other value on fail. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="161" column="5" bodyfile="auto_comments_output/node.hpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1a10900a5874ffa02adb70a0eddf9db4b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref></type>
+        <definition>Nodeset CMLibs::Zinc::Node::getNodeset</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodeset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nodeset which owns this node.</para>
+<para><simplesect kind="return"><para>Handle to the owning nodeset, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="171" column="16" bodyfile="auto_comments_output/nodeset.hpp" bodystart="257" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1a9e10fac11b0c16541fed17ac2679ec2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Node::merge</definition>
+        <argsstring>(const Nodetemplate &amp;nodeTemplate)</argsstring>
+        <name>merge</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate" kindref="compound">Nodetemplate</ref> &amp;</type>
+          <declname>nodeTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modifies the node to define fields as described in the node_template.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="178" column="5" bodyfile="auto_comments_output/nodetemplate.hpp" bodystart="223" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1a1f8f31392fc8fa4b14297eb6cd374ea8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" kindref="member">ValueLabel</ref></type>
+        <definition>static ValueLabel CMLibs::Zinc::Node::ValueLabelEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>ValueLabelEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="180" column="19" bodyfile="auto_comments_output/node.hpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Node_1ae1cc6b2d9e996f2337cb7304a0d315d2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Node::ValueLabelEnumToString</definition>
+        <argsstring>(ValueLabel valueLabel)</argsstring>
+        <name>ValueLabelEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" kindref="member">ValueLabel</ref></type>
+          <declname>valueLabel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="185" column="13" bodyfile="auto_comments_output/node.hpp" bodystart="185" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Point object used to represent finite element nodes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Point object used to represent finite element nodes, data points etc. Important notes: An unlimited number of fields may be defined at nodes to store parameters, derivatives, host mesh locations, strings etc. Coordinates are just another field: there can be zero or more coordinate fields defined on a node. Also, since <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> elements are not iso-parametric, it is not sufficient to define field parameters at a node in the same manner as an existing field: the new field must also be explicitly defined on the elements. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/node.hpp" line="35" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="34" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1a14e02d00cb0a98003cfbc841c58b52ba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1a6ddc525c7afc5e15c2fbbb0eb72984e4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1a718c9b46ef2ae82af0dcaef4932abc32" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>CHANGE_FLAG_FIELD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1a4c44c7164139aee73197675edbae8f4e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1aee872a8aceae1068869914b50c197fa1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1ab4ef58af8a9064846260dfe25e5dbbe3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a201e761c4cf2b58e07af803da180c3a1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1af409bedb7cdb9bd1e5bcffd4cab6ca71" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1af98fbb3e5d67dc2fae45f2f15b550a9e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1abd5cd472f994164243d5aeccc07ff90d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>getIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a10900a5874ffa02adb70a0eddf9db4b0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>getNodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a2c8dfd7a73546ef2770556c98eeb2a44" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a743955f48bc8e955f2794e02ec07b2ab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a9e10fac11b0c16541fed17ac2679ec2f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>merge</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a719a6a88c8fabae883aebd5b1811b7d2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>Node</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1afe489524768d5f359501e0685740408c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>Node</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a15aee55ff53cc2ff93042b7e758d23be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>Node</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a9d16ceeeac4f1a10daf897af5e29ddb8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a615879b2ab5b83bf801e8e9212ddff4e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>setIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a74769d150fe0a148bcf597263d523923" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_D2_DS1DS2</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378aacdbf67bb9023c7c87385edb8413b5b5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_D2_DS1DS3</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a224112fcff1bb71127d15ba1c3c5cf03" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_D2_DS2DS3</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a17a0ca377096c961abdf45ce3e27aed9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_D3_DS1DS2DS3</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a1f87ce9c6d9a6e79acef5e888dc49859" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_D_DS1</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a90f9a4f83970f2568b6cca8c060f5378" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_D_DS2</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378ab1c7593494ea717a4ac69a6294ec4685" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_D_DS3</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a157a559f86dbf066d72998ea1a1a36b3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378a77d860d376d86f322b747c44bf1ebaf2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>VALUE_LABEL_VALUE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>ValueLabel</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1a1f8f31392fc8fa4b14297eb6cd374ea8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>ValueLabelEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1ae1cc6b2d9e996f2337cb7304a0d315d2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>ValueLabelEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Node_1abe525710dd63bedbfd8e2e8859f9a8e3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Node</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

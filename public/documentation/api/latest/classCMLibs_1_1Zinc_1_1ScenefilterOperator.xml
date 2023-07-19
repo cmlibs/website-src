@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1ScenefilterOperator" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::ScenefilterOperator</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Scenefilter" prot="public" virt="non-virtual">CMLibs::Zinc::Scenefilter</basecompoundref>
+    <includes refid="scenefilter_8hpp" local="no">scenefilter.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a99b895698ae8079d1b03c0e799990d7a" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_scenefilter_operator_id</type>
+        <definition>cmzn_scenefilter_operator_id CMLibs::Zinc::ScenefilterOperator::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator" kindref="compound">ScenefilterOperator</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator" kindref="compound">ScenefilterOperator</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="205" column="30" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1ae6adef613ce77a1f0f8c98c1c9a4de83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::ScenefilterOperator::ScenefilterOperator</definition>
+        <argsstring>()</argsstring>
+        <name>ScenefilterOperator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="212" column="1" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="212" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a3376d19b68d56cf9b8e24d640d34d8c9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::ScenefilterOperator::ScenefilterOperator</definition>
+        <argsstring>(cmzn_scenefilter_operator_id operator_filter_id)</argsstring>
+        <name>ScenefilterOperator</name>
+        <param>
+          <type>cmzn_scenefilter_operator_id</type>
+          <declname>operator_filter_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="216" column="10" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="216" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a80fc5d94b133b47de7df9b78b27f540f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::ScenefilterOperator::appendOperand</definition>
+        <argsstring>(const Scenefilter &amp;operand)</argsstring>
+        <name>appendOperand</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>operand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds operand to the end of the list of operands for the operator filter. If operand is already in the list, it is moved to the end. Fails if operand depends on the operator filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter to be added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="228" column="5" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="228" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1afae99f1d5f56058fdf89ba94e124701f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::ScenefilterOperator::getFirstOperand</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstOperand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the first operand filter in the operator filter&apos;s list of operands. <simplesect kind="return"><para>Handle to first operand scene filter, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="237" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a79df961092c3c8d8a2bdca6bb7d54881" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::ScenefilterOperator::getNextOperand</definition>
+        <argsstring>(const Scenefilter &amp;refOperand) const</argsstring>
+        <name>getNextOperand</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>refOperand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next filter after &lt;ref_operand&gt; in the operator filter&apos;s list of operands.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refOperand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter to be referenced </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to next operand scene filter, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="249" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a0fd7b3032e18dce16bc57e9ea1525576" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::ScenefilterOperator::isOperandActive</definition>
+        <argsstring>(const Scenefilter &amp;operand) const</argsstring>
+        <name>isOperandActive</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>operand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether operand is active in the operator filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter to be checked. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean true if operand is valid and active, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="260" column="6" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a263e712fb48cf4b5d5cc121730f67988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::ScenefilterOperator::setOperandActive</definition>
+        <argsstring>(const Scenefilter &amp;operand, bool isActive)</argsstring>
+        <name>setOperandActive</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>operand</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isActive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an operand in the operator filter to be active or inactive.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter to be set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isActive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to set: true to mark as active, false for inactive. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="272" column="5" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a93aae02af22bbd91226221a94d896c9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::ScenefilterOperator::insertOperandBefore</definition>
+        <argsstring>(const Scenefilter &amp;operand, const Scenefilter &amp;refOperand)</argsstring>
+        <name>insertOperandBefore</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>operand</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>refOperand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert a filter before ref_operand in the list of operands for the operator filter. If the operand is already in the list of operands it is moved to the new location. Fails if operand depends on the operator filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operand filter to be inserted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refOperand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference filter to insert before. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="286" column="5" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="286" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a12724e3f126598d5642e106e7407216a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::ScenefilterOperator::removeOperand</definition>
+        <argsstring>(const Scenefilter &amp;operand)</argsstring>
+        <name>removeOperand</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>operand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a filter from the list of operands in an operator filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="297" column="5" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="297" bodyend="300"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An operator OR or AND specific scene filter type. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An operator OR or AND specific scene filter type. Note that these are n-ary operators, able to take any number of operands, and that each operand can be individually set active or inactive, permitting them to be used as high level visibility lists. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Scenefilter</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Scenefilter"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::ScenefilterOperator</label>
+        <link refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Scenefilter</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Scenefilter"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::ScenefilterOperator</label>
+        <link refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/scenefilter.hpp" line="199" column="1" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="198" bodyend="301"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a80fc5d94b133b47de7df9b78b27f540f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>appendOperand</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a7611cdabfbb98b161cab3b74f9877452" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>castOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a44e6c36f3203e308bde8d9be964f7bda" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>evaluateGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a99b895698ae8079d1b03c0e799990d7a" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1afae99f1d5f56058fdf89ba94e124701f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>getFirstOperand</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a1bcfb7de87e7c5fd808a300d7d5d00b0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a35cf2165a1ae063600319b64463254bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a79df961092c3c8d8a2bdca6bb7d54881" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>getNextOperand</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a5bd88515df3c98a1c0eb3bbd8cbdf756" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a93aae02af22bbd91226221a94d896c9a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>insertOperandBefore</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1ae83d4819504448f775159138a30244f7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>isInverse</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a159faf13ed02c9612435a026c740d9dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a0fd7b3032e18dce16bc57e9ea1525576" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>isOperandActive</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a5b4badbc726d973ae877fa2a0b8a4bee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a34336242647cef361ecfd44499541a82" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a12724e3f126598d5642e106e7407216a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>removeOperand</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1ad81d5a1a9acaa83f9f2d294997dae2c1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>Scenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a6168805394bf4d216b668984a95e5815" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>Scenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a3e25b70786fdb71b09d3abba8a640a69" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>Scenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1ae6adef613ce77a1f0f8c98c1c9a4de83" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>ScenefilterOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a3376d19b68d56cf9b8e24d640d34d8c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>ScenefilterOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a0d48e6a57d5ba1a3b5dd81f8b0daeaa1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>setInverse</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a75189c730a33f9f4290db9ef8c868842" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a71fd2b7bad8b6cde541277e6530c0009" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator_1a263e712fb48cf4b5d5cc121730f67988" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>setOperandActive</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a24c7e2469dc7aac5e6c98304e662a7fe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ScenefilterOperator</scope><name>~Scenefilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

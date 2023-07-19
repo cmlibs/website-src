@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Materialmodulenotifier</compoundname>
+    <includes refid="material_8hpp" local="no">material.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a79fa4e4831fcc945a0204bbd89c9c6d5" prot="protected" static="no" mutable="no">
+        <type>cmzn_materialmodulenotifier_id</type>
+        <definition>cmzn_materialmodulenotifier_id CMLibs::Zinc::Materialmodulenotifier::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="821" column="32" bodyfile="auto_comments_output/material.hpp" bodystart="821" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1accd7f6f12c102ad72c032433b6476cef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialmodulenotifier::Materialmodulenotifier</definition>
+        <argsstring>()</argsstring>
+        <name>Materialmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="825" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="825" bodyend="826"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a5d66122fcaf78ea8dceb1a61515bd9be" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialmodulenotifier::Materialmodulenotifier</definition>
+        <argsstring>(cmzn_materialmodulenotifier_id in_materialmodulenotifier_id)</argsstring>
+        <name>Materialmodulenotifier</name>
+        <param>
+          <type>cmzn_materialmodulenotifier_id</type>
+          <declname>in_materialmodulenotifier_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="829" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="829" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1aa7907bfcbbfb09346ce6413286b11879" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialmodulenotifier::Materialmodulenotifier</definition>
+        <argsstring>(const Materialmodulenotifier &amp;materialmoduleNotifier)</argsstring>
+        <name>Materialmodulenotifier</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" kindref="compound">Materialmodulenotifier</ref> &amp;</type>
+          <declname>materialmoduleNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="833" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="833" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a4cd9e808dcd6347cf48b94b2860d6a1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" kindref="compound">Materialmodulenotifier</ref> &amp;</type>
+        <definition>Materialmodulenotifier&amp; CMLibs::Zinc::Materialmodulenotifier::operator=</definition>
+        <argsstring>(const Materialmodulenotifier &amp;materialmoduleNotifier)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" kindref="compound">Materialmodulenotifier</ref> &amp;</type>
+          <declname>materialmoduleNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="837" column="24" bodyfile="auto_comments_output/material.hpp" bodystart="837" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a40b5456779557535e31a33116812c29a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialmodulenotifier::~Materialmodulenotifier</definition>
+        <argsstring>()</argsstring>
+        <name>~Materialmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="848" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="848" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1ad56527ed832f0bf15ba6842f452cf896" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Materialmodulenotifier::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" kindref="compound">Materialmodulenotifier</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="861" column="6" bodyfile="auto_comments_output/material.hpp" bodystart="861" bodyend="864"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1acc98e520b14ca43014015530f55d4f66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_materialmodulenotifier_id</type>
+        <definition>cmzn_materialmodulenotifier_id CMLibs::Zinc::Materialmodulenotifier::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" kindref="compound">Materialmodulenotifier</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" kindref="compound">Materialmodulenotifier</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="871" column="32" bodyfile="auto_comments_output/material.hpp" bodystart="871" bodyend="874"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a15661343aff017c96f1b6fa8ef5a9b8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodulenotifier::setCallback</definition>
+        <argsstring>(Materialmodulecallback &amp;callback)</argsstring>
+        <name>setCallback</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Materialmodulecallback" kindref="compound">Materialmodulecallback</ref> &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign the callback function and user data for the materialmodule notifier. This function also starts the callback.</para>
+<para><simplesect kind="see"><para>cmzn_materialmodulenotifier_callback_function </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function to be called when event is triggered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Void pointer to user object. User must ensure this object&apos;s lifetime exceeds the duration for which callbacks are active. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other error on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="886" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="886" bodyend="889"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1afd25f392bc9ff6a040be6392650a0cca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodulenotifier::clearCallback</definition>
+        <argsstring>()</argsstring>
+        <name>clearCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop and clear material module callback. This will stop the callback and also remove the callback function from the materialmodule notifier.</para>
+<para><simplesect kind="return"><para>Result OK on success, any other error on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="897" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="897" bodyend="900"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages individual user notification of changes with a material module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages individual user notification of changes with a material module. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/material.hpp" line="819" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="818" bodyend="901"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1afd25f392bc9ff6a040be6392650a0cca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>clearCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1acc98e520b14ca43014015530f55d4f66" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a79fa4e4831fcc945a0204bbd89c9c6d5" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1ad56527ed832f0bf15ba6842f452cf896" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1accd7f6f12c102ad72c032433b6476cef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>Materialmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a5d66122fcaf78ea8dceb1a61515bd9be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>Materialmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1aa7907bfcbbfb09346ce6413286b11879" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>Materialmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a4cd9e808dcd6347cf48b94b2860d6a1d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a15661343aff017c96f1b6fa8ef5a9b8b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>setCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier_1a40b5456779557535e31a33116812c29a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodulenotifier</scope><name>~Materialmodulenotifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

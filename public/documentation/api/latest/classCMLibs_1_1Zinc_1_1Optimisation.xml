@@ -1,0 +1,913 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Optimisation" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Optimisation</compoundname>
+    <includes refid="optimisation_8hpp" local="no">optimisation.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Method</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28a0e6bf2d41b9d7b03dadfa383bc25ff75" prot="public">
+          <name>METHOD_INVALID</name>
+          <initializer>= CMZN_OPTIMISATION_METHOD_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid or unspecified optimisation method. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28a76414d7eda153095e3d8463998d73193" prot="public">
+          <name>METHOD_QUASI_NEWTON</name>
+          <initializer>= CMZN_OPTIMISATION_METHOD_QUASI_NEWTON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The default optimisation method. Suitable for most problems with a small set of independent parameters. Given a scalar valued objective function (scalar sum of all objective fields&apos; components), finds the set of DOFs for the independent field(s) which minimises the objective function value. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28a109f316e9eb4ea115e818b76da4f1480" prot="public">
+          <name>METHOD_LEAST_SQUARES_QUASI_NEWTON</name>
+          <initializer>= CMZN_OPTIMISATION_METHOD_LEAST_SQUARES_QUASI_NEWTON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A least squares method better suited to larger problems. Finds the set of independent field(s) DOF values which minimises the squares of the objective components supplied. Works specially with fields giving sum-of-squares e.g. nodeset_sum_squares, nodeset_mean_squares to supply individual terms before squaring to the optimiser. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28aec1c022dd2aab1a712bc37513658667f" prot="public">
+          <name>METHOD_NEWTON</name>
+          <initializer>= CMZN_OPTIMISATION_METHOD_NEWTON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Solves iteratively using Newton&apos;s method, directly computing the Hessian matrix and Jacobian vector which are solved to obtain incremental change to parameters. Suitable for large problems. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The optimisation methods available via the optimisation object.</para>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Might be worth separating the non-linear problem setup from the optimisation algorithm to mirror the underlying Opt++ structure? </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="84" column="1" bodyfile="auto_comments_output/optimisation.hpp" bodystart="83" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Attribute</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa44500c120a0486cf80a31542fbec5701" prot="public">
+          <name>ATTRIBUTE_FUNCTION_TOLERANCE</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_FUNCTION_TOLERANCE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ stopping tolerance) Assigns a stopping tolerance for an optimisation algorithm. Please assign tolerances that make sense given the accuracy of your function. For example, setting TOLERANCE to 1.e-4 in your problem means the optimisation algorithm converges when the function value from one iteration to the next changes by 1.e-4 or less.</para>
+<para>Default value: 1.49012e-8 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fad3504df02ced7dbc93a6b412298b1c42" prot="public">
+          <name>ATTRIBUTE_GRADIENT_TOLERANCE</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_GRADIENT_TOLERANCE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ stopping tolerance) Assigns a stopping tolerance for an optimisation algorithm. Please assign tolerances that make sense given your function accuracy. For example, setting GRADIENT_TOLERANCE to 1.e-6 in your problem means the optimisation algorithm converges when the absolute or relative norm of the gradient is 1.e-6 or less.</para>
+<para>Default value: 6.05545e-6 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274faedc6eb93731868ab4599f6bcad2c7ec8" prot="public">
+          <name>ATTRIBUTE_STEP_TOLERANCE</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_STEP_TOLERANCE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ stopping tolerance) Assigns a stopping tolerance for the optimisation algorithm. Please set tolerances that make sense, given the accuracy of your function. For example, setting STEP_TOLERANCE to 1.e-2 in your problem means the optimisation algorithm converges when the relative steplength is 1.e-2 or less.</para>
+<para>Default value: 1.49012e-8 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fad3dfaac6f63db304863c55974d031303" prot="public">
+          <name>ATTRIBUTE_MAXIMUM_ITERATIONS</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_MAXIMUM_ITERATIONS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ stopping tolerance) Places a limit on the number of iterations of the optimisation algorithm. It is useful when your function is computationally expensive or you are debugging the optimisation algorithm. When MAXIMUM_ITERATIONS iterations evaluations have been completed, the optimisation algorithm will stop and report the solution it has reached at that point. It may not be the optimal solution, but it will be the best it could provide given the limit on the number of iterations.</para>
+<para>Default value: 100. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa789410439134dad9eedbeaf1cf0cde1e" prot="public">
+          <name>ATTRIBUTE_MAXIMUM_FUNCTION_EVALUATIONS</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_MAXIMUM_FUNCTION_EVALUATIONS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ stopping tolerance) Places an upper bound on the number of function evaluations. The method is useful when your function is computationally expensive and you only have time to perform a limited number of evaluations. When MAXIMUM_NUMBER_FUNCTION_EVALUATIONS function evaluations have been completed, the optimisation algorithm will stop and report the solution it has reached at that point. It may not be the optimal solution, but it will be the best it could provide given the limit on the number of function evaluations.</para>
+<para>Default value: 1000 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa840f7e1f8e52d517761351bc2b639340" prot="public">
+          <name>ATTRIBUTE_MAXIMUM_STEP</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_MAXIMUM_STEP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ steplength control) Places an upper bound on the length of the step that can be taken at each iteration of the optimisation algorithm. If the scale of your optimisation parameters exceeds the bound, adjust accordingly. If you want to be conservative in your search, you may want to set MAXIMUM_STEP to a smaller value than the default. In our (Opt++) experience, the default value is generally fine.</para>
+<para>Default value: 1.0e3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa1f8189f5bad4cfc9ffb59f0c60a463da" prot="public">
+          <name>ATTRIBUTE_MINIMUM_STEP</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_MINIMUM_STEP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ steplength control) Places a lower bound on the length of the step that can be taken at each iteration of the optimisation algorithm. If the scale of your optimisation parameters exceeds the bound, adjust accordingly. If you expect the optimisation algorithm to navigate some tricky areas, set MINIMUM_STEP to a smaller value than the default. In our (Opt++) experience, the default value is generally fine.</para>
+<para>Default value: 1.49012e-8 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa1b8dcac4ff941b27c7e618e38dfe1418" prot="public">
+          <name>ATTRIBUTE_LINESEARCH_TOLERANCE</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_LINESEARCH_TOLERANCE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ globalisation strategy parameter) In practice, the linesearch tolerance is set to a small value, so that almost any decrease in the function value results in an acceptable step. Suggested values are 1.e-4 for Newton methods and 1.e-1 for more exact line searches.</para>
+<para>Default value: 1.e-4 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa272fd01df7a2b8a9168f4149c7b7c914" prot="public">
+          <name>ATTRIBUTE_MAXIMUM_BACKTRACK_ITERATIONS</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_MAXIMUM_BACKTRACK_ITERATIONS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ globalisation strategy parameter) Only relevant when you use a algorithm with a linesearch search strategy. The value places a limit on the number of iterations in the linesearch routine of the optimisation algorithm. If the limit is reached before computing a step with acceptable decrease, the algorithm terminates with an error message. The reported solution is not optimal, but the best one given the number of linesearch iterations. Increasing the number of linesearch iterations may lead to an acceptable step, but it also results in more function evaluations and a shorter steplength.</para>
+<para>Default value: 5 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274faf16771060d26c67939e6f8175d56c106" prot="public">
+          <name>ATTRIBUTE_TRUST_REGION_SIZE</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_TRUST_REGION_SIZE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(Opt++ globalisation strategy parameter) Only relevant when you are using an algorithm with a trust-region or a trustpds search strategy. The value initialises the size of the trust region.</para>
+<para>Default value: 0.1?? ( <xrefsect id="todo_1_todo000002"><xreftitle>Todo</xreftitle><xrefdescription><para>Need to better initialise the default value, see <ulink url="https://software.sandia.gov/opt++/opt++2.4_doc/html/ControlParameters.html">https://software.sandia.gov/opt++/opt++2.4_doc/html/ControlParameters.html</ulink>)</para>
+</xrefdescription></xrefsect></para>
+<para>If your problem is quadratic or close to it, you may want to initialise the size of the trust region to a larger value. <xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>Reserving this one for when trust region methods are available via the API. Currently everything uses linesearch methods only. </para>
+</xrefdescription></xrefsect></para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa4981b7cc071d07b40dfdc8e694379c9c" prot="public">
+          <name>ATTRIBUTE_FIELD_PARAMETERS_TIME</name>
+          <initializer>= CMZN_OPTIMISATION_ATTRIBUTE_FIELD_PARAMETERS_TIME</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Time at which finite element field parameters are to be optimised, and objective fields are evaluated. Default 0.0. Only set to a time from a timesequence defined for dependent field at nodes. This is not currently checked; setting a time at which dependent field parameters are not held will result in failure when the optimisation is run. Ignored if field parameters are not time-varying. Currently only supported for optimisation METHOD_NEWTON. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Labels of optimisation attributes which may be set or obtained using generic get/set_attribute functions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="114" column="1" bodyfile="auto_comments_output/optimisation.hpp" bodystart="113" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Optimisation_1a37d2768421bdbebabf976a17539508de" prot="protected" static="no" mutable="no">
+        <type>cmzn_optimisation_id</type>
+        <definition>cmzn_optimisation_id CMLibs::Zinc::Optimisation::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="32" column="22" bodyfile="auto_comments_output/optimisation.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a7d34010e631c72b49df29db49604546f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Optimisation::Optimisation</definition>
+        <argsstring>()</argsstring>
+        <name>Optimisation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="36" column="1" bodyfile="auto_comments_output/optimisation.hpp" bodystart="36" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a1d298baeb2eaee6c6eacde70c139e48e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Optimisation::Optimisation</definition>
+        <argsstring>(cmzn_optimisation_id in_optimisation_id)</argsstring>
+        <name>Optimisation</name>
+        <param>
+          <type>cmzn_optimisation_id</type>
+          <declname>in_optimisation_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="40" column="10" bodyfile="auto_comments_output/optimisation.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a67d5031cf71ae65f7def6acbf0f9f2f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Optimisation::Optimisation</definition>
+        <argsstring>(const Optimisation &amp;optimisation)</argsstring>
+        <name>Optimisation</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Optimisation" kindref="compound">Optimisation</ref> &amp;</type>
+          <declname>optimisation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="44" column="1" bodyfile="auto_comments_output/optimisation.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a748f1063153947fea0876d4623af6387" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Optimisation" kindref="compound">Optimisation</ref> &amp;</type>
+        <definition>Optimisation&amp; CMLibs::Zinc::Optimisation::operator=</definition>
+        <argsstring>(const Optimisation &amp;optimisation)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Optimisation" kindref="compound">Optimisation</ref> &amp;</type>
+          <declname>optimisation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="48" column="14" bodyfile="auto_comments_output/optimisation.hpp" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ae742c2c0a63265240ab79394bf79032e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Optimisation::~Optimisation</definition>
+        <argsstring>()</argsstring>
+        <name>~Optimisation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="59" column="1" bodyfile="auto_comments_output/optimisation.hpp" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a4fda86b1de666d5450d5c6625373dc74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Optimisation::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Optimisation" kindref="compound">Optimisation</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="72" column="6" bodyfile="auto_comments_output/optimisation.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a3615b5140bc5b18523c5ed7e3bec9119" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_optimisation_id</type>
+        <definition>cmzn_optimisation_id CMLibs::Zinc::Optimisation::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Optimisation" kindref="compound">Optimisation</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Optimisation" kindref="compound">Optimisation</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="221" column="22" bodyfile="auto_comments_output/optimisation.hpp" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ac1dce648ff83cb7503b3121a856be8e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Optimisation::getConditionalField</definition>
+        <argsstring>(const Field &amp;dependentField) const</argsstring>
+        <name>getConditionalField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>dependentField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the conditional field which controls which degrees of freedom of a dependent field are included in the optimisation. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1ad7820cc29b3c219b36fe307b27d92a9e" kindref="member">Optimisation::setConditionalField</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dependentField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dependent field the condition applies to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to conditional field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="235" column="7" bodyfile="auto_comments_output/optimisation.hpp" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ad7820cc29b3c219b36fe307b27d92a9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::setConditionalField</definition>
+        <argsstring>(const Field &amp;dependentField, const Field &amp;conditionalField)</argsstring>
+        <name>setConditionalField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>dependentField</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>conditionalField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a conditional field which controls which degrees of freedom of a dependent field are included in the optimisation, for all components or per-component. The conditional field is queried at the start of the optimisation, so the number of DOFs remains constant throughout it. The conditional field only applies to finite element dependent fields, and is queried and applied to nodal DOFs only. <simplesect kind="note"><para>For the NEWTON method, the conditional field is used both to include nodal DOFs and to restrict integrals to the elements, faces and lines returning true for it. Normally a Group field containing the required top-level elements and including all subelements (faces, lines and nodes) is used for this purpose.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dependentField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dependent field to select a subset of DOFs from. Must already have been added to the optimisation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conditionalField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A field with either one component or the same number of components as the dependent field. DOFs for the dependent field (or components of it, if non-scalar) are included only where this field is defined and non-zero. Pass a NULL/invalid handle to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="262" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="262" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a56eb10df510b71fbad436f2dfb0771cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::addFieldassignment</definition>
+        <argsstring>(const Fieldassignment &amp;fieldassignment)</argsstring>
+        <name>addFieldassignment</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment" kindref="compound">Fieldassignment</ref> &amp;</type>
+          <declname>fieldassignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a field assignment object to the optimisation, to be applied before objective evaluation with each set of trial dependent field DOFs, and at the end of optimisation. Multiple field assignments are applied in the order they are added. The main use is to partially apply the effect of the dependent field on the DOFs of another field; an example is optimising a constant offset over a subset of nodes, where DOFs at those nodes contribute to the objective. Note if the source field of the assignment is a function of the target field then target DOFs will drift away. In some cases this is solved by making the source field a function of a copy of the target field with its DOFs prior to the optimise call. However to assign multiple versions and derivatives in the target field requires the source field to be a function of it; the solution is to add two field assignments, the first resets target DOFs to their initial values, the second assigns them to the source values. <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> assignment is not supported by the NEWTON method.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fieldassignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> assignment to apply. Must be for a field in the same fieldmodule as this optimisation object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if field successfully added, or an error code if failed or already added. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="289" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ae1ef0381d3bfbd445e3959e2696315ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28" kindref="member">Method</ref></type>
+        <definition>Method CMLibs::Zinc::Optimisation::getMethod</definition>
+        <argsstring>() const</argsstring>
+        <name>getMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current optimisation method for the given optimisation object.</para>
+<para><simplesect kind="return"><para>The current optimisation method. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="299" column="8" bodyfile="auto_comments_output/optimisation.hpp" bodystart="299" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ab9194c1a15130180f508653fc168978a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::setMethod</definition>
+        <argsstring>(Method method)</argsstring>
+        <name>setMethod</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28" kindref="member">Method</ref></type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the optimisation method for the given optimisation object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The optimisation method to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="310" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="310" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a8ec3d82174ba195117ea4bd5f2e7798d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::getAttributeInteger</definition>
+        <argsstring>(Attribute attribute) const</argsstring>
+        <name>getAttributeInteger</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274f" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an integer or Boolean attribute of the optimisation object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the integer attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of the attribute. Boolean values are 1 if true, 0 if false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="322" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="322" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1af3351991422e01b7f3590fe7b5ac8519" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::setAttributeInteger</definition>
+        <argsstring>(Attribute attribute, int value)</argsstring>
+        <name>setAttributeInteger</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274f" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an integer or Boolean attribute of the optimisation object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the integer attribute to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the attribute. For Boolean values use 1 for true in case more options are added in future. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if attribute successfully set, or an error code if failed or attribute not valid or able to be set for this optimisation object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="337" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="337" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a0a5c4e453623e5e73467efda7279aa3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Optimisation::getAttributeReal</definition>
+        <argsstring>(Attribute attribute) const</argsstring>
+        <name>getAttributeReal</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274f" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a real attribute of the optimisation object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the real attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="349" column="8" bodyfile="auto_comments_output/optimisation.hpp" bodystart="349" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a69e2f1c6bca63f37527c53eef47e88b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::setAttributeReal</definition>
+        <argsstring>(Attribute attribute, double value)</argsstring>
+        <name>setAttributeReal</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274f" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a real attribute of the optimisation object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the real attribute to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the attribute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if attribute successfully set, or an error code if failed or attribute not valid or able to be set for this optimisation object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="363" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="363" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a0e679500bbb0345630538da1e5b83e02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Optimisation::getFirstDependentField</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstDependentField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the first dependent field from the optimisation problem description. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1ab24888a5be725232086a3a98e30e3bb3" kindref="member">Optimisation::getNextDependentField</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to first dependent field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="375" column="7" bodyfile="auto_comments_output/optimisation.hpp" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ab24888a5be725232086a3a98e30e3bb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Optimisation::getNextDependentField</definition>
+        <argsstring>(const Field &amp;refField) const</argsstring>
+        <name>getNextDependentField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>refField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next dependent field in the optimisation problem description after the supplied ref_field.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a dependent field from the optimisation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to next dependent field after ref_field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="388" column="7" bodyfile="auto_comments_output/optimisation.hpp" bodystart="388" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ab6e5ce671b2c810ec94ec8b4284e9dfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::addDependentField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>addDependentField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a dependent field to the optimisation problem, whose parameters are solved for to minimise the objective function/s. Valid dependent fields are limited to constant or finite element types. <simplesect kind="note"><para>Multiple dependent fields can only be used if all are constant type. The NEWTON method only works with a single finite element dependent field. These are checked when optimisation is run as the method may be set later. </para>
+</simplesect>
+<simplesect kind="note"><para>Some existing cubic Hermite meshes use different value or derivative parameter versions on adjacent elements and require parameter tying to maintain continuity during computation. These models need to be modified to share common parameters and remove unused parameters before use.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Real-valued dependent field to add to the optimisation object. Must be constant or finite element type, and used in the objective expression. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if field successfully added, or an error code if failed or already added. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="413" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="413" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a717eb0d3bd732578d5e8d95a05030e71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::removeDependentField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>removeDependentField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a dependent field from the optimisation problem.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dependent field to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if field successfully removed, or an error code if failed or field not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="425" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="425" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a5613c22b2f167bae245871703d137d6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Optimisation::getFirstObjectiveField</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstObjectiveField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the first objective field from the optimisation problem description. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Optimisation_1ab333057b4a16215e98f9fac8ac8e7b9d" kindref="member">Optimisation::getNextObjectiveField</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to first objective field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="436" column="7" bodyfile="auto_comments_output/optimisation.hpp" bodystart="436" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ab333057b4a16215e98f9fac8ac8e7b9d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Optimisation::getNextObjectiveField</definition>
+        <argsstring>(const Field &amp;refField) const</argsstring>
+        <name>getNextObjectiveField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>refField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next objective field in the optimisation problem description after the supplied ref_field. Use to iterate over the objective fields, taking care to destroy all returned field handles exactly once:</para>
+<para>cmzn_field_id field = cmzn_optimisation_get_first_objective_field(optimisation); while (field) { cmzn_field_id next_field = cmzn_optimisation_get_next_objective_field(optimisation, field); cmzn_field_destroy(&amp;field); field = next_field; }</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to an objective field from the optimisation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to next objective field after ref_field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="458" column="7" bodyfile="auto_comments_output/optimisation.hpp" bodystart="458" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ac38c6655a7f9a7cc8a3646831a3e8712" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::addObjectiveField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>addObjectiveField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an objective field to the optimisation problem description. Valid objective fields must be spatially constant. The least squares solution method treats fields performing a sum of squares (nodeset_sum_squares, nodeset_mean_squares) specially, passing each term to the optimiser. The overall objective function becomes the sum of all components of all objective fields, or for the least-squares method, the sum of the squares of all terms (or components if the objective field is not a sum of squares). The NEWTON method expects each objective field to be of type MeshIntegral or NodesetOperator (with ElementMapField mapping to a mesh) so it can evaluate over elements of the respective mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Real-valued objective field to add to the optimisation object (accessed internally so safe for caller to destroy locally). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if field successfully added, or an error code if failed or already added. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="480" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="480" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1a65480e72f291196723c6695c1844c51c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::removeObjectiveField</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>removeObjectiveField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove an objective field from the optimisation problem.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The objective field to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if field successfully removed, or an error code if failed or field not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="492" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="492" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ab20b988d3d0d56d27fd446fd1cc8341f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Optimisation::getSolutionReport</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolutionReport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a textual report on the last solution.</para>
+<para><simplesect kind="return"><para>Allocated string containing report which user must free using cmzn_deallocate, or NULL on error or if haven&apos;t performed optimisation yet. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="503" column="6" bodyfile="auto_comments_output/optimisation.hpp" bodystart="503" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Optimisation_1ab86da4419215ffacc2170012796bf76f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Optimisation::optimise</definition>
+        <argsstring>()</argsstring>
+        <name>optimise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform the optimisation described by the provided optimisation object.</para>
+<para><simplesect kind="return"><para>Result OK if optimisation completed successfully (stopping criteria satisfied), and any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/optimisation.hpp" line="514" column="5" bodyfile="auto_comments_output/optimisation.hpp" bodystart="514" bodyend="517"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A description of a non-linear optimisation problem. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A description of a non-linear optimisation problem, consisting of the objective fields (generally spatial sums or sum of squares) to be minimised, independent fields whose parameters are to be modified in the optimisation, the solution method and attributes controlling it. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/optimisation.hpp" line="30" column="1" bodyfile="auto_comments_output/optimisation.hpp" bodystart="29" bodyend="519"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ab6e5ce671b2c810ec94ec8b4284e9dfb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>addDependentField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a56eb10df510b71fbad436f2dfb0771cd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>addFieldassignment</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ac38c6655a7f9a7cc8a3646831a3e8712" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>addObjectiveField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>Attribute</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa4981b7cc071d07b40dfdc8e694379c9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_FIELD_PARAMETERS_TIME</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa44500c120a0486cf80a31542fbec5701" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_FUNCTION_TOLERANCE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fad3504df02ced7dbc93a6b412298b1c42" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_GRADIENT_TOLERANCE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa1b8dcac4ff941b27c7e618e38dfe1418" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_LINESEARCH_TOLERANCE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa272fd01df7a2b8a9168f4149c7b7c914" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_MAXIMUM_BACKTRACK_ITERATIONS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa789410439134dad9eedbeaf1cf0cde1e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_MAXIMUM_FUNCTION_EVALUATIONS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fad3dfaac6f63db304863c55974d031303" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_MAXIMUM_ITERATIONS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa840f7e1f8e52d517761351bc2b639340" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_MAXIMUM_STEP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274fa1f8189f5bad4cfc9ffb59f0c60a463da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_MINIMUM_STEP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274faedc6eb93731868ab4599f6bcad2c7ec8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_STEP_TOLERANCE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ade5bd16a5074345557d9a188643d274faf16771060d26c67939e6f8175d56c106" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>ATTRIBUTE_TRUST_REGION_SIZE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a8ec3d82174ba195117ea4bd5f2e7798d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getAttributeInteger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a0a5c4e453623e5e73467efda7279aa3b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ac1dce648ff83cb7503b3121a856be8e8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getConditionalField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a0e679500bbb0345630538da1e5b83e02" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getFirstDependentField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a5613c22b2f167bae245871703d137d6a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getFirstObjectiveField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a3615b5140bc5b18523c5ed7e3bec9119" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ae1ef0381d3bfbd445e3959e2696315ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getMethod</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ab24888a5be725232086a3a98e30e3bb3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getNextDependentField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ab333057b4a16215e98f9fac8ac8e7b9d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getNextObjectiveField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ab20b988d3d0d56d27fd446fd1cc8341f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>getSolutionReport</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a37d2768421bdbebabf976a17539508de" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a4fda86b1de666d5450d5c6625373dc74" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>Method</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28a0e6bf2d41b9d7b03dadfa383bc25ff75" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>METHOD_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28a109f316e9eb4ea115e818b76da4f1480" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>METHOD_LEAST_SQUARES_QUASI_NEWTON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28aec1c022dd2aab1a712bc37513658667f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>METHOD_NEWTON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a13fada760a4395d76a2bd95e60bb1c28a76414d7eda153095e3d8463998d73193" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>METHOD_QUASI_NEWTON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a748f1063153947fea0876d4623af6387" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a7d34010e631c72b49df29db49604546f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>Optimisation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a1d298baeb2eaee6c6eacde70c139e48e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>Optimisation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a67d5031cf71ae65f7def6acbf0f9f2f6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>Optimisation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ab86da4419215ffacc2170012796bf76f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>optimise</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a717eb0d3bd732578d5e8d95a05030e71" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>removeDependentField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a65480e72f291196723c6695c1844c51c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>removeObjectiveField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1af3351991422e01b7f3590fe7b5ac8519" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>setAttributeInteger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1a69e2f1c6bca63f37527c53eef47e88b3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>setAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ad7820cc29b3c219b36fe307b27d92a9e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>setConditionalField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ab9194c1a15130180f508653fc168978a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>setMethod</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Optimisation_1ae742c2c0a63265240ab79394bf79032e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Optimisation</scope><name>~Optimisation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

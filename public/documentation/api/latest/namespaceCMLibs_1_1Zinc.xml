@@ -1,0 +1,1266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceCMLibs_1_1Zinc" kind="namespace" language="C++">
+    <compoundname>CMLibs::Zinc</compoundname>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1ChangeManager" prot="public">CMLibs::Zinc::ChangeManager</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Context" prot="public">CMLibs::Zinc::Context</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Differentialoperator" prot="public">CMLibs::Zinc::Differentialoperator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Element" prot="public">CMLibs::Zinc::Element</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Elementbasis" prot="public">CMLibs::Zinc::Elementbasis</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" prot="public">CMLibs::Zinc::Elementfieldtemplate</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Elementiterator" prot="public">CMLibs::Zinc::Elementiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Elementtemplate" prot="public">CMLibs::Zinc::Elementtemplate</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Field" prot="public">CMLibs::Zinc::Field</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldAbs" prot="public">CMLibs::Zinc::FieldAbs</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldAcos" prot="public">CMLibs::Zinc::FieldAcos</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldAdd" prot="public">CMLibs::Zinc::FieldAdd</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldAnd" prot="public">CMLibs::Zinc::FieldAnd</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldApply" prot="public">CMLibs::Zinc::FieldApply</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldArgumentReal" prot="public">CMLibs::Zinc::FieldArgumentReal</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldAsin" prot="public">CMLibs::Zinc::FieldAsin</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldassignment" prot="public">CMLibs::Zinc::Fieldassignment</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldAtan" prot="public">CMLibs::Zinc::FieldAtan</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldAtan2" prot="public">CMLibs::Zinc::FieldAtan2</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldcache" prot="public">CMLibs::Zinc::Fieldcache</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldComponent" prot="public">CMLibs::Zinc::FieldComponent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldConcatenate" prot="public">CMLibs::Zinc::FieldConcatenate</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldConstant" prot="public">CMLibs::Zinc::FieldConstant</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldCoordinateTransformation" prot="public">CMLibs::Zinc::FieldCoordinateTransformation</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldCos" prot="public">CMLibs::Zinc::FieldCos</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldCrossProduct" prot="public">CMLibs::Zinc::FieldCrossProduct</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldCurl" prot="public">CMLibs::Zinc::FieldCurl</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldDerivative" prot="public">CMLibs::Zinc::FieldDerivative</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldDeterminant" prot="public">CMLibs::Zinc::FieldDeterminant</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldDivergence" prot="public">CMLibs::Zinc::FieldDivergence</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldDivide" prot="public">CMLibs::Zinc::FieldDivide</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldDotProduct" prot="public">CMLibs::Zinc::FieldDotProduct</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldEdgeDiscontinuity" prot="public">CMLibs::Zinc::FieldEdgeDiscontinuity</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldEigenvalues" prot="public">CMLibs::Zinc::FieldEigenvalues</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldEigenvectors" prot="public">CMLibs::Zinc::FieldEigenvectors</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldEmbedded" prot="public">CMLibs::Zinc::FieldEmbedded</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldEqualTo" prot="public">CMLibs::Zinc::FieldEqualTo</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldExp" prot="public">CMLibs::Zinc::FieldExp</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldFibreAxes" prot="public">CMLibs::Zinc::FieldFibreAxes</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldFindMeshLocation" prot="public">CMLibs::Zinc::FieldFindMeshLocation</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement" prot="public">CMLibs::Zinc::FieldFiniteElement</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldGradient" prot="public">CMLibs::Zinc::FieldGradient</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldGreaterThan" prot="public">CMLibs::Zinc::FieldGreaterThan</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldGroup" prot="public">CMLibs::Zinc::FieldGroup</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldIdentity" prot="public">CMLibs::Zinc::FieldIdentity</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldIf" prot="public">CMLibs::Zinc::FieldIf</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImage" prot="public">CMLibs::Zinc::FieldImage</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryDilate" prot="public">CMLibs::Zinc::FieldImagefilterBinaryDilate</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryErode" prot="public">CMLibs::Zinc::FieldImagefilterBinaryErode</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryThreshold" prot="public">CMLibs::Zinc::FieldImagefilterBinaryThreshold</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterCannyEdgeDetection" prot="public">CMLibs::Zinc::FieldImagefilterCannyEdgeDetection</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterConnectedThreshold" prot="public">CMLibs::Zinc::FieldImagefilterConnectedThreshold</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterCurvatureAnisotropicDiffusion" prot="public">CMLibs::Zinc::FieldImagefilterCurvatureAnisotropicDiffusion</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterDiscreteGaussian" prot="public">CMLibs::Zinc::FieldImagefilterDiscreteGaussian</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterGradientMagnitudeRecursiveGaussian" prot="public">CMLibs::Zinc::FieldImagefilterGradientMagnitudeRecursiveGaussian</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterHistogram" prot="public">CMLibs::Zinc::FieldImagefilterHistogram</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterMean" prot="public">CMLibs::Zinc::FieldImagefilterMean</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterRescaleIntensity" prot="public">CMLibs::Zinc::FieldImagefilterRescaleIntensity</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterSigmoid" prot="public">CMLibs::Zinc::FieldImagefilterSigmoid</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldImagefilterThreshold" prot="public">CMLibs::Zinc::FieldImagefilterThreshold</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldIsDefined" prot="public">CMLibs::Zinc::FieldIsDefined</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldIsExterior" prot="public">CMLibs::Zinc::FieldIsExterior</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldIsOnFace" prot="public">CMLibs::Zinc::FieldIsOnFace</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fielditerator" prot="public">CMLibs::Zinc::Fielditerator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldLessThan" prot="public">CMLibs::Zinc::FieldLessThan</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldLog" prot="public">CMLibs::Zinc::FieldLog</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldMagnitude" prot="public">CMLibs::Zinc::FieldMagnitude</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldMatrixInvert" prot="public">CMLibs::Zinc::FieldMatrixInvert</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldMatrixMultiply" prot="public">CMLibs::Zinc::FieldMatrixMultiply</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldMeshIntegral" prot="public">CMLibs::Zinc::FieldMeshIntegral</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldMeshIntegralSquares" prot="public">CMLibs::Zinc::FieldMeshIntegralSquares</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldmodule" prot="public">CMLibs::Zinc::Fieldmodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback" prot="public">CMLibs::Zinc::Fieldmodulecallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" prot="public">CMLibs::Zinc::Fieldmoduleevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldmodulenotifier" prot="public">CMLibs::Zinc::Fieldmodulenotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldMultiply" prot="public">CMLibs::Zinc::FieldMultiply</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodeLookup" prot="public">CMLibs::Zinc::FieldNodeLookup</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodesetMaximum" prot="public">CMLibs::Zinc::FieldNodesetMaximum</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodesetMean" prot="public">CMLibs::Zinc::FieldNodesetMean</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodesetMeanSquares" prot="public">CMLibs::Zinc::FieldNodesetMeanSquares</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodesetMinimum" prot="public">CMLibs::Zinc::FieldNodesetMinimum</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodesetOperator" prot="public">CMLibs::Zinc::FieldNodesetOperator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodesetSum" prot="public">CMLibs::Zinc::FieldNodesetSum</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodesetSumSquares" prot="public">CMLibs::Zinc::FieldNodesetSumSquares</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNodeValue" prot="public">CMLibs::Zinc::FieldNodeValue</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNormalise" prot="public">CMLibs::Zinc::FieldNormalise</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldNot" prot="public">CMLibs::Zinc::FieldNot</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldOr" prot="public">CMLibs::Zinc::FieldOr</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldparameters" prot="public">CMLibs::Zinc::Fieldparameters</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldPower" prot="public">CMLibs::Zinc::FieldPower</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldProjection" prot="public">CMLibs::Zinc::FieldProjection</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldrange" prot="public">CMLibs::Zinc::Fieldrange</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldSceneviewerProjection" prot="public">CMLibs::Zinc::FieldSceneviewerProjection</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldSin" prot="public">CMLibs::Zinc::FieldSin</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing" prot="public">CMLibs::Zinc::Fieldsmoothing</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldSqrt" prot="public">CMLibs::Zinc::FieldSqrt</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldStoredMeshLocation" prot="public">CMLibs::Zinc::FieldStoredMeshLocation</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldStoredString" prot="public">CMLibs::Zinc::FieldStoredString</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldStringConstant" prot="public">CMLibs::Zinc::FieldStringConstant</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldSubtract" prot="public">CMLibs::Zinc::FieldSubtract</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldSumComponents" prot="public">CMLibs::Zinc::FieldSumComponents</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldTan" prot="public">CMLibs::Zinc::FieldTan</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldTimeLookup" prot="public">CMLibs::Zinc::FieldTimeLookup</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldTimeValue" prot="public">CMLibs::Zinc::FieldTimeValue</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldTranspose" prot="public">CMLibs::Zinc::FieldTranspose</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldVectorCoordinateTransformation" prot="public">CMLibs::Zinc::FieldVectorCoordinateTransformation</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldXor" prot="public">CMLibs::Zinc::FieldXor</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Font" prot="public">CMLibs::Zinc::Font</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Fontmodule" prot="public">CMLibs::Zinc::Fontmodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Glyph" prot="public">CMLibs::Zinc::Glyph</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1GlyphAxes" prot="public">CMLibs::Zinc::GlyphAxes</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1GlyphColourBar" prot="public">CMLibs::Zinc::GlyphColourBar</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Glyphiterator" prot="public">CMLibs::Zinc::Glyphiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Glyphmodule" prot="public">CMLibs::Zinc::Glyphmodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback" prot="public">CMLibs::Zinc::Glyphmodulecallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" prot="public">CMLibs::Zinc::Glyphmoduleevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" prot="public">CMLibs::Zinc::Glyphmodulenotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Graphics" prot="public">CMLibs::Zinc::Graphics</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1GraphicsContours" prot="public">CMLibs::Zinc::GraphicsContours</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes" prot="public">CMLibs::Zinc::Graphicslineattributes</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1GraphicsLines" prot="public">CMLibs::Zinc::GraphicsLines</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes" prot="public">CMLibs::Zinc::Graphicspointattributes</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1GraphicsPoints" prot="public">CMLibs::Zinc::GraphicsPoints</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes" prot="public">CMLibs::Zinc::Graphicssamplingattributes</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1GraphicsStreamlines" prot="public">CMLibs::Zinc::GraphicsStreamlines</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1GraphicsSurfaces" prot="public">CMLibs::Zinc::GraphicsSurfaces</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1HierarchicalChangeManager" prot="public">CMLibs::Zinc::HierarchicalChangeManager</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Light" prot="public">CMLibs::Zinc::Light</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Lightiterator" prot="public">CMLibs::Zinc::Lightiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Lightmodule" prot="public">CMLibs::Zinc::Lightmodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Logger" prot="public">CMLibs::Zinc::Logger</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Loggercallback" prot="public">CMLibs::Zinc::Loggercallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Loggerevent" prot="public">CMLibs::Zinc::Loggerevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Loggernotifier" prot="public">CMLibs::Zinc::Loggernotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Material" prot="public">CMLibs::Zinc::Material</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Materialiterator" prot="public">CMLibs::Zinc::Materialiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Materialmodule" prot="public">CMLibs::Zinc::Materialmodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Materialmodulecallback" prot="public">CMLibs::Zinc::Materialmodulecallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Materialmoduleevent" prot="public">CMLibs::Zinc::Materialmoduleevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" prot="public">CMLibs::Zinc::Materialmodulenotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Mesh" prot="public">CMLibs::Zinc::Mesh</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Meshchanges" prot="public">CMLibs::Zinc::Meshchanges</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1MeshGroup" prot="public">CMLibs::Zinc::MeshGroup</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Node" prot="public">CMLibs::Zinc::Node</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Nodeiterator" prot="public">CMLibs::Zinc::Nodeiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Nodeset" prot="public">CMLibs::Zinc::Nodeset</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Nodesetchanges" prot="public">CMLibs::Zinc::Nodesetchanges</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1NodesetGroup" prot="public">CMLibs::Zinc::NodesetGroup</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Nodetemplate" prot="public">CMLibs::Zinc::Nodetemplate</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Optimisation" prot="public">CMLibs::Zinc::Optimisation</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Region" prot="public">CMLibs::Zinc::Region</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Regioncallback" prot="public">CMLibs::Zinc::Regioncallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Regionevent" prot="public">CMLibs::Zinc::Regionevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Regionnotifier" prot="public">CMLibs::Zinc::Regionnotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Scene" prot="public">CMLibs::Zinc::Scene</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Scenefilter" prot="public">CMLibs::Zinc::Scenefilter</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" prot="public">CMLibs::Zinc::Scenefiltermodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1ScenefilterOperator" prot="public">CMLibs::Zinc::ScenefilterOperator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Scenepicker" prot="public">CMLibs::Zinc::Scenepicker</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Sceneviewer" prot="public">CMLibs::Zinc::Sceneviewer</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Sceneviewercallback" prot="public">CMLibs::Zinc::Sceneviewercallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Sceneviewerevent" prot="public">CMLibs::Zinc::Sceneviewerevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" prot="public">CMLibs::Zinc::Sceneviewerinput</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" prot="public">CMLibs::Zinc::Sceneviewermodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" prot="public">CMLibs::Zinc::Sceneviewernotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Selectioncallback" prot="public">CMLibs::Zinc::Selectioncallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Selectionevent" prot="public">CMLibs::Zinc::Selectionevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Selectionnotifier" prot="public">CMLibs::Zinc::Selectionnotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Shadermodule" prot="public">CMLibs::Zinc::Shadermodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Shaderprogram" prot="public">CMLibs::Zinc::Shaderprogram</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" prot="public">CMLibs::Zinc::Shaderuniforms</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrum" prot="public">CMLibs::Zinc::Spectrum</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" prot="public">CMLibs::Zinc::Spectrumcomponent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrumiterator" prot="public">CMLibs::Zinc::Spectrumiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrummodule" prot="public">CMLibs::Zinc::Spectrummodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrummodulecallback" prot="public">CMLibs::Zinc::Spectrummodulecallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" prot="public">CMLibs::Zinc::Spectrummoduleevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Spectrummodulenotifier" prot="public">CMLibs::Zinc::Spectrummodulenotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Streaminformation" prot="public">CMLibs::Zinc::Streaminformation</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" prot="public">CMLibs::Zinc::StreaminformationImage</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" prot="public">CMLibs::Zinc::StreaminformationRegion</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" prot="public">CMLibs::Zinc::StreaminformationScene</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Streamresource" prot="public">CMLibs::Zinc::Streamresource</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" prot="public">CMLibs::Zinc::StreamresourceFile</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" prot="public">CMLibs::Zinc::StreamresourceMemory</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellation" prot="public">CMLibs::Zinc::Tessellation</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" prot="public">CMLibs::Zinc::Tessellationiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" prot="public">CMLibs::Zinc::Tessellationmodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" prot="public">CMLibs::Zinc::Tessellationmodulecallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" prot="public">CMLibs::Zinc::Tessellationmoduleevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" prot="public">CMLibs::Zinc::Tessellationmodulenotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Timekeeper" prot="public">CMLibs::Zinc::Timekeeper</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" prot="public">CMLibs::Zinc::Timekeepermodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Timenotifier" prot="public">CMLibs::Zinc::Timenotifier</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Timenotifiercallback" prot="public">CMLibs::Zinc::Timenotifiercallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Timenotifierevent" prot="public">CMLibs::Zinc::Timenotifierevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1TimenotifierRegular" prot="public">CMLibs::Zinc::TimenotifierRegular</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Timesequence" prot="public">CMLibs::Zinc::Timesequence</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Result</name>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afcae3da89fda02b4cf8ddfb2ed0211d68d9" prot="public">
+          <name>RESULT_WARNING_PART_DONE</name>
+          <initializer>= CMZN_RESULT_WARNING_PART_DONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afca89648e89e767b9ddbecd9e357626047d" prot="public">
+          <name>RESULT_ERROR_IN_USE</name>
+          <initializer>= CMZN_RESULT_ERROR_IN_USE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afca92b1dafe8f50a570accd4b635f9d9800" prot="public">
+          <name>RESULT_ERROR_ARGUMENT_CONTEXT</name>
+          <initializer>= CMZN_RESULT_ERROR_ARGUMENT_CONTEXT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afca8e15bf60b6a4a8c23298ce7bcbdacb82" prot="public">
+          <name>RESULT_ERROR_NOT_IMPLEMENTED</name>
+          <initializer>= CMZN_RESULT_ERROR_NOT_IMPLEMENTED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afcad0326c56ef73051578bf5db18fdad98f" prot="public">
+          <name>RESULT_ERROR_INCOMPATIBLE_DATA</name>
+          <initializer>= CMZN_RESULT_ERROR_INCOMPATIBLE_DATA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afca71794af7e66c26eeb229682b2281f14d" prot="public">
+          <name>RESULT_ERROR_ALREADY_EXISTS</name>
+          <initializer>= CMZN_RESULT_ERROR_ALREADY_EXISTS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afca4e45224b04ff43b19895dfd56619acf6" prot="public">
+          <name>RESULT_ERROR_NOT_FOUND</name>
+          <initializer>= CMZN_RESULT_ERROR_NOT_FOUND</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afca90f1f75e3fc5a319481702d8d830511e" prot="public">
+          <name>RESULT_ERROR_MEMORY</name>
+          <initializer>= CMZN_RESULT_ERROR_MEMORY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afcae7d245fdef0a0287cf5514212099d38f" prot="public">
+          <name>RESULT_ERROR_ARGUMENT</name>
+          <initializer>= CMZN_RESULT_ERROR_ARGUMENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afca5cc6c542efc735c0c4b886cf945fb2ca" prot="public">
+          <name>RESULT_ERROR_GENERAL</name>
+          <initializer>= CMZN_RESULT_ERROR_GENERAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1a2df4db6d27acd4b55d131d4d8de39afca5ca991f8190a087c868c34ec7fd1ff45" prot="public">
+          <name>RESULT_OK</name>
+          <initializer>= CMZN_RESULT_OK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/result.hpp" line="24" column="1" bodyfile="auto_comments_output/result.hpp" bodystart="23" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Scenecoordinatesystem</name>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ad96d133c7a0084b948efdb751c4ca400" prot="public">
+          <name>SCENECOORDINATESYSTEM_INVALID</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified coordinate system. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a9fc7451fcdbe58f712d065ee3697da0e" prot="public">
+          <name>SCENECOORDINATESYSTEM_LOCAL</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_LOCAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The local coordinate system of a scene, subject to its own transformation matrix and those of all parent scenes up to the root region of the scene in use, which are world coordinates. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a61c369a1486f08e33472937f4ec2d12b" prot="public">
+          <name>SCENECOORDINATESYSTEM_WORLD</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_WORLD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The world coordinate system which scene viewer viewing parameters are specified in, and which scene transformations (giving local coordinates) are ultimately relative to. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a4817af2b2ebfa897842ed82658431bf0" prot="public">
+          <name>SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FILL</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FILL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Distorted normalised window coordinate system which varies from -1 to +1 from left to right, bottom to top, and far to near of window. If window is non-square, graphics in this space appear stretched. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ac8c47d6cd1440a6762b2353ac800a86c" prot="public">
+          <name>SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_CENTRE</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_CENTRE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Undistorted normalised window coordinate system which varies from -1 to +1 from far to near, and from -1 to +1 from left-to-right and bottom-to-top in largest square that fits in centre of window. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a716c417eb5c358303b603243afcdcb19" prot="public">
+          <name>SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_LEFT</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_LEFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Undistorted normalised window coordinate system which varies from -1 to +1 from far to near, and from -1 to +1 from left-to-right and bottom-to-top in largest square that fits in left of window. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a277564bb5fa32b474fa2b80f691132e0" prot="public">
+          <name>SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_RIGHT</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_RIGHT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Undistorted normalised window coordinate system which varies from -1 to +1 from far to near, and from -1 to +1 from left-to-right and bottom-to-top in largest square that fits in right of window. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ac2d798e79c68e818f621490725883007" prot="public">
+          <name>SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_BOTTOM</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_BOTTOM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Undistorted normalised window coordinate system which varies from -1 to +1 from far to near, and from -1 to +1 from left-to-right and bottom-to-top in largest square that fits in bottom of window. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a4e333f35ddba0ab4ac4e4ecec05ff359" prot="public">
+          <name>SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_TOP</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_TOP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Undistorted normalised window coordinate system which varies from -1 to +1 from far to near, and from -1 to +1 from left-to-right and bottom-to-top in largest square that fits in top of window. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a6b86f593b0bc8d35a03a6fabb642c3f8" prot="public">
+          <name>SCENECOORDINATESYSTEM_WINDOW_PIXEL_BOTTOM_LEFT</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_WINDOW_PIXEL_BOTTOM_LEFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Window coordinate system in pixel units with 0,0 at centre of the bottom-left pixel in display window, and depth ranging from far = -1 to near = +1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391af0807d001335bf839cfab632343d0dee" prot="public">
+          <name>SCENECOORDINATESYSTEM_WINDOW_PIXEL_TOP_LEFT</name>
+          <initializer>= CMZN_SCENECOORDINATESYSTEM_WINDOW_PIXEL_TOP_LEFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Window coordinate system in pixel units with 0,0 at centre of the top-left pixel in display window, and depth ranging from far = -1 to near = +1. Y coordinates are negative going down the window. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumerated type for identifying scene and window coordinate systems. <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> are drawn in one of these coordinate systems. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenecoordinatesystem.hpp" line="27" column="1" bodyfile="auto_comments_output/scenecoordinatesystem.hpp" bodystart="26" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Status</name>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a7fba3ea29914c0b76e3c1908546a134a" prot="public">
+          <name>WARNING_PART_DONE</name>
+          <initializer>= CMZN_WARNING_PART_DONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation completed where possible, with documented behaviour for remainder. e.g. returned when get/set field parameters and not all components have parameters. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ae9dc3bad80a968ce95267d2170a90527" prot="public">
+          <name>ERROR_IN_USE</name>
+          <initializer>= CMZN_ERROR_IN_USE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation failed or partially completed due to object(s) being in use. e.g. returned when attempting to destroy node in use by elements </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a98ef578647ee7b51cb11e3a773701a59" prot="public">
+          <name>ERROR_ARGUMENT_CONTEXT</name>
+          <initializer>= CMZN_ERROR_ARGUMENT_CONTEXT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>An argument is from a different <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> context </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ac5a98f4e53d4179ee4196e50982da8d4" prot="public">
+          <name>ERROR_NOT_IMPLEMENTED</name>
+          <initializer>= CMZN_ERROR_NOT_IMPLEMENTED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cannot complete operation due to unimplemented feature </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ac12f2b2ff5e91d764f486172de4a6bc1" prot="public">
+          <name>ERROR_INCOMPATIBLE_DATA</name>
+          <initializer>= CMZN_ERROR_INCOMPATIBLE_DATA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Incompatible data or object definitions prevented operation </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a2f5acfbee43b2a8dc5bea7b7059c5794" prot="public">
+          <name>ERROR_ALREADY_EXISTS</name>
+          <initializer>= CMZN_ERROR_ALREADY_EXISTS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Object already exists or is present in owner/set </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ab0928ff1924d73c9aaff1cd6f4f2bb97" prot="public">
+          <name>ERROR_NOT_FOUND</name>
+          <initializer>= CMZN_ERROR_NOT_FOUND</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Object or resource not found </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9acbcab8d72836d00a575bacad1c6443bf" prot="public">
+          <name>ERROR_MEMORY</name>
+          <initializer>= CMZN_ERROR_MEMORY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Failed to allocate memory. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" prot="public">
+          <name>ERROR_ARGUMENT</name>
+          <initializer>= CMZN_ERROR_ARGUMENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid argument(s) passed to API function. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a04a74c1c8a25b8f5fbba1efa2969bd13" prot="public">
+          <name>ERROR_GENERAL</name>
+          <initializer>= CMZN_ERROR_GENERAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified error occurred. Can include invalid argument(s) for old APIs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" prot="public">
+          <name>OK</name>
+          <initializer>= CMZN_OK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Successful return </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic status codes returned by API functions to indicate success or error. DEPRECATED: Please use &apos;result&apos; codes defined in result header instead. <simplesect kind="see"><para>cmzn_result</para>
+</simplesect>
+WARNING: Planned future binary compatibility break. At a future date we will change the value of <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> to 0, and <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a04a74c1c8a25b8f5fbba1efa2969bd13" kindref="member">CMLibs::Zinc::ERROR_GENERAL</ref> to some other value, to bring the <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> API in to line with common C API conventions. To maintain your source compatibility through this break please ensure all code checking integer status codes returned by functions compare against enumerated symbol names, not their current values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/status.hpp" line="36" column="1" bodyfile="auto_comments_output/status.hpp" bodystart="35" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a88f4cfd4c04f34c29bf149a1c572794f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Context &amp;a, const Context &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="282" column="13" bodyfile="auto_comments_output/context.hpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1af5891540f3e77a4dcc26d2ebcf0a9a4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Element &amp;a, const Element &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="453" column="13" bodyfile="auto_comments_output/element.hpp" bodystart="453" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1aea96f20953749a425fff927ec4fde946" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Field &amp;a, const Field &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="875" column="13" bodyfile="auto_comments_output/field.hpp" bodystart="875" bodyend="878"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a482df1dce5f2bb45f9cba15c9b9f5f1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldAdd" kindref="compound">FieldAdd</ref></type>
+        <definition>FieldAdd CMLibs::Zinc::operator+</definition>
+        <argsstring>(const Field &amp;operand1, const Field &amp;operand2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldarithmeticoperators.hpp" line="45" column="17" bodyfile="auto_comments_output/fieldarithmeticoperators.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a4e9017004033f6b98801ff1f2e3c5644" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldMultiply" kindref="compound">FieldMultiply</ref></type>
+        <definition>FieldMultiply CMLibs::Zinc::operator*</definition>
+        <argsstring>(const Field &amp;operand1, const Field &amp;operand2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldarithmeticoperators.hpp" line="98" column="22" bodyfile="auto_comments_output/fieldarithmeticoperators.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a08eb01349bbe12ff03a64dcaa1bfb9ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldDivide" kindref="compound">FieldDivide</ref></type>
+        <definition>FieldDivide CMLibs::Zinc::operator/</definition>
+        <argsstring>(const Field &amp;operand1, const Field &amp;operand2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldarithmeticoperators.hpp" line="127" column="20" bodyfile="auto_comments_output/fieldarithmeticoperators.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1ab4a0a1e47cc1060bc0b7c3dc28a3782e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldSubtract" kindref="compound">FieldSubtract</ref></type>
+        <definition>FieldSubtract CMLibs::Zinc::operator-</definition>
+        <argsstring>(const Field &amp;operand1, const Field &amp;operand2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldarithmeticoperators.hpp" line="156" column="22" bodyfile="auto_comments_output/fieldarithmeticoperators.hpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1aee5860fddea7168f449a42b2ee2cc9ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldLog" kindref="compound">FieldLog</ref></type>
+        <definition>FieldLog CMLibs::Zinc::log</definition>
+        <argsstring>(const Field &amp;sourceField)</argsstring>
+        <name>log</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>sourceField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldarithmeticoperators.hpp" line="184" column="17" bodyfile="auto_comments_output/fieldarithmeticoperators.hpp" bodystart="184" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1ae9c8896df4a351434b76007b7b6ec755" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldSqrt" kindref="compound">FieldSqrt</ref></type>
+        <definition>FieldSqrt CMLibs::Zinc::sqrt</definition>
+        <argsstring>(const Field &amp;sourceField)</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>sourceField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldarithmeticoperators.hpp" line="212" column="18" bodyfile="auto_comments_output/fieldarithmeticoperators.hpp" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a099d42545d5f02fd15b6099c7f7f859c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldExp" kindref="compound">FieldExp</ref></type>
+        <definition>FieldExp CMLibs::Zinc::exp</definition>
+        <argsstring>(const Field &amp;sourceField)</argsstring>
+        <name>exp</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>sourceField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldarithmeticoperators.hpp" line="240" column="17" bodyfile="auto_comments_output/fieldarithmeticoperators.hpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a5259824bd97c1373e2e9c44636456755" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldAbs" kindref="compound">FieldAbs</ref></type>
+        <definition>FieldAbs CMLibs::Zinc::abs</definition>
+        <argsstring>(const Field &amp;sourceField)</argsstring>
+        <name>abs</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>sourceField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldarithmeticoperators.hpp" line="268" column="17" bodyfile="auto_comments_output/fieldarithmeticoperators.hpp" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a25ecbae2ec08e8b35fe5f9cd5ffa1efe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldAnd" kindref="compound">FieldAnd</ref></type>
+        <definition>FieldAnd CMLibs::Zinc::operator&amp;&amp;</definition>
+        <argsstring>(const Field &amp;operand1, const Field &amp;operand2)</argsstring>
+        <name>operator&amp;&amp;</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldlogicaloperators.hpp" line="46" column="17" bodyfile="auto_comments_output/fieldlogicaloperators.hpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a253da21d9e2e507eb2596bafd127f1ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGreaterThan" kindref="compound">FieldGreaterThan</ref></type>
+        <definition>FieldGreaterThan CMLibs::Zinc::operator&gt;</definition>
+        <argsstring>(const Field &amp;operand1, const Field &amp;operand2)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldlogicaloperators.hpp" line="101" column="25" bodyfile="auto_comments_output/fieldlogicaloperators.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1ae467769a836c06f29fd60e4bb54ad20a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldLessThan" kindref="compound">FieldLessThan</ref></type>
+        <definition>FieldLessThan CMLibs::Zinc::operator&lt;</definition>
+        <argsstring>(const Field &amp;operand1, const Field &amp;operand2)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldlogicaloperators.hpp" line="151" column="8" bodyfile="auto_comments_output/fieldlogicaloperators.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1aa7e9007f8786fc0a86206e07308b7a20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldOr" kindref="compound">FieldOr</ref></type>
+        <definition>FieldOr CMLibs::Zinc::operator||</definition>
+        <argsstring>(const Field &amp;operand1, const Field &amp;operand2)</argsstring>
+        <name>operator||</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldlogicaloperators.hpp" line="181" column="16" bodyfile="auto_comments_output/fieldlogicaloperators.hpp" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1af7cf547e13ce3f6417dfd71a981b009c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldNot" kindref="compound">FieldNot</ref></type>
+        <definition>FieldNot CMLibs::Zinc::operator!</definition>
+        <argsstring>(const Field &amp;operand)</argsstring>
+        <name>operator!</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>operand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldlogicaloperators.hpp" line="211" column="17" bodyfile="auto_comments_output/fieldlogicaloperators.hpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a031a3962f35f05893d6d74ed019a9faa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Fieldmodule &amp;a, const Fieldmodule &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule" kindref="compound">Fieldmodule</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule" kindref="compound">Fieldmodule</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1532" column="13" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1532" bodyend="1535"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1aa06574607dc3eddedd3078b4cd92df78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Font &amp;a, const Font &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Font" kindref="compound">Font</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/font.hpp" line="263" column="13" bodyfile="auto_comments_output/font.hpp" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1ad2a51f70eed913a50d5719f000d787ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Glyph &amp;a, const Glyph &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="302" column="13" bodyfile="auto_comments_output/glyph.hpp" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1aa50758f806c78e8f28318758c64f3f29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Graphics &amp;a, const Graphics &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="788" column="13" bodyfile="auto_comments_output/graphics.hpp" bodystart="788" bodyend="791"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a0d9c31bec077352d1d362705905634bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Light &amp;a, const Light &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="403" column="13" bodyfile="auto_comments_output/light.hpp" bodystart="403" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a3ed10a6dbcd134b7d6f5309dd65bce33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Logger &amp;a, const Logger &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="186" column="13" bodyfile="auto_comments_output/logger.hpp" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1abf54a49603fd64034192b09a991b528d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Material &amp;a, const Material &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="347" column="13" bodyfile="auto_comments_output/material.hpp" bodystart="347" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a67cff9f762749c0a09f10f91fd8c1db7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Mesh &amp;a, const Mesh &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="327" column="13" bodyfile="auto_comments_output/mesh.hpp" bodystart="327" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a201af7dac2c0ff49ba8ff7b47843d429" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Node &amp;a, const Node &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="192" column="13" bodyfile="auto_comments_output/node.hpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1aa5513d682b9003e31c55385b3e8743c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Nodeset &amp;a, const Nodeset &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="252" column="13" bodyfile="auto_comments_output/nodeset.hpp" bodystart="252" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a56d4af232d292cd17f19569d2a5d3605" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Region &amp;a, const Region &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/region.hpp" line="483" column="13" bodyfile="auto_comments_output/region.hpp" bodystart="483" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a6deea8fbef92e7eb07e88bde0cfbcc3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Scene &amp;a, const Scene &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="747" column="13" bodyfile="auto_comments_output/scene.hpp" bodystart="747" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a2edca295d25ccf3c6cbc6c0337fb4f51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></type>
+        <definition>Scenecoordinatesystem CMLibs::Zinc::ScenecoordinatesystemEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>ScenecoordinatesystemEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenecoordinatesystem.hpp" line="72" column="30" bodyfile="auto_comments_output/scenecoordinatesystem.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a08310c9f93d9eb8c7590ec2d6c4c4916" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::ScenecoordinatesystemEnumToString</definition>
+        <argsstring>(Scenecoordinatesystem system)</argsstring>
+        <name>ScenecoordinatesystemEnumToString</name>
+        <param>
+          <type><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></type>
+          <declname>system</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenecoordinatesystem.hpp" line="77" column="13" bodyfile="auto_comments_output/scenecoordinatesystem.hpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a1fbdc073523f4cbbf9d045f58bf8bddf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Scenefilter &amp;a, const Scenefilter &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenefilter.hpp" line="185" column="13" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1aafce23fa6871179a823498f005f6e1de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Shaderprogram &amp;a, const Shaderprogram &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="191" column="13" bodyfile="auto_comments_output/shader.hpp" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1ac6c14c1e91e458cc46cc82bebdcf4973" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Shaderuniforms &amp;a, const Shaderuniforms &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="428" column="13" bodyfile="auto_comments_output/shader.hpp" bodystart="428" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1ae8a3f876e0e53f6c04fecd68e79f66bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Spectrum &amp;a, const Spectrum &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="957" column="13" bodyfile="auto_comments_output/spectrum.hpp" bodystart="957" bodyend="960"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a4606674b37fd5f5d1ab7b77936f2d6b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Tessellation &amp;a, const Tessellation &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="271" column="13" bodyfile="auto_comments_output/tessellation.hpp" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCMLibs_1_1Zinc_1a4f57d78cc42a8c738970520b2bf42e13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::operator==</definition>
+        <argsstring>(const Timesequence &amp;a, const Timesequence &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="131" column="13" bodyfile="auto_comments_output/timesequence.hpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">CMLibs::Zinc</ref> namespace. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">CMLibs::Zinc</ref> namespace, all libZinc cpp APIs are in this namespace. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/changemanager.hpp" line="28" column="1"/>
+  </compounddef>
+</doxygen>

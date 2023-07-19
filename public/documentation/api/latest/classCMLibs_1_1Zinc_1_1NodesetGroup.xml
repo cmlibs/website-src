@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1NodesetGroup" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::NodesetGroup</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Nodeset" prot="public" virt="non-virtual">CMLibs::Zinc::Nodeset</basecompoundref>
+    <includes refid="nodeset_8hpp" local="no">nodeset.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1ad9be7235f97fbbb50ac0a337a3b4ffc0" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_nodeset_group_id</type>
+        <definition>cmzn_nodeset_group_id CMLibs::Zinc::NodesetGroup::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="274" column="30" bodyfile="auto_comments_output/nodeset.hpp" bodystart="274" bodyend="277"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1af37d8236e7b0b6d03b16428e6badfe03" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::NodesetGroup::NodesetGroup</definition>
+        <argsstring>(cmzn_nodeset_group_id nodeset_id)</argsstring>
+        <name>NodesetGroup</name>
+        <param>
+          <type>cmzn_nodeset_group_id</type>
+          <declname>nodeset_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="282" column="10" bodyfile="auto_comments_output/nodeset.hpp" bodystart="282" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1ab99abf4022f007d97e0199136ba1f757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::NodesetGroup::NodesetGroup</definition>
+        <argsstring>()</argsstring>
+        <name>NodesetGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="285" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="285" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1a0ad6819f221c39da2fe262fe63064a4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_nodeset_group_id</type>
+        <definition>cmzn_nodeset_group_id CMLibs::Zinc::NodesetGroup::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="293" column="23" bodyfile="auto_comments_output/nodeset.hpp" bodystart="293" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1a3c68cc96bcbeadbdd7ea9a4b636953e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::NodesetGroup::addNode</definition>
+        <argsstring>(const Node &amp;node)</argsstring>
+        <name>addNode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add specified node to nodeset group.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to node to add. Must be from the group&apos;s master nodeset. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a2f5acfbee43b2a8dc5bea7b7059c5794" kindref="member">CMLibs::Zinc::ERROR_ALREADY_EXISTS</ref> if node was already in group but otherwise successful, or any other error code if more serious failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="306" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1a0d251710d73f625b67d17f8620b06c0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::NodesetGroup::addNodesConditional</definition>
+        <argsstring>(const Field &amp;conditionalField)</argsstring>
+        <name>addNodesConditional</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>conditionalField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure this nodeset group contains all nodes from the master nodeset for which the conditional field is true i.e. non-zero valued at the node.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conditionalField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> which if non-zero in a node indicates it is to be added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="319" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="319" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1a93a4df4f4bd8a7e78e4683cb779a40ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref></type>
+        <definition>FieldGroup CMLibs::Zinc::NodesetGroup::getFieldGroup</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the owning group field for this nodeset group. Guaranteed to exist if this is a valid nodeset group handle.</para>
+<para><simplesect kind="return"><para>Handle to owning field group, or null/invalid handle if nodeset group is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="332" column="19" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="398" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1a00c055a58a2898f3b1290e7bcd3bf436" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::NodesetGroup::removeAllNodes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all nodes from nodeset group.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if all nodes removed, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="339" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="339" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1a36d9224d1917354b0beffaed19d7f571" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::NodesetGroup::removeNode</definition>
+        <argsstring>(const Node &amp;node)</argsstring>
+        <name>removeNode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove specified node from nodeset group.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to node to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ab0928ff1924d73c9aaff1cd6f4f2bb97" kindref="member">CMLibs::Zinc::ERROR_NOT_FOUND</ref> if node was not in the group but otherwise successful, or any other error code if more serious failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="352" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="352" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1NodesetGroup_1ab9c270ebbc2f42f03ee9fd6dcdaae77c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::NodesetGroup::removeNodesConditional</definition>
+        <argsstring>(const Field &amp;conditionalField)</argsstring>
+        <name>removeNodesConditional</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>conditionalField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all nodes from the nodeset group for which the conditional field is true i.e. non-zero valued in the node. Note that group and node_group fields are valid conditional fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conditionalField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> which if non-zero in the node indicates it is to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="367" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="367" bodyend="371"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A subset of a master nodeset. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A specialised nodeset consisting of a subset of nodes from a master nodeset. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Nodeset</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Nodeset"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::NodesetGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1NodesetGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Nodeset</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Nodeset"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::NodesetGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1NodesetGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/nodeset.hpp" line="268" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="267" bodyend="373"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1a3c68cc96bcbeadbdd7ea9a4b636953e6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>addNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1a0d251710d73f625b67d17f8620b06c0c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>addNodesConditional</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a991cc9a1d93f9a47162bed110304d1d8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>castGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a627f9f2240053de9ea3b4eeb63fc06fb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>containsNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ab299bc6b0470855480681ff4f132f8c8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>createNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a55c2e1ded31e39a4cb85754783432677" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>createNodeiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a9004408b62e61ca8c4ccf4107eed9dee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>createNodetemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ad6b9d535aa461a108932e9b9f3b93e07" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>destroyAllNodes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1afd1233c583c1958c8762181300905da4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>destroyNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a5ad363c1ea96ae8692ea7a7da1db1503" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>destroyNodesConditional</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1af589a172f86cd8a29fb862083e980d37" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>findNodeByIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1ad9be7235f97fbbb50ac0a337a3b4ffc0" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1a93a4df4f4bd8a7e78e4683cb779a40ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>getFieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a3b3960b1c64912021f023f98f321a378" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1a0ad6819f221c39da2fe262fe63064a4c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ac75d90340ed7b6f3bed0c24ce037dfbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>getMasterNodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ab58b931df8f212fb6e3d4e186dd8a7c7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ae06a4a84134e248708fac42b1a66b4c1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>getSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a21e3ecbac5870431e7afcfb67337695f" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1ae46e242e8c59aa9e33cc65490803b30e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a15c10a81769aafd04eec6c994575cb08" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>Nodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a695dafa1b0300b14367a4f6c40869d9b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>Nodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a48291134286284b7fe1bedb144c529ec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>Nodeset</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1af37d8236e7b0b6d03b16428e6badfe03" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>NodesetGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1ab99abf4022f007d97e0199136ba1f757" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>NodesetGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a6152a8457423cdd2d1eab19e407fddea" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1a00c055a58a2898f3b1290e7bcd3bf436" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>removeAllNodes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1a36d9224d1917354b0beffaed19d7f571" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>removeNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1ab9c270ebbc2f42f03ee9fd6dcdaae77c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>removeNodesConditional</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeset_1a0a2b0b0cf8139a95dcb4c20837d02b44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::NodesetGroup</scope><name>~Nodeset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

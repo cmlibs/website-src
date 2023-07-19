@@ -10,6 +10,16 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/documentation',
+      name: 'documentation',
+      component: () => import('../views/DocumentationView.vue')
+    },
+    {
+      path: '/documentation/api/:pageName?',
+      name: 'apidocs-page',
+      component: () => import('../views/APIDocumentationView.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

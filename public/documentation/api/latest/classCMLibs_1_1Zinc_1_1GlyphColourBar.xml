@@ -1,0 +1,677 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1GlyphColourBar" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::GlyphColourBar</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Glyph" prot="public" virt="non-virtual">CMLibs::Zinc::Glyph</basecompoundref>
+    <includes refid="glyph_8hpp" local="no">glyph.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a396fc17e97d80374ffbdac1da7574d4b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_glyph_colour_bar_id</type>
+        <definition>cmzn_glyph_colour_bar_id CMLibs::Zinc::GlyphColourBar::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1GlyphColourBar" kindref="compound">GlyphColourBar</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1GlyphColourBar" kindref="compound">GlyphColourBar</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="425" column="33" bodyfile="auto_comments_output/glyph.hpp" bodystart="425" bodyend="428"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a1b617ae3338c1f9f3448a550cfe05f4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::GlyphColourBar::GlyphColourBar</definition>
+        <argsstring>()</argsstring>
+        <name>GlyphColourBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="431" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="431" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1af3bbe62ac99d128f7902ce8d7a83a7ec" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::GlyphColourBar::GlyphColourBar</definition>
+        <argsstring>(cmzn_glyph_colour_bar_id colour_bar_id)</argsstring>
+        <name>GlyphColourBar</name>
+        <param>
+          <type>cmzn_glyph_colour_bar_id</type>
+          <declname>colour_bar_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="433" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="433" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a7bdcf90a2b1c988c6331f060910acd10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::getAxis</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getAxis</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the vector defining the main axis of the colour bar.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of valuesOut array. Gets maximum of 3 values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive axis vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="444" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="444" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1afe9121789fc5b0d05b63bcc9e2181809" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::setAxis</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setAxis</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the vector defining the main axis of the colour bar. The magnitude of this vector gives the length of the bar without the extend length. The default axis is (0,1,0) for vertical orientation in window coordinates.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of valuesIn array. Sets maximum of 3 values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing axis vector. If fewer than 3 values then assumes zero for remaining components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="459" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="459" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a83bf0177ef41de9ad07febcc0f82e81b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::getCentre</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getCentre</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the centre position of the colour bar.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of valuesOut array. Gets maximum of 3 values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive centre position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="471" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="471" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1ab971b8240253a87149089dd2b8d91afb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::setCentre</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setCentre</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the centre position of the colour bar. The default centre is (0,0,0). It is recommended that this not be changed and instead use the graphics point attributes glyph offset. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1ad03744701b6323c223236d3defcf26d1" kindref="member">Graphicspointattributes::setGlyphOffset</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of valuesIn array. Sets maximum of 3 values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing centre position. If fewer than 3 values then assumes zero for remaining components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="487" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="487" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1acb46f3f3d0d0f128f4b27786673a159c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::GlyphColourBar::getExtendLength</definition>
+        <argsstring>() const</argsstring>
+        <name>getExtendLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the extend length used at each end of the colour bar to show values outside the spectrum range.</para>
+<para><simplesect kind="return"><para>The extend length, or 0.0 if error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="498" column="8" bodyfile="auto_comments_output/glyph.hpp" bodystart="498" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a07c1f4ed16305c72e5c2b7dd42d51b31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::setExtendLength</definition>
+        <argsstring>(double extendLength)</argsstring>
+        <name>setExtendLength</name>
+        <param>
+          <type>double</type>
+          <declname>extendLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the extend length used at each end of the colour bar to show values outside the spectrum range. The default extend length is 0.05.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>extendLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new extend length. Must be non-negative. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="511" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="511" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a93378b0fca099947cdf3bece763270f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::getLabelDivisions</definition>
+        <argsstring>() const</argsstring>
+        <name>getLabelDivisions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of divisions between labels.</para>
+<para><simplesect kind="return"><para>The number of label divisions, or 0 if error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="521" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="521" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a160c80d331c5fc828e587b5ec234779d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::setLabelDivisions</definition>
+        <argsstring>(int labelDivisions)</argsstring>
+        <name>setLabelDivisions</name>
+        <param>
+          <type>int</type>
+          <declname>labelDivisions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the number of divisions between labels. This is one less than the number of labels/ticks. The default label divisions is 10.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>labelDivisions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new number of divisions, at least 1. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="534" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="534" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1ac7e194b3da67cf2b932030ddf0f20117" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::GlyphColourBar::getLabelMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>getLabelMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the material used for colour bar labels and ticks. Can be NULL.</para>
+<para><simplesect kind="return"><para>Handle to material, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="544" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="544" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a35effc3bc5148a01b2ab6e6bb3dfa474" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::setLabelMaterial</definition>
+        <argsstring>(const Material &amp;material)</argsstring>
+        <name>setLabelMaterial</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the material used for colour bar labels and ticks. Can be NULL. Default is none i.e. use the same material as for the colour bar itself, which is supplied by the graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new label material; can be NULL to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="557" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="557" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1acf01f0fd4e387f56b111bc7aec80fb79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::GlyphColourBar::getNumberFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number format used to write value labels on the colour bar.</para>
+<para><simplesect kind="return"><para>Allocated string containing number format, or NULL on failure. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="568" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="568" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a55b0ebafcf5ad9df6d94aedb060ca8d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::setNumberFormat</definition>
+        <argsstring>(const char *numberFormat)</argsstring>
+        <name>setNumberFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>numberFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number format used to write value labels on the colour bar. This is a C printf format string with a single numerical format in the form: %[+/-/0][length]<ulink url="e/E/f/F/g/G">.precision</ulink> Other characters can be added before or after the number format. Note a literal % is entered by repeating it i.e. %%. The default format is &quot;%+.4e&quot;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The printf number format used for value labels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="584" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="584" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a6d0548bdde12b83a12587a32fc833522" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::getSideAxis</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getSideAxis</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the vector defining the side/tick axis of the colour bar.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of valuesOut array. Gets maximum of 3 values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive side axis vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="596" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="596" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a7f9acaf420fd876abc1af38f5f23cded" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::setSideAxis</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setSideAxis</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the vector defining the side/tick axis of the colour bar. The magnitude of this vector gives the diameter of the bar. The default side axis is (0.1,0,0) for vertical bar and horizontal ticks in window coordinates.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of valuesIn array. Sets maximum of 3 values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing side axis vector. If fewer than 3 values then assumes zero for remaining components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="612" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="612" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a65f638c4dc315b02d73433b3eb6fc4e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref></type>
+        <definition>Spectrum CMLibs::Zinc::GlyphColourBar::getSpectrum</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpectrum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the spectrum shown by the colour bar.</para>
+<para><simplesect kind="return"><para>Handle to spectrum, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="622" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="622" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a8131cb50eeb71c8f66780e69d72bb0f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::GlyphColourBar::getTickLength</definition>
+        <argsstring>() const</argsstring>
+        <name>getTickLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the tick length.</para>
+<para><simplesect kind="return"><para>The tick length, or 0.0 if error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="632" column="8" bodyfile="auto_comments_output/glyph.hpp" bodystart="632" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1GlyphColourBar_1ab7e28a328a0251516c0f3561badd2513" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::GlyphColourBar::setTickLength</definition>
+        <argsstring>(double tickLength)</argsstring>
+        <name>setTickLength</name>
+        <param>
+          <type>double</type>
+          <declname>tickLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the tick length measured from outside radius of the colour bar, in the direction of the side axis. The default tick length is 0.05.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tickLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new tick length. Must be non-negative. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="645" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="645" bodyend="648"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A specialised glyph type which draws a cylindrical colour bar. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A specialised glyph type which draws a cylindrical colour bar showing the colours and range of a spectrum with controllable size, scale ticks and label etc. The colour bar automatically updates to show changes to the spectrum. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Glyph</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Glyph"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::GlyphColourBar</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GlyphColourBar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Glyph</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Glyph"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::GlyphColourBar</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GlyphColourBar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/glyph.hpp" line="419" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="418" bodyend="650"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1aaeb3567e2cb84b44d421633bf58523bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>castAxes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7fdd24cbb6d1c0c4654b13dfac05c614" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>castColourBar</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a5dc4797fa42892adcd2291b652adc050" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a1d82ba5226cb0d4f6196be8a86142e53" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05af0c1aefeb5345d96437a9ec3a30124d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05acaee405615b8b38a54587d2003d68066" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a65f74fd9c1b3b9972ac96e68fad81aef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a14dee864bf9f8420da94e5936b63f2d2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05aeb99222b0db3f65b3c91502b79ca768d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ae9791e2f84cadbc9a7f66fa755ced951" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a7bdcf90a2b1c988c6331f060910acd10" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getAxis</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a83bf0177ef41de9ad07febcc0f82e81b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getCentre</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a396fc17e97d80374ffbdac1da7574d4b" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1acb46f3f3d0d0f128f4b27786673a159c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getExtendLength</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1aac12ce8c46c1311d71d1af227afc601c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a93378b0fca099947cdf3bece763270f8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getLabelDivisions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1ac7e194b3da67cf2b932030ddf0f20117" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getLabelMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a9725fef051e367778fda0fe2e4d524ac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1acf01f0fd4e387f56b111bc7aec80fb79" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getNumberFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a6d0548bdde12b83a12587a32fc833522" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getSideAxis</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a65f638c4dc315b02d73433b3eb6fc4e9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getSpectrum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a8131cb50eeb71c8f66780e69d72bb0f3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>getTickLength</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1afb9c2ad2fab062bc2abaa86fa43882b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7470708d25f56a2742e1356ab0894013" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a04b6f6447a8d3eae24b53cf20f647b07" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a1b617ae3338c1f9f3448a550cfe05f4f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>GlyphColourBar</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1af3bbe62ac99d128f7902ce8d7a83a7ec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>GlyphColourBar</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1abb9c22a55ef7e8eb1c22e393c9611e00" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a8d7d90a152c6a000db79ec8bb0e15f29" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ab90792ede2edb6a76cd7835d34ce0b05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7a8c03b8543646988c63cb24327829b2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617aed363b24a85f869a9a81aeb54b8d6dc6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>REPEAT_MODE_AXES_2D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617aa3e77cb4ae0c83b57ff5b675648837ba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>REPEAT_MODE_AXES_3D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a5be3313acba32fd4b1445e814475b2aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>REPEAT_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a33503bf6ade49674d9a47045615b8c14" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>REPEAT_MODE_MIRROR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a2439a933f97269c34afdd8f96e1d4dbc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>REPEAT_MODE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>RepeatMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a4e09aa1c47dab2fd73b9b076bf10ade5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>RepeatModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a795f1da63b48e6ed4383059181b911da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>RepeatModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1afe9121789fc5b0d05b63bcc9e2181809" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setAxis</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1ab971b8240253a87149089dd2b8d91afb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setCentre</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a07c1f4ed16305c72e5c2b7dd42d51b31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setExtendLength</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a160c80d331c5fc828e587b5ec234779d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setLabelDivisions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a35effc3bc5148a01b2ab6e6bb3dfa474" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setLabelMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ae967204b1e812325df94d41a3df19a48" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a5c6d224f232d8ea988e96a9f719dbf16" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a55b0ebafcf5ad9df6d94aedb060ca8d3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setNumberFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1a7f9acaf420fd876abc1af38f5f23cded" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setSideAxis</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1GlyphColourBar_1ab7e28a328a0251516c0f3561badd2513" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>setTickLength</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae9c6624be9bf5b5a91dcb779802e8a9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_ARROW</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a7c7d4dadb38511358143fe79f0306cba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_ARROW_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae4c282c02e06decad76a3abe858b268d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ab3da9577513d15d0af9f5ba852397334" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXES_123</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05aaca1a496a0209838f1542e43b970900c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXES_COLOUR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae15626c3183b17e82ee143848db3c484" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXES_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a5e59d53df505b73c45b81fd455740ce8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXES_SOLID_123</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a905e41d013a8cbaab5602167e7bee6fe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXES_SOLID_COLOUR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae79f914f0b3ed5b2d118157f61e4feed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXES_SOLID_XYZ</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6e2cc5268b6987200ea660ea662a5d93" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXES_XYZ</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a48f730d2b43a3a7c3100d8de4a1fd059" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXIS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a1b93f2e7d83c0e360f7cdc3d6581a06b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_AXIS_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a10cac6872a2d7d6aa2399500f1f20f62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_CONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05adf3a1bd4f8deee3958b9f74ea7d35770" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_CONE_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a3c0916a5c2fc69e663c0c1c17f3c3e0c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_CROSS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6fc955672deef244d2cf0010fe7a9e50" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_CUBE_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a8da2d3454746c2ac3110e094741c45bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_CUBE_WIREFRAME</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a3e93b8a0d0c1dddcdc2d1ab5efb874ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_CYLINDER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a362bbfcbddd20c98d63b3e7202097609" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_CYLINDER_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6ebcdcc294ff94eeaa5911489f9f62dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_DIAMOND</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae1eb246b75394d8dbb4bc4d079b9e030" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a889fcf77c29effe00d80dee9a209dfa7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_LINE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a7fc2923238c6796d23ba667837c01154" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05aa7d6410666cdb5f71aa2e1f101ba5119" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_POINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a33772b92ca4572229d018ba677274bd5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_SHEET</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a470587ff83766f383c16967c1aaeb019" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>SHAPE_TYPE_SPHERE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>ShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1acf6a4cf58a9f429b1b5f39b6c97e1978" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>ShapeTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a70f5e635e0c45ab2ce1641cea9d58e7f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>ShapeTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a1cf61d0581619db0df80589907da4f45" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::GlyphColourBar</scope><name>~Glyph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

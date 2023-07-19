@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Glyphmodulenotifier</compoundname>
+    <includes refid="glyph_8hpp" local="no">glyph.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1af92801904045a401c7bf9c42324fe210" prot="protected" static="no" mutable="no">
+        <type>cmzn_glyphmodulenotifier_id</type>
+        <definition>cmzn_glyphmodulenotifier_id CMLibs::Zinc::Glyphmodulenotifier::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1107" column="29" bodyfile="auto_comments_output/glyph.hpp" bodystart="1107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a54cb9914668b5ec2d0bf0e07b85972f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodulenotifier::Glyphmodulenotifier</definition>
+        <argsstring>()</argsstring>
+        <name>Glyphmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1111" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="1111" bodyend="1112"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a61accd57f66b0fa7d942535d50e4f0a2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodulenotifier::Glyphmodulenotifier</definition>
+        <argsstring>(cmzn_glyphmodulenotifier_id in_glyphmodulenotifier_id)</argsstring>
+        <name>Glyphmodulenotifier</name>
+        <param>
+          <type>cmzn_glyphmodulenotifier_id</type>
+          <declname>in_glyphmodulenotifier_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1115" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="1115" bodyend="1117"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a14288544d701181ee4a1cfa45b756797" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodulenotifier::Glyphmodulenotifier</definition>
+        <argsstring>(const Glyphmodulenotifier &amp;glyphmoduleNotifier)</argsstring>
+        <name>Glyphmodulenotifier</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" kindref="compound">Glyphmodulenotifier</ref> &amp;</type>
+          <declname>glyphmoduleNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1119" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="1119" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1acf1d80930ad74349905800cf5fa68620" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" kindref="compound">Glyphmodulenotifier</ref> &amp;</type>
+        <definition>Glyphmodulenotifier&amp; CMLibs::Zinc::Glyphmodulenotifier::operator=</definition>
+        <argsstring>(const Glyphmodulenotifier &amp;glyphmoduleNotifier)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" kindref="compound">Glyphmodulenotifier</ref> &amp;</type>
+          <declname>glyphmoduleNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1123" column="21" bodyfile="auto_comments_output/glyph.hpp" bodystart="1123" bodyend="1132"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a5b7cea439966252f68f8dd9fd0eb8ccf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodulenotifier::~Glyphmodulenotifier</definition>
+        <argsstring>()</argsstring>
+        <name>~Glyphmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1134" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="1134" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a507b7c931e6c25ff57ab634526ad89e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Glyphmodulenotifier::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" kindref="compound">Glyphmodulenotifier</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1147" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="1147" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1af80ddf6af78a643893eac9c7797b26eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_glyphmodulenotifier_id</type>
+        <definition>cmzn_glyphmodulenotifier_id CMLibs::Zinc::Glyphmodulenotifier::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" kindref="compound">Glyphmodulenotifier</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" kindref="compound">Glyphmodulenotifier</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1157" column="29" bodyfile="auto_comments_output/glyph.hpp" bodystart="1157" bodyend="1160"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a6c9b4f337bf36d5719f6eec7572e087f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Glyphmodulenotifier::setCallback</definition>
+        <argsstring>(Glyphmodulecallback &amp;callback)</argsstring>
+        <name>setCallback</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback" kindref="compound">Glyphmodulecallback</ref> &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign the callback function and user data for the glyphmodule notifier. This function also starts the callback.</para>
+<para><simplesect kind="see"><para>cmzn_glyphmodulenotifier_callback_function </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function to be called when event is triggered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Void pointer to user object. User must ensure this object&apos;s lifetime exceeds the duration for which callbacks are active. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1172" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="1172" bodyend="1175"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a1ee330b8eaef12900742c08786a52795" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Glyphmodulenotifier::clearCallback</definition>
+        <argsstring>()</argsstring>
+        <name>clearCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop and clear glyph module callback. This will stop the callback and also remove the callback function from the glyphmodule notifier.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1183" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="1183" bodyend="1186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages individual user notification of changes with a glyph module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages individual user notification of changes with a glyph module. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/glyph.hpp" line="1105" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="1104" bodyend="1187"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a1ee330b8eaef12900742c08786a52795" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>clearCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1af80ddf6af78a643893eac9c7797b26eb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a54cb9914668b5ec2d0bf0e07b85972f4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>Glyphmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a61accd57f66b0fa7d942535d50e4f0a2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>Glyphmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a14288544d701181ee4a1cfa45b756797" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>Glyphmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1af92801904045a401c7bf9c42324fe210" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a507b7c931e6c25ff57ab634526ad89e7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1acf1d80930ad74349905800cf5fa68620" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a6c9b4f337bf36d5719f6eec7572e087f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>setCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a5b7cea439966252f68f8dd9fd0eb8ccf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulenotifier</scope><name>~Glyphmodulenotifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
