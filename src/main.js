@@ -2,6 +2,9 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import './assets/main.css'
+import './assets/doxygen.css'
+import './assets/general.css'
+import './assets/sphinx.css'
 
 import WaveUI from 'wave-ui'
 import 'wave-ui/dist/wave-ui.css'
