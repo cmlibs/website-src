@@ -19,6 +19,70 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --bright-red: #a93caf;
+  --mid-red: #853f89;
+  --deep-red: #90479b;
+  --bright-red-transparent: #af3c4225;
+  --code-bg-color: #F0E8E8;
+
+  --bg-color: #F8F8FA;
+  --mid-grey: #777777;
+  --pale-grey: #dddddd;
+  --very-pale-grey: #f6f6f6;
+
+  --transparent-grey: rgba(27, 31, 35, 0.05);
+  --pale-transparent-grey: rgba(62, 72, 82, 0.05);
+  --deep-blue: #476582;
+  --deep-blue-grey: #2d4046c7;
+  --bright-blue: #1f76be;
+
+  --very-pale-green: #fbfff6;
+  --mid-green: rgb(80, 121, 0);
+  --dark-green: #22440b;
+
+  --very-pale-yellow: rgba(255, 229, 100, 0.3);
+  --mid-yellow: #e7c000;
+  --dark-yellow: #6b5900;
+
+  --dothis-background-color: var(--very-pale-green);
+  --dothis-border-colour: var(--mid-green);
+  --dothis-colour: var(--dark-green);
+
+  --useful-background-colour: #f3f5f7;
+  --useful-border-colour: #144b79;
+  --useful-colour: #144b79;
+  /*#0f3555;*/
+  --useful-link-colour: var(--bright-blue);
+
+  --nb-background-colour: var(--very-pale-yellow);
+  --nb-border-colour: var(--mid-yellow);
+  --nb-colour: var(--dark-yellow);
+
+  --text-colour: #333333;
+  --menu-link-colour: var(--mid-grey);
+
+  /* Link styling for readability */
+  --link-colour: var(--mid-grey);
+  --active-link: var(--deep-red);
+  --text-link-colour: var(--bright-red);
+  --link-underline-colour: var(--pale-grey);
+  --link-decoration-line: underline;
+  --link-decoration-style: solid;
+  --link-decoration-color: var(--link-underline-colour);
+  --link-underline-offset: 0.2em;
+
+  --warning-background: rgb(251, 239, 239);
+  --warning-text: var(--deep-red);
+
+  --terminal-colour: var(--pale-grey) !important;
+  --border-colour: var(--pale-grey);
+  --code-colour: var(--deep-blue);
+
+  --text-font: 'Lato', 'proxima-nova', 'Helvetica Neue', 'Arial', sans-serif;
+  --heading-font: Verdana, Geneva, Tahoma, sans-serif;
+  --code-font: monospace;
+  --mono-font: monospace;
 }
 
 /* semantic color variables for this project */
