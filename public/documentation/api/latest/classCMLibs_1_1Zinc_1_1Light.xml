@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Light" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Light</compoundname>
+    <includes refid="light_8hpp" local="no">light.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Type</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0a1fffd7ca28b5fc97c826a2ea24ed6bf6" prot="public">
+          <name>TYPE_INVALID</name>
+          <initializer>= CMZN_LIGHT_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified light type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0aa6c7baebc65852b1599dc9f797b9eb58" prot="public">
+          <name>TYPE_AMBIENT</name>
+          <initializer>= CMZN_LIGHT_TYPE_AMBIENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ambient lighting from all directions. This multiplies the ambient colour of materials, giving a minimum colour where no other lights reach. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0a8d39eaff72c04b3d578db521d0f99549" prot="public">
+          <name>TYPE_DIRECTIONAL</name>
+          <initializer>= CMZN_LIGHT_TYPE_DIRECTIONAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Directional light with parallel light rays from a source at infinity, hence also known as infinite light. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0aa7b0995eb2a18683deb4f3f30138bb9d" prot="public">
+          <name>TYPE_POINT</name>
+          <initializer>= CMZN_LIGHT_TYPE_POINT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Positional light i.e. light radiating from a point. Takes into account attenuation parameters. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0aba23a77e3a44e9b07193e5872244049d" prot="public">
+          <name>TYPE_SPOT</name>
+          <initializer>= CMZN_LIGHT_TYPE_SPOT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Spot light taking position, direction, cut-off angle and attenuation into account when calculating the final colour. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of light. Various types imitate real-world light sources. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="80" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="79" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Light_1a0d26f4fb6033b3ac356ba959653473c6" prot="protected" static="no" mutable="no">
+        <type>cmzn_light_id</type>
+        <definition>cmzn_light_id CMLibs::Zinc::Light::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="31" column="15" bodyfile="auto_comments_output/light.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1af9b19011d3e3cbc4e7ad43a155a76628" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Light::Light</definition>
+        <argsstring>()</argsstring>
+        <name>Light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="35" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="35" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1aeae2c556410578319db324cdeb09afaa" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Light::Light</definition>
+        <argsstring>(cmzn_light_id light_id)</argsstring>
+        <name>Light</name>
+        <param>
+          <type>cmzn_light_id</type>
+          <declname>light_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="39" column="10" bodyfile="auto_comments_output/light.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a71fb0b179a7c4576495904bee63d0569" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Light::Light</definition>
+        <argsstring>(const Light &amp;light)</argsstring>
+        <name>Light</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> &amp;</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="43" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a2c7e66339140099b3b30c77e2ee09764" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> &amp;</type>
+        <definition>Light&amp; CMLibs::Zinc::Light::operator=</definition>
+        <argsstring>(const Light &amp;light)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> &amp;</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="47" column="7" bodyfile="auto_comments_output/light.hpp" bodystart="47" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a5b3b8fa6a7de275902f06dc4cf87609e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Light::~Light</definition>
+        <argsstring>()</argsstring>
+        <name>~Light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="58" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1aa958f4f0c02627ae07209aaaad7cf728" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Light::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="71" column="6" bodyfile="auto_comments_output/light.hpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a436143a689e13758a4a2757e43c305c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_light_id</type>
+        <definition>cmzn_light_id CMLibs::Zinc::Light::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="102" column="15" bodyfile="auto_comments_output/light.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1af16a6fec52d3f0d4a2833e29e22b0d57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Light::isManaged</definition>
+        <argsstring>() const</argsstring>
+        <name>isManaged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get managed status of light in its owning light module. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Light_1ae8b0e0f4e3da3864fd1bf2ed1e88fa20" kindref="member">Light::setManaged</ref></para>
+</simplesect>
+<simplesect kind="return"><para>True if light is managed, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="113" column="6" bodyfile="auto_comments_output/light.hpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1ae8b0e0f4e3da3864fd1bf2ed1e88fa20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setManaged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setManaged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set managed status of light in its owning light module. If true (managed) the light will remain indefinitely in the light module even if no external references are held. If false (unmanaged) the light will be automatically removed from the module when no longer referenced externally, effectively marking it as pending destruction. All new objects are unmanaged unless stated otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the managed flag: true or false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="130" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a3aadffa2873517f36b16dc89ea55ec90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0" kindref="member">Type</ref></type>
+        <definition>Type CMLibs::Zinc::Light::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the type of the light: AMBIENT, DIRECTIONAL, POINT or SPOT.</para>
+<para><simplesect kind="return"><para>type of the light, otherwise CMZN_LIGHT_TYPE_INVALID. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="140" column="6" bodyfile="auto_comments_output/light.hpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a1d86551bbb45fca599cb90074fafb10c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setType</definition>
+        <argsstring>(Type type)</argsstring>
+        <name>setType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the type of the light: AMBIENT, DIRECTIONAL, POINT or SPOT.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="151" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a5c728561f9ddb9607e120d26f2855ed5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Light::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an allocated string containing light name.</para>
+<para><simplesect kind="return"><para>allocated string containing light name, or NULL on failure. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="162" column="6" bodyfile="auto_comments_output/light.hpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a8db4e8c2d7bafab473a96f09b40c23a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/change name for light. Must be unique in the light module.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name to be set to the light </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set/change name for light, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="174" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1ac0a17ded1f00e8a1f67e3fb86a373140" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Light::getConstantAttenuation</definition>
+        <argsstring>() const</argsstring>
+        <name>getConstantAttenuation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the value of the constant attenuation. Attenuation is the loss of light intensity over a distance. It only applies to spot and point lights.</para>
+<para>attenuation factor: 1 / (c + k * l + k * q * q) where c, l, q and k is constant, linear, quadratic attenuation and distance respectively.</para>
+<para><simplesect kind="return"><para>Value of the constant attenuation on success, 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="188" column="8" bodyfile="auto_comments_output/light.hpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1af273e598f145a88c0cb2a1e3ec0bb349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setConstantAttenuation</definition>
+        <argsstring>(double constantAttenuation)</argsstring>
+        <name>setConstantAttenuation</name>
+        <param>
+          <type>double</type>
+          <declname>constantAttenuation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value of the constant attenuation. Attenuation is the loss of light intensity over a distance. It only applies to spot and point lights.</para>
+<para>attenuation factor: 1 / (c + k * l + k * q * q) where c, l, q and k is constant, linear, quadratic attenuation and distance respectively.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>constantAttenuation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-negative float representing the value of constant attenuation to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="204" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a6b5d99a50916f41dd5cad7665081e241" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Light::getLinearAttenuation</definition>
+        <argsstring>() const</argsstring>
+        <name>getLinearAttenuation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the value of the linear attenuation. Attenuation is the loss of light intensity over a distance. It only applies to spot and point lights.</para>
+<para>attenuation factor: 1 / (c + k * l + k * q * q) where c, l, q and k is constant, linear, quadratic attenuation and distance respectively.</para>
+<para><simplesect kind="return"><para>Value of the linear attenuation on success, 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="218" column="8" bodyfile="auto_comments_output/light.hpp" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1aed052be499d48e535ddccff80ce6c16e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setLinearAttenuation</definition>
+        <argsstring>(double linearAttenuation)</argsstring>
+        <name>setLinearAttenuation</name>
+        <param>
+          <type>double</type>
+          <declname>linearAttenuation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value of the linear attenuation. Attenuation is the loss of light intensity over a distance. It only applies to spot and point lights.</para>
+<para>attenuation factor: 1 / (c + k * l + k * q * q) where c, l, q and k is constant, linear, quadratic attenuation and distance respectively.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linearAttenuation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>non-negative float representing the value of linear attenuation to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="234" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1aa7781b2cf37e41dff296e3cf656ccd43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Light::getQuadraticAttenuation</definition>
+        <argsstring>() const</argsstring>
+        <name>getQuadraticAttenuation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the value of the quadratic attenuation. Attenuation is the loss of light intensity over a distance. It only applies to spot and point lights.</para>
+<para>attenuation factor: 1 / (c + k * l + k * q * q) where c, l, q and k is constant, linear, quadratic attenuation and distance respectively.</para>
+<para><simplesect kind="return"><para>Value of the quadratic attenuation on success, 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="248" column="8" bodyfile="auto_comments_output/light.hpp" bodystart="248" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1ac13315921208d8f58740e7b96fdc8f12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setQuadraticAttenuation</definition>
+        <argsstring>(double quadraticAttenuation)</argsstring>
+        <name>setQuadraticAttenuation</name>
+        <param>
+          <type>double</type>
+          <declname>quadraticAttenuation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value of the quadratic attenuation. Attenuation is the loss of light intensity over a distance. It only applies to spot and point lights.</para>
+<para>attenuation factor: 1 / (c + k * l + k * q * q) where c, l, q and k is constant, linear, quadratic attenuation and distance respectively.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>quadraticAttenuation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-negative float representing the value of quadratic attenuation to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="264" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="264" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1aecc5292e14f690cf77739e841d95516c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::getColourRGB</definition>
+        <argsstring>(double *valuesOut3) const</argsstring>
+        <name>getColourRGB</name>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the 3 component real vector giving the RGB colour of the light.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Values of the colour will be output into this 3 component vector. It should be allocated with enough space for 3 components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="277" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a07d76030abb2349c10cf6059297c2e71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setColourRGB</definition>
+        <argsstring>(const double *valuesIn3)</argsstring>
+        <name>setColourRGB</name>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the colour of the light using a 3 component vector of the RGB values. For ambient light type, the colour applies to ambient lighting calculations, blending with the ambient colour of materials. For all other light types, the colour applies to diffuse and specular lighting, blending with materials&apos; diffuse and specular colours.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Values of the colour to be set, it must be a 3 component vector storing the RGB value. Colour values range from 0.0 to 1.0 (max). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="293" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="293" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1af78c9c8829b03096c526eb1112330604" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::getDirection</definition>
+        <argsstring>(double *valuesOut3) const</argsstring>
+        <name>getDirection</name>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the 3 component vector giving the direction of the light. It only applies to infinite and spot lights.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Values of the direction will be output into this 3 component vector. It should be allocated with enough space for 3 components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="307" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="307" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a7c116fd27aabc838f0c5a7eb8dba9746" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setDirection</definition>
+        <argsstring>(const double *valuesIn3)</argsstring>
+        <name>setDirection</name>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the direction of the light using a 3 component vector. It only applies to infinite and spot lights.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Values of the direction to set, must be a 3 component vector storing the direction value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="320" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1ab07a17bf769d4b6f4ec43f98bc447f1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::getPosition</definition>
+        <argsstring>(double *valuesOut3) const</argsstring>
+        <name>getPosition</name>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the 3 component vector giving the position of the light. It only applies to point and spot lights.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Values of the position will be output into this 3 component vector. It should be allocated with enough space for 3 components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="334" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="334" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a286036a3fb224cbbc8d551f01d79a55e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setPosition</definition>
+        <argsstring>(const double *valuesIn3)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the position of the light using a 3 component vector. It only applies to point and spot lights.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Values of the position to set, must be a 3 component vector storing the position value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="347" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="347" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a9883fdb7014941c867b04567983ffa4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Light::getSpotCutoff</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpotCutoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the spotlight cutoff angle in degrees from 0 to 90. It only applies to spot light.</para>
+<para><simplesect kind="return"><para>Value of the spot cutoff on success, 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="358" column="8" bodyfile="auto_comments_output/light.hpp" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a7f7ee6c0512adbba3c5174e76b277302" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setSpotCutoff</definition>
+        <argsstring>(double cutoff)</argsstring>
+        <name>setSpotCutoff</name>
+        <param>
+          <type>double</type>
+          <declname>cutoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the spotlight cutoff angle in degrees from 0 to 90. It only applies to spot light.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value to set, the value must be between 0.0 and 90.0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="371" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="371" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a4420c91cc9c32571d10ec5d3bdf9e113" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Light::getSpotExponent</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpotExponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the spotlight exponent which controls how concentrated the spotlight becomes as one approaches its axis. A value of 0.0 gives even illumination throughout the cutoff angle. It only applies to spot light.</para>
+<para><simplesect kind="return"><para>Value of the spot exponent on success, 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="383" column="8" bodyfile="auto_comments_output/light.hpp" bodystart="383" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Light_1a2a04be30448c5cb14f3ef38130b86224" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Light::setSpotExponent</definition>
+        <argsstring>(double exponent)</argsstring>
+        <name>setSpotExponent</name>
+        <param>
+          <type>double</type>
+          <declname>exponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the spotlight exponent which controls how concentrated the spotlight becomes as one approaches its axis. A value of 0.0 gives even illumination throughout the cutoff angle. It only applies to spot light.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New spot exponent value to be set for light. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/light.hpp" line="396" column="5" bodyfile="auto_comments_output/light.hpp" bodystart="396" bodyend="399"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The light controls how vertices will be lit on a sceneviewer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The light controls how vertices will be lit on a sceneviewer. Lighting and colouring of graphics are affected by the light colours, direction, position and type of lighting, in combination with material colours and other parameters. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/light.hpp" line="29" column="1" bodyfile="auto_comments_output/light.hpp" bodystart="28" bodyend="401"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1aecc5292e14f690cf77739e841d95516c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getColourRGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ac0a17ded1f00e8a1f67e3fb86a373140" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getConstantAttenuation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1af78c9c8829b03096c526eb1112330604" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getDirection</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a436143a689e13758a4a2757e43c305c3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a6b5d99a50916f41dd5cad7665081e241" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getLinearAttenuation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a5c728561f9ddb9607e120d26f2855ed5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ab07a17bf769d4b6f4ec43f98bc447f1e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getPosition</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1aa7781b2cf37e41dff296e3cf656ccd43" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getQuadraticAttenuation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a9883fdb7014941c867b04567983ffa4c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getSpotCutoff</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a4420c91cc9c32571d10ec5d3bdf9e113" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getSpotExponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a3aadffa2873517f36b16dc89ea55ec90" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>getType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a0d26f4fb6033b3ac356ba959653473c6" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1af16a6fec52d3f0d4a2833e29e22b0d57" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1aa958f4f0c02627ae07209aaaad7cf728" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1af9b19011d3e3cbc4e7ad43a155a76628" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>Light</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1aeae2c556410578319db324cdeb09afaa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>Light</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a71fb0b179a7c4576495904bee63d0569" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>Light</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a2c7e66339140099b3b30c77e2ee09764" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a07d76030abb2349c10cf6059297c2e71" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setColourRGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1af273e598f145a88c0cb2a1e3ec0bb349" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setConstantAttenuation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a7c116fd27aabc838f0c5a7eb8dba9746" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setDirection</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1aed052be499d48e535ddccff80ce6c16e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setLinearAttenuation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ae8b0e0f4e3da3864fd1bf2ed1e88fa20" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a8db4e8c2d7bafab473a96f09b40c23a2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a286036a3fb224cbbc8d551f01d79a55e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setPosition</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ac13315921208d8f58740e7b96fdc8f12" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setQuadraticAttenuation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a7f7ee6c0512adbba3c5174e76b277302" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setSpotCutoff</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a2a04be30448c5cb14f3ef38130b86224" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setSpotExponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a1d86551bbb45fca599cb90074fafb10c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>setType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>Type</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0aa6c7baebc65852b1599dc9f797b9eb58" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>TYPE_AMBIENT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0a8d39eaff72c04b3d578db521d0f99549" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>TYPE_DIRECTIONAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0a1fffd7ca28b5fc97c826a2ea24ed6bf6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0aa7b0995eb2a18683deb4f3f30138bb9d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>TYPE_POINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1ade392a91998e95961070c108b10b8de0aba23a77e3a44e9b07193e5872244049d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>TYPE_SPOT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Light_1a5b3b8fa6a7de275902f06dc4cf87609e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Light</scope><name>~Light</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

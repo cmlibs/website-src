@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1MeshGroup" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::MeshGroup</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Mesh" prot="public" virt="non-virtual">CMLibs::Zinc::Mesh</basecompoundref>
+    <includes refid="mesh_8hpp" local="no">mesh.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1a62dce4d0a9427a0ec56199911c01cce4" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_mesh_group_id</type>
+        <definition>cmzn_mesh_group_id CMLibs::Zinc::MeshGroup::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="349" column="27" bodyfile="auto_comments_output/mesh.hpp" bodystart="349" bodyend="352"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1a635070cf1cdf4ddcbbe97562244e70b4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::MeshGroup::MeshGroup</definition>
+        <argsstring>(cmzn_mesh_group_id mesh_id)</argsstring>
+        <name>MeshGroup</name>
+        <param>
+          <type>cmzn_mesh_group_id</type>
+          <declname>mesh_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="357" column="10" bodyfile="auto_comments_output/mesh.hpp" bodystart="357" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1ae82869934bbd923ca8b214cf2f6badc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::MeshGroup::MeshGroup</definition>
+        <argsstring>()</argsstring>
+        <name>MeshGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="360" column="1" bodyfile="auto_comments_output/mesh.hpp" bodystart="360" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1a727f45e3ce6ba47350034e2f77422604" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_mesh_group_id</type>
+        <definition>cmzn_mesh_group_id CMLibs::Zinc::MeshGroup::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="368" column="20" bodyfile="auto_comments_output/mesh.hpp" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1adc2072c067068c8bff55781a15a66029" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::MeshGroup::addElement</definition>
+        <argsstring>(const Element &amp;element)</argsstring>
+        <name>addElement</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add specified element to mesh group.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to element to add. Must be from the group&apos;s master mesh. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a2f5acfbee43b2a8dc5bea7b7059c5794" kindref="member">CMLibs::Zinc::ERROR_ALREADY_EXISTS</ref> if element was already in the group but otherwise successful, or any other error code on more serious failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="381" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="381" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1ac0bba1dddcfb449007b4bbec633e48e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::MeshGroup::addElementsConditional</definition>
+        <argsstring>(const Field &amp;conditionalField)</argsstring>
+        <name>addElementsConditional</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>conditionalField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure this mesh group contains all elements from the master mesh for which the conditional field is true i.e. non-zero valued in the element. Results are undefined if conditional field is not constant over element. Note that group and element_group fields are valid conditional fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conditionalField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> which if non-zero in an element indicates it is to be added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="397" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="397" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1a1c80ba913a889e5c64fce75760513db0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref></type>
+        <definition>FieldGroup CMLibs::Zinc::MeshGroup::getFieldGroup</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the owning group field for this mesh group. Guaranteed to exist if this is a valid mesh group handle.</para>
+<para><simplesect kind="return"><para>Handle to owning field group, or null/invalid handle if mesh group is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="410" column="19" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="393" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1a8a6aa4e9ff40309c3848349b9161615c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::MeshGroup::removeAllElements</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all elements from mesh group.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if all elements removed, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="417" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="417" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1a815e42edd9330b257438028348467737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::MeshGroup::removeElement</definition>
+        <argsstring>(const Element &amp;element)</argsstring>
+        <name>removeElement</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove specified element from mesh group.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to element to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ab0928ff1924d73c9aaff1cd6f4f2bb97" kindref="member">CMLibs::Zinc::ERROR_NOT_FOUND</ref> if element was not in the group but otherwise successful, or any other error code on more serious failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="430" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="430" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1MeshGroup_1ab3bcf9597fc0d987ee9b947cbdaf5042" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::MeshGroup::removeElementsConditional</definition>
+        <argsstring>(const Field &amp;conditionalField)</argsstring>
+        <name>removeElementsConditional</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>conditionalField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all elements from the mesh group for which the conditional field is true i.e. non-zero valued in the element. Results are undefined if conditional field is not constant over element. Note that group and element_group fields are valid conditional fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conditionalField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> which if non-zero in the element indicates it is to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="446" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="446" bodyend="450"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A subset of a master mesh. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A specialised mesh consisting of a subset of elements from a master mesh. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CMLibs::Zinc::MeshGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1MeshGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Mesh</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Mesh"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CMLibs::Zinc::MeshGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1MeshGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Mesh</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Mesh"/>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/mesh.hpp" line="343" column="1" bodyfile="auto_comments_output/mesh.hpp" bodystart="342" bodyend="452"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1adc2072c067068c8bff55781a15a66029" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>addElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1ac0bba1dddcfb449007b4bbec633e48e8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>addElementsConditional</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1ae49e8199389756170f10c509647a3b80" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>castGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a2c6ee66e93fe0a23e835b94db1289ab0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>containsElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a727e61b4ea1fb8c14c9574764544bf37" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>createElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1ac2c722fd38ace1817808ba905bd0dbc4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>createElementfieldtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1ab99b680e21925e862fe453dad42de958" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>createElementiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a4761dfe90dcbe287bcfa09139c87194c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>createElementtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1afb89b728097dfb2544a0b1085c80451b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>defineElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1acba61019b5cabfa282a5e277c1530f9a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>destroyAllElements</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a6d91ab26cd7de6551f5e2bd73fadebf1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>destroyElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a7431e5ca04eb9368ab5a0b19717de632" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>destroyElementsConditional</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a3002ceb5b34470ced80d754acdb3f5ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>findElementByIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a3b98facff4a7bed4bfb331ca832e7853" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getChartDifferentialoperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1a62dce4d0a9427a0ec56199911c01cce4" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a9ee3c927079c87c244db85ade6626272" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getDimension</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1a1c80ba913a889e5c64fce75760513db0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getFieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a9c82b08ec6e058e0b6c58f7694dd7235" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1a727f45e3ce6ba47350034e2f77422604" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a47b95f7bc2b111e337e781fe0380d6c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getMasterMesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a853ada38c1f0c61c872c505a774c6aa2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a606f6eb7c8220373417c4d1beea6ee8b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>getSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1ac994c380a17de447ca7556adfca0eb5a" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a91369ddca086e16c9c1201973f2e30ac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a6fe4d48e95de4e937b8a7e04202ee12f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>Mesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a2d7eea826b42dfa0d1e4e9e01386c0f6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>Mesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a70ca495d2dc91d2e2d276b92493211ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>Mesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1a635070cf1cdf4ddcbbe97562244e70b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>MeshGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1ae82869934bbd923ca8b214cf2f6badc5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>MeshGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1acb105b54966e5bcb8974c84fa06bbca9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1a8a6aa4e9ff40309c3848349b9161615c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>removeAllElements</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1a815e42edd9330b257438028348467737" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>removeElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1MeshGroup_1ab3bcf9597fc0d987ee9b947cbdaf5042" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>removeElementsConditional</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a757c2694c676c53fbfeee9bc58ad518f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::MeshGroup</scope><name>~Mesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

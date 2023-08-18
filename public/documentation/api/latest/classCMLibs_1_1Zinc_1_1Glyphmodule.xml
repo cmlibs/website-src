@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Glyphmodule" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Glyphmodule</compoundname>
+    <includes refid="glyph_8hpp" local="no">glyph.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a1355d9c3ba0b7fda2cd6c97068b8cfc5" prot="protected" static="no" mutable="no">
+        <type>cmzn_glyphmodule_id</type>
+        <definition>cmzn_glyphmodule_id CMLibs::Zinc::Glyphmodule::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="735" column="21" bodyfile="auto_comments_output/glyph.hpp" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a41d605e0340d85cf96c8042ff45be86d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodule::Glyphmodule</definition>
+        <argsstring>()</argsstring>
+        <name>Glyphmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="739" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="739" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a14ba7432c2a62e0f312903d5db65efd4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodule::Glyphmodule</definition>
+        <argsstring>(cmzn_glyphmodule_id in_glyphmodule_id)</argsstring>
+        <name>Glyphmodule</name>
+        <param>
+          <type>cmzn_glyphmodule_id</type>
+          <declname>in_glyphmodule_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="743" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="743" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1abc6b5e83d2f6daad31cf4c23349ee6fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodule::Glyphmodule</definition>
+        <argsstring>(const Glyphmodule &amp;glyphModule)</argsstring>
+        <name>Glyphmodule</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref> &amp;</type>
+          <declname>glyphModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="747" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="747" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1ac99dd610d65bf9429500f45be3318192" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref> &amp;</type>
+        <definition>Glyphmodule&amp; CMLibs::Zinc::Glyphmodule::operator=</definition>
+        <argsstring>(const Glyphmodule &amp;glyphModule)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref> &amp;</type>
+          <declname>glyphModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="751" column="13" bodyfile="auto_comments_output/glyph.hpp" bodystart="751" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a9b4a6b802f698de0e0f562782885181b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodule::~Glyphmodule</definition>
+        <argsstring>()</argsstring>
+        <name>~Glyphmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="762" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="762" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a79fb5c6c8520f275730a1ae2d7e5f265" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Glyphmodule::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="775" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="775" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a43167b14b52809386c73c1939d981e03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_glyphmodule_id</type>
+        <definition>cmzn_glyphmodule_id CMLibs::Zinc::Glyphmodule::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="785" column="21" bodyfile="auto_comments_output/glyph.hpp" bodystart="785" bodyend="788"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a1e1443ced41769ad17b52c01f2a046e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Glyphmodule::beginChange</definition>
+        <argsstring>()</argsstring>
+        <name>beginChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Begin caching or increment cache level for this glyph module. Call this function before making multiple changes to minimise number of change messages sent to clients. Must remember to end_change after completing changes. Can be nested. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a27f6b277048534df5260e5eca98c2890" kindref="member">Glyphmodule::endChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="799" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="799" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a27f6b277048534df5260e5eca98c2890" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Glyphmodule::endChange</definition>
+        <argsstring>()</argsstring>
+        <name>endChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrement cache level or end caching of changes for the glyph module. Call glyphmodule begin change method before making multiple changes and call this afterwards. When change level is restored to zero, cached change messages are sent out to clients. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a1e1443ced41769ad17b52c01f2a046e8" kindref="member">Glyphmodule::beginChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="813" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="813" bodyend="816"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a364ec769fb93b973f5d1ef24ba27aa56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GlyphAxes" kindref="compound">GlyphAxes</ref></type>
+        <definition>GlyphAxes CMLibs::Zinc::Glyphmodule::createGlyphAxes</definition>
+        <argsstring>(const Glyph &amp;axisGlyph, double axisWidth)</argsstring>
+        <name>createGlyphAxes</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+          <declname>axisGlyph</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>axisWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a glyph which drawing 3-D axes repeating the supplied axis glyph on three axes with the given axis width.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axisGlyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A glyph to repeat on each of 3 axes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axisWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of each axis glyph when drawn at unit length; a fraction of 1 to give an appropriate arrow head size. Typically 0.1 for glyph &apos;axis&apos;, 0.25 for glyph &apos;arrow_solid&apos;. Must be non-negative. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new glyph, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="828" column="11" bodyfile="auto_comments_output/glyph.hpp" bodystart="828" bodyend="832"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1ae59588b8e8bcdb1b97b2122914eed194" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GlyphColourBar" kindref="compound">GlyphColourBar</ref></type>
+        <definition>GlyphColourBar CMLibs::Zinc::Glyphmodule::createGlyphColourBar</definition>
+        <argsstring>(const Spectrum &amp;spectrum)</argsstring>
+        <name>createGlyphColourBar</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spectrum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a glyph which draws a colour bar for the spectrum with ticks and value labels. The glyph dynamically updates to match the current range and definition of the spectrum. Note it only shows a single component.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spectrum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spectrum to be displayed on the colour bar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new glyph, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="842" column="16" bodyfile="auto_comments_output/glyph.hpp" bodystart="842" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1af7eddf5af56648f6b9ce4ad99c190872" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphiterator" kindref="compound">Glyphiterator</ref></type>
+        <definition>Glyphiterator CMLibs::Zinc::Glyphmodule::createGlyphiterator</definition>
+        <argsstring>()</argsstring>
+        <name>createGlyphiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a glyph iterator object for iterating through the glyphs in the glyph module, in alphabetical order of name. The iterator initially points at the position before the first glyph, so the first call to the glyph iterator next() method returns the first glyph and advances the iterator. Iterator becomes invalid if glyphs are added, removed or renamed while in use. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1ae47407003ec26db5b94f4c132193bf5a" kindref="member">Glyphiterator::next</ref></para>
+</simplesect>
+be iterated over. <simplesect kind="return"><para>Handle to glyph iterator, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="860" column="15" bodyfile="auto_comments_output/glyph.hpp" bodystart="860" bodyend="863"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a5742825a36c2589949ac1f0b73e277ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Glyphmodule::defineStandardGlyphs</definition>
+        <argsstring>()</argsstring>
+        <name>defineStandardGlyphs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines a selection of standard glyphs for visualising points, vectors etc. <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> for all standard glyphs fit in a unit cube which:<orderedlist>
+<listitem><para>for orientable glyphs e.g. line, arrow, cylinder: span [0,1] on axis 1, and [-0.5,0.5] on axes 2 and 3 (except line which has no width).</para>
+</listitem><listitem><para>are otherwise centred at 0,0,0 for all other glyphs. These consist of: &quot;arrow&quot;, &quot;arrow_solid&quot; = line and solid arrows from (0,0,0) to (1,0,0) with arrowhead 1/3 of length and unit width. Shaft diameter is 1/3 unit. &quot;axis&quot;, &quot;axis_solid&quot; = variants of arrows with arrowhead 1/10 of length. Shaft diameter is 1/3 unit. &quot;cone&quot;, &quot;cone_solid&quot; = cone descending from unit diameter circle in 2-3 plane at (0,0,0) to a point at (1,0,0). Solid variant has base closed. &quot;cross&quot; = lines from -0.5 to +0.5 on each axis through (0,0,0). &quot;cube_solid&quot;, &quot;cube_wireframe&quot; = solid and wireframe (line) unit cubes aligned with primary axes and centred at (0,0,0). &quot;cylinder&quot;, &quot;cylinder_solid&quot; = a unit diameter cylinder, centre line from (0,0,0) to (1,0,0). Solid variant has ends closed. &quot;diamond&quot; = an octohedron created as a sphere with 4 divisions around, so lit like a sphere rather than faceted. &quot;line&quot; = a line from (0,0,0) to (1,0,0). &quot;point&quot; = a single pixel at (0,0,0). &quot;sheet&quot; = a unit square surface in 1-2 plane, centred at (0,0,0). &quot;sphere&quot; = a unit diameter sphere centred at (0,0,0). In addition there are 8 glyphs showing unit 3-D axes with various labels: &quot;axes&quot;, &quot;axes_123&quot;, &quot;axes_xyz&quot;, &quot;axes_colour&quot; - using glyph &quot;axis&quot; and axis width 0.1. &quot;axes_solid&quot;, &quot;axes_solid_123&quot;, &quot;axes_solid_xyz&quot;, &quot;axes_solid_colour&quot;</para>
+</listitem></orderedlist>
+<itemizedlist>
+<listitem><para>using glyph &quot;arrow_solid&quot; and axis width 0.25. Note that the colour axes find standard materials &quot;red&quot;, &quot;green&quot; and &quot;blue&quot; for the 3 axes but are not created if those materials are not defined. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a065d1844d3ee5d264819cbcb31b1a169" kindref="member">Materialmodule::defineStandardMaterials</ref> All the above standard glyphs also have unique types enumeration. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" kindref="member">Glyph::ShapeType</ref> Note if any glyphs of the predefined name already exist prior to calling this function, the standard glyph is not created. All glyphs created by this function have IS_MANAGED set to 1. Circular glyphs including sphere, cylinders, cones and solid arrow and axis get their circle divisions from the tessellation specified in the graphics. If not already set, the default glyph is set to &quot;point&quot; by this function.</para>
+</simplesect>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="908" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="908" bodyend="911"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a116b22b099fe0b16fb6b12d2fcb8432c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref></type>
+        <definition>Glyph CMLibs::Zinc::Glyphmodule::findGlyphByName</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>findGlyphByName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the glyph with the specified name, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to glyph, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="919" column="7" bodyfile="auto_comments_output/glyph.hpp" bodystart="919" bodyend="922"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a1a107e3dc41ef6d4be99c79424ffc90f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref></type>
+        <definition>Glyph CMLibs::Zinc::Glyphmodule::findGlyphByGlyphShapeType</definition>
+        <argsstring>(Glyph::ShapeType glyphShapeType) const</argsstring>
+        <name>findGlyphByGlyphShapeType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" kindref="member">Glyph::ShapeType</ref></type>
+          <declname>glyphShapeType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the glyph with the specified type, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>glyphShapeType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A glyph type identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to glyph, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="930" column="7" bodyfile="auto_comments_output/glyph.hpp" bodystart="930" bodyend="933"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1adc89d714831f0f8badb300b79709a57a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref></type>
+        <definition>Glyph CMLibs::Zinc::Glyphmodule::getDefaultPointGlyph</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultPointGlyph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default glyph used for new point graphics, if any.</para>
+<para><simplesect kind="return"><para>Handle to glyph, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="940" column="7" bodyfile="auto_comments_output/glyph.hpp" bodystart="940" bodyend="943"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1ab7f7414ef1ae3a485a572ff73dd53593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Glyphmodule::setDefaultPointGlyph</definition>
+        <argsstring>(const Glyph &amp;glyph)</argsstring>
+        <name>setDefaultPointGlyph</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+          <declname>glyph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default glyph used for new point graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyph to set as default. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="951" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="951" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1ad9a56e19fbf35e07909d0f4c5917427c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref></type>
+        <definition>Glyph CMLibs::Zinc::Glyphmodule::createStaticGlyphFromGraphics</definition>
+        <argsstring>(const Graphics &amp;graphics)</argsstring>
+        <name>createStaticGlyphFromGraphics</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create and return a handle to the glyph which is a static copy of the vertices of the specified graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the graphics which vertices will be copied into the newly created glyph. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to the newly created glyph on success, otherwise 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="964" column="14" bodyfile="auto_comments_output/graphics.hpp" bodystart="1986" bodyend="1989"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodule_1a079efa73b265bb658d6ffa2e7365b696" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier" kindref="compound">Glyphmodulenotifier</ref></type>
+        <definition>Glyphmodulenotifier CMLibs::Zinc::Glyphmodule::createGlyphmodulenotifier</definition>
+        <argsstring>()</argsstring>
+        <name>createGlyphmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a notifier for getting callbacks for changes to the glyphs in the glyph module.</para>
+<para><simplesect kind="return"><para>Handle to new glyph module notifier, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="972" column="28" bodyfile="auto_comments_output/glyph.hpp" bodystart="1189" bodyend="1192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Module managing all glyphs. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Module managing all glyphs. Note that no glyphs exist on start-up, so most users will need to define standard glyphs early in their program, and after defining standard materials to pick up coloured standard glyphs. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a5742825a36c2589949ac1f0b73e277ce" kindref="member">Glyphmodule::defineStandardGlyphs</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/glyph.hpp" line="733" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="732" bodyend="974"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a1e1443ced41769ad17b52c01f2a046e8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>beginChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a364ec769fb93b973f5d1ef24ba27aa56" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>createGlyphAxes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1ae59588b8e8bcdb1b97b2122914eed194" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>createGlyphColourBar</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1af7eddf5af56648f6b9ce4ad99c190872" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>createGlyphiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a079efa73b265bb658d6ffa2e7365b696" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>createGlyphmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1ad9a56e19fbf35e07909d0f4c5917427c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>createStaticGlyphFromGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a5742825a36c2589949ac1f0b73e277ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>defineStandardGlyphs</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a27f6b277048534df5260e5eca98c2890" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>endChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a1a107e3dc41ef6d4be99c79424ffc90f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>findGlyphByGlyphShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a116b22b099fe0b16fb6b12d2fcb8432c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>findGlyphByName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1adc89d714831f0f8badb300b79709a57a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>getDefaultPointGlyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a43167b14b52809386c73c1939d981e03" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a41d605e0340d85cf96c8042ff45be86d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>Glyphmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a14ba7432c2a62e0f312903d5db65efd4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>Glyphmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1abc6b5e83d2f6daad31cf4c23349ee6fd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>Glyphmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a1355d9c3ba0b7fda2cd6c97068b8cfc5" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a79fb5c6c8520f275730a1ae2d7e5f265" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1ac99dd610d65bf9429500f45be3318192" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1ab7f7414ef1ae3a485a572ff73dd53593" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>setDefaultPointGlyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodule_1a9b4a6b802f698de0e0f562782885181b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodule</scope><name>~Glyphmodule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

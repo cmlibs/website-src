@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Scenepicker" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Scenepicker</compoundname>
+    <includes refid="scenepicker_8hpp" local="no">scenepicker.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a61f1387b48fc6fb2a57b96955e264999" prot="protected" static="no" mutable="no">
+        <type>cmzn_scenepicker_id</type>
+        <definition>cmzn_scenepicker_id CMLibs::Zinc::Scenepicker::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="35" column="21" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1afd5de4d68688aba2ecf4c6833baa5887" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scenepicker::Scenepicker</definition>
+        <argsstring>()</argsstring>
+        <name>Scenepicker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="39" column="1" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="39" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a7aa5873222a4e7e7cf59a5f7ee43a9c9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scenepicker::Scenepicker</definition>
+        <argsstring>(cmzn_scenepicker_id in_scenepicker_id)</argsstring>
+        <name>Scenepicker</name>
+        <param>
+          <type>cmzn_scenepicker_id</type>
+          <declname>in_scenepicker_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="43" column="10" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a058610a72c180e5651b1c742c014bea3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scenepicker::Scenepicker</definition>
+        <argsstring>(const Scenepicker &amp;scenepicker)</argsstring>
+        <name>Scenepicker</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenepicker" kindref="compound">Scenepicker</ref> &amp;</type>
+          <declname>scenepicker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="47" column="1" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a1aa70f1839e4607df46465e7b489b538" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenepicker" kindref="compound">Scenepicker</ref> &amp;</type>
+        <definition>Scenepicker&amp; CMLibs::Zinc::Scenepicker::operator=</definition>
+        <argsstring>(const Scenepicker &amp;scenepicker)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenepicker" kindref="compound">Scenepicker</ref> &amp;</type>
+          <declname>scenepicker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="51" column="13" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="51" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a0f8e58b997d2749c336b1c9daffaffb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scenepicker::~Scenepicker</definition>
+        <argsstring>()</argsstring>
+        <name>~Scenepicker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="62" column="1" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1aa4d3f6868aa158652a799e61808f340b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Scenepicker::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Scenepicker" kindref="compound">Scenepicker</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="75" column="6" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a5bc89572a03d87f4c45adbf02086da52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_scenepicker_id</type>
+        <definition>cmzn_scenepicker_id CMLibs::Zinc::Scenepicker::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Scenepicker" kindref="compound">Scenepicker</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Scenepicker" kindref="compound">Scenepicker</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="85" column="21" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a7dfe7ec18e37ce8a6e998abc3000f926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenepicker::setSceneviewerRectangle</definition>
+        <argsstring>(const Sceneviewer &amp;sceneviewer, Scenecoordinatesystem scenecoordinatesystem, double x1, double y1, double x2, double y2)</argsstring>
+        <name>setSceneviewerRectangle</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer" kindref="compound">Sceneviewer</ref> &amp;</type>
+          <declname>sceneviewer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></type>
+          <declname>scenecoordinatesystem</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the bounding box of scene picker. <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> viewer will provide the preset modelview and projection matrix from itself. (x1,y1) and (x2,y2) are diagonally opposite corners of the rectangle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sceneviewer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> viewer to get the modelview and projection matrix from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scenecoordinatesystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window coordinate system the corner points are specified in. Currently only SCENECOORDINATESYSTEM_WINDOW_PIXEL_TOP_LEFT is applied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X coordinate of first corner point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y coordinate of first corner point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X coordinate of second corner point, diagonally opposite first. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y coordinate of second corner point, diagonally opposite first. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="106" column="5" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="106" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a60dd3b15342f3e8eaabb3c9412747b0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref></type>
+        <definition>Element CMLibs::Zinc::Scenepicker::getNearestElement</definition>
+        <argsstring>() const</argsstring>
+        <name>getNearestElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nearest element in the defined bounding box on scene.</para>
+<para><simplesect kind="return"><para>Handle to nearest element, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="120" column="9" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a0d503d35b1f73e8c03ff5b34659882b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref></type>
+        <definition>Node CMLibs::Zinc::Scenepicker::getNearestNode</definition>
+        <argsstring>() const</argsstring>
+        <name>getNearestNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nearest node in the defined bounding box on scene.</para>
+<para><simplesect kind="return"><para>Handle to nearest node, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="130" column="6" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a2e7f771115cc573dcfc94e54d2d36b50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref></type>
+        <definition>Graphics CMLibs::Zinc::Scenepicker::getNearestElementGraphics</definition>
+        <argsstring>() const</argsstring>
+        <name>getNearestElementGraphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nearest element graphics in the defined bounding box on scene.</para>
+<para><simplesect kind="return"><para>Handle to graphics showing nearest element, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="141" column="10" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a84dfe3041a044bca94842a4bc5dccc52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref></type>
+        <definition>Graphics CMLibs::Zinc::Scenepicker::getNearestNodeGraphics</definition>
+        <argsstring>() const</argsstring>
+        <name>getNearestNodeGraphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nearest node graphics in the defined bounding box on scene.</para>
+<para><simplesect kind="return"><para>Handle to graphics showing nearest node, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="152" column="10" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a4955fd7119ba7891a267ac49888bcc2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref></type>
+        <definition>Graphics CMLibs::Zinc::Scenepicker::getNearestGraphics</definition>
+        <argsstring>() const</argsstring>
+        <name>getNearestGraphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nearest graphics in the defined bounding box on scene.</para>
+<para><simplesect kind="return"><para>Handle to nearest graphics, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="162" column="10" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1af9c0467b7b10d8182af2141cdb3a30c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenepicker::addPickedElementsToFieldGroup</definition>
+        <argsstring>(FieldGroup &amp;fieldGroup) const</argsstring>
+        <name>addPickedElementsToFieldGroup</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref> &amp;</type>
+          <declname>fieldGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Picked elements belong to group field&apos;s owning region tree will be added to group. Additional subregion fields will be created when required.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fieldGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elements will be added to this group field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="175" column="5" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="175" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a52397b08f4ce6db8d072117cec2275cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenepicker::addPickedNodesToFieldGroup</definition>
+        <argsstring>(FieldGroup &amp;fieldGroup) const</argsstring>
+        <name>addPickedNodesToFieldGroup</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref> &amp;</type>
+          <declname>fieldGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Picked nodes belong to group field&apos;s owning region tree will be added to group. Additional subregion fields will be created when required.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fieldGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodes will be added to this group field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="189" column="5" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="189" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1ac69b0231a8476c474d517ec68fb76b2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref></type>
+        <definition>Scene CMLibs::Zinc::Scenepicker::getScene</definition>
+        <argsstring>() const</argsstring>
+        <name>getScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the scene set for the scene picker to pick from.</para>
+<para><simplesect kind="return"><para>Handle to scene, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="200" column="7" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a154fa5595c96432bcf30c384a5e1e258" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenepicker::setScene</definition>
+        <argsstring>(const Scene &amp;scene)</argsstring>
+        <name>setScene</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> &amp;</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the scene for the scene picker to pick from.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene to pick from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="211" column="5" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1ad45847ff5c9c51813d91bc98d7ad1ed5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Scenepicker::getScenefilter</definition>
+        <argsstring>() const</argsstring>
+        <name>getScenefilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the scene filter for the scene picker.</para>
+<para><simplesect kind="return"><para>Handle to scene filter, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="221" column="13" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a996456c70f34b18988952bfd1c4f3491" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenepicker::setScenefilter</definition>
+        <argsstring>(const Scenefilter &amp;filter)</argsstring>
+        <name>setScenefilter</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the scene filter for the scene picker. This filters which graphics are pickable from the scene.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene filter to use, or NULL if none (all pickable). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="233" column="5" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scenepicker_1a35da5d7734ef33a798cbdb03fa4b2f9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scenepicker::getPickingVolumeCentre</definition>
+        <argsstring>(double *coordinateValuesOut3) const</argsstring>
+        <name>getPickingVolumeCentre</name>
+        <param>
+          <type>double *</type>
+          <declname>coordinateValuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the centre of the picking volume in world coordinates.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinateValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to hold the values of the coordinates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scenepicker.hpp" line="245" column="5" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="245" bodyend="248"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility object for picking graphics and model objects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility object for picking graphics and model objects (nodes/elements) from the 3-D graphics in a scene tree. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/scenepicker.hpp" line="33" column="1" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="32" bodyend="250"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1af9c0467b7b10d8182af2141cdb3a30c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>addPickedElementsToFieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a52397b08f4ce6db8d072117cec2275cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>addPickedNodesToFieldGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a5bc89572a03d87f4c45adbf02086da52" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a60dd3b15342f3e8eaabb3c9412747b0e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getNearestElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a2e7f771115cc573dcfc94e54d2d36b50" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getNearestElementGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a4955fd7119ba7891a267ac49888bcc2a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getNearestGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a0d503d35b1f73e8c03ff5b34659882b9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getNearestNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a84dfe3041a044bca94842a4bc5dccc52" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getNearestNodeGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a35da5d7734ef33a798cbdb03fa4b2f9e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getPickingVolumeCentre</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1ac69b0231a8476c474d517ec68fb76b2a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1ad45847ff5c9c51813d91bc98d7ad1ed5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>getScenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a61f1387b48fc6fb2a57b96955e264999" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1aa4d3f6868aa158652a799e61808f340b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a1aa70f1839e4607df46465e7b489b538" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1afd5de4d68688aba2ecf4c6833baa5887" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>Scenepicker</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a7aa5873222a4e7e7cf59a5f7ee43a9c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>Scenepicker</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a058610a72c180e5651b1c742c014bea3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>Scenepicker</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a154fa5595c96432bcf30c384a5e1e258" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>setScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a996456c70f34b18988952bfd1c4f3491" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>setScenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a7dfe7ec18e37ce8a6e998abc3000f926" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>setSceneviewerRectangle</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scenepicker_1a0f8e58b997d2749c336b1c9daffaffb7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scenepicker</scope><name>~Scenepicker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -102,3 +102,22 @@ dist
 
 # TernJS port file
 .tern-port
+
+.DS_Store
+dist
+dist-ssr
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+

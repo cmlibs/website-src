@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Glyph" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Glyph</compoundname>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1GlyphAxes" prot="public" virt="non-virtual">CMLibs::Zinc::GlyphAxes</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1GlyphColourBar" prot="public" virt="non-virtual">CMLibs::Zinc::GlyphColourBar</derivedcompoundref>
+    <includes refid="glyph_8hpp" local="no">glyph.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ChangeFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a14dee864bf9f8420da94e5936b63f2d2" prot="public">
+          <name>CHANGE_FLAG_NONE</name>
+          <initializer>= CMZN_GLYPH_CHANGE_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>glyph(s) not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a5dc4797fa42892adcd2291b652adc050" prot="public">
+          <name>CHANGE_FLAG_ADD</name>
+          <initializer>= CMZN_GLYPH_CHANGE_FLAG_ADD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>one or more glyphs added </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05aeb99222b0db3f65b3c91502b79ca768d" prot="public">
+          <name>CHANGE_FLAG_REMOVE</name>
+          <initializer>= CMZN_GLYPH_CHANGE_FLAG_REMOVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>one or more glyphs removed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a65f74fd9c1b3b9972ac96e68fad81aef" prot="public">
+          <name>CHANGE_FLAG_IDENTIFIER</name>
+          <initializer>= CMZN_GLYPH_CHANGE_FLAG_IDENTIFIER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>glyph identifier changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a1d82ba5226cb0d4f6196be8a86142e53" prot="public">
+          <name>CHANGE_FLAG_DEFINITION</name>
+          <initializer>= CMZN_GLYPH_CHANGE_FLAG_DEFINITION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>change to glyph attributes other than identifier. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05acaee405615b8b38a54587d2003d68066" prot="public">
+          <name>CHANGE_FLAG_FULL_RESULT</name>
+          <initializer>= CMZN_GLYPH_CHANGE_FLAG_FULL_RESULT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>all resultant values of glyph changed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05af0c1aefeb5345d96437a9ec3a30124d7" prot="public">
+          <name>CHANGE_FLAG_FINAL</name>
+          <initializer>= CMZN_GLYPH_CHANGE_FLAG_FINAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>final notification: owning glyph module i.e. glyph module has been destroyed </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit flags summarising changes to a glyph or glyphs in a glyphmodule. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="99" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="98" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RepeatMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a5be3313acba32fd4b1445e814475b2aa" prot="public">
+          <name>REPEAT_MODE_INVALID</name>
+          <initializer>= CMZN_GLYPH_REPEAT_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified glyph repeat mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a2439a933f97269c34afdd8f96e1d4dbc" prot="public">
+          <name>REPEAT_MODE_NONE</name>
+          <initializer>= CMZN_GLYPH_REPEAT_MODE_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>default cmzn_glyph_repeat_mode normal single glyph display, no repeat </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617aed363b24a85f869a9a81aeb54b8d6dc6" prot="public">
+          <name>REPEAT_MODE_AXES_2D</name>
+          <initializer>= CMZN_GLYPH_REPEAT_MODE_AXES_2D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>draw glyph 2 times treating each axis as a separate vector. Base size and scale factors are applied separately to each axis. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617aa3e77cb4ae0c83b57ff5b675648837ba" prot="public">
+          <name>REPEAT_MODE_AXES_3D</name>
+          <initializer>= CMZN_GLYPH_REPEAT_MODE_AXES_3D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>draw glyph 3 times treating each axis as a separate vector. Base size and scale factors are applied separately to each axis. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a33503bf6ade49674d9a47045615b8c14" prot="public">
+          <name>REPEAT_MODE_MIRROR</name>
+          <initializer>= CMZN_GLYPH_REPEAT_MODE_MIRROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>draw glyph twice, second mirrored about axis1 == 0.0. Commonly used with a signed_scale_field to visualise stress and strains using pairs of arrow glyphs pointing inward for compression, outward for tension. Suitable glyphs (line, arrow, cone) span from 0 to 1 along their first axis. Not suitable for sphere, cube etc. which are symmetric about 0.0 on axis 1. In this mode the label is only shown for the first glyph and the label offset is not reversed with the glyph. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes_1a4f2dc60334a60d5afa794ab9fdbc1de0" kindref="member">Graphicspointattributes::setSignedScaleField</ref> </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An enum defining how glyphs are repeatedly displayed at points. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicspointattributes" kindref="compound">Graphicspointattributes</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="128" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="127" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ShapeType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae1eb246b75394d8dbb4bc4d079b9e030" prot="public">
+          <name>SHAPE_TYPE_INVALID</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified glyph shape type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a7fc2923238c6796d23ba667837c01154" prot="public">
+          <name>SHAPE_TYPE_NONE</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>no glyph </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae9c6624be9bf5b5a91dcb779802e8a9c" prot="public">
+          <name>SHAPE_TYPE_ARROW</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_ARROW</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>line arrow from 0,0,0 to 1,0,0, head 1/3 long unit width </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a7c7d4dadb38511358143fe79f0306cba" prot="public">
+          <name>SHAPE_TYPE_ARROW_SOLID</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_ARROW_SOLID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>solid arrow from 0,0,0 to 1,0,0, head 1/3 long unit width </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a48f730d2b43a3a7c3100d8de4a1fd059" prot="public">
+          <name>SHAPE_TYPE_AXIS</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXIS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>line arrow from 0,0,0 to 1,0,0, head 0.1 long unit width </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a1b93f2e7d83c0e360f7cdc3d6581a06b" prot="public">
+          <name>SHAPE_TYPE_AXIS_SOLID</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXIS_SOLID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>solid arrow from 0,0,0 to 1,0,0, head 0.1 long unit width </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a10cac6872a2d7d6aa2399500f1f20f62" prot="public">
+          <name>SHAPE_TYPE_CONE</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_CONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit diameter cone from base 0,0,0 to apex 1,0,0, open base </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05adf3a1bd4f8deee3958b9f74ea7d35770" prot="public">
+          <name>SHAPE_TYPE_CONE_SOLID</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_CONE_SOLID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit diameter cone from base 0,0,0 to apex 1,0,0, closed base </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a3c0916a5c2fc69e663c0c1c17f3c3e0c" prot="public">
+          <name>SHAPE_TYPE_CROSS</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_CROSS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3 crossed lines on each axis, centre 0,0,0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6fc955672deef244d2cf0010fe7a9e50" prot="public">
+          <name>SHAPE_TYPE_CUBE_SOLID</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_CUBE_SOLID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>solid unit cube centred at 0,0,0 and aligned with axes </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a8da2d3454746c2ac3110e094741c45bf" prot="public">
+          <name>SHAPE_TYPE_CUBE_WIREFRAME</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_CUBE_WIREFRAME</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>wireframe unit cube centred at 0,0,0 and aligned with axes </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a3e93b8a0d0c1dddcdc2d1ab5efb874ca" prot="public">
+          <name>SHAPE_TYPE_CYLINDER</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_CYLINDER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit diameter cylinder from 0,0,0 to 1,0,0, open ends </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a362bbfcbddd20c98d63b3e7202097609" prot="public">
+          <name>SHAPE_TYPE_CYLINDER_SOLID</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_CYLINDER_SOLID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit diameter cylinder from 0,0,0 to 1,0,0, closed ends </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6ebcdcc294ff94eeaa5911489f9f62dd" prot="public">
+          <name>SHAPE_TYPE_DIAMOND</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_DIAMOND</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit regular octahedron centred at 0,0,0; a degenerate sphere </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a889fcf77c29effe00d80dee9a209dfa7" prot="public">
+          <name>SHAPE_TYPE_LINE</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_LINE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>line from 0,0,0 to 1,0,0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05aa7d6410666cdb5f71aa2e1f101ba5119" prot="public">
+          <name>SHAPE_TYPE_POINT</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_POINT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>a single point at 0,0,0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a33772b92ca4572229d018ba677274bd5" prot="public">
+          <name>SHAPE_TYPE_SHEET</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_SHEET</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit square in 1-2 plane centred at 0,0,0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a470587ff83766f383c16967c1aaeb019" prot="public">
+          <name>SHAPE_TYPE_SPHERE</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_SPHERE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit sphere centred at 0,0,0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae4c282c02e06decad76a3abe858b268d" prot="public">
+          <name>SHAPE_TYPE_AXES</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXES</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit line axes without labels </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ab3da9577513d15d0af9f5ba852397334" prot="public">
+          <name>SHAPE_TYPE_AXES_123</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXES_123</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit line axes with labels 1,2,3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6e2cc5268b6987200ea660ea662a5d93" prot="public">
+          <name>SHAPE_TYPE_AXES_XYZ</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXES_XYZ</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit line axes with labels x,y,z </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05aaca1a496a0209838f1542e43b970900c" prot="public">
+          <name>SHAPE_TYPE_AXES_COLOUR</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXES_COLOUR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit line axes with materials red, green, blue </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae15626c3183b17e82ee143848db3c484" prot="public">
+          <name>SHAPE_TYPE_AXES_SOLID</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXES_SOLID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit solid arrow axes without labels </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a5e59d53df505b73c45b81fd455740ce8" prot="public">
+          <name>SHAPE_TYPE_AXES_SOLID_123</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXES_SOLID_123</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit solid arrow axes with labels 1,2,3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae79f914f0b3ed5b2d118157f61e4feed" prot="public">
+          <name>SHAPE_TYPE_AXES_SOLID_XYZ</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXES_SOLID_XYZ</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit solid arrow axes with labels x,y,z </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a905e41d013a8cbaab5602167e7bee6fe" prot="public">
+          <name>SHAPE_TYPE_AXES_SOLID_COLOUR</name>
+          <initializer>= CMZN_GLYPH_SHAPE_TYPE_AXES_SOLID_COLOUR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unit solid arrow axes with materials red, green, blue </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An enumeration defining standard glyph shapes which can be used as an alternative means to specify the glyph used in graphics. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="161" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="160" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Glyph_1ae9791e2f84cadbc9a7f66fa755ced951" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Glyph::ChangeFlags</definition>
+        <argsstring></argsstring>
+        <name>ChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" kindref="member">ChangeFlag</ref> <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a5e7d0357baa794aefdc26cc77277d1b9" kindref="member">Glyphmoduleevent::getGlyphChangeFlags</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="121" column="13" bodyfile="auto_comments_output/glyph.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Glyph_1abb9c22a55ef7e8eb1c22e393c9611e00" prot="protected" static="no" mutable="no">
+        <type>cmzn_glyph_id</type>
+        <definition>cmzn_glyph_id CMLibs::Zinc::Glyph::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="40" column="15" bodyfile="auto_comments_output/glyph.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1afb9c2ad2fab062bc2abaa86fa43882b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyph::Glyph</definition>
+        <argsstring>()</argsstring>
+        <name>Glyph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="44" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="44" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a7470708d25f56a2742e1356ab0894013" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyph::Glyph</definition>
+        <argsstring>(cmzn_glyph_id in_glyph_id)</argsstring>
+        <name>Glyph</name>
+        <param>
+          <type>cmzn_glyph_id</type>
+          <declname>in_glyph_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="48" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a04b6f6447a8d3eae24b53cf20f647b07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyph::Glyph</definition>
+        <argsstring>(const Glyph &amp;glyph)</argsstring>
+        <name>Glyph</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+          <declname>glyph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="52" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a7a8c03b8543646988c63cb24327829b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+        <definition>Glyph&amp; CMLibs::Zinc::Glyph::operator=</definition>
+        <argsstring>(const Glyph &amp;glyph)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+          <declname>glyph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="56" column="7" bodyfile="auto_comments_output/glyph.hpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a1cf61d0581619db0df80589907da4f45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyph::~Glyph</definition>
+        <argsstring>()</argsstring>
+        <name>~Glyph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="67" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1ab90792ede2edb6a76cd7835d34ce0b05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Glyph::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="80" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1aac12ce8c46c1311d71d1af227afc601c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_glyph_id</type>
+        <definition>cmzn_glyph_id CMLibs::Zinc::Glyph::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="90" column="15" bodyfile="auto_comments_output/glyph.hpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a9725fef051e367778fda0fe2e4d524ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Glyph::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an allocated string containing glyph name.</para>
+<para><simplesect kind="return"><para>Allocated string containing glyph name, or NULL on failure. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="242" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a5c6d224f232d8ea988e96a9f719dbf16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Glyph::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set name of the glyph.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name to be set for the glyph. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="253" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a8d7d90a152c6a000db79ec8bb0e15f29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Glyph::isManaged</definition>
+        <argsstring>() const</argsstring>
+        <name>isManaged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get managed status of glyph in its owning glyph module. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1ae967204b1e812325df94d41a3df19a48" kindref="member">Glyph::setManaged</ref></para>
+</simplesect>
+<simplesect kind="return"><para>true if glyph is managed, otherwise 0 false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="264" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="264" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1ae967204b1e812325df94d41a3df19a48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Glyph::setManaged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setManaged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set managed status of glyph in its owning glyph module. If set (managed) the glyph will remain indefinitely in the glyph module even if no external references are held. If not set (unmanaged) the glyph will be automatically removed from the module when no longer referenced externally, effectively marking it as pending destruction. All new objects are unmanaged unless stated otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the managed flag: true or false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="281" column="5" bodyfile="auto_comments_output/glyph.hpp" bodystart="281" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1aaeb3567e2cb84b44d421633bf58523bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GlyphAxes" kindref="compound">GlyphAxes</ref></type>
+        <definition>GlyphAxes CMLibs::Zinc::Glyph::castAxes</definition>
+        <argsstring>()</argsstring>
+        <name>castAxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the glyph is type axes, returns the type-specific handle.</para>
+<para><simplesect kind="return"><para>Handle to derived axes glyph, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="292" column="18" bodyfile="auto_comments_output/glyph.hpp" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a7fdd24cbb6d1c0c4654b13dfac05c614" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GlyphColourBar" kindref="compound">GlyphColourBar</ref></type>
+        <definition>GlyphColourBar CMLibs::Zinc::Glyph::castColourBar</definition>
+        <argsstring>()</argsstring>
+        <name>castColourBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the glyph is type colour bar, returns the type-specific handle.</para>
+<para><simplesect kind="return"><para>Handle to derived colour bar glyph, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="299" column="23" bodyfile="auto_comments_output/glyph.hpp" bodystart="652" bodyend="655"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a4e09aa1c47dab2fd73b9b076bf10ade5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" kindref="member">RepeatMode</ref></type>
+        <definition>static RepeatMode CMLibs::Zinc::Glyph::RepeatModeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>RepeatModeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="216" column="19" bodyfile="auto_comments_output/glyph.hpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a795f1da63b48e6ed4383059181b911da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Glyph::RepeatModeEnumToString</definition>
+        <argsstring>(RepeatMode mode)</argsstring>
+        <name>RepeatModeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" kindref="member">RepeatMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="221" column="13" bodyfile="auto_comments_output/glyph.hpp" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1acf6a4cf58a9f429b1b5f39b6c97e1978" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" kindref="member">ShapeType</ref></type>
+        <definition>static ShapeType CMLibs::Zinc::Glyph::ShapeTypeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>ShapeTypeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="226" column="18" bodyfile="auto_comments_output/glyph.hpp" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyph_1a70f5e635e0c45ab2ce1641cea9d58e7f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Glyph::ShapeTypeEnumToString</definition>
+        <argsstring>(ShapeType type)</argsstring>
+        <name>ShapeTypeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" kindref="member">ShapeType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="231" column="13" bodyfile="auto_comments_output/glyph.hpp" bodystart="231" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A glyph is a static graphics object used to visualise a point in space. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A glyph is a static graphics object used to visualise a point in space, e.g. point, line, sphere, axes etc. Note that the appearance of some glyphs depend on attributes of point graphics used to draw them: circular glyphs (sphere, cylinder etc.) use the circle divisions of the glyph object, axes with labels use the font. Derived glyph types implement custom axes and spectrum colour bar. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CMLibs::Zinc::Glyph</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Glyph"/>
+      </node>
+      <node id="3">
+        <label>CMLibs::Zinc::GlyphColourBar</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GlyphColourBar"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::GlyphAxes</label>
+        <link refid="classCMLibs_1_1Zinc_1_1GlyphAxes"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="auto_comments_output/glyph.hpp" line="38" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="37" bodyend="300"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1aaeb3567e2cb84b44d421633bf58523bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>castAxes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7fdd24cbb6d1c0c4654b13dfac05c614" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>castColourBar</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a5dc4797fa42892adcd2291b652adc050" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a1d82ba5226cb0d4f6196be8a86142e53" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05af0c1aefeb5345d96437a9ec3a30124d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05acaee405615b8b38a54587d2003d68066" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a65f74fd9c1b3b9972ac96e68fad81aef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05a14dee864bf9f8420da94e5936b63f2d2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05aeb99222b0db3f65b3c91502b79ca768d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ae9791e2f84cadbc9a7f66fa755ced951" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1aac12ce8c46c1311d71d1af227afc601c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a9725fef051e367778fda0fe2e4d524ac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1afb9c2ad2fab062bc2abaa86fa43882b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7470708d25f56a2742e1356ab0894013" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a04b6f6447a8d3eae24b53cf20f647b07" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>Glyph</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1abb9c22a55ef7e8eb1c22e393c9611e00" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a8d7d90a152c6a000db79ec8bb0e15f29" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ab90792ede2edb6a76cd7835d34ce0b05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a7a8c03b8543646988c63cb24327829b2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617aed363b24a85f869a9a81aeb54b8d6dc6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>REPEAT_MODE_AXES_2D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617aa3e77cb4ae0c83b57ff5b675648837ba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>REPEAT_MODE_AXES_3D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a5be3313acba32fd4b1445e814475b2aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>REPEAT_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a33503bf6ade49674d9a47045615b8c14" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>REPEAT_MODE_MIRROR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617a2439a933f97269c34afdd8f96e1d4dbc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>REPEAT_MODE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a773150339dc9302b279a29a5b17e6617" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>RepeatMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a4e09aa1c47dab2fd73b9b076bf10ade5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>RepeatModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a795f1da63b48e6ed4383059181b911da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>RepeatModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1ae967204b1e812325df94d41a3df19a48" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a5c6d224f232d8ea988e96a9f719dbf16" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae9c6624be9bf5b5a91dcb779802e8a9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_ARROW</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a7c7d4dadb38511358143fe79f0306cba" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_ARROW_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae4c282c02e06decad76a3abe858b268d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ab3da9577513d15d0af9f5ba852397334" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXES_123</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05aaca1a496a0209838f1542e43b970900c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXES_COLOUR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae15626c3183b17e82ee143848db3c484" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXES_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a5e59d53df505b73c45b81fd455740ce8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXES_SOLID_123</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a905e41d013a8cbaab5602167e7bee6fe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXES_SOLID_COLOUR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae79f914f0b3ed5b2d118157f61e4feed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXES_SOLID_XYZ</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6e2cc5268b6987200ea660ea662a5d93" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXES_XYZ</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a48f730d2b43a3a7c3100d8de4a1fd059" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXIS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a1b93f2e7d83c0e360f7cdc3d6581a06b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_AXIS_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a10cac6872a2d7d6aa2399500f1f20f62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_CONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05adf3a1bd4f8deee3958b9f74ea7d35770" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_CONE_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a3c0916a5c2fc69e663c0c1c17f3c3e0c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_CROSS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6fc955672deef244d2cf0010fe7a9e50" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_CUBE_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a8da2d3454746c2ac3110e094741c45bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_CUBE_WIREFRAME</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a3e93b8a0d0c1dddcdc2d1ab5efb874ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_CYLINDER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a362bbfcbddd20c98d63b3e7202097609" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_CYLINDER_SOLID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a6ebcdcc294ff94eeaa5911489f9f62dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_DIAMOND</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05ae1eb246b75394d8dbb4bc4d079b9e030" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a889fcf77c29effe00d80dee9a209dfa7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_LINE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a7fc2923238c6796d23ba667837c01154" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05aa7d6410666cdb5f71aa2e1f101ba5119" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_POINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a33772b92ca4572229d018ba677274bd5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_SHEET</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05a470587ff83766f383c16967c1aaeb019" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>SHAPE_TYPE_SPHERE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1af0baf2607fc9a3b0e3a6ccb98718df05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>ShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1acf6a4cf58a9f429b1b5f39b6c97e1978" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>ShapeTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a70f5e635e0c45ab2ce1641cea9d58e7f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>ShapeTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyph_1a1cf61d0581619db0df80589907da4f45" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyph</scope><name>~Glyph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

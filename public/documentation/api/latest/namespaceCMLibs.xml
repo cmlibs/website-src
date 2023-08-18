@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceCMLibs" kind="namespace" language="C++">
+    <compoundname>CMLibs</compoundname>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+<para>The <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> namespace. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref> namespace.</para>
+<para>This is the <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> namespace.</para>
+<para>This is the <ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref> namespace </para>
+    </detaileddescription>
+    <location file="auto_comments_output/changemanager.hpp" line="21" column="1"/>
+  </compounddef>
+</doxygen>

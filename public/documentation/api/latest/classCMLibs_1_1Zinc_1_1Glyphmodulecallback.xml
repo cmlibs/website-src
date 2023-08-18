@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Glyphmodulecallback" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CMLibs::Zinc::Glyphmodulecallback</compoundname>
+    <includes refid="glyph_8hpp" local="no">glyph.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a01b310ccc99e747bcf9d351abd566f1e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Glyphmodulenotifier</definition>
+        <argsstring></argsstring>
+        <name>Glyphmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1076" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="1076" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a60f43a31a44b3fe34c9a5cf30108df86" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodulecallback::Glyphmodulecallback</definition>
+        <argsstring>(const Glyphmodulecallback &amp;)</argsstring>
+        <name>Glyphmodulecallback</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback" kindref="compound">Glyphmodulecallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1078" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a58cf8edcbe34eabed54e465adbad58cf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback" kindref="compound">Glyphmodulecallback</ref> &amp;</type>
+        <definition>Glyphmodulecallback&amp; CMLibs::Zinc::Glyphmodulecallback::operator=</definition>
+        <argsstring>(const Glyphmodulecallback &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback" kindref="compound">Glyphmodulecallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1079" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a44e5fd475a41eba2c1fa5ecac297799d" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CMLibs::Zinc::Glyphmodulecallback::operator()</definition>
+        <argsstring>(const Glyphmoduleevent &amp;glyphmoduleevent)=0</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" kindref="compound">Glyphmoduleevent</ref> &amp;</type>
+          <declname>glyphmoduleevent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1088" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1ae0d25b5201b147ba726cc43bdebc7a3b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CMLibs::Zinc::Glyphmodulecallback::C_callback</definition>
+        <argsstring>(cmzn_glyphmoduleevent_id glyphmoduleevent_id, void *callbackVoid)</argsstring>
+        <name>C_callback</name>
+        <param>
+          <type>cmzn_glyphmoduleevent_id</type>
+          <declname>glyphmoduleevent_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callbackVoid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1081" column="13" bodyfile="auto_comments_output/glyph.hpp" bodystart="1081" bodyend="1086"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a0b732da55b164ea650478a7fc3932835" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmodulecallback::Glyphmodulecallback</definition>
+        <argsstring>()</argsstring>
+        <name>Glyphmodulecallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1091" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="1091" bodyend="1092"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1aaa0ba4fbe64866e78a166ef970390e52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CMLibs::Zinc::Glyphmodulecallback::~Glyphmodulecallback</definition>
+        <argsstring>()</argsstring>
+        <name>~Glyphmodulecallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1095" column="9" bodyfile="auto_comments_output/glyph.hpp" bodystart="1095" bodyend="1096"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class functor for glyph module notifier callbacks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class functor for glyph module notifier callbacks:<itemizedlist>
+<listitem><para>Derive from this class adding any user data required.</para>
+</listitem><listitem><para>Implement virtual operator()(const Glyphmoduleevent&amp;) to handle callback. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodulenotifier_1a6c9b4f337bf36d5719f6eec7572e087f" kindref="member">Glyphmodulenotifier::setCallback()</ref> </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/glyph.hpp" line="1075" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="1074" bodyend="1097"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1ae0d25b5201b147ba726cc43bdebc7a3b" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulecallback</scope><name>C_callback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a60f43a31a44b3fe34c9a5cf30108df86" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulecallback</scope><name>Glyphmodulecallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a0b732da55b164ea650478a7fc3932835" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulecallback</scope><name>Glyphmodulecallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a01b310ccc99e747bcf9d351abd566f1e" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulecallback</scope><name>Glyphmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a44e5fd475a41eba2c1fa5ecac297799d" prot="private" virt="pure-virtual"><scope>CMLibs::Zinc::Glyphmodulecallback</scope><name>operator()</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1a58cf8edcbe34eabed54e465adbad58cf" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmodulecallback</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmodulecallback_1aaa0ba4fbe64866e78a166ef970390e52" prot="public" virt="virtual"><scope>CMLibs::Zinc::Glyphmodulecallback</scope><name>~Glyphmodulecallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

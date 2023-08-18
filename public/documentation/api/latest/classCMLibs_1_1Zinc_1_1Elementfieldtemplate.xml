@@ -1,0 +1,1055 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Elementfieldtemplate</compoundname>
+    <includes refid="elementfieldtemplate_8hpp" local="no">elementfieldtemplate.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ParameterMappingMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39a94ba93aa207ab19bae49a6846d764ead" prot="public">
+          <name>PARAMETER_MAPPING_MODE_INVALID</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_PARAMETER_MAPPING_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid mapping mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39acdc620c1b3753223a4fd06f4a90d11bd" prot="public">
+          <name>PARAMETER_MAPPING_MODE_ELEMENT</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_PARAMETER_MAPPING_MODE_ELEMENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> parameters are mapped directly by element </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39add61a12f43a177b335a51f8e5df7b0e8" prot="public">
+          <name>PARAMETER_MAPPING_MODE_FIELD</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_PARAMETER_MAPPING_MODE_FIELD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Constant value for field component </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39adf49596da5372e07969216a4aaebae76" prot="public">
+          <name>PARAMETER_MAPPING_MODE_NODE</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_PARAMETER_MAPPING_MODE_NODE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> parameters are mapped from nodes via local-to-global node map </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modes for how element parameters are mapped from global DOFs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="77" column="1" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="76" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ScaleFactorType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302ac05ae452de2f1fd8676a6128e76e2273" prot="public">
+          <name>SCALE_FACTOR_TYPE_INVALID</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_SCALE_FACTOR_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a179d2a0dea2d179c03932b6b387c9b4e" prot="public">
+          <name>SCALE_FACTOR_TYPE_ELEMENT_GENERAL</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_SCALE_FACTOR_TYPE_ELEMENT_GENERAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>General linear map coefficients private to an element </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302aba266086026385acd7642882b2464a2e" prot="public">
+          <name>SCALE_FACTOR_TYPE_ELEMENT_PATCH</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_SCALE_FACTOR_TYPE_ELEMENT_PATCH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Patch to local element coordinate scaling private to an element </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a28a1dc521a496c61564c20cd33454a41" prot="public">
+          <name>SCALE_FACTOR_TYPE_GLOBAL_GENERAL</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_SCALE_FACTOR_TYPE_GLOBAL_GENERAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>General linear map coefficients shared across multiple points in the mesh </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a3b95639ec890f99a1d166895c7054135" prot="public">
+          <name>SCALE_FACTOR_TYPE_GLOBAL_PATCH</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_SCALE_FACTOR_TYPE_GLOBAL_PATCH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Patch to local element coordinate scaling shared across multiple points in the mesh </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a3251db73475a4c5f262e77786a3b7465" prot="public">
+          <name>SCALE_FACTOR_TYPE_NODE_GENERAL</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_SCALE_FACTOR_TYPE_NODE_GENERAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>General linear map coefficients shared through global nodes </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a1a1a507c72f3687b60b05f1cc870ced0" prot="public">
+          <name>SCALE_FACTOR_TYPE_NODE_PATCH</name>
+          <initializer>= CMZN_ELEMENTFIELDTEMPLATE_SCALE_FACTOR_TYPE_NODE_PATCH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Patch to local element coordinate scaling shared through global nodes </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unique types for element scale factors which together with node/element and scale factor identifier allow merging of common scale factors in neighbouring elements, or for different templates in the same element. Note that types with the PATCH suffix are intended to be used for rescaling, e.g. scaling arc-length derivatives to be with respect to element chart. Note that a NODE type scale factor must scale parameters from exactly one local node. Note that ELEMENT types are currently limited to using scale factor identifier 0, meaning unique to a given element and element field template. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="100" column="1" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="99" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a663f39ad5cb2af5d25d0b6400a12d692" prot="private" static="no" mutable="no">
+        <type>cmzn_elementfieldtemplate_id</type>
+        <definition>cmzn_elementfieldtemplate_id CMLibs::Zinc::Elementfieldtemplate::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="43" column="30" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a02dbef8e76e311c2c9abdee7a6f27dbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementfieldtemplate::Elementfieldtemplate</definition>
+        <argsstring>()</argsstring>
+        <name>Elementfieldtemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="47" column="1" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="47" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a4fedcd244da89821ffff912442e7381c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementfieldtemplate::Elementfieldtemplate</definition>
+        <argsstring>(cmzn_elementfieldtemplate_id elementfieldtemplate_id)</argsstring>
+        <name>Elementfieldtemplate</name>
+        <param>
+          <type>cmzn_elementfieldtemplate_id</type>
+          <declname>elementfieldtemplate_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="51" column="10" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a9f755361fff6c0add2ed5fc7ef601557" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementfieldtemplate::Elementfieldtemplate</definition>
+        <argsstring>(const Elementfieldtemplate &amp;elementfieldtemplate)</argsstring>
+        <name>Elementfieldtemplate</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>elementfieldtemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="55" column="1" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a57f580e45a0f7fe42de56c0a02124f2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+        <definition>Elementfieldtemplate&amp; CMLibs::Zinc::Elementfieldtemplate::operator=</definition>
+        <argsstring>(const Elementfieldtemplate &amp;elementfieldemplate)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>elementfieldemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="59" column="22" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1aba7203e04673406470c1bc773e369b42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementfieldtemplate::~Elementfieldtemplate</definition>
+        <argsstring>()</argsstring>
+        <name>~Elementfieldtemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="68" column="1" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a6a83b57ba1810e32d3f877595d476e80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Elementfieldtemplate::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="122" column="6" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ad3054c814b81d09109d2dc370348683b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_elementfieldtemplate_id</type>
+        <definition>cmzn_elementfieldtemplate_id CMLibs::Zinc::Elementfieldtemplate::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="132" column="30" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a0e7fb4274796dc794ab022c9fe11be05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref></type>
+        <definition>Elementbasis CMLibs::Zinc::Elementfieldtemplate::getElementbasis</definition>
+        <argsstring>() const</argsstring>
+        <name>getElementbasis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the element basis used by this element field template.</para>
+<para><simplesect kind="return"><para>Handle to element basis, or NULL/invalid handle if failed.</para>
+</simplesect>
+The parameter mapping mode or INVALID on error. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="144" column="14" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a50c4aaffea062e5b2a5dc2ef40d48f2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::getFunctionNumberOfTerms</definition>
+        <argsstring>(int functionNumber) const</argsstring>
+        <name>getFunctionNumberOfTerms</name>
+        <param>
+          <type>int</type>
+          <declname>functionNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of terms that are summed to give the element parameter weighting the given function number.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis function number from 1 to number of functions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of terms &gt;= 0, or -1 if invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="156" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a95fe42af36bc45b55ed6954fff92ee06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::setFunctionNumberOfTerms</definition>
+        <argsstring>(int functionNumber, int newNumberOfTerms)</argsstring>
+        <name>setFunctionNumberOfTerms</name>
+        <param>
+          <type>int</type>
+          <declname>functionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newNumberOfTerms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of terms that are summed to give the element parameter weighting the given basis function number. Currently only supported for node mapping - other parameter mapping modes are fixed at 1 term. If reducing number, existing mappings for higher terms are discarded. If increasing number, new mappings must be completely specified by subsequent calls; new mappings are unscaled by default.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis function number from 1 to number of functions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newNumberOfTerms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New number of terms to be summed, &gt;= 0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise an error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="173" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1af6c4ab68c6dde51756007014e154cac2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::getNumberOfFunctions</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfFunctions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of basis functions in the element basis used by the template.</para>
+<para><simplesect kind="return"><para>The number of basis functions, 0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="183" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a79d6a734d55fe237c6dc55e49800bb39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::getNumberOfLocalNodes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfLocalNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of local nodes this element field template uses.</para>
+<para><simplesect kind="return"><para>The number of local nodes, or 0 if not node parameter mapping. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="193" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a2d7f207a86906347cd7fe1052d0e4359" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::setNumberOfLocalNodes</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setNumberOfLocalNodes</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of local nodes this element field template uses. If reducing number, template is only valid once all indexes are in the range [1..number]. Only valid in node mapping mode.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of local nodes to set, &gt; 0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise an error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="206" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a4a83c82738a17d1204fffcf00d667d59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::getNumberOfLocalScaleFactors</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfLocalScaleFactors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of local scale factors this element field template uses.</para>
+<para><simplesect kind="return"><para>The number of local scale factors, 0 if none or error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="216" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a254d9036f0b05031a91c8906397ce219" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::setNumberOfLocalScaleFactors</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setNumberOfLocalScaleFactors</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of local scale factors this element field template uses. If reducing number, template is only valid once all indexes are in the range [1..number]. Only valid in node mapping mode. New local scale factors default to type LOCAL_GENERAL, version 1.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of local scale factors to set, &gt;= 0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise an error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="230" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ad768f4b7f0110b68e873031359c4af33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39" kindref="member">ParameterMappingMode</ref></type>
+        <definition>ParameterMappingMode CMLibs::Zinc::Elementfieldtemplate::getParameterMappingMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getParameterMappingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the parameter mapping mode used for all parameters in the template.</para>
+<para><simplesect kind="return"><para>The parameter mapping mode or INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="240" column="22" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ae454e98adf366e1e5edc33552c43aa78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::setParameterMappingMode</definition>
+        <argsstring>(ParameterMappingMode mode)</argsstring>
+        <name>setParameterMappingMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39" kindref="member">ParameterMappingMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the parameter mapping mode used for all parameters in the template. A current restriction is that all parameters are mapped by NODE, ELEMENT or FIELD. Note this resets the mapping to the default for the given mapping mode: one term per basis function with no scaling hence should be the first setting changed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameter mapping mode to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise an error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="256" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="256" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a43a396ee43b7de0235ab646876c9e2d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::getScaleFactorIdentifier</definition>
+        <argsstring>(int localScaleFactorIndex) const</argsstring>
+        <name>getScaleFactorIdentifier</name>
+        <param>
+          <type>int</type>
+          <declname>localScaleFactorIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the identifier of the scale factor mapped to the local scale factor index. Used to match common scale factors between elements and fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>localScaleFactorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local scale factor index from 1 to number of local scale factors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The element scale factor identifier &gt;= 0, or -1 if invalid or error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="271" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a53ab283af2643243b5250cbc05f8c461" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::setScaleFactorIdentifier</definition>
+        <argsstring>(int localScaleFactorIndex, int identifier)</argsstring>
+        <name>setScaleFactorIdentifier</name>
+        <param>
+          <type>int</type>
+          <declname>localScaleFactorIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>identifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the identifier of the scale factor mapped to the local scale factor index. Used to match common scale factors between elements and fields. Global scale factors are matched by type and as appropriate global node/element and local or global scale factor identifier. For each global scale factor type, the identifier is globally unique. For each node-based scale factor type, the identifier is unique at each node. For each element-based scale factor, only the special identifier 0 is currently permitted, and scale factors are private to each element and element field template. To tie node-based scale factor identifiers to node value labels/derivatives, the recommended convention is to use an identifier matching the numerical value of the node value label enumeration, and for each distinct version of the scale factor, add 100 times the version number (to allow for new node value labels in future). New scale factors default to ELEMENT GENERAL type with identifier 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>localScaleFactorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local scale factor index from 1 to number of local scale factors. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier &gt;= 0. Special value 0 is only permitted for element type scale factors, but this is not checked until final validation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise an error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="300" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="300" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a031c987decf7587f7b7db9f9c66bcfcd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302" kindref="member">ScaleFactorType</ref></type>
+        <definition>ScaleFactorType CMLibs::Zinc::Elementfieldtemplate::getScaleFactorType</definition>
+        <argsstring>(int localScaleFactorIndex) const</argsstring>
+        <name>getScaleFactorType</name>
+        <param>
+          <type>int</type>
+          <declname>localScaleFactorIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the type of scale factor mapped to the local scale factor index. Used to match common scale factors between elements and fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>localScaleFactorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local scale factor index from 1 to number of local scale factors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The element scale factor type, or INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="313" column="17" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="313" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1aaa8bb02b8783eb38d29c7d5ae8fbd593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::setScaleFactorType</definition>
+        <argsstring>(int localScaleFactorIndex, ScaleFactorType type)</argsstring>
+        <name>setScaleFactorType</name>
+        <param>
+          <type>int</type>
+          <declname>localScaleFactorIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302" kindref="member">ScaleFactorType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the type of scale factor mapped to the local scale factor index. Used to match common scale factors between elements and fields. Global scale factors are matched by type and as appropriate global node/element and local or global scale factor identifier. New scale factors default to ELEMENT GENERAL type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>localScaleFactorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local scale factor index from 1 to number of local scale factors. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element scale factor type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise an error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="331" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="331" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1acf0b3c499b6f25ae33c61834d169c688" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::getTermLocalNodeIndex</definition>
+        <argsstring>(int functionNumber, int term) const</argsstring>
+        <name>getTermLocalNodeIndex</name>
+        <param>
+          <type>int</type>
+          <declname>functionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the local node index from which a node parameter is extracted for the given term for the function number. For parameter mapping mode NODE only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis function number from 1 to number of functions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term number, from 1 to function number of terms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The local node index from 1 to number of local nodes, or 0 if invalid or error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="346" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="346" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a267b03e44b243fc5d2f4d2acb6de3ea4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" kindref="member">Node::ValueLabel</ref></type>
+        <definition>Node::ValueLabel CMLibs::Zinc::Elementfieldtemplate::getTermNodeValueLabel</definition>
+        <argsstring>(int functionNumber, int term) const</argsstring>
+        <name>getTermNodeValueLabel</name>
+        <param>
+          <type>int</type>
+          <declname>functionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the node parameter value label mapped to the given term for the function number. For parameter mapping mode NODE only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis function number from 1 to number of functions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term number, from 1 to function number of terms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The node value label, or INVALID if invalid or error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="359" column="18" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="359" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a457ec782f71aa9b13ce0b4b3bde2e252" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::getTermNodeVersion</definition>
+        <argsstring>(int functionNumber, int term) const</argsstring>
+        <name>getTermNodeVersion</name>
+        <param>
+          <type>int</type>
+          <declname>functionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the node parameter version mapped to the given term for the function number. For parameter mapping mode NODE only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis function number from 1 to number of functions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term number, from 1 to function number of terms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The node parameter version &gt;= 1, or 0 if invalid or error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="372" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="372" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ab2b3ec7703b9042fc8bdf925735caacf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::setTermNodeParameter</definition>
+        <argsstring>(int functionNumber, int term, int localNodeIndex, Node::ValueLabel nodeValueLabel, int version)</argsstring>
+        <name>setTermNodeParameter</name>
+        <param>
+          <type>int</type>
+          <declname>functionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>localNodeIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" kindref="member">Node::ValueLabel</ref></type>
+          <declname>nodeValueLabel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the node parameter mapped to the given term for the function number, via the local node index, node value label and node parameter version. For parameter mapping mode NODE only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis function number from 1 to number of functions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term number, from 1 to function number of terms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>localNodeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local node index from 1 to number of local nodes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeValueLabel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node parameter value label. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node parameter version &gt;= 1. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise an error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="389" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="389" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a583ff3e2e8f42b83266d4ac9703c7fb4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::getTermScaling</definition>
+        <argsstring>(int functionNumber, int term, int indexesCount, int *indexesOut) const</argsstring>
+        <name>getTermScaling</name>
+        <param>
+          <type>int</type>
+          <declname>functionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indexesCount</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indexesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number and local indexes of scale factors multiplying the given term for the function number. For parameter mapping mode NODE only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis function number from 1 to number of functions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term number, from 1 to function number of terms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the indexes array; can be more or less than the number of indexes in use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to store indexesCount indexes. Can be NULL if indexesCount is zero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The actual number of scaling indexes &gt;= 0 for term, or -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="407" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="407" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1af7d0a1267cad2b1cf004f2c143acffeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementfieldtemplate::setTermScaling</definition>
+        <argsstring>(int functionNumber, int term, int indexesCount, const int *indexesIn)</argsstring>
+        <name>setTermScaling</name>
+        <param>
+          <type>int</type>
+          <declname>functionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indexesCount</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>indexesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set scaling of the function term by the product of scale factors at the given local scale factor indexes. Must have set positive number of local scale factors before calling. For parameter mapping mode NODE only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis function number from 1 to number of functions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term number, from 1 to function number of terms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the indexes array; can be more or less than the number of indexes in use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of indexesCount indexes, each from 1 to number of local scale factors. Can be NULL if indexesCount is zero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, otherwise an error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="426" column="5" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="426" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a8dda5b5fd2c3b62c8351dab849d3a570" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Elementfieldtemplate::validate</definition>
+        <argsstring>()</argsstring>
+        <name>validate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query whether element field template passes validation. Failure typically results from local node or scale factor indexes being out of range, or use of combinations of values that are not supported, e.g. scale factor identifiers have various restrictions for each type. Refer to the respective API help to determine what is valid. Validation errors are sent to the logger; clients may either inspect logger output or query template to determine source of error.</para>
+<para><simplesect kind="return"><para>True if element field template passes validation, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementfieldtemplate.hpp" line="442" column="6" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="442" bodyend="445"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A template defining field parameter mapping and interpolation over an element chart. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A template defining parameter mapping and interpolation for a scalar quantity over an element chart, to apply to field components across elements of a mesh. Consists of an element basis, plus how to evaluate the parameter multiplying each function in the basis. The element parameter for each basis function is defined as a sum of zero or more terms, with each term multiplied by zero or more scale factors given by their local indexes. Depending on the parameter mapping mode, the terms map node parameters, element parameters or spatially constant field parameters. For node parameters each term extracts a node value/derivative version for a local node. When used on the mesh, a local-to-global node map for this template is applied to give different parameters for each element field component, and element scale factors are similarly indexed for each element. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/elementfieldtemplate.hpp" line="40" column="1" bodyfile="auto_comments_output/elementfieldtemplate.hpp" bodystart="39" bodyend="447"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a02dbef8e76e311c2c9abdee7a6f27dbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>Elementfieldtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a4fedcd244da89821ffff912442e7381c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>Elementfieldtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a9f755361fff6c0add2ed5fc7ef601557" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>Elementfieldtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a0e7fb4274796dc794ab022c9fe11be05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getElementbasis</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a50c4aaffea062e5b2a5dc2ef40d48f2a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getFunctionNumberOfTerms</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ad3054c814b81d09109d2dc370348683b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1af6c4ab68c6dde51756007014e154cac2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getNumberOfFunctions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a79d6a734d55fe237c6dc55e49800bb39" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getNumberOfLocalNodes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a4a83c82738a17d1204fffcf00d667d59" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getNumberOfLocalScaleFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ad768f4b7f0110b68e873031359c4af33" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getParameterMappingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a43a396ee43b7de0235ab646876c9e2d1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getScaleFactorIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a031c987decf7587f7b7db9f9c66bcfcd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getScaleFactorType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1acf0b3c499b6f25ae33c61834d169c688" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getTermLocalNodeIndex</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a267b03e44b243fc5d2f4d2acb6de3ea4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getTermNodeValueLabel</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a457ec782f71aa9b13ce0b4b3bde2e252" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getTermNodeVersion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a583ff3e2e8f42b83266d4ac9703c7fb4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>getTermScaling</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a663f39ad5cb2af5d25d0b6400a12d692" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a6a83b57ba1810e32d3f877595d476e80" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a57f580e45a0f7fe42de56c0a02124f2b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39acdc620c1b3753223a4fd06f4a90d11bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>PARAMETER_MAPPING_MODE_ELEMENT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39add61a12f43a177b335a51f8e5df7b0e8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>PARAMETER_MAPPING_MODE_FIELD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39a94ba93aa207ab19bae49a6846d764ead" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>PARAMETER_MAPPING_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39adf49596da5372e07969216a4aaebae76" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>PARAMETER_MAPPING_MODE_NODE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a12edb06b7d19edaacdcff1a42fde0b39" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>ParameterMappingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a179d2a0dea2d179c03932b6b387c9b4e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>SCALE_FACTOR_TYPE_ELEMENT_GENERAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302aba266086026385acd7642882b2464a2e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>SCALE_FACTOR_TYPE_ELEMENT_PATCH</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a28a1dc521a496c61564c20cd33454a41" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>SCALE_FACTOR_TYPE_GLOBAL_GENERAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a3b95639ec890f99a1d166895c7054135" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>SCALE_FACTOR_TYPE_GLOBAL_PATCH</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302ac05ae452de2f1fd8676a6128e76e2273" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>SCALE_FACTOR_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a3251db73475a4c5f262e77786a3b7465" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>SCALE_FACTOR_TYPE_NODE_GENERAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302a1a1a507c72f3687b60b05f1cc870ced0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>SCALE_FACTOR_TYPE_NODE_PATCH</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a1b386fc5023e3ceafb2f2e7a64948302" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>ScaleFactorType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a95fe42af36bc45b55ed6954fff92ee06" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>setFunctionNumberOfTerms</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a2d7f207a86906347cd7fe1052d0e4359" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>setNumberOfLocalNodes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a254d9036f0b05031a91c8906397ce219" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>setNumberOfLocalScaleFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ae454e98adf366e1e5edc33552c43aa78" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>setParameterMappingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a53ab283af2643243b5250cbc05f8c461" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>setScaleFactorIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1aaa8bb02b8783eb38d29c7d5ae8fbd593" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>setScaleFactorType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ab2b3ec7703b9042fc8bdf925735caacf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>setTermNodeParameter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1af7d0a1267cad2b1cf004f2c143acffeb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>setTermScaling</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1a8dda5b5fd2c3b62c8351dab849d3a570" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>validate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1aba7203e04673406470c1bc773e369b42" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementfieldtemplate</scope><name>~Elementfieldtemplate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

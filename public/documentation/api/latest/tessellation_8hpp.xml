@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="tessellation_8hpp" kind="file" language="C++">
+    <compoundname>tessellation.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/tessellation.h</includes>
+    <includes local="yes">cmlibs/zinc/context.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>cmlibs/zinc/tessellation.h</label>
+      </node>
+      <node id="1">
+        <label>auto_comments_output/tessellation.hpp</label>
+        <link refid="tessellation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cmlibs/zinc/context.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellation" prot="public">CMLibs::Zinc::Tessellation</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" prot="public">CMLibs::Zinc::Tessellationiterator</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" prot="public">CMLibs::Zinc::Tessellationmodule</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" prot="public">CMLibs::Zinc::Tessellationmoduleevent</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" prot="public">CMLibs::Zinc::Tessellationmodulecallback</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" prot="public">CMLibs::Zinc::Tessellationmodulenotifier</innerclass>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_TESSELLATION_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_TESSELLATION_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/tessellation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/context.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Tessellationmodulenotifier;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classCMLibs_1_1Zinc_1_1Tessellation" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellation_id<sp/>id;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>(cmzn_tessellation_id<sp/>in_tessellation_id)<sp/>:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_tessellation_id)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>&amp;<sp/>tessellation)<sp/>:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_tessellation_access(tessellation.id))</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>&amp;<sp/>tessellation)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellation_id<sp/>temp_id<sp/>=<sp/>cmzn_tessellation_access(tessellation.id);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellation_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>()</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellation_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622" kindref="member">ChangeFlag</ref></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a9f3711ea5c580813dd24618cc1dad92f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a9f3711ea5c580813dd24618cc1dad92f" kindref="member">CHANGE_FLAG_NONE</ref><sp/>=<sp/>CMZN_TESSELLATION_CHANGE_FLAG_NONE,</highlight></codeline>
+<codeline lineno="76" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a5301956205778ec533e8193c6dabb760" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a5301956205778ec533e8193c6dabb760" kindref="member">CHANGE_FLAG_ADD</ref><sp/>=<sp/>CMZN_TESSELLATION_CHANGE_FLAG_ADD,</highlight></codeline>
+<codeline lineno="78" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a14afcdc65f5679241df77aa14de7bf6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a14afcdc65f5679241df77aa14de7bf6d" kindref="member">CHANGE_FLAG_REMOVE</ref><sp/>=<sp/>CMZN_TESSELLATION_CHANGE_FLAG_REMOVE,</highlight></codeline>
+<codeline lineno="80" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a1f426286a4160b23f7d6c08b0b071291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a1f426286a4160b23f7d6c08b0b071291" kindref="member">CHANGE_FLAG_IDENTIFIER</ref><sp/>=<sp/>CMZN_TESSELLATION_CHANGE_FLAG_IDENTIFIER,</highlight></codeline>
+<codeline lineno="82" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622ac949fb03acbfb03b238c0fc6c332a1ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622ac949fb03acbfb03b238c0fc6c332a1ae" kindref="member">CHANGE_FLAG_DEFINITION</ref><sp/>=<sp/>CMZN_TESSELLATION_CHANGE_FLAG_DEFINITION,</highlight></codeline>
+<codeline lineno="84" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a686d2c0daf895a79c33df10c0e980473" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622a686d2c0daf895a79c33df10c0e980473" kindref="member">CHANGE_FLAG_FULL_RESULT</ref><sp/>=<sp/>CMZN_TESSELLATION_CHANGE_FLAG_FULL_RESULT,</highlight></codeline>
+<codeline lineno="86" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622afda44665016d2d315a932632294e41d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6c065b1d89d09ad7415400929f66c622afda44665016d2d315a932632294e41d5" kindref="member">CHANGE_FLAG_FINAL</ref><sp/>=<sp/>CMZN_TESSELLATION_CHANGE_FLAG_FINAL</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6fc972e044ee184f481ca8c1cab5ae4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6fc972e044ee184f481ca8c1cab5ae4a" kindref="member">ChangeFlags</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a384df11118a1bc05996feea1d02beebe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a384df11118a1bc05996feea1d02beebe" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="103"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a2b69f48449eedcdd6fa9a7b6f4b6eef3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellation_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a2b69f48449eedcdd6fa9a7b6f4b6eef3" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="113"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a10a11c916071e353a6e90de2a37b9574" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a10a11c916071e353a6e90de2a37b9574" kindref="member">isManaged</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_is_managed(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a1c3e14d9975d393c67ccc65e56ae140f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a1c3e14d9975d393c67ccc65e56ae140f" kindref="member">setManaged</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_set_managed(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a47b6ff61a7eb60fb2d03d53cc9d4c80b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a47b6ff61a7eb60fb2d03d53cc9d4c80b" kindref="member">getCircleDivisions</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="153"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_get_circle_divisions(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classCMLibs_1_1Zinc_1_1Tessellation_1ac1daed2c74ce68de6d2ace0c9eb184a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1ac1daed2c74ce68de6d2ace0c9eb184a4" kindref="member">setCircleDivisions</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>circleDivisions)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_set_circle_divisions(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>circleDivisions);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a4f6754d3c901737def17cd047b0512c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a4f6754d3c901737def17cd047b0512c9" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="178"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_get_name(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a5e53f902239e7708179e1ca852469be7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a5e53f902239e7708179e1ca852469be7" kindref="member">setName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_set_name(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>name);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="classCMLibs_1_1Zinc_1_1Tessellation_1adafa72d7dec716d4b648262c71dc46b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1adafa72d7dec716d4b648262c71dc46b5" kindref="member">getMinimumDivisions</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valuesCount,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*valuesOut)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="208"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_get_minimum_divisions(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>valuesCount,<sp/>valuesOut);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="classCMLibs_1_1Zinc_1_1Tessellation_1ad1f8c169ea1fea3d3110d8f6f774bdf1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1ad1f8c169ea1fea3d3110d8f6f774bdf1" kindref="member">setMinimumDivisions</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valuesCount,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*valuesIn)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_set_minimum_divisions(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>valuesCount,<sp/>valuesIn);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="classCMLibs_1_1Zinc_1_1Tessellation_1a9d5712e3ec96e729bf31cf8f10e2cee5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a9d5712e3ec96e729bf31cf8f10e2cee5" kindref="member">getRefinementFactors</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valuesCount,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*valuesOut)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="243"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_get_refinement_factors(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>valuesCount,<sp/>valuesOut);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264" refid="classCMLibs_1_1Zinc_1_1Tessellation_1ab32b1bdebb9c0484e74350a0e4da6547" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1ab32b1bdebb9c0484e74350a0e4da6547" kindref="member">setRefinementFactors</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valuesCount,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*valuesIn)</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellation_set_refinement_factors(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>valuesCount,<sp/>valuesIn);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Tessellation&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Tessellation&amp;<sp/>b)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.getId()<sp/>==<sp/>b.getId();</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellationiterator_id<sp/>id;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref>(cmzn_tessellationiterator_id<sp/>iterator_id)<sp/>:</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(iterator_id)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref>&amp;<sp/>tessellationiterator)<sp/>:</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_tessellationiterator_access(tessellationiterator.id))</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref>&amp;<sp/>tessellationiterator)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationiterator_id<sp/>temp_id<sp/>=<sp/>cmzn_tessellationiterator_access(tessellationiterator.id);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationiterator_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref>()</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationiterator_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="classCMLibs_1_1Zinc_1_1Tessellationiterator_1ab1f0a914ebcb3af20b9f4267bd707999" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator_1ab1f0a914ebcb3af20b9f4267bd707999" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="329"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="classCMLibs_1_1Zinc_1_1Tessellationiterator_1ab32007dfbca0eaf65d0e9ecd58553b16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator_1ab32007dfbca0eaf65d0e9ecd58553b16" kindref="member">next</ref>()</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>(cmzn_tessellationiterator_next(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref></highlight></codeline>
+<codeline lineno="355"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellationmodule_id<sp/>id;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>(cmzn_tessellationmodule_id<sp/>in_tessellationmodule_id)<sp/>:</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_tessellationmodule_id)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>&amp;<sp/>tessellationModule)<sp/>:</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_tessellationmodule_access(tessellationModule.id))</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>&amp;<sp/>tessellationModule)</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmodule_id<sp/>temp_id<sp/>=<sp/>cmzn_tessellationmodule_access(</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessellationModule.id);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmodule_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>()</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmodule_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1aff3661163dbb9d250c61fb5a9b58e01b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1aff3661163dbb9d250c61fb5a9b58e01b" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="399"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a541c31d4a5f84326fdff7e3932c8f619" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellationmodule_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a541c31d4a5f84326fdff7e3932c8f619" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="409"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1ae48c9bb74c693bbdbec9c644000ca666" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1ae48c9bb74c693bbdbec9c644000ca666" kindref="member">createTessellation</ref>()</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>(cmzn_tessellationmodule_create_tessellation(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a50efd0a789760a5564e6d940797c4261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a50efd0a789760a5564e6d940797c4261" kindref="member">createTessellationiterator</ref>()</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationiterator" kindref="compound">Tessellationiterator</ref>(cmzn_tessellationmodule_create_tessellationiterator(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1af6483afbcde7407055763e313322489b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1af6483afbcde7407055763e313322489b" kindref="member">findTessellationByName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="448"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>(cmzn_tessellationmodule_find_tessellation_by_name(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>name));</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a5ba709f5b0f40bd1f90ddb4e1a161eb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a5ba709f5b0f40bd1f90ddb4e1a161eb4" kindref="member">beginChange</ref>()</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmodule_begin_change(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a555f100ae15d6e5e8018eb84deddda84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a555f100ae15d6e5e8018eb84deddda84" kindref="member">endChange</ref>()</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmodule_end_change(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a16f4fb3d58bd007e2ef0bfe11ca5074e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a16f4fb3d58bd007e2ef0bfe11ca5074e" kindref="member">getDefaultTessellation</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="489"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>(cmzn_tessellationmodule_get_default_tessellation(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a31fb1cef2f62bda07dcd340c9ea5c160" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a31fb1cef2f62bda07dcd340c9ea5c160" kindref="member">setDefaultTessellation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>&amp;<sp/>tessellation)</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmodule_set_default_tessellation(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>tessellation.<ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a2b69f48449eedcdd6fa9a7b6f4b6eef3" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a6450cb8535174bb0a572e7c74d5680e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a6450cb8535174bb0a572e7c74d5680e8" kindref="member">getDefaultPointsTessellation</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="515"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>(cmzn_tessellationmodule_get_default_points_tessellation(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1ac19018b04d8bdcd567ed322cad8c9dad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1ac19018b04d8bdcd567ed322cad8c9dad" kindref="member">setDefaultPointsTessellation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>&amp;<sp/>tessellation)</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmodule_set_default_points_tessellation(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>tessellation.<ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a2b69f48449eedcdd6fa9a7b6f4b6eef3" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a84c0f6c256a0a6e9dd3d83ab3cc1aa71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a84c0f6c256a0a6e9dd3d83ab3cc1aa71" kindref="member">readDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*description)</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmodule_read_description(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>description);</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1af559fa9c7e0e9ed8da193e00c3e757c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1af559fa9c7e0e9ed8da193e00c3e757c8" kindref="member">writeDescription</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="550"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmodule_write_description(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a995672f3536a72ae465c269493bcd176" kindref="member">createTessellationmodulenotifier</ref>();</highlight></codeline>
+<codeline lineno="561"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570" refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref></highlight></codeline>
+<codeline lineno="571"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellationmoduleevent_id<sp/>id;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref>(cmzn_tessellationmoduleevent_id<sp/>in_tessellationmodule_event_id)<sp/>:</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_tessellationmodule_event_id)</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref>&amp;<sp/>tessellationmoduleEvent)<sp/>:</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_tessellationmoduleevent_access(tessellationmoduleEvent.id))</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref>&amp;<sp/>tessellationmoduleEvent)</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmoduleevent_id<sp/>temp_id<sp/>=<sp/>cmzn_tessellationmoduleevent_access(tessellationmoduleEvent.id);</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmoduleevent_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref>()</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmoduleevent_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611" refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a76209e6927fa3b1c16727153d1ad9268" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a76209e6927fa3b1c16727153d1ad9268" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="612"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="621" refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a0a2b388c5d97b22669f5dcef18760adf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellationmoduleevent_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a0a2b388c5d97b22669f5dcef18760adf" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="622"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="635" refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1acf922e8505f07c623577a00900288a91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6fc972e044ee184f481ca8c1cab5ae4a" kindref="member">Tessellation::ChangeFlags</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1acf922e8505f07c623577a00900288a91" kindref="member">getTessellationChangeFlags</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation" kindref="compound">Tessellation</ref>&amp;<sp/>tessellation)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="636"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmoduleevent_get_tessellation_change_flags(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>tessellation.<ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a2b69f48449eedcdd6fa9a7b6f4b6eef3" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="647" refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a432c3759d3e2291e04f8df217ff56dc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellation_1a6fc972e044ee184f481ca8c1cab5ae4a" kindref="member">Tessellation::ChangeFlags</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent_1a432c3759d3e2291e04f8df217ff56dc9" kindref="member">getSummaryTessellationChangeFlags</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="648"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmoduleevent_get_summary_tessellation_change_flags(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight></codeline>
+<codeline lineno="662" refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref></highlight></codeline>
+<codeline lineno="663"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>;</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref>&amp;);<sp/></highlight><highlight class="comment">//<sp/>not<sp/>implemented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref>&amp;);<sp/></highlight><highlight class="comment">//<sp/>not<sp/>implemented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>C_callback(cmzn_tessellationmoduleevent_id<sp/>tessellationmoduleevent_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*callbackVoid)</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref><sp/>tessellationmoduleevent(cmzn_tessellationmoduleevent_access(tessellationmoduleevent_id));</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref><sp/>*callback<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(callbackVoid);</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*callback)(tessellationmoduleevent);</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"></highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref><sp/>&amp;tessellationmoduleevent)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref>()</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"></highlight></codeline>
+<codeline lineno="682"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref>()</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="685"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"></highlight></codeline>
+<codeline lineno="692" refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref></highlight></codeline>
+<codeline lineno="693"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellationmodulenotifier_id<sp/>id;</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>(cmzn_tessellationmodulenotifier_id<sp/>in_tessellationmodulenotifier_id)<sp/>:</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(in_tessellationmodulenotifier_id)</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>&amp;<sp/>tessellationmoduleNotifier)<sp/>:</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_tessellationmodulenotifier_access(tessellationmoduleNotifier.id))</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>&amp;<sp/>tessellationmoduleNotifier)</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmodulenotifier_id<sp/>temp_id<sp/>=<sp/>cmzn_tessellationmodulenotifier_access(tessellationmoduleNotifier.id);</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmodulenotifier_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"></highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>()</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_tessellationmodulenotifier_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"></highlight></codeline>
+<codeline lineno="735" refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1ae009c9317d1dd75e46c328e65eb8c25a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1ae009c9317d1dd75e46c328e65eb8c25a" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="736"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight></codeline>
+<codeline lineno="745" refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1a28a40ca415f653981f1af3188bf19ae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_tessellationmodulenotifier_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1a28a40ca415f653981f1af3188bf19ae6" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="746"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"></highlight></codeline>
+<codeline lineno="760" refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1aeb3fd32c7c0e09ea78f2ae26e5de52bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1aeb3fd32c7c0e09ea78f2ae26e5de52bf" kindref="member">setCallback</ref>(<ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref>&amp;<sp/>callback)</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmodulenotifier_set_callback(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>callback.C_callback,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;callback));</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight></codeline>
+<codeline lineno="771" refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1acb36968b50087941e7a684644312a686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1acb36968b50087941e7a684644312a686" kindref="member">clearCallback</ref>()</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_tessellationmodulenotifier_clear_callback(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="775"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"></highlight></codeline>
+<codeline lineno="777" refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a995672f3536a72ae465c269493bcd176" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule_1a995672f3536a72ae465c269493bcd176" kindref="member">Tessellationmodule::createTessellationmodulenotifier</ref>()</highlight></codeline>
+<codeline lineno="778"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier" kindref="compound">Tessellationmodulenotifier</ref>(cmzn_tessellationmodule_create_tessellationmodulenotifier(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="780"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"></highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight></codeline>
+<codeline lineno="783" refid="classCMLibs_1_1Zinc_1_1Context_1afb3163301287667e8b3905cc1c8e3aed" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Context_1afb3163301287667e8b3905cc1c8e3aed" kindref="member">Context::getTessellationmodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="784"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>(cmzn_context_get_tessellationmodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="786"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"></highlight></codeline>
+<codeline lineno="788"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight></codeline>
+<codeline lineno="791"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/tessellation.hpp"/>
+  </compounddef>
+</doxygen>

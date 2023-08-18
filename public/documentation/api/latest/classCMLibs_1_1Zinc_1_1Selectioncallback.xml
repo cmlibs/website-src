@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Selectioncallback" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CMLibs::Zinc::Selectioncallback</compoundname>
+    <includes refid="selection_8hpp" local="no">selection.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCMLibs_1_1Zinc_1_1Selectioncallback_1a44d5bdb93a24e25824612ea46749ca0b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Selectionnotifier</definition>
+        <argsstring></argsstring>
+        <name>Selectionnotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/selection.hpp" line="129" column="1" bodyfile="auto_comments_output/selection.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Selectioncallback_1a7df089e1d19f13d09d7573d9373433f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Selectioncallback::Selectioncallback</definition>
+        <argsstring>(const Selectioncallback &amp;)</argsstring>
+        <name>Selectioncallback</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Selectioncallback" kindref="compound">Selectioncallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/selection.hpp" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Selectioncallback_1ae7da9b4e71521827c09f231f406403a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Selectioncallback" kindref="compound">Selectioncallback</ref> &amp;</type>
+        <definition>Selectioncallback&amp; CMLibs::Zinc::Selectioncallback::operator=</definition>
+        <argsstring>(const Selectioncallback &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Selectioncallback" kindref="compound">Selectioncallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/selection.hpp" line="132" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Selectioncallback_1a26e44c75f9b5c6efbde7df103ff00ee3" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CMLibs::Zinc::Selectioncallback::operator()</definition>
+        <argsstring>(const Selectionevent &amp;selectionevent)=0</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Selectionevent" kindref="compound">Selectionevent</ref> &amp;</type>
+          <declname>selectionevent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/selection.hpp" line="141" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Selectioncallback_1a2f410a08e9c320e9d11102396db1406c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CMLibs::Zinc::Selectioncallback::C_callback</definition>
+        <argsstring>(cmzn_selectionevent_id selectionevent_id, void *callbackVoid)</argsstring>
+        <name>C_callback</name>
+        <param>
+          <type>cmzn_selectionevent_id</type>
+          <declname>selectionevent_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callbackVoid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/selection.hpp" line="134" column="13" bodyfile="auto_comments_output/selection.hpp" bodystart="134" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Selectioncallback_1a4743891bae840c762b61dd70b8c3aeb3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Selectioncallback::Selectioncallback</definition>
+        <argsstring>()</argsstring>
+        <name>Selectioncallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/selection.hpp" line="144" column="1" bodyfile="auto_comments_output/selection.hpp" bodystart="144" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Selectioncallback_1a966a19d680c8ea4f2f9fffed1cbd65c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CMLibs::Zinc::Selectioncallback::~Selectioncallback</definition>
+        <argsstring>()</argsstring>
+        <name>~Selectioncallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/selection.hpp" line="148" column="9" bodyfile="auto_comments_output/selection.hpp" bodystart="148" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class functor for Selection notifier callbacks: </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class functor for Selection notifier callbacks:<itemizedlist>
+<listitem><para>Derive from this class adding any user data required.</para>
+</listitem><listitem><para>Implement virtual operator()(const Selectionevent&amp;) to handle callback. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Selectionnotifier_1a059acb20f3745e6114cc4d69de759564" kindref="member">Selectionnotifier::setCallback()</ref> </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/selection.hpp" line="128" column="1" bodyfile="auto_comments_output/selection.hpp" bodystart="127" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Selectioncallback_1a2f410a08e9c320e9d11102396db1406c" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Selectioncallback</scope><name>C_callback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Selectioncallback_1a26e44c75f9b5c6efbde7df103ff00ee3" prot="private" virt="pure-virtual"><scope>CMLibs::Zinc::Selectioncallback</scope><name>operator()</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Selectioncallback_1ae7da9b4e71521827c09f231f406403a6" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Selectioncallback</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Selectioncallback_1a7df089e1d19f13d09d7573d9373433f2" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Selectioncallback</scope><name>Selectioncallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Selectioncallback_1a4743891bae840c762b61dd70b8c3aeb3" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Selectioncallback</scope><name>Selectioncallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Selectioncallback_1a44d5bdb93a24e25824612ea46749ca0b" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Selectioncallback</scope><name>Selectionnotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Selectioncallback_1a966a19d680c8ea4f2f9fffed1cbd65c4" prot="public" virt="virtual"><scope>CMLibs::Zinc::Selectioncallback</scope><name>~Selectioncallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

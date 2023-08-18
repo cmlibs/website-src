@@ -1,0 +1,1575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1FieldImage" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::FieldImage</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Field" prot="public" virt="non-virtual">CMLibs::Zinc::Field</basecompoundref>
+    <includes refid="fieldimage_8hpp" local="no">fieldimage.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CombineMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa1abb2099a277470b627c04e8bd39d9b0" prot="public">
+          <name>COMBINE_MODE_INVALID</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified combine mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa42eb22bd8fbd77a59d6d9829ef00a8f2" prot="public">
+          <name>COMBINE_MODE_BLEND</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_BLEND</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Blending the material and texture colour Cv = (1 - Ct) * Cf Av = At * Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa798991ac7f0dc437c2659fb6a74ee125" prot="public">
+          <name>COMBINE_MODE_DECAL</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_DECAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default combine mode, uses the image&apos;s alpha value to determine how the material colour is to combine with the texture colour. <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> alpha value will be used as the resulting alpha. Cv = (1 - At) *Ct + At * C Av = Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa7a6d6f6d4bc0fd2f31b36a14b019a9bd" prot="public">
+          <name>COMBINE_MODE_MODULATE</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_MODULATE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Colour will be the product of texture and material colour. Alpha will be the product of texture and material alph. Cv = Ct * Cf Av = At * Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa32f0920758d75b6b9bf58992d9d73b19" prot="public">
+          <name>COMBINE_MODE_ADD</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_ADD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Colour will be the sum of texture and material colour. Alpha will be the sum of texture and material alph. Cv = Ct + Cf Av = At + Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa418f608804bd9c0d2b3c6c36779c17e0" prot="public">
+          <name>COMBINE_MODE_ADD_SIGNED</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_ADD_SIGNED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Add the value and subtract 0.5 so the texture value effectively ranges from -0.5 to 0.5 Cv = Ct + Cf - 0.5 Av = At + Af - 0.5 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa4d4f643797d66f18122f5242a1284e9b" prot="public">
+          <name>COMBINE_MODE_MODULATE_SCALE_4</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_MODULATE_SCALE_4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Multiply and then scale by 4, so that we can scale down or up. Cv = (Ct * Cf) * 4 Av = At * Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa7fd30ba6e9c68a2fa8458fd21e7cd80b" prot="public">
+          <name>COMBINE_MODE_BLEND_SCALE_4</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_BLEND_SCALE_4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Same as blend with a 4 * scaling Cv = ( (1 - Ct) * Cf ) * 4 Av = At * Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa8402b3b410a5e5ef9ae0238c887e4491" prot="public">
+          <name>COMBINE_MODE_SUBTRACT</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_SUBTRACT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Colour will be the difference of texture and material colour. Alpha will be the difference of texture and material alph. Cv = Ct - Cf Av = At - Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfad396455f063a45ef8a79514892e39b44" prot="public">
+          <name>COMBINE_MODE_ADD_SCALE_4</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_ADD_SCALE_4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Same as ADD with a 4 * scaling Cv = (Ct + Cf) * 4 Av = At + Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfafd863a52e74c1a2573caaedc626d73d2" prot="public">
+          <name>COMBINE_MODE_SUBTRACT_SCALE_4</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_SUBTRACT_SCALE_4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Same as SUBTRACT with a 4 * scaling Cv = (Ct - Cf) * 4 Av = At - Af </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa5959f045b03221070b925bfb8d2c5ea1" prot="public">
+          <name>COMBINE_MODE_INVERT_ADD_SCALE_4</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_INVERT_ADD_SCALE_4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Texture colour will be added to 1 - material colour and then multiplied by 4. Cv = ((1 - Cf) + Ct) * 4 Av = Af + At </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa27e4dcdde38017017ac28b80128d0fb2" prot="public">
+          <name>COMBINE_MODE_INVERT_SUBTRACT_SCALE_4</name>
+          <initializer>= CMZN_FIELD_IMAGE_COMBINE_MODE_INVERT_SUBTRACT_SCALE_4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Texture colour will be subtracted frim 1 - material colour then multiplied by 4. Cv = ((1 - Cf) - Ct) * 4 Av = Af - At </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Describes the blending of the texture with the texture constant colour and the underlying material/fragment colour.</para>
+<para>Ct = texture colour, Cf = material colour, Cv = colour produced At = texture alpha, Af = material alpha, alpha = colour produced </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="62" column="1" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="61" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FilterMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648ae8e88c872550aacee0dbcc7c8bd346f1" prot="public">
+          <name>FILTER_MODE_INVALID</name>
+          <initializer>= CMZN_FIELD_IMAGE_FILTER_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified filter mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648adf606bb917d52d302f8552b3bd8d258f" prot="public">
+          <name>FILTER_MODE_NEAREST</name>
+          <initializer>= CMZN_FIELD_IMAGE_FILTER_MODE_NEAREST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default combine mode, texel with coordinates nearest the centre of the pixel is used for both magnification and minification </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648acb2af230a73cd7619dabdf2eeffe89d3" prot="public">
+          <name>FILTER_MODE_LINEAR</name>
+          <initializer>= CMZN_FIELD_IMAGE_FILTER_MODE_LINEAR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A weighted linear average of the 2 x 2 arrays of texels that lie nearest to the centre of the pixel is used for both magnification and minification </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648aa52d8c944973be066ccfafb24b447bda" prot="public">
+          <name>FILTER_MODE_NEAREST_MIPMAP_NEAREST</name>
+          <initializer>= CMZN_FIELD_IMAGE_FILTER_MODE_NEAREST_MIPMAP_NEAREST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Within an individual mipmap, nearest texel value can be used using this mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648aa63ce98a4f03e973f78469662ff834c9" prot="public">
+          <name>FILTER_MODE_LINEAR_MIPMAP_NEAREST</name>
+          <initializer>= CMZN_FIELD_IMAGE_FILTER_MODE_LINEAR_MIPMAP_NEAREST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Within an individual mipmap, linearly interpolated value can be used using this mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648a06391f26edaf5147238658e332aaaa9c" prot="public">
+          <name>FILTER_MODE_LINEAR_MIPMAP_LINEAR</name>
+          <initializer>= CMZN_FIELD_IMAGE_FILTER_MODE_LINEAR_MIPMAP_LINEAR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This mode uses linear interpolation to compute the value in each of two maps and then interpolates linearly between these two values. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies how the graphics hardware rasterises the texture onto the screen, mainly its interpolation mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="143" column="1" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="142" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HardwareCompressionMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705aafd41b50ab1c6ceb4b20b96d43a1cd865" prot="public">
+          <name>HARDWARE_COMPRESSION_MODE_INVALID</name>
+          <initializer>= CMZN_FIELD_IMAGE_HARDWARE_COMPRESSION_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Uncompressed compression mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705aa240ea4cde1e6807eea6348df5281fc2a" prot="public">
+          <name>HARDWARE_COMPRESSION_MODE_UNCOMPRESSED</name>
+          <initializer>= CMZN_FIELD_IMAGE_HARDWARE_COMPRESSION_MODE_UNCOMPRESSED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No compression. The default hardware compression mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705aa652bbfa77540c4ecb3991d2ff017b7e1" prot="public">
+          <name>HARDWARE_COMPRESSION_MODE_AUTOMATIC</name>
+          <initializer>= CMZN_FIELD_IMAGE_HARDWARE_COMPRESSION_MODE_AUTOMATIC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>allow the hardware to choose the compression </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether the image is compressed when used for texturing.</para>
+<para>@future Could add hardware/driver specific compression formats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="175" column="1" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="174" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PixelFormat</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca6dcc2fd5ef764ca9ea426ba5d1c02aa2" prot="public">
+          <name>PIXEL_FORMAT_INVALID</name>
+          <initializer>= CMZN_FIELD_IMAGE_PIXEL_FORMAT_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified image pixel format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca773751ea6129e4330edc500446f85aeb" prot="public">
+          <name>PIXEL_FORMAT_LUMINANCE</name>
+          <initializer>= CMZN_FIELD_IMAGE_PIXEL_FORMAT_LUMINANCE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be single component grey scale. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca2920a68fd3296e1437315222b958aba4" prot="public">
+          <name>PIXEL_FORMAT_LUMINANCE_ALPHA</name>
+          <initializer>= CMZN_FIELD_IMAGE_PIXEL_FORMAT_LUMINANCE_ALPHA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be two components: grey scale and alpha. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7ccaede6dda01ef57a2293cd31fe8ce17f3d" prot="public">
+          <name>PIXEL_FORMAT_RGB</name>
+          <initializer>= CMZN_FIELD_IMAGE_PIXEL_FORMAT_RGB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be three components: red, green and blue. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7ccafb2f1b3babc9f2ca83b4444af5ab318a" prot="public">
+          <name>PIXEL_FORMAT_RGBA</name>
+          <initializer>= CMZN_FIELD_IMAGE_PIXEL_FORMAT_RGBA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be four components: red, green, blue and alpha. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca2769db68a13f43b5e9f4737eeeed75ad" prot="public">
+          <name>PIXEL_FORMAT_ABGR</name>
+          <initializer>= CMZN_FIELD_IMAGE_PIXEL_FORMAT_ABGR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be four components: alpha, blue, green and red. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca0302b8e8a86ae503d21ef61b0af79801" prot="public">
+          <name>PIXEL_FORMAT_BGR</name>
+          <initializer>= CMZN_FIELD_IMAGE_PIXEL_FORMAT_BGR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specify the binary data of image to be three components: blue, green and red </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional information used to describe the binary data supplied to the images. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="190" column="1" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="189" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfe" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WrapMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfea307bb8e81d144cd04de6a5fd58f8011e" prot="public">
+          <name>WRAP_MODE_INVALID</name>
+          <initializer>= CMZN_FIELD_IMAGE_WRAP_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified wrap mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfea9e54a7611062565b039673dd71cc25fa" prot="public">
+          <name>WRAP_MODE_CLAMP</name>
+          <initializer>= CMZN_FIELD_IMAGE_WRAP_MODE_CLAMP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Clamp to a blend of the pixel edge and border colour </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfeadf3fa86a7e0dca4ee850e79909ee87c8" prot="public">
+          <name>WRAP_MODE_REPEAT</name>
+          <initializer>= CMZN_FIELD_IMAGE_WRAP_MODE_REPEAT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default wrap mode. Repeat texture cylically in multiples of the texture coordinate range </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfeaae9384b4a1fe5e5c4f4514d51e281d76" prot="public">
+          <name>WRAP_MODE_EDGE_CLAMP</name>
+          <initializer>= CMZN_FIELD_IMAGE_WRAP_MODE_EDGE_CLAMP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Always ignore the border, texels at or near the edge of the texure are used for texturing </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfeaa286bc77e28b3ddf55428478b0607a30" prot="public">
+          <name>WRAP_MODE_BORDER_CLAMP</name>
+          <initializer>= CMZN_FIELD_IMAGE_WRAP_MODE_BORDER_CLAMP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Clamp to the border colour when outside the texture coordinate range. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfeaae0016b09fbc735861353bf947d99d32" prot="public">
+          <name>WRAP_MODE_MIRROR_REPEAT</name>
+          <initializer>= CMZN_FIELD_IMAGE_WRAP_MODE_MIRROR_REPEAT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Repeat but mirror every second multiple of the texture coordinates range. Texture may appear up-right in coordinate range[0,1] but upside-down in coordinate range[1,2] </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Describes how the image is to be wrapped when texture coordinate is assigned outside the range [0,1], you can choose to have them clamp or repeat. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="218" column="1" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="217" bodyend="236"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a265c82cfdf56e38e0e4af9f923584067" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_field_image_id</type>
+        <definition>cmzn_field_image_id CMLibs::Zinc::FieldImage::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1FieldImage" kindref="compound">FieldImage</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1FieldImage" kindref="compound">FieldImage</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="38" column="28" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a3567b8bf494a81f09376b6fac8df7128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::FieldImage::FieldImage</definition>
+        <argsstring>()</argsstring>
+        <name>FieldImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="45" column="1" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="45" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1aae9ff725b648cd2bbc423210db31859e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::FieldImage::FieldImage</definition>
+        <argsstring>(cmzn_field_image_id field_image_id)</argsstring>
+        <name>FieldImage</name>
+        <param>
+          <type>cmzn_field_image_id</type>
+          <declname>field_image_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="49" column="10" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a89853289f9c941d0e578c64c239e7ed6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::getWidthInPixels</definition>
+        <argsstring>() const</argsstring>
+        <name>getWidthInPixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the width of the image.</para>
+<para><simplesect kind="return"><para>width of the image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="243" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a64465173fe71fd9e261219c5e3a3fef4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::getHeightInPixels</definition>
+        <argsstring>() const</argsstring>
+        <name>getHeightInPixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the height of the image.</para>
+<para><simplesect kind="return"><para>height of the image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="253" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1aa675c3743b08da1aee47053da9fedc3e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::getDepthInPixels</definition>
+        <argsstring>() const</argsstring>
+        <name>getDepthInPixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the depth of the image.</para>
+<para><simplesect kind="return"><para>depth of the image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="263" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a29e99ad48bbead5f2a34c5551e79c7f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::getSizeInPixels</definition>
+        <argsstring>(int valuesCount, int *valuesOut) const</argsstring>
+        <name>getSizeInPixels</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the image size/resolution in pixels.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array to fill, from 1 to 3. Values for dimensions beyond this size have the value of 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive pixel sizes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The actual dimension of the image, or 0 on error. This can be more than valuesCount, in which case a second call with a larger array is needed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="277" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a01547eedbafdf33935e58b9754505eac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setSizeInPixels</definition>
+        <argsstring>(int valuesCount, const int *valuesIn)</argsstring>
+        <name>setSizeInPixels</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the image size/resolution in pixels. Images from source are recomputed when next used. Otherwise the contents of the buffer are unchanged if the new size matches the previous size, or undefined if different. For images from source: after successful call to this function the image field maintains an independent resolution from any source image; up until then it maintains the same resolution as the source image. The default value is {1, 1, 1}.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the sizes array, giving the dimension of the image, from 1 to 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The resolution to set for each dimension, all &gt;= 1. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Standard result code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="296" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1af8bfb33d6cfe52325de29b94627e569a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::FieldImage::getTextureCoordinateWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextureCoordinateWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the physical width of the image.</para>
+<para><simplesect kind="return"><para>physical width of the image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="306" column="8" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a663267dc9e852c530a7b7a91ef24ceb4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::FieldImage::getTextureCoordinateHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextureCoordinateHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the physical height of the image.</para>
+<para><simplesect kind="return"><para>physical height of the image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="316" column="8" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a174c9c65f2847f34885513f12e6c4aea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::FieldImage::getTextureCoordinateDepth</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextureCoordinateDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the physical depth of the image.</para>
+<para><simplesect kind="return"><para>physical depth of the image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="326" column="8" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a19f850d672bfe26fd49ff4b02112ee43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::getTextureCoordinateSizes</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getTextureCoordinateSizes</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the texture coordinate size to be used for this image field.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a63a54ca63c536d771ef916a4a5979780" kindref="member">FieldImage::setTextureCoordinateSizes</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the sizes array to fill. Up to 3 values can be requested corresponding to width, height, depth. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive texture coordinate sizes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="340" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="340" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a5fcaabd36748d7db85bcb62accae0285" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setTextureCoordinateWidth</definition>
+        <argsstring>(double width)</argsstring>
+        <name>setTextureCoordinateWidth</name>
+        <param>
+          <type>double</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the texture coordinate width of the image.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Positive physical width to be set for the image.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CMISS_OK if set correctly, any other value otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="353" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="353" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a3bf75285fdd33c095b08f9d933fd4cac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setTextureCoordinateHeight</definition>
+        <argsstring>(double height)</argsstring>
+        <name>setTextureCoordinateHeight</name>
+        <param>
+          <type>double</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the texture coordinate height of the image.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Positive physical height to be set for the image.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CMISS_OK if set correctly, any other value otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="365" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a6e83ebda0cf6f889a1529614ecd12b5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setTextureCoordinateDepth</definition>
+        <argsstring>(double depth)</argsstring>
+        <name>setTextureCoordinateDepth</name>
+        <param>
+          <type>double</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the texture coordinate depth of the image.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Positive physical depth to be set for the image.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CMISS_OK if set correctly, any other value otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="377" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="377" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a63a54ca63c536d771ef916a4a5979780" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setTextureCoordinateSizes</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setTextureCoordinateSizes</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the texture coordinate size to be used for this image field.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a19f850d672bfe26fd49ff4b02112ee43" kindref="member">FieldImage::getTextureCoordinateSizes</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the sizes array to fill. Up to 3 values can be set corresponding to width, height, depth. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing texture coordinate sizes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="391" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="391" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a3d8679279b6e9375ba95a0866b9c230e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::read</definition>
+        <argsstring>(const StreaminformationImage &amp;streaminformationImage)</argsstring>
+        <name>read</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref> &amp;</type>
+          <declname>streaminformationImage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads image data into the field. The streaminformation may specify a filename, series of filenames or a memory block reference to read from. If the format specified in the streaminformation is a &quot;raw&quot; format (such as rgb or gray) which does not embed information about the pixel storage then the data size is expected to be supplied in the streaminformation parameter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streaminformationImage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Derived information about the supplied formatted image data. At a minimum it should specify either a filename or a memory resource. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if the operation is successful, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="412" column="12" bodyfile="auto_comments_output/streamimage.hpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1acc31b468a6421fde8b8578c2c123286c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::readFile</definition>
+        <argsstring>(const char *fileName)</argsstring>
+        <name>readFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenient function to read a file with the provided name into a field image directly.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to read from.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if data successfully read and merged into specified region, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="423" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="423" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a6acc6a62e788d7a65101dddcedf25aef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::write</definition>
+        <argsstring>(const StreaminformationImage &amp;streaminformationImage) const</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref> &amp;</type>
+          <declname>streaminformationImage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes a formatted representation of the image data. The streaminformation is used to control the formatted output. If a memory block reference has been specified to the io_stream then this will be allocated and set and the corresponding memory block length set. Otherwise the routine will try to write to the filename set on the storage information. The routine should fail if the values specified in the streaminformation cannot be respected. If one or two of the size parameters are set on the streaminformation then other dimensions will be adjusted to maintain aspect ratio and then the image is resized just for this output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streaminformationImage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information specifying the required format for the returned formatted image data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if the operation is successful, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="447" column="12" bodyfile="auto_comments_output/streamimage.hpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a7c60538191ec9ec84b92cbe5b053f57b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bf" kindref="member">CombineMode</ref></type>
+        <definition>CombineMode CMLibs::Zinc::FieldImage::getCombineMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getCombineMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns how the image is combined with the material: blend, decal or modulate.</para>
+<para><simplesect kind="return"><para>Returns enum describing how the image is combined with the material. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="454" column="13" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="454" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1ab34a76191521684c2cce02c3b978348d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setCombineMode</definition>
+        <argsstring>(CombineMode combineMode)</argsstring>
+        <name>setCombineMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bf" kindref="member">CombineMode</ref></type>
+          <declname>combineMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets how the image is combined with the material: blend, decal or modulate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>combineMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enumerator describing how the image is combined with the material. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="466" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="466" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a8f295d00b536e694f0c5af28e4ce6568" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::FieldImage::getDomainField</definition>
+        <argsstring>() const</argsstring>
+        <name>getDomainField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the domain field on which texture coordinates must be specified to evaluate the image. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a03ca4c16246747a4a43a321a8283134e" kindref="member">Fieldcache::setFieldReal</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to the domain field, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="479" column="7" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="479" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a5d5504349cf15f3aa8af42cb50378530" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setDomainField</definition>
+        <argsstring>(const Field &amp;domainField)</argsstring>
+        <name>setDomainField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>domainField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the domain field on which texture coordinates must be specified to evaluate the image. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a03ca4c16246747a4a43a321a8283134e" kindref="member">Fieldcache::setFieldReal</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>domainField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new domain field. Must be real-valued with at least as many components as the image dimension. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="493" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="493" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a0a9d25e48a92dea0033f3daaa6d3dc0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705a" kindref="member">HardwareCompressionMode</ref></type>
+        <definition>HardwareCompressionMode CMLibs::Zinc::FieldImage::getHardwareCompressionMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getHardwareCompressionMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns how the image is stored in graphics memory.</para>
+<para><simplesect kind="return"><para>Returns enum describing how the image is stored in graphics memory. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="503" column="25" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="503" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a9cdf323506349ebdd64ef5526ff7d1b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setHardwareCompressionMode</definition>
+        <argsstring>(HardwareCompressionMode hardwareCompressionMode)</argsstring>
+        <name>setHardwareCompressionMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705a" kindref="member">HardwareCompressionMode</ref></type>
+          <declname>hardwareCompressionMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate to the graphics hardware how you would like the texture stored in graphics memory.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hardwareCompressionMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enumerator describing how the image is combined with the material. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="517" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="517" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a1cd878cecdd103a62a7fa769fa7df490" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648" kindref="member">FilterMode</ref></type>
+        <definition>FilterMode CMLibs::Zinc::FieldImage::getFilterMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilterMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns how the image is rasterised onto the screen.</para>
+<para><simplesect kind="return"><para>Returns enum describing how the image is rasterised onto the screen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="528" column="12" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="528" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a180d472b2c5ce8992d2584a382b78e1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setFilterMode</definition>
+        <argsstring>(FilterMode filterMode)</argsstring>
+        <name>setFilterMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648" kindref="member">FilterMode</ref></type>
+          <declname>filterMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate to the graphics hardware how you would like the image rasterised onto the screen.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enumerator describing how the graphics hardware rasterises the texture onto the screen. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="541" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="541" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1ac595c141a7acb79de7bb4d780671218b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfe" kindref="member">WrapMode</ref></type>
+        <definition>WrapMode CMLibs::Zinc::FieldImage::getWrapMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getWrapMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the mode describing how the image is wrapped outside the range [0,1].</para>
+<para><simplesect kind="return"><para>Returns enum describing how the image is wrapped. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="552" column="10" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="552" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1aa54fe4509a2996faa7d83397d39c49af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setWrapMode</definition>
+        <argsstring>(WrapMode wrapMode)</argsstring>
+        <name>setWrapMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfe" kindref="member">WrapMode</ref></type>
+          <declname>wrapMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the mode describing how the image is wrapped outside the range [0,1].</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wrapMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enumerator describing how image is wrapped outside the range [0,1]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="564" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="564" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a1746110ee56bc5494f37af8556f2d25f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::FieldImage::getProperty</definition>
+        <argsstring>(const char *property) const</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>const char *</type>
+          <declname>property</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the property named in the given property string from the given field image. The returned string must be deallocated by the receiver.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>property</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null if it fails, else an allocated string containing the properties value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="579" column="6" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="579" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a6eb3765df9ec2da5f49762299616773f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::getNumberOfBitsPerComponent</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfBitsPerComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of bits per component of this image field.</para>
+<para><simplesect kind="return"><para>number of bits of this image field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="590" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="590" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a81bf5bd2a35977576ab1a810f2ba4a38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setNumberOfBitsPerComponent</definition>
+        <argsstring>(int numberOfBits)</argsstring>
+        <name>setNumberOfBitsPerComponent</name>
+        <param>
+          <type>int</type>
+          <declname>numberOfBits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of bits per component of the image. The number of bits will only be set if no image has been set into this image field. Valid value is 8 or 16.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfBits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to be set for this field image.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="604" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="604" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a7b6612c9d0e459575de9b8bb44ae7685" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cc" kindref="member">PixelFormat</ref></type>
+        <definition>PixelFormat CMLibs::Zinc::FieldImage::getPixelFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>getPixelFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the pixel format per componentof this image field.</para>
+<para><simplesect kind="return"><para>pixel format of this image field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="616" column="13" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="616" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a744005a90a299e6ca272a88772c24882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setPixelFormat</definition>
+        <argsstring>(PixelFormat imagePixelFormat)</argsstring>
+        <name>setPixelFormat</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cc" kindref="member">PixelFormat</ref></type>
+          <declname>imagePixelFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the pixel format of the image. The pixel format will only be set if no image has been set into this image field.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>imagePixelFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to be set for this field image.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="629" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="629" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1a2c9da0d6faf0a382b73aba229e5f31dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::getBuffer</definition>
+        <argsstring>(const void **buffer_out, unsigned int *buffer_length_out) const</argsstring>
+        <name>getBuffer</name>
+        <param>
+          <type>const void **</type>
+          <declname>buffer_out</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>buffer_length_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the image buffer currently in the image field. The returned buffer should not be modified.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Will be set to the pointer to the internal buffer on successful return of the function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_length_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Will be set to the length of the returned buffer in number of bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="645" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="645" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1ac45d23e77266a267f3cbf5426c7c1335" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldImage::setBuffer</definition>
+        <argsstring>(const void *buffer, unsigned int buffer_length)</argsstring>
+        <name>setBuffer</name>
+        <param>
+          <type>const void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>buffer_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fills the image buffer without changing any other image properties. The image field should not have dependency on external file/fields. In order to optimise the performance, only buffer with the same size can be set in the same field once a buffer has been successfully set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer to be copied into the image buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the buffer in the number of bytes.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="662" column="5" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="662" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldImage_1aedaabbc793ef301578e138f764d9dfcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref></type>
+        <definition>StreaminformationImage CMLibs::Zinc::FieldImage::createStreaminformationImage</definition>
+        <argsstring>()</argsstring>
+        <name>createStreaminformationImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a stream information object for specifying files/resources and options for reading and writing image data to/from an image field.</para>
+<para><simplesect kind="return"><para>Handle to new stream information, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldimage.hpp" line="673" column="31" bodyfile="auto_comments_output/streamimage.hpp" bodystart="218" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An image-based field giving the pixel colour/intensity values. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An image-based field giving the pixel colour/intensity values as a function of its domain texture coordinates, interpolated between pixels according to the filter mode. 2-D and 3-D images are supported. <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> materials can have image fields attached to perform texturing. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Field</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Field"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::FieldImage</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Field</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Field"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::FieldImage</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/fieldimage.hpp" line="32" column="1" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="31" bodyend="675"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aa196d5ee3131a96af4c66a292d2ee5fe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>assignMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad98c53fa38482f27be33d5915d2eb57d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>assignReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a723e4fce933ebb2a18c289e2f1ca2f8b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>assignString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a73d20220ed104d06c763eea3977cbb62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castApply</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1abbd74200465c3274876297993e81b3a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castArgumentReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aeba8a5c6388cc9e0d950e60715b5c711" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castComponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aca5b8313b90cef26e85d0e4043bd29c5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castConstant</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0add61e23aeb1abed39e81236a2110e0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castDerivative</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a04d7230adbc926c059fc613dfce61283" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castEdgeDiscontinuity</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0529e22a4ee68a8e5541e742f9e64d92" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castEigenvalues</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a48faaa0911008beaaa020f3eaf4d3726" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castFindMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a67ee725859c2fbba1aa3ab803229d351" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castFiniteElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1acfae911d921aaf25afe82dfcad06906e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1afc4f36839a033e8ba83bed8f66e9c16c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ae36bd1ce83e5974fa66fe7935861e0a8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castImagefilterBinaryThreshold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a65a59af29239ce48d12c06b890b47cfc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castImagefilterDiscreteGaussian</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac551dc48f1ddc1308ae1f46c666c1864" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castImagefilterHistogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a755ad56d303a00d42fcba374ad190a51" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castImagefilterThreshold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac670986456850f6398b0d349dd0f029a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castIsOnFace</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a00beae33247d80969cb3aacef0479451" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castMatrixMultiply</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a4dd9c86900e0afb20c366b83c272c963" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castMeshIntegral</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af56db79bc7bbd1eee40760656de0e5e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castNodesetOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a2327126e9b535d977fa793606df2afb0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castNodeValue</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a48282ab04dbe43c62822cb5064cee39e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castStoredMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8e247a82cd18f1156f7f485e641010f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castStoredString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0223c8679453afc7f580ea3ccb2728f3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castStringConstant</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a761842dc0f507c939c6f8837eb909000" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>castTranspose</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa9b8f437e3ad5c1d13f8ce371d343cb44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa74552c6dc888514f2173f0ab80630010" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfadbc5f7957ab256631bd0d0cd36a894e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa3f2e4f462790358cb1bdc5a4196519d6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfad384cc26b171814bc564158887ee316c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfaa288a9ef6b86626e6c08cbada560e15d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa78bd50b35859cc9ca3bdfca6c5140642" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_PARTIAL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2c9f34eed1bee5772e9fdf2eec99552a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2edd39db683f0d10ee0c9e333708c60b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CHANGE_FLAG_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8403aa300e3620a468043658194301e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa32f0920758d75b6b9bf58992d9d73b19" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfad396455f063a45ef8a79514892e39b44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_ADD_SCALE_4</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa418f608804bd9c0d2b3c6c36779c17e0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_ADD_SIGNED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa42eb22bd8fbd77a59d6d9829ef00a8f2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_BLEND</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa7fd30ba6e9c68a2fa8458fd21e7cd80b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_BLEND_SCALE_4</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa798991ac7f0dc437c2659fb6a74ee125" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_DECAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa1abb2099a277470b627c04e8bd39d9b0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa5959f045b03221070b925bfb8d2c5ea1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_INVERT_ADD_SCALE_4</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa27e4dcdde38017017ac28b80128d0fb2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_INVERT_SUBTRACT_SCALE_4</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa7a6d6f6d4bc0fd2f31b36a14b019a9bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_MODULATE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa4d4f643797d66f18122f5242a1284e9b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_MODULATE_SCALE_4</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfa8402b3b410a5e5ef9ae0238c887e4491" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_SUBTRACT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bfafd863a52e74c1a2573caaedc626d73d2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COMBINE_MODE_SUBTRACT_SCALE_4</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a172038004f02ed387409c2905ddb58bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CombineMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbafed2887b776d03271450f81bdd2aee5d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COORDINATE_SYSTEM_TYPE_CYLINDRICAL_POLAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba5ed6536930afae2eb2fff17130cb504e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COORDINATE_SYSTEM_TYPE_FIBRE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba31dc4f73378e531912b282f9592fe282" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COORDINATE_SYSTEM_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbac055de51dd4fee70caeb4984b15f17d1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COORDINATE_SYSTEM_TYPE_NOT_APPLICABLE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaba4bfa06d31e6385786ea6290297c538" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COORDINATE_SYSTEM_TYPE_OBLATE_SPHEROIDAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbada14af040524471f0dd8d8d3812314fa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COORDINATE_SYSTEM_TYPE_PROLATE_SPHEROIDAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaf9f4070081c534c6a7a74f3a13004ddc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COORDINATE_SYSTEM_TYPE_RECTANGULAR_CARTESIAN</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba9068dc9208c86ec418b7497f9806c7a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>COORDINATE_SYSTEM_TYPE_SPHERICAL_POLAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a32f5a77b3b9beb347a06c40029997fee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CoordinateSystemTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a3b39741c524c53c6f1b8e355460b4959" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>CoordinateSystemTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a42bf82160dc2d3a7d783f4631c642bb2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>createFieldassignment</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aedaabbc793ef301578e138f764d9dfcb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>createStreaminformationImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a19db38f9c5f86347f52ade324e421f90" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>dependsOnField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a32fcfd65c0786e345bb61a2c719d321e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DOMAIN_TYPE_DATAPOINTS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a50ecf08328c7328e7ad0262882dedf45" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DOMAIN_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a396f307d0c895e5a6629ec5450228a19" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DOMAIN_TYPE_MESH1D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6ab52c6d5cf0d338307fe9a13b5bc8ebcc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DOMAIN_TYPE_MESH2D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a721cef8f0081ead37a9ba7291206a4f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DOMAIN_TYPE_MESH3D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a0c04d3daeacbb17e97fc449db1985caa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DOMAIN_TYPE_MESH_HIGHEST_DIMENSION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6aa3754a1c1c8a52288c3cf7eda00c9025" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DOMAIN_TYPE_NODES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a4628366c2ce93c71090f79bb01ac5738" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DOMAIN_TYPE_POINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a277740c041ae2f38dcb468fbfe8d6ea0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DomainTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a72ee0af0a3a7d50008f89cd20238274d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DomainTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac6ad96b3d0685fc46455bba8158fa1fd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>DomainTypes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad7bce01404cf1a9428c675501d360921" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>evaluateDerivative</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a35cda5a7c9f42e93ff448d716db807bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>evaluateFieldrange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a9b46525ae6c3c4900e8c85bc555e907e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>evaluateMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a21764bc8fcb2a1f07ba79eb31c6bb755" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>evaluateReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a710c3ed9e1e43fea537726ff7ada8dbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>evaluateString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1adf617257a39c7c4939427fc1400967ab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6fc4e264e0a627111e336c5b8f7a7ab2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af0801aaa6a94f3fb1cc45c2193a4824d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a3567b8bf494a81f09376b6fac8df7128" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FieldImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aae9ff725b648cd2bbc423210db31859e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FieldImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648ae8e88c872550aacee0dbcc7c8bd346f1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FILTER_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648acb2af230a73cd7619dabdf2eeffe89d3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FILTER_MODE_LINEAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648a06391f26edaf5147238658e332aaaa9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FILTER_MODE_LINEAR_MIPMAP_LINEAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648aa63ce98a4f03e973f78469662ff834c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FILTER_MODE_LINEAR_MIPMAP_NEAREST</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648adf606bb917d52d302f8552b3bd8d258f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FILTER_MODE_NEAREST</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648aa52d8c944973be066ccfafb24b447bda" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FILTER_MODE_NEAREST_MIPMAP_NEAREST</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a725d63f29ec48a983f5dc2e61835f648" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>FilterMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a2c9da0d6faf0a382b73aba229e5f31dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getBuffer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad5e2221e40b86a62506c691be271690d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getClassName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a7c60538191ec9ec84b92cbe5b053f57b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getCombineMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6bd4db297171cc5175e56cd7279aae31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getComponentName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0637975f5114dd3e49c6ed4ae9772c28" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getCoordinateSystemFocus</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af379a711cca3c549eba305544891989c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getCoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aa675c3743b08da1aee47053da9fedc3e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getDepthInPixels</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a265c82cfdf56e38e0e4af9f923584067" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a8f295d00b536e694f0c5af28e4ce6568" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getDomainField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a4e8a6d92a0433140f9a3b11eed36a30a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a509212e6067e9c2999ced60d8beffc25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getFieldparameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a1cd878cecdd103a62a7fa769fa7df490" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getFilterMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a0a9d25e48a92dea0033f3daaa6d3dc0d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getHardwareCompressionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a64465173fe71fd9e261219c5e3a3fef4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getHeightInPixels</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a852882613f6d8be1a09eedecf1aa9ad6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a6eb3765df9ec2da5f49762299616773f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getNumberOfBitsPerComponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a166451e16c4694e523a4143a64cef313" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getNumberOfComponents</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a23e574454b96f13dc8cc2a57ffac7efb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getNumberOfSourceFields</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a7b6612c9d0e459575de9b8bb44ae7685" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getPixelFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a1746110ee56bc5494f37af8556f2d25f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getProperty</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a29e99ad48bbead5f2a34c5551e79c7f5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getSizeInPixels</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a47b654b92689d4954583272f84073b61" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getSourceField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a174c9c65f2847f34885513f12e6c4aea" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getTextureCoordinateDepth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a663267dc9e852c530a7b7a91ef24ceb4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getTextureCoordinateHeight</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a19f850d672bfe26fd49ff4b02112ee43" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getTextureCoordinateSizes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1af8bfb33d6cfe52325de29b94627e569a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getTextureCoordinateWidth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1afcfdab410d31e025a80591488b0d3633" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getValueType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a89853289f9c941d0e578c64c239e7ed6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getWidthInPixels</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ac595c141a7acb79de7bb4d780671218b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>getWrapMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705aa652bbfa77540c4ecb3991d2ff017b7e1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>HARDWARE_COMPRESSION_MODE_AUTOMATIC</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705aafd41b50ab1c6ceb4b20b96d43a1cd865" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>HARDWARE_COMPRESSION_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705aa240ea4cde1e6807eea6348df5281fc2a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>HARDWARE_COMPRESSION_MODE_UNCOMPRESSED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a2db69df3899e5b15454d140a1be6705a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>HardwareCompressionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a86be6bdc8d2c8ef8813367dbd39909be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>hasClassName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a5f5901992c2b67e71a41aa63bfa42a43" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad9183e1ee3be7fa6a5be7b4c9d1d3402" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>isDefinedAtLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac7c2fcde9036c8f3dbd1757181d47842" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aad16cd4f1acb66f04996beba1c8b21ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>isTypeCoordinate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a18ebc3f97e6c352a91776a8a752d1171" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6165379988c2924acd10207e6b6d286f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca2769db68a13f43b5e9f4737eeeed75ad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>PIXEL_FORMAT_ABGR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca0302b8e8a86ae503d21ef61b0af79801" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>PIXEL_FORMAT_BGR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca6dcc2fd5ef764ca9ea426ba5d1c02aa2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>PIXEL_FORMAT_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca773751ea6129e4330edc500446f85aeb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>PIXEL_FORMAT_LUMINANCE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cca2920a68fd3296e1437315222b958aba4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>PIXEL_FORMAT_LUMINANCE_ALPHA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7ccaede6dda01ef57a2293cd31fe8ce17f3d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>PIXEL_FORMAT_RGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7ccafb2f1b3babc9f2ca83b4444af5ab318a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>PIXEL_FORMAT_RGBA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ad4c179a846eec95e6371efffedc2a7cc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>PixelFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a3d8679279b6e9375ba95a0866b9c230e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>read</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1acc31b468a6421fde8b8578c2c123286c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>readFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ac45d23e77266a267f3cbf5426c7c1335" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setBuffer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1ab34a76191521684c2cce02c3b978348d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setCombineMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad813ef6fcabedb5ddf1a1ff5b897eb9a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setComponentName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac09d1d65b3af6aeeff3a6b855351ee0a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setCoordinateSystemFocus</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8d01b1bff6eaa0d8860c0ac6a393f614" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setCoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a5d5504349cf15f3aa8af42cb50378530" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setDomainField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a180d472b2c5ce8992d2584a382b78e1d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setFilterMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a9cdf323506349ebdd64ef5526ff7d1b3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setHardwareCompressionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a836e0c28e4558d1d14eb72e6d6c96f31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab6aa2520f106406e1205f799d992e29e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a81bf5bd2a35977576ab1a810f2ba4a38" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setNumberOfBitsPerComponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a744005a90a299e6ca272a88772c24882" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setPixelFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a01547eedbafdf33935e58b9754505eac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setSizeInPixels</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a6e83ebda0cf6f889a1529614ecd12b5a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setTextureCoordinateDepth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a3bf75285fdd33c095b08f9d933fd4cac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setTextureCoordinateHeight</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a63a54ca63c536d771ef916a4a5979780" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setTextureCoordinateSizes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a5fcaabd36748d7db85bcb62accae0285" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setTextureCoordinateWidth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1c1fc2dac208c9bf55a3032ea1fe9066" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setTypeCoordinate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aa54fe4509a2996faa7d83397d39c49af" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>setWrapMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a3cc6edbc68ea5c5492b28f1b285fc432" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>smooth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335acccc613810b339fffd93728911c3305b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>VALUE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335aabc83b79f0c046191ec49eaa7b3f957b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>VALUE_TYPE_MESH_LOCATION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335ac09365d4871dbdb1510bdf16ca5c9967" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>VALUE_TYPE_REAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335a015108650de6601ef747cbb04e55130e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>VALUE_TYPE_STRING</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>ValueType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfeaa286bc77e28b3ddf55428478b0607a30" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>WRAP_MODE_BORDER_CLAMP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfea9e54a7611062565b039673dd71cc25fa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>WRAP_MODE_CLAMP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfeaae9384b4a1fe5e5c4f4514d51e281d76" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>WRAP_MODE_EDGE_CLAMP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfea307bb8e81d144cd04de6a5fd58f8011e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>WRAP_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfeaae0016b09fbc735861353bf947d99d32" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>WRAP_MODE_MIRROR_REPEAT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfeadf3fa86a7e0dca4ee850e79909ee87c8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>WRAP_MODE_REPEAT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1aeed026777594e57ca1a94e8aabeb7cfe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>WrapMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldImage_1a6acc6a62e788d7a65101dddcedf25aef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>write</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aa82d5073ce41f28a3aa35dfe07c904dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldImage</scope><name>~Field</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

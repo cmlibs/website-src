@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1StreamresourceFile" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::StreamresourceFile</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Streamresource" prot="public" virt="non-virtual">CMLibs::Zinc::Streamresource</basecompoundref>
+    <includes refid="stream_8hpp" local="no">stream.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreamresourceFile_1ac1ed0eb1c83d52f723e247957ee287cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::StreamresourceFile::StreamresourceFile</definition>
+        <argsstring>()</argsstring>
+        <name>StreamresourceFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/stream.hpp" line="127" column="1" bodyfile="auto_comments_output/stream.hpp" bodystart="127" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreamresourceFile_1aba2f09f41da7f60194f88efb66c902c4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::StreamresourceFile::StreamresourceFile</definition>
+        <argsstring>(cmzn_streamresource_file_id streamresource_file_id)</argsstring>
+        <name>StreamresourceFile</name>
+        <param>
+          <type>cmzn_streamresource_file_id</type>
+          <declname>streamresource_file_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/stream.hpp" line="131" column="10" bodyfile="auto_comments_output/stream.hpp" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreamresourceFile_1ac4e6ed165c0e21a41b0ae4506e1a196d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::StreamresourceFile::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the name set on the file resource.</para>
+<para><simplesect kind="return"><para>On success: allocated string containing field name. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/stream.hpp" line="141" column="6" bodyfile="auto_comments_output/stream.hpp" bodystart="141" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A derived streamresource describing a file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A derived streamresource describing a file.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a33ce88ff504baefbde71fe1078e0ab97" kindref="member">Streaminformation::createStreamresourceFile</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CMLibs::Zinc::StreamresourceFile</label>
+        <link refid="classCMLibs_1_1Zinc_1_1StreamresourceFile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Streamresource</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Streamresource"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CMLibs::Zinc::StreamresourceFile</label>
+        <link refid="classCMLibs_1_1Zinc_1_1StreamresourceFile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Streamresource</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Streamresource"/>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/stream.hpp" line="124" column="1" bodyfile="auto_comments_output/stream.hpp" bodystart="123" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1a894b91758d65465244b7021464a41829" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>castFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1a3269a8597956e634d8c906c442c68d7c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>castMemory</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1aeac7bfdbb0f3f70c12f07d747e7f4c3d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreamresourceFile_1ac4e6ed165c0e21a41b0ae4506e1a196d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1acea4040fac571e8f1dfe5dab6c6c063e" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1a1e58f7ed557e9d0b5ede0f7863a296d5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1a828ae5b4f31e5061fe1da64f53da24ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1a607652b65680aa9ef3741c0ecc561300" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>Streamresource</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1ae47c0ec98d8cb87f2b657538b9208637" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>Streamresource</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1a8a6418029ac608af8e96f3477bb1b243" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>Streamresource</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreamresourceFile_1ac1ed0eb1c83d52f723e247957ee287cd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>StreamresourceFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreamresourceFile_1aba2f09f41da7f60194f88efb66c902c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>StreamresourceFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streamresource_1af06e5cab035274cddc0e224b9c12abbd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreamresourceFile</scope><name>~Streamresource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

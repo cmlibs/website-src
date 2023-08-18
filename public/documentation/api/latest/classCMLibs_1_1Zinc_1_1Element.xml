@@ -1,0 +1,1261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Element" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Element</compoundname>
+    <includes refid="element_8hpp" local="no">element.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedad" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ChangeFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada42e92c567f1bd7e4a86233a3b8b9a57d" prot="public">
+          <name>CHANGE_FLAG_NONE</name>
+          <initializer>= CMZN_ELEMENT_CHANGE_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element(s) not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada220cb47cdc61c4e626715ba96a053164" prot="public">
+          <name>CHANGE_FLAG_ADD</name>
+          <initializer>= CMZN_ELEMENT_CHANGE_FLAG_ADD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element(s) added </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada56463b9c0ab3df8a86bae1920ee1b562" prot="public">
+          <name>CHANGE_FLAG_REMOVE</name>
+          <initializer>= CMZN_ELEMENT_CHANGE_FLAG_REMOVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element(s) removed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada43e0d100e78626fb4c5d041ab9990f7b" prot="public">
+          <name>CHANGE_FLAG_IDENTIFIER</name>
+          <initializer>= CMZN_ELEMENT_CHANGE_FLAG_IDENTIFIER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element(s&apos;) identifier changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada38785b385a02667b0bfa270675a91443" prot="public">
+          <name>CHANGE_FLAG_DEFINITION</name>
+          <initializer>= CMZN_ELEMENT_CHANGE_FLAG_DEFINITION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element(s&apos;) definition other than identifier changed e.g. shape </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada648f835b65d3adb34b033df34ac56c4f" prot="public">
+          <name>CHANGE_FLAG_FIELD</name>
+          <initializer>= CMZN_ELEMENT_CHANGE_FLAG_FIELD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>change to field values mapped to element(s) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit flags summarising changes to an element or elements in a mesh. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="87" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="86" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FaceType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9ab45f0e3af0ab78bf106e70310dd9b720" prot="public">
+          <name>FACE_TYPE_INVALID</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>invalid element face type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a2b9de30c21d9173fa81ce058ddfe5c20" prot="public">
+          <name>FACE_TYPE_ALL</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_ALL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>match all elements whether faces of parent elements or not </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a9e10b47776d028d748c0db5ccd96b392" prot="public">
+          <name>FACE_TYPE_ANY_FACE</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_ANY_FACE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element on any face of a higher dimension element </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a59a54168b7935535fe932ea805f9c785" prot="public">
+          <name>FACE_TYPE_NO_FACE</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_NO_FACE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>not a face of a higher dimension element; top-level elements only </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9aa8b9ed93d4c0755b7ec2d6b3f2486017" prot="public">
+          <name>FACE_TYPE_XI1_0</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_XI1_0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element on face where top-level xi1 = 0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9afbd93fb1f5811a7e8af372d7a81799d0" prot="public">
+          <name>FACE_TYPE_XI1_1</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_XI1_1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element on face where top-level xi1 = 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a3c29d375df0bdd3697350fd50713cac7" prot="public">
+          <name>FACE_TYPE_XI2_0</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_XI2_0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element on face where top-level xi2 = 0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a4c2ec400a593aea8df084f65831f9603" prot="public">
+          <name>FACE_TYPE_XI2_1</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_XI2_1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element on face where top-level xi2 = 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a727b71770c1758a4a1f51497e31abed6" prot="public">
+          <name>FACE_TYPE_XI3_0</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_XI3_0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element on face where top-level xi3 = 0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a70f410582dfb9a61d520fb4f65439d71" prot="public">
+          <name>FACE_TYPE_XI3_1</name>
+          <initializer>= CMZN_ELEMENT_FACE_TYPE_XI3_1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>element on face where top-level xi3 = 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An enumeration for selecting the faces of elements. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="111" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="110" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ShapeType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a8bc5b65d6b25f0606b1f7230009dbc63" prot="public">
+          <name>SHAPE_TYPE_INVALID</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unspecified shape of known dimension </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a3abb9f89548385796b22e936b63c0342" prot="public">
+          <name>SHAPE_TYPE_LINE</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_LINE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1-D: 0 &lt;= xi1 &lt;= 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797af2e8501b39873e500ed521b720a99bc9" prot="public">
+          <name>SHAPE_TYPE_SQUARE</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_SQUARE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2-D: 0 &lt;= xi1,xi2 &lt;= 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797aeb19f5111b5523f74c299084b9159c9f" prot="public">
+          <name>SHAPE_TYPE_TRIANGLE</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_TRIANGLE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3-D: 0 &lt;= xi1,xi2; xi1+xi2 &lt;= 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797ac767ed11b70e57f21ae47dde18e69044" prot="public">
+          <name>SHAPE_TYPE_CUBE</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_CUBE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3-D: 0 &lt;= xi1,xi2,xi3 &lt;= 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a6abaac5588c9716e70a1e414afcce478" prot="public">
+          <name>SHAPE_TYPE_TETRAHEDRON</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_TETRAHEDRON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3-D: 0 &lt;= xi1,xi2,xi3; xi1+xi2+xi3 &lt;= 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a1fd2582ddb55068497a222ee8dad0b53" prot="public">
+          <name>SHAPE_TYPE_WEDGE12</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_WEDGE12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3-D: 0 &lt;= xi1,xi2; xi1+xi2 &lt;= 1; 0 &lt;= xi3 &lt;= 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a785cd5a1c0e72749a242d686397955e5" prot="public">
+          <name>SHAPE_TYPE_WEDGE13</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_WEDGE13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3-D: 0 &lt;= xi1,xi3; xi1+xi3 &lt;= 1; 0 &lt;= xi2 &lt;= 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a8a3d3faa83b004d38cd7c5cf5dad8e67" prot="public">
+          <name>SHAPE_TYPE_WEDGE23</name>
+          <initializer>= CMZN_ELEMENT_SHAPE_TYPE_WEDGE23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3-D: 0 &lt;= xi2,xi3; xi2+xi3 &lt;= 1; 0 &lt;= xi1 &lt;= 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Common element shape enumeration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="138" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="137" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7be" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PointSamplingMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7bea3822ca627235b2615244e6c6dde51163" prot="public">
+          <name>POINT_SAMPLING_MODE_INVALID</name>
+          <initializer>= CMZN_ELEMENT_POINT_SAMPLING_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified point sampling mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7bea30d158d1ebf34129d5e7f7924fdc6fd9" prot="public">
+          <name>POINT_SAMPLING_MODE_CELL_CENTRES</name>
+          <initializer>= CMZN_ELEMENT_POINT_SAMPLING_MODE_CELL_CENTRES</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sample points at centres of element or tessellation cells </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7bea65ab39d7a6b277bc1a3dea6710d26aef" prot="public">
+          <name>POINT_SAMPLING_MODE_CELL_CORNERS</name>
+          <initializer>= CMZN_ELEMENT_POINT_SAMPLING_MODE_CELL_CORNERS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sample points at corners of element or tessellation cells </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7beae839b392dd4a053dcb4132e299b3aaa9" prot="public">
+          <name>POINT_SAMPLING_MODE_CELL_POISSON</name>
+          <initializer>= CMZN_ELEMENT_POINT_SAMPLING_MODE_CELL_POISSON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sample points randomly within each tessellation cell according to a Poisson distribution with expected number given by: sample density field * cell volume, area or length, depending on dimension. The sample density field should be evaluated at the cell centre. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7bea134886a495f37839ef77fff0549bf1f7" prot="public">
+          <name>POINT_SAMPLING_MODE_SET_LOCATION</name>
+          <initializer>= CMZN_ELEMENT_POINT_SAMPLING_MODE_SET_LOCATION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>One point at a specified location in the element chart. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7beacd0778c68e3e84c030221adad2e79709" prot="public">
+          <name>POINT_SAMPLING_MODE_GAUSSIAN_QUADRATURE</name>
+          <initializer>= CMZN_ELEMENT_POINT_SAMPLING_MODE_GAUSSIAN_QUADRATURE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sample at Gaussian quadrature points for the element. Currently limited to a maximum of 4 points in each element direction. Triangles and tetrahedra have symmetric point arrangements for an equal polynomial degree in each axis. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode controlling how points are sampled from elements. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="163" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="162" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>QuadratureRule</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636ba8e33593e7aa33fb342b1d0f573de023e" prot="public">
+          <name>QUADRATURE_RULE_INVALID</name>
+          <initializer>= CMZN_ELEMENT_QUADRATURE_RULE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified or invalid quarature rule </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636ba0beca05569b0717741abaa3c71a79c46" prot="public">
+          <name>QUADRATURE_RULE_GAUSSIAN</name>
+          <initializer>= CMZN_ELEMENT_QUADRATURE_RULE_GAUSSIAN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Gaussian quadrature. Gives optimal/exact integration of polynomials of degree up to 2n - 1, when n is the number of Gauss points chosen. Currently limited to a maximum of 4 points in each element direction. Triangles and tetrahedra have symmetric point arrangements for an equal polynomial degree in each axis. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636ba66dd27470915582310bd4fff392d164f" prot="public">
+          <name>QUADRATURE_RULE_MIDPOINT</name>
+          <initializer>= CMZN_ELEMENT_QUADRATURE_RULE_MIDPOINT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sample at mid-points of equal-sized cells in element local xi chart, with equal weights. Also called the rectangle rule. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quadrature rule for numerically integrating over elements. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="188" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="187" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Element_1a6ceb81abc8eeb1a3237ea1442a03b215" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Element::ChangeFlags</definition>
+        <argsstring></argsstring>
+        <name>ChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedad" kindref="member">ChangeFlag</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="105" column="13" bodyfile="auto_comments_output/element.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Element_1adbf465cfc43da76f26c73d41ab7ee9ed" prot="private" static="no" mutable="no">
+        <type>cmzn_element_id</type>
+        <definition>cmzn_element_id CMLibs::Zinc::Element::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="38" column="17" bodyfile="auto_comments_output/element.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a2e9b5c8d61586225f667d90d8db90e1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Element::Element</definition>
+        <argsstring>()</argsstring>
+        <name>Element</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="42" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="42" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a9e00f4c858180b0b757fdaa2d4235b4e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Element::Element</definition>
+        <argsstring>(cmzn_element_id element_id)</argsstring>
+        <name>Element</name>
+        <param>
+          <type>cmzn_element_id</type>
+          <declname>element_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="46" column="10" bodyfile="auto_comments_output/element.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a13cb9ed38e93a2139084e0e1d6da903a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Element::Element</definition>
+        <argsstring>(const Element &amp;element)</argsstring>
+        <name>Element</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="50" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1ab229bf2606492f56163a6d2bd81ea749" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Element::~Element</definition>
+        <argsstring>()</argsstring>
+        <name>~Element</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="54" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a821a8fff281ac93f1103acbc12d6e5c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+        <definition>Element&amp; CMLibs::Zinc::Element::operator=</definition>
+        <argsstring>(const Element &amp;element)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="62" column="9" bodyfile="auto_comments_output/element.hpp" bodystart="62" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a8e61d00529df67dfcdb5e338995938cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Element::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="78" column="6" bodyfile="auto_comments_output/element.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1af339ba86b049ed8e74768ad8be0871f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_element_id</type>
+        <definition>cmzn_element_id CMLibs::Zinc::Element::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="207" column="17" bodyfile="auto_comments_output/element.hpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a90eb2f7e4dee197bf18a1454e0acce29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::getDimension</definition>
+        <argsstring>() const</argsstring>
+        <name>getDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of dimensions of the element&apos;s chart.</para>
+<para><simplesect kind="return"><para>The dimension. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="217" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1ab78706eb4225497f166163a5646597d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref></type>
+        <definition>Elementfieldtemplate CMLibs::Zinc::Element::getElementfieldtemplate</definition>
+        <argsstring>(const Field &amp;field, int componentNumber) const</argsstring>
+        <name>getElementfieldtemplate</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the element field template defining field component on element, or all field components for special homogeneous case with component -1.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to query. May be finite element type only. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to query from 1 to number of components, or -1 to request element field template used by all components which fails if not homogeous i.e. if components have different templates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to element field template, or NULL/invalid handle if field not defined or on failure including special component -1 is used and field is not homogeneous over components in element. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="234" column="22" bodyfile="auto_comments_output/element.hpp" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a4143fc4f36ddccd4664312ae3c4f1e57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::getIdentifier</definition>
+        <argsstring>() const</argsstring>
+        <name>getIdentifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the non-negative integer uniquely identifying the element in its mesh.</para>
+<para><simplesect kind="return"><para>The non-negative integer identifier of the element, or a negative value if element is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="246" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1aa2c7213126160a4c35135ff7079f1fe5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::setIdentifier</definition>
+        <argsstring>(int identifier)</argsstring>
+        <name>setIdentifier</name>
+        <param>
+          <type>int</type>
+          <declname>identifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an integer uniquely identifying the element in its mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique identifier to be set for the element</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if set the identifier successfully, any other value on fail. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="259" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a4f052273fc0056f6c715f37ddba62f5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref></type>
+        <definition>Mesh CMLibs::Zinc::Element::getMesh</definition>
+        <argsstring>() const</argsstring>
+        <name>getMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the mesh which owns this element.</para>
+<para><simplesect kind="return"><para>Handle to the owning mesh, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="269" column="13" bodyfile="auto_comments_output/mesh.hpp" bodystart="332" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a75732ac6a3620044c4d6afddadd47f2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref></type>
+        <definition>Node CMLibs::Zinc::Element::getNode</definition>
+        <argsstring>(const Elementfieldtemplate &amp;eft, int localNodeIndex) const</argsstring>
+        <name>getNode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>eft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>localNodeIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a local node used by element field template in element.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;eft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element field template to get the node for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>localNodeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local index of the node to get, starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to valid node, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="278" column="6" bodyfile="auto_comments_output/element.hpp" bodystart="278" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1ab896bf3a8147a37de4f6fb51e65b9bf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::setNode</definition>
+        <argsstring>(const Elementfieldtemplate &amp;eft, int localNodeIndex, const Node &amp;node)</argsstring>
+        <name>setNode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>eft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>localNodeIndex</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a local node used by element field template in element. Note if any node-type scale factors are indexed by a node being set or changed, new scale factors will be discovered or created for it, and any old scale factors will be released. Note that any existing scale factors discovered for a node keep their current values, and newly created scale factors values are assigned the current value for the scale factor on the former node.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;eft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element field template to set the node for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>localNodeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local index of the node to set, starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global node to set. Note once a local node index has a valid node, it is not permitted to remove it. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="297" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="297" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a69f7ad5ebef77f00864829efc12b9142" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::setNodesByIdentifier</definition>
+        <argsstring>(const Elementfieldtemplate &amp;eft, int identifiersCount, const int *identifiersIn)</argsstring>
+        <name>setNodesByIdentifier</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>eft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>identifiersCount</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>identifiersIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets all the local nodes used by the given element field template in this element by their identifiers. The nodes are found by identifier in the nodeset for the elements&apos; owning mesh. It is an error if any node with a valid identifier is not found. Note it is illegal to clear a node that has already been set. Also, if any node-type scale factors are indexed by a node being set or changed, new scale factors will be discovered or created for it, and any old scale factors will be released. Note that any existing scale factors discovered for a node keep their current values, and newly created scale factors values are assigned the current value for the scale factor on the former node.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;eft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element field template to set nodes for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>identifiersCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the identifiers array. Must equal the number of nodes in the element field template. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>identifiersIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of node identifiers to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="320" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="320" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a2dee63825032e2fef33065a3034a6ba4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::getScaleFactor</definition>
+        <argsstring>(const Elementfieldtemplate &amp;eft, int scaleFactorIndex, double *valueOut) const</argsstring>
+        <name>getScaleFactor</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>eft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scaleFactorIndex</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valueOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a scale factor for the element field template in element.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;eft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element field template to get the scale factor for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleFactorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local index of the scale factor to get, starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valueOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of variable/memory which on success is set to the scale factor value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="336" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a1d26b99703a89bd4e5cbad6bbcb5380a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::setScaleFactor</definition>
+        <argsstring>(const Elementfieldtemplate &amp;eft, int scaleFactorIndex, double value)</argsstring>
+        <name>setScaleFactor</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>eft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scaleFactorIndex</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a scale factor for the element field template in element.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;eft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element field template to set the scale factor for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleFactorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local index of the scale factor to set, starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale factor value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="350" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1af38f7fc42791eea7c7849fee3442ca4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::getScaleFactors</definition>
+        <argsstring>(const Elementfieldtemplate &amp;eft, int valuesCount, double *valuesOut) const</argsstring>
+        <name>getScaleFactors</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>eft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets all scale factors used by the given element field template in this element.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;eft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element field template to get scale factors for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the values array. Must equal the number of scale factors in the element field template. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to fill with the scale factors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="365" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="365" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1ad516660c14ffd5e139823ec578a56296" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::setScaleFactors</definition>
+        <argsstring>(const Elementfieldtemplate &amp;eft, int valuesCount, const double *valuesIn)</argsstring>
+        <name>setScaleFactors</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref> &amp;</type>
+          <declname>eft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets all scale factors used by the given element field template in this element.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;eft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element field template to set scale factors for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the values array. Must equal the number of scale factors in the element field template. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of scale factors to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="381" column="5" bodyfile="auto_comments_output/element.hpp" bodystart="381" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a580cbfc1a36ede68dbcf4e64549297ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>enum <ref refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" kindref="member">ShapeType</ref></type>
+        <definition>enum ShapeType CMLibs::Zinc::Element::getShapeType</definition>
+        <argsstring>() const</argsstring>
+        <name>getShapeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the shape type of the element. Note that legacy meshes may return an unknown shape type for certain custom element shapes e.g. polygon shapes. It is intended that future revisions of the API will offer more detailed shape query and modification functions.</para>
+<para><simplesect kind="return"><para>The element&apos;s shape type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="422" column="13" bodyfile="auto_comments_output/element.hpp" bodystart="435" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a85a345ae7b06f655910a77648ff4b14a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Element::merge</definition>
+        <argsstring>(const Elementtemplate &amp;elementTemplate)</argsstring>
+        <name>merge</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> &amp;</type>
+          <declname>elementTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modifies the element to define or undefine fields as described in the element template, and possibly change its shape.</para>
+<para>Must be created for this mesh and valid. If the element template has a valid shape, it will be set for the element; if it has an invalid shape, the element will keep its current shape. <simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="449" column="12" bodyfile="auto_comments_output/elementtemplate.hpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1af19e90fb174c29a0545a51cdbed61192" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9" kindref="member">FaceType</ref></type>
+        <definition>static FaceType CMLibs::Zinc::Element::FaceTypeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>FaceTypeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="387" column="17" bodyfile="auto_comments_output/element.hpp" bodystart="387" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a23f87f3aa3bada51b5d7a954f7f29df0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Element::FaceTypeEnumToString</definition>
+        <argsstring>(FaceType type)</argsstring>
+        <name>FaceTypeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9" kindref="member">FaceType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="392" column="13" bodyfile="auto_comments_output/element.hpp" bodystart="392" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a85fc23e64cc7cedc447eef84318e7d5a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7be" kindref="member">PointSamplingMode</ref></type>
+        <definition>static PointSamplingMode CMLibs::Zinc::Element::PointSamplingModeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>PointSamplingModeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="397" column="26" bodyfile="auto_comments_output/element.hpp" bodystart="397" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1aada45f50e99fb4d434345de8b06b0f1e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Element::PointSamplingModeEnumToString</definition>
+        <argsstring>(PointSamplingMode mode)</argsstring>
+        <name>PointSamplingModeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7be" kindref="member">PointSamplingMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="402" column="13" bodyfile="auto_comments_output/element.hpp" bodystart="402" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a36f3dc260a86b4296cec434527434206" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636b" kindref="member">QuadratureRule</ref></type>
+        <definition>static QuadratureRule CMLibs::Zinc::Element::QuadratureRuleEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>QuadratureRuleEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="407" column="23" bodyfile="auto_comments_output/element.hpp" bodystart="407" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1a76f17f04f8a3e1b58e3ae9cce0686e50" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Element::QuadratureRuleEnumToString</definition>
+        <argsstring>(QuadratureRule rule)</argsstring>
+        <name>QuadratureRuleEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636b" kindref="member">QuadratureRule</ref></type>
+          <declname>rule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="412" column="13" bodyfile="auto_comments_output/element.hpp" bodystart="412" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1ab77a1fb6a611b970c3cc79d3d38646a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" kindref="member">ShapeType</ref></type>
+        <definition>static ShapeType CMLibs::Zinc::Element::ShapeTypeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>ShapeTypeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="417" column="18" bodyfile="auto_comments_output/element.hpp" bodystart="417" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Element_1abce7f0eb0c13185f0c638520c74af4bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Element::ShapeTypeEnumToString</definition>
+        <argsstring>(ShapeType type)</argsstring>
+        <name>ShapeTypeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" kindref="member">ShapeType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/element.hpp" line="422" column="13" bodyfile="auto_comments_output/element.hpp" bodystart="422" bodyend="425"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A single finite element from a mesh. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A single finite element from a mesh. Represents a local coordinate chart of prescribed shape/bounds, over which fields can be defined. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/element.hpp" line="35" column="1" bodyfile="auto_comments_output/element.hpp" bodystart="34" bodyend="451"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada220cb47cdc61c4e626715ba96a053164" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada38785b385a02667b0bfa270675a91443" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada648f835b65d3adb34b033df34ac56c4f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>CHANGE_FLAG_FIELD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada43e0d100e78626fb4c5d041ab9990f7b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada42e92c567f1bd7e4a86233a3b8b9a57d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedada56463b9c0ab3df8a86bae1920ee1b562" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1adb723800b6cce18a7ea3821f979cedad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a6ceb81abc8eeb1a3237ea1442a03b215" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a2e9b5c8d61586225f667d90d8db90e1f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>Element</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a9e00f4c858180b0b757fdaa2d4235b4e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>Element</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a13cb9ed38e93a2139084e0e1d6da903a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>Element</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a2b9de30c21d9173fa81ce058ddfe5c20" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_ALL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a9e10b47776d028d748c0db5ccd96b392" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_ANY_FACE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9ab45f0e3af0ab78bf106e70310dd9b720" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a59a54168b7935535fe932ea805f9c785" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_NO_FACE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9aa8b9ed93d4c0755b7ec2d6b3f2486017" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_XI1_0</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9afbd93fb1f5811a7e8af372d7a81799d0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_XI1_1</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a3c29d375df0bdd3697350fd50713cac7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_XI2_0</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a4c2ec400a593aea8df084f65831f9603" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_XI2_1</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a727b71770c1758a4a1f51497e31abed6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_XI3_0</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9a70f410582dfb9a61d520fb4f65439d71" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FACE_TYPE_XI3_1</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab4ebfa2abad2dca7196a327b7df84dc9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FaceType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1af19e90fb174c29a0545a51cdbed61192" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FaceTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a23f87f3aa3bada51b5d7a954f7f29df0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>FaceTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a90eb2f7e4dee197bf18a1454e0acce29" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getDimension</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab78706eb4225497f166163a5646597d5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getElementfieldtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1af339ba86b049ed8e74768ad8be0871f0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a4143fc4f36ddccd4664312ae3c4f1e57" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a4f052273fc0056f6c715f37ddba62f5b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getMesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a75732ac6a3620044c4d6afddadd47f2b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a2dee63825032e2fef33065a3034a6ba4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getScaleFactor</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1af38f7fc42791eea7c7849fee3442ca4e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getScaleFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a580cbfc1a36ede68dbcf4e64549297ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>getShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1adbf465cfc43da76f26c73d41ab7ee9ed" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a8e61d00529df67dfcdb5e338995938cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a85a345ae7b06f655910a77648ff4b14a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>merge</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a821a8fff281ac93f1103acbc12d6e5c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7bea30d158d1ebf34129d5e7f7924fdc6fd9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>POINT_SAMPLING_MODE_CELL_CENTRES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7bea65ab39d7a6b277bc1a3dea6710d26aef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>POINT_SAMPLING_MODE_CELL_CORNERS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7beae839b392dd4a053dcb4132e299b3aaa9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>POINT_SAMPLING_MODE_CELL_POISSON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7beacd0778c68e3e84c030221adad2e79709" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>POINT_SAMPLING_MODE_GAUSSIAN_QUADRATURE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7bea3822ca627235b2615244e6c6dde51163" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>POINT_SAMPLING_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7bea134886a495f37839ef77fff0549bf1f7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>POINT_SAMPLING_MODE_SET_LOCATION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>PointSamplingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a85fc23e64cc7cedc447eef84318e7d5a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>PointSamplingModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aada45f50e99fb4d434345de8b06b0f1e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>PointSamplingModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636ba0beca05569b0717741abaa3c71a79c46" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>QUADRATURE_RULE_GAUSSIAN</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636ba8e33593e7aa33fb342b1d0f573de023e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>QUADRATURE_RULE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636ba66dd27470915582310bd4fff392d164f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>QUADRATURE_RULE_MIDPOINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aa5ab771db6780315e9d1d67d920f636b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>QuadratureRule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a36f3dc260a86b4296cec434527434206" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>QuadratureRuleEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a76f17f04f8a3e1b58e3ae9cce0686e50" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>QuadratureRuleEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aa2c7213126160a4c35135ff7079f1fe5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>setIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab896bf3a8147a37de4f6fb51e65b9bf9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>setNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a69f7ad5ebef77f00864829efc12b9142" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>setNodesByIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1a1d26b99703a89bd4e5cbad6bbcb5380a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>setScaleFactor</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ad516660c14ffd5e139823ec578a56296" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>setScaleFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797ac767ed11b70e57f21ae47dde18e69044" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_CUBE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a8bc5b65d6b25f0606b1f7230009dbc63" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a3abb9f89548385796b22e936b63c0342" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_LINE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797af2e8501b39873e500ed521b720a99bc9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_SQUARE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a6abaac5588c9716e70a1e414afcce478" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_TETRAHEDRON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797aeb19f5111b5523f74c299084b9159c9f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_TRIANGLE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a1fd2582ddb55068497a222ee8dad0b53" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_WEDGE12</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a785cd5a1c0e72749a242d686397955e5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_WEDGE13</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797a8a3d3faa83b004d38cd7c5cf5dad8e67" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>SHAPE_TYPE_WEDGE23</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>ShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab77a1fb6a611b970c3cc79d3d38646a1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>ShapeTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1abce7f0eb0c13185f0c638520c74af4bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>ShapeTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Element_1ab229bf2606492f56163a6d2bd81ea749" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Element</scope><name>~Element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

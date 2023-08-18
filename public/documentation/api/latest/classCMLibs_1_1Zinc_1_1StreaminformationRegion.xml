@@ -1,0 +1,903 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::StreaminformationRegion</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Streaminformation" prot="public" virt="non-virtual">CMLibs::Zinc::Streaminformation</basecompoundref>
+    <includes refid="streamregion_8hpp" local="no">streamregion.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Attribute</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2a83ba071cc14bfbf0cc8253309a09a80a" prot="public">
+          <name>ATTRIBUTE_INVALID</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_ATTRIBUTE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified attribute </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2a0f7b4313df98426bc01f5da50ac011d8" prot="public">
+          <name>ATTRIBUTE_TIME</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_ATTRIBUTE_TIME</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Attribute used to specify the time to read or write field parameters in stream resource(s). Only applies to numerical fields. Note special behaviour for read and write, and whether source field is time-varying: Non-time-varying fields in file are upgraded on read to be defined at this single time, but in-memory fields without time-variation are written as-is. Time-varying field parameters are read at the nearest time present in the source time sequence, but written at the specified time by interpolation or using the values for the minimum/maximum time if out of range. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration of attributes that can be set by generic stream information region methods. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="69" column="1" bodyfile="auto_comments_output/streamregion.hpp" bodystart="68" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FileFormat</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032a6b6b8614d7009d5e30743f5da3a9d2fa" prot="public">
+          <name>FILE_FORMAT_INVALID</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_FILE_FORMAT_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid file format </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032a18c0a3ba4130487b129900b5deff72bd" prot="public">
+          <name>FILE_FORMAT_AUTOMATIC</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_FILE_FORMAT_AUTOMATIC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Automatically choose file format. This is the default option. On read: determine from internal characteristics On write: determine from file extension (case insensitive): .ex* -&gt; EX format; .fieldml -&gt; FieldML </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032a770b672f1e70c52bfcc2f90465c12dc6" prot="public">
+          <name>FILE_FORMAT_EX</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_FILE_FORMAT_EX</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Zinc/Cmgui EX format </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032a4318fb23064591f91fe9ea3eb2892e68" prot="public">
+          <name>FILE_FORMAT_FIELDML</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_FILE_FORMAT_FIELDML</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Latest supported FieldML format </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Describes the format for serialisation of region field data. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1acc1d4bfec898733f56dc850405189773" kindref="member">StreaminformationRegion::setFileFormat</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="88" column="1" bodyfile="auto_comments_output/streamregion.hpp" bodystart="87" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RecursionMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702aeca7d09bcb3f6d55cc72e5dab171bb91" prot="public">
+          <name>RECURSION_MODE_INVALID</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_RECURSION_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid recursion mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702abf7776e8c6e6858c188daadc7c0681a3" prot="public">
+          <name>RECURSION_MODE_ON</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_RECURSION_MODE_ON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> will be exported recursively </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702a7e04292d83c7daa3250b374569f63b9d" prot="public">
+          <name>RECURSION_MODE_OFF</name>
+          <initializer>= CMZN_STREAMINFORMATION_REGION_RECURSION_MODE_OFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> will not be exported recursively </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="103" column="1" bodyfile="auto_comments_output/streamregion.hpp" bodystart="102" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aae6f9325706131f3b6fb8accb1508d76" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Region</definition>
+        <argsstring></argsstring>
+        <name>Region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="33" column="1" bodyfile="auto_comments_output/streamregion.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ad64ed6ec054c853717f55a4cf7939144" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_streaminformation_region_id</type>
+        <definition>cmzn_streaminformation_region_id CMLibs::Zinc::StreaminformationRegion::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kindref="compound">StreaminformationRegion</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kindref="compound">StreaminformationRegion</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="40" column="41" bodyfile="auto_comments_output/streamregion.hpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a407f2c7d5cb70f7619b94c985493a665" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::StreaminformationRegion::StreaminformationRegion</definition>
+        <argsstring>()</argsstring>
+        <name>StreaminformationRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="46" column="1" bodyfile="auto_comments_output/streamregion.hpp" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aefc4cb4442c1ca1c43e434b13316849d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::StreaminformationRegion::StreaminformationRegion</definition>
+        <argsstring>(cmzn_streaminformation_region_id streaminformation_region_id)</argsstring>
+        <name>StreaminformationRegion</name>
+        <param>
+          <type>cmzn_streaminformation_region_id</type>
+          <declname>streaminformation_region_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="50" column="10" bodyfile="auto_comments_output/streamregion.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a087b831d42a543c1368c5d77108eee61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::StreaminformationRegion::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kindref="compound">StreaminformationRegion</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="59" column="6" bodyfile="auto_comments_output/streamregion.hpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a684136fe3614ed3ef7e69dfe02503ae7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::hasAttribute</definition>
+        <argsstring>(Attribute attribute) const</argsstring>
+        <name>hasAttribute</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check either an attribute of streaminformation has been set or not.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the real attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if attribute has been set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="119" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ab3068cc5da2e214ad12b0d5aa654e07b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::StreaminformationRegion::getAttributeReal</definition>
+        <argsstring>(Attribute attribute) const</argsstring>
+        <name>getAttributeReal</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a real value of an attribute of streaminformation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the real attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="131" column="8" bodyfile="auto_comments_output/streamregion.hpp" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aadaf8c88ca04e4fd5f0dd56f6d6b5fc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setAttributeReal</definition>
+        <argsstring>(Attribute attribute, double value)</argsstring>
+        <name>setAttributeReal</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a double attribute of the region stream information valid for all resources unless overridden for individual resources.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the double attribute to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the attribute.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if attribute successfully set, any other value if failed or attribute not valid or unable to be set for this cmzn_streaminformation_region. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="148" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="148" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a16a4bb865a07efdc82d50b447d16690f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::hasResourceAttribute</definition>
+        <argsstring>(const Streamresource &amp;resource, Attribute attribute) const</argsstring>
+        <name>hasResourceAttribute</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check either an attribute of a stream in streaminformation has been set or not.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the real attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if attribute has been set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="162" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="162" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ae66579ef929f3f3caaf5863f1df3adf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::StreaminformationRegion::getResourceAttributeReal</definition>
+        <argsstring>(const Streamresource &amp;resource, Attribute attribute) const</argsstring>
+        <name>getResourceAttributeReal</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a real value of an attribute of a stream in streaminformation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the real attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="176" column="8" bodyfile="auto_comments_output/streamregion.hpp" bodystart="176" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a7cb6521c2a99f89640648be77c3f79cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setResourceAttributeReal</definition>
+        <argsstring>(const Streamresource &amp;resource, Attribute attribute, double value)</argsstring>
+        <name>setResourceAttributeReal</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a double attribute for a resource in the region stream information.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the double attribute to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the attribute.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if attribute successfully set, any other value if failed or attribute not valid or unable to be set for this cmzn_streaminformation_region. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="195" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="195" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a6326109ed7fbdf83614dd8ad0361dc10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032" kindref="member">FileFormat</ref></type>
+        <definition>FileFormat CMLibs::Zinc::StreaminformationRegion::getFileFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>getFileFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the format for region field data to be read/written using this stream information.</para>
+<para><simplesect kind="return"><para>The file format, or FILE_FORMAT_INVALID on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="209" column="12" bodyfile="auto_comments_output/streamregion.hpp" bodystart="209" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1acc1d4bfec898733f56dc850405189773" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setFileFormat</definition>
+        <argsstring>(FileFormat fileFormat)</argsstring>
+        <name>setFileFormat</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032" kindref="member">FileFormat</ref></type>
+          <declname>fileFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the format for region field data to be read/written using this stream information. Applies to all resources managed by stream information.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The region stream file format. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="222" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="222" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a5ea60fbf45407bf64860142b7590681f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1ac6ad96b3d0685fc46455bba8158fa1fd" kindref="member">Field::DomainTypes</ref></type>
+        <definition>Field::DomainTypes CMLibs::Zinc::StreaminformationRegion::getResourceDomainTypes</definition>
+        <argsstring>(const Streamresource &amp;resource) const</argsstring>
+        <name>getResourceDomainTypes</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the specified domain types for a stream resource in streaminformation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Bitmasks for specified domain types for stream resource, CMZN_FIELD_DOMAIN_TYPE_INVALID if failed or unset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="235" column="20" bodyfile="auto_comments_output/streamregion.hpp" bodystart="235" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ad3144c1efc22c25dc46064ac4aea2cbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setResourceDomainTypes</definition>
+        <argsstring>(const Streamresource &amp;resource, Field::DomainTypes domainTypes)</argsstring>
+        <name>setResourceDomainTypes</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1ac6ad96b3d0685fc46455bba8158fa1fd" kindref="member">Field::DomainTypes</ref></type>
+          <declname>domainTypes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the domain types to be exported from the region this stream information is created in. The current default setting will output all domain types in region. On import, the domain type also specifies nodesets without a specified domain type in exformat file to be imported as nodes or datapoints domain. If unset, unspecified nodesets will be imported as nodes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>domainTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitmasks for the domain type to be set for output. It currently supports the following domains: CMZN_FIELD_DOMAIN_TYPE_POINT - Only output the region name if this is the only bit set CMZN_FIELD_DOMAIN_TYPE_NODES - Enable output of nodes CMZN_FIELD_DOMAIN_TYPE_DATAPOINTS - Enable output of datapoints CMZN_FIELD_DOMAIN_TYPE_MESH1D - Enable output of 1D mesh CMZN_FIELD_DOMAIN_TYPE_MESH2D - Enable output of 2D mesh CMZN_FIELD_DOMAIN_TYPE_MESH3D - Enable output of 3D mesh CMZN_FIELD_DOMAIN_TYPE_MESH_HIGHEST_DIMENSION - Enable output of mesh with highest dimension possible</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if domain types successfully set, any other value if failed or domain type not valid or unable to be set for this cmzn_streaminformation_region. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="265" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="265" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a647cdefa6d7faddef43f3e6cab3e98de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setFieldNames</definition>
+        <argsstring>(int numberOfNames, const char **fieldNames)</argsstring>
+        <name>setFieldNames</name>
+        <param>
+          <type>int</type>
+          <declname>numberOfNames</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>fieldNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function to choose the fields to be read/written by specifying name of the fields, this will affect all resources in this streaminformation unless field names have been set for individual resource.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of field names provided. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fieldNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the double attribute to set.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set the field names, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="283" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="283" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a1525c2da5229871894b2dda939597d04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setResourceFieldNames</definition>
+        <argsstring>(const Streamresource &amp;resource, int numberOfNames, const char **fieldNames)</argsstring>
+        <name>setResourceFieldNames</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numberOfNames</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>fieldNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function to choose the fields to be read/written by specifying name of the fields for this resource.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numberOfNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of field names provided. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fieldNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the double attribute to set.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if field names are successfully set, any other value if failed or attribute not valid or unable to be set for this cmzn_streaminformation_region. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="301" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="301" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aa7157c7245892aa15c379c39141cb8bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setRecursionMode</definition>
+        <argsstring>(RecursionMode recursionMode)</argsstring>
+        <name>setRecursionMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702" kindref="member">RecursionMode</ref></type>
+          <declname>recursionMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function to select either streaminformation should export the region and its children or just the region itself. This applies to all streaminformation resources unless this mode is set for individuals resources.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recursionMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Recursion mode to be set for this streaminformation.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if recursion mode is successfully set, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="319" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="319" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a81b96aa9e20198b9afa6260d00f57546" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setResourceRecursionMode</definition>
+        <argsstring>(const Streamresource &amp;resource, RecursionMode recursionMode)</argsstring>
+        <name>setResourceRecursionMode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702" kindref="member">RecursionMode</ref></type>
+          <declname>recursionMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function to select either streaminformation resource should export the region and its children or just the region itself.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursionMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Recursion mode to be set for this streaminformation.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if recursion mode is successfully set, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="335" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="335" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aab339e0d393125943d768013902ceae0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::StreaminformationRegion::getResourceGroupName</definition>
+        <argsstring>(const Streamresource &amp;resource) const</argsstring>
+        <name>getResourceGroupName</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function to get the group name set for stream resource.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Allocated string if group name is successfully returned, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="349" column="6" bodyfile="auto_comments_output/streamregion.hpp" bodystart="349" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a4ae6f08685377332fabbeea02f2eb366" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::StreaminformationRegion::setResourceGroupName</definition>
+        <argsstring>(const Streamresource &amp;resource, const char *groupName)</argsstring>
+        <name>setResourceGroupName</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function to set the group to be exported. If a group field with the provided name is found in the relevant region(s), the fields information in the group will be exported. If group name is NULL (default), all field informations will be exported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream resource. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groupName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group name to be set for this streaminformation.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if group name is successfully set, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/streamregion.hpp" line="367" column="5" bodyfile="auto_comments_output/streamregion.hpp" bodystart="367" bodyend="371"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A region-specific stream information object. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A region-specific stream information object, used to specify one or more model files/resources for a region to read from or write to, with attributes specified for them either globally or per-resource.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1a45b3ccc0de972a336a686fddedbb2e1f" kindref="member">Region::createStreaminformationRegion</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CMLibs::Zinc::StreaminformationRegion</label>
+        <link refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Streaminformation</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Streaminformation"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CMLibs::Zinc::StreaminformationRegion</label>
+        <link refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::Streaminformation</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Streaminformation"/>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/streamregion.hpp" line="32" column="1" bodyfile="auto_comments_output/streamregion.hpp" bodystart="31" bodyend="373"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>Attribute</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2a83ba071cc14bfbf0cc8253309a09a80a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>ATTRIBUTE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ac9ac22482731b14c5feb827384d409b2a0f7b4313df98426bc01f5da50ac011d8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>ATTRIBUTE_TIME</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ac34bdeb92766895cfdeba63af238c6e7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>castImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ada4e8d8e22da2bd0ec7602b795bf6ddb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>castRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a5f4ffb13c6f36ac3e015b4921d72b64c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>castScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a33ce88ff504baefbde71fe1078e0ab97" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>createStreamresourceFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a470001cec2f57a069ad399fb97c583cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>createStreamresourceMemory</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1afd09ff3d22436d0fa6ec48f1d2c6062c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>createStreamresourceMemoryBuffer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a81656c2dbc52ac72a4a14959e9e9494d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>createStreamresourceMemoryBufferCopy</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaacecc9b43f09c67a73069cdcc8b360451" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>DATA_COMPRESSION_TYPE_BZ2</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa2757cfd5924259928775b4fb4919ddc3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>DATA_COMPRESSION_TYPE_DEFAULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaae001aaab544252b9ab6e60edf08caae3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>DATA_COMPRESSION_TYPE_GZIP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa02d593f275b7d5386245361e3f0a83ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>DATA_COMPRESSION_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa2f3de29afcde36b8e8cae8bd7fc24b25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>DATA_COMPRESSION_TYPE_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>DataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032a18c0a3ba4130487b129900b5deff72bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>FILE_FORMAT_AUTOMATIC</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032a770b672f1e70c52bfcc2f90465c12dc6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>FILE_FORMAT_EX</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032a4318fb23064591f91fe9ea3eb2892e68" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>FILE_FORMAT_FIELDML</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032a6b6b8614d7009d5e30743f5da3a9d2fa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>FILE_FORMAT_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a136c99a837bb1f46f587e972593a1032" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>FileFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ab3068cc5da2e214ad12b0d5aa654e07b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aa969e89d3801fdad9ed1d2b725d940dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getDataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ad64ed6ec054c853717f55a4cf7939144" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a6326109ed7fbdf83614dd8ad0361dc10" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getFileFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a18f2dbdae57889318e200edc5e8c26b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ae66579ef929f3f3caaf5863f1df3adf1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getResourceAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a64c561ae3e5491b320cd8c156da365b2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getResourceDataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a5ea60fbf45407bf64860142b7590681f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getResourceDomainTypes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aab339e0d393125943d768013902ceae0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>getResourceGroupName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a684136fe3614ed3ef7e69dfe02503ae7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>hasAttribute</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a16a4bb865a07efdc82d50b447d16690f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>hasResourceAttribute</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a67724ea33aaf0b55e0e4807b3426fe3f" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a087b831d42a543c1368c5d77108eee61" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aa8f9d159d4d6b1ba9d8435d6ed3627d5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702aeca7d09bcb3f6d55cc72e5dab171bb91" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>RECURSION_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702a7e04292d83c7daa3250b374569f63b9d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>RECURSION_MODE_OFF</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702abf7776e8c6e6858c188daadc7c0681a3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>RECURSION_MODE_ON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a18fa8a5c8f5c26dc7f231a6e88017702" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>RecursionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aae6f9325706131f3b6fb8accb1508d76" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>Region</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aadaf8c88ca04e4fd5f0dd56f6d6b5fc5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a1f8a0fd5b65bfbee1ed1594e670f914a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setDataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a647cdefa6d7faddef43f3e6cab3e98de" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setFieldNames</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1acc1d4bfec898733f56dc850405189773" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setFileFormat</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aa7157c7245892aa15c379c39141cb8bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setRecursionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a7cb6521c2a99f89640648be77c3f79cc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setResourceAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aff3c317760b8a77f472dfd5b94bb21b8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setResourceDataCompressionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1ad3144c1efc22c25dc46064ac4aea2cbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setResourceDomainTypes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a1525c2da5229871894b2dda939597d04" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setResourceFieldNames</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a4ae6f08685377332fabbeea02f2eb366" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setResourceGroupName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a81b96aa9e20198b9afa6260d00f57546" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>setResourceRecursionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a0a73d80ee4e2d630ab82ab1fbe4b475e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>Streaminformation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aabc9ad5f8451bc500f03f5bc8edd5ebc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>Streaminformation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ac804a8fe148efb5a102c9f9657c44797" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>Streaminformation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1a407f2c7d5cb70f7619b94c985493a665" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>StreaminformationRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion_1aefc4cb4442c1ca1c43e434b13316849d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>StreaminformationRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a8379a9df28c8078a10681962584b8271" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::StreaminformationRegion</scope><name>~Streaminformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

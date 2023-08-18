@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="fieldgroup_8hpp" kind="file" language="C++">
+    <compoundname>fieldgroup.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/fieldgroup.h</includes>
+    <includes local="yes">cmlibs/zinc/element.hpp</includes>
+    <includes local="yes">cmlibs/zinc/field.hpp</includes>
+    <includes local="yes">cmlibs/zinc/fieldmodule.hpp</includes>
+    <includes local="yes">cmlibs/zinc/mesh.hpp</includes>
+    <includes local="yes">cmlibs/zinc/node.hpp</includes>
+    <includes local="yes">cmlibs/zinc/nodeset.hpp</includes>
+    <includes local="yes">cmlibs/zinc/region.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>auto_comments_output/fieldgroup.hpp</label>
+        <link refid="fieldgroup_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cmlibs/zinc/element.hpp</label>
+      </node>
+      <node id="2">
+        <label>cmlibs/zinc/fieldgroup.h</label>
+      </node>
+      <node id="9">
+        <label>cmlibs/zinc/region.hpp</label>
+      </node>
+      <node id="8">
+        <label>cmlibs/zinc/nodeset.hpp</label>
+      </node>
+      <node id="7">
+        <label>cmlibs/zinc/node.hpp</label>
+      </node>
+      <node id="4">
+        <label>cmlibs/zinc/field.hpp</label>
+      </node>
+      <node id="5">
+        <label>cmlibs/zinc/fieldmodule.hpp</label>
+      </node>
+      <node id="6">
+        <label>cmlibs/zinc/mesh.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1FieldGroup" prot="public">CMLibs::Zinc::FieldGroup</innerclass>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_FIELDGROUP_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_FIELDGROUP_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/fieldgroup.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/element.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/field.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/fieldmodule.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/mesh.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/node.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/nodeset.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/region.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classCMLibs_1_1Zinc_1_1FieldGroup" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>cmzn_field_group_id<sp/>getDerivedId()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="44"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_field_group_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(id);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>()<sp/>:<sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>(0)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(cmzn_field_group_id<sp/>field_group_id)<sp/>:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_field_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(field_group_id))</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" kindref="member">SubelementHandlingMode</ref></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca71b30ead5cb95ba9a6e37640f558d5ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca71b30ead5cb95ba9a6e37640f558d5ce" kindref="member">SUBELEMENT_HANDLING_MODE_INVALID</ref><sp/>=<sp/>CMZN_FIELD_GROUP_SUBELEMENT_HANDLING_MODE_INVALID,</highlight></codeline>
+<codeline lineno="66" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca8eb2f1d0c0a0fb18dbeea25505f4cf1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca8eb2f1d0c0a0fb18dbeea25505f4cf1f" kindref="member">SUBELEMENT_HANDLING_MODE_NONE</ref><sp/>=<sp/>CMZN_FIELD_GROUP_SUBELEMENT_HANDLING_MODE_NONE,</highlight></codeline>
+<codeline lineno="69" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca47fef7dad3b73266ae83f5c01647a428" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6ca47fef7dad3b73266ae83f5c01647a428" kindref="member">SUBELEMENT_HANDLING_MODE_FULL</ref><sp/>=<sp/>CMZN_FIELD_GROUP_SUBELEMENT_HANDLING_MODE_FULL</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a9e574705ca446df7fd7b29098b6d8be3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a9e574705ca446df7fd7b29098b6d8be3" kindref="member">isEmpty</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="82"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_is_empty(getDerivedId());</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aa3c322e506137566ec915bf40110ff7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aa3c322e506137566ec915bf40110ff7c" kindref="member">isEmptyLocal</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="92"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_is_empty_local(getDerivedId());</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a7c17a92c64583196a2d4abfc1d0bbed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a7c17a92c64583196a2d4abfc1d0bbed0" kindref="member">clear</ref>()</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_clear(getDerivedId());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a8dc4a999dc6ca02ae26cf4e8fa112ba6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a8dc4a999dc6ca02ae26cf4e8fa112ba6" kindref="member">clearLocal</ref>()</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_clear_local(getDerivedId());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af87a7a4a24da53a52a06bab9421185e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af87a7a4a24da53a52a06bab9421185e8" kindref="member">removeEmptySubgroups</ref>()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_remove_empty_subgroups(getDerivedId());</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a9074a76f98388a90941f22a6c8c81081" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a9074a76f98388a90941f22a6c8c81081" kindref="member">addLocalRegion</ref>()</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_add_local_region(getDerivedId());</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a4da9a8c135451b51f97dee2c7c6f4fc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a4da9a8c135451b51f97dee2c7c6f4fc3" kindref="member">containsLocalRegion</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="151"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_contains_local_region(getDerivedId());</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a8a5618b7d34e60826496a55960e15468" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a8a5618b7d34e60826496a55960e15468" kindref="member">removeLocalRegion</ref>()</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_remove_local_region(getDerivedId());</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a466d33ca24cacb3c2862219e3aff31b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a466d33ca24cacb3c2862219e3aff31b7" kindref="member">addRegion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref>&amp;<sp/>region)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_add_region(getDerivedId(),</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>region.<ref refid="classCMLibs_1_1Zinc_1_1Region_1a3b1f5b7c373d4cbde324d7b72031a5da" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a3e93455260200ce0eca222cb2e70314f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a3e93455260200ce0eca222cb2e70314f" kindref="member">removeRegion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref>&amp;<sp/>region)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_remove_region(getDerivedId(),<sp/>region.<ref refid="classCMLibs_1_1Zinc_1_1Region_1a3b1f5b7c373d4cbde324d7b72031a5da" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aeeeb0ce178ce360ddcfef1bd92d99542" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aeeeb0ce178ce360ddcfef1bd92d99542" kindref="member">containsRegion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref>&amp;<sp/>region)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="207"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_contains_region(getDerivedId(),<sp/>region.<ref refid="classCMLibs_1_1Zinc_1_1Region_1a3b1f5b7c373d4cbde324d7b72031a5da" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a39e68ee78e4b7a0a91c571e5383b9e7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" kindref="member">SubelementHandlingMode</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a39e68ee78e4b7a0a91c571e5383b9e7d" kindref="member">getSubelementHandlingMode</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="219"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" kindref="member">SubelementHandlingMode</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_field_group_get_subelement_handling_mode(getDerivedId()));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a5ce903272a72f8ea81aff7e5224795ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a5ce903272a72f8ea81aff7e5224795ec" kindref="member">setSubelementHandlingMode</ref>(<ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ad2af5e5ad4cc21dbeeeadfb0dfb2af6c" kindref="member">SubelementHandlingMode</ref><sp/>mode)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_field_group_set_subelement_handling_mode(getDerivedId(),</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_field_group_subelement_handling_mode</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(mode));</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a120d7f46807ca5e14daccc1d7fa232bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a120d7f46807ca5e14daccc1d7fa232bc" kindref="member">createSubregionFieldGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref>&amp;<sp/>region)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(cmzn_field_group_create_subregion_field_group(</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>region.<ref refid="classCMLibs_1_1Zinc_1_1Region_1a3b1f5b7c373d4cbde324d7b72031a5da" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1acb48795f1f4fbca741ebcfb79670521c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1acb48795f1f4fbca741ebcfb79670521c" kindref="member">getSubregionFieldGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref>&amp;<sp/>region)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="264"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(cmzn_field_group_get_subregion_field_group(</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>region.<ref refid="classCMLibs_1_1Zinc_1_1Region_1a3b1f5b7c373d4cbde324d7b72031a5da" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aff69fd97d0da4a21180d59a4401edfdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aff69fd97d0da4a21180d59a4401edfdc" kindref="member">getOrCreateSubregionFieldGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref>&amp;<sp/>region)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(cmzn_field_group_get_or_create_subregion_field_group(</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>region.<ref refid="classCMLibs_1_1Zinc_1_1Region_1a3b1f5b7c373d4cbde324d7b72031a5da" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af37dbcb2e5361db47ce67863e6767d65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af37dbcb2e5361db47ce67863e6767d65" kindref="member">createNodesetGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref>&amp;<sp/>nodeset)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref>(cmzn_field_group_create_nodeset_group(</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>nodeset.<ref refid="classCMLibs_1_1Zinc_1_1Nodeset_1aa44872fef06741ead387c6896133c395" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ae9dd5e7a80296a03cfdbf82cce56e154" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1ae9dd5e7a80296a03cfdbf82cce56e154" kindref="member">getNodesetGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref>&amp;<sp/>nodeset)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="307"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref>(cmzn_field_group_get_nodeset_group(</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>nodeset.<ref refid="classCMLibs_1_1Zinc_1_1Nodeset_1aa44872fef06741ead387c6896133c395" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a83c0cf3498f935f274dd0cf93f7058c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a83c0cf3498f935f274dd0cf93f7058c8" kindref="member">getOrCreateNodesetGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref>&amp;<sp/>nodeset)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="321"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup" kindref="compound">NodesetGroup</ref>(cmzn_field_group_get_or_create_nodeset_group(</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>nodeset.<ref refid="classCMLibs_1_1Zinc_1_1Nodeset_1aa44872fef06741ead387c6896133c395" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aaf15b5c4e583da8d8be0a5c0930f8080" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1aaf15b5c4e583da8d8be0a5c0930f8080" kindref="member">createMeshGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref>&amp;<sp/>mesh)</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref>(cmzn_field_group_create_mesh_group(</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>mesh.<ref refid="classCMLibs_1_1Zinc_1_1Mesh_1a08165062ff3de78db6cefcb328242c2b" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a092b4f2c5039e64049c16414d1d922e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a092b4f2c5039e64049c16414d1d922e8" kindref="member">getMeshGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref>&amp;<sp/>mesh)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="350"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref>(cmzn_field_group_get_mesh_group(</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>mesh.<ref refid="classCMLibs_1_1Zinc_1_1Mesh_1a08165062ff3de78db6cefcb328242c2b" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af4cfee756f88e7cdc8b5158b2811e3ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1af4cfee756f88e7cdc8b5158b2811e3ae" kindref="member">getOrCreateMeshGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref>&amp;<sp/>mesh)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="364"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref>(cmzn_field_group_get_or_create_mesh_group(</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId(),<sp/>mesh.<ref refid="classCMLibs_1_1Zinc_1_1Mesh_1a08165062ff3de78db6cefcb328242c2b" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374" refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a01bf0b7ddeba6864e040b99c0a1326da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup_1a01bf0b7ddeba6864e040b99c0a1326da" kindref="member">getFirstNonEmptySubregionFieldGroup</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="375"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(cmzn_field_group_get_first_non_empty_subregion_field_group(</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDerivedId()));</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382" refid="classCMLibs_1_1Zinc_1_1Fieldmodule_1ab0193597652fab2717094068651dfdd1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule_1ab0193597652fab2717094068651dfdd1" kindref="member">Fieldmodule::createFieldGroup</ref>()</highlight></codeline>
+<codeline lineno="383"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_field_group_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_fieldmodule_create_field_group(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="386"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="classCMLibs_1_1Zinc_1_1Field_1acfae911d921aaf25afe82dfcad06906e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field_1acfae911d921aaf25afe82dfcad06906e" kindref="member">Field::castGroup</ref>()</highlight></codeline>
+<codeline lineno="389"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(cmzn_field_cast_group(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="391"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393" refid="classCMLibs_1_1Zinc_1_1MeshGroup_1a1c80ba913a889e5c64fce75760513db0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup_1a1c80ba913a889e5c64fce75760513db0" kindref="member">MeshGroup::getFieldGroup</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="394"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(cmzn_mesh_group_get_field_group(this-&gt;getDerivedId()));</highlight></codeline>
+<codeline lineno="396"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398" refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1a93a4df4f4bd8a7e78e4683cb779a40ca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1NodesetGroup_1a93a4df4f4bd8a7e78e4683cb779a40ca" kindref="member">NodesetGroup::getFieldGroup</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="399"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref>(cmzn_nodeset_group_get_field_group(this-&gt;getDerivedId()));</highlight></codeline>
+<codeline lineno="401"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/fieldgroup.hpp"/>
+  </compounddef>
+</doxygen>

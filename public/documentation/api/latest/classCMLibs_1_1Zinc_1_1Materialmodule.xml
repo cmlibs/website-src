@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Materialmodule" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Materialmodule</compoundname>
+    <includes refid="material_8hpp" local="no">material.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a6c47a808a194e8c6eacaa073d6aa8881" prot="protected" static="no" mutable="no">
+        <type>cmzn_materialmodule_id</type>
+        <definition>cmzn_materialmodule_id CMLibs::Zinc::Materialmodule::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="432" column="24" bodyfile="auto_comments_output/material.hpp" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a123c7513e0981130fcc09fceb8040e61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialmodule::Materialmodule</definition>
+        <argsstring>()</argsstring>
+        <name>Materialmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="436" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="436" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a0bb499eb4c63814d55cc19fa30c0c1de" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialmodule::Materialmodule</definition>
+        <argsstring>(cmzn_materialmodule_id in_materialmodule_id)</argsstring>
+        <name>Materialmodule</name>
+        <param>
+          <type>cmzn_materialmodule_id</type>
+          <declname>in_materialmodule_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="440" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="440" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1ac98c09dd244bc4dbc5f40dd22e54fb85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialmodule::Materialmodule</definition>
+        <argsstring>(const Materialmodule &amp;materialModule)</argsstring>
+        <name>Materialmodule</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref> &amp;</type>
+          <declname>materialModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="444" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="444" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a7f246a472970886c3bc63e4bd97bcd82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref> &amp;</type>
+        <definition>Materialmodule&amp; CMLibs::Zinc::Materialmodule::operator=</definition>
+        <argsstring>(const Materialmodule &amp;materialModule)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref> &amp;</type>
+          <declname>materialModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="448" column="16" bodyfile="auto_comments_output/material.hpp" bodystart="448" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a95082144c16d8e1de308370095242338" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialmodule::~Materialmodule</definition>
+        <argsstring>()</argsstring>
+        <name>~Materialmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="460" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="460" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a48c5d51167232a1b07e155226928cc0b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Materialmodule::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="473" column="6" bodyfile="auto_comments_output/material.hpp" bodystart="473" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1aa92c6e21b3f193cc3c2466a6e249d420" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_materialmodule_id</type>
+        <definition>cmzn_materialmodule_id CMLibs::Zinc::Materialmodule::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="483" column="24" bodyfile="auto_comments_output/material.hpp" bodystart="483" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1ae95253a71357931ee08565ade87f86c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::Materialmodule::createMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>createMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create and return a new material.</para>
+<para>material will belong to. <simplesect kind="return"><para>Handle to new material, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="494" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="494" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a4d652c39765e604cb99f1f736c1ca27c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Materialiterator" kindref="compound">Materialiterator</ref></type>
+        <definition>Materialiterator CMLibs::Zinc::Materialmodule::createMaterialiterator</definition>
+        <argsstring>()</argsstring>
+        <name>createMaterialiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a material iterator object for iterating through the materials in the material module, in alphabetical order of name. The iterator initially points at the position before the first material, so the first call to the material iterator next() method returns the first material and advances the iterator. Iterator becomes invalid if materials are added, removed or renamed while in use. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialiterator_1a6ec96c6ebd22e3c9006ba5eeb2e6c424" kindref="member">Materialiterator::next</ref></para>
+</simplesect>
+be iterated over. <simplesect kind="return"><para>Handle to material iterator, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="511" column="18" bodyfile="auto_comments_output/material.hpp" bodystart="511" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1af88665eb3c98418afe2897e8abf761e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::Materialmodule::findMaterialByName</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>findMaterialByName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the material with the specified name, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the material. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to material, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="522" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="522" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a45f0c568576728243729d9143d5da818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodule::beginChange</definition>
+        <argsstring>()</argsstring>
+        <name>beginChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Begin caching or increment cache level for this material module. Call this function before making multiple changes to minimise number of change messages sent to clients. Must remember to end_change after completing changes. Can be nested. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a4c0de87f104310786f594d80bbb3451c" kindref="member">Materialmodule::endChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="536" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="536" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a4c0de87f104310786f594d80bbb3451c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodule::endChange</definition>
+        <argsstring>()</argsstring>
+        <name>endChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrement cache level or end caching of changes for the material module. Call matching begin change method before making multiple changes and call this afterwards. When change level is restored to zero, cached change messages are sent out to clients. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a45f0c568576728243729d9143d5da818" kindref="member">Materialmodule::beginChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="550" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="550" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a065d1844d3ee5d264819cbcb31b1a169" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodule::defineStandardMaterials</definition>
+        <argsstring>()</argsstring>
+        <name>defineStandardMaterials</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define a list of standard cmgui materials and store them as they are managed by graphics module.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully create a list of standard materials into material module, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="562" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="562" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1abea02cf7f0422eca144fc693aa779e65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref></type>
+        <definition>Context CMLibs::Zinc::Materialmodule::getContext</definition>
+        <argsstring>() const</argsstring>
+        <name>getContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the owning context for the material module.</para>
+<para><simplesect kind="return"><para>Handle to context, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="572" column="9" bodyfile="auto_comments_output/material.hpp" bodystart="572" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a44f36ba45792867c57ea65eb3d9091f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::Materialmodule::getDefaultMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default material, if any. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule_1acd707b41367f5e0a5ada50867ee69542" kindref="member">Materialmodule::setDefaultMaterial</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to material, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="583" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="583" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1acd707b41367f5e0a5ada50867ee69542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodule::setDefaultMaterial</definition>
+        <argsstring>(const Material &amp;material)</argsstring>
+        <name>setDefaultMaterial</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default material. This material is used as the default material for new graphics, but note if the default surface material is set it is used instead for new surface and contours graphics. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule_1acd532f509f241cbd36e231a3791364bf" kindref="member">Materialmodule::setDefaultSurfaceMaterial</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material to set as default. Must be valid. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="597" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="597" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a397f5b07cedaa7fab6e20eda63b6e0be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::Materialmodule::getDefaultSelectedMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultSelectedMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default selected material, if any. This material is used as the default selected material for any new graphics.</para>
+<para><simplesect kind="return"><para>Handle to material, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="608" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="608" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1adec0316fbd91e2ae4ce32f6cb3936237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodule::setDefaultSelectedMaterial</definition>
+        <argsstring>(const Material &amp;material)</argsstring>
+        <name>setDefaultSelectedMaterial</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default selected material.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material to set as default. Must be valid. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="619" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="619" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1ad4a88868271270671fff2a63e54af3f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::Materialmodule::getDefaultSurfaceMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultSurfaceMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default surface material, if any. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule_1acd532f509f241cbd36e231a3791364bf" kindref="member">Materialmodule::setDefaultSurfaceMaterial</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to material, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="630" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="630" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1acd532f509f241cbd36e231a3791364bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodule::setDefaultSurfaceMaterial</definition>
+        <argsstring>(const Material &amp;material)</argsstring>
+        <name>setDefaultSurfaceMaterial</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default surface material set for new surface and contours graphics. If this is not set, the default material is used instead.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material to set as default for surfaces. Pass invalid null material to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="643" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="643" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a92cb35c0ce32d2b323eca5967524d1cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Materialmodule::readDescription</definition>
+        <argsstring>(const char *description)</argsstring>
+        <name>readDescription</name>
+        <param>
+          <type>const char *</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the json description into the material module. This will change the materials and defaults in the material module. Note that material image field paths in the description are interpreted relative to the current default region of the owning context.</para>
+<para>@description The string containing json description <simplesect kind="return"><para>Result OK on success, otherwise any error code, such as ERROR_NOT_FOUND if any textures or other objects have not been located. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="658" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="658" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1ad47b4bb001076f6bee774c784b253c00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Materialmodule::writeDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>writeDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the json format string describing the materials and defaults in the material module, which can be used to store the current material settings. Note that material image fields are required to be in a single region tree for valid serialisation, and the partner read method assumes paths are relative to the current default region of the owning context. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a92cb35c0ce32d2b323eca5967524d1cf" kindref="member">Materialmodule::readDescription</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Allocated C string containing the json description of material module, or 0 if failed. Up to caller to deallocate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="674" column="6" bodyfile="auto_comments_output/material.hpp" bodystart="674" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialmodule_1a9643aa3b55cd4c76a4f86c8f47554e62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Materialmodulenotifier" kindref="compound">Materialmodulenotifier</ref></type>
+        <definition>Materialmodulenotifier CMLibs::Zinc::Materialmodule::createMaterialmodulenotifier</definition>
+        <argsstring>()</argsstring>
+        <name>createMaterialmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a notifier for getting callbacks for changes to the materials in the material module.</para>
+<para><simplesect kind="return"><para>Handle to new material module notifier, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="685" column="31" bodyfile="auto_comments_output/material.hpp" bodystart="903" bodyend="906"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Module managing all materials. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Module managing all materials. Note that only default and default selected materials exist on start-up, so many users will want to define standard materials early in their program. Standard materials include basic colours, greys, bioengineering materials (bone, muscle, tissue), etc. Alternative and additional materials can be defined using the API. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a065d1844d3ee5d264819cbcb31b1a169" kindref="member">Materialmodule::defineStandardMaterials</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/material.hpp" line="430" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="429" bodyend="687"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a45f0c568576728243729d9143d5da818" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>beginChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1ae95253a71357931ee08565ade87f86c8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>createMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a4d652c39765e604cb99f1f736c1ca27c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>createMaterialiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a9643aa3b55cd4c76a4f86c8f47554e62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>createMaterialmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a065d1844d3ee5d264819cbcb31b1a169" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>defineStandardMaterials</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a4c0de87f104310786f594d80bbb3451c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>endChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1af88665eb3c98418afe2897e8abf761e7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>findMaterialByName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1abea02cf7f0422eca144fc693aa779e65" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>getContext</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a44f36ba45792867c57ea65eb3d9091f2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>getDefaultMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a397f5b07cedaa7fab6e20eda63b6e0be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>getDefaultSelectedMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1ad4a88868271270671fff2a63e54af3f5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>getDefaultSurfaceMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1aa92c6e21b3f193cc3c2466a6e249d420" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a6c47a808a194e8c6eacaa073d6aa8881" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a48c5d51167232a1b07e155226928cc0b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a123c7513e0981130fcc09fceb8040e61" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>Materialmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a0bb499eb4c63814d55cc19fa30c0c1de" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>Materialmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1ac98c09dd244bc4dbc5f40dd22e54fb85" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>Materialmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a7f246a472970886c3bc63e4bd97bcd82" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a92cb35c0ce32d2b323eca5967524d1cf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>readDescription</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1acd707b41367f5e0a5ada50867ee69542" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>setDefaultMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1adec0316fbd91e2ae4ce32f6cb3936237" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>setDefaultSelectedMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1acd532f509f241cbd36e231a3791364bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>setDefaultSurfaceMaterial</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1ad47b4bb001076f6bee774c784b253c00" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>writeDescription</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialmodule_1a95082144c16d8e1de308370095242338" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialmodule</scope><name>~Materialmodule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

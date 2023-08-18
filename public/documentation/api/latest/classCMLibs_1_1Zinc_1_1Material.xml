@@ -1,0 +1,752 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Material" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Material</compoundname>
+    <includes refid="material_8hpp" local="no">material.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Attribute</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084a78623fe3ca8bec0d03096879a51cb91b" prot="public">
+          <name>ATTRIBUTE_INVALID</name>
+          <initializer>= CMZN_MATERIAL_ATTRIBUTE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified material attribute. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084ade3ba809880d9a6f4605a3c1986bce3e" prot="public">
+          <name>ATTRIBUTE_ALPHA</name>
+          <initializer>= CMZN_MATERIAL_ATTRIBUTE_ALPHA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Opacity of the material. Transparent or translucent objects has lower alpha values then an opaque ones. Minimum acceptable value is 0 and maximum acceptable value is 1. Use attribute_real to get and set its values. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084ac36b1742795af659b9bb0a4e32d5ed5c" prot="public">
+          <name>ATTRIBUTE_AMBIENT</name>
+          <initializer>= CMZN_MATERIAL_ATTRIBUTE_AMBIENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ambient colour of the material. Ambient colour simulates the colour of the material when it does not receive direct illumination. Composed of RGB components. Use attribute_real3 to get and set its values. Minimum acceptable value is 0 and maximum acceptable value is 1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084a6f01b966d6cf1b3e4d296c7c6722055c" prot="public">
+          <name>ATTRIBUTE_DIFFUSE</name>
+          <initializer>= CMZN_MATERIAL_ATTRIBUTE_DIFFUSE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Diffuse colour of the material. Diffuse colour response to light that comes from one direction and this colour scattered equally in all directions once the light hits it. Composed of RGB components. Use attribute_real3 to get and set its values. Minimum acceptable value is 0 and maximum acceptable value is 1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084af53888e7b8733deffe167b45a49ac0bd" prot="public">
+          <name>ATTRIBUTE_EMISSION</name>
+          <initializer>= CMZN_MATERIAL_ATTRIBUTE_EMISSION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Emissive colour of the material. Emissive colour simulates colours that is originating from the material itself. Composed of RGB components. Use attribute_real3 to get and set its values. Minimum acceptable value is 0 and maximum acceptable value is 1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084a8f7439290341cbb7aed9b824b58cb0da" prot="public">
+          <name>ATTRIBUTE_SHININESS</name>
+          <initializer>= CMZN_MATERIAL_ATTRIBUTE_SHININESS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Shininess determines the brightness of the highlight. Minimum acceptable value is 0 and maximum acceptable value is 1. Use attribute_real to get and set its values. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084a6281b1872606350e7f7789763dc4a6c1" prot="public">
+          <name>ATTRIBUTE_SPECULAR</name>
+          <initializer>= CMZN_MATERIAL_ATTRIBUTE_SPECULAR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specular colour of the material. Specular colour produces highlights. Unlike ambient and diffuse, specular colour depends on location of the viewpoint, it is brightest along the direct angle of reflection. Composed of RGB components. Use attribute_real3 to get and set its values. Minimum acceptable value is 0 and maximum acceptable value is 1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Labels of material attributes which may be set or obtained using generic get/set_attribute functions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="96" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="95" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ChangeFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6a891c055e27c935931a2db3732adceda0" prot="public">
+          <name>CHANGE_FLAG_NONE</name>
+          <initializer>= CMZN_MATERIAL_CHANGE_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>material(s) not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6ac98ea41976d2afa9efd34ffcdc7476b0" prot="public">
+          <name>CHANGE_FLAG_ADD</name>
+          <initializer>= CMZN_MATERIAL_CHANGE_FLAG_ADD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>one or more materials added </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6afdc7cf35a2dde73e98090d405c633936" prot="public">
+          <name>CHANGE_FLAG_REMOVE</name>
+          <initializer>= CMZN_MATERIAL_CHANGE_FLAG_REMOVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>one or more materials removed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6a4624fcf160307444c589d5f08b9c925d" prot="public">
+          <name>CHANGE_FLAG_IDENTIFIER</name>
+          <initializer>= CMZN_MATERIAL_CHANGE_FLAG_IDENTIFIER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>material identifier changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6af1e871f46550ac0a5ab163812aa0e45a" prot="public">
+          <name>CHANGE_FLAG_DEFINITION</name>
+          <initializer>= CMZN_MATERIAL_CHANGE_FLAG_DEFINITION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>change to material attributes other than identifier. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6a6d75c864492361f8df6e2175137d31d1" prot="public">
+          <name>CHANGE_FLAG_FULL_RESULT</name>
+          <initializer>= CMZN_MATERIAL_CHANGE_FLAG_FULL_RESULT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>all resultant values of material changed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6aeb7fffe184c5dd6008df62fa2e37a882" prot="public">
+          <name>CHANGE_FLAG_FINAL</name>
+          <initializer>= CMZN_MATERIAL_CHANGE_FLAG_FINAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>final notification: owning material module i.e. material module has been destroyed </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit flags summarising changes to a material or materials in the material module. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="142" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="141" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Material_1a4e7c67acec72b0421a91eb82f2d8d427" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Material::ChangeFlags</definition>
+        <argsstring></argsstring>
+        <name>ChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6" kindref="member">ChangeFlag</ref> <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Materialmoduleevent_1a92c8185a88cdefb37d4dfaca19dcec82" kindref="member">Materialmoduleevent::getMaterialChangeFlags</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="164" column="13" bodyfile="auto_comments_output/material.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Material_1a088505bdd380dccb0fe64c43f748059f" prot="protected" static="no" mutable="no">
+        <type>cmzn_material_id</type>
+        <definition>cmzn_material_id CMLibs::Zinc::Material::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="36" column="18" bodyfile="auto_comments_output/material.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1abf469a4cce21ddaf220d917de7782287" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Material::Material</definition>
+        <argsstring>()</argsstring>
+        <name>Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="40" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="40" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a4b57f75e7ecaa73e537fa0cf8074901d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Material::Material</definition>
+        <argsstring>(cmzn_material_id material_id)</argsstring>
+        <name>Material</name>
+        <param>
+          <type>cmzn_material_id</type>
+          <declname>material_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="44" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a7e8cfd8c629c680340d2d4abf0b73c13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Material::Material</definition>
+        <argsstring>(const Material &amp;material)</argsstring>
+        <name>Material</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="48" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a396f390413a451d6cb184960ae07d6c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+        <definition>Material&amp; CMLibs::Zinc::Material::operator=</definition>
+        <argsstring>(const Material &amp;material)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="52" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a22735210fc82d1541d11f184759efe7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Material::~Material</definition>
+        <argsstring>()</argsstring>
+        <name>~Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="63" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a3606186cfa4520ef87ff39a72c147d18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Material::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="76" column="6" bodyfile="auto_comments_output/material.hpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1afb02dbe76ef0546a98785c68f230cd92" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_material_id</type>
+        <definition>cmzn_material_id CMLibs::Zinc::Material::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="86" column="18" bodyfile="auto_comments_output/material.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a88a0104cd18482eb6400ad0f146b9863" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Material::isManaged</definition>
+        <argsstring>() const</argsstring>
+        <name>isManaged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get managed status of material in its owning material module. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Material_1a95367716d5ad86f19a6a3bb33dd41300" kindref="member">Material::setManaged</ref></para>
+</simplesect>
+<simplesect kind="return"><para>true if material is managed, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="172" column="6" bodyfile="auto_comments_output/material.hpp" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a95367716d5ad86f19a6a3bb33dd41300" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Material::setManaged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setManaged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set managed status of material in its owning material module. If set (managed) the material will remain indefinitely in the material module even if no external references are held. If not set (unmanaged) the material will be automatically removed from the module when no longer referenced externally, effectively marking it as pending destruction. All new objects are unmanaged unless stated otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the managed flag: true or false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="189" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a8cb776c87c60cfe104aef9b184293d76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Material::getAttributeReal</definition>
+        <argsstring>(Attribute attribute) const</argsstring>
+        <name>getAttributeReal</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a real value of an attribute of the material.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the real attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="200" column="8" bodyfile="auto_comments_output/material.hpp" bodystart="200" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a85c9a62d297db2fee51fd107ded796c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Material::setAttributeReal</definition>
+        <argsstring>(Attribute attribute, double value)</argsstring>
+        <name>setAttributeReal</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a real value for an attribute of the material.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the real attribute to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the attribute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if attribute successfully set, any other value if failed or attribute not valid or unable to be set for this material object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="214" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="214" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a157da50bdfd6ba9a7b14ee049d92e0ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Material::getAttributeReal3</definition>
+        <argsstring>(Attribute attribute, double *valuesOut3) const</argsstring>
+        <name>getAttributeReal3</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a 3 components vectors of an attribute of the material. &lt;values&gt; should be allocated with enough space for 3 components.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the vectors attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="227" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="227" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a454de8d44a55bf8288c346baf1b04328" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Material::setAttributeReal3</definition>
+        <argsstring>(Attribute attribute, const double *valuesIn3)</argsstring>
+        <name>setAttributeReal3</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084" kindref="member">Attribute</ref></type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a 3 components vectors of an attribute for the material. &lt;values&gt; should be a vectors with 3 components containg valid values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the vectors attribute to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if attribute successfully set, any other value if failed or attribute not valid or unable to be set for this material object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="241" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="241" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a6d27f63c0715eae936d0a8f2db4ea88c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Material::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an allocated string containing material name.</para>
+<para><simplesect kind="return"><para>allocated string containing material name, otherwise NULL. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="253" column="6" bodyfile="auto_comments_output/material.hpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a34fb7d87ab717f849955239da1702908" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Material::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/change name for &lt;material&gt;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name to be set to the material </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set/change name for material, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="265" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1afc88365e9e593b17f20010eef660d81d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Material::getTextureField</definition>
+        <argsstring>(int textureNumber) const</argsstring>
+        <name>getTextureField</name>
+        <param>
+          <type>int</type>
+          <declname>textureNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get field containing an image used for texturing the material.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textureNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the texture to get, from 1 to 4. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to the field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="276" column="7" bodyfile="auto_comments_output/material.hpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a27c7a7c2d4030181886ee1ba7afcb1cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Material::setTextureField</definition>
+        <argsstring>(int textureNumber, const Field &amp;textureField)</argsstring>
+        <name>setTextureField</name>
+        <param>
+          <type>int</type>
+          <declname>textureNumber</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>textureField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set field containing an image used for texturing the material. Up to 4 textures can be used with a material.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textureNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the texture to set, from 1 to 4. Texture 1 is used for texture mapping with the legacy OpenGL shader model. Custom material shaders can use any of the textures explicitly. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textureField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field supplying the texture image. Must be of type field_image. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="292" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="292" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1af36c160be52819a82ecf4883240455ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref></type>
+        <definition>Shaderuniforms CMLibs::Zinc::Material::getShaderuniforms</definition>
+        <argsstring>() const</argsstring>
+        <name>getShaderuniforms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the shader uniforms object currently in use by the material.</para>
+<para><simplesect kind="return"><para>Handle to the shaderuniforms, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="303" column="16" bodyfile="auto_comments_output/material.hpp" bodystart="303" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1ac49e1c251cbd9eca34c8e31057ec51a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Material::setShaderuniforms</definition>
+        <argsstring>(const Shaderuniforms &amp;shaderuniforms)</argsstring>
+        <name>setShaderuniforms</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderuniforms" kindref="compound">Shaderuniforms</ref> &amp;</type>
+          <declname>shaderuniforms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shaderuniforms object which contains uniforms to be used by the shader program for the material.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shaderuniforms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shaderuniforms to be set for this material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="316" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1ac6c2a6c379a5ae9040a73683a1278c41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref></type>
+        <definition>Shaderprogram CMLibs::Zinc::Material::getShaderprogram</definition>
+        <argsstring>() const</argsstring>
+        <name>getShaderprogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the shaderprogram object currently in use by the material.</para>
+<para><simplesect kind="return"><para>Handle to the shader program, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="327" column="15" bodyfile="auto_comments_output/material.hpp" bodystart="327" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Material_1a4aabc61a8e829abb532e2b5fe5ff2675" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Material::setShaderprogram</definition>
+        <argsstring>(const Shaderprogram &amp;shaderprogram)</argsstring>
+        <name>setShaderprogram</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> &amp;</type>
+          <declname>shaderprogram</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shaderprogram object which contains program to be used by the material.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shaderprogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shader program to be set for this material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="339" column="5" bodyfile="auto_comments_output/material.hpp" bodystart="339" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> materials specify colouring of graphics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> materials specify colouring of graphics similarly to the original OpenGL shading model with diffuse, ambient, emission and specular colours, shininess and alpha/opacity. Image fields can be attached for texturing (and will be used by OpenGL shaders once enabled in a future release). </para>
+    </detaileddescription>
+    <location file="auto_comments_output/material.hpp" line="33" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="32" bodyend="345"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>Attribute</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084ade3ba809880d9a6f4605a3c1986bce3e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ATTRIBUTE_ALPHA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084ac36b1742795af659b9bb0a4e32d5ed5c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ATTRIBUTE_AMBIENT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084a6f01b966d6cf1b3e4d296c7c6722055c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ATTRIBUTE_DIFFUSE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084af53888e7b8733deffe167b45a49ac0bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ATTRIBUTE_EMISSION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084a78623fe3ca8bec0d03096879a51cb91b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ATTRIBUTE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084a8f7439290341cbb7aed9b824b58cb0da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ATTRIBUTE_SHININESS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ae30e06a72d502bf238a654e5f37ab084a6281b1872606350e7f7789763dc4a6c1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ATTRIBUTE_SPECULAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6ac98ea41976d2afa9efd34ffcdc7476b0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6af1e871f46550ac0a5ab163812aa0e45a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6aeb7fffe184c5dd6008df62fa2e37a882" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6a6d75c864492361f8df6e2175137d31d1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6a4624fcf160307444c589d5f08b9c925d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6a891c055e27c935931a2db3732adceda0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6afdc7cf35a2dde73e98090d405c633936" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ad3e64d946cd8b08973a917994f504fa6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a4e7c67acec72b0421a91eb82f2d8d427" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a8cb776c87c60cfe104aef9b184293d76" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>getAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a157da50bdfd6ba9a7b14ee049d92e0ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>getAttributeReal3</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1afb02dbe76ef0546a98785c68f230cd92" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a6d27f63c0715eae936d0a8f2db4ea88c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ac6c2a6c379a5ae9040a73683a1278c41" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>getShaderprogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1af36c160be52819a82ecf4883240455ef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>getShaderuniforms</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1afc88365e9e593b17f20010eef660d81d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>getTextureField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a088505bdd380dccb0fe64c43f748059f" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a88a0104cd18482eb6400ad0f146b9863" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a3606186cfa4520ef87ff39a72c147d18" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1abf469a4cce21ddaf220d917de7782287" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>Material</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a4b57f75e7ecaa73e537fa0cf8074901d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>Material</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a7e8cfd8c629c680340d2d4abf0b73c13" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>Material</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a396f390413a451d6cb184960ae07d6c0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a85c9a62d297db2fee51fd107ded796c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>setAttributeReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a454de8d44a55bf8288c346baf1b04328" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>setAttributeReal3</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a95367716d5ad86f19a6a3bb33dd41300" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a34fb7d87ab717f849955239da1702908" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a4aabc61a8e829abb532e2b5fe5ff2675" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>setShaderprogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1ac49e1c251cbd9eca34c8e31057ec51a5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>setShaderuniforms</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a27c7a7c2d4030181886ee1ba7afcb1cc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>setTextureField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Material_1a22735210fc82d1541d11f184759efe7e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Material</scope><name>~Material</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

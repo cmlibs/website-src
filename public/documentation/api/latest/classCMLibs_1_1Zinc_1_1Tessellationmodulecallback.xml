@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CMLibs::Zinc::Tessellationmodulecallback</compoundname>
+    <includes refid="tessellation_8hpp" local="no">tessellation.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a21c7bfc6438ed6e5321e60fe37c51975" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Tessellationmodulenotifier</definition>
+        <argsstring></argsstring>
+        <name>Tessellationmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="664" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a8b7d3158ff28847917628a7b6d48d18c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellationmodulecallback::Tessellationmodulecallback</definition>
+        <argsstring>(const Tessellationmodulecallback &amp;)</argsstring>
+        <name>Tessellationmodulecallback</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="666" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a1f0a59a8d14045f635615622fb06c811" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref> &amp;</type>
+        <definition>Tessellationmodulecallback&amp; CMLibs::Zinc::Tessellationmodulecallback::operator=</definition>
+        <argsstring>(const Tessellationmodulecallback &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback" kindref="compound">Tessellationmodulecallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="667" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1aafa84293060429e3ba680d81597c8d79" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CMLibs::Zinc::Tessellationmodulecallback::operator()</definition>
+        <argsstring>(const Tessellationmoduleevent &amp;tessellationmoduleevent)=0</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Tessellationmoduleevent" kindref="compound">Tessellationmoduleevent</ref> &amp;</type>
+          <declname>tessellationmoduleevent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="676" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1aab7aaa3322fdf5d5e4c08c1b5f512bb3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CMLibs::Zinc::Tessellationmodulecallback::C_callback</definition>
+        <argsstring>(cmzn_tessellationmoduleevent_id tessellationmoduleevent_id, void *callbackVoid)</argsstring>
+        <name>C_callback</name>
+        <param>
+          <type>cmzn_tessellationmoduleevent_id</type>
+          <declname>tessellationmoduleevent_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callbackVoid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="669" column="13" bodyfile="auto_comments_output/tessellation.hpp" bodystart="669" bodyend="674"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a2ee0817ee35865b8bd4c1f4769065741" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Tessellationmodulecallback::Tessellationmodulecallback</definition>
+        <argsstring>()</argsstring>
+        <name>Tessellationmodulecallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="679" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="679" bodyend="680"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a4e55b46a7c47c8fb926a60f68f6e534f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CMLibs::Zinc::Tessellationmodulecallback::~Tessellationmodulecallback</definition>
+        <argsstring>()</argsstring>
+        <name>~Tessellationmodulecallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/tessellation.hpp" line="683" column="9" bodyfile="auto_comments_output/tessellation.hpp" bodystart="683" bodyend="684"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class functor for tessellation module notifier callbacks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class functor for tessellation module notifier callbacks:<itemizedlist>
+<listitem><para>Derive from this class adding any user data required.</para>
+</listitem><listitem><para>Implement virtual operator()(const Tessellationmoduleevent&amp;) to handle callback. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodulenotifier_1aeb3fd32c7c0e09ea78f2ae26e5de52bf" kindref="member">Tessellationmodulenotifier::setCallback()</ref> </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/tessellation.hpp" line="663" column="1" bodyfile="auto_comments_output/tessellation.hpp" bodystart="662" bodyend="685"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1aab7aaa3322fdf5d5e4c08c1b5f512bb3" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmodulecallback</scope><name>C_callback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1aafa84293060429e3ba680d81597c8d79" prot="private" virt="pure-virtual"><scope>CMLibs::Zinc::Tessellationmodulecallback</scope><name>operator()</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a1f0a59a8d14045f635615622fb06c811" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmodulecallback</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a8b7d3158ff28847917628a7b6d48d18c" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmodulecallback</scope><name>Tessellationmodulecallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a2ee0817ee35865b8bd4c1f4769065741" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmodulecallback</scope><name>Tessellationmodulecallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a21c7bfc6438ed6e5321e60fe37c51975" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Tessellationmodulecallback</scope><name>Tessellationmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Tessellationmodulecallback_1a4e55b46a7c47c8fb926a60f68f6e534f" prot="public" virt="virtual"><scope>CMLibs::Zinc::Tessellationmodulecallback</scope><name>~Tessellationmodulecallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

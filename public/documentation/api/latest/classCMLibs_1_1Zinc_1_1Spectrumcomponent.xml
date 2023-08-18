@@ -1,0 +1,1121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Spectrumcomponent</compoundname>
+    <includes refid="spectrum_8hpp" local="no">spectrum.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ScaleType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1a8cbf045aece078f4dcb5345f0b925e9c" prot="public">
+          <name>SCALE_TYPE_INVALID</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_SCALE_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scale type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1a54092c065b9444c41a89bb6d07558474" prot="public">
+          <name>SCALE_TYPE_LINEAR</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_SCALE_TYPE_LINEAR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>default scale type The colour value on spectrum will be interpolated linearly in range when this mode is chosen. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1afdf270be29a6c46cba40386e0d5c13a4" prot="public">
+          <name>SCALE_TYPE_LOG</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_SCALE_TYPE_LOG</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Logarithm scale type for spectrum component. The colour value on spectrum will be interpolated logarithmically in range when this mode is chosen. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controls the mapping of field value to colour in a spectrum component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="89" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="88" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ColourMappingType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a9822c1d7506b732f04c724adb441f702" prot="public">
+          <name>COLOUR_MAPPING_TYPE_INVALID</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified colour mapping type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a1f921bb2357cb2395261cc10de659d4d" prot="public">
+          <name>COLOUR_MAPPING_TYPE_ALPHA</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_ALPHA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping alters the alpha (transparency value) for primitives. This mode does not alter the rgb value and should be used with other spectrum component or with overwrite_material set to 0 in spectrum. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3c0272dfe22b68a44b9f1eb68e2c40bb" prot="public">
+          <name>COLOUR_MAPPING_TYPE_BANDED</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_BANDED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create non-coloured strips/bands. The appearance is controlled by the number of bands and the banded ratio. This mode does not alter the rgb value except at the bands and should be used with other spectrum component or with overwrite_material set to 0 in spectrum. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a153f33c8aa2099e4428227ad7fb8c8db" kindref="member">Spectrumcomponent::setBandedRatio</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a20dbb1ed32f9d4989e25153c3564121d" kindref="member">Spectrumcomponent::getNumberOfBands</ref> </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ad7675d18fd32f7a03abfc17d5c7853b4" prot="public">
+          <name>COLOUR_MAPPING_TYPE_BLUE</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_BLUE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create a colour spectrum from black to blue. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a98ce47d88658c9ada0994f833619f400" prot="public">
+          <name>COLOUR_MAPPING_TYPE_GREEN</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_GREEN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create a colour spectrum from black to green. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a28c70f6060e1a3105d4734fe5446fdbb" prot="public">
+          <name>COLOUR_MAPPING_TYPE_MONOCHROME</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_MONOCHROME</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create a monochrome (grey scale) spectrum. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ae34629ce0f891d2edf7a2a3dde130b4d" prot="public">
+          <name>COLOUR_MAPPING_TYPE_RAINBOW</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_RAINBOW</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>default colour mapping type This colour mapping create a spectrum from blue to red, similar to the colour of a rainbow. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ae7a202731494ba18004cda17ff54d316" prot="public">
+          <name>COLOUR_MAPPING_TYPE_RED</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_RED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create a colour spectrum from black to red. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841aa1bdc14efae2c1076fff1903a2e24a9e" prot="public">
+          <name>COLOUR_MAPPING_TYPE_STEP</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_STEP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create a spectrum with only two colours, red and green. The boundary between red and green can be altered by CMZN_SPECTRUMCOMPONENT_ATTRIBUTE_STEP_VALUE. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3556299e51d8a1ab255aae4efa85db03" prot="public">
+          <name>COLOUR_MAPPING_TYPE_WHITE_TO_BLUE</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_WHITE_TO_BLUE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create a colour spectrum from black to blue. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a938a66769b80fbd5e952ea565e149fc5" prot="public">
+          <name>COLOUR_MAPPING_TYPE_WHITE_TO_RED</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_WHITE_TO_RED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create a colour spectrum from black to red. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a8b32b214531eb19ae8b353f40777493b" prot="public">
+          <name>COLOUR_MAPPING_TYPE_WHITE_TO_GREEN</name>
+          <initializer>= CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_WHITE_TO_GREEN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This colour mapping create a colour spectrum from black to green. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Colour mapping mode for specctrum component. Appearances of these mappings can be altered by the various APIs provided in spectrum and spectrum components APIs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="111" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="110" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7ba295e05e57bc3342213771ff45df72" prot="protected" static="no" mutable="no">
+        <type>cmzn_spectrumcomponent_id</type>
+        <definition>cmzn_spectrumcomponent_id CMLibs::Zinc::Spectrumcomponent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="34" column="27" bodyfile="auto_comments_output/spectrum.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1af4a1bc76c4aedb2622b2d5007391d3a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrumcomponent::Spectrumcomponent</definition>
+        <argsstring>()</argsstring>
+        <name>Spectrumcomponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="38" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aca663cd91165b1e09f0cfdc97434edea" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrumcomponent::Spectrumcomponent</definition>
+        <argsstring>(cmzn_spectrumcomponent_id in_spectrumcomponent_id)</argsstring>
+        <name>Spectrumcomponent</name>
+        <param>
+          <type>cmzn_spectrumcomponent_id</type>
+          <declname>in_spectrumcomponent_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="44" column="10" bodyfile="auto_comments_output/spectrum.hpp" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a034fd5bea8f6ae17fa4959bde2541c13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrumcomponent::Spectrumcomponent</definition>
+        <argsstring>(const Spectrumcomponent &amp;spectrumComponent)</argsstring>
+        <name>Spectrumcomponent</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref> &amp;</type>
+          <declname>spectrumComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="50" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1adb2a2850440bafe5801e70c2110a81de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref> &amp;</type>
+        <definition>Spectrumcomponent&amp; CMLibs::Zinc::Spectrumcomponent::operator=</definition>
+        <argsstring>(const Spectrumcomponent &amp;spectrumComponent)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref> &amp;</type>
+          <declname>spectrumComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="55" column="19" bodyfile="auto_comments_output/spectrum.hpp" bodystart="55" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa50ef76a21c814fe9b41117f545f4b21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrumcomponent::~Spectrumcomponent</definition>
+        <argsstring>()</argsstring>
+        <name>~Spectrumcomponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="67" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6f4d970f54972f53079697b5c4f9508f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrumcomponent::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="80" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_spectrumcomponent_id</type>
+        <definition>cmzn_spectrumcomponent_id CMLibs::Zinc::Spectrumcomponent::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent" kindref="compound">Spectrumcomponent</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="169" column="27" bodyfile="auto_comments_output/spectrum.hpp" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9865858a4ba69517af0bd3384cd0f4d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Spectrumcomponent::getRangeMinimum</definition>
+        <argsstring>() const</argsstring>
+        <name>getRangeMinimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum value of the range this spectrum component will lookup to on targeted field. Primitives with this field value will display the minimum colour value of the component colour type</para>
+<para><simplesect kind="return"><para>value of range minimum on success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="181" column="8" bodyfile="auto_comments_output/spectrum.hpp" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae36931d3247a75606f4a7e8f2bb03a66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setRangeMinimum</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setRangeMinimum</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the minimum value of the range this spectrum component will lookup to on targeted field. Primitives with this field value will display the minimum colour value of the component colour type</para>
+<para>@value the value to be set for range minimum</para>
+<para><simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="195" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9912c503e05b2c8ba3ff394f309ba86d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Spectrumcomponent::getRangeMaximum</definition>
+        <argsstring>() const</argsstring>
+        <name>getRangeMaximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the maximum value of the range this spectrum component will lookup to on targeted field. Primitives with this field value will display the maximum colour value of the component colour type</para>
+<para><simplesect kind="return"><para>value of range maximum on success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="207" column="8" bodyfile="auto_comments_output/spectrum.hpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9465bb45b3c788d385b82f16227ca4da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setRangeMaximum</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setRangeMaximum</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the maximum value of the range this spectrum component will lookup to on targeted field. Primitives with this field value will display the maximum colour value of the component colour type</para>
+<para>@value the value to be set for range maximum</para>
+<para><simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="221" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0d0ecebb40c3897842e1f81b1a8b04e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Spectrumcomponent::getColourMinimum</definition>
+        <argsstring>() const</argsstring>
+        <name>getColourMinimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the colour value mapped to the minimum spectrum component data range. This is a normalised value from 0.0 to 1.0.</para>
+<para><simplesect kind="return"><para>Minimum colour value from 0.0 to 1.0, or 0.0 if invalid component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="232" column="8" bodyfile="auto_comments_output/spectrum.hpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0d05ba58f66a3e2dcd26511f7a6d3226" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setColourMinimum</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setColourMinimum</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the colour value mapped to the minimum spectrum component data range. This is a normalised value from 0.0 to 1.0, mapping to a position in the colour map. For simple colour mappings red, green, blue and alpha, this gives the exact colour component value at the minimum data range, which is interpolated to the maximum colour at the maximum data range. Note that setting &apos;reverse&apos; colours reverses the association of colour range and data range; it is recommended the colour minimum and maximum be swapped instead of using reverse. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a1470f095bd6ee4ff5e660cfbc2994823" kindref="member">Spectrumcomponent::setColourReverse</ref> Changing this value does not affect <ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3c0272dfe22b68a44b9f1eb68e2c40bb" kindref="member">COLOUR_MAPPING_TYPE_BANDED</ref> which is only affected by the number and ratio of bands.</para>
+</simplesect>
+@value The minimum colour value to set, from 0.0 to 1.0. <simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="253" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0e438c5b9dfade1f73e4c55c326df0c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Spectrumcomponent::getColourMaximum</definition>
+        <argsstring>() const</argsstring>
+        <name>getColourMaximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the colour value mapped to the maximum spectrum component data range. This is a normalised value from 0.0 to 1.0.</para>
+<para><simplesect kind="return"><para>Maximum colour value from 0.0 to 1.0, or 0.0 if invalid component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="264" column="8" bodyfile="auto_comments_output/spectrum.hpp" bodystart="264" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a5dc954ab0f88a3eb382ddad5cff0f3d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setColourMaximum</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setColourMaximum</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the colour value mapped to the maximum spectrum component data range. This is a normalised value from 0.0 to 1.0, mapping to a position in the colour map. For simple colour mappings red, green, blue and alpha, this gives the exact colour component value at the maximum data range, which is interpolated to the minimum colour at the minimum data range. Note that setting &apos;reverse&apos; colours reverses the association of colour range and data range; it is recommended the colour minimum and maximum be swapped instead of using reverse. Changing this value does not affect COLOUR_MAPPING_TYPE_BANDED which is only affected by the number and ratio of bands.</para>
+<para>@value The maximum colour value to set, from 0.0 to 1.0. <simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="284" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae4c5a7f090be93ca7571d3d79da05d97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Spectrumcomponent::getStepValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getStepValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the step value of a spectrum component. The step spectrum defines the boundary between the red and blue colour of the COLOUR_MAPPING_TYPE_STEP spectrum compomemt.</para>
+<para><simplesect kind="return"><para>step value of the spectrum component on success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="297" column="8" bodyfile="auto_comments_output/spectrum.hpp" bodystart="297" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7704f9fbffdadb37b155a6bfe8bc0a5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setStepValue</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setStepValue</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the step value of a spectrum component. The step spectrum defines the boundary between the red and blue colour of the COLOUR_MAPPING_TYPE_STEP spectrum component.</para>
+<para>@value the step value to be set</para>
+<para><simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="311" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="311" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abde6c4eceef29ee7202fa1796e96a798" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Spectrumcomponent::getExaggeration</definition>
+        <argsstring>() const</argsstring>
+        <name>getExaggeration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value which alters the colour progression when scale type is set to SCALE_TYPE_LOG. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1afdf270be29a6c46cba40386e0d5c13a4" kindref="member">Spectrumcomponent::SCALE_TYPE_LOG</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The exaggeration value of the spectrum, or zero on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="323" column="8" bodyfile="auto_comments_output/spectrum.hpp" bodystart="323" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aac95cf31e1801602c5429e38196b443e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setExaggeration</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setExaggeration</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value which alters the colour progression when scale type is set to SCALE_TYPE_LOG <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1afdf270be29a6c46cba40386e0d5c13a4" kindref="member">Spectrumcomponent::SCALE_TYPE_LOG</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The exaggeration value to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="336" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ace7710adb61f3eb8372056474b38d4a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Spectrumcomponent::getBandedRatio</definition>
+        <argsstring>() const</argsstring>
+        <name>getBandedRatio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value determining the proportion of band present on each section, number of sections in a spectrum is determined by number of bands, value must be larger than 0.0 and must not exceed 1.0.</para>
+<para><simplesect kind="return"><para>banded ratio of the spectrum component on success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="349" column="8" bodyfile="auto_comments_output/spectrum.hpp" bodystart="349" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a153f33c8aa2099e4428227ad7fb8c8db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setBandedRatio</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setBandedRatio</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value determining the proportion of band present on each section, number of sections in a spectrum is determined by number of bands, value must be larger than 0.0 and must not exceed 1.0.</para>
+<para>@value the banded ratio to be set</para>
+<para><simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="363" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="363" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab46337cfdd0d7e3efce5f740ca896234" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrumcomponent::isActive</definition>
+        <argsstring>() const</argsstring>
+        <name>isActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the active state of a spectrum component, only active spectrum component will be rendered</para>
+<para><simplesect kind="return"><para>true if spectrum component is active, false if failed or spectrum component is not active </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="375" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a01f9314fa4191a15361e52fc0394f5ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setActive</definition>
+        <argsstring>(bool active)</argsstring>
+        <name>setActive</name>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the active state of a spectrum component, only active spectrum component will be rendered</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set to the zinc spectrum component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="388" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="388" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9d40015bcee3648c84d8420aa06559ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrumcomponent::isColourReverse</definition>
+        <argsstring>() const</argsstring>
+        <name>isColourReverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the reverse flag of a spectrum component, reverse spectrum component will have the colour rendered reversely.</para>
+<para><simplesect kind="return"><para>true if spectrum component is reverse, false if failed or spectrum component is not reverse </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="400" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a1470f095bd6ee4ff5e660cfbc2994823" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setColourReverse</definition>
+        <argsstring>(bool reverse)</argsstring>
+        <name>setColourReverse</name>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the reverse flag of a spectrum component, which if set maps the colour maximum to the data range minimum, and the colour minimum to the data range maximum. This is primarily intended to reverse the rainbow colour map. With most colour maps, swapping the colour minimum and maximum values is easier to explain and achieves the same result.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set to the zinc spectrum component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="416" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1af9c5050999d89e10daa0117529fd2925" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrumcomponent::isExtendAbove</definition>
+        <argsstring>() const</argsstring>
+        <name>isExtendAbove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the &apos;extend above&apos; flag of a spectrum component, which controls whether values above the maximum are rendered for this component. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a541ea9f5dd16a28bd8b845864064a59b" kindref="member">Spectrumcomponent::setExtendAbove</ref></para>
+</simplesect>
+<simplesect kind="return"><para>true if spectrum component extends above, false if failed or spectrum component does not extend above </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="429" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="429" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a541ea9f5dd16a28bd8b845864064a59b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setExtendAbove</definition>
+        <argsstring>(bool extend_above)</argsstring>
+        <name>setExtendAbove</name>
+        <param>
+          <type>bool</type>
+          <declname>extend_above</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the &apos;extend above&apos; flag of a spectrum component. When on (true), values above the maximum are rendered with the same colour as the maximum value. When off, no colour is set for this component for values above the maximum value. By default, extend above is on (true).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>extend_above</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set to the zinc spectrum component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="445" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="445" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a3c56c7dee16132800eed878584046ae2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrumcomponent::isExtendBelow</definition>
+        <argsstring>() const</argsstring>
+        <name>isExtendBelow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the &apos;extend below&apos; flag of a spectrum component, which controls whether values below the minimum are rendered for this component. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abc0008de658fb21525a1590cebce6f0a" kindref="member">Spectrumcomponent::setExtendBelow</ref></para>
+</simplesect>
+<simplesect kind="return"><para>true if spectrum component extends below, false if failed or spectrum component does not extend below </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="458" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="458" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abc0008de658fb21525a1590cebce6f0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setExtendBelow</definition>
+        <argsstring>(bool extend_below)</argsstring>
+        <name>setExtendBelow</name>
+        <param>
+          <type>bool</type>
+          <declname>extend_below</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the &apos;extend below&apos; flag of a spectrum component. When on (true), values below the minimum are rendered with the same colour as the minimum value. When off, no colour is set for this component for values below the minimum value. By default, extend below is on (true).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>extend_below</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set to the zinc spectrum component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="474" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="474" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa3f53ef08fb6eda6eafbad01cf2501d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::getFieldComponent</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the field component lookup number of a spectrum component, this value determines which of the field component this spectrum component will look up on.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a7d7b117dd6c0d42e8a62d6b725d75a56" kindref="member">Graphics::setDataField</ref></para>
+</simplesect>
+<simplesect kind="return"><para>positive integer of the field component number to look up to. Any other value if failed or value is not set correctly. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="488" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="488" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a2cff4f22dde3e20abf03bc74146c81ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setFieldComponent</definition>
+        <argsstring>(int componentNumber)</argsstring>
+        <name>setFieldComponent</name>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the field component lookup number of a spectrum component, this value determines which of the field component this spectrum component will look up on.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a7d7b117dd6c0d42e8a62d6b725d75a56" kindref="member">Graphics::setDataField</ref></para>
+</simplesect>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="503" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="503" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a71eb9b0be7a635c5e4733dcc63d0b901" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrumcomponent::isFixMaximum</definition>
+        <argsstring>() const</argsstring>
+        <name>isFixMaximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query whether this component&apos;s data range maximum is marked as fixed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa14a56adef3ce74afb4ed7d48526c017" kindref="member">Spectrumcomponent::setFixMaximum</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Boolean true if the maximum is fixed, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="515" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="515" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa14a56adef3ce74afb4ed7d48526c017" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setFixMaximum</definition>
+        <argsstring>(bool fixMaximum)</argsstring>
+        <name>setFixMaximum</name>
+        <param>
+          <type>bool</type>
+          <declname>fixMaximum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set hint for whether to fix this component&apos;s data range maximum when fitting the spectrum ranges to the range of data in the model visualisation. If true, the maximum should be fixed at its current value. If false, it can change e.g. scale in proportion to other data ranges. This attribute is metadata i.e. it does not affect the spectrum result. Its default value is false i.e. the maximum is not fixed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fixMaximum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of the fix maximum flag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="531" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="531" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a3fd5345d4214e97b2a74034f18f24c1a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrumcomponent::isFixMinimum</definition>
+        <argsstring>() const</argsstring>
+        <name>isFixMinimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query whether this component&apos;s data range minimum is marked as fixed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab838d85639393d1ed6a23cb5b6e2f898" kindref="member">Spectrumcomponent::setFixMinimum</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Boolean true if the minimum is fixed, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="542" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="542" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab838d85639393d1ed6a23cb5b6e2f898" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setFixMinimum</definition>
+        <argsstring>(bool fixMinimum)</argsstring>
+        <name>setFixMinimum</name>
+        <param>
+          <type>bool</type>
+          <declname>fixMinimum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set hint for whether to fix this component&apos;s data range minimum when fitting the spectrum ranges to the range of data in the model visualisation. If true, the minimum should be fixed at its current value. If false, it can change e.g. scale in proportion to other data ranges. This attribute is metadata i.e. it does not affect the spectrum result. Its default value is false i.e. the minimum is not fixed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fixMinimum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of the fix minimum flag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="558" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="558" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a20dbb1ed32f9d4989e25153c3564121d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::getNumberOfBands</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfBands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of bands this component contains within its range in CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_BANDED</para>
+<para><simplesect kind="return"><para>positive integer of nuymber of bands set for this components. Any other value if failed or value is not set correctly </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="571" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="571" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aaa6af85b534d00268c909ddac3492866" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setNumberOfBands</definition>
+        <argsstring>(int numberOfBands)</argsstring>
+        <name>setNumberOfBands</name>
+        <param>
+          <type>int</type>
+          <declname>numberOfBands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of bands this component contains within its range in CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_BANDED</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfBands</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of bands number of bands for this component</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="585" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="585" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae735884d6d35ac76819db6b4a574a794" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" kindref="member">ScaleType</ref></type>
+        <definition>ScaleType CMLibs::Zinc::Spectrumcomponent::getScaleType</definition>
+        <argsstring>() const</argsstring>
+        <name>getScaleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the interpolation_mode of this component.</para>
+<para><simplesect kind="return"><para>interpolation_mode set for this spectrum. CMZN_SPECTRUMCOMPONENT_SCALE_TYPE_INVALID if failed or mode is not set correctly </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="598" column="11" bodyfile="auto_comments_output/spectrum.hpp" bodystart="598" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7f1fd966edf4aa4cdb8fa394621cc3e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setScaleType</definition>
+        <argsstring>(ScaleType scaleType)</argsstring>
+        <name>setScaleType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" kindref="member">ScaleType</ref></type>
+          <declname>scaleType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the interpolation_mode of this component.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scaleType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interpolation mode to be set for spectrum component</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="612" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="612" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a80e9de045cde923f5f4292b7d6950c8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" kindref="member">ColourMappingType</ref></type>
+        <definition>ColourMappingType CMLibs::Zinc::Spectrumcomponent::getColourMappingType</definition>
+        <argsstring>() const</argsstring>
+        <name>getColourMappingType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the colour_mapping_type of this component.</para>
+<para><simplesect kind="return"><para>colour_mapping_type of the spectrum component. CMZN_SPECTRUMCOMPONENT_COLOUR_MAPPING_TYPE_INVALID if failed or mode is not set correctly. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="626" column="19" bodyfile="auto_comments_output/spectrum.hpp" bodystart="626" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a09e04794747b3a3d130760048ea9a7b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Spectrumcomponent::setColourMappingType</definition>
+        <argsstring>(ColourMappingType colourMapping)</argsstring>
+        <name>setColourMappingType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" kindref="member">ColourMappingType</ref></type>
+          <declname>colourMapping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the colour_mapping_type of this component.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colourMapping</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>colour_mapping_type to be set for spectrum component</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="640" column="5" bodyfile="auto_comments_output/spectrum.hpp" bodystart="640" bodyend="644"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Maps a single component of a data field to colour in a spectrum. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A spectrumcomponent object maps a single component of a data field to one of several colour ramps, rainbow, alpha ramp, contour bands or a step function. A spectrum may blend multiple components to give the overall colouring. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/spectrum.hpp" line="32" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="31" bodyend="646"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a1f921bb2357cb2395261cc10de659d4d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_ALPHA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3c0272dfe22b68a44b9f1eb68e2c40bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_BANDED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ad7675d18fd32f7a03abfc17d5c7853b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_BLUE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a98ce47d88658c9ada0994f833619f400" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_GREEN</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a9822c1d7506b732f04c724adb441f702" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a28c70f6060e1a3105d4734fe5446fdbb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_MONOCHROME</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ae34629ce0f891d2edf7a2a3dde130b4d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_RAINBOW</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841ae7a202731494ba18004cda17ff54d316" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_RED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841aa1bdc14efae2c1076fff1903a2e24a9e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_STEP</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a3556299e51d8a1ab255aae4efa85db03" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_WHITE_TO_BLUE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a8b32b214531eb19ae8b353f40777493b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_WHITE_TO_GREEN</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841a938a66769b80fbd5e952ea565e149fc5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>COLOUR_MAPPING_TYPE_WHITE_TO_RED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a16a6d0674003c2d6b7b4027c654f3841" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>ColourMappingType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ace7710adb61f3eb8372056474b38d4a9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getBandedRatio</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a80e9de045cde923f5f4292b7d6950c8a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getColourMappingType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0e438c5b9dfade1f73e4c55c326df0c4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getColourMaximum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0d0ecebb40c3897842e1f81b1a8b04e8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getColourMinimum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abde6c4eceef29ee7202fa1796e96a798" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getExaggeration</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa3f53ef08fb6eda6eafbad01cf2501d4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getFieldComponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a57ef5be4d2e19d37e4e04c38932bd03f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a20dbb1ed32f9d4989e25153c3564121d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getNumberOfBands</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9912c503e05b2c8ba3ff394f309ba86d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getRangeMaximum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9865858a4ba69517af0bd3384cd0f4d2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getRangeMinimum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae735884d6d35ac76819db6b4a574a794" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getScaleType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae4c5a7f090be93ca7571d3d79da05d97" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>getStepValue</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7ba295e05e57bc3342213771ff45df72" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab46337cfdd0d7e3efce5f740ca896234" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>isActive</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9d40015bcee3648c84d8420aa06559ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>isColourReverse</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1af9c5050999d89e10daa0117529fd2925" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>isExtendAbove</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a3c56c7dee16132800eed878584046ae2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>isExtendBelow</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a71eb9b0be7a635c5e4733dcc63d0b901" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>isFixMaximum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a3fd5345d4214e97b2a74034f18f24c1a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>isFixMinimum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6f4d970f54972f53079697b5c4f9508f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1adb2a2850440bafe5801e70c2110a81de" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1a8cbf045aece078f4dcb5345f0b925e9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>SCALE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1a54092c065b9444c41a89bb6d07558474" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>SCALE_TYPE_LINEAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1afdf270be29a6c46cba40386e0d5c13a4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>SCALE_TYPE_LOG</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a6d1aa375f44c10539af94a5c493e46a1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>ScaleType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a01f9314fa4191a15361e52fc0394f5ef" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setActive</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a153f33c8aa2099e4428227ad7fb8c8db" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setBandedRatio</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a09e04794747b3a3d130760048ea9a7b8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setColourMappingType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a5dc954ab0f88a3eb382ddad5cff0f3d1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setColourMaximum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a0d05ba58f66a3e2dcd26511f7a6d3226" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setColourMinimum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a1470f095bd6ee4ff5e660cfbc2994823" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setColourReverse</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aac95cf31e1801602c5429e38196b443e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setExaggeration</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a541ea9f5dd16a28bd8b845864064a59b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setExtendAbove</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1abc0008de658fb21525a1590cebce6f0a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setExtendBelow</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a2cff4f22dde3e20abf03bc74146c81ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setFieldComponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa14a56adef3ce74afb4ed7d48526c017" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setFixMaximum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ab838d85639393d1ed6a23cb5b6e2f898" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setFixMinimum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aaa6af85b534d00268c909ddac3492866" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setNumberOfBands</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a9465bb45b3c788d385b82f16227ca4da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setRangeMaximum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1ae36931d3247a75606f4a7e8f2bb03a66" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setRangeMinimum</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7f1fd966edf4aa4cdb8fa394621cc3e7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setScaleType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a7704f9fbffdadb37b155a6bfe8bc0a5a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>setStepValue</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1af4a1bc76c4aedb2622b2d5007391d3a1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>Spectrumcomponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aca663cd91165b1e09f0cfdc97434edea" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>Spectrumcomponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1a034fd5bea8f6ae17fa4959bde2541c13" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>Spectrumcomponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrumcomponent_1aa50ef76a21c814fe9b41117f545f4b21" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrumcomponent</scope><name>~Spectrumcomponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

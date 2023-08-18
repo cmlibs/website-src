@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="scene_8hpp" kind="file" language="C++">
+    <compoundname>scene.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/scene.h</includes>
+    <includes local="yes">cmlibs/zinc/field.hpp</includes>
+    <includes local="yes">cmlibs/zinc/graphics.hpp</includes>
+    <includes local="yes">cmlibs/zinc/light.hpp</includes>
+    <includes local="yes">cmlibs/zinc/nodeset.hpp</includes>
+    <includes local="yes">cmlibs/zinc/region.hpp</includes>
+    <includes local="yes">cmlibs/zinc/scenefilter.hpp</includes>
+    <includes local="yes">cmlibs/zinc/selection.hpp</includes>
+    <includes local="yes">cmlibs/zinc/shader.hpp</includes>
+    <includes local="yes">cmlibs/zinc/spectrum.hpp</includes>
+    <includes local="yes">cmlibs/zinc/timekeeper.hpp</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>cmlibs/zinc/graphics.hpp</label>
+      </node>
+      <node id="9">
+        <label>cmlibs/zinc/selection.hpp</label>
+      </node>
+      <node id="5">
+        <label>cmlibs/zinc/light.hpp</label>
+      </node>
+      <node id="2">
+        <label>cmlibs/zinc/scene.h</label>
+      </node>
+      <node id="12">
+        <label>cmlibs/zinc/timekeeper.hpp</label>
+      </node>
+      <node id="7">
+        <label>cmlibs/zinc/region.hpp</label>
+      </node>
+      <node id="8">
+        <label>cmlibs/zinc/scenefilter.hpp</label>
+      </node>
+      <node id="6">
+        <label>cmlibs/zinc/nodeset.hpp</label>
+      </node>
+      <node id="11">
+        <label>cmlibs/zinc/spectrum.hpp</label>
+      </node>
+      <node id="3">
+        <label>cmlibs/zinc/field.hpp</label>
+      </node>
+      <node id="1">
+        <label>auto_comments_output/scene.hpp</label>
+        <link refid="scene_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cmlibs/zinc/shader.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Scene" prot="public">CMLibs::Zinc::Scene</innerclass>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_SCENE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_SCENE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/scene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/field.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/graphics.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/light.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/nodeset.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/region.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/scenefilter.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/selection.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/shader.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/spectrum.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/timekeeper.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">StreaminformationScene;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Sceneviewermodule;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Scenepicker;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classCMLibs_1_1Zinc_1_1Scene" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_scene_id<sp/>id;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>(cmzn_scene_id<sp/>scene_id)<sp/>:<sp/>id(scene_id)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>&amp;<sp/>scene)<sp/>:<sp/>id(cmzn_scene_access(scene.id))</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>&amp;<sp/>scene)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_scene_id<sp/>temp_id<sp/>=<sp/>cmzn_scene_access(scene.id);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_scene_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_scene_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classCMLibs_1_1Zinc_1_1Scene_1ad13a32059e8d11e59f407040f1b347d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ad13a32059e8d11e59f407040f1b347d7" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="82"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classCMLibs_1_1Zinc_1_1Scene_1a7cd1751403e3084d0b97cfd2edb83930" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_scene_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a7cd1751403e3084d0b97cfd2edb83930" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="92"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classCMLibs_1_1Zinc_1_1Scene_1a33526bb265b16e902fe0c2b70008e528" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a33526bb265b16e902fe0c2b70008e528" kindref="member">beginChange</ref>()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_begin_change(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classCMLibs_1_1Zinc_1_1Scene_1ab7e22f0f300a2d2ea722714ec735f2cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ab7e22f0f300a2d2ea722714ec735f2cf" kindref="member">endChange</ref>()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_end_change(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classCMLibs_1_1Zinc_1_1Scene_1af7f5b2e266793a0b16f7645e1e927397" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1af7f5b2e266793a0b16f7645e1e927397" kindref="member">convertToPointCloud</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref>&amp;<sp/>filter,<sp/><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref>&amp;<sp/>nodeset,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>&amp;<sp/>coordinateField,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lineDensity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lineDensityScaleFactor,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>surfaceDensity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>surfaceDensityScaleFactor)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="152"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_convert_to_point_cloud(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>filter.<ref refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a1bcfb7de87e7c5fd808a300d7d5d00b0" kindref="member">getId</ref>(),</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodeset.<ref refid="classCMLibs_1_1Zinc_1_1Nodeset_1aa44872fef06741ead387c6896133c395" kindref="member">getId</ref>(),<sp/>coordinateField.<ref refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" kindref="member">getId</ref>(),</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lineDensity,<sp/>lineDensityScaleFactor,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>surfaceDensity,<sp/>surfaceDensityScaleFactor);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="classCMLibs_1_1Zinc_1_1Scene_1a6626e5c13ea6cc16057b581582703893" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a6626e5c13ea6cc16057b581582703893" kindref="member">convertPointsToNodes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref>&amp;<sp/>filter,<sp/><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref>&amp;<sp/>nodeset,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>&amp;<sp/>coordinateField)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="175"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_convert_points_to_nodes(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>filter.<ref refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a1bcfb7de87e7c5fd808a300d7d5d00b0" kindref="member">getId</ref>(),</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodeset.<ref refid="classCMLibs_1_1Zinc_1_1Nodeset_1aa44872fef06741ead387c6896133c395" kindref="member">getId</ref>(),<sp/>coordinateField.<ref refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="classCMLibs_1_1Zinc_1_1Scene_1a067f99d6272ac24845357f29f9e5733e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a067f99d6272ac24845357f29f9e5733e" kindref="member">createGraphics</ref>(<ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" kindref="member">Graphics::Type</ref><sp/>graphicsType)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>(cmzn_scene_create_graphics(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_graphics_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(graphicsType)));</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classCMLibs_1_1Zinc_1_1Scene_1ad09ebe0bbdef10f170f4f77649c60703" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsContours" kindref="compound">GraphicsContours</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ad09ebe0bbdef10f170f4f77649c60703" kindref="member">createGraphicsContours</ref>()</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsContours" kindref="compound">GraphicsContours</ref>(cmzn_scene_create_graphics_contours(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="classCMLibs_1_1Zinc_1_1Scene_1a5022f56c360d47c9e8624764b5ac4cc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsLines" kindref="compound">GraphicsLines</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a5022f56c360d47c9e8624764b5ac4cc9" kindref="member">createGraphicsLines</ref>()</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsLines" kindref="compound">GraphicsLines</ref>(cmzn_scene_create_graphics_lines(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="classCMLibs_1_1Zinc_1_1Scene_1a840b2dfc41eb351a7660f05bfb7278e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsPoints" kindref="compound">GraphicsPoints</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a840b2dfc41eb351a7660f05bfb7278e4" kindref="member">createGraphicsPoints</ref>()</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsPoints" kindref="compound">GraphicsPoints</ref>(cmzn_scene_create_graphics_points(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="classCMLibs_1_1Zinc_1_1Scene_1ae78c2a363dc3b526e7e14d137e53ab6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsStreamlines" kindref="compound">GraphicsStreamlines</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ae78c2a363dc3b526e7e14d137e53ab6a" kindref="member">createGraphicsStreamlines</ref>()</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsStreamlines" kindref="compound">GraphicsStreamlines</ref>(cmzn_scene_create_graphics_streamlines(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="classCMLibs_1_1Zinc_1_1Scene_1aa064f69a1ac2fed5a4d30cf1f3efd6de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsSurfaces" kindref="compound">GraphicsSurfaces</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1aa064f69a1ac2fed5a4d30cf1f3efd6de" kindref="member">createGraphicsSurfaces</ref>()</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1GraphicsSurfaces" kindref="compound">GraphicsSurfaces</ref>(cmzn_scene_create_graphics_surfaces(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="classCMLibs_1_1Zinc_1_1Scene_1ab289e78f212cd83689e9e4f72ada5409" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Selectionnotifier" kindref="compound">Selectionnotifier</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ab289e78f212cd83689e9e4f72ada5409" kindref="member">createSelectionnotifier</ref>()</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Selectionnotifier" kindref="compound">Selectionnotifier</ref>(cmzn_scene_create_selectionnotifier(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="classCMLibs_1_1Zinc_1_1Scene_1a5f8613f9cb4adc2ae0f86de202a68ec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a5f8613f9cb4adc2ae0f86de202a68ec5" kindref="member">findGraphicsByName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="281"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>(cmzn_scene_find_graphics_by_name(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>name));</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="classCMLibs_1_1Zinc_1_1Scene_1a4c362f0218dd0f2924228c9a5ef691f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a4c362f0218dd0f2924228c9a5ef691f0" kindref="member">getCoordinatesRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref>&amp;<sp/>filter,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*minimumValuesOut3,</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*maximumValuesOut3)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="299"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_get_coordinates_range(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>filter.<ref refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a1bcfb7de87e7c5fd808a300d7d5d00b0" kindref="member">getId</ref>(),</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minimumValuesOut3,<sp/>maximumValuesOut3);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="classCMLibs_1_1Zinc_1_1Scene_1a205265676635bfddef3ce3319cec2c6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a205265676635bfddef3ce3319cec2c6a" kindref="member">getFirstGraphics</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="310"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>(cmzn_scene_get_first_graphics(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="classCMLibs_1_1Zinc_1_1Scene_1a9ad5afa60b5aef4dc3e1d6a5bdfdb83d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a9ad5afa60b5aef4dc3e1d6a5bdfdb83d" kindref="member">getNextGraphics</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>&amp;<sp/>refGraphics)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="321"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>(cmzn_scene_get_next_graphics(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>refGraphics.<ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a042eb0d22022371d387685370c851bb6" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="classCMLibs_1_1Zinc_1_1Scene_1a0f738bf2cf427dcd8b294bba69d05a24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a0f738bf2cf427dcd8b294bba69d05a24" kindref="member">getPreviousGraphics</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>&amp;<sp/>refGraphics)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="332"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>(cmzn_scene_get_previous_graphics(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>refGraphics.<ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a042eb0d22022371d387685370c851bb6" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="classCMLibs_1_1Zinc_1_1Scene_1a97472ac1ea33a778e4e3efbf0b200d4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a97472ac1ea33a778e4e3efbf0b200d4c" kindref="member">getNumberOfGraphics</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="342"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_get_number_of_graphics(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351" refid="classCMLibs_1_1Zinc_1_1Scene_1a54ac8ffd46f15ef2233cf31d99a8cb86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a54ac8ffd46f15ef2233cf31d99a8cb86" kindref="member">getRegion</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="352"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref>(cmzn_scene_get_region(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="classCMLibs_1_1Zinc_1_1Scene_1a6623ffec1b4b5f33bf94eea7ea5d2238" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Fontmodule" kindref="compound">Fontmodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a6623ffec1b4b5f33bf94eea7ea5d2238" kindref="member">getFontmodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="362"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Fontmodule" kindref="compound">Fontmodule</ref>(cmzn_scene_get_fontmodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373" refid="classCMLibs_1_1Zinc_1_1Scene_1a2d13eac2965d0e7780751834c6cce0a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a2d13eac2965d0e7780751834c6cce0a7" kindref="member">getGlyphmodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="374"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref>(cmzn_scene_get_glyphmodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="classCMLibs_1_1Zinc_1_1Scene_1a49584b95bc5617bb6c1b0d4c0bcc7bcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Lightmodule" kindref="compound">Lightmodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a49584b95bc5617bb6c1b0d4c0bcc7bcc" kindref="member">getLightmodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="386"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Lightmodule" kindref="compound">Lightmodule</ref>(cmzn_scene_get_lightmodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398" refid="classCMLibs_1_1Zinc_1_1Scene_1a29d2a59ecb4e79ada5a1e4aff53eeaf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a29d2a59ecb4e79ada5a1e4aff53eeaf2" kindref="member">getMaterialmodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="399"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref>(cmzn_scene_get_materialmodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="classCMLibs_1_1Zinc_1_1Scene_1a3e0c0831a07e11d5368912cc5293ad53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a3e0c0831a07e11d5368912cc5293ad53" kindref="member">getScenefiltermodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="410"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref>(cmzn_scene_get_scenefiltermodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a24729683dcab633673a635801da5039c" kindref="member">getSceneviewermodule</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428" refid="classCMLibs_1_1Zinc_1_1Scene_1a9ae306302dae5ba2eb17e55ec7a152cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a9ae306302dae5ba2eb17e55ec7a152cb" kindref="member">getShadermodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="429"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref>(cmzn_scene_get_shadermodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439" refid="classCMLibs_1_1Zinc_1_1Scene_1a73ac806e0deea6ea9bb55e18b1b807e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a73ac806e0deea6ea9bb55e18b1b807e0" kindref="member">getSpectrummodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="440"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref>(cmzn_scene_get_spectrummodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450" refid="classCMLibs_1_1Zinc_1_1Scene_1acc4bb85ef9a04229300b8d4920c559c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1acc4bb85ef9a04229300b8d4920c559c6" kindref="member">getTessellationmodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="451"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref>(cmzn_scene_get_tessellationmodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461" refid="classCMLibs_1_1Zinc_1_1Scene_1a3751f29397cd34627c7e0ae8c39d062b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a3751f29397cd34627c7e0ae8c39d062b" kindref="member">getTimekeepermodule</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="462"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref>(cmzn_scene_get_timekeepermodule(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473" refid="classCMLibs_1_1Zinc_1_1Scene_1aeabcba72cb532792d6623a36d4291782" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1aeabcba72cb532792d6623a36d4291782" kindref="member">getSelectionField</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="474"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>(cmzn_scene_get_selection_field(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488" refid="classCMLibs_1_1Zinc_1_1Scene_1aab341c99a37936c77876f086e98619eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1aab341c99a37936c77876f086e98619eb" kindref="member">setSelectionField</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>&amp;<sp/>selectionField)</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_set_selection_field(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>selectionField.<ref refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513" refid="classCMLibs_1_1Zinc_1_1Scene_1a65d103598eb3aa361d886b8b97d8ba66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a65d103598eb3aa361d886b8b97d8ba66" kindref="member">getSpectrumDataRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref>&amp;<sp/>filter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref>&amp;<sp/>spectrum,</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valuesCount,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*minimumValuesOut,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*maximumValuesOut)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="515"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_get_spectrum_data_range(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>filter.<ref refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a1bcfb7de87e7c5fd808a300d7d5d00b0" kindref="member">getId</ref>(),</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spectrum.<ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1acab05e3344e6884509e14b778f033b19" kindref="member">getId</ref>(),<sp/>valuesCount,<sp/>minimumValuesOut,<sp/>maximumValuesOut);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525" refid="classCMLibs_1_1Zinc_1_1Scene_1aa1a1c480f1f47b4272729b1b39360657" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1aa1a1c480f1f47b4272729b1b39360657" kindref="member">clearTransformation</ref>()</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_clear_transformation(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535" refid="classCMLibs_1_1Zinc_1_1Scene_1a1d878f956ee2c0f33362e71fffdc75a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a1d878f956ee2c0f33362e71fffdc75a9" kindref="member">hasTransformation</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="536"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_has_transformation(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight></codeline>
+<codeline lineno="548" refid="classCMLibs_1_1Zinc_1_1Scene_1ab5c06b23d9e429ef5b5b57df3ed5dfc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ab5c06b23d9e429ef5b5b57df3ed5dfc1" kindref="member">getTransformationField</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="549"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>(cmzn_scene_get_transformation_field(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569" refid="classCMLibs_1_1Zinc_1_1Scene_1ae73bae7628fae0f56c890cb3f9fa8863" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ae73bae7628fae0f56c890cb3f9fa8863" kindref="member">setTransformationField</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>&amp;<sp/>transformationField)</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_set_transformation_field(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>transformationField.<ref refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588" refid="classCMLibs_1_1Zinc_1_1Scene_1a952d0239e35e32542e56ec608a7bd147" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a952d0239e35e32542e56ec608a7bd147" kindref="member">getTransformationMatrix</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*valuesOut16)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="589"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_get_transformation_matrix(this-&gt;<ref refid="classCMLibs_1_1Zinc_1_1Scene_1a7cd1751403e3084d0b97cfd2edb83930" kindref="member">getId</ref>(),<sp/>valuesOut16);</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616" refid="classCMLibs_1_1Zinc_1_1Scene_1ad376ceaf4c9ff4ce2a01307ed3adc9b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ad376ceaf4c9ff4ce2a01307ed3adc9b6" kindref="member">setTransformationMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*valuesIn16)</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_set_transformation_matrix(this-&gt;<ref refid="classCMLibs_1_1Zinc_1_1Scene_1a7cd1751403e3084d0b97cfd2edb83930" kindref="member">getId</ref>(),<sp/>valuesIn16);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626" refid="classCMLibs_1_1Zinc_1_1Scene_1a3c32ed4841fd92d439964096c62e1630" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a3c32ed4841fd92d439964096c62e1630" kindref="member">getVisibilityFlag</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="627"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_get_visibility_flag(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="638" refid="classCMLibs_1_1Zinc_1_1Scene_1a6f3147ce2d8f88fb996ff01ab559df44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a6f3147ce2d8f88fb996ff01ab559df44" kindref="member">setVisibilityFlag</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visibilityFlag)</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_set_visibility_flag(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>visibilityFlag);</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="654" refid="classCMLibs_1_1Zinc_1_1Scene_1a66bd39022736b0ce33cc6aebc438ec30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a66bd39022736b0ce33cc6aebc438ec30" kindref="member">moveGraphicsBefore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>&amp;<sp/>graphics,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>&amp;<sp/>refGraphics)</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_move_graphics_before(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>graphics.<ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a042eb0d22022371d387685370c851bb6" kindref="member">getId</ref>(),<sp/>refGraphics.<ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a042eb0d22022371d387685370c851bb6" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight></codeline>
+<codeline lineno="664" refid="classCMLibs_1_1Zinc_1_1Scene_1a07b3ddd2da92f4d20a256b496bf6f370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a07b3ddd2da92f4d20a256b496bf6f370" kindref="member">removeAllGraphics</ref>()</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_remove_all_graphics(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675" refid="classCMLibs_1_1Zinc_1_1Scene_1a8ccc530c3abc665e6bc747a98f38b0a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a8ccc530c3abc665e6bc747a98f38b0a5" kindref="member">removeGraphics</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref>&amp;<sp/>graphics)</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_remove_graphics(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>graphics.<ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a042eb0d22022371d387685370c851bb6" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="686" refid="classCMLibs_1_1Zinc_1_1Scene_1a36cfa72a30ddb4adecc6cce023503fd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classCMLibs_1_1Zinc_1_1Scene_1a36cfa72a30ddb4adecc6cce023503fd5" kindref="member">writeDescription</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="687"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_write_description(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700" refid="classCMLibs_1_1Zinc_1_1Scene_1ae4e511ee9cd33d72dc368eeaf6b006d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ae4e511ee9cd33d72dc368eeaf6b006d7" kindref="member">readDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*description,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>overwrite)</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_read_description(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>description,<sp/>overwrite);</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenepicker" kindref="compound">Scenepicker</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a0db09fd13e3a8e9115e57cd078c0c573" kindref="member">createScenepicker</ref>();</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a722b28d3bbfe78bed14da60ad93f4432" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>&amp;<sp/>streaminformationScene)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"></highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a5b19b116df62b67db53c9ca6bc0b3539" kindref="member">read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>&amp;<sp/>streaminformationScene);</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"></highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1acf57f60fb68464fcd216cc7e7d19296a" kindref="member">createStreaminformationScene</ref>();</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"></highlight></codeline>
+<codeline lineno="745"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"></highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scene&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Scene&amp;<sp/>b)</highlight></codeline>
+<codeline lineno="748"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.getId()<sp/>==<sp/>b.getId();</highlight></codeline>
+<codeline lineno="750"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"></highlight></codeline>
+<codeline lineno="752" refid="classCMLibs_1_1Zinc_1_1Region_1a3d42282038ccad15318afa311184d824" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Region_1a3d42282038ccad15318afa311184d824" kindref="member">Region::getScene</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="753"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>(cmzn_region_get_scene(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="755"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="757" refid="classCMLibs_1_1Zinc_1_1Graphics_1aa383d54d2b0e42502d07d28b965a9f16" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1aa383d54d2b0e42502d07d28b965a9f16" kindref="member">Graphics::getScene</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="758"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>(cmzn_graphics_get_scene(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="760"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"></highlight></codeline>
+<codeline lineno="762" refid="classCMLibs_1_1Zinc_1_1Spectrum_1a360e1ad7d8602cd0b68c321fc6ef1d25" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a360e1ad7d8602cd0b68c321fc6ef1d25" kindref="member">Spectrum::autorange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref><sp/>&amp;scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref><sp/>&amp;scenefilter)</highlight></codeline>
+<codeline lineno="763"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_spectrum_autorange(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>scene.<ref refid="classCMLibs_1_1Zinc_1_1Scene_1a7cd1751403e3084d0b97cfd2edb83930" kindref="member">getId</ref>(),<sp/>scenefilter.<ref refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a1bcfb7de87e7c5fd808a300d7d5d00b0" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="765"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"></highlight></codeline>
+<codeline lineno="767"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="768"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"></highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/scene.hpp"/>
+  </compounddef>
+</doxygen>

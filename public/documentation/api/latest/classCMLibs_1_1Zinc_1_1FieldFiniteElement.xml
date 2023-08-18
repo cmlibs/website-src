@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1FieldFiniteElement" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::FieldFiniteElement</compoundname>
+    <basecompoundref refid="classCMLibs_1_1Zinc_1_1Field" prot="public" virt="non-virtual">CMLibs::Zinc::Field</basecompoundref>
+    <includes refid="fieldfiniteelement_8hpp" local="no">fieldfiniteelement.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1aa0a9c41e9db5f0c82be273b6fcb2391b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_field_finite_element_id</type>
+        <definition>cmzn_field_finite_element_id CMLibs::Zinc::FieldFiniteElement::getDerivedId</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement" kindref="compound">FieldFiniteElement</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of the derived <ref refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement" kindref="compound">FieldFiniteElement</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldfiniteelement.hpp" line="38" column="37" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1a11de4c7bdf60d638c848d28d1a644eb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::FieldFiniteElement::FieldFiniteElement</definition>
+        <argsstring>()</argsstring>
+        <name>FieldFiniteElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldfiniteelement.hpp" line="45" column="1" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="45" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1ad4ffa277b5355957f347c864b2472ea8" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::FieldFiniteElement::FieldFiniteElement</definition>
+        <argsstring>(cmzn_field_finite_element_id field_finite_element_id)</argsstring>
+        <name>FieldFiniteElement</name>
+        <param>
+          <type>cmzn_field_finite_element_id</type>
+          <declname>field_finite_element_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldfiniteelement.hpp" line="49" column="10" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1ac7186a007285d6f940f293747bfa8edd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldFiniteElement::getNodeParameters</definition>
+        <argsstring>(const Fieldcache &amp;cache, int componentNumber, Node::ValueLabel nodeValueLabel, int versionNumber, int valuesCount, double *valuesOut) const</argsstring>
+        <name>getNodeParameters</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" kindref="member">Node::ValueLabel</ref></type>
+          <declname>nodeValueLabel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>versionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get parameters for finite element field at node. Note that the node and other part locations such as time must be set in the field cache passed to this function. Note if parameters only exist for some of the requested components, absent parameters are set to zero, and WARNING_PART_DONE is returned. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a2a68cbaee4c22a5a51579dbcb310962b" kindref="member">Fieldcache::setNode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to get values and working cache. Must have set the node in the cache, and time if field is time-varying. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to get parameters for, from 1 to the number of field components, or -1 to get all components together. Must be at least one component for version; missing components are set as zero. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeValueLabel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodal value / derivative label to get parameters for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>versionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodal version number to get parameters for, starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of values array. Checked that it equals or exceeds the number of components of field, or 1 if setting one component. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of real values to be set from the parameters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on full success, WARNING_PART_DONE if only some components have parameters (and which were obtained), ERROR_NOT_FOUND if field not defined or none of the requested components have parameters, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldfiniteelement.hpp" line="78" column="5" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="78" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1a9c6822d31fc506d636bb9b0281c9bd8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::FieldFiniteElement::setNodeParameters</definition>
+        <argsstring>(const Fieldcache &amp;cache, int componentNumber, Node::ValueLabel nodeValueLabel, int versionNumber, int valuesCount, const double *valuesIn)</argsstring>
+        <name>setNodeParameters</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1aadd6c4bfe6c97b4e09e8cc1ca9f0a378" kindref="member">Node::ValueLabel</ref></type>
+          <declname>nodeValueLabel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>versionNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set parameters for finite element field at node. Note that the node and other part locations such as time must be set in the field cache passed to this function. Note if parameters only exist for some of the requested components, sets those that do exist and returns WARNING_PART_DONE. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a2a68cbaee4c22a5a51579dbcb310962b" kindref="member">Fieldcache::setNode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to assign at and working cache. Must have set the node in the cache, and time if field is time-varying. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to set parameters for, from 1 to the number of field components, or -1 to set all components together. Must be at least one component for version; missing component values are ignored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeValueLabel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodal value / derivative label to set parameters for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>versionNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodal version number to set parameters for, starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of values array. Checked that it equals or exceeds the number of components of field, or 1 if setting one component. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of real values to be assigned to the parameters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on full success, WARNING_PART_DONE if only some components have parameters (and which were set), ERROR_NOT_FOUND if field not defined or none of the requested components have parameters, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldfiniteelement.hpp" line="111" column="5" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="111" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1a21b4338e86b98d63a132f1cd2b01cafb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::FieldFiniteElement::hasParametersAtLocation</definition>
+        <argsstring>(const Fieldcache &amp;cache) const</argsstring>
+        <name>hasParametersAtLocation</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query whether any parameters are stored for field at the location specified in the field cache.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to check, and intermediate field values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if field has parameters at location, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldfiniteelement.hpp" line="127" column="6" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A real-valued interpolated field. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A real-valued field with a specified number of components defined by interpolation with an element basis over elements of a mesh, and/or with parameters including direct field values stored at nodes. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Field</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Field"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::FieldFiniteElement</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CMLibs::Zinc::Field</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Field"/>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::FieldFiniteElement</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="auto_comments_output/fieldfiniteelement.hpp" line="32" column="1" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="31" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aa196d5ee3131a96af4c66a292d2ee5fe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>assignMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad98c53fa38482f27be33d5915d2eb57d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>assignReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a723e4fce933ebb2a18c289e2f1ca2f8b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>assignString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a73d20220ed104d06c763eea3977cbb62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castApply</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1abbd74200465c3274876297993e81b3a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castArgumentReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aeba8a5c6388cc9e0d950e60715b5c711" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castComponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aca5b8313b90cef26e85d0e4043bd29c5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castConstant</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0add61e23aeb1abed39e81236a2110e0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castDerivative</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a04d7230adbc926c059fc613dfce61283" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castEdgeDiscontinuity</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0529e22a4ee68a8e5541e742f9e64d92" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castEigenvalues</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a48faaa0911008beaaa020f3eaf4d3726" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castFindMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a67ee725859c2fbba1aa3ab803229d351" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castFiniteElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1acfae911d921aaf25afe82dfcad06906e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1afc4f36839a033e8ba83bed8f66e9c16c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ae36bd1ce83e5974fa66fe7935861e0a8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castImagefilterBinaryThreshold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a65a59af29239ce48d12c06b890b47cfc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castImagefilterDiscreteGaussian</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac551dc48f1ddc1308ae1f46c666c1864" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castImagefilterHistogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a755ad56d303a00d42fcba374ad190a51" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castImagefilterThreshold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac670986456850f6398b0d349dd0f029a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castIsOnFace</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a00beae33247d80969cb3aacef0479451" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castMatrixMultiply</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a4dd9c86900e0afb20c366b83c272c963" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castMeshIntegral</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af56db79bc7bbd1eee40760656de0e5e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castNodesetOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a2327126e9b535d977fa793606df2afb0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castNodeValue</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a48282ab04dbe43c62822cb5064cee39e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castStoredMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8e247a82cd18f1156f7f485e641010f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castStoredString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0223c8679453afc7f580ea3ccb2728f3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castStringConstant</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a761842dc0f507c939c6f8837eb909000" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>castTranspose</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa9b8f437e3ad5c1d13f8ce371d343cb44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa74552c6dc888514f2173f0ab80630010" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfadbc5f7957ab256631bd0d0cd36a894e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa3f2e4f462790358cb1bdc5a4196519d6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfad384cc26b171814bc564158887ee316c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfaa288a9ef6b86626e6c08cbada560e15d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa78bd50b35859cc9ca3bdfca6c5140642" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_PARTIAL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2c9f34eed1bee5772e9fdf2eec99552a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2edd39db683f0d10ee0c9e333708c60b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CHANGE_FLAG_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8403aa300e3620a468043658194301e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbafed2887b776d03271450f81bdd2aee5d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>COORDINATE_SYSTEM_TYPE_CYLINDRICAL_POLAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba5ed6536930afae2eb2fff17130cb504e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>COORDINATE_SYSTEM_TYPE_FIBRE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba31dc4f73378e531912b282f9592fe282" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>COORDINATE_SYSTEM_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbac055de51dd4fee70caeb4984b15f17d1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>COORDINATE_SYSTEM_TYPE_NOT_APPLICABLE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaba4bfa06d31e6385786ea6290297c538" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>COORDINATE_SYSTEM_TYPE_OBLATE_SPHEROIDAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbada14af040524471f0dd8d8d3812314fa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>COORDINATE_SYSTEM_TYPE_PROLATE_SPHEROIDAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaf9f4070081c534c6a7a74f3a13004ddc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>COORDINATE_SYSTEM_TYPE_RECTANGULAR_CARTESIAN</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba9068dc9208c86ec418b7497f9806c7a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>COORDINATE_SYSTEM_TYPE_SPHERICAL_POLAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a32f5a77b3b9beb347a06c40029997fee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CoordinateSystemTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a3b39741c524c53c6f1b8e355460b4959" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>CoordinateSystemTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a42bf82160dc2d3a7d783f4631c642bb2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>createFieldassignment</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a19db38f9c5f86347f52ade324e421f90" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>dependsOnField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a32fcfd65c0786e345bb61a2c719d321e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DOMAIN_TYPE_DATAPOINTS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a50ecf08328c7328e7ad0262882dedf45" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DOMAIN_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a396f307d0c895e5a6629ec5450228a19" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DOMAIN_TYPE_MESH1D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6ab52c6d5cf0d338307fe9a13b5bc8ebcc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DOMAIN_TYPE_MESH2D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a721cef8f0081ead37a9ba7291206a4f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DOMAIN_TYPE_MESH3D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a0c04d3daeacbb17e97fc449db1985caa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DOMAIN_TYPE_MESH_HIGHEST_DIMENSION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6aa3754a1c1c8a52288c3cf7eda00c9025" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DOMAIN_TYPE_NODES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a4628366c2ce93c71090f79bb01ac5738" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DOMAIN_TYPE_POINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a277740c041ae2f38dcb468fbfe8d6ea0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DomainTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a72ee0af0a3a7d50008f89cd20238274d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DomainTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac6ad96b3d0685fc46455bba8158fa1fd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>DomainTypes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad7bce01404cf1a9428c675501d360921" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>evaluateDerivative</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a35cda5a7c9f42e93ff448d716db807bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>evaluateFieldrange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a9b46525ae6c3c4900e8c85bc555e907e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>evaluateMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a21764bc8fcb2a1f07ba79eb31c6bb755" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>evaluateReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a710c3ed9e1e43fea537726ff7ada8dbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>evaluateString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1adf617257a39c7c4939427fc1400967ab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6fc4e264e0a627111e336c5b8f7a7ab2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af0801aaa6a94f3fb1cc45c2193a4824d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1a11de4c7bdf60d638c848d28d1a644eb1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>FieldFiniteElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1ad4ffa277b5355957f347c864b2472ea8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>FieldFiniteElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad5e2221e40b86a62506c691be271690d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getClassName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6bd4db297171cc5175e56cd7279aae31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getComponentName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0637975f5114dd3e49c6ed4ae9772c28" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getCoordinateSystemFocus</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af379a711cca3c549eba305544891989c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getCoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1aa0a9c41e9db5f0c82be273b6fcb2391b" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getDerivedId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a4e8a6d92a0433140f9a3b11eed36a30a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a509212e6067e9c2999ced60d8beffc25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getFieldparameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a852882613f6d8be1a09eedecf1aa9ad6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1ac7186a007285d6f940f293747bfa8edd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getNodeParameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a166451e16c4694e523a4143a64cef313" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getNumberOfComponents</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a23e574454b96f13dc8cc2a57ffac7efb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getNumberOfSourceFields</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a47b654b92689d4954583272f84073b61" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getSourceField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1afcfdab410d31e025a80591488b0d3633" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>getValueType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a86be6bdc8d2c8ef8813367dbd39909be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>hasClassName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1a21b4338e86b98d63a132f1cd2b01cafb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>hasParametersAtLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a5f5901992c2b67e71a41aa63bfa42a43" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad9183e1ee3be7fa6a5be7b4c9d1d3402" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>isDefinedAtLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac7c2fcde9036c8f3dbd1757181d47842" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aad16cd4f1acb66f04996beba1c8b21ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>isTypeCoordinate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a18ebc3f97e6c352a91776a8a752d1171" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6165379988c2924acd10207e6b6d286f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad813ef6fcabedb5ddf1a1ff5b897eb9a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>setComponentName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac09d1d65b3af6aeeff3a6b855351ee0a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>setCoordinateSystemFocus</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8d01b1bff6eaa0d8860c0ac6a393f614" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>setCoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a836e0c28e4558d1d14eb72e6d6c96f31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab6aa2520f106406e1205f799d992e29e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1a9c6822d31fc506d636bb9b0281c9bd8f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>setNodeParameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1c1fc2dac208c9bf55a3032ea1fe9066" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>setTypeCoordinate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a3cc6edbc68ea5c5492b28f1b285fc432" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>smooth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335acccc613810b339fffd93728911c3305b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>VALUE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335aabc83b79f0c046191ec49eaa7b3f957b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>VALUE_TYPE_MESH_LOCATION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335ac09365d4871dbdb1510bdf16ca5c9967" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>VALUE_TYPE_REAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335a015108650de6601ef747cbb04e55130e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>VALUE_TYPE_STRING</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>ValueType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aa82d5073ce41f28a3aa35dfe07c904dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::FieldFiniteElement</scope><name>~Field</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Glyphmoduleevent</compoundname>
+    <includes refid="glyph_8hpp" local="no">glyph.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1ad37bf4edb9a44a72cfe5e8aa4b81f97c" prot="protected" static="no" mutable="no">
+        <type>cmzn_glyphmoduleevent_id</type>
+        <definition>cmzn_glyphmoduleevent_id CMLibs::Zinc::Glyphmoduleevent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="985" column="26" bodyfile="auto_comments_output/glyph.hpp" bodystart="985" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a3d9cb87ee214196bfc81a4e654bace7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmoduleevent::Glyphmoduleevent</definition>
+        <argsstring>()</argsstring>
+        <name>Glyphmoduleevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="989" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="989" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a36d3188919f5fc8b6f41e25b0626c2af" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmoduleevent::Glyphmoduleevent</definition>
+        <argsstring>(cmzn_glyphmoduleevent_id in_glyphmodule_event_id)</argsstring>
+        <name>Glyphmoduleevent</name>
+        <param>
+          <type>cmzn_glyphmoduleevent_id</type>
+          <declname>in_glyphmodule_event_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="993" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="993" bodyend="995"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a49e6ee9f1ed32b7d56d45d41d13e70b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmoduleevent::Glyphmoduleevent</definition>
+        <argsstring>(const Glyphmoduleevent &amp;glyphmoduleEvent)</argsstring>
+        <name>Glyphmoduleevent</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" kindref="compound">Glyphmoduleevent</ref> &amp;</type>
+          <declname>glyphmoduleEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="997" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="997" bodyend="999"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a0fef0f8135e50aa54d0e172c360b0343" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" kindref="compound">Glyphmoduleevent</ref> &amp;</type>
+        <definition>Glyphmoduleevent&amp; CMLibs::Zinc::Glyphmoduleevent::operator=</definition>
+        <argsstring>(const Glyphmoduleevent &amp;glyphmoduleEvent)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" kindref="compound">Glyphmoduleevent</ref> &amp;</type>
+          <declname>glyphmoduleEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1001" column="18" bodyfile="auto_comments_output/glyph.hpp" bodystart="1001" bodyend="1008"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1aa78ac730cf86e4c9c70869a4fa2d9103" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphmoduleevent::~Glyphmoduleevent</definition>
+        <argsstring>()</argsstring>
+        <name>~Glyphmoduleevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1010" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="1010" bodyend="1016"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a82c77bb852d8a82b0782aafa091b8e2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Glyphmoduleevent::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" kindref="compound">Glyphmoduleevent</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1023" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="1023" bodyend="1026"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a1ad2e398352c6f5f7c2fdb743937926b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_glyphmoduleevent_id</type>
+        <definition>cmzn_glyphmoduleevent_id CMLibs::Zinc::Glyphmoduleevent::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" kindref="compound">Glyphmoduleevent</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent" kindref="compound">Glyphmoduleevent</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1033" column="26" bodyfile="auto_comments_output/glyph.hpp" bodystart="1033" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a5e7d0357baa794aefdc26cc77277d1b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1ae9791e2f84cadbc9a7f66fa755ced951" kindref="member">Glyph::ChangeFlags</ref></type>
+        <definition>Glyph::ChangeFlags CMLibs::Zinc::Glyphmoduleevent::getGlyphChangeFlags</definition>
+        <argsstring>(const Glyph &amp;glyph) const</argsstring>
+        <name>getGlyphChangeFlags</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> &amp;</type>
+          <declname>glyph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how the glyph has changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" kindref="member">Glyph::ChangeFlag</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyph to query about. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" kindref="member">Glyph::ChangeFlag</ref> values. Returns CMZN_GLYPH_CHANGE_FLAG_NONE in case of invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1047" column="20" bodyfile="auto_comments_output/glyph.hpp" bodystart="1047" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a6e526f578cfa100e394cc5d2e690e6a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1ae9791e2f84cadbc9a7f66fa755ced951" kindref="member">Glyph::ChangeFlags</ref></type>
+        <definition>Glyph::ChangeFlags CMLibs::Zinc::Glyphmoduleevent::getSummaryGlyphChangeFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getSummaryGlyphChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how glyphs in the glyph module have changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" kindref="member">Glyph::ChangeFlag</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Glyph_1a7c8d7f0f073c44c62d462cf4998fde05" kindref="member">Glyph::ChangeFlag</ref> values. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="1059" column="20" bodyfile="auto_comments_output/glyph.hpp" bodystart="1059" bodyend="1062"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about changes to glyphs in the glyph module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Information about changes to glyphs in the glyph module, sent with each callback from the glyphmodule notifier. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/glyph.hpp" line="983" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="982" bodyend="1064"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a5e7d0357baa794aefdc26cc77277d1b9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>getGlyphChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a1ad2e398352c6f5f7c2fdb743937926b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a6e526f578cfa100e394cc5d2e690e6a2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>getSummaryGlyphChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a3d9cb87ee214196bfc81a4e654bace7a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>Glyphmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a36d3188919f5fc8b6f41e25b0626c2af" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>Glyphmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a49e6ee9f1ed32b7d56d45d41d13e70b9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>Glyphmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1ad37bf4edb9a44a72cfe5e8aa4b81f97c" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a82c77bb852d8a82b0782aafa091b8e2c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1a0fef0f8135e50aa54d0e172c360b0343" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphmoduleevent_1aa78ac730cf86e4c9c70869a4fa2d9103" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphmoduleevent</scope><name>~Glyphmoduleevent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Graphicssamplingattributes</compoundname>
+    <includes refid="graphics_8hpp" local="no">graphics.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a9f690e8b162fe06304c04b28ba2e1060" prot="protected" static="no" mutable="no">
+        <type>cmzn_graphicssamplingattributes_id</type>
+        <definition>cmzn_graphicssamplingattributes_id CMLibs::Zinc::Graphicssamplingattributes::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1869" column="36" bodyfile="auto_comments_output/graphics.hpp" bodystart="1869" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1aaf695b4e0ddacdc1e0a97fa568952e57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicssamplingattributes::Graphicssamplingattributes</definition>
+        <argsstring>()</argsstring>
+        <name>Graphicssamplingattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1872" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1872" bodyend="1873"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a849c166e7d1f0b3a8b01136f26585858" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicssamplingattributes::Graphicssamplingattributes</definition>
+        <argsstring>(cmzn_graphicssamplingattributes_id sampling_attributes_id)</argsstring>
+        <name>Graphicssamplingattributes</name>
+        <param>
+          <type>cmzn_graphicssamplingattributes_id</type>
+          <declname>sampling_attributes_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1876" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="1876" bodyend="1878"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a770f8bb6f6cfe926e0e9d5519c8e6a67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicssamplingattributes::Graphicssamplingattributes</definition>
+        <argsstring>(const Graphicssamplingattributes &amp;samplingAttributes)</argsstring>
+        <name>Graphicssamplingattributes</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes" kindref="compound">Graphicssamplingattributes</ref> &amp;</type>
+          <declname>samplingAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1880" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1880" bodyend="1882"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1ab2ecdccaee38be91560b3062b4109a27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes" kindref="compound">Graphicssamplingattributes</ref> &amp;</type>
+        <definition>Graphicssamplingattributes&amp; CMLibs::Zinc::Graphicssamplingattributes::operator=</definition>
+        <argsstring>(const Graphicssamplingattributes &amp;graphicssamplingattributes)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes" kindref="compound">Graphicssamplingattributes</ref> &amp;</type>
+          <declname>graphicssamplingattributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1884" column="28" bodyfile="auto_comments_output/graphics.hpp" bodystart="1884" bodyend="1891"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a7eae879aea9f195c6436fc8376e3af2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicssamplingattributes::~Graphicssamplingattributes</definition>
+        <argsstring>()</argsstring>
+        <name>~Graphicssamplingattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1893" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1893" bodyend="1896"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1aaa3668bd98fe183f45a7fe7599400156" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Graphicssamplingattributes::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes" kindref="compound">Graphicssamplingattributes</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1903" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="1903" bodyend="1906"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a6b7d0bad78c8c748aff3079419739ea4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphicssamplingattributes::getDensityField</definition>
+        <argsstring>() const</argsstring>
+        <name>getDensityField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the scalar field specifying the density of points sampled from elements when used with CELL_POISSON sampling mode.</para>
+<para><simplesect kind="return"><para>Handle to density field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1914" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="1914" bodyend="1917"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a1704c7fcdea7fc0f26aa63df17c42b35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicssamplingattributes::setDensityField</definition>
+        <argsstring>(const Field &amp;densityField)</argsstring>
+        <name>setDensityField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>densityField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the scalar field specifying the density of points sampled from elements when used with CELL_POISSON sampling mode. The density is applied per unit volume/area/length, depending on dimension, evaluated at cell centres. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a3e925bf5355320e241f12c4d76cf03a5" kindref="member">Graphicssamplingattributes::setElementPointSamplingMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>densityField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scalar density field to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1928" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1928" bodyend="1931"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1acd12de80c89c5e9a40259e255d94d5b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicssamplingattributes::getLocation</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getLocation</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the location in the element chart where a point is sampled in mode CMZN_ELEMENT_POINT_SAMPLING_MODE_SET_LOCATION. Up to 3 values can be returned.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesOut array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive location. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1941" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1941" bodyend="1944"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a464bd32dfbfc7cbca23c6cb88a9af193" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicssamplingattributes::setLocation</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setLocation</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the location in the element chart where a point is sampled in mode CMZN_ELEMENT_POINT_SAMPLING_MODE_SET_LOCATION. Up to 3 values can be set, with 0 assumed for additional chart coordinates. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a3e925bf5355320e241f12c4d76cf03a5" kindref="member">Graphicssamplingattributes::setElementPointSamplingMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the valuesIn array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing element location to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1956" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1956" bodyend="1959"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a1f4d9e55276e66f88a46b5aa296679a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7be" kindref="member">Element::PointSamplingMode</ref></type>
+        <definition>Element::PointSamplingMode CMLibs::Zinc::Graphicssamplingattributes::getElementPointSamplingMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getElementPointSamplingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the mode for sampling points in elements.</para>
+<para><simplesect kind="return"><para>The point sampling mode, or MODE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1966" column="28" bodyfile="auto_comments_output/graphics.hpp" bodystart="1966" bodyend="1969"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a3e925bf5355320e241f12c4d76cf03a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicssamplingattributes::setElementPointSamplingMode</definition>
+        <argsstring>(Element::PointSamplingMode samplingMode)</argsstring>
+        <name>setElementPointSamplingMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Element_1aedae37763b798d783e5b447bdb9ca7be" kindref="member">Element::PointSamplingMode</ref></type>
+          <declname>samplingMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the mode for sampling points in elements. The default element point sampling mode is CELL_CENTRES.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samplingMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element point sampling mode to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1978" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1978" bodyend="1982"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> attributes object specifying how points are sampled in elements. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> attributes object specifying how points are sampled in elements, including sampling mode, density, etc. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a58f7baa9c58018975c0eb9225428f5c4" kindref="member">Graphics::getGraphicssamplingattributes</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/graphics.hpp" line="1867" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1866" bodyend="1984"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a6b7d0bad78c8c748aff3079419739ea4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>getDensityField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a1f4d9e55276e66f88a46b5aa296679a7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>getElementPointSamplingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1acd12de80c89c5e9a40259e255d94d5b5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>getLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1aaf695b4e0ddacdc1e0a97fa568952e57" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>Graphicssamplingattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a849c166e7d1f0b3a8b01136f26585858" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>Graphicssamplingattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a770f8bb6f6cfe926e0e9d5519c8e6a67" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>Graphicssamplingattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a9f690e8b162fe06304c04b28ba2e1060" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1aaa3668bd98fe183f45a7fe7599400156" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1ab2ecdccaee38be91560b3062b4109a27" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a1704c7fcdea7fc0f26aa63df17c42b35" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>setDensityField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a3e925bf5355320e241f12c4d76cf03a5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>setElementPointSamplingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a464bd32dfbfc7cbca23c6cb88a9af193" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>setLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicssamplingattributes_1a7eae879aea9f195c6436fc8376e3af2e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicssamplingattributes</scope><name>~Graphicssamplingattributes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

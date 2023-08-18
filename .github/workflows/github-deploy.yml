@@ -1,0 +1,44 @@
+name: Deploy CMLibs website
+on:
+  push:
+    branches:
+      - production
+      - staging
+jobs:
+  github-deploy:
+    if: github.repository == 'cmlibs/website-src'
+    name: Deploying website
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Setup Node.js for use with actions
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Write SSH keys
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_ed25519
+          echo "${{ secrets.SSH_DEPLOY_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          host='github.com'
+          hosts="$(dig +short "$host" | grep -v '\.$' | sed -z 's|\n|,|g')$host"
+          ssh-keyscan -H "$hosts" > ~/.ssh/known_hosts
+
+      - name: Clean install dependencies
+        run: |
+          yarn
+          yarn add --dev execa
+
+      - name: Run deploy script
+        env:
+          VITE_APP_ENCRYPTED_GITHUB_TOKEN: ${{ secrets.VUE_APP_ENCRYPTED_GITHUB_TOKEN }}
+        run: |
+          git config user.name dependabot-abi && git config user.email dependabot.abi@gmail.com
+          if [ "${{ github.ref }}" = "refs/heads/production" ]; then
+            npm run github-deploy
+          else
+            # If it isn't a production deployment then it must be a staging deployment.
+            npm run github-deploy -- staging
+          fi

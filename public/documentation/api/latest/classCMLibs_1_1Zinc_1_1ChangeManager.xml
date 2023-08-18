@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1ChangeManager" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::ChangeManager</compoundname>
+    <includes refid="changemanager_8hpp" local="no">changemanager.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class Manager</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1ChangeManager_1ad9cf075bb23c6a68fb92669d081a5df5" prot="private" static="no" mutable="no">
+        <type>Manager &amp;</type>
+        <definition>Manager&amp; CMLibs::Zinc::ChangeManager&lt; Manager &gt;::manager</definition>
+        <argsstring></argsstring>
+        <name>manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/changemanager.hpp" line="43" column="9" bodyfile="auto_comments_output/changemanager.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ChangeManager_1a38e2f3ecd2ec665de72035c9ba1c7a97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::ChangeManager&lt; Manager &gt;::ChangeManager</definition>
+        <argsstring>(Manager &amp;managerIn)</argsstring>
+        <name>ChangeManager</name>
+        <param>
+          <type>Manager &amp;</type>
+          <declname>managerIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/changemanager.hpp" line="46" column="1" bodyfile="auto_comments_output/changemanager.hpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1ChangeManager_1a9e6ec6df0c66183dca696b5ecb71ebf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::ChangeManager&lt; Manager &gt;::~ChangeManager</definition>
+        <argsstring>()</argsstring>
+        <name>~ChangeManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/changemanager.hpp" line="52" column="1" bodyfile="auto_comments_output/changemanager.hpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Template class calling beginChange() method on supplied object during construction, and endChange() on it on destruction. For safely making multiple changes to objects in a manager object when exceptions may occur. Usage example for <ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule" kindref="compound">Fieldmodule</ref> fieldmodule: CMLibs::Zinc::ChangeManager&lt;Fieldmodule&gt; changeFieldmodule(fieldmodule); // make multiple changes fieldmodule.endChange() is called when leaving scope or on exception. Enclose in { } to force scope to end earlier. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/changemanager.hpp" line="42" column="1" bodyfile="auto_comments_output/changemanager.hpp" bodystart="41" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1ChangeManager_1a38e2f3ecd2ec665de72035c9ba1c7a97" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ChangeManager</scope><name>ChangeManager</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ChangeManager_1ad9cf075bb23c6a68fb92669d081a5df5" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::ChangeManager</scope><name>manager</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1ChangeManager_1a9e6ec6df0c66183dca696b5ecb71ebf6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::ChangeManager</scope><name>~ChangeManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

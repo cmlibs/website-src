@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="elementtemplate_8hpp" kind="file" language="C++">
+    <compoundname>elementtemplate.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/elementtemplate.h</includes>
+    <includes local="yes">cmlibs/zinc/element.hpp</includes>
+    <includes local="yes">cmlibs/zinc/elementfieldtemplate.hpp</includes>
+    <includes local="yes">cmlibs/zinc/field.hpp</includes>
+    <includes local="yes">cmlibs/zinc/node.hpp</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>cmlibs/zinc/elementfieldtemplate.hpp</label>
+      </node>
+      <node id="1">
+        <label>auto_comments_output/elementtemplate.hpp</label>
+        <link refid="elementtemplate_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cmlibs/zinc/elementtemplate.h</label>
+      </node>
+      <node id="3">
+        <label>cmlibs/zinc/element.hpp</label>
+      </node>
+      <node id="6">
+        <label>cmlibs/zinc/node.hpp</label>
+      </node>
+      <node id="5">
+        <label>cmlibs/zinc/field.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Elementtemplate" prot="public">CMLibs::Zinc::Elementtemplate</innerclass>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_ELEMENTTEMPLATE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_ELEMENTTEMPLATE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/elementtemplate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/element.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/elementfieldtemplate.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/field.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/node.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classCMLibs_1_1Zinc_1_1Elementtemplate" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_elementtemplate_id<sp/>id;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref>(cmzn_elementtemplate_id<sp/>element_template_id)<sp/>:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(element_template_id)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref>&amp;<sp/>elementTemplate)<sp/>:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_elementtemplate_access(elementTemplate.id))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref>&amp;<sp/>elementTemplate)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_elementtemplate_id<sp/>temp_id<sp/>=<sp/>cmzn_elementtemplate_access(elementTemplate.id);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_elementtemplate_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref>()</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_elementtemplate_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a76c9f5be152bab5a6f23d52396d3b571" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a76c9f5be152bab5a6f23d52396d3b571" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a029f456ea9d25bafe691c2f4d2ef0050" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_elementtemplate_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a029f456ea9d25bafe691c2f4d2ef0050" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="86"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a97072b025fd6b358c7610211ec632ff4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" kindref="member">Element::ShapeType</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a97072b025fd6b358c7610211ec632ff4" kindref="member">getElementShapeType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="96"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" kindref="member">Element::ShapeType</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cmzn_elementtemplate_get_element_shape_type(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a1b3b76f30f03ab9440a9e9aec44c45e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a1b3b76f30f03ab9440a9e9aec44c45e7" kindref="member">setElementShapeType</ref>(<ref refid="classCMLibs_1_1Zinc_1_1Element_1aab59116b9d12cf5600252de43693e797" kindref="member">Element::ShapeType</ref><sp/>shapeType)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_elementtemplate_set_element_shape_type(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_element_shape_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(shapeType));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1aa22fafceb88ecb0594c95249bb8f71fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1aa22fafceb88ecb0594c95249bb8f71fd" kindref="member">defineField</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>&amp;<sp/>field,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>componentNumber,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref>&amp;<sp/>eft)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_elementtemplate_define_field(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>field.<ref refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" kindref="member">getId</ref>(),</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>componentNumber,<sp/>eft.<ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate_1ad3054c814b81d09109d2dc370348683b" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1aaa38d567318dda05f542cc9a6461f262" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1aaa38d567318dda05f542cc9a6461f262" kindref="member">removeField</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>&amp;<sp/>field)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_elementtemplate_remove_field(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>field.<ref refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1ab38f7f20d87568f466316c8af6330bec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1ab38f7f20d87568f466316c8af6330bec" kindref="member">undefineField</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref>&amp;<sp/>field)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_elementtemplate_undefine_field(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>field.<ref refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="classCMLibs_1_1Zinc_1_1Element_1a85a345ae7b06f655910a77648ff4b14a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Element_1a85a345ae7b06f655910a77648ff4b14a" kindref="member">Element::merge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref>&amp;<sp/>elementTemplate)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_element_merge(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>elementTemplate.<ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate_1a029f456ea9d25bafe691c2f4d2ef0050" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CMZN_ELEMENTTEMPLATE_HPP__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/elementtemplate.hpp"/>
+  </compounddef>
+</doxygen>

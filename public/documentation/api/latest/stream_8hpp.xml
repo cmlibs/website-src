@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="stream_8hpp" kind="file" language="C++">
+    <compoundname>stream.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/stream.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>cmlibs/zinc/stream.h</label>
+      </node>
+      <node id="1">
+        <label>auto_comments_output/stream.hpp</label>
+        <link refid="stream_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Streamresource" prot="public">CMLibs::Zinc::Streamresource</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" prot="public">CMLibs::Zinc::StreamresourceFile</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" prot="public">CMLibs::Zinc::StreamresourceMemory</innerclass>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1Streaminformation" prot="public">CMLibs::Zinc::Streaminformation</innerclass>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_STREAM_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_STREAM_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/stream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">StreamresourceFile;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">StreamresourceMemory;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classCMLibs_1_1Zinc_1_1Streamresource" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_streamresource_id<sp/>id;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>(cmzn_streamresource_id<sp/>in_streamresource_id)<sp/>:<sp/>id(in_streamresource_id)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>&amp;<sp/>streamResource)<sp/>:<sp/>id(cmzn_streamresource_access(streamResource.id))</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>&amp;<sp/>streamResource)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streamresource_id<sp/>temp_id<sp/>=<sp/>cmzn_streamresource_access(streamResource.id);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streamresource_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streamresource_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classCMLibs_1_1Zinc_1_1Streamresource_1a1e58f7ed557e9d0b5ede0f7863a296d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource_1a1e58f7ed557e9d0b5ede0f7863a296d5" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="80"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classCMLibs_1_1Zinc_1_1Streamresource_1aeac7bfdbb0f3f70c12f07d747e7f4c3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_streamresource_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource_1aeac7bfdbb0f3f70c12f07d747e7f4c3d" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="90"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" kindref="compound">StreamresourceFile</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource_1a894b91758d65465244b7021464a41829" kindref="member">castFile</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource_1a3269a8597956e634d8c906c442c68d7c" kindref="member">castMemory</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" kindref="compound">StreamresourceFile</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" kindref="compound">StreamresourceFile</ref>()<sp/>:<sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>()</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" kindref="compound">StreamresourceFile</ref>(cmzn_streamresource_file_id<sp/>streamresource_file_id)<sp/>:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streamresource_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(streamresource_file_id))</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classCMLibs_1_1Zinc_1_1StreamresourceFile_1ac4e6ed165c0e21a41b0ae4506e1a196d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile_1ac4e6ed165c0e21a41b0ae4506e1a196d" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="142"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streamresource_file_get_name(</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streamresource_file_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref>()<sp/>:<sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref>(cmzn_streamresource_memory_id<sp/>streamresource_memory_id)<sp/>:</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streamresource_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(streamresource_memory_id))</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory_1a41d25f5533cb94cc52110f29de423193" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory_1a41d25f5533cb94cc52110f29de423193" kindref="member">getBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**buffer_out,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*buffer_length_out)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="182"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streamresource_memory_get_buffer(</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streamresource_memory_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">),<sp/>buffer_out,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer_length_out);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="classCMLibs_1_1Zinc_1_1Streamresource_1a894b91758d65465244b7021464a41829" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" kindref="compound">StreamresourceFile</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource_1a894b91758d65465244b7021464a41829" kindref="member">Streamresource::castFile</ref>()</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" kindref="compound">StreamresourceFile</ref>(cmzn_streamresource_cast_file(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="classCMLibs_1_1Zinc_1_1Streamresource_1a3269a8597956e634d8c906c442c68d7c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource_1a3269a8597956e634d8c906c442c68d7c" kindref="member">Streamresource::castMemory</ref>()</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref>(cmzn_streamresource_cast_memory(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kindref="compound">StreaminformationRegion</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="classCMLibs_1_1Zinc_1_1Streaminformation" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_streaminformation_id<sp/>id;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>()<sp/>:<sp/>id(0)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>(cmzn_streaminformation_id<sp/>in_streaminformation_id)<sp/>:<sp/>id(in_streaminformation_id)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>&amp;<sp/>streamInformation)<sp/>:</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(cmzn_streaminformation_access(streamInformation.id))</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" kindref="member">DataCompressionType</ref></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="238" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa02d593f275b7d5386245361e3f0a83ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa02d593f275b7d5386245361e3f0a83ff" kindref="member">DATA_COMPRESSION_TYPE_INVALID</ref><sp/>=<sp/><sp/><sp/><sp/><sp/>CMZN_STREAMINFORMATION_DATA_COMPRESSION_TYPE_INVALID,</highlight></codeline>
+<codeline lineno="240" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa2757cfd5924259928775b4fb4919ddc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa2757cfd5924259928775b4fb4919ddc3" kindref="member">DATA_COMPRESSION_TYPE_DEFAULT</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_DATA_COMPRESSION_TYPE_DEFAULT,</highlight></codeline>
+<codeline lineno="248" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa2f3de29afcde36b8e8cae8bd7fc24b25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaa2f3de29afcde36b8e8cae8bd7fc24b25" kindref="member">DATA_COMPRESSION_TYPE_NONE</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_DATA_COMPRESSION_TYPE_NONE,</highlight></codeline>
+<codeline lineno="253" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaae001aaab544252b9ab6e60edf08caae3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaae001aaab544252b9ab6e60edf08caae3" kindref="member">DATA_COMPRESSION_TYPE_GZIP</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_DATA_COMPRESSION_TYPE_GZIP,</highlight></codeline>
+<codeline lineno="260" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaacecc9b43f09c67a73069cdcc8b360451" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aaacecc9b43f09c67a73069cdcc8b360451" kindref="member">DATA_COMPRESSION_TYPE_BZ2</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_DATA_COMPRESSION_TYPE_BZIP2</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>&amp;<sp/>streamInformation)</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_id<sp/>temp_id<sp/>=<sp/>cmzn_streaminformation_access(streamInformation.id);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>temp_id;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>~Streaminformation()</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_destroy(&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a2f778772e17634fa5de5abe2f91ddc05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a2f778772e17634fa5de5abe2f91ddc05" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="294"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a18f2dbdae57889318e200edc5e8c26b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_streaminformation_id<sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a18f2dbdae57889318e200edc5e8c26b4" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="304"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a33ce88ff504baefbde71fe1078e0ab97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" kindref="compound">StreamresourceFile</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a33ce88ff504baefbde71fe1078e0ab97" kindref="member">createStreamresourceFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceFile" kindref="compound">StreamresourceFile</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streamresource_file_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_create_streamresource_file(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>file_name)));</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a470001cec2f57a069ad399fb97c583cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a470001cec2f57a069ad399fb97c583cb" kindref="member">createStreamresourceMemory</ref>()</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streamresource_memory_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_create_streamresource_memory(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1afd09ff3d22436d0fa6ec48f1d2c6062c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1afd09ff3d22436d0fa6ec48f1d2c6062c" kindref="member">createStreamresourceMemoryBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buffer,</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buffer_length)</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streamresource_memory_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_create_streamresource_memory_buffer(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>buffer,<sp/>buffer_length)));</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a81656c2dbc52ac72a4a14959e9e9494d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a81656c2dbc52ac72a4a14959e9e9494d" kindref="member">createStreamresourceMemoryBufferCopy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buffer,</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buffer_length)</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreamresourceMemory" kindref="compound">StreamresourceMemory</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streamresource_memory_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_create_streamresource_memory_buffer_copy(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>buffer,<sp/>buffer_length)));</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a64c561ae3e5491b320cd8c156da365b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" kindref="member">DataCompressionType</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a64c561ae3e5491b320cd8c156da365b2" kindref="member">getResourceDataCompressionType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>&amp;<sp/>resource)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="406"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" kindref="member">DataCompressionType</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_get_resource_data_compression_type(</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">),<sp/>resource.<ref refid="classCMLibs_1_1Zinc_1_1Streamresource_1aeac7bfdbb0f3f70c12f07d747e7f4c3d" kindref="member">getId</ref>()));</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aff3c317760b8a77f472dfd5b94bb21b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aff3c317760b8a77f472dfd5b94bb21b8" kindref="member">setResourceDataCompressionType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streamresource" kindref="compound">Streamresource</ref>&amp;<sp/>resource,<sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" kindref="member">DataCompressionType</ref><sp/>dataCompressionType)</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_set_resource_data_compression_type(</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">),<sp/>resource.<ref refid="classCMLibs_1_1Zinc_1_1Streamresource_1aeac7bfdbb0f3f70c12f07d747e7f4c3d" kindref="member">getId</ref>(),</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_data_compression_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(dataCompressionType));</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aa969e89d3801fdad9ed1d2b725d940dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" kindref="member">DataCompressionType</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1aa969e89d3801fdad9ed1d2b725d940dd" kindref="member">getDataCompressionType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="438"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" kindref="member">DataCompressionType</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_streaminformation_get_data_compression_type(</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a1f8a0fd5b65bfbee1ed1594e670f914a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a1f8a0fd5b65bfbee1ed1594e670f914a" kindref="member">setDataCompressionType</ref>(<ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a48ee8e95649aa6762a94998e21e258aa" kindref="member">DataCompressionType</ref><sp/>dataCompressionType)</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_set_data_compression_type(</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_data_compression_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(dataCompressionType));</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationImage" kindref="compound">StreaminformationImage</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ac34bdeb92766895cfdeba63af238c6e7" kindref="member">castImage</ref>();</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationRegion" kindref="compound">StreaminformationRegion</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1ada4e8d8e22da2bd0ec7602b795bf6ddb" kindref="member">castRegion</ref>();</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a5f4ffb13c6f36ac3e015b4921d72b64c" kindref="member">castScene</ref>();</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CMZN_STREAM_HPP__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/stream.hpp"/>
+  </compounddef>
+</doxygen>

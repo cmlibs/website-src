@@ -1,0 +1,2450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Sceneviewer" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Sceneviewer</compoundname>
+    <includes refid="sceneviewer_8hpp" local="no">sceneviewer.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BufferingMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4a8e02e7bb327ac5c7d117a03417c87c68" prot="public">
+          <name>BUFFERING_MODE_INVALID</name>
+          <initializer>= CMZN_SCENEVIEWER_BUFFERING_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid scene viewer buffering mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4acc733de37cecebe562b023c4b2fa147a" prot="public">
+          <name>BUFFERING_MODE_DEFAULT</name>
+          <initializer>= CMZN_SCENEVIEWER_BUFFERING_MODE_DEFAULT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>BUFFERING_MODE_DEFAULT will mean that with SINGLE_BUFFER or DOUBLE_BUFFER mode may be selected depending on the other requirements of the scene viewer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4acec165d14c46cd80b8347077d446962e" prot="public">
+          <name>BUFFERING_MODE_SINGLE</name>
+          <initializer>= CMZN_SCENEVIEWER_BUFFERING_MODE_SINGLE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>allow you a greater colour depth or other features unavailable on a single buffer scene viewer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4aaaad1b9a75fc8bee14d2f08151caae44" prot="public">
+          <name>BUFFERING_MODE_DOUBLE</name>
+          <initializer>= CMZN_SCENEVIEWER_BUFFERING_MODE_DOUBLE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>allows the graphics to be drawn offscreen before being displayed all at once, reducing the apparent flicker. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4ada654197f1e25debc81334fcf4607c25" prot="public">
+          <name>BUFFERING_MODE_RENDER_OFFSCREEN_AND_COPY</name>
+          <initializer>= CMZN_SCENEVIEWER_BUFFERING_MODE_RENDER_OFFSCREEN_AND_COPY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A special modes, used when an OpenGL context cannot be activated directly on the supplied window, such as when the graphics are to be composited by an external program. These are currently only implemeneted for winapi. The graphics will be drawn offscreen and only rendered on screen when requested. This mode will overwrite any existing pixels when drawing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4a1409859337942a1b4bfe04afa08eec6b" prot="public">
+          <name>BUFFERING_MODE_RENDER_OFFSCREEN_AND_BLEND</name>
+          <initializer>= CMZN_SCENEVIEWER_BUFFERING_MODE_RENDER_OFFSCREEN_AND_BLEND</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Similar to RENDER_OFFSCREEN_AND_COPY, however instead of overwriting existing pixels, this mode will use the alpha channel of the rendered scene to blend itself with the existing pixels. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Describes the buffering mode of the scene viewer. The special modes RENDER_OFFSCREEN_AND_COPY and RENDER_OFFSCREEN_AND_BLEND are used when an OpenGL context cannot be activated directly on the supplied window, such as when the graphics are to be composited by an external program. These are currently only implemeneted for winapi. The graphics will be drawn offscreen and only rendered on screen when requested. The COPY version will overwrite any existing pixels when drawing and the BLEND version will use the alpha channel of the rendered scene to blend itself with the existing pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="279" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="278" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>InteractMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418ea2302d91ff7ed0908cbc8a7416c407db8" prot="public">
+          <name>INTERACT_MODE_INVALID</name>
+          <initializer>= CMZN_SCENEVIEWER_INTERACT_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scene viewer interaction mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418ea7e005a173369c6b9e9cb16f8a7b147fb" prot="public">
+          <name>INTERACT_MODE_STANDARD</name>
+          <initializer>= CMZN_SCENEVIEWER_INTERACT_MODE_STANDARD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CMZN_SCENEVIEWER_INTERACT_MODE_STANDARD is the traditional cmgui mode. Rotate: Left mouse button Translate: Middle mouse button Zoom: Right mouse button </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418ea1a310504901af83d97f11938e4884090" prot="public">
+          <name>INTERACT_MODE_2D</name>
+          <initializer>= CMZN_SCENEVIEWER_INTERACT_MODE_2D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CMZN_SCENEVIEWER_INTERACT_MODE_2D is a mode more suitable for 2D use Translate: Left mouse button Rotate: Middle mouse button Zoom: Right mouse button </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controls the way the mouse and keyboard are used to interact with the scene viewer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="309" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="308" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ProjectionMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5ba3854786ed5cd83039b844ef71d27e836" prot="public">
+          <name>PROJECTION_MODE_INVALID</name>
+          <initializer>= CMZN_SCENEVIEWER_PROJECTION_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scene viewer projection mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5ba6a026a83548fdf9a8676a47eb861e881" prot="public">
+          <name>PROJECTION_MODE_PARALLEL</name>
+          <initializer>= CMZN_SCENEVIEWER_PROJECTION_MODE_PARALLEL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Parallel (orthographic) projection transformations will be used when drawing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5baad26646d7ce881128037902ff166d50e" prot="public">
+          <name>PROJECTION_MODE_PERSPECTIVE</name>
+          <initializer>= CMZN_SCENEVIEWER_PROJECTION_MODE_PERSPECTIVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Perspective projection transformations will be used when drawing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the sort of projection matrix used to render the 3D scene. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="328" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="327" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08" prot="public" static="no" strong="no">
+        <type></type>
+        <name>StereoMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08a233679f641612f156ba81d81c3fae559" prot="public">
+          <name>STEREO_MODE_INVALID</name>
+          <initializer>= CMZN_SCENEVIEWER_STEREO_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scene viewer stereo mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08a127191535ebe706d96a65daa87e8b615" prot="public">
+          <name>STEREO_MODE_DEFAULT</name>
+          <initializer>= CMZN_SCENEVIEWER_STEREO_MODE_DEFAULT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>either STEREO or MONO depending on other scene viewer requirements </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08a6e6733c149dc8511b1dcdfa41f593293" prot="public">
+          <name>STEREO_MODE_MONO</name>
+          <initializer>= CMZN_SCENEVIEWER_STEREO_MODE_MONO</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Normal 2-D Monoscopic display </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08a8574fb99a50045aad13ffd0f755b5561" prot="public">
+          <name>STEREO_MODE_STEREO</name>
+          <initializer>= CMZN_SCENEVIEWER_STEREO_MODE_STEREO</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Stereoscopic display </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies whether a STEREO capable scene viewer is required. This will have to work in cooperation with your window manager and hardware. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="342" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="341" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TransparencyMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8da8e3ee7c37ee1d316fd6feb540bb5da5a" prot="public">
+          <name>TRANSPARENCY_MODE_INVALID</name>
+          <initializer>= CMZN_SCENEVIEWER_TRANSPARENCY_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scene viewer transparency mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8da7610a3f28e25cad306916b55ce86c9dd" prot="public">
+          <name>TRANSPARENCY_MODE_FAST</name>
+          <initializer>= CMZN_SCENEVIEWER_TRANSPARENCY_MODE_FAST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TRANSPARENCY_MODE_FAST just includes transparent objects in the normal render, this causes them to obscure other objects behind if they are drawn first. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8da751336e0abe459bf1b75d988c67f8acf" prot="public">
+          <name>TRANSPARENCY_MODE_SLOW</name>
+          <initializer>= CMZN_SCENEVIEWER_TRANSPARENCY_MODE_SLOW</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TRANSPARENCY_MODE_SLOW puts out all the opaque geometry first and then ignores the depth test while drawing all partially transparent objects, this ensures everything is drawn but multiple layers of transparency will always draw on top of each other which means a surface that is behind another may be drawn over the top of one that is supposed to be in front. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8da912f3978def21627e4ae5cd3c9665072" prot="public">
+          <name>TRANSPARENCY_MODE_ORDER_INDEPENDENT</name>
+          <initializer>= CMZN_SCENEVIEWER_TRANSPARENCY_MODE_ORDER_INDEPENDENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TRANSPARENCY_MODE_ORDER_INDEPENDENT uses some Nvidia extensions to implement a full back to front per pixel fragment sort correctly rendering transparency with a small number of passes, specified by &quot;transparency layers&quot;. This uses all the texturing resources of the current Nvidia hardware and so no materials used in the scene can contain textures. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controls the way partially transparent objects are rendered in scene viewer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="357" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="356" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ViewportMode</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afdabc4d9f42337913e0bcdca54c6109c3f8" prot="public">
+          <name>VIEWPORT_MODE_INVALID</name>
+          <initializer>= CMZN_SCENEVIEWER_VIEWPORT_MODE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified scene viewer viewport mode. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afdaf98c40ea3bcd36bf3918455ecc0ac76f" prot="public">
+          <name>VIEWPORT_MODE_ABSOLUTE</name>
+          <initializer>= CMZN_SCENEVIEWER_VIEWPORT_MODE_ABSOLUTE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>viewport_pixels_per_unit values are used to give and exact mapping from user coordinates to pixels. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afda9dbb0bf5998ed79d3085b05d3605ecad" prot="public">
+          <name>VIEWPORT_MODE_RELATIVE</name>
+          <initializer>= CMZN_SCENEVIEWER_VIEWPORT_MODE_RELATIVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>the intended viewing volume is made as large as possible in the physical viewport while maintaining the aspect ratio from NDC_width and NDC_height. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afdaf35b6a56ff6ba4290a5e28d9ba3170ac" prot="public">
+          <name>VIEWPORT_MODE_DISTORTING_RELATIVE</name>
+          <initializer>= CMZN_SCENEVIEWER_VIEWPORT_MODE_DISTORTING_RELATIVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>the intended viewing volume is made as large as possible in the physical viewport, and the aspect ratio may be changed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the behaviour of the NDC coordinates with respect to the size of the viewport. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="388" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="387" bodyend="400"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a2cf9571869078449e0b16e597c74b85c" prot="protected" static="no" mutable="no">
+        <type>cmzn_sceneviewer_id</type>
+        <definition>cmzn_sceneviewer_id CMLibs::Zinc::Sceneviewer::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="263" column="21" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a58fd81ec43908a074dd025cd29d2634c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewer::Sceneviewer</definition>
+        <argsstring>()</argsstring>
+        <name>Sceneviewer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="402" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="402" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a9831e81e579bfe6cb0485593c9ad2f76" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewer::Sceneviewer</definition>
+        <argsstring>(cmzn_sceneviewer_id in_sceneviewer_id)</argsstring>
+        <name>Sceneviewer</name>
+        <param>
+          <type>cmzn_sceneviewer_id</type>
+          <declname>in_sceneviewer_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="406" column="10" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="406" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0e451f0f0bc0321da58446230cdccb74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewer::Sceneviewer</definition>
+        <argsstring>(const Sceneviewer &amp;sceneviewermodule)</argsstring>
+        <name>Sceneviewer</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer" kindref="compound">Sceneviewer</ref> &amp;</type>
+          <declname>sceneviewermodule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="410" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="410" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6f2cc1c9bed8a2dcd5f6cedca365777a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer" kindref="compound">Sceneviewer</ref> &amp;</type>
+        <definition>Sceneviewer&amp; CMLibs::Zinc::Sceneviewer::operator=</definition>
+        <argsstring>(const Sceneviewer &amp;sceneviewer)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer" kindref="compound">Sceneviewer</ref> &amp;</type>
+          <declname>sceneviewer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="414" column="13" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="414" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ae62b0305b156257059a14ca910449bd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewer::~Sceneviewer</definition>
+        <argsstring>()</argsstring>
+        <name>~Sceneviewer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="425" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="425" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a228ca9c04ac34123211ee118bd858087" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewer::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer" kindref="compound">Sceneviewer</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="438" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="438" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8987349ee41dc44e94ff7067a5978b26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_sceneviewer_id</type>
+        <definition>cmzn_sceneviewer_id CMLibs::Zinc::Sceneviewer::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer" kindref="compound">Sceneviewer</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer" kindref="compound">Sceneviewer</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="448" column="21" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="448" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4b5dee3b71cc6bf608691ae57662e958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::beginChange</definition>
+        <argsstring>()</argsstring>
+        <name>beginChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call this function before making multiple changes on the sceneviewer, this will stop sceneviewer from notifying clients of every change. After multiple changes have been made, call the sceneviewer end change method to restart notifications and notify clients of changes that have happened. Can be nested. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1acbcb66b13c3102c39b23c6b144099400" kindref="member">Sceneviewer::endChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="462" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="462" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1acbcb66b13c3102c39b23c6b144099400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::endChange</definition>
+        <argsstring>()</argsstring>
+        <name>endChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call sceneviewer begin change method before making multiple changes on the sceneviewer, to stop sceneviewer from notifying clients of every change. After multiple changes have been made, call this method to restart notifications and notify clients of changes that have happened. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4b5dee3b71cc6bf608691ae57662e958" kindref="member">Sceneviewer::beginChange</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the sceneviewer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="477" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="477" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac09025b95e06b0e3efdba37dec01b4af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::renderScene</definition>
+        <argsstring>()</argsstring>
+        <name>renderScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forces a redraw of the given scene viewer to take place immediately </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="485" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="485" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a081fb00bfb4d692c8da25a7d67c9ef3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewer::getRenderTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>getRenderTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the target time limit for incrementally building graphics primitives from model structures before rendering in render scene.</para>
+<para><simplesect kind="return"><para>Real-valued render timeout in units of seconds &gt;= 0.0, or negative if disabled. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="497" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="497" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a5a94ad460da539e74bd57cc1e7f280bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setRenderTimeout</definition>
+        <argsstring>(double timeout)</argsstring>
+        <name>setRenderTimeout</name>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the target time limit for incrementally building graphics primitives from model structures before rendering in render scene. This is approximate: accuracy depends on the granularity with which the build can be interupted, either by a whole graphics or by element. When the timeout is reached, the graphics are rendered as-is and a new redraw is scheduled. This allows some user update and interaction while a long rebuild is in progress. The default render timeout is 1.0 seconds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Real-valued render timeout in units of seconds. 0.0 gives minimum rebuild time which is likely to perform poorly. A negative value disables incremental build forcing a full rebuild every time which can cause user delays but guarantees build completion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, or ERROR_ARGUMENT if invalid sceneviewer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="517" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="517" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3c3eee6a59a5b1149a7c2a180427892c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setScene</definition>
+        <argsstring>(const Scene &amp;scene)</argsstring>
+        <name>setScene</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> &amp;</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the top scene for the scene viewer. Only graphics for this scene and its descendents, filtered by the scene filter, are displayed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab7808af72a18a90b5d936430847cbd53" kindref="member">Sceneviewer::setScenefilter</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The top scene to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="530" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="530" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6a4aab0e65f69a51b2832c24ed68d6a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref></type>
+        <definition>Scene CMLibs::Zinc::Sceneviewer::getScene</definition>
+        <argsstring>() const</argsstring>
+        <name>getScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the top scene for the scene viewer.</para>
+<para><simplesect kind="return"><para>Handle to scene, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="540" column="7" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="540" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab7808af72a18a90b5d936430847cbd53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setScenefilter</definition>
+        <argsstring>(const Scenefilter &amp;scenefilter)</argsstring>
+        <name>setScenefilter</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>scenefilter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the filter to be used in scene viewer. All graphics will be shown if no filter is set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scenefilter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> filter to set for scene viewer, or NULL to show all graphics in scene. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="553" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="553" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeefaf4ec3be2c9104096d64fc0de785f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref></type>
+        <definition>Scenefilter CMLibs::Zinc::Sceneviewer::getScenefilter</definition>
+        <argsstring>() const</argsstring>
+        <name>getScenefilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the filter currently used in scene viewer.</para>
+<para><simplesect kind="return"><para>Handle to scene filter, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="563" column="13" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="563" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a893dfebda7e8ec5717df06fd1dac7c5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setViewportSize</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>setViewportSize</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the width and height of the scene viewer&apos;s drawing area. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="571" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="571" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a890a2d63d6cd3e495a90a5e90e4c704b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kindref="compound">Sceneviewerinput</ref></type>
+        <definition>Sceneviewerinput CMLibs::Zinc::Sceneviewer::createSceneviewerinput</definition>
+        <argsstring>()</argsstring>
+        <name>createSceneviewerinput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a scene viewer input object for manually setting mouse or other input event data.</para>
+<para><simplesect kind="return"><para>Handle to new sceneviewerinput, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="582" column="25" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="194" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8b54f0afe2eea2161b9de1f7580b9711" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::processSceneviewerinput</definition>
+        <argsstring>(const Sceneviewerinput &amp;input)</argsstring>
+        <name>processSceneviewerinput</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewerinput" kindref="compound">Sceneviewerinput</ref> &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Manually calls the scene viewer&apos;s list of input callbacks with the supplied input data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Description of the input event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="591" column="12" bodyfile="auto_comments_output/sceneviewerinput.hpp" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aae171dc70331bf5ac3d4d6de3fbf898c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getAntialiasSampling</definition>
+        <argsstring>() const</argsstring>
+        <name>getAntialiasSampling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of jitter samples used to antialias the scene viewer.</para>
+<para><simplesect kind="return"><para>The number of jitter samples used to antialias the graphics, or 0 if antialiasing is off or bad argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="599" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="599" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaf1e785ac8640750518836592020d98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setAntialiasSampling</definition>
+        <argsstring>(int numberOfSamples)</argsstring>
+        <name>setAntialiasSampling</name>
+        <param>
+          <type>int</type>
+          <declname>numberOfSamples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the number of jitter samples used to antialias the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfSamples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of jitter samples used to antialias the graphics. Only 2, 4 or 8 samples are supported. Zero disables antialiasing. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>On success <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref>, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="611" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="611" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a755d64c830e3643c1d41e53975c723ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewer::getBackgroundColourAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getBackgroundColourAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the alpha opacity component of the scene viewer background colour.</para>
+<para><simplesect kind="return"><para>Alpha value in [0.0, 1.0]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="621" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="621" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab290882807751a06ff9b16255496fc1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setBackgroundColourAlpha</definition>
+        <argsstring>(const double alpha)</argsstring>
+        <name>setBackgroundColourAlpha</name>
+        <param>
+          <type>const double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the alpha opacity component of the scene viewer background colour. The remaining components of the background colour are unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value in [0, 1.0] where 0.0 is transparent, 1.0 is opaque. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if successful, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="634" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="634" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aa1a3c10dc078c74a0b20eb765d808e05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setBackgroundColourComponentRGB</definition>
+        <argsstring>(double red, double green, double blue)</argsstring>
+        <name>setBackgroundColourComponentRGB</name>
+        <param>
+          <type>double</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the background colour of the scene viewer by individual component. Each component should be in the range [0, 1.0].</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red component value between [0, 1.0]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green component value between [0, 1.0]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue component value between [0, 1.0]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if successful, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="648" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="648" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aec5012132b5c938700b3d90c4760ab0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setBackgroundColourComponentRGBA</definition>
+        <argsstring>(double red, double green, double blue, double alpha)</argsstring>
+        <name>setBackgroundColourComponentRGBA</name>
+        <param>
+          <type>double</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>blue</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="653" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="653" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1acfda46b627476b04c1ac5b5ff7da1fdc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getBackgroundColourRGB</definition>
+        <argsstring>(double *valuesOut3) const</argsstring>
+        <name>getBackgroundColourRGB</name>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the background colour of the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Three colour components in order [red, green, blue], with values in [0, 1.0]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if successful, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="665" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="665" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a95aa0c63a48b1c322aad0e336c88f828" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setBackgroundColourRGB</definition>
+        <argsstring>(const double *valuesIn3)</argsstring>
+        <name>setBackgroundColourRGB</name>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the background colour of the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Three colour components in order [red, green, blue], with values in [0, 1.0]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if successful, otherwise ERROR_ARGUMENT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="677" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="677" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0f4f076db151c3506cec99e6a4274063" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getBackgroundColourRGBA</definition>
+        <argsstring>(double *valuesOut4) const</argsstring>
+        <name>getBackgroundColourRGBA</name>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="682" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="682" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a9eaf14240b33eb5c9dd7302741d3bc92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setBackgroundColourRGBA</definition>
+        <argsstring>(const double *valuesIn4)</argsstring>
+        <name>setBackgroundColourRGBA</name>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="687" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="687" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0ade11b84750c1d07542f5bafc7b2f3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getEyePosition</definition>
+        <argsstring>(double *eyeValuesOut3) const</argsstring>
+        <name>getEyePosition</name>
+        <param>
+          <type>double *</type>
+          <declname>eyeValuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the eye position of the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eyeValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to hold the values of the eye position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="698" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="698" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1af4ce9da6249b4391377bc6f67ab28e32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setEyePosition</definition>
+        <argsstring>(const double *eyeValuesIn3)</argsstring>
+        <name>setEyePosition</name>
+        <param>
+          <type>const double *</type>
+          <declname>eyeValuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the eye position of the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eyeValuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of three values containing the new eye position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="709" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="709" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3747e96967868b1ab142b7648e493a46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418e" kindref="member">InteractMode</ref></type>
+        <definition>InteractMode CMLibs::Zinc::Sceneviewer::getInteractMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getInteractMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the mouse and keyboard interaction mode of the scene viewer. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418e" kindref="member">Sceneviewer::InteractMode</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The interact mode or CMZN_SCENEVIEWER_INTERACT_MODE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="720" column="14" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="720" bodyend="723"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ada0da5b9a9a6053294834ffd45623627" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setInteractMode</definition>
+        <argsstring>(InteractMode interactMode)</argsstring>
+        <name>setInteractMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418e" kindref="member">InteractMode</ref></type>
+          <declname>interactMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the mouse and keyboard interaction mode of the scene viewer. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418e" kindref="member">Sceneviewer::InteractMode</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="731" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="731" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6584326ab4955e3137dcbca5be58e9a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getLookatPosition</definition>
+        <argsstring>(double *lookatValuesOut3) const</argsstring>
+        <name>getLookatPosition</name>
+        <param>
+          <type>double *</type>
+          <declname>lookatValuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the lookat position of the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lookatValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to hold the values of the lookat position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="743" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="743" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab28959c5f8205242d269fbefbf1faae1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setLookatPosition</definition>
+        <argsstring>(const double *lookatValuesIn3)</argsstring>
+        <name>setLookatPosition</name>
+        <param>
+          <type>const double *</type>
+          <declname>lookatValuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the lookat position of the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lookatValuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of three values containing the new lookat position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="754" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="754" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4f9489301ae6a1e10ed2b576b05065b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewer::getPerturbLinesFlag</definition>
+        <argsstring>() const</argsstring>
+        <name>getPerturbLinesFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query whether lines are perturbed to appear in front of surfaces at the same depth to avoid visual stitching artefacts.</para>
+<para><simplesect kind="return"><para>Boolean true if perturbing lines, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="765" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="765" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a7c06ef754b5af3e2a5726611e9d8c497" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setPerturbLinesFlag</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setPerturbLinesFlag</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether lines are perturbed to appear in front of surfaces at the same depth to avoid visual stitching artefacts. Uses GL_EXT_polygon_offset. Note that quality of surface-only graphics can be impacted with this mode.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value of perturb lines flag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>On success <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref>, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="778" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="778" bodyend="781"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4f2cfc8231b68579a6513dbb69bfa697" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5b" kindref="member">ProjectionMode</ref></type>
+        <definition>ProjectionMode CMLibs::Zinc::Sceneviewer::getProjectionMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getProjectionMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the projection mode - parallel/perspective - of the scene viewer.</para>
+<para><simplesect kind="return"><para>The viewport mode or CMZN_SCENEVIEWER_PROJECTION_MODE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="798" column="16" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="798" bodyend="801"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a1de56de1b8ba38210ebe9800e9b2a230" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setProjectionMode</definition>
+        <argsstring>(ProjectionMode projectionMode)</argsstring>
+        <name>setProjectionMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5b" kindref="member">ProjectionMode</ref></type>
+          <declname>projectionMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the projection mode - parallel/perspective - of the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projectionMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new projection mode. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="809" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="809" bodyend="813"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab236ed857f63f5c8f786e89c0fd556db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewer::getTranslationRate</definition>
+        <argsstring>() const</argsstring>
+        <name>getTranslationRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the rate at which translation occurs in relation to mouse movement using standard sceneviewerinput transformation processing.</para>
+<para><simplesect kind="return"><para>The translation rate, or 0 if invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="821" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="821" bodyend="824"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a2d658a6d0efc8730295b698fa246d244" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setTranslationRate</definition>
+        <argsstring>(double translationRate)</argsstring>
+        <name>setTranslationRate</name>
+        <param>
+          <type>double</type>
+          <declname>translationRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the rate at which translation occurs in relation to mouse movement using standard sceneviewerinput transformation processing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translationRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The translation rate; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="833" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="833" bodyend="836"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a9402045d599510c2e5fc1838ba34491e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewer::getTumbleRate</definition>
+        <argsstring>() const</argsstring>
+        <name>getTumbleRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the rate at which tumble occurs in relation to mouse movement using standard sceneviewerinput transformation processing.</para>
+<para><simplesect kind="return"><para>The tumble rate, or 0 if invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="844" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="844" bodyend="847"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0d29b6e4c5f34298cb7a956fc6772e1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setTumbleRate</definition>
+        <argsstring>(double tumbleRate)</argsstring>
+        <name>setTumbleRate</name>
+        <param>
+          <type>double</type>
+          <declname>tumbleRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the rate at which tumble occurs in relation to mouse movement using standard sceneviewerinput transformation processing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tumbleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tumble rate; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="856" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="856" bodyend="859"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aa3282c0b070dacab17568a4a6211f8ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewer::getZoomRate</definition>
+        <argsstring>() const</argsstring>
+        <name>getZoomRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the rate at which zoom occurs in relation to mouse movement using standard sceneviewerinput transformation processing.</para>
+<para><simplesect kind="return"><para>The zoom rate, or 0 if invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="867" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="867" bodyend="870"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a331b9600458f4e77b087056d166f7005" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setZoomRate</definition>
+        <argsstring>(double zoomRate)</argsstring>
+        <name>setZoomRate</name>
+        <param>
+          <type>double</type>
+          <declname>zoomRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the rate at which zoom occurs in relation to mouse movement using standard sceneviewerinput transformation processing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zoomRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The zoom rate; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="879" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="879" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6f4ed9a16729766203969d779be8a420" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getUpVector</definition>
+        <argsstring>(double *upVectorValuesOut3) const</argsstring>
+        <name>getUpVector</name>
+        <param>
+          <type>double *</type>
+          <declname>upVectorValuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the up vector of the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upVectorValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to hold the values of the up vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="890" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="890" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a2cd5983281eaf9c94bf699f030b11efb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setUpVector</definition>
+        <argsstring>(const double *upVectorValuesIn3)</argsstring>
+        <name>setUpVector</name>
+        <param>
+          <type>const double *</type>
+          <declname>upVectorValuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the up vector of the scene viewer. Internally this is always converted into a unit vector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upVectorValuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of three values containing the new up vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="902" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="902" bodyend="905"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4cc614c5ef045e57175c7d58a4763016" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getLookatParameters</definition>
+        <argsstring>(double *eyeValuesOut3, double *lookatValuesOut3, double *upVectorValuesOut3) const</argsstring>
+        <name>getLookatParameters</name>
+        <param>
+          <type>double *</type>
+          <declname>eyeValuesOut3</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>lookatValuesOut3</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>upVectorValuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the 3 main viewing parameters of the scene viewer: eye point, lookat point and up vector in a single call.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eyeValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to receive the coordinates of the point you are looking from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lookatValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to receive the coordinates of the point you are looking at, often also called the interest point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upVectorValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to receive the vector giving the up orientation in the scene viewer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="919" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="919" bodyend="923"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ae023bab07518ed7c502c000d60f28cbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setLookatParametersNonSkew</definition>
+        <argsstring>(const double *eyeValuesIn3, const double *lookatValuesIn3, const double *upVectorValuesIn3)</argsstring>
+        <name>setLookatParametersNonSkew</name>
+        <param>
+          <type>const double *</type>
+          <declname>eyeValuesIn3</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>lookatValuesIn3</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>upVectorValuesIn3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the 3 main viewing parameters of the scene viewer: eye point, lookat point and up vector in a single call. This function ensures the up vector is orthogonal to the view direction so the projection is not skew.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eyeValuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 3 coordinates of the point you are looking from. It is an error if this is at the same as the lookat point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lookatValuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 3 coordinates of the point you are looking at, often also called the interest point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upVectorValuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector which gives the up orientation in the scene viewer. It is an error if this vector is colinear with the view direction line from the eye to the lookat point. This vector is automatically converted to a unit vector orthogonal to the view direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="940" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="940" bodyend="944"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0b84511276bae15b62effccce518afbd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getViewingVolume</definition>
+        <argsstring>(double *left, double *right, double *bottom, double *top, double *near_plane, double *far_plane) const</argsstring>
+        <name>getViewingVolume</name>
+        <param>
+          <type>double *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>near_plane</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>far_plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the viewing volume of the scene viewer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="949" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="949" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0eda45850348fe6d8f70d841e1138148" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setViewingVolume</definition>
+        <argsstring>(double left, double right, double bottom, double top, double near_plane, double far_plane)</argsstring>
+        <name>setViewingVolume</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>near_plane</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>far_plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the viewing volume of the scene viewer. Unless the viewing volume is the same shape as the window, taking into account the aspect, the scene viewer will enlarge it to maintain the desired aspect ratio. Hence, the values specified represent the minimum viewing volume. The left, right, bottom and top values are at the lookat point, not on the near plane as OpenGL assumes. This gives a similar sized viewing_volume for both parallel and perspective projections. The viewing volume can be made unsymmetric to create special effects such as rendering a higher resolution image in parts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="966" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="966" bodyend="971"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6a0e17ff715c9a56ed1036441b74ef3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::viewAll</definition>
+        <argsstring>()</argsstring>
+        <name>viewAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finds the x, y and z ranges from the scene and sets the view parameters so that everything can be seen, and with window&apos;s std_view_angle. Also adjusts near and far clipping planes; if specific values are required, should follow with commands for setting these. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="979" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="979" bodyend="982"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3cd43dba3e07d65ba6054b610602293e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" kindref="member">TransparencyMode</ref></type>
+        <definition>TransparencyMode CMLibs::Zinc::Sceneviewer::getTransparencyMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getTransparencyMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the transparency_mode of the scene viewer. In fast transparency mode, the scene is drawn as it is, with depth buffer writing even for semi-transparent objects. In slow transparency mode, opaque objects are rendered first, then semi-transparent objects are rendered without writing the depth buffer. Hence, you can even see through the first semi-transparent surface drawn. In order independent transparency mode, rendering is done from back to front with depth-peeling, up to the number of transparency layers.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" kindref="member">Sceneviewer::TransparencyMode</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8fc4ec123158abb98c566aab4bd5f0b7" kindref="member">Sceneviewer::setTransparencyMode</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a67b175fd0f575b08e88b9d1d83146fee" kindref="member">Sceneviewer::setTransparencyLayers</ref></para>
+</simplesect>
+<simplesect kind="return"><para>transparency_mode set for this sceneviewer, or INVALID if bad argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1010" column="18" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1010" bodyend="1013"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8fc4ec123158abb98c566aab4bd5f0b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setTransparencyMode</definition>
+        <argsstring>(TransparencyMode transparencyMode)</argsstring>
+        <name>setTransparencyMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" kindref="member">TransparencyMode</ref></type>
+          <declname>transparencyMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the transparency_mode of the scene viewer.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" kindref="member">Sceneviewer::TransparencyMode</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3cd43dba3e07d65ba6054b610602293e" kindref="member">Sceneviewer::getTransparencyMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transparencyMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transparency mode to be set for sceneviewer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1026" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1026" bodyend="1030"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a804073e1048c54c8fb8cdeaf5da15956" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::getTransparencyLayers</definition>
+        <argsstring>() const</argsstring>
+        <name>getTransparencyLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of layers used in the TRANSPARENCY_MODE_ORDER_INDEPENDENT transparency mode. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" kindref="member">Sceneviewer::TransparencyMode</ref></para>
+</simplesect>
+<simplesect kind="return"><para>number of layers for this scene viewer. Any otehr value if failed or it is not set correctly. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1040" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1040" bodyend="1043"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a67b175fd0f575b08e88b9d1d83146fee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setTransparencyLayers</definition>
+        <argsstring>(int layers)</argsstring>
+        <name>setTransparencyLayers</name>
+        <param>
+          <type>int</type>
+          <declname>layers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of layers used in the TRANSPARENCY_MODE_ORDER_INDEPENDENT transparency_mode. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" kindref="member">Sceneviewer::TransparencyMode</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of layers to be set for this scene viewer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if value is set successfully, any other value if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1055" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1055" bodyend="1058"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a93d076f899cbf0017d98de70a197d31e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewer::getViewAngle</definition>
+        <argsstring>() const</argsstring>
+        <name>getViewAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the diagonal view angle, in radians, of the scene viewer. View angle is measured across the largest square which fits inside the viewing window.</para>
+<para><simplesect kind="return"><para>The view angle in radians, or 0 if invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1067" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1067" bodyend="1070"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a458ad1018a6169452488c1ed8ee15846" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setViewAngle</definition>
+        <argsstring>(double viewAngle)</argsstring>
+        <name>setViewAngle</name>
+        <param>
+          <type>double</type>
+          <declname>viewAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the diagonal view angle, in radians, of the scene viewer. View angle is measured across the largest square which fits inside the viewing window.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The view angle in radians, &gt; 0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1080" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1080" bodyend="1083"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aaa0ea8d50e37d9275c8254d54f0a4c63" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afd" kindref="member">ViewportMode</ref></type>
+        <definition>ViewportMode CMLibs::Zinc::Sceneviewer::getViewportMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getViewportMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the viewport mode (absolute/relative/distorting relative) for the scene viewer.</para>
+<para><simplesect kind="return"><para>The viewport mode or CMZN_SCENEVIEWER_VIEWPORT_MODE_INVALID on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1091" column="14" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1091" bodyend="1094"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac1eb69d14cfc8677a671ea4711985a2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setViewportMode</definition>
+        <argsstring>(ViewportMode viewportMode)</argsstring>
+        <name>setViewportMode</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afd" kindref="member">ViewportMode</ref></type>
+          <declname>viewportMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the viewport mode(absolute/relative/distorting relative) for the scene viewer.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1102" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1102" bodyend="1106"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a1d9980c770660a40f505f888b6c26df6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewer::getFarClippingPlane</definition>
+        <argsstring>() const</argsstring>
+        <name>getFarClippingPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the distance from the eye_point to the far clipping plane in the scene viewer.</para>
+<para><simplesect kind="return"><para>distance from the eye_point to the far clipping plane on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1114" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1114" bodyend="1117"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a5a75b37ce26ef53710448341c2425a24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Sceneviewer::getNearClippingPlane</definition>
+        <argsstring>() const</argsstring>
+        <name>getNearClippingPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the distance from the eye_point to the near clipping plane in the scene viewer.</para>
+<para><simplesect kind="return"><para>distance from the eye_point to the near clipping plane on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1125" column="8" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1125" bodyend="1128"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8531c89832793da430ff7f9a3acd6055" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setFarClippingPlane</definition>
+        <argsstring>(double farClippingPlane)</argsstring>
+        <name>setFarClippingPlane</name>
+        <param>
+          <type>double</type>
+          <declname>farClippingPlane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the distance from the eye_point to the far clipping plane in the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>farClippingPlane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance from the eye_point to the far clipping plane </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1136" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1136" bodyend="1139"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1af766b6ed405525da98b8cd4489c0f6b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setNearClippingPlane</definition>
+        <argsstring>(double nearClippingPlane)</argsstring>
+        <name>setNearClippingPlane</name>
+        <param>
+          <type>double</type>
+          <declname>nearClippingPlane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the distance from the eye_point to the near clipping plane in the scene viewer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nearClippingPlane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance from the eye_point to the near clipping plane </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1147" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1147" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a350ba50b0f0c7856e77e4b0481321018" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::writeImageToFile</definition>
+        <argsstring>(const char *file_name, int force_onscreen, int preferred_width, int preferred_height, int preferred_antialias, int preferred_transparency_layers) const</argsstring>
+        <name>writeImageToFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>force_onscreen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>preferred_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>preferred_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>preferred_antialias</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>preferred_transparency_layers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes the view in the scene viewer to the specified filename. If &lt;preferred_width&gt;, &lt;preferred_height&gt;, &lt;preferred_antialias&gt; or &lt;preferred_transparency_layers&gt; are non zero then they attempt to override the default values for just this write. The width and height cannot be overridden when the &lt;force_onscreen&gt; flag is set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1159" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1159" bodyend="1164"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aa8a2b8b75d18f4f146081275fe130244" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::addLight</definition>
+        <argsstring>(const Light &amp;light)</argsstring>
+        <name>addLight</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> &amp;</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a light to the Scene_viewer list of lights.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>light</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the light to be added to scene viewer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1172" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1172" bodyend="1175"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a1a3f3b86f686a570489b9dbd53d4a749" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewer::hasLight</definition>
+        <argsstring>(const Light &amp;light) const</argsstring>
+        <name>hasLight</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> &amp;</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a light is on Scene_viewer list of lights.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>light</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the light to be checked. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if light is on the list, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1183" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1183" bodyend="1186"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aa0a6cc7f276307e9cfeac2479c54b885" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::removeLight</definition>
+        <argsstring>(const Light &amp;light)</argsstring>
+        <name>removeLight</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Light" kindref="compound">Light</ref> &amp;</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a light from the Scene_viewer list of lights.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>light</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the light to be removed from scene viewer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1194" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1194" bodyend="1197"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a1a321ee06c95a1fa1efdc38f38f3a57f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewer::isLightingLocalViewer</definition>
+        <argsstring>() const</argsstring>
+        <name>isLightingLocalViewer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queries whether local viewer lighting is used by the scene viewer. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a54788d5bbe95f55df99b9a7f26ae4669" kindref="member">Sceneviewer::setLightingLocalViewer</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Boolean true if local viewer lighting is set, false if not or bad argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1206" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1206" bodyend="1209"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a54788d5bbe95f55df99b9a7f26ae4669" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setLightingLocalViewer</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setLightingLocalViewer</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether local viewer lighting is used by the scene viewer. If true, the angle of view from the eye to the graphics vertex is used to give more realistic lighting, at slightly greater rendering expense. If false (default) infinite lighting is assumed, which gives faster rendering. The difference becomes apparent when viewing a plane close up with specular colour: with local viewer lighting (and sufficient tessellation divisions) rounded specular highlighting can be seen; with infinite viewer lighting the specular highlighting is even across the plane.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of the local viewer lighting flag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1225" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1225" bodyend="1228"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6d794dd272e29633af35321fe1298fc0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewer::isLightingTwoSided</definition>
+        <argsstring>() const</argsstring>
+        <name>isLightingTwoSided</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queries whether two-sided lighting is used for rendering polygons. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac003f1b764eafc521e5c8d634fface7a" kindref="member">Sceneviewer::setLightingTwoSided</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Boolean true if lighting is on, false if not or bad argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1236" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1236" bodyend="1239"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac003f1b764eafc521e5c8d634fface7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::setLightingTwoSided</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setLightingTwoSided</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether two-sided lighting is used for rendering polygons. If true (default) then back surfaces are lit with reversed normals. If false i.e. one-sided then back surfaces are only lit by ambient lights. One-sided lighting is useful for finding problems with element definitions in 3-D: exterior faces should have outward normals, so if these are not lit on the outside with one-sided lighting, then the element has a left-handed coordinate system i.e. negative volume. Note that interior faces&apos; normals should only be outward with respect to their first parent element, and inward with respect to their second parent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of the two-sided lighting flag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1255" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1255" bodyend="1258"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a15b79f91fa4032a11a4e7eb10cf6faf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::transformCoordinates</definition>
+        <argsstring>(Scenecoordinatesystem inCoordinateSystem, Scenecoordinatesystem outCoordinateSystem, const Scene &amp;localScene, const double *valuesIn3, double *valuesOut3)</argsstring>
+        <name>transformCoordinates</name>
+        <param>
+          <type><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></type>
+          <declname>inCoordinateSystem</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></type>
+          <declname>outCoordinateSystem</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> &amp;</type>
+          <declname>localScene</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn3</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transforms coordinates between scene coordinate systems relative to this scene viewer. Note: this function only works once there is an OpenGL rendering context! <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inCoordinateSystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinate system of the input values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinateSystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinate system of the output values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>localScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional local scene, relative to top scene of scene viewer from which the local-to-world transformation is obtained. If omitted the identity transformation is assumed. Only used with scene local coordinate systems, relative to world. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input coordinates, 3-component. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output coordinates to set, 3-component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise any error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1274" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1274" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1afdce3ee492c15089afa7ecbedc993612" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewer::readDescription</definition>
+        <argsstring>(const char *description)</argsstring>
+        <name>readDescription</name>
+        <param>
+          <type>const char *</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the json description to the scene viewer. This will change the settings of the scene viewer.</para>
+<para>@description The string containing json description <simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise ERROR status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1291" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1291" bodyend="1294"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6d39cbdac233a4051484e69f67d245bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Sceneviewer::writeDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>writeDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the json file describing settings of the scene viewer, which can be used to store the current settings.</para>
+<para><simplesect kind="return"><para>c string containing the json description of scene viewer, otherwise 0; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1302" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1302" bodyend="1305"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1aaca6a9433b32f2e91a50c5fdaa2bac46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" kindref="compound">Sceneviewernotifier</ref></type>
+        <definition>Sceneviewernotifier CMLibs::Zinc::Sceneviewer::createSceneviewernotifier</definition>
+        <argsstring>()</argsstring>
+        <name>createSceneviewernotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a notifier for getting callbacks for changes to the scene viewer.</para>
+<para><simplesect kind="return"><para>Handle to new sceneviewer notifier, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="1312" column="21" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1312" bodyend="1315"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a40a2e9ec3713a5f799c7d5c6ca23c331" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5b" kindref="member">ProjectionMode</ref></type>
+        <definition>static ProjectionMode CMLibs::Zinc::Sceneviewer::ProjectionModeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>ProjectionModeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="783" column="23" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="783" bodyend="786"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3cdd6c4ee3fab923671a12154db88f87" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Sceneviewer::ProjectionModeEnumToString</definition>
+        <argsstring>(ProjectionMode mode)</argsstring>
+        <name>ProjectionModeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5b" kindref="member">ProjectionMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="788" column="13" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="788" bodyend="791"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1a896b46431c72756d646c9f69f4a2bb62" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" kindref="member">TransparencyMode</ref></type>
+        <definition>static TransparencyMode CMLibs::Zinc::Sceneviewer::TransparencyModeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>TransparencyModeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="984" column="25" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="984" bodyend="987"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewer_1acd92c4a5f2c3e8b588a8574a12ab7519" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Sceneviewer::TransparencyModeEnumToString</definition>
+        <argsstring>(TransparencyMode mode)</argsstring>
+        <name>TransparencyModeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" kindref="member">TransparencyMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="989" column="13" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="989" bodyend="992"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> sceneviewer is responsible for rendering the graphical <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> sceneviewer is responsible for rendering the graphical <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> using OpenGL. It has methods to set its top scene and scene filter, and to get and set attributes controlling the view orientation, field of view, clipping planes and more. The client is responsible for creating the OpenGL-capable canvas with a sceneviewer, informing the sceneviewer of its size including on resize events, making the OpenGL context current and invoking the render scene method of the sceneviewer. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/sceneviewer.hpp" line="261" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="260" bodyend="1317"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aa8a2b8b75d18f4f146081275fe130244" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>addLight</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4b5dee3b71cc6bf608691ae57662e958" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>beginChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4acc733de37cecebe562b023c4b2fa147a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>BUFFERING_MODE_DEFAULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4aaaad1b9a75fc8bee14d2f08151caae44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>BUFFERING_MODE_DOUBLE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4a8e02e7bb327ac5c7d117a03417c87c68" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>BUFFERING_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4a1409859337942a1b4bfe04afa08eec6b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>BUFFERING_MODE_RENDER_OFFSCREEN_AND_BLEND</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4ada654197f1e25debc81334fcf4607c25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>BUFFERING_MODE_RENDER_OFFSCREEN_AND_COPY</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4acec165d14c46cd80b8347077d446962e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>BUFFERING_MODE_SINGLE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a23b1785028b402755c6b8490fbd666d4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>BufferingMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a890a2d63d6cd3e495a90a5e90e4c704b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>createSceneviewerinput</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aaca6a9433b32f2e91a50c5fdaa2bac46" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>createSceneviewernotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1acbcb66b13c3102c39b23c6b144099400" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>endChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aae171dc70331bf5ac3d4d6de3fbf898c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getAntialiasSampling</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a755d64c830e3643c1d41e53975c723ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getBackgroundColourAlpha</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1acfda46b627476b04c1ac5b5ff7da1fdc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getBackgroundColourRGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0f4f076db151c3506cec99e6a4274063" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getBackgroundColourRGBA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0ade11b84750c1d07542f5bafc7b2f3d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getEyePosition</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a1d9980c770660a40f505f888b6c26df6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getFarClippingPlane</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8987349ee41dc44e94ff7067a5978b26" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3747e96967868b1ab142b7648e493a46" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getInteractMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4cc614c5ef045e57175c7d58a4763016" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getLookatParameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6584326ab4955e3137dcbca5be58e9a3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getLookatPosition</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a5a75b37ce26ef53710448341c2425a24" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getNearClippingPlane</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4f9489301ae6a1e10ed2b576b05065b2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getPerturbLinesFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4f2cfc8231b68579a6513dbb69bfa697" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getProjectionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a081fb00bfb4d692c8da25a7d67c9ef3b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getRenderTimeout</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6a4aab0e65f69a51b2832c24ed68d6a4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeefaf4ec3be2c9104096d64fc0de785f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getScenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab236ed857f63f5c8f786e89c0fd556db" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getTranslationRate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a804073e1048c54c8fb8cdeaf5da15956" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getTransparencyLayers</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3cd43dba3e07d65ba6054b610602293e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getTransparencyMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a9402045d599510c2e5fc1838ba34491e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getTumbleRate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6f4ed9a16729766203969d779be8a420" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getUpVector</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a93d076f899cbf0017d98de70a197d31e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getViewAngle</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0b84511276bae15b62effccce518afbd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getViewingVolume</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aaa0ea8d50e37d9275c8254d54f0a4c63" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getViewportMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aa3282c0b070dacab17568a4a6211f8ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>getZoomRate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a1a3f3b86f686a570489b9dbd53d4a749" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>hasLight</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a2cf9571869078449e0b16e597c74b85c" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418ea1a310504901af83d97f11938e4884090" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>INTERACT_MODE_2D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418ea2302d91ff7ed0908cbc8a7416c407db8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>INTERACT_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418ea7e005a173369c6b9e9cb16f8a7b147fb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>INTERACT_MODE_STANDARD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac168c64ec746e462c402da5c8afc418e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>InteractMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a1a321ee06c95a1fa1efdc38f38f3a57f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>isLightingLocalViewer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6d794dd272e29633af35321fe1298fc0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>isLightingTwoSided</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a228ca9c04ac34123211ee118bd858087" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6f2cc1c9bed8a2dcd5f6cedca365777a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8b54f0afe2eea2161b9de1f7580b9711" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>processSceneviewerinput</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5ba3854786ed5cd83039b844ef71d27e836" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>PROJECTION_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5ba6a026a83548fdf9a8676a47eb861e881" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>PROJECTION_MODE_PARALLEL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5baad26646d7ce881128037902ff166d50e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>PROJECTION_MODE_PERSPECTIVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a4434f05ac7ff80e4d98c1f824bd2cf5b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>ProjectionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a40a2e9ec3713a5f799c7d5c6ca23c331" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>ProjectionModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3cdd6c4ee3fab923671a12154db88f87" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>ProjectionModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1afdce3ee492c15089afa7ecbedc993612" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>readDescription</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aa0a6cc7f276307e9cfeac2479c54b885" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>removeLight</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac09025b95e06b0e3efdba37dec01b4af" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>renderScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a58fd81ec43908a074dd025cd29d2634c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>Sceneviewer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a9831e81e579bfe6cb0485593c9ad2f76" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>Sceneviewer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0e451f0f0bc0321da58446230cdccb74" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>Sceneviewer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaf1e785ac8640750518836592020d98" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setAntialiasSampling</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab290882807751a06ff9b16255496fc1a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setBackgroundColourAlpha</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aa1a3c10dc078c74a0b20eb765d808e05" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setBackgroundColourComponentRGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aec5012132b5c938700b3d90c4760ab0a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setBackgroundColourComponentRGBA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a95aa0c63a48b1c322aad0e336c88f828" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setBackgroundColourRGB</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a9eaf14240b33eb5c9dd7302741d3bc92" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setBackgroundColourRGBA</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1af4ce9da6249b4391377bc6f67ab28e32" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setEyePosition</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8531c89832793da430ff7f9a3acd6055" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setFarClippingPlane</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ada0da5b9a9a6053294834ffd45623627" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setInteractMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a54788d5bbe95f55df99b9a7f26ae4669" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setLightingLocalViewer</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac003f1b764eafc521e5c8d634fface7a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setLightingTwoSided</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ae023bab07518ed7c502c000d60f28cbb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setLookatParametersNonSkew</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab28959c5f8205242d269fbefbf1faae1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setLookatPosition</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1af766b6ed405525da98b8cd4489c0f6b4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setNearClippingPlane</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a7c06ef754b5af3e2a5726611e9d8c497" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setPerturbLinesFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a1de56de1b8ba38210ebe9800e9b2a230" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setProjectionMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a5a94ad460da539e74bd57cc1e7f280bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setRenderTimeout</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a3c3eee6a59a5b1149a7c2a180427892c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ab7808af72a18a90b5d936430847cbd53" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setScenefilter</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a2d658a6d0efc8730295b698fa246d244" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setTranslationRate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a67b175fd0f575b08e88b9d1d83146fee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setTransparencyLayers</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8fc4ec123158abb98c566aab4bd5f0b7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setTransparencyMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0d29b6e4c5f34298cb7a956fc6772e1c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setTumbleRate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a2cd5983281eaf9c94bf699f030b11efb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setUpVector</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a458ad1018a6169452488c1ed8ee15846" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setViewAngle</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a0eda45850348fe6d8f70d841e1138148" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setViewingVolume</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ac1eb69d14cfc8677a671ea4711985a2f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setViewportMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a893dfebda7e8ec5717df06fd1dac7c5a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setViewportSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a331b9600458f4e77b087056d166f7005" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>setZoomRate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08a127191535ebe706d96a65daa87e8b615" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>STEREO_MODE_DEFAULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08a233679f641612f156ba81d81c3fae559" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>STEREO_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08a6e6733c149dc8511b1dcdfa41f593293" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>STEREO_MODE_MONO</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08a8574fb99a50045aad13ffd0f755b5561" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>STEREO_MODE_STEREO</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a75eb1eec360ae6e05760a6fea306db08" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>StereoMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a15b79f91fa4032a11a4e7eb10cf6faf7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>transformCoordinates</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8da7610a3f28e25cad306916b55ce86c9dd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>TRANSPARENCY_MODE_FAST</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8da8e3ee7c37ee1d316fd6feb540bb5da5a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>TRANSPARENCY_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8da912f3978def21627e4ae5cd3c9665072" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>TRANSPARENCY_MODE_ORDER_INDEPENDENT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8da751336e0abe459bf1b75d988c67f8acf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>TRANSPARENCY_MODE_SLOW</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a8548d10a6afa5588d272d1707bd07a8d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>TransparencyMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a896b46431c72756d646c9f69f4a2bb62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>TransparencyModeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1acd92c4a5f2c3e8b588a8574a12ab7519" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>TransparencyModeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6a0e17ff715c9a56ed1036441b74ef3c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>viewAll</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afdaf98c40ea3bcd36bf3918455ecc0ac76f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>VIEWPORT_MODE_ABSOLUTE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afdaf35b6a56ff6ba4290a5e28d9ba3170ac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>VIEWPORT_MODE_DISTORTING_RELATIVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afdabc4d9f42337913e0bcdca54c6109c3f8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>VIEWPORT_MODE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afda9dbb0bf5998ed79d3085b05d3605ecad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>VIEWPORT_MODE_RELATIVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1aeaa0ae1141dfb116535dca3a559d0afd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>ViewportMode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a6d39cbdac233a4051484e69f67d245bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>writeDescription</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1a350ba50b0f0c7856e77e4b0481321018" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>writeImageToFile</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewer_1ae62b0305b156257059a14ca910449bd3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewer</scope><name>~Sceneviewer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

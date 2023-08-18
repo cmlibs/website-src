@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Elementbasis" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Elementbasis</compoundname>
+    <includes refid="elementbasis_8hpp" local="no">elementbasis.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FunctionType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4aefe4c90f4eb1c9e9f8f1bdfd0ccf1466" prot="public">
+          <name>FUNCTION_TYPE_INVALID</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid or unspecified basis function type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a6ce61ab4284bd8633c103891d941715a" prot="public">
+          <name>FUNCTION_TYPE_CONSTANT</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_CONSTANT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Constant value, 1 parameter </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a2ddc4c3209c9f68152d44e692e5277fc" prot="public">
+          <name>FUNCTION_TYPE_LINEAR_LAGRANGE</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_LINEAR_LAGRANGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Linear Lagrange interpolation over xi in [0,1] with 2 parameters ordered in increasing xi: xi=0, xi=1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a83288e1489b728e35de620c40ace82a6" prot="public">
+          <name>FUNCTION_TYPE_QUADRATIC_LAGRANGE</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_QUADRATIC_LAGRANGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Quadratic Lagrange interpolation over xi in [0,1] with 3 parameters ordered in increasing xi: xi=0, xi=0.5, xi=1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a213abe8cc6e7a6e7c77f2cda7f1209d0" prot="public">
+          <name>FUNCTION_TYPE_CUBIC_LAGRANGE</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_CUBIC_LAGRANGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cubic Lagrange interpolation over xi in [0,1] with 4 parameters ordered in increasing xi: xi=0, xi=1/3, xi=2/3, xi=1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a209a14a06af8c7b05a1bbf612e626415" prot="public">
+          <name>FUNCTION_TYPE_LINEAR_SIMPLEX</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_LINEAR_SIMPLEX</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Linear Lagrange simplex basis linked on 2 or more dimensions over chart xi &gt;= 0, and sum of linked xi coordinates &lt;= 1. 2 linked dimensions gives a linear triangle with 3 parameters with lowest xi cycling fastest: xi (0,0) (1,0) (0,1) 3 linked dimensions gives a linear tetrahedron with 4 parameters with lowest xi cycling fastest: xi (0,0,0) (1,0,0) (0,1,0) (0,0,1) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a11670b2f10523939d64acc607104d799" prot="public">
+          <name>FUNCTION_TYPE_QUADRATIC_SIMPLEX</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_QUADRATIC_SIMPLEX</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Quadratic Lagrange simplex basis linked on 2 or more dimensions over chart xi &gt;= 0, and sum of linked xi coordinates &lt;= 1. 2 linked dimensions gives a quadratic triangle with 6 parameters with lowest xi cycling fastest: xi (0,0) (0.5,0) (1,0) (0,0.5) (0.5,0.5) (0,1) 3 linked dimensions gives a quadratic tetrahedron with 10 parameters with lowest xi cycling fastest: xi (0,0,0) (0.5,0,0) (1,0,0) (0,0.5,0) (0.5,0.5,0) (0,1,0) (0,0,0.5) (0.5,0,0.5) (0,0.5,0.5) (0,0,1) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4aae747525cedd95e32a82d3ba26cc7601" prot="public">
+          <name>FUNCTION_TYPE_CUBIC_HERMITE</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_CUBIC_HERMITE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cubic Hermite basis over xi in [0,1] with 4 parameters: x at xi=0, dx/dxi at xi=0, x at xi=1. dx/dxi at xi=1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4ac1e6c32ce6288fae764b8926b6d51fc5" prot="public">
+          <name>FUNCTION_TYPE_CUBIC_HERMITE_SERENDIPITY</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_CUBIC_HERMITE_SERENDIPITY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cubic Hermite serendipity basis linked on 2 or more dimensions over square or cube element. Parameters are value and first derivatives. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4aca0d893e701d3592db8331fbce51c067" prot="public">
+          <name>FUNCTION_TYPE_QUADRATIC_HERMITE_LAGRANGE</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_QUADRATIC_HERMITE_LAGRANGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Quadratic polynomial with Hermite value + derivative at xi=0 node and Lagrange value at xi=1 node. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4ad15b10bc7e72f08a624b0af7cace39d3" prot="public">
+          <name>FUNCTION_TYPE_QUADRATIC_LAGRANGE_HERMITE</name>
+          <initializer>= CMZN_ELEMENTBASIS_FUNCTION_TYPE_QUADRATIC_LAGRANGE_HERMITE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Quadratic polynomial with Lagrange value at xi=0 node and Hermite value + derivative at xi=1 node. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Common 1-D or linked-dimension basis function types.</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="83" column="1" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="82" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a60da24c22eeb25f955a752710010a3de" prot="private" static="no" mutable="no">
+        <type>cmzn_elementbasis_id</type>
+        <definition>cmzn_elementbasis_id CMLibs::Zinc::Elementbasis::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="32" column="22" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1af1c60662d1b5b68fa623bd2c5ebe145e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementbasis::Elementbasis</definition>
+        <argsstring>()</argsstring>
+        <name>Elementbasis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="36" column="1" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="36" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a552bebd041fe159a4820a9e487afce84" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementbasis::Elementbasis</definition>
+        <argsstring>(cmzn_elementbasis_id element_basis_id)</argsstring>
+        <name>Elementbasis</name>
+        <param>
+          <type>cmzn_elementbasis_id</type>
+          <declname>element_basis_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="40" column="10" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1aa8e465d541f73427dc4577857eae65e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementbasis::Elementbasis</definition>
+        <argsstring>(const Elementbasis &amp;elementBasis)</argsstring>
+        <name>Elementbasis</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref> &amp;</type>
+          <declname>elementBasis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="44" column="1" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1ad997364308165412807c4ae96d7d20b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref> &amp;</type>
+        <definition>Elementbasis&amp; CMLibs::Zinc::Elementbasis::operator=</definition>
+        <argsstring>(const Elementbasis &amp;elementBasis)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref> &amp;</type>
+          <declname>elementBasis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="48" column="14" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1ab0fa3a2f4cd5435096ac1dfd91a18803" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Elementbasis::~Elementbasis</definition>
+        <argsstring>()</argsstring>
+        <name>~Elementbasis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="59" column="1" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a0212cc6388932c63713aea0ab4c27812" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Elementbasis::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="72" column="6" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a1589cf7fdf388b33dfa2c28e232b05be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_elementbasis_id</type>
+        <definition>cmzn_elementbasis_id CMLibs::Zinc::Elementbasis::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="131" column="22" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a12c4898e545fb503ce648618417084b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementbasis::getDimension</definition>
+        <argsstring>() const</argsstring>
+        <name>getDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of dimensions of the elements this basis works with.</para>
+<para><simplesect kind="return"><para>The number of dimensions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="141" column="5" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1aee48b9e2d3708f9e59f95f4d2a8cbcd5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4" kindref="member">FunctionType</ref></type>
+        <definition>FunctionType CMLibs::Zinc::Elementbasis::getFunctionType</definition>
+        <argsstring>(int chartComponent) const</argsstring>
+        <name>getFunctionType</name>
+        <param>
+          <type>int</type>
+          <declname>chartComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the basis function type for a chart component of the basis.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chartComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The chart component to get the function for from 1 to dimension, or -1 to request function type if homogeneous for all components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The basis function type, or INVALID type if failed, including if chart_component -1 is used and basis is not homogeneous. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="164" column="14" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a96aeda6061c5860baf9f81d53420c42a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementbasis::setFunctionType</definition>
+        <argsstring>(int chartComponent, FunctionType functionType)</argsstring>
+        <name>setFunctionType</name>
+        <param>
+          <type>int</type>
+          <declname>chartComponent</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4" kindref="member">FunctionType</ref></type>
+          <declname>functionType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a simple basis function type for a component of the basis.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chartComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The chart component to set the function for from 1 to dimension, or -1 to set all components to use the same function type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>functionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The basis function type to set for the component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="177" column="5" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="177" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a19002ad1ed1d03b32d3fedee425caae8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementbasis::getNumberOfNodes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the basis is valid, gets the number of nodes the basis expects.</para>
+<para><simplesect kind="return"><para>number of nodes expected, or 0 if basis is incomplete or invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="188" column="5" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a6b400127535e9cd27d167462eec64c25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementbasis::getNumberOfFunctions</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfFunctions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the basis is valid, gets the number of functions it has, which equals the number of parameters required. Note that with Hermite bases the parameters are grouped by nodes, i.e. all parameters for the first node are first, followed by those for the second node, and so on. Within the parameters for each node, parameters are ordered by the value/derivative type: the value is first, then DS1 derivatives cycle fastest followed by DS2 then DS3.</para>
+<para><simplesect kind="return"><para>Number of parameters expected, or 0 if basis is incomplete or invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="205" column="5" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a650f6e0336529d235030f505fad10d3c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Elementbasis::getNumberOfFunctionsPerNode</definition>
+        <argsstring>(int nodeNumber) const</argsstring>
+        <name>getNumberOfFunctionsPerNode</name>
+        <param>
+          <type>int</type>
+          <declname>nodeNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of functions / parameters for a given basis node. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a19002ad1ed1d03b32d3fedee425caae8" kindref="member">Elementbasis::getNumberOfNodes</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodeNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The basis node index starting at 1, up to number used by basis. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of functions/parameters, or 0 if invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="218" column="5" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="218" bodyend="221"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1a492984b1f6bb3efcc26ff590b49eb42f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4" kindref="member">FunctionType</ref></type>
+        <definition>static FunctionType CMLibs::Zinc::Elementbasis::FunctionTypeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>FunctionTypeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="146" column="21" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Elementbasis_1aa4d5006bc6fd38a8c198f13bde773724" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Elementbasis::FunctionTypeEnumToString</definition>
+        <argsstring>(FunctionType type)</argsstring>
+        <name>FunctionTypeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4" kindref="member">FunctionType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/elementbasis.hpp" line="151" column="13" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A set of basis functions that can apply over an element of a given dimension. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A set of basis functions that can apply over an element of a given dimension. The element basis can be a tensor product of different basis function types, with the parameters of the resulting basis cycling over lower element &apos;xi&apos; coordinates fastest. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/elementbasis.hpp" line="29" column="1" bodyfile="auto_comments_output/elementbasis.hpp" bodystart="28" bodyend="223"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1af1c60662d1b5b68fa623bd2c5ebe145e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>Elementbasis</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a552bebd041fe159a4820a9e487afce84" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>Elementbasis</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1aa8e465d541f73427dc4577857eae65e5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>Elementbasis</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a6ce61ab4284bd8633c103891d941715a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_CONSTANT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4aae747525cedd95e32a82d3ba26cc7601" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_CUBIC_HERMITE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4ac1e6c32ce6288fae764b8926b6d51fc5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_CUBIC_HERMITE_SERENDIPITY</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a213abe8cc6e7a6e7c77f2cda7f1209d0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_CUBIC_LAGRANGE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4aefe4c90f4eb1c9e9f8f1bdfd0ccf1466" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a2ddc4c3209c9f68152d44e692e5277fc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_LINEAR_LAGRANGE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a209a14a06af8c7b05a1bbf612e626415" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_LINEAR_SIMPLEX</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4aca0d893e701d3592db8331fbce51c067" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_QUADRATIC_HERMITE_LAGRANGE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a83288e1489b728e35de620c40ace82a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_QUADRATIC_LAGRANGE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4ad15b10bc7e72f08a624b0af7cace39d3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_QUADRATIC_LAGRANGE_HERMITE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4a11670b2f10523939d64acc607104d799" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FUNCTION_TYPE_QUADRATIC_SIMPLEX</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a69ca529f75d14331dffe6fbc13a3c6e4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FunctionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a492984b1f6bb3efcc26ff590b49eb42f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FunctionTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1aa4d5006bc6fd38a8c198f13bde773724" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>FunctionTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a12c4898e545fb503ce648618417084b8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>getDimension</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1aee48b9e2d3708f9e59f95f4d2a8cbcd5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>getFunctionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a1589cf7fdf388b33dfa2c28e232b05be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a6b400127535e9cd27d167462eec64c25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>getNumberOfFunctions</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a650f6e0336529d235030f505fad10d3c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>getNumberOfFunctionsPerNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a19002ad1ed1d03b32d3fedee425caae8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>getNumberOfNodes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a60da24c22eeb25f955a752710010a3de" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a0212cc6388932c63713aea0ab4c27812" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1ad997364308165412807c4ae96d7d20b1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1a96aeda6061c5860baf9f81d53420c42a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>setFunctionType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Elementbasis_1ab0fa3a2f4cd5435096ac1dfd91a18803" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Elementbasis</scope><name>~Elementbasis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

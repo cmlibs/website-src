@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Loggernotifier" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Loggernotifier</compoundname>
+    <includes refid="logger_8hpp" local="no">logger.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1aa6278b029239270abdb9649396c50d72" prot="protected" static="no" mutable="no">
+        <type>cmzn_loggernotifier_id</type>
+        <definition>cmzn_loggernotifier_id CMLibs::Zinc::Loggernotifier::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="342" column="24" bodyfile="auto_comments_output/logger.hpp" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1aca6d428687b05bc89146c287a47b65ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Loggernotifier::Loggernotifier</definition>
+        <argsstring>()</argsstring>
+        <name>Loggernotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="346" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="346" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1a8d7dd7ea80d9501c8f2954f603fa34f6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Loggernotifier::Loggernotifier</definition>
+        <argsstring>(cmzn_loggernotifier_id in_loggernotifier_id)</argsstring>
+        <name>Loggernotifier</name>
+        <param>
+          <type>cmzn_loggernotifier_id</type>
+          <declname>in_loggernotifier_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="350" column="10" bodyfile="auto_comments_output/logger.hpp" bodystart="350" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1a25432eacffb3c1a0475fd464484930a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Loggernotifier::Loggernotifier</definition>
+        <argsstring>(const Loggernotifier &amp;loggerNotifier)</argsstring>
+        <name>Loggernotifier</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Loggernotifier" kindref="compound">Loggernotifier</ref> &amp;</type>
+          <declname>loggerNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="354" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="354" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1adb95c3e490871507c7c8e4c7751dd459" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Loggernotifier" kindref="compound">Loggernotifier</ref> &amp;</type>
+        <definition>Loggernotifier&amp; CMLibs::Zinc::Loggernotifier::operator=</definition>
+        <argsstring>(const Loggernotifier &amp;loggerNotifier)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Loggernotifier" kindref="compound">Loggernotifier</ref> &amp;</type>
+          <declname>loggerNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="358" column="16" bodyfile="auto_comments_output/logger.hpp" bodystart="358" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1ae86df912432210a62b8d3c19b9526c71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Loggernotifier::~Loggernotifier</definition>
+        <argsstring>()</argsstring>
+        <name>~Loggernotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="369" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="369" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1a4c269eb3cd13f1a82025b0796a33de8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Loggernotifier::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Loggernotifier" kindref="compound">Loggernotifier</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="382" column="6" bodyfile="auto_comments_output/logger.hpp" bodystart="382" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1aca5364e60c57f60088812ca20c8d9328" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_loggernotifier_id</type>
+        <definition>cmzn_loggernotifier_id CMLibs::Zinc::Loggernotifier::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Loggernotifier" kindref="compound">Loggernotifier</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Loggernotifier" kindref="compound">Loggernotifier</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="392" column="24" bodyfile="auto_comments_output/logger.hpp" bodystart="392" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1a560a424720d4c78aafb289bc09a398e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Loggernotifier::setCallback</definition>
+        <argsstring>(Loggercallback &amp;callback)</argsstring>
+        <name>setCallback</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Loggercallback" kindref="compound">Loggercallback</ref> &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign the callback function and user data for the logger notifier. This function also starts the callback.</para>
+<para><simplesect kind="see"><para>cmzn_loggernotifier_callback_function </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function to be called when event is triggered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Void pointer to user object. User must ensure this object&apos;s lifetime exceeds the duration for which callbacks are active. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="407" column="5" bodyfile="auto_comments_output/logger.hpp" bodystart="407" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Loggernotifier_1a234e884f13c8d577434cd452853d8d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Loggernotifier::clearCallback</definition>
+        <argsstring>()</argsstring>
+        <name>clearCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop and clear logger callback. This will stop the callback and also remove the callback function from the logger notifier.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/logger.hpp" line="418" column="5" bodyfile="auto_comments_output/logger.hpp" bodystart="418" bodyend="421"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages individual user notification of changes with a logger. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages individual user notification of changes with a logger. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/logger.hpp" line="340" column="1" bodyfile="auto_comments_output/logger.hpp" bodystart="339" bodyend="422"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1a234e884f13c8d577434cd452853d8d6e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>clearCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1aca5364e60c57f60088812ca20c8d9328" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1aa6278b029239270abdb9649396c50d72" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1a4c269eb3cd13f1a82025b0796a33de8f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1aca6d428687b05bc89146c287a47b65ee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>Loggernotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1a8d7dd7ea80d9501c8f2954f603fa34f6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>Loggernotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1a25432eacffb3c1a0475fd464484930a9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>Loggernotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1adb95c3e490871507c7c8e4c7751dd459" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1a560a424720d4c78aafb289bc09a398e5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>setCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Loggernotifier_1ae86df912432210a62b8d3c19b9526c71" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Loggernotifier</scope><name>~Loggernotifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

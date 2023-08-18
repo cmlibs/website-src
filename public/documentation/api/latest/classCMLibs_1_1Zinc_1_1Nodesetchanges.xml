@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Nodesetchanges" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Nodesetchanges</compoundname>
+    <includes refid="nodeset_8hpp" local="no">nodeset.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a567444b66526700113efddee3a26a63a" prot="private" static="no" mutable="no">
+        <type>cmzn_nodesetchanges_id</type>
+        <definition>cmzn_nodesetchanges_id CMLibs::Zinc::Nodesetchanges::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="389" column="24" bodyfile="auto_comments_output/nodeset.hpp" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a47e5679cca398761c54d3a002e103963" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodesetchanges::Nodesetchanges</definition>
+        <argsstring>()</argsstring>
+        <name>Nodesetchanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="393" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="393" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a93b00c917a4eabaecd9966a106ebde8a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodesetchanges::Nodesetchanges</definition>
+        <argsstring>(cmzn_nodesetchanges_id nodesetchanges_id)</argsstring>
+        <name>Nodesetchanges</name>
+        <param>
+          <type>cmzn_nodesetchanges_id</type>
+          <declname>nodesetchanges_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="397" column="10" bodyfile="auto_comments_output/nodeset.hpp" bodystart="397" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a24469de85bf14f14fa897d8833ad01e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodesetchanges::Nodesetchanges</definition>
+        <argsstring>(const Nodesetchanges &amp;nodesetchanges)</argsstring>
+        <name>Nodesetchanges</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodesetchanges" kindref="compound">Nodesetchanges</ref> &amp;</type>
+          <declname>nodesetchanges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="401" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="401" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1aa9c8719233803c8deea413552ab2f7d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodesetchanges" kindref="compound">Nodesetchanges</ref> &amp;</type>
+        <definition>Nodesetchanges&amp; CMLibs::Zinc::Nodesetchanges::operator=</definition>
+        <argsstring>(const Nodesetchanges &amp;nodesetchanges)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodesetchanges" kindref="compound">Nodesetchanges</ref> &amp;</type>
+          <declname>nodesetchanges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="405" column="16" bodyfile="auto_comments_output/nodeset.hpp" bodystart="405" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a7c1d93877fa1b706e226e95e107d98e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodesetchanges::~Nodesetchanges</definition>
+        <argsstring>()</argsstring>
+        <name>~Nodesetchanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="414" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="414" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a60392a8fc278a95f36be7d5a695bffb8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Nodesetchanges::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Nodesetchanges" kindref="compound">Nodesetchanges</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="425" column="6" bodyfile="auto_comments_output/nodeset.hpp" bodystart="425" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a640ca1ccde98dd83319aa2f50016ce9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1af409bedb7cdb9bd1e5bcffd4cab6ca71" kindref="member">Node::ChangeFlags</ref></type>
+        <definition>Node::ChangeFlags CMLibs::Zinc::Nodesetchanges::getNodeChangeFlags</definition>
+        <argsstring>(const Node &amp;node) const</argsstring>
+        <name>getNodeChangeFlags</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns if and how a node has changed in the nodeset changes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node to query about. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Logical OR of change bit flags. See #cmzn_node_change_flag. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="436" column="19" bodyfile="auto_comments_output/nodeset.hpp" bodystart="436" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1aa5727c5046397d8e3653a8bd254906d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Nodesetchanges::getNumberOfChanges</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfChanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of changes to nodes in the nodeset changes, or -1 if all considered changed, i.e. too many changes occurred to record.</para>
+<para><simplesect kind="return"><para>The number of changes to nodes, or -1 if all changed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="447" column="5" bodyfile="auto_comments_output/nodeset.hpp" bodystart="447" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a9560e588101b825e00dc94c9047f0ef5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node_1af409bedb7cdb9bd1e5bcffd4cab6ca71" kindref="member">Node::ChangeFlags</ref></type>
+        <definition>Node::ChangeFlags CMLibs::Zinc::Nodesetchanges::getSummaryNodeChangeFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getSummaryNodeChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns logical OR of change flags for all nodes in the nodeset changes.</para>
+<para><simplesect kind="return"><para>Logical OR of change bit flags. See #cmzn_node_change_flag. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/nodeset.hpp" line="457" column="19" bodyfile="auto_comments_output/nodeset.hpp" bodystart="457" bodyend="460"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Object describing changes to a nodeset in a fieldmoduleevent. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Object describing changes to a nodeset in a fieldmoduleevent </para>
+    </detaileddescription>
+    <location file="auto_comments_output/nodeset.hpp" line="386" column="1" bodyfile="auto_comments_output/nodeset.hpp" bodystart="385" bodyend="461"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a640ca1ccde98dd83319aa2f50016ce9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>getNodeChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1aa5727c5046397d8e3653a8bd254906d0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>getNumberOfChanges</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a9560e588101b825e00dc94c9047f0ef5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>getSummaryNodeChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a567444b66526700113efddee3a26a63a" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a60392a8fc278a95f36be7d5a695bffb8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a47e5679cca398761c54d3a002e103963" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>Nodesetchanges</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a93b00c917a4eabaecd9966a106ebde8a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>Nodesetchanges</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a24469de85bf14f14fa897d8833ad01e3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>Nodesetchanges</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1aa9c8719233803c8deea413552ab2f7d0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodesetchanges_1a7c1d93877fa1b706e226e95e107d98e5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodesetchanges</scope><name>~Nodesetchanges</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

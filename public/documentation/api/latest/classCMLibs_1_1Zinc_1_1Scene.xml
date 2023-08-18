@@ -1,0 +1,1461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Scene" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Scene</compoundname>
+    <includes refid="scene_8hpp" local="no">scene.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Scene_1a259727cde90992d924341790469bf00e" prot="protected" static="no" mutable="no">
+        <type>cmzn_scene_id</type>
+        <definition>cmzn_scene_id CMLibs::Zinc::Scene::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="43" column="15" bodyfile="auto_comments_output/scene.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a8b33449dbac526c303c302f0642eb74d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scene::Scene</definition>
+        <argsstring>()</argsstring>
+        <name>Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="47" column="1" bodyfile="auto_comments_output/scene.hpp" bodystart="47" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a3af75f34d53ae7522028ce35d2297f1c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scene::Scene</definition>
+        <argsstring>(cmzn_scene_id scene_id)</argsstring>
+        <name>Scene</name>
+        <param>
+          <type>cmzn_scene_id</type>
+          <declname>scene_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="51" column="10" bodyfile="auto_comments_output/scene.hpp" bodystart="51" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1aff792c75a5700d52ea77f9482aa017e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scene::Scene</definition>
+        <argsstring>(const Scene &amp;scene)</argsstring>
+        <name>Scene</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> &amp;</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="54" column="1" bodyfile="auto_comments_output/scene.hpp" bodystart="54" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a9b4857232e55daadb3e2d63bef5194ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> &amp;</type>
+        <definition>Scene&amp; CMLibs::Zinc::Scene::operator=</definition>
+        <argsstring>(const Scene &amp;scene)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> &amp;</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="57" column="7" bodyfile="auto_comments_output/scene.hpp" bodystart="57" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a9becafc60f7496c937f4c82041e8da86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Scene::~Scene</definition>
+        <argsstring>()</argsstring>
+        <name>~Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="68" column="1" bodyfile="auto_comments_output/scene.hpp" bodystart="68" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ad13a32059e8d11e59f407040f1b347d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Scene::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="81" column="6" bodyfile="auto_comments_output/scene.hpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a7cd1751403e3084d0b97cfd2edb83930" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_scene_id</type>
+        <definition>cmzn_scene_id CMLibs::Zinc::Scene::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="91" column="15" bodyfile="auto_comments_output/scene.hpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a33526bb265b16e902fe0c2b70008e528" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::beginChange</definition>
+        <argsstring>()</argsstring>
+        <name>beginChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function before making multiple changes on the scene, this will stop scene from executing any immediate changes made in scene. After multiple changes have been made, call the scene end change method to notify clients of changes made up to that point. Can be nested. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ab7e22f0f300a2d2ea722714ec735f2cf" kindref="member">Scene::endChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="105" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ab7e22f0f300a2d2ea722714ec735f2cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::endChange</definition>
+        <argsstring>()</argsstring>
+        <name>endChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call the scene begin change method before making multiple changes on the scene, to stop the scene from notifying clients of every change. After changes have been made, call this method to restart notifications and notify clients of changes made since calling begin change. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a33526bb265b16e902fe0c2b70008e528" kindref="member">Scene::beginChange</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="119" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1af7f5b2e266793a0b16f7645e1e927397" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::convertToPointCloud</definition>
+        <argsstring>(const Scenefilter &amp;filter, Nodeset &amp;nodeset, const Field &amp;coordinateField, double lineDensity, double lineDensityScaleFactor, double surfaceDensity, double surfaceDensityScaleFactor) const</argsstring>
+        <name>convertToPointCloud</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>coordinateField</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lineDensity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lineDensityScaleFactor</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>surfaceDensity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>surfaceDensityScaleFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a cloud of points (nodes) in the supplied nodeset sampled at random locations according to a Poisson distribution on the lines and surfaces that are in the scene tree (filtered by the optional filter), i.e. including all its descendents. Points/nodes are created with the next available identifier. The density of points is set by supplied arguments and may be scaled by data values stored in each graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter determining which graphics from the scene tree are converted. If not supplied then all graphics are converted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodeset to add nodes to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinateField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinate field to be defined and assigned on the new nodes. Must be from the same region as the nodeset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lineDensity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expected number of points per unit length for lines. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lineDensity_scale_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If a lines graphics has a data field the mean value of its first component multiplied by this factor is added to the expected value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>surfaceDensity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expected number of points per unit area of surfaces. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>surfaceDensity_scale_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If a surfaces graphics has a data field the mean value of its first component multiplied by this factor is added to the expected value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise some other error code including <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="149" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="149" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a6626e5c13ea6cc16057b581582703893" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::convertPointsToNodes</definition>
+        <argsstring>(const Scenefilter &amp;filter, Nodeset &amp;nodeset, const Field &amp;coordinateField) const</argsstring>
+        <name>convertPointsToNodes</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>coordinateField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates nodal points in the supplied nodeset sampled points that are in the scene tree (filtered by the optional filter), i.e. including all its descendents. Points/nodes are created with the next available identifier.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filter determining which graphics from the scene tree are converted. If not supplied then all graphics are converted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodeset to add nodes to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinateField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinate field to be defined and assigned on the new nodes. Must be from the same region as the nodeset. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise some other error code including <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="173" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a067f99d6272ac24845357f29f9e5733e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref></type>
+        <definition>Graphics CMLibs::Zinc::Scene::createGraphics</definition>
+        <argsstring>(Graphics::Type graphicsType)</argsstring>
+        <name>createGraphics</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a5921cf9a898a420e2f903c402fd5173e" kindref="member">Graphics::Type</ref></type>
+          <declname>graphicsType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a graphics of the given type in the scene.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphicsType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enumerator for a specific graphics type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to the new graphics, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="186" column="10" bodyfile="auto_comments_output/scene.hpp" bodystart="186" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ad09ebe0bbdef10f170f4f77649c60703" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsContours" kindref="compound">GraphicsContours</ref></type>
+        <definition>GraphicsContours CMLibs::Zinc::Scene::createGraphicsContours</definition>
+        <argsstring>()</argsstring>
+        <name>createGraphicsContours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a contours graphics in the scene. Contours create graphics showing where the isoscalar field has fixed value(s): iso-surfaces for 3-D domains, iso-lines for 2-D domains.</para>
+<para><simplesect kind="return"><para>Handle to the new graphics, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="199" column="18" bodyfile="auto_comments_output/scene.hpp" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a5022f56c360d47c9e8624764b5ac4cc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsLines" kindref="compound">GraphicsLines</ref></type>
+        <definition>GraphicsLines CMLibs::Zinc::Scene::createGraphicsLines</definition>
+        <argsstring>()</argsstring>
+        <name>createGraphicsLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a lines graphics in the scene. Used to visualise 1-D elements and lines/faces of elements.</para>
+<para><simplesect kind="return"><para>Handle to the new graphics, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="210" column="15" bodyfile="auto_comments_output/scene.hpp" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a840b2dfc41eb351a7660f05bfb7278e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsPoints" kindref="compound">GraphicsPoints</ref></type>
+        <definition>GraphicsPoints CMLibs::Zinc::Scene::createGraphicsPoints</definition>
+        <argsstring>()</argsstring>
+        <name>createGraphicsPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a points graphics in the scene. Used to visualise static points, nodes, data and sampled element points. Must set the domain type after creation. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1a60136842d4d80c13748cfde1221ce999" kindref="member">Graphics::setFieldDomainType</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to the new graphics, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="223" column="16" bodyfile="auto_comments_output/scene.hpp" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ae78c2a363dc3b526e7e14d137e53ab6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsStreamlines" kindref="compound">GraphicsStreamlines</ref></type>
+        <definition>GraphicsStreamlines CMLibs::Zinc::Scene::createGraphicsStreamlines</definition>
+        <argsstring>()</argsstring>
+        <name>createGraphicsStreamlines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a streamlines graphics in the scene.</para>
+<para><simplesect kind="return"><para>Handle to the new graphics, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="233" column="21" bodyfile="auto_comments_output/scene.hpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1aa064f69a1ac2fed5a4d30cf1f3efd6de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1GraphicsSurfaces" kindref="compound">GraphicsSurfaces</ref></type>
+        <definition>GraphicsSurfaces CMLibs::Zinc::Scene::createGraphicsSurfaces</definition>
+        <argsstring>()</argsstring>
+        <name>createGraphicsSurfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a surfaces graphics in the scene. Used to visualise 2-D elements and faces.</para>
+<para><simplesect kind="return"><para>Handle to the new graphics, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="244" column="18" bodyfile="auto_comments_output/scene.hpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ab289e78f212cd83689e9e4f72ada5409" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Selectionnotifier" kindref="compound">Selectionnotifier</ref></type>
+        <definition>Selectionnotifier CMLibs::Zinc::Scene::createSelectionnotifier</definition>
+        <argsstring>()</argsstring>
+        <name>createSelectionnotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a handle to selection notifier for this scene. User can add and remove callback functions from the selection notifier. The callback functions will be called when selection on the scene has changed. Please see selection.h for more details.</para>
+<para><simplesect kind="return"><para>Handle to the new selection notifier, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="257" column="19" bodyfile="auto_comments_output/scene.hpp" bodystart="257" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a5f8613f9cb4adc2ae0f86de202a68ec5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref></type>
+        <definition>Graphics CMLibs::Zinc::Scene::findGraphicsByName</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>findGraphicsByName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the graphics of the specified name from the scene. Beware that graphics in the same scene may have the same name and this function will only return the first graphics found with the specified name;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref> in which to find the graphics. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the graphics to find. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New reference to graphics of specified name, or 0 if not found. Returns the graphics of the specified name from the scene. Beware that graphics in the same scene may have the same name and this function will only return the first graphics found with the specified name;</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the graphics to find. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to first graphics with name, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="280" column="10" bodyfile="auto_comments_output/scene.hpp" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a4c362f0218dd0f2924228c9a5ef691f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::getCoordinatesRange</definition>
+        <argsstring>(const Scenefilter &amp;filter, double *minimumValuesOut3, double *maximumValuesOut3) const</argsstring>
+        <name>getCoordinatesRange</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>minimumValuesOut3</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>maximumValuesOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the range of world coordinates spanned by graphics in the scene and its sub-scenes, including application of scene transformation matrices. <simplesect kind="note"><para><ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref> graphics range is not included.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional filter on which graphics to get range from. If omitted, then all graphics within the scene tree contribute. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minimumValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to receive the minimum coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximumValuesOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to receive the maximum coordinates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if no graphics coordinates found, or any other value on failue. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="297" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="297" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a205265676635bfddef3ce3319cec2c6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref></type>
+        <definition>Graphics CMLibs::Zinc::Scene::getFirstGraphics</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstGraphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the first graphics on the graphics list of &lt;scene&gt;.</para>
+<para><simplesect kind="return"><para>Handle to first graphics, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="309" column="10" bodyfile="auto_comments_output/scene.hpp" bodystart="309" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a9ad5afa60b5aef4dc3e1d6a5bdfdb83d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref></type>
+        <definition>Graphics CMLibs::Zinc::Scene::getNextGraphics</definition>
+        <argsstring>(const Graphics &amp;refGraphics) const</argsstring>
+        <name>getNextGraphics</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>refGraphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next graphics after &lt;ref_graphics&gt; on the graphics list of &lt;scene&gt;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refGraphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a graphics object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to next graphics, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="320" column="10" bodyfile="auto_comments_output/scene.hpp" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a0f738bf2cf427dcd8b294bba69d05a24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref></type>
+        <definition>Graphics CMLibs::Zinc::Scene::getPreviousGraphics</definition>
+        <argsstring>(const Graphics &amp;refGraphics) const</argsstring>
+        <name>getPreviousGraphics</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>refGraphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the graphics before &lt;ref_graphics&gt; on the graphics list of &lt;scene&gt;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refGraphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to a graphics object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to previous graphics, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="331" column="10" bodyfile="auto_comments_output/scene.hpp" bodystart="331" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a97472ac1ea33a778e4e3efbf0b200d4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::getNumberOfGraphics</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfGraphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of graphics in &lt;scene&gt;.</para>
+<para><simplesect kind="return"><para>Returns the number of graphics in scene. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="341" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="341" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a54ac8ffd46f15ef2233cf31d99a8cb86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Scene::getRegion</definition>
+        <argsstring>() const</argsstring>
+        <name>getRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the region this scene visualises.</para>
+<para><simplesect kind="return"><para>Handle to owning region, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="351" column="15" bodyfile="auto_comments_output/scene.hpp" bodystart="351" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a6623ffec1b4b5f33bf94eea7ea5d2238" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fontmodule" kindref="compound">Fontmodule</ref></type>
+        <definition>Fontmodule CMLibs::Zinc::Scene::getFontmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the font module which manages fonts for rendering text in graphics.</para>
+<para><simplesect kind="return"><para>Handle to the font module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="361" column="19" bodyfile="auto_comments_output/scene.hpp" bodystart="361" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a2d13eac2965d0e7780751834c6cce0a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref></type>
+        <definition>Glyphmodule CMLibs::Zinc::Scene::getGlyphmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getGlyphmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the glyph module which stores static graphics for visualising points, vectors, axes etc. Note on startup no glyphs are defined and glyph module functions need to be called to define standard glyphs.</para>
+<para><simplesect kind="return"><para>Handle to the glyph module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="373" column="20" bodyfile="auto_comments_output/scene.hpp" bodystart="373" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a49584b95bc5617bb6c1b0d4c0bcc7bcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Lightmodule" kindref="compound">Lightmodule</ref></type>
+        <definition>Lightmodule CMLibs::Zinc::Scene::getLightmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getLightmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the light module which manages light used to control lighting of the scene. Note on startup only light &quot;default&quot; and &quot;default_ambient&quot; are defined. Additional custom lights can be defined using light module functions.</para>
+<para><simplesect kind="return"><para>Handle to the light module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="385" column="20" bodyfile="auto_comments_output/scene.hpp" bodystart="385" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a29d2a59ecb4e79ada5a1e4aff53eeaf2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref></type>
+        <definition>Materialmodule CMLibs::Zinc::Scene::getMaterialmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaterialmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the material module which manages materials used to colour, texture and shade graphics. Note on startup only materials &quot;default&quot; and &quot;default_selected&quot; are defined, as white and red, respectively. Additional standard and custom materials can be defined using material module functions.</para>
+<para><simplesect kind="return"><para>Handle to the material module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="398" column="23" bodyfile="auto_comments_output/scene.hpp" bodystart="398" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a3e0c0831a07e11d5368912cc5293ad53" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref></type>
+        <definition>Scenefiltermodule CMLibs::Zinc::Scene::getScenefiltermodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getScenefiltermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the scene filter module which manages scenefilter objects for filtering contents of scenes with scenepicker and sceneviewer etc.</para>
+<para><simplesect kind="return"><para>Handle to the scene filter module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="409" column="26" bodyfile="auto_comments_output/scene.hpp" bodystart="409" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a24729683dcab633673a635801da5039c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref></type>
+        <definition>Sceneviewermodule CMLibs::Zinc::Scene::getSceneviewermodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getSceneviewermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to a sceneviewer module which manages sceneviewer objects for rendering 3-D scenes into rectangular windows or canvases using OpenGL.</para>
+<para><simplesect kind="return"><para>Handle to the sceneviewer module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="420" column="26" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1467" bodyend="1470"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a9ae306302dae5ba2eb17e55ec7a152cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref></type>
+        <definition>Shadermodule CMLibs::Zinc::Scene::getShadermodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getShadermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the shader module which manages material shader objects for custom shading for objects in scene using OpenGL.</para>
+<para><simplesect kind="return"><para>Handle to the shader module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="428" column="21" bodyfile="auto_comments_output/scene.hpp" bodystart="428" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a73ac806e0deea6ea9bb55e18b1b807e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref></type>
+        <definition>Spectrummodule CMLibs::Zinc::Scene::getSpectrummodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpectrummodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the spectrum module which manages spectrum objects controlling how graphics data fields are converted into colours.</para>
+<para><simplesect kind="return"><para>Handle to the spectrum module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="439" column="23" bodyfile="auto_comments_output/scene.hpp" bodystart="439" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1acc4bb85ef9a04229300b8d4920c559c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref></type>
+        <definition>Tessellationmodule CMLibs::Zinc::Scene::getTessellationmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getTessellationmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the tessellation module which manages objects controlling how curves are approximated by line segments in graphics.</para>
+<para><simplesect kind="return"><para>Handle to the tessellation module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="450" column="27" bodyfile="auto_comments_output/scene.hpp" bodystart="450" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a3751f29397cd34627c7e0ae8c39d062b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref></type>
+        <definition>Timekeepermodule CMLibs::Zinc::Scene::getTimekeepermodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getTimekeepermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the timekeeper module which manages objects for synchronising time across zinc objects.</para>
+<para><simplesect kind="return"><para>Handle to the timekeeper module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="461" column="25" bodyfile="auto_comments_output/scene.hpp" bodystart="461" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1aeabcba72cb532792d6623a36d4291782" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Scene::getSelectionField</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectionField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the selection field for the scene, if set. If not set, the scene inherits subregion group from parent selection group, if any.</para>
+<para><simplesect kind="return"><para>Handle to selection field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="473" column="7" bodyfile="auto_comments_output/scene.hpp" bodystart="473" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1aab341c99a37936c77876f086e98619eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::setSelectionField</definition>
+        <argsstring>(const Field &amp;selectionField)</argsstring>
+        <name>setSelectionField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>selectionField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the field giving selection and highlighting in the scene. Currently restricted to a group-type field. If cleared, the scene will use the subregion group for the parent scene&apos;s selection group, if any.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selectionField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group field to be used as the selection, or null/ invalid handle to clear so potentially inherited from parent scene. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="488" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="488" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a65d103598eb3aa361d886b8b97d8ba66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::getSpectrumDataRange</definition>
+        <argsstring>(const Scenefilter &amp;filter, const Spectrum &amp;spectrum, int valuesCount, double *minimumValuesOut, double *maximumValuesOut) const</argsstring>
+        <name>getSpectrumDataRange</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref> &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spectrum</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>minimumValuesOut</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>maximumValuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the range of graphics data field values rendered with the spectrum. Search is limited to the scene and its sub-scenes with an optional filter. <ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref> colour bar glyphs do not contribute to the range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional filter on which graphics to get data range from. If omitted, then all graphics within the scene tree contribute. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spectrum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spectrum to get the range for. Only data for graphics using this spectrum contribute to the range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of data values to get the minimum and maximum range for, at least 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minimumValuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive the data value minimums. Must be at least as large as valuesCount. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximumValuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive the data value maximums. Must be at least as large as valuesCount. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of data components for which a valid range is obtainable, which can be more or less than the valuesCount so must be tested if more than one component range requested. Returns 0 on any other error including bad arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="513" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="513" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1aa1a1c480f1f47b4272729b1b39360657" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::clearTransformation</definition>
+        <argsstring>()</argsstring>
+        <name>clearTransformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear transformation field or matrix in scene.</para>
+<para><simplesect kind="return"><para>Result OK on success, ERROR_ARGUMENT on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="525" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="525" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a1d878f956ee2c0f33362e71fffdc75a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Scene::hasTransformation</definition>
+        <argsstring>() const</argsstring>
+        <name>hasTransformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query whether scene has either a transformation field or matrix active.</para>
+<para><simplesect kind="return"><para>True scene has transformation, false if not or invalid scene. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="535" column="6" bodyfile="auto_comments_output/scene.hpp" bodystart="535" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ab5c06b23d9e429ef5b5b57df3ed5dfc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Scene::getTransformationField</definition>
+        <argsstring>() const</argsstring>
+        <name>getTransformationField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get optional field providing the 4x4 transformation of the scene local coordinates into the parent scene local coordinate system, or world coordinate system if scene is for the root region. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ae73bae7628fae0f56c890cb3f9fa8863" kindref="member">Scene::setTransformationField</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="548" column="7" bodyfile="auto_comments_output/scene.hpp" bodystart="548" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ae73bae7628fae0f56c890cb3f9fa8863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::setTransformationField</definition>
+        <argsstring>(const Field &amp;transformationField)</argsstring>
+        <name>setTransformationField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>transformationField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set optional field providing the 4x4 transformation of the scene local coordinates into the parent scene local coordinate system, or world coordinate system if scene is for the root region. Overrides any current scene transformation matrix. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ad376ceaf4c9ff4ce2a01307ed3adc9b6" kindref="member">Scene::setTransformationMatrix</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transformationField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A 16 component field whose values give a 4x4 transformation of homogeneous coordinates, or NULL/invalid to clear transformation. This field must be spatially constant, but it may be time-varying in which case scene redraws are automatically triggered when the time changes. Runtime errors will be reported if this field cannot be evaluated given only the current timekeeper time. <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> must belong to this scene&apos;s owning region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="569" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="569" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a952d0239e35e32542e56ec608a7bd147" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::getTransformationMatrix</definition>
+        <argsstring>(double *valuesOut16) const</argsstring>
+        <name>getTransformationMatrix</name>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get 4x4 transformation matrix of the scene local coordinates into the parent scene local coordinate system, or world coordinate system if scene is for the root region. If a transformation field is active, calculates the current transformation matrix from the field, or returns an error if the field cannot be evaluated. If no transformation is active this function returns the 4x4 identity matrix. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ad376ceaf4c9ff4ce2a01307ed3adc9b6" kindref="member">Scene::setTransformationMatrix</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scene_1ae73bae7628fae0f56c890cb3f9fa8863" kindref="member">Scene::setTransformationField</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesOut16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array large enough to fill with the 16 components of the transformation matrix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="588" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="588" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ad376ceaf4c9ff4ce2a01307ed3adc9b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::setTransformationMatrix</definition>
+        <argsstring>(const double *valuesIn16)</argsstring>
+        <name>setTransformationMatrix</name>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set fixed 4x4 transformation matrix of the scene local coordinates into the parent scene local coordinate system, or world coordinate system if scene is for the root region. Clears any current scene transformation field.</para>
+<para>The 16 components give the following matrix transformation: <preformatted>
+    |x.out| = | c01 c02 c03 c04 | |x.in|
+    |y.out| = | c05 c05 c07 c08 | |y.in|
+    |z.out| = | c09 c10 c11 c12 | |z.in|
+    |h.out| = | c13 c14 c15 c16 | |h.in|
+</preformatted> where &apos;in&apos; coordinates are local coordinates in the scene, and &apos;out&apos; coordinates are in the parent local or world coordinate system. Homogeneous coordinates are used after division by the h component which gives a perspective effect if not equal to 1. Typical no-perspective usage uses h.in=1 and the bottom row 0 0 0 1 so h.out=1, hence c04, c08, c12 give displacement and the upper-left 3x3 matrix defines basis vectors of local coordinates in terms of parent coordinates.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesIn16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of 16 values giving the 4x4 transformation matrix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="616" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="616" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a3c32ed4841fd92d439964096c62e1630" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Scene::getVisibilityFlag</definition>
+        <argsstring>() const</argsstring>
+        <name>getVisibilityFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the state of the scene&apos;s visibility flag.</para>
+<para><simplesect kind="return"><para>Boolean value true if visibility flag is set, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="626" column="6" bodyfile="auto_comments_output/scene.hpp" bodystart="626" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a6f3147ce2d8f88fb996ff01ab559df44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::setVisibilityFlag</definition>
+        <argsstring>(bool visibilityFlag)</argsstring>
+        <name>setVisibilityFlag</name>
+        <param>
+          <type>bool</type>
+          <declname>visibilityFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the state of the scene&apos;s visibility flag. Note this only affects visibility of graphics when a scene filter is acting on it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visibilityFlag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean true to set, false to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="638" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="638" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a66bd39022736b0ce33cc6aebc438ec30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::moveGraphicsBefore</definition>
+        <argsstring>(const Graphics &amp;graphics, const Graphics &amp;refGraphics)</argsstring>
+        <name>moveGraphicsBefore</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>refGraphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move a graphics to the position before ref_graphics in the scene&apos;s graphics list, or last in the list if no reference graphics supplied. Earlier graphics are drawn first and in hardware rendering their pixel fragments are displayed in priority over later graphics at the same depth.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics to be moved. Must be from scene. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refGraphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another graphics from this scene to insert before, or NULL to move graphics to last position in list. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="654" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="654" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a07b3ddd2da92f4d20a256b496bf6f370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::removeAllGraphics</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllGraphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes all graphics from the scene.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="664" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="664" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a8ccc530c3abc665e6bc747a98f38b0a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::removeGraphics</definition>
+        <argsstring>(const Graphics &amp;graphics)</argsstring>
+        <name>removeGraphics</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphics" kindref="compound">Graphics</ref> &amp;</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a graphics from scene and decrements the position of all subsequent graphics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="675" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="675" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a36cfa72a30ddb4adecc6cce023503fd5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Scene::writeDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>writeDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the json file describing the scene and its graphics, which can be used to store the current scene settings.</para>
+<para><simplesect kind="return"><para>c string containing the json description of scene, otherwise 0; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="686" column="6" bodyfile="auto_comments_output/scene.hpp" bodystart="686" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1ae4e511ee9cd33d72dc368eeaf6b006d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::readDescription</definition>
+        <argsstring>(const char *description, bool overwrite)</argsstring>
+        <name>readDescription</name>
+        <param>
+          <type>const char *</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the json description to the scene and graphics. This will change the settings in scene and its graphics.</para>
+<para>@description The string containing json description @overwrite old graphics will be replaced when set to true or new graphics will be added to the existing graphics when set to false <simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise ERROR status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="700" column="5" bodyfile="auto_comments_output/scene.hpp" bodystart="700" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a0db09fd13e3a8e9115e57cd078c0c573" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenepicker" kindref="compound">Scenepicker</ref></type>
+        <definition>Scenepicker CMLibs::Zinc::Scene::createScenepicker</definition>
+        <argsstring>()</argsstring>
+        <name>createScenepicker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a scene picker which user can use to define a picking volume and find the onjects included in this volume.</para>
+<para><simplesect kind="return"><para>Handle to new scene picker, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="711" column="20" bodyfile="auto_comments_output/scenepicker.hpp" bodystart="252" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a722b28d3bbfe78bed14da60ad93f4432" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::write</definition>
+        <argsstring>(const StreaminformationScene &amp;streaminformationScene) const</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref> &amp;</type>
+          <declname>streaminformationScene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes graphics data in scene to stream resource objects described in the stream information object. Buffer in stream resources memory may return as a null ptr in some cases and the callers should check against it. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scene_1acf57f60fb68464fcd216cc7e7d19296a" kindref="member">Scene::createStreaminformationScene</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streaminformationScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream information scene containing information about resources to write to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if data is successfully written out, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="724" column="12" bodyfile="auto_comments_output/streamscene.hpp" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1a5b19b116df62b67db53c9ca6bc0b3539" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Scene::read</definition>
+        <argsstring>(const StreaminformationScene &amp;streaminformationScene)</argsstring>
+        <name>read</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref> &amp;</type>
+          <declname>streaminformationScene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Import graphics data to scene described in the stream information object. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Scene_1acf57f60fb68464fcd216cc7e7d19296a" kindref="member">Scene::createStreaminformationScene</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streaminformationScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the stream information scene containing stream resources. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if data is successfully imported, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="735" column="12" bodyfile="auto_comments_output/streamscene.hpp" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Scene_1acf57f60fb68464fcd216cc7e7d19296a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref></type>
+        <definition>StreaminformationScene CMLibs::Zinc::Scene::createStreaminformationScene</definition>
+        <argsstring>()</argsstring>
+        <name>createStreaminformationScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a stream information object for specifying files/resources and options for writing scene data from a scene.</para>
+<para><simplesect kind="return"><para>Handle to new stream information, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/scene.hpp" line="743" column="31" bodyfile="auto_comments_output/streamscene.hpp" bodystart="354" bodyend="358"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container/manager for graphics visualising a region. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Container/manager for the graphics making up the visualisation of the region&apos;s domains and fields. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/scene.hpp" line="40" column="1" bodyfile="auto_comments_output/scene.hpp" bodystart="39" bodyend="745"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a33526bb265b16e902fe0c2b70008e528" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>beginChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1aa1a1c480f1f47b4272729b1b39360657" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>clearTransformation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a6626e5c13ea6cc16057b581582703893" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>convertPointsToNodes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1af7f5b2e266793a0b16f7645e1e927397" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>convertToPointCloud</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a067f99d6272ac24845357f29f9e5733e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ad09ebe0bbdef10f170f4f77649c60703" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createGraphicsContours</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a5022f56c360d47c9e8624764b5ac4cc9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createGraphicsLines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a840b2dfc41eb351a7660f05bfb7278e4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createGraphicsPoints</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ae78c2a363dc3b526e7e14d137e53ab6a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createGraphicsStreamlines</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1aa064f69a1ac2fed5a4d30cf1f3efd6de" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createGraphicsSurfaces</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a0db09fd13e3a8e9115e57cd078c0c573" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createScenepicker</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ab289e78f212cd83689e9e4f72ada5409" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createSelectionnotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1acf57f60fb68464fcd216cc7e7d19296a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>createStreaminformationScene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ab7e22f0f300a2d2ea722714ec735f2cf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>endChange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a5f8613f9cb4adc2ae0f86de202a68ec5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>findGraphicsByName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a4c362f0218dd0f2924228c9a5ef691f0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getCoordinatesRange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a205265676635bfddef3ce3319cec2c6a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getFirstGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a6623ffec1b4b5f33bf94eea7ea5d2238" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getFontmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a2d13eac2965d0e7780751834c6cce0a7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getGlyphmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a7cd1751403e3084d0b97cfd2edb83930" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a49584b95bc5617bb6c1b0d4c0bcc7bcc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getLightmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a29d2a59ecb4e79ada5a1e4aff53eeaf2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getMaterialmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a9ad5afa60b5aef4dc3e1d6a5bdfdb83d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getNextGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a97472ac1ea33a778e4e3efbf0b200d4c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getNumberOfGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a0f738bf2cf427dcd8b294bba69d05a24" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getPreviousGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a54ac8ffd46f15ef2233cf31d99a8cb86" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a3e0c0831a07e11d5368912cc5293ad53" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getScenefiltermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a24729683dcab633673a635801da5039c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getSceneviewermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1aeabcba72cb532792d6623a36d4291782" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getSelectionField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a9ae306302dae5ba2eb17e55ec7a152cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getShadermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a65d103598eb3aa361d886b8b97d8ba66" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getSpectrumDataRange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a73ac806e0deea6ea9bb55e18b1b807e0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getSpectrummodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1acc4bb85ef9a04229300b8d4920c559c6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getTessellationmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a3751f29397cd34627c7e0ae8c39d062b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getTimekeepermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ab5c06b23d9e429ef5b5b57df3ed5dfc1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getTransformationField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a952d0239e35e32542e56ec608a7bd147" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getTransformationMatrix</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a3c32ed4841fd92d439964096c62e1630" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>getVisibilityFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a1d878f956ee2c0f33362e71fffdc75a9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>hasTransformation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a259727cde90992d924341790469bf00e" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ad13a32059e8d11e59f407040f1b347d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a66bd39022736b0ce33cc6aebc438ec30" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>moveGraphicsBefore</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a9b4857232e55daadb3e2d63bef5194ed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a5b19b116df62b67db53c9ca6bc0b3539" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>read</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ae4e511ee9cd33d72dc368eeaf6b006d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>readDescription</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a07b3ddd2da92f4d20a256b496bf6f370" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>removeAllGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a8ccc530c3abc665e6bc747a98f38b0a5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>removeGraphics</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a8b33449dbac526c303c302f0642eb74d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>Scene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a3af75f34d53ae7522028ce35d2297f1c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>Scene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1aff792c75a5700d52ea77f9482aa017e3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>Scene</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1aab341c99a37936c77876f086e98619eb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>setSelectionField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ae73bae7628fae0f56c890cb3f9fa8863" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>setTransformationField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1ad376ceaf4c9ff4ce2a01307ed3adc9b6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>setTransformationMatrix</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a6f3147ce2d8f88fb996ff01ab559df44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>setVisibilityFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a722b28d3bbfe78bed14da60ad93f4432" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>write</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a36cfa72a30ddb4adecc6cce023503fd5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>writeDescription</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Scene_1a9becafc60f7496c937f4c82041e8da86" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Scene</scope><name>~Scene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Differentialoperator" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Differentialoperator</compoundname>
+    <includes refid="differentialoperator_8hpp" local="no">differentialoperator.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Differentialoperator_1a089b2ea4a877fb75328f373722602622" prot="private" static="no" mutable="no">
+        <type>cmzn_differentialoperator_id</type>
+        <definition>cmzn_differentialoperator_id CMLibs::Zinc::Differentialoperator::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/differentialoperator.hpp" line="31" column="30" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Differentialoperator_1ab244f9138640ab4c9daa0020b75460c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Differentialoperator::Differentialoperator</definition>
+        <argsstring>()</argsstring>
+        <name>Differentialoperator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/differentialoperator.hpp" line="35" column="1" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="35" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Differentialoperator_1afa9d1a9e5e7608d4ca23f459ccf28a40" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Differentialoperator::Differentialoperator</definition>
+        <argsstring>(cmzn_differentialoperator_id in_differential_operator_id)</argsstring>
+        <name>Differentialoperator</name>
+        <param>
+          <type>cmzn_differentialoperator_id</type>
+          <declname>in_differential_operator_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/differentialoperator.hpp" line="39" column="10" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Differentialoperator_1acc268ec771b4873de3d065275c95b091" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Differentialoperator::Differentialoperator</definition>
+        <argsstring>(const Differentialoperator &amp;differentialOperator)</argsstring>
+        <name>Differentialoperator</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref> &amp;</type>
+          <declname>differentialOperator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/differentialoperator.hpp" line="43" column="1" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Differentialoperator_1ac7b7942eda5355404ecff7a55cc6b313" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref> &amp;</type>
+        <definition>Differentialoperator&amp; CMLibs::Zinc::Differentialoperator::operator=</definition>
+        <argsstring>(const Differentialoperator &amp;differentialOperator)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref> &amp;</type>
+          <declname>differentialOperator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/differentialoperator.hpp" line="47" column="22" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="47" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Differentialoperator_1a2f184beaf60d35c2ad15906d648ee586" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Differentialoperator::~Differentialoperator</definition>
+        <argsstring>()</argsstring>
+        <name>~Differentialoperator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/differentialoperator.hpp" line="58" column="1" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Differentialoperator_1aed95032ef50569ce956823aedad53460" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Differentialoperator::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/differentialoperator.hpp" line="71" column="6" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Differentialoperator_1a6e08a51a5eee3dcf611fd7b48e7952e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_differentialoperator_id</type>
+        <definition>cmzn_differentialoperator_id CMLibs::Zinc::Differentialoperator::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/differentialoperator.hpp" line="81" column="30" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes the derivative of a field to evaluate. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes the derivative of a field to evaluate. For example, del/del_xi, del^2/del(parameters)^2. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Mesh_1a3b98facff4a7bed4bfb331ca832e7853" kindref="member">Mesh::getChartDifferentialoperator</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a82306fc06325527688f0d71bd9b487fc" kindref="member">Fieldparameters::getDerivativeOperator</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1ad7bce01404cf1a9428c675501d360921" kindref="member">Field::evaluateDerivative</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/differentialoperator.hpp" line="29" column="1" bodyfile="auto_comments_output/differentialoperator.hpp" bodystart="28" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Differentialoperator_1ab244f9138640ab4c9daa0020b75460c2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Differentialoperator</scope><name>Differentialoperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Differentialoperator_1afa9d1a9e5e7608d4ca23f459ccf28a40" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Differentialoperator</scope><name>Differentialoperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Differentialoperator_1acc268ec771b4873de3d065275c95b091" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Differentialoperator</scope><name>Differentialoperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Differentialoperator_1a6e08a51a5eee3dcf611fd7b48e7952e7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Differentialoperator</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Differentialoperator_1a089b2ea4a877fb75328f373722602622" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Differentialoperator</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Differentialoperator_1aed95032ef50569ce956823aedad53460" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Differentialoperator</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Differentialoperator_1ac7b7942eda5355404ecff7a55cc6b313" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Differentialoperator</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Differentialoperator_1a2f184beaf60d35c2ad15906d648ee586" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Differentialoperator</scope><name>~Differentialoperator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2677 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Field" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Field</compoundname>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldAbs" prot="public" virt="non-virtual">CMLibs::Zinc::FieldAbs</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldAcos" prot="public" virt="non-virtual">CMLibs::Zinc::FieldAcos</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldAdd" prot="public" virt="non-virtual">CMLibs::Zinc::FieldAdd</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldAnd" prot="public" virt="non-virtual">CMLibs::Zinc::FieldAnd</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldApply" prot="public" virt="non-virtual">CMLibs::Zinc::FieldApply</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldArgumentReal" prot="public" virt="non-virtual">CMLibs::Zinc::FieldArgumentReal</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldAsin" prot="public" virt="non-virtual">CMLibs::Zinc::FieldAsin</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldAtan" prot="public" virt="non-virtual">CMLibs::Zinc::FieldAtan</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldAtan2" prot="public" virt="non-virtual">CMLibs::Zinc::FieldAtan2</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldComponent" prot="public" virt="non-virtual">CMLibs::Zinc::FieldComponent</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldConcatenate" prot="public" virt="non-virtual">CMLibs::Zinc::FieldConcatenate</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldConstant" prot="public" virt="non-virtual">CMLibs::Zinc::FieldConstant</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldCoordinateTransformation" prot="public" virt="non-virtual">CMLibs::Zinc::FieldCoordinateTransformation</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldCos" prot="public" virt="non-virtual">CMLibs::Zinc::FieldCos</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldCrossProduct" prot="public" virt="non-virtual">CMLibs::Zinc::FieldCrossProduct</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldCurl" prot="public" virt="non-virtual">CMLibs::Zinc::FieldCurl</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldDerivative" prot="public" virt="non-virtual">CMLibs::Zinc::FieldDerivative</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldDeterminant" prot="public" virt="non-virtual">CMLibs::Zinc::FieldDeterminant</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldDivergence" prot="public" virt="non-virtual">CMLibs::Zinc::FieldDivergence</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldDivide" prot="public" virt="non-virtual">CMLibs::Zinc::FieldDivide</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldDotProduct" prot="public" virt="non-virtual">CMLibs::Zinc::FieldDotProduct</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldEdgeDiscontinuity" prot="public" virt="non-virtual">CMLibs::Zinc::FieldEdgeDiscontinuity</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldEigenvalues" prot="public" virt="non-virtual">CMLibs::Zinc::FieldEigenvalues</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldEigenvectors" prot="public" virt="non-virtual">CMLibs::Zinc::FieldEigenvectors</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldEmbedded" prot="public" virt="non-virtual">CMLibs::Zinc::FieldEmbedded</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldEqualTo" prot="public" virt="non-virtual">CMLibs::Zinc::FieldEqualTo</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldExp" prot="public" virt="non-virtual">CMLibs::Zinc::FieldExp</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldFibreAxes" prot="public" virt="non-virtual">CMLibs::Zinc::FieldFibreAxes</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldFindMeshLocation" prot="public" virt="non-virtual">CMLibs::Zinc::FieldFindMeshLocation</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement" prot="public" virt="non-virtual">CMLibs::Zinc::FieldFiniteElement</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldGradient" prot="public" virt="non-virtual">CMLibs::Zinc::FieldGradient</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldGreaterThan" prot="public" virt="non-virtual">CMLibs::Zinc::FieldGreaterThan</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldGroup" prot="public" virt="non-virtual">CMLibs::Zinc::FieldGroup</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldIdentity" prot="public" virt="non-virtual">CMLibs::Zinc::FieldIdentity</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldIf" prot="public" virt="non-virtual">CMLibs::Zinc::FieldIf</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImage" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImage</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryDilate" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterBinaryDilate</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryErode" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterBinaryErode</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryThreshold" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterBinaryThreshold</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterCannyEdgeDetection" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterCannyEdgeDetection</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterConnectedThreshold" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterConnectedThreshold</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterCurvatureAnisotropicDiffusion" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterCurvatureAnisotropicDiffusion</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterDiscreteGaussian" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterDiscreteGaussian</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterGradientMagnitudeRecursiveGaussian" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterGradientMagnitudeRecursiveGaussian</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterHistogram" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterHistogram</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterMean" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterMean</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterRescaleIntensity" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterRescaleIntensity</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterSigmoid" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterSigmoid</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterThreshold" prot="public" virt="non-virtual">CMLibs::Zinc::FieldImagefilterThreshold</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldIsDefined" prot="public" virt="non-virtual">CMLibs::Zinc::FieldIsDefined</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldIsExterior" prot="public" virt="non-virtual">CMLibs::Zinc::FieldIsExterior</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldIsOnFace" prot="public" virt="non-virtual">CMLibs::Zinc::FieldIsOnFace</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldLessThan" prot="public" virt="non-virtual">CMLibs::Zinc::FieldLessThan</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldLog" prot="public" virt="non-virtual">CMLibs::Zinc::FieldLog</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldMagnitude" prot="public" virt="non-virtual">CMLibs::Zinc::FieldMagnitude</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldMatrixInvert" prot="public" virt="non-virtual">CMLibs::Zinc::FieldMatrixInvert</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldMatrixMultiply" prot="public" virt="non-virtual">CMLibs::Zinc::FieldMatrixMultiply</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldMeshIntegral" prot="public" virt="non-virtual">CMLibs::Zinc::FieldMeshIntegral</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldMultiply" prot="public" virt="non-virtual">CMLibs::Zinc::FieldMultiply</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldNodeLookup" prot="public" virt="non-virtual">CMLibs::Zinc::FieldNodeLookup</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldNodesetOperator" prot="public" virt="non-virtual">CMLibs::Zinc::FieldNodesetOperator</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldNodeValue" prot="public" virt="non-virtual">CMLibs::Zinc::FieldNodeValue</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldNormalise" prot="public" virt="non-virtual">CMLibs::Zinc::FieldNormalise</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldNot" prot="public" virt="non-virtual">CMLibs::Zinc::FieldNot</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldOr" prot="public" virt="non-virtual">CMLibs::Zinc::FieldOr</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldPower" prot="public" virt="non-virtual">CMLibs::Zinc::FieldPower</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldProjection" prot="public" virt="non-virtual">CMLibs::Zinc::FieldProjection</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldSceneviewerProjection" prot="public" virt="non-virtual">CMLibs::Zinc::FieldSceneviewerProjection</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldSin" prot="public" virt="non-virtual">CMLibs::Zinc::FieldSin</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldSqrt" prot="public" virt="non-virtual">CMLibs::Zinc::FieldSqrt</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldStoredMeshLocation" prot="public" virt="non-virtual">CMLibs::Zinc::FieldStoredMeshLocation</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldStoredString" prot="public" virt="non-virtual">CMLibs::Zinc::FieldStoredString</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldStringConstant" prot="public" virt="non-virtual">CMLibs::Zinc::FieldStringConstant</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldSubtract" prot="public" virt="non-virtual">CMLibs::Zinc::FieldSubtract</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldSumComponents" prot="public" virt="non-virtual">CMLibs::Zinc::FieldSumComponents</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldTan" prot="public" virt="non-virtual">CMLibs::Zinc::FieldTan</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldTimeLookup" prot="public" virt="non-virtual">CMLibs::Zinc::FieldTimeLookup</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldTimeValue" prot="public" virt="non-virtual">CMLibs::Zinc::FieldTimeValue</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldTranspose" prot="public" virt="non-virtual">CMLibs::Zinc::FieldTranspose</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldVectorCoordinateTransformation" prot="public" virt="non-virtual">CMLibs::Zinc::FieldVectorCoordinateTransformation</derivedcompoundref>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1FieldXor" prot="public" virt="non-virtual">CMLibs::Zinc::FieldXor</derivedcompoundref>
+    <includes refid="field_8hpp" local="no">field.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ChangeFlag</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfaa288a9ef6b86626e6c08cbada560e15d" prot="public">
+          <name>CHANGE_FLAG_NONE</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>field(s) not changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa9b8f437e3ad5c1d13f8ce371d343cb44" prot="public">
+          <name>CHANGE_FLAG_ADD</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_ADD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>one or more fields added </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2c9f34eed1bee5772e9fdf2eec99552a" prot="public">
+          <name>CHANGE_FLAG_REMOVE</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_REMOVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>one or more fields removed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfad384cc26b171814bc564158887ee316c" prot="public">
+          <name>CHANGE_FLAG_IDENTIFIER</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_IDENTIFIER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>field identifier changed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa74552c6dc888514f2173f0ab80630010" prot="public">
+          <name>CHANGE_FLAG_DEFINITION</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_DEFINITION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>change to field attributes other than identifier. If change affects result, CMZN_FIELD_CHANGE_FLAG_FULL_RESULT will also be set; metadata changes do not flag result as changed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa3f2e4f462790358cb1bdc5a4196519d6" prot="public">
+          <name>CHANGE_FLAG_FULL_RESULT</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_FULL_RESULT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>all resultant values of field changed, by its definition changing or by change to a field or other object it depends on. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa78bd50b35859cc9ca3bdfca6c5140642" prot="public">
+          <name>CHANGE_FLAG_PARTIAL_RESULT</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_PARTIAL_RESULT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>change to field values on subset of domain: nodes, elements etc. If this flag is set but not CHANGE_FLAG_FULL_RESULT then nodeset and mesh changes describe where on the domain its values have changed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2edd39db683f0d10ee0c9e333708c60b" prot="public">
+          <name>CHANGE_FLAG_RESULT</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_RESULT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>convenient value representing any change affecting result </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfadbc5f7957ab256631bd0d0cd36a894e2" prot="public">
+          <name>CHANGE_FLAG_FINAL</name>
+          <initializer>= CMZN_FIELD_CHANGE_FLAG_FINAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>final notification: owning field module i.e. region has been destroyed </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit flags summarising changes to a field or fields in a fieldmodule. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="122" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="121" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CoordinateSystemType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba31dc4f73378e531912b282f9592fe282" prot="public">
+          <name>COORDINATE_SYSTEM_TYPE_INVALID</name>
+          <initializer>= CMZN_FIELD_COORDINATE_SYSTEM_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified coordinate system type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaf9f4070081c534c6a7a74f3a13004ddc" prot="public">
+          <name>COORDINATE_SYSTEM_TYPE_RECTANGULAR_CARTESIAN</name>
+          <initializer>= CMZN_FIELD_COORDINATE_SYSTEM_TYPE_RECTANGULAR_CARTESIAN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default rectangular Cartesian coordinate system </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbafed2887b776d03271450f81bdd2aee5d" prot="public">
+          <name>COORDINATE_SYSTEM_TYPE_CYLINDRICAL_POLAR</name>
+          <initializer>= CMZN_FIELD_COORDINATE_SYSTEM_TYPE_CYLINDRICAL_POLAR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cylindrical polar coordinate system with components r, theta, z. Converts to rectangular Cartesian via: x = r*cos(theta) y = r*sin(theta) z = z </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba9068dc9208c86ec418b7497f9806c7a6" prot="public">
+          <name>COORDINATE_SYSTEM_TYPE_SPHERICAL_POLAR</name>
+          <initializer>= CMZN_FIELD_COORDINATE_SYSTEM_TYPE_SPHERICAL_POLAR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Spherical polar coordinate system with components r, theta, phi. Converts to rectangular Cartesian via: x = r*cos(phi)*cos(theta) y = r*cos(phi)*sin(theta) z = r*sin(phi) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbada14af040524471f0dd8d8d3812314fa" prot="public">
+          <name>COORDINATE_SYSTEM_TYPE_PROLATE_SPHEROIDAL</name>
+          <initializer>= CMZN_FIELD_COORDINATE_SYSTEM_TYPE_PROLATE_SPHEROIDAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Prolate spheroidal coordinate system with components lambda, mu, theta, with a focus value giving scale. Converts to rectangular Cartesian via: x = focus*cosh(lambda)*cos(mu) y = focus*sinh(lambda)*sin(mu)*cos(theta) z = focus*sinh(lambda)*sin(mu)*sin(theta) <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1ac09d1d65b3af6aeeff3a6b855351ee0a" kindref="member">Field::setCoordinateSystemFocus</ref> </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaba4bfa06d31e6385786ea6290297c538" prot="public">
+          <name>COORDINATE_SYSTEM_TYPE_OBLATE_SPHEROIDAL</name>
+          <initializer>= CMZN_FIELD_COORDINATE_SYSTEM_TYPE_OBLATE_SPHEROIDAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Oblate spheroidal coordinate system with components lambda, mu, theta, with a focus value giving scale. Converts to rectangular Cartesian via: x = focus*cosh(lambda)*cos(mu)*sin(theta) y = focus*sinh(lambda)*sin(mu) z = focus*cosh(lambda)*cos(mu)*cos(theta) <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1ac09d1d65b3af6aeeff3a6b855351ee0a" kindref="member">Field::setCoordinateSystemFocus</ref> </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba5ed6536930afae2eb2fff17130cb504e" prot="public">
+          <name>COORDINATE_SYSTEM_TYPE_FIBRE</name>
+          <initializer>= CMZN_FIELD_COORDINATE_SYSTEM_TYPE_FIBRE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A fibre/material orthonormal reference coordinate system defined within elements by Euler angle rotations of a coordinate system initially oriented with the derivatives of RC coordinates w.r.t. element &apos;xi&apos; coordinates: initial fibre vector = normalised dx/dxi1. initial sheet vector = unit vector normal to fibre in xi1-xi2 plane, calculated as: normal (x) fibre. initial normal vector = unit vector normal to xi1-xi2 plane, calculated as: dx/dxi1 (x) dx/dxi2, then normalised. Up to three fibre angles (components of fibre field) are applied as rotations in radians in the following sequence (later steps omitted for fewer components):<orderedlist>
+<listitem><para>fibre angle = anticlockwise (right-hand) rotation of initial fibre &amp; sheet vectors about initial normal vector.</para>
+</listitem><listitem><para>imbrication angle = anticlockwise rotation of initial normal and rotated fibre vectors about the rotated sheet vector.</para>
+</listitem><listitem><para>sheet angle = anticlockwise rotation of the rotated sheet and rotated normal vectors about the rotated fibre vector. </para>
+</listitem></orderedlist>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbac055de51dd4fee70caeb4984b15f17d1" prot="public">
+          <name>COORDINATE_SYSTEM_TYPE_NOT_APPLICABLE</name>
+          <initializer>= CMZN_FIELD_COORDINATE_SYSTEM_TYPE_NOT_APPLICABLE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Coordinate system is not applicable e.g. for non-numeric field </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> attribute describing the type of space that its values are to be interpreted in. Although it is usually set for all fields (default is rectangular cartesian, RC), the attribute is only relevant when field is used to supply coordinates or vector values, e.g. to graphics, where it prompts automatic conversion to the underlying RC coordinate system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="162" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="161" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DomainType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a50ecf08328c7328e7ad0262882dedf45" prot="public">
+          <name>DOMAIN_TYPE_INVALID</name>
+          <initializer>= CMZN_FIELD_DOMAIN_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified domain type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a4628366c2ce93c71090f79bb01ac5738" prot="public">
+          <name>DOMAIN_TYPE_POINT</name>
+          <initializer>= CMZN_FIELD_DOMAIN_TYPE_POINT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>A single point for the region </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6aa3754a1c1c8a52288c3cf7eda00c9025" prot="public">
+          <name>DOMAIN_TYPE_NODES</name>
+          <initializer>= CMZN_FIELD_DOMAIN_TYPE_NODES</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The set of node points </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a32fcfd65c0786e345bb61a2c719d321e" prot="public">
+          <name>DOMAIN_TYPE_DATAPOINTS</name>
+          <initializer>= CMZN_FIELD_DOMAIN_TYPE_DATAPOINTS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The set of data points </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a396f307d0c895e5a6629ec5450228a19" prot="public">
+          <name>DOMAIN_TYPE_MESH1D</name>
+          <initializer>= CMZN_FIELD_DOMAIN_TYPE_MESH1D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The set of 1-D elements and edge lines of 2-D or 3-D elements </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6ab52c6d5cf0d338307fe9a13b5bc8ebcc" prot="public">
+          <name>DOMAIN_TYPE_MESH2D</name>
+          <initializer>= CMZN_FIELD_DOMAIN_TYPE_MESH2D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The set of 2-D elements and faces of 3-D elements </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a721cef8f0081ead37a9ba7291206a4f9" prot="public">
+          <name>DOMAIN_TYPE_MESH3D</name>
+          <initializer>= CMZN_FIELD_DOMAIN_TYPE_MESH3D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The set of 3-D elements </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a0c04d3daeacbb17e97fc449db1985caa" prot="public">
+          <name>DOMAIN_TYPE_MESH_HIGHEST_DIMENSION</name>
+          <initializer>= CMZN_FIELD_DOMAIN_TYPE_MESH_HIGHEST_DIMENSION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The set of elements of highest dimension in region </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An enumeration specifying the field domain (without domain objects) Also used as bit flags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="223" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="222" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ValueType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335acccc613810b339fffd93728911c3305b" prot="public">
+          <name>VALUE_TYPE_INVALID</name>
+          <initializer>= CMZN_FIELD_VALUE_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified value type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335ac09365d4871dbdb1510bdf16ca5c9967" prot="public">
+          <name>VALUE_TYPE_REAL</name>
+          <initializer>= CMZN_FIELD_VALUE_TYPE_REAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Real value type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335a015108650de6601ef747cbb04e55130e" prot="public">
+          <name>VALUE_TYPE_STRING</name>
+          <initializer>= CMZN_FIELD_VALUE_TYPE_STRING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>String value type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335aabc83b79f0c046191ec49eaa7b3f957b" prot="public">
+          <name>VALUE_TYPE_MESH_LOCATION</name>
+          <initializer>= CMZN_FIELD_VALUE_TYPE_MESH_LOCATION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> location value type </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The types of values fields may produce. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1afcfdab410d31e025a80591488b0d3633" kindref="member">Field::getValueType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="252" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="251" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Field_1a8403aa300e3620a468043658194301e2" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Field::ChangeFlags</definition>
+        <argsstring></argsstring>
+        <name>ChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" kindref="member">ChangeFlag</ref> <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a5a72e448f0b198caa6502c9e6388a323" kindref="member">Fieldmoduleevent::getFieldChangeFlags</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="152" column="13" bodyfile="auto_comments_output/field.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classCMLibs_1_1Zinc_1_1Field_1ac6ad96b3d0685fc46455bba8158fa1fd" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int CMLibs::Zinc::Field::DomainTypes</definition>
+        <argsstring></argsstring>
+        <name>DomainTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type for passing logical OR of <ref refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" kindref="member">DomainType</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="245" column="13" bodyfile="auto_comments_output/field.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Field_1a5f5901992c2b67e71a41aa63bfa42a43" prot="protected" static="no" mutable="no">
+        <type>cmzn_field_id</type>
+        <definition>cmzn_field_id CMLibs::Zinc::Field::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="65" column="15" bodyfile="auto_comments_output/field.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1adf617257a39c7c4939427fc1400967ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Field::Field</definition>
+        <argsstring>()</argsstring>
+        <name>Field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="69" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="69" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a6fc4e264e0a627111e336c5b8f7a7ab2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Field::Field</definition>
+        <argsstring>(cmzn_field_id field_id)</argsstring>
+        <name>Field</name>
+        <param>
+          <type>cmzn_field_id</type>
+          <declname>field_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="73" column="10" bodyfile="auto_comments_output/field.hpp" bodystart="73" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1af0801aaa6a94f3fb1cc45c2193a4824d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Field::Field</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>Field</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="76" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="76" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a6165379988c2924acd10207e6b6d286f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+        <definition>Field&amp; CMLibs::Zinc::Field::operator=</definition>
+        <argsstring>(const Field &amp;field)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="79" column="7" bodyfile="auto_comments_output/field.hpp" bodystart="79" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1aa82d5073ce41f28a3aa35dfe07c904dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Field::~Field</definition>
+        <argsstring>()</argsstring>
+        <name>~Field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="90" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a18ebc3f97e6c352a91776a8a752d1171" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Field::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="103" column="6" bodyfile="auto_comments_output/field.hpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_field_id</type>
+        <definition>cmzn_field_id CMLibs::Zinc::Field::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="113" column="15" bodyfile="auto_comments_output/field.hpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a42bf82160dc2d3a7d783f4631c642bb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldassignment" kindref="compound">Fieldassignment</ref></type>
+        <definition>Fieldassignment CMLibs::Zinc::Field::createFieldassignment</definition>
+        <argsstring>(const Field &amp;sourceField)</argsstring>
+        <name>createFieldassignment</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>sourceField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a field assignment object for assigning values of the target field, from values of the source field. Target and source fields must match in value type and number of components, and mesh location value type fields must be for the same host mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source field to assign values from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new field assignment object, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="273" column="24" bodyfile="auto_comments_output/fieldassignment.hpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ac7c2fcde9036c8f3dbd1757181d47842" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Field::isManaged</definition>
+        <argsstring>() const</argsstring>
+        <name>isManaged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get managed status of field in its owning field module. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1a836e0c28e4558d1d14eb72e6d6c96f31" kindref="member">Field::setManaged</ref></para>
+</simplesect>
+<simplesect kind="return"><para>true if field is managed, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="281" column="6" bodyfile="auto_comments_output/field.hpp" bodystart="281" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a836e0c28e4558d1d14eb72e6d6c96f31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::setManaged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setManaged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set managed status of field in its owning field module. If set (managed) the field will remain indefinitely in the field module even if no external references are held. If not set (unmanaged) the field will be automatically removed from the module when no longer referenced externally, effectively marking it as pending destruction. All new objects are unmanaged unless stated otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the managed flag: true or false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="298" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ad5e2221e40b86a62506c691be271690d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Field::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the C++ style class name e.g. &quot;FieldAdd&quot;.</para>
+<para><simplesect kind="return"><para>On success: allocated string containing field class name. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="309" column="6" bodyfile="auto_comments_output/field.hpp" bodystart="309" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a86be6bdc8d2c8ef8813367dbd39909be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Field::hasClassName</definition>
+        <argsstring>(const char *className) const</argsstring>
+        <name>hasClassName</name>
+        <param>
+          <type>const char *</type>
+          <declname>className</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if field has the exact class name string including case.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>className</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>C++ style class name e.g. &quot;FieldAdd&quot;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if field has exactly matching class name otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="320" column="6" bodyfile="auto_comments_output/field.hpp" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a6bd4db297171cc5175e56cd7279aae31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Field::getComponentName</definition>
+        <argsstring>(int componentNumber) const</argsstring>
+        <name>getComponentName</name>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of a component of the field. This is only meaningful for finite element fields; all other fields&apos; component names are the string equivalent of the component number, e.g. 1 -&gt; &quot;1&quot; etc. Also, node_value fields return the base finite element field component names.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component number from 1 to number of components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>On success: allocated string containing field component name. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="336" column="6" bodyfile="auto_comments_output/field.hpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ad813ef6fcabedb5ddf1a1ff5b897eb9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::setComponentName</definition>
+        <argsstring>(int componentNumber, const char *name)</argsstring>
+        <name>setComponentName</name>
+        <param>
+          <type>int</type>
+          <declname>componentNumber</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of a component of the field. This is only meaningful for finite element fields, which can be serialised.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component number from 1 to number of components. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new name of the field component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>On success, <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref>, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="349" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="349" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a0637975f5114dd3e49c6ed4ae9772c28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Field::getCoordinateSystemFocus</definition>
+        <argsstring>() const</argsstring>
+        <name>getCoordinateSystemFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the coordinate system focus value, used for prolate and oblate spheroidal coordinate system types only.</para>
+<para><simplesect kind="return"><para>The focus length, or 0.0 if invalid field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="360" column="8" bodyfile="auto_comments_output/field.hpp" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ac09d1d65b3af6aeeff3a6b855351ee0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::setCoordinateSystemFocus</definition>
+        <argsstring>(double focus)</argsstring>
+        <name>setCoordinateSystemFocus</name>
+        <param>
+          <type>double</type>
+          <declname>focus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the coordinate system focus value, used for prolate and oblate spheroidal coordinate system types only. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1a8d01b1bff6eaa0d8860c0ac6a393f614" kindref="member">Field::setCoordinateSystemType</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>focus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new focus value, &gt; 0.0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="373" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="373" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1af379a711cca3c549eba305544891989c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" kindref="member">CoordinateSystemType</ref></type>
+        <definition>CoordinateSystemType CMLibs::Zinc::Field::getCoordinateSystemType</definition>
+        <argsstring>() const</argsstring>
+        <name>getCoordinateSystemType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the coordinate system type to interpret field values in.</para>
+<para><simplesect kind="return"><para>The type of coordinate system, or INVALID if invalid field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="393" column="22" bodyfile="auto_comments_output/field.hpp" bodystart="393" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a8d01b1bff6eaa0d8860c0ac6a393f614" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::setCoordinateSystemType</definition>
+        <argsstring>(CoordinateSystemType coordinateSystemType)</argsstring>
+        <name>setCoordinateSystemType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" kindref="member">CoordinateSystemType</ref></type>
+          <declname>coordinateSystemType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the coordinate system type to interpret field values in. Note PROLATE_SPHEROIDAL and OBLATE_SPHEROIDAL coordinate system types also require the focus to be set to a positive value. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1ac09d1d65b3af6aeeff3a6b855351ee0a" kindref="member">Field::setCoordinateSystemFocus</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinateSystemType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of coordinate system. Note that non-numeric value type fields have coordinate system type NOT_APPLICABLE, which cannot be changed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if successfully set, an error code if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="410" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="410" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a509212e6067e9c2999ced60d8beffc25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters" kindref="compound">Fieldparameters</ref></type>
+        <definition>Fieldparameters CMLibs::Zinc::Field::getFieldparameters</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldparameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get field parameters object for field. Currently only supported by finite element field type. <simplesect kind="note"><para>Only node-based field parameters are supported at present. </para>
+</simplesect>
+<simplesect kind="note"><para>The client must get the number of parameters before using any other API. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldparameters_1a3ff7f4ea307a80a4251a6050291994c9" kindref="member">Fieldparameters::getNumberOfParameters</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to new field parameters object, or NULL/invalid handle on failure or if not supported by field type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="438" column="24" bodyfile="auto_comments_output/fieldparameters.hpp" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a166451e16c4694e523a4143a64cef313" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::getNumberOfComponents</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfComponents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of components of the field.</para>
+<para><simplesect kind="return"><para>The number of components of the field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="445" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="445" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a852882613f6d8be1a09eedecf1aa9ad6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Field::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the name of the field.</para>
+<para><simplesect kind="return"><para>On success: allocated string containing field name. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="456" column="6" bodyfile="auto_comments_output/field.hpp" bodystart="456" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ab6aa2520f106406e1205f799d992e29e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of the field. Fails if the new name is in use by any other field in the same field module.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new name for the field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="468" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="468" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a23e574454b96f13dc8cc2a57ffac7efb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::getNumberOfSourceFields</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfSourceFields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of source fields of this field.</para>
+<para><simplesect kind="return"><para>The number of source fields of the field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="478" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="478" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a47b654b92689d4954583272f84073b61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Field::getSourceField</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getSourceField</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a source field of this field at a given index. Source fields are in the order presented in the field constructor followed by any optional source fields set by type-specific API.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index from 1 to number of source fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to source field, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="491" column="7" bodyfile="auto_comments_output/field.hpp" bodystart="491" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1aad16cd4f1acb66f04996beba1c8b21ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Field::isTypeCoordinate</definition>
+        <argsstring>() const</argsstring>
+        <name>isTypeCoordinate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get whether the field is marked as coordinate type i.e. appropriate for giving geometric location of a domain.</para>
+<para><simplesect kind="return"><para>True if the field is coordinate type, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="502" column="6" bodyfile="auto_comments_output/field.hpp" bodystart="502" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a1c1fc2dac208c9bf55a3032ea1fe9066" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::setTypeCoordinate</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setTypeCoordinate</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether the field is marked as coordinate type i.e. appropriate for giving geometric location of a domain. Can only be set for some fields e.g. finite_element where its default is false. Other fields may be fixed at either state.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of the coordinate type flag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="516" column="5" bodyfile="auto_comments_output/field.hpp" bodystart="516" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1afcfdab410d31e025a80591488b0d3633" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335" kindref="member">ValueType</ref></type>
+        <definition>ValueType CMLibs::Zinc::Field::getValueType</definition>
+        <argsstring>() const</argsstring>
+        <name>getValueType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the type of values produced by the field.</para>
+<para><simplesect kind="return"><para>Value type produced by field </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="526" column="11" bodyfile="auto_comments_output/field.hpp" bodystart="526" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a4e8a6d92a0433140f9a3b11eed36a30a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule" kindref="compound">Fieldmodule</ref></type>
+        <definition>Fieldmodule CMLibs::Zinc::Field::getFieldmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the field module which owns this field.</para>
+<para><simplesect kind="return"><para>Handle to owning field module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="536" column="20" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1784" bodyend="1787"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1aa196d5ee3131a96af4c66a292d2ee5fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::assignMeshLocation</definition>
+        <argsstring>(const Fieldcache &amp;cache, const Element &amp;element, int coordinatesCount, const double *coordinatesIn)</argsstring>
+        <name>assignMeshLocation</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coordinatesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>coordinatesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign mesh_location field values at location specified in cache. Only supported by stored_mesh_location field type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to assign at and intermediate field values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of following element local coordinates array. Must be at least the dimension of the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array containing location to set in element&apos;s local &apos;xi&apos; coordinate chart. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="550" column="12" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="204" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ad98c53fa38482f27be33d5915d2eb57d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::assignReal</definition>
+        <argsstring>(const Fieldcache &amp;cache, int valuesCount, const double *valuesIn)</argsstring>
+        <name>assignReal</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign real values to field at location specified in cache. Only supported for some field types, notably finite_element, node_value, and field operators where only one operand is assignable: these back-calculate value of that operand and assign to it (includes types: offset, scale, coordinate_transformation, vector_coordinate_transformation; latter assumes coordinate field is not assignable.) Only supported for some cache locations: node, or anywhere for constants.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to assign at and intermediate field values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesInCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of values array. Checked that it equals or exceeds the number of components of field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of real values to assign to field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="568" column="12" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a723e4fce933ebb2a18c289e2f1ca2f8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::assignString</definition>
+        <argsstring>(const Fieldcache &amp;cache, const char *stringValue)</argsstring>
+        <name>assignString</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>stringValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a string value to a field at location specified in cache. Only supported for legacy stored &apos;finite element&apos; string at node locations, and string_constant at any cache location.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to assign at and intermediate field values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stringValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string value to assign to field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="579" column="12" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a19db38f9c5f86347f52ade324e421f90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Field::dependsOnField</definition>
+        <argsstring>(const Field &amp;otherField) const</argsstring>
+        <name>dependsOnField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>otherField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query if field is a function of another field, meaning it is either the same or the other field is one of its source fields or any further source fields recursively.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>otherField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to query for dependence on. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if field depends on other field, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="589" column="13" bodyfile="auto_comments_output/field.hpp" bodystart="589" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a9b46525ae6c3c4900e8c85bc555e907e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref></type>
+        <definition>Element CMLibs::Zinc::Field::evaluateMeshLocation</definition>
+        <argsstring>(const Fieldcache &amp;cache, int coordinatesCount, double *coordinatesOut) const</argsstring>
+        <name>evaluateMeshLocation</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coordinatesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>coordinatesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate mesh_location field values at location specified in cache.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to evaluate at and intermediate field values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of following element local coordinates array. Must be at least the dimension of the returned element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive the location in the element&apos;s local &apos;xi&apos; coordinate chart. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to element, or NULL/invalid handle on failure including field not defined at cache location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="605" column="16" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="221" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a21764bc8fcb2a1f07ba79eb31c6bb755" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::evaluateReal</definition>
+        <argsstring>(const Fieldcache &amp;cache, int valuesCount, double *valuesOut) const</argsstring>
+        <name>evaluateReal</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate real field values at location specified in cache.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to evaluate at and intermediate field values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOutCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of values array. Checked that it equals or exceeds the number of components of field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of real values to evaluate into. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure including if field is not defined at cache location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="618" column="12" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="228" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a710c3ed9e1e43fea537726ff7ada8dbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * CMLibs::Zinc::Field::evaluateString</definition>
+        <argsstring>(const Fieldcache &amp;cache) const</argsstring>
+        <name>evaluateString</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate field as string at location specified in cache. Numerical valued fields are written to a string with comma separated components. Caller must free returned string with cmzn_deallocate().</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to evaluate at and intermediate field values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Allocated string value, or NULL on failure including if field is not defined at cache location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="629" column="13" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ad7bce01404cf1a9428c675501d360921" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::evaluateDerivative</definition>
+        <argsstring>(const Differentialoperator &amp;differentialOperator, const Fieldcache &amp;cache, int valuesCount, double *valuesOut) const</argsstring>
+        <name>evaluateDerivative</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref> &amp;</type>
+          <declname>differentialOperator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate derivatives of a real-valued field. CURRENT LIMITATIONS:<orderedlist>
+<listitem><para><ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> differential operator must be obtained from mesh owning element derivative is evaluated on. Cannot yet evaluate derivatives with respect to parent element chart.</para>
+</listitem><listitem><para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> parameter derivatives can only be evaluated on the top-level element the field is defined on, not on faces or lines inheriting the field.</para>
+</listitem><listitem><para>Not implemented for all field operators and cache locations; falls back to approximate finite difference calculation for many cases.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>differentialOperator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The differential operator identifying which derivative to evaluate. Can be obtained from mesh or field parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to evaluate at and intermediate field values. Except for constants, can only evaluate at element locations. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOutCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of values array, must equal number of components of field times the number of derivative terms. For parameter derivatives, the number of terms equals the number of parameters in each element (obtained from field parameters) to the power of the derivative order. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of real values to evaluate derivatives into. For multiple terms, output values cycle slowest by components, then by earliest derivative index etc. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure including case of field not being defined at cache location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="657" column="12" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="238" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a35cda5a7c9f42e93ff448d716db807bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::evaluateFieldrange</definition>
+        <argsstring>(const Fieldcache &amp;cache, Fieldrange &amp;range) const</argsstring>
+        <name>evaluateFieldrange</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldrange" kindref="compound">Fieldrange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate range of field, currently limited to real-valued fields at element/mesh location. Note this is only designed to work for field functions up to cubic polynomial complexity, and may not be accurate for fields with higher order waviness or extreme distortions.</para>
+<para>values. Must be for same region as field. Must have set an element or mesh location in the field cache. from the same fieldcache as supplied here. <simplesect kind="return"><para>Result OK on success, ERROR_NOT_FOUND if no range found including field not defined, ERROR_NOT_IMPLEMENTED if not an element location, otherwise ERROR_ARGUMENT including for non-numeric fields. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="674" column="12" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ad9183e1ee3be7fa6a5be7b4c9d1d3402" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Field::isDefinedAtLocation</definition>
+        <argsstring>(const Fieldcache &amp;cache) const</argsstring>
+        <name>isDefinedAtLocation</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determines if the field is defined at the location specified in the field cache, and hence can be evaluated there. Note that a finite element field will return false for this function at a node location where it has parameters, but cannot be evaluated due to not having a complete set of VALUE parameters for all components. The finite element field has a special function for querying whether it has parameters at a location. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement_1a21b4338e86b98d63a132f1cd2b01cafb" kindref="member">FieldFiniteElement::hasParametersAtLocation</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Store of location to check, and intermediate field values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if defined, false if not defined or error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="689" column="13" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a3cc6edbc68ea5c5492b28f1b285fc432" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Field::smooth</definition>
+        <argsstring>(const Fieldsmoothing &amp;fieldsmoothing)</argsstring>
+        <name>smooth</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing" kindref="compound">Fieldsmoothing</ref> &amp;</type>
+          <declname>fieldsmoothing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smooth the field according to the supplied smoothing specification.</para>
+<para>are supported by this function. <simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise any other error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="697" column="12" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a73d20220ed104d06c763eea3977cbb62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldApply" kindref="compound">FieldApply</ref></type>
+        <definition>FieldApply CMLibs::Zinc::Field::castApply</definition>
+        <argsstring>()</argsstring>
+        <name>castApply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is apply type, return type-specific handle to it.</para>
+<para><simplesect kind="return"><para>Handle to derived constant field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="706" column="19" bodyfile="auto_comments_output/fieldapply.hpp" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1abbd74200465c3274876297993e81b3a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldArgumentReal" kindref="compound">FieldArgumentReal</ref></type>
+        <definition>FieldArgumentReal CMLibs::Zinc::Field::castArgumentReal</definition>
+        <argsstring>()</argsstring>
+        <name>castArgumentReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is argument real type, return type-specific handle to it.</para>
+<para><simplesect kind="return"><para>Handle to derived constant field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="713" column="26" bodyfile="auto_comments_output/fieldapply.hpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1aeba8a5c6388cc9e0d950e60715b5c711" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldComponent" kindref="compound">FieldComponent</ref></type>
+        <definition>FieldComponent CMLibs::Zinc::Field::castComponent</definition>
+        <argsstring>()</argsstring>
+        <name>castComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is of component type, then this function returns the derived component field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived component field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="720" column="23" bodyfile="auto_comments_output/fieldcomposite.hpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1aca5b8313b90cef26e85d0e4043bd29c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldConstant" kindref="compound">FieldConstant</ref></type>
+        <definition>FieldConstant CMLibs::Zinc::Field::castConstant</definition>
+        <argsstring>()</argsstring>
+        <name>castConstant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is constant type, return type-specific handle to it.</para>
+<para><simplesect kind="return"><para>Handle to derived constant field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="726" column="22" bodyfile="auto_comments_output/fieldconstant.hpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a0add61e23aeb1abed39e81236a2110e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldDerivative" kindref="compound">FieldDerivative</ref></type>
+        <definition>FieldDerivative CMLibs::Zinc::Field::castDerivative</definition>
+        <argsstring>()</argsstring>
+        <name>castDerivative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast field to derivative type if valid.</para>
+<para><simplesect kind="return"><para>Handle to derived derivative field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="733" column="24" bodyfile="auto_comments_output/fieldderivatives.hpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a04d7230adbc926c059fc613dfce61283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldEdgeDiscontinuity" kindref="compound">FieldEdgeDiscontinuity</ref></type>
+        <definition>FieldEdgeDiscontinuity CMLibs::Zinc::Field::castEdgeDiscontinuity</definition>
+        <argsstring>()</argsstring>
+        <name>castEdgeDiscontinuity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is edge discontinuity type then returns the derived edge discontinuity field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived edge discontinuity field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="741" column="31" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="657" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a0529e22a4ee68a8e5541e742f9e64d92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldEigenvalues" kindref="compound">FieldEigenvalues</ref></type>
+        <definition>FieldEigenvalues CMLibs::Zinc::Field::castEigenvalues</definition>
+        <argsstring>()</argsstring>
+        <name>castEigenvalues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is a eigenvalues type field, return the derived field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived eigenvalues field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="748" column="25" bodyfile="auto_comments_output/fieldmatrixoperators.hpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a48faaa0911008beaaa020f3eaf4d3726" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldFindMeshLocation" kindref="compound">FieldFindMeshLocation</ref></type>
+        <definition>FieldFindMeshLocation CMLibs::Zinc::Field::castFindMeshLocation</definition>
+        <argsstring>()</argsstring>
+        <name>castFindMeshLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is of type find_mesh_location then this function returns the derived find mesh location field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived find mesh location field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="756" column="30" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="675" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a67ee725859c2fbba1aa3ab803229d351" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement" kindref="compound">FieldFiniteElement</ref></type>
+        <definition>FieldFiniteElement CMLibs::Zinc::Field::castFiniteElement</definition>
+        <argsstring>()</argsstring>
+        <name>castFiniteElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is real-valued interpolated finite element then this function returns the derived finite element field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived finite element field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="763" column="27" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="645" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1acfae911d921aaf25afe82dfcad06906e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldGroup" kindref="compound">FieldGroup</ref></type>
+        <definition>FieldGroup CMLibs::Zinc::Field::castGroup</definition>
+        <argsstring>()</argsstring>
+        <name>castGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is of group type, then this function returns the derived group field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived group field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="770" column="19" bodyfile="auto_comments_output/fieldgroup.hpp" bodystart="388" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1afc4f36839a033e8ba83bed8f66e9c16c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImage" kindref="compound">FieldImage</ref></type>
+        <definition>FieldImage CMLibs::Zinc::Field::castImage</definition>
+        <argsstring>()</argsstring>
+        <name>castImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the image_field is of type image field then this function returns the derived image field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived image field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="777" column="19" bodyfile="auto_comments_output/fieldimage.hpp" bodystart="689" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ae36bd1ce83e5974fa66fe7935861e0a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryThreshold" kindref="compound">FieldImagefilterBinaryThreshold</ref></type>
+        <definition>FieldImagefilterBinaryThreshold CMLibs::Zinc::Field::castImagefilterBinaryThreshold</definition>
+        <argsstring>()</argsstring>
+        <name>castImagefilterBinaryThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If field can be cast to an imagefilter binary threshold do so and return a handle to the derived field.</para>
+<para><simplesect kind="return"><para>Handle to derived image filter binary threshold field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="785" column="40" bodyfile="auto_comments_output/fieldimageprocessing.hpp" bodystart="724" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a65a59af29239ce48d12c06b890b47cfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterDiscreteGaussian" kindref="compound">FieldImagefilterDiscreteGaussian</ref></type>
+        <definition>FieldImagefilterDiscreteGaussian CMLibs::Zinc::Field::castImagefilterDiscreteGaussian</definition>
+        <argsstring>()</argsstring>
+        <name>castImagefilterDiscreteGaussian</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If field can be cast to an imagefilter discrete gaussian do so and return a handle to the derived field.</para>
+<para><simplesect kind="return"><para>Handle to derived image filter discrete gaussian field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="793" column="41" bodyfile="auto_comments_output/fieldimageprocessing.hpp" bodystart="765" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ac551dc48f1ddc1308ae1f46c666c1864" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterHistogram" kindref="compound">FieldImagefilterHistogram</ref></type>
+        <definition>FieldImagefilterHistogram CMLibs::Zinc::Field::castImagefilterHistogram</definition>
+        <argsstring>()</argsstring>
+        <name>castImagefilterHistogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If field can be cast to an imagefilter histogram do so and return a handle to the derived field.</para>
+<para><simplesect kind="return"><para>Handle to derived image filter histogram field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="801" column="34" bodyfile="auto_comments_output/fieldimageprocessing.hpp" bodystart="786" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a755ad56d303a00d42fcba374ad190a51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldImagefilterThreshold" kindref="compound">FieldImagefilterThreshold</ref></type>
+        <definition>FieldImagefilterThreshold CMLibs::Zinc::Field::castImagefilterThreshold</definition>
+        <argsstring>()</argsstring>
+        <name>castImagefilterThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If field can be cast to an imagefilter threshold do so and return a handle to the derived field.</para>
+<para><simplesect kind="return"><para>Handle to derived image filter threshold field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="809" column="34" bodyfile="auto_comments_output/fieldimageprocessing.hpp" bodystart="824" bodyend="827"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1ac670986456850f6398b0d349dd0f029a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldIsOnFace" kindref="compound">FieldIsOnFace</ref></type>
+        <definition>FieldIsOnFace CMLibs::Zinc::Field::castIsOnFace</definition>
+        <argsstring>()</argsstring>
+        <name>castIsOnFace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast field to &apos;is on face&apos; type if valid.</para>
+<para><simplesect kind="return"><para>Handle to derived &apos;is on face&apos; field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="816" column="22" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="727" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a00beae33247d80969cb3aacef0479451" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldMatrixMultiply" kindref="compound">FieldMatrixMultiply</ref></type>
+        <definition>FieldMatrixMultiply CMLibs::Zinc::Field::castMatrixMultiply</definition>
+        <argsstring>()</argsstring>
+        <name>castMatrixMultiply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is a matrix multiply type field, return the derived field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived matrix multiply field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="824" column="28" bodyfile="auto_comments_output/fieldmatrixoperators.hpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a4dd9c86900e0afb20c366b83c272c963" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldMeshIntegral" kindref="compound">FieldMeshIntegral</ref></type>
+        <definition>FieldMeshIntegral CMLibs::Zinc::Field::castMeshIntegral</definition>
+        <argsstring>()</argsstring>
+        <name>castMeshIntegral</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is a mesh integral type field, return the derived field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived mesh integral field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="831" column="26" bodyfile="auto_comments_output/fieldmeshoperators.hpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a2327126e9b535d977fa793606df2afb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldNodeValue" kindref="compound">FieldNodeValue</ref></type>
+        <definition>FieldNodeValue CMLibs::Zinc::Field::castNodeValue</definition>
+        <argsstring>()</argsstring>
+        <name>castNodeValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast field to node value type if valid.</para>
+<para><simplesect kind="return"><para>Handle to derived node value field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="838" column="23" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="688" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1af56db79bc7bbd1eee40760656de0e5e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldNodesetOperator" kindref="compound">FieldNodesetOperator</ref></type>
+        <definition>FieldNodesetOperator CMLibs::Zinc::Field::castNodesetOperator</definition>
+        <argsstring>()</argsstring>
+        <name>castNodesetOperator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is a nodeset operator type field, return the derived field handle. This is a common base class for nodeset sum, mean, minimum, maximum and other operators.</para>
+<para><simplesect kind="return"><para>Handle to derived nodeset operator field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="847" column="29" bodyfile="auto_comments_output/fieldnodesetoperators.hpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a0223c8679453afc7f580ea3ccb2728f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldStringConstant" kindref="compound">FieldStringConstant</ref></type>
+        <definition>FieldStringConstant CMLibs::Zinc::Field::castStringConstant</definition>
+        <argsstring>()</argsstring>
+        <name>castStringConstant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is string constant type, return type-specific handle to it.</para>
+<para><simplesect kind="return"><para>Handle to derived string constant field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="853" column="28" bodyfile="auto_comments_output/fieldconstant.hpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a48282ab04dbe43c62822cb5064cee39e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldStoredMeshLocation" kindref="compound">FieldStoredMeshLocation</ref></type>
+        <definition>FieldStoredMeshLocation CMLibs::Zinc::Field::castStoredMeshLocation</definition>
+        <argsstring>()</argsstring>
+        <name>castStoredMeshLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is stored_mesh_location type, return type-specific handle to it.</para>
+<para><simplesect kind="return"><para>Handle to derived stored mesh location field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="859" column="32" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="699" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a8e247a82cd18f1156f7f485e641010f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldStoredString" kindref="compound">FieldStoredString</ref></type>
+        <definition>FieldStoredString CMLibs::Zinc::Field::castStoredString</definition>
+        <argsstring>()</argsstring>
+        <name>castStoredString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is stored_string type, return type-specific handle to it.</para>
+<para><simplesect kind="return"><para>Handle to derived stored string field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="865" column="26" bodyfile="auto_comments_output/fieldfiniteelement.hpp" bodystart="710" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a761842dc0f507c939c6f8837eb909000" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1FieldTranspose" kindref="compound">FieldTranspose</ref></type>
+        <definition>FieldTranspose CMLibs::Zinc::Field::castTranspose</definition>
+        <argsstring>()</argsstring>
+        <name>castTranspose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is a transpose type field, return the derived field handle.</para>
+<para><simplesect kind="return"><para>Handle to derived transpose field, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="872" column="23" bodyfile="auto_comments_output/fieldmatrixoperators.hpp" bodystart="296" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a32f5a77b3b9beb347a06c40029997fee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" kindref="member">CoordinateSystemType</ref></type>
+        <definition>static CoordinateSystemType CMLibs::Zinc::Field::CoordinateSystemTypeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>CoordinateSystemTypeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="378" column="29" bodyfile="auto_comments_output/field.hpp" bodystart="378" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a3b39741c524c53c6f1b8e355460b4959" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Field::CoordinateSystemTypeEnumToString</definition>
+        <argsstring>(CoordinateSystemType type)</argsstring>
+        <name>CoordinateSystemTypeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" kindref="member">CoordinateSystemType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="383" column="13" bodyfile="auto_comments_output/field.hpp" bodystart="383" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a277740c041ae2f38dcb468fbfe8d6ea0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" kindref="member">DomainType</ref></type>
+        <definition>static DomainType CMLibs::Zinc::Field::DomainTypeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>DomainTypeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="416" column="19" bodyfile="auto_comments_output/field.hpp" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Field_1a72ee0af0a3a7d50008f89cd20238274d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Field::DomainTypeEnumToString</definition>
+        <argsstring>(DomainType type)</argsstring>
+        <name>DomainTypeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" kindref="member">DomainType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/field.hpp" line="421" column="13" bodyfile="auto_comments_output/field.hpp" bodystart="421" bodyend="424"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base field type: an abstraction of a mathematical field. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base field type: an abstraction of a mathematical field, a function giving values at locations in a domain (mesh, nodeset, over time). Instances of derived field types give the actual expression in terms of other fields or locations in the domain, all from the same region. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="79">
+        <label>CMLibs::Zinc::FieldStoredMeshLocation</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldStoredMeshLocation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>CMLibs::Zinc::FieldMatrixInvert</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldMatrixInvert"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CMLibs::Zinc::FieldArgumentReal</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldArgumentReal"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>CMLibs::Zinc::FieldImagefilterSigmoid</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterSigmoid"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>CMLibs::Zinc::FieldImagefilterThreshold</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterThreshold"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>CMLibs::Zinc::FieldImagefilterHistogram</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterHistogram"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CMLibs::Zinc::FieldAdd</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldAdd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>CMLibs::Zinc::FieldDotProduct</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldDotProduct"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>CMLibs::Zinc::FieldImagefilterCurvatureAnisotropicDiffusion</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterCurvatureAnisotropicDiffusion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>CMLibs::Zinc::FieldNodesetOperator</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodesetOperator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>CMLibs::Zinc::FieldImagefilterConnectedThreshold</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterConnectedThreshold"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>CMLibs::Zinc::FieldVectorCoordinateTransformation</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldVectorCoordinateTransformation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMLibs::Zinc::FieldAbs</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldAbs"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>CMLibs::Zinc::FieldDivide</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldDivide"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>CMLibs::Zinc::FieldMultiply</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldMultiply"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>CMLibs::Zinc::FieldConcatenate</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldConcatenate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>CMLibs::Zinc::FieldStringConstant</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldStringConstant"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>CMLibs::Zinc::FieldMeshIntegralSquares</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldMeshIntegralSquares"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>CMLibs::Zinc::FieldSubtract</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldSubtract"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>CMLibs::Zinc::FieldNodesetSum</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodesetSum"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>CMLibs::Zinc::FieldImagefilterMean</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterMean"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>CMLibs::Zinc::FieldImagefilterRescaleIntensity</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterRescaleIntensity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>CMLibs::Zinc::FieldXor</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldXor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>CMLibs::Zinc::FieldLog</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldLog"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>CMLibs::Zinc::FieldNodesetMean</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodesetMean"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>CMLibs::Zinc::FieldSceneviewerProjection</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldSceneviewerProjection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>CMLibs::Zinc::FieldMatrixMultiply</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldMatrixMultiply"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>CMLibs::Zinc::FieldStoredString</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldStoredString"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>CMLibs::Zinc::FieldExp</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldExp"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>CMLibs::Zinc::FieldNormalise</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNormalise"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>CMLibs::Zinc::FieldCrossProduct</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldCrossProduct"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>CMLibs::Zinc::FieldNodesetSumSquares</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodesetSumSquares"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>CMLibs::Zinc::FieldIf</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldIf"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>CMLibs::Zinc::FieldEdgeDiscontinuity</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldEdgeDiscontinuity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>CMLibs::Zinc::FieldGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldGroup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>CMLibs::Zinc::FieldMeshIntegral</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldMeshIntegral"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>CMLibs::Zinc::FieldTimeLookup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldTimeLookup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>CMLibs::Zinc::FieldIdentity</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldIdentity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>CMLibs::Zinc::FieldIsOnFace</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldIsOnFace"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>CMLibs::Zinc::FieldImagefilterGradientMagnitudeRecursiveGaussian</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterGradientMagnitudeRecursiveGaussian"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>CMLibs::Zinc::FieldIsDefined</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldIsDefined"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>CMLibs::Zinc::FieldNodesetMaximum</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodesetMaximum"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CMLibs::Zinc::FieldAnd</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldAnd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>CMLibs::Zinc::FieldOr</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldOr"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>CMLibs::Zinc::FieldImagefilterDiscreteGaussian</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterDiscreteGaussian"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>CMLibs::Zinc::FieldDeterminant</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldDeterminant"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>CMLibs::Zinc::FieldSqrt</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldSqrt"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>CMLibs::Zinc::FieldEmbedded</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldEmbedded"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>CMLibs::Zinc::FieldDivergence</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldDivergence"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>CMLibs::Zinc::FieldSumComponents</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldSumComponents"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>CMLibs::Zinc::FieldCurl</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldCurl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>CMLibs::Zinc::FieldGradient</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldGradient"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>CMLibs::Zinc::FieldMagnitude</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldMagnitude"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>CMLibs::Zinc::FieldProjection</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldProjection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>CMLibs::Zinc::FieldTranspose</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldTranspose"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>CMLibs::Zinc::FieldDerivative</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldDerivative"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::Field</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Field"/>
+      </node>
+      <node id="77">
+        <label>CMLibs::Zinc::FieldSin</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldSin"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>CMLibs::Zinc::FieldAsin</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldAsin"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>CMLibs::Zinc::FieldImagefilterBinaryThreshold</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryThreshold"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>CMLibs::Zinc::FieldConstant</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldConstant"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>CMLibs::Zinc::FieldNodeValue</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodeValue"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>CMLibs::Zinc::FieldTimeValue</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldTimeValue"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>CMLibs::Zinc::FieldNot</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNot"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>CMLibs::Zinc::FieldImagefilterBinaryErode</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryErode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>CMLibs::Zinc::FieldGreaterThan</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldGreaterThan"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>CMLibs::Zinc::FieldPower</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldPower"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>CMLibs::Zinc::FieldFindMeshLocation</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldFindMeshLocation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>CMLibs::Zinc::FieldFibreAxes</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldFibreAxes"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>CMLibs::Zinc::FieldCoordinateTransformation</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldCoordinateTransformation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>CMLibs::Zinc::FieldComponent</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldComponent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>CMLibs::Zinc::FieldImagefilterCannyEdgeDetection</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterCannyEdgeDetection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>CMLibs::Zinc::FieldEigenvectors</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldEigenvectors"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>CMLibs::Zinc::FieldImagefilterBinaryDilate</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImagefilterBinaryDilate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>CMLibs::Zinc::FieldImage</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldImage"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>CMLibs::Zinc::FieldNodesetMeanSquares</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodesetMeanSquares"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>CMLibs::Zinc::FieldNodeLookup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodeLookup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>CMLibs::Zinc::FieldCos</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldCos"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CMLibs::Zinc::FieldAcos</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldAcos"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CMLibs::Zinc::FieldAtan2</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldAtan2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>CMLibs::Zinc::FieldIsExterior</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldIsExterior"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CMLibs::Zinc::FieldApply</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldApply"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>CMLibs::Zinc::FieldLessThan</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldLessThan"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>CMLibs::Zinc::FieldEigenvalues</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldEigenvalues"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>CMLibs::Zinc::FieldEqualTo</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldEqualTo"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>CMLibs::Zinc::FieldNodesetMinimum</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldNodesetMinimum"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>CMLibs::Zinc::FieldFiniteElement</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldFiniteElement"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CMLibs::Zinc::FieldAtan</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldAtan"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>CMLibs::Zinc::FieldTan</label>
+        <link refid="classCMLibs_1_1Zinc_1_1FieldTan"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="auto_comments_output/field.hpp" line="62" column="1" bodyfile="auto_comments_output/field.hpp" bodystart="61" bodyend="873"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aa196d5ee3131a96af4c66a292d2ee5fe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>assignMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad98c53fa38482f27be33d5915d2eb57d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>assignReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a723e4fce933ebb2a18c289e2f1ca2f8b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>assignString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a73d20220ed104d06c763eea3977cbb62" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castApply</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1abbd74200465c3274876297993e81b3a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castArgumentReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aeba8a5c6388cc9e0d950e60715b5c711" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castComponent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aca5b8313b90cef26e85d0e4043bd29c5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castConstant</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0add61e23aeb1abed39e81236a2110e0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castDerivative</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a04d7230adbc926c059fc613dfce61283" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castEdgeDiscontinuity</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0529e22a4ee68a8e5541e742f9e64d92" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castEigenvalues</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a48faaa0911008beaaa020f3eaf4d3726" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castFindMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a67ee725859c2fbba1aa3ab803229d351" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castFiniteElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1acfae911d921aaf25afe82dfcad06906e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1afc4f36839a033e8ba83bed8f66e9c16c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castImage</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ae36bd1ce83e5974fa66fe7935861e0a8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castImagefilterBinaryThreshold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a65a59af29239ce48d12c06b890b47cfc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castImagefilterDiscreteGaussian</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac551dc48f1ddc1308ae1f46c666c1864" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castImagefilterHistogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a755ad56d303a00d42fcba374ad190a51" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castImagefilterThreshold</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac670986456850f6398b0d349dd0f029a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castIsOnFace</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a00beae33247d80969cb3aacef0479451" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castMatrixMultiply</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a4dd9c86900e0afb20c366b83c272c963" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castMeshIntegral</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af56db79bc7bbd1eee40760656de0e5e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castNodesetOperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a2327126e9b535d977fa793606df2afb0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castNodeValue</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a48282ab04dbe43c62822cb5064cee39e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castStoredMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8e247a82cd18f1156f7f485e641010f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castStoredString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0223c8679453afc7f580ea3ccb2728f3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castStringConstant</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a761842dc0f507c939c6f8837eb909000" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>castTranspose</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa9b8f437e3ad5c1d13f8ce371d343cb44" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_ADD</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa74552c6dc888514f2173f0ab80630010" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_DEFINITION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfadbc5f7957ab256631bd0d0cd36a894e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_FINAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa3f2e4f462790358cb1bdc5a4196519d6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_FULL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfad384cc26b171814bc564158887ee316c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_IDENTIFIER</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfaa288a9ef6b86626e6c08cbada560e15d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_NONE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa78bd50b35859cc9ca3bdfca6c5140642" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_PARTIAL_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2c9f34eed1bee5772e9fdf2eec99552a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_REMOVE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bfa2edd39db683f0d10ee0c9e333708c60b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CHANGE_FLAG_RESULT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>ChangeFlag</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8403aa300e3620a468043658194301e2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>ChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbafed2887b776d03271450f81bdd2aee5d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>COORDINATE_SYSTEM_TYPE_CYLINDRICAL_POLAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba5ed6536930afae2eb2fff17130cb504e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>COORDINATE_SYSTEM_TYPE_FIBRE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba31dc4f73378e531912b282f9592fe282" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>COORDINATE_SYSTEM_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbac055de51dd4fee70caeb4984b15f17d1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>COORDINATE_SYSTEM_TYPE_NOT_APPLICABLE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaba4bfa06d31e6385786ea6290297c538" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>COORDINATE_SYSTEM_TYPE_OBLATE_SPHEROIDAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbada14af040524471f0dd8d8d3812314fa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>COORDINATE_SYSTEM_TYPE_PROLATE_SPHEROIDAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cbaf9f4070081c534c6a7a74f3a13004ddc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>COORDINATE_SYSTEM_TYPE_RECTANGULAR_CARTESIAN</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cba9068dc9208c86ec418b7497f9806c7a6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>COORDINATE_SYSTEM_TYPE_SPHERICAL_POLAR</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab43cb98275e1f9017786a31b7b3551cb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a32f5a77b3b9beb347a06c40029997fee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CoordinateSystemTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a3b39741c524c53c6f1b8e355460b4959" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>CoordinateSystemTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a42bf82160dc2d3a7d783f4631c642bb2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>createFieldassignment</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a19db38f9c5f86347f52ade324e421f90" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>dependsOnField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a32fcfd65c0786e345bb61a2c719d321e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DOMAIN_TYPE_DATAPOINTS</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a50ecf08328c7328e7ad0262882dedf45" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DOMAIN_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a396f307d0c895e5a6629ec5450228a19" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DOMAIN_TYPE_MESH1D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6ab52c6d5cf0d338307fe9a13b5bc8ebcc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DOMAIN_TYPE_MESH2D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a721cef8f0081ead37a9ba7291206a4f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DOMAIN_TYPE_MESH3D</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a0c04d3daeacbb17e97fc449db1985caa" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DOMAIN_TYPE_MESH_HIGHEST_DIMENSION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6aa3754a1c1c8a52288c3cf7eda00c9025" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DOMAIN_TYPE_NODES</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6a4628366c2ce93c71090f79bb01ac5738" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DOMAIN_TYPE_POINT</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a66a5de518fc4bb28be98f05d2c964cd6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DomainType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a277740c041ae2f38dcb468fbfe8d6ea0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DomainTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a72ee0af0a3a7d50008f89cd20238274d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DomainTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac6ad96b3d0685fc46455bba8158fa1fd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>DomainTypes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad7bce01404cf1a9428c675501d360921" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>evaluateDerivative</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a35cda5a7c9f42e93ff448d716db807bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>evaluateFieldrange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a9b46525ae6c3c4900e8c85bc555e907e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>evaluateMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a21764bc8fcb2a1f07ba79eb31c6bb755" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>evaluateReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a710c3ed9e1e43fea537726ff7ada8dbe" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>evaluateString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1adf617257a39c7c4939427fc1400967ab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6fc4e264e0a627111e336c5b8f7a7ab2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af0801aaa6a94f3fb1cc45c2193a4824d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>Field</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad5e2221e40b86a62506c691be271690d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getClassName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6bd4db297171cc5175e56cd7279aae31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getComponentName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a0637975f5114dd3e49c6ed4ae9772c28" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getCoordinateSystemFocus</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1af379a711cca3c549eba305544891989c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getCoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a4e8a6d92a0433140f9a3b11eed36a30a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a509212e6067e9c2999ced60d8beffc25" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getFieldparameters</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a761e7bd78d4d2d2ce6a8e60a0a9948ae" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a852882613f6d8be1a09eedecf1aa9ad6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a166451e16c4694e523a4143a64cef313" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getNumberOfComponents</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a23e574454b96f13dc8cc2a57ffac7efb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getNumberOfSourceFields</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a47b654b92689d4954583272f84073b61" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getSourceField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1afcfdab410d31e025a80591488b0d3633" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>getValueType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a86be6bdc8d2c8ef8813367dbd39909be" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>hasClassName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a5f5901992c2b67e71a41aa63bfa42a43" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad9183e1ee3be7fa6a5be7b4c9d1d3402" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>isDefinedAtLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac7c2fcde9036c8f3dbd1757181d47842" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aad16cd4f1acb66f04996beba1c8b21ce" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>isTypeCoordinate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a18ebc3f97e6c352a91776a8a752d1171" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a6165379988c2924acd10207e6b6d286f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ad813ef6fcabedb5ddf1a1ff5b897eb9a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>setComponentName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ac09d1d65b3af6aeeff3a6b855351ee0a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>setCoordinateSystemFocus</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a8d01b1bff6eaa0d8860c0ac6a393f614" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>setCoordinateSystemType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a836e0c28e4558d1d14eb72e6d6c96f31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1ab6aa2520f106406e1205f799d992e29e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a1c1fc2dac208c9bf55a3032ea1fe9066" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>setTypeCoordinate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a3cc6edbc68ea5c5492b28f1b285fc432" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>smooth</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335acccc613810b339fffd93728911c3305b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>VALUE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335aabc83b79f0c046191ec49eaa7b3f957b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>VALUE_TYPE_MESH_LOCATION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335ac09365d4871dbdb1510bdf16ca5c9967" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>VALUE_TYPE_REAL</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335a015108650de6601ef747cbb04e55130e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>VALUE_TYPE_STRING</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1a28b7d2b9bfe11a62a5958554ab3ca335" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>ValueType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Field_1aa82d5073ce41f28a3aa35dfe07c904dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Field</scope><name>~Field</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

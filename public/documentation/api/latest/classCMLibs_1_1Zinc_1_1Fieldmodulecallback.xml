@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Fieldmodulecallback" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CMLibs::Zinc::Fieldmodulecallback</compoundname>
+    <includes refid="fieldmodule_8hpp" local="no">fieldmodule.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a18630c3cd207406afef1425a2f9517eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Fieldmodulenotifier</definition>
+        <argsstring></argsstring>
+        <name>Fieldmodulenotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1666" column="1" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1666" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a8e59795153624a7b0c884b89a45eff21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldmodulecallback::Fieldmodulecallback</definition>
+        <argsstring>(const Fieldmodulecallback &amp;)</argsstring>
+        <name>Fieldmodulecallback</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback" kindref="compound">Fieldmodulecallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1668" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a262955362a52d12b5c2cc5633b130686" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback" kindref="compound">Fieldmodulecallback</ref> &amp;</type>
+        <definition>Fieldmodulecallback&amp; CMLibs::Zinc::Fieldmodulecallback::operator=</definition>
+        <argsstring>(const Fieldmodulecallback &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback" kindref="compound">Fieldmodulecallback</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1669" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1af45fa8340453a8d3f5c756607adc74df" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CMLibs::Zinc::Fieldmodulecallback::operator()</definition>
+        <argsstring>(const Fieldmoduleevent &amp;fieldmoduleevent)=0</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" kindref="compound">Fieldmoduleevent</ref> &amp;</type>
+          <declname>fieldmoduleevent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1678" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a12351c586f3aded806450af04e23bcb8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CMLibs::Zinc::Fieldmodulecallback::C_callback</definition>
+        <argsstring>(cmzn_fieldmoduleevent_id fieldmoduleevent_id, void *callbackVoid)</argsstring>
+        <name>C_callback</name>
+        <param>
+          <type>cmzn_fieldmoduleevent_id</type>
+          <declname>fieldmoduleevent_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callbackVoid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1671" column="13" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1671" bodyend="1676"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a923a0e967cbbd17699427621f9fa88f9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldmodulecallback::Fieldmodulecallback</definition>
+        <argsstring>()</argsstring>
+        <name>Fieldmodulecallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1681" column="1" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1681" bodyend="1682"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a1ba230fcb18b7d371bf2fbd3d300091f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CMLibs::Zinc::Fieldmodulecallback::~Fieldmodulecallback</definition>
+        <argsstring>()</argsstring>
+        <name>~Fieldmodulecallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1685" column="9" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1685" bodyend="1686"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class functor for field module notifier callbacks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class functor for field module notifier callbacks:<itemizedlist>
+<listitem><para>Derive from this class adding any user data required.</para>
+</listitem><listitem><para>Implement virtual operator()(const Fieldmoduleevent&amp;) to handle callback. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldmodulenotifier_1a32633c84ece17968e4615b16edbb414d" kindref="member">Fieldmodulenotifier::setCallback()</ref> </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/fieldmodule.hpp" line="1665" column="1" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1664" bodyend="1687"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a12351c586f3aded806450af04e23bcb8" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmodulecallback</scope><name>C_callback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a8e59795153624a7b0c884b89a45eff21" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmodulecallback</scope><name>Fieldmodulecallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a923a0e967cbbd17699427621f9fa88f9" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmodulecallback</scope><name>Fieldmodulecallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a18630c3cd207406afef1425a2f9517eb" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmodulecallback</scope><name>Fieldmodulenotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1af45fa8340453a8d3f5c756607adc74df" prot="private" virt="pure-virtual"><scope>CMLibs::Zinc::Fieldmodulecallback</scope><name>operator()</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a262955362a52d12b5c2cc5633b130686" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmodulecallback</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmodulecallback_1a1ba230fcb18b7d371bf2fbd3d300091f" prot="public" virt="virtual"><scope>CMLibs::Zinc::Fieldmodulecallback</scope><name>~Fieldmodulecallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

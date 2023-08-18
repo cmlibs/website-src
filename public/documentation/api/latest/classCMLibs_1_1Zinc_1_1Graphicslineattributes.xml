@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Graphicslineattributes" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Graphicslineattributes</compoundname>
+    <includes refid="graphics_8hpp" local="no">graphics.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ShapeType</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37a7ae41e1173d0e74778f1f96599d59dae" prot="public">
+          <name>SHAPE_TYPE_INVALID</name>
+          <initializer>= CMZN_GRAPHICSLINEATTRIBUTES_SHAPE_TYPE_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unspecified shape type. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37a3c5b7d451a7558e5caa3ebca99ddc5db" prot="public">
+          <name>SHAPE_TYPE_LINE</name>
+          <initializer>= CMZN_GRAPHICSLINEATTRIBUTES_SHAPE_TYPE_LINE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified line graphics to be drawn as single pixel lines </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37af40c01bd3258f860ef3aa63e3bc86670" prot="public">
+          <name>SHAPE_TYPE_RIBBON</name>
+          <initializer>= CMZN_GRAPHICSLINEATTRIBUTES_SHAPE_TYPE_RIBBON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified line graphics to be drawn as ribbons </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37a095aaef1f56c711203854a2b626d6c4e" prot="public">
+          <name>SHAPE_TYPE_CIRCLE_EXTRUSION</name>
+          <initializer>= CMZN_GRAPHICSLINEATTRIBUTES_SHAPE_TYPE_CIRCLE_EXTRUSION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified line graphics to be drawn as extruded circle/ellipse. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37aa7477b37331fa097ae5aeffd3195816e" prot="public">
+          <name>SHAPE_TYPE_SQUARE_EXTRUSION</name>
+          <initializer>= CMZN_GRAPHICSLINEATTRIBUTES_SHAPE_TYPE_SQUARE_EXTRUSION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specified line graphics to be drawn as extruded square/rectangle. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The shape or profile of graphics generated for lines. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1276" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1275" bodyend="1287"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1aa62bcaeb3bffeae99102fe8070a19292" prot="protected" static="no" mutable="no">
+        <type>cmzn_graphicslineattributes_id</type>
+        <definition>cmzn_graphicslineattributes_id CMLibs::Zinc::Graphicslineattributes::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1233" column="32" bodyfile="auto_comments_output/graphics.hpp" bodystart="1233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1af4fbd46da9c2240e54466efa7608dd8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicslineattributes::Graphicslineattributes</definition>
+        <argsstring>()</argsstring>
+        <name>Graphicslineattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1236" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1236" bodyend="1237"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a2e13dda8ec8d23e2c157c6f8106f68bd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicslineattributes::Graphicslineattributes</definition>
+        <argsstring>(cmzn_graphicslineattributes_id line_attributes_id)</argsstring>
+        <name>Graphicslineattributes</name>
+        <param>
+          <type>cmzn_graphicslineattributes_id</type>
+          <declname>line_attributes_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1240" column="10" bodyfile="auto_comments_output/graphics.hpp" bodystart="1240" bodyend="1242"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae4b785d885122f0bc6f0660f1bcf8c40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicslineattributes::Graphicslineattributes</definition>
+        <argsstring>(const Graphicslineattributes &amp;lineAttributes)</argsstring>
+        <name>Graphicslineattributes</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes" kindref="compound">Graphicslineattributes</ref> &amp;</type>
+          <declname>lineAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1244" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1244" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1af38dd88d9242c5f03008d2e4d9e778bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes" kindref="compound">Graphicslineattributes</ref> &amp;</type>
+        <definition>Graphicslineattributes&amp; CMLibs::Zinc::Graphicslineattributes::operator=</definition>
+        <argsstring>(const Graphicslineattributes &amp;graphicslineattributes)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes" kindref="compound">Graphicslineattributes</ref> &amp;</type>
+          <declname>graphicslineattributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1248" column="24" bodyfile="auto_comments_output/graphics.hpp" bodystart="1248" bodyend="1255"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1aed07d8182c3d0e123c98e9b4c6d3e40c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Graphicslineattributes::~Graphicslineattributes</definition>
+        <argsstring>()</argsstring>
+        <name>~Graphicslineattributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1257" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1257" bodyend="1260"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a6f79c25e0e5c695938bda0b1ecd05d6d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Graphicslineattributes::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes" kindref="compound">Graphicslineattributes</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1267" column="6" bodyfile="auto_comments_output/graphics.hpp" bodystart="1267" bodyend="1270"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1aa2812c7d79f47bfea048a65066a4aeab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicslineattributes::getBaseSize</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getBaseSize</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the base size of the extrusion section, one value for each lateral axis. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ac6a7bcfe7ece091b726a8262c8f4caea" kindref="member">Graphicslineattributes::setBaseSize</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of base size values to request, starting with the first lateral axis. If fewer values have been set it is padded with the last base size value. 1 to 2 values can be obtained. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive base sizes. Must be big enough to contain the specified number of values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1300" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1300" bodyend="1303"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ac6a7bcfe7ece091b726a8262c8f4caea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicslineattributes::setBaseSize</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setBaseSize</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the base size of the extrusion section, one value for each lateral axis. 1 to 2 values can be set. For a unit section profile, the final size in each lateral direction is: base_size + scale_factor * field_scalar where field_scalar is determined from the orientation_scale_field. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae51297a0036424199e2fbdd7f9b23892" kindref="member">Graphicslineattributes::setOrientationScaleField</ref>. The default base size is zero. Note: for lines (circle_extrusion shape) only one value is currently used; the second value is constrained to equal the first value.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of base size values to set, starting with the first lateral axis. If fewer values are set than the number of axes, the last value is assumed for subsequent axes. Hence a single value can be used to set a diameter for a unit circle profile. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of base sizes with the number of values specified. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1323" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1323" bodyend="1326"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a4f664498e9cefd45b35c03331a76030b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref></type>
+        <definition>Field CMLibs::Zinc::Graphicslineattributes::getOrientationScaleField</definition>
+        <argsstring>() const</argsstring>
+        <name>getOrientationScaleField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the orientation scale field from the graphics line attributes. This controls lateral scaling and orientation of line extrusions. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae51297a0036424199e2fbdd7f9b23892" kindref="member">Graphicslineattributes::setOrientationScaleField</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to orientation scale field, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1335" column="7" bodyfile="auto_comments_output/graphics.hpp" bodystart="1335" bodyend="1338"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae51297a0036424199e2fbdd7f9b23892" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicslineattributes::setOrientationScaleField</definition>
+        <argsstring>(const Field &amp;orientationScaleField)</argsstring>
+        <name>setOrientationScaleField</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>orientationScaleField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the orientation scale field in the graphics line attributes. This controls lateral scaling and orientation of line extrusions. Note: Currently it is only used to supply a scalar field for scaling cylinders and with default scale factor of 1 it gives its diameter. Soon we will offer more options for controlling extrusions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientationScaleField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation scale field to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1350" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1350" bodyend="1353"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae54c2b7cbfac8011f89ec32a406303f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicslineattributes::getScaleFactors</definition>
+        <argsstring>(int valuesCount, double *valuesOut) const</argsstring>
+        <name>getScaleFactors</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>valuesOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the scale factors used in sizing the extrusion section, one value for each lateral axis. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a884a02eb66d20b09f0ccd45606912b47" kindref="member">Graphicslineattributes::setScaleFactors</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of scale_factors to request, starting with the first lateral axis. If fewer values have been set it is padded with the last scale factor value. 1 to 2 values can be obtained. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to receive scale factors. Must be big enough to contain the specified number of values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1367" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1367" bodyend="1370"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a884a02eb66d20b09f0ccd45606912b47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicslineattributes::setScaleFactors</definition>
+        <argsstring>(int valuesCount, const double *valuesIn)</argsstring>
+        <name>setScaleFactors</name>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the scale factors used in sizing the extrusion section, one value for each lateral axis. 1 to 2 values can be set. For a unit section profile, the final size in each lateral direction is: base_size + scale_factor * field_scalar where field_scalar is determined from the orientation_scale_field. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae51297a0036424199e2fbdd7f9b23892" kindref="member">Graphicslineattributes::setOrientationScaleField</ref>. Scale factor values default to 1. Note: for lines (circle_extrusion shape) only one value is currently used; the second value is constrained to equal the first value.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valuesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of scale factor values to set, starting with the first lateral axis. If fewer values are set than the number of axes, the last value is assumed for subsequent axes. Hence a single value applies to all axes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of scale factors with the number of values specified. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1391" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1391" bodyend="1394"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1abb4c4dfcfbec3768f8b2dbacdb0ea592" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37" kindref="member">ShapeType</ref></type>
+        <definition>ShapeType CMLibs::Zinc::Graphicslineattributes::getShapeType</definition>
+        <argsstring>() const</argsstring>
+        <name>getShapeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the shape or profile of graphics generated for lines. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a2138fe4c9e6f4f8762598117548059da" kindref="member">Graphicslineattributes::setShapeType</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The current shape type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1412" column="11" bodyfile="auto_comments_output/graphics.hpp" bodystart="1412" bodyend="1415"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a2138fe4c9e6f4f8762598117548059da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Graphicslineattributes::setShapeType</definition>
+        <argsstring>(ShapeType shapeType)</argsstring>
+        <name>setShapeType</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37" kindref="member">ShapeType</ref></type>
+          <declname>shapeType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the shape or profile of graphics generated for lines: LINE, RIBBON, CIRCLE_EXTRUSION or SQUARE_EXTRUSION. Note: only LINE and CIRCLE_EXTRUSION are supported for LINES type; all shapes are supported for STREAMLINES. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37" kindref="member">Graphicslineattributes::ShapeType</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shapeType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new shape type enumeration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1427" column="5" bodyfile="auto_comments_output/graphics.hpp" bodystart="1427" bodyend="1430"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a6f793456cb559fb36e96d5964035a9ab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37" kindref="member">ShapeType</ref></type>
+        <definition>static ShapeType CMLibs::Zinc::Graphicslineattributes::ShapeTypeEnumFromString</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>ShapeTypeEnumFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1396" column="18" bodyfile="auto_comments_output/graphics.hpp" bodystart="1396" bodyend="1399"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a2bc21651467fa84b4981be1b70cce3f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* CMLibs::Zinc::Graphicslineattributes::ShapeTypeEnumToString</definition>
+        <argsstring>(ShapeType type)</argsstring>
+        <name>ShapeTypeEnumToString</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37" kindref="member">ShapeType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/graphics.hpp" line="1401" column="13" bodyfile="auto_comments_output/graphics.hpp" bodystart="1401" bodyend="1404"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attributes object specifying how lines are visualised. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Attributes object specifying how lines are visualised in the graphics including shape/profile and scaling. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Graphics_1ab6d978c9565715506c8312086bb4d522" kindref="member">Graphics::getGraphicslineattributes</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/graphics.hpp" line="1231" column="1" bodyfile="auto_comments_output/graphics.hpp" bodystart="1230" bodyend="1432"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1aa2812c7d79f47bfea048a65066a4aeab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>getBaseSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a4f664498e9cefd45b35c03331a76030b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>getOrientationScaleField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae54c2b7cbfac8011f89ec32a406303f3" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>getScaleFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1abb4c4dfcfbec3768f8b2dbacdb0ea592" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>getShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1af4fbd46da9c2240e54466efa7608dd8e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>Graphicslineattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a2e13dda8ec8d23e2c157c6f8106f68bd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>Graphicslineattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae4b785d885122f0bc6f0660f1bcf8c40" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>Graphicslineattributes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1aa62bcaeb3bffeae99102fe8070a19292" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a6f79c25e0e5c695938bda0b1ecd05d6d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1af38dd88d9242c5f03008d2e4d9e778bb" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ac6a7bcfe7ece091b726a8262c8f4caea" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>setBaseSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1ae51297a0036424199e2fbdd7f9b23892" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>setOrientationScaleField</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a884a02eb66d20b09f0ccd45606912b47" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>setScaleFactors</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a2138fe4c9e6f4f8762598117548059da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>setShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37a095aaef1f56c711203854a2b626d6c4e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>SHAPE_TYPE_CIRCLE_EXTRUSION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37a7ae41e1173d0e74778f1f96599d59dae" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>SHAPE_TYPE_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37a3c5b7d451a7558e5caa3ebca99ddc5db" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>SHAPE_TYPE_LINE</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37af40c01bd3258f860ef3aa63e3bc86670" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>SHAPE_TYPE_RIBBON</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37aa7477b37331fa097ae5aeffd3195816e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>SHAPE_TYPE_SQUARE_EXTRUSION</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a0a0237ceb4d9408dc676d18b10c24e37" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>ShapeType</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a6f793456cb559fb36e96d5964035a9ab" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>ShapeTypeEnumFromString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1a2bc21651467fa84b4981be1b70cce3f4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>ShapeTypeEnumToString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Graphicslineattributes_1aed07d8182c3d0e123c98e9b4c6d3e40c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Graphicslineattributes</scope><name>~Graphicslineattributes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

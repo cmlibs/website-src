@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="streamscene_8hpp" kind="file" language="C++">
+    <compoundname>streamscene.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/streamscene.h</includes>
+    <includes local="yes">cmlibs/zinc/scene.hpp</includes>
+    <includes local="yes">cmlibs/zinc/stream.hpp</includes>
+    <includes local="yes">cmlibs/zinc/scenefilter.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>cmlibs/zinc/streamscene.h</label>
+      </node>
+      <node id="3">
+        <label>cmlibs/zinc/scene.hpp</label>
+      </node>
+      <node id="1">
+        <label>auto_comments_output/streamscene.hpp</label>
+        <link refid="streamscene_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cmlibs/zinc/stream.hpp</label>
+      </node>
+      <node id="5">
+        <label>cmlibs/zinc/scenefilter.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" prot="public">CMLibs::Zinc::StreaminformationScene</innerclass>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_STREAMSCENE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_STREAMSCENE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/streamscene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/scene.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/stream.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/scenefilter.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1Scene" kindref="compound">Scene</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>cmzn_streaminformation_scene_id<sp/>getDerivedId()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="41"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_scene_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(id);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>()<sp/>:<sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>takes<sp/>ownership<sp/>of<sp/>C<sp/>handle,<sp/>responsibility<sp/>for<sp/>destroying<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>(cmzn_streaminformation_scene_id<sp/>streaminformation_scene_id)<sp/>:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation" kindref="compound">Streaminformation</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(streaminformation_scene_id))</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a94733986c87e838106bd14c838cc2b62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a94733986c87e838106bd14c838cc2b62" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="60"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1" kindref="member">IODataType</ref></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1a66a22e2ec7004ea3583aa1b99f447d00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1a66a22e2ec7004ea3583aa1b99f447d00" kindref="member">IO_DATA_TYPE_INVALID</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_DATA_TYPE_INVALID,</highlight></codeline>
+<codeline lineno="71" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1a34c0d16de4add6ba4db7ba5a78acf019" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1a34c0d16de4add6ba4db7ba5a78acf019" kindref="member">IO_DATA_TYPE_COLOUR</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_DATA_TYPE_COLOUR<sp/>,</highlight></codeline>
+<codeline lineno="73" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1aad5b9ab1724c0da5111878af9bc80421" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1aad5b9ab1724c0da5111878af9bc80421" kindref="member">IO_DATA_TYPE_PER_VERTEX_VALUE</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_DATA_TYPE_PER_VERTEX_VALUE,</highlight></codeline>
+<codeline lineno="75" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1ae4323a2c15a871a6f3bf3179ebce99d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1ae4323a2c15a871a6f3bf3179ebce99d5" kindref="member">IO_DATA_TYPE_PER_FACE_VALUE</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_DATA_TYPE_PER_FACE_VALUE</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033f" kindref="member">IOFormat</ref></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033fa74ba52bf3e708b3e3a18cb060378c7a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033fa74ba52bf3e708b3e3a18cb060378c7a2" kindref="member">IO_FORMAT_INVALID</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_FORMAT_INVALID,</highlight></codeline>
+<codeline lineno="87" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033fae17fc69790b739fb525cab796e4b44aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033fae17fc69790b739fb525cab796e4b44aa" kindref="member">IO_FORMAT_THREEJS</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_FORMAT_THREEJS,</highlight></codeline>
+<codeline lineno="89" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033faafa027455cd68e08dec8ea3ea3f883ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033faafa027455cd68e08dec8ea3ea3f883ac" kindref="member">IO_FORMAT_DESCRIPTION</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_FORMAT_DESCRIPTION,</highlight></codeline>
+<codeline lineno="91" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033fa4565f19ca4885e4121f18be90a1b31bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033fa4565f19ca4885e4121f18be90a1b31bb" kindref="member">IO_FORMAT_ASCII_STL</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_FORMAT_ASCII_STL,</highlight></codeline>
+<codeline lineno="93" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033fad13a41ecee0ded665e685167dccd4bac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033fad13a41ecee0ded665e685167dccd4bac" kindref="member">IO_FORMAT_WAVEFRONT</ref><sp/>=<sp/>CMZN_STREAMINFORMATION_SCENE_IO_FORMAT_WAVEFRONT</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a6a1849e5a4a3337dfede0c1913e09d66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a6a1849e5a4a3337dfede0c1913e09d66" kindref="member">getScenefilter</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="103"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref>(cmzn_streaminformation_scene_get_scenefilter(getDerivedId()));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a51bab814620d4a36ea9c2657fd297483" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a51bab814620d4a36ea9c2657fd297483" kindref="member">setScenefilter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scenefilter" kindref="compound">Scenefilter</ref>&amp;<sp/>scenefilter)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_scenefilter(getDerivedId(),<sp/>scenefilter.<ref refid="classCMLibs_1_1Zinc_1_1Scenefilter_1a1bcfb7de87e7c5fd808a300d7d5d00b0" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1" kindref="member">IODataType</ref><sp/>getIODataType()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="120"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1" kindref="member">IODataType</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cmzn_streaminformation_scene_get_io_data_type(getDerivedId()));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>setIODataType(<ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a06001430a3d0d27aa00f618ae044b2a1" kindref="member">IODataType</ref><sp/>ioDataType)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_io_data_type(getDerivedId(),</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_scene_io_data_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ioDataType));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033f" kindref="member">IOFormat</ref><sp/>getIOFormat()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="131"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033f" kindref="member">IOFormat</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cmzn_streaminformation_scene_get_io_format(getDerivedId()));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>setIOFormat(<ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1aa4dc541fe93b2719f9a620b5c1f8033f" kindref="member">IOFormat</ref><sp/>ioFormat)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_io_format(getDerivedId(),</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_scene_io_format</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ioFormat));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a1bd4b35897dfc281efffa8487f1ad5e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a1bd4b35897dfc281efffa8487f1ad5e0" kindref="member">getNumberOfTimeSteps</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="147"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_get_number_of_time_steps(getDerivedId());</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1acb14e99662d53263af7b5df732a3fd44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1acb14e99662d53263af7b5df732a3fd44" kindref="member">setNumberOfTimeSteps</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numberOfTimeSteps)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_number_of_time_steps(getDerivedId(),<sp/>numberOfTimeSteps);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a12aa58ba6649726d2a555dcc640f8e1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a12aa58ba6649726d2a555dcc640f8e1c" kindref="member">getFinishTime</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="174"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_get_finish_time(getDerivedId());</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a3a1feadafd2b0519a38c71ca7a35a3fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a3a1feadafd2b0519a38c71ca7a35a3fc" kindref="member">setFinishTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>finishTime)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_finish_time(getDerivedId(),<sp/>finishTime);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a54db6c294d406e1a5d1d69afad5dae81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a54db6c294d406e1a5d1d69afad5dae81" kindref="member">getInitialTime</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="195"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_get_initial_time(getDerivedId());</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1ae32d7fd09992702e7b5b826f0ad0b123" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1ae32d7fd09992702e7b5b826f0ad0b123" kindref="member">setInitialTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>initialTime)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_initial_time(getDerivedId(),<sp/>initialTime);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a3901fa5be093be02e29068e7cc1eab62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a3901fa5be093be02e29068e7cc1eab62" kindref="member">getNumberOfResourcesRequired</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="221"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_get_number_of_resources_required(getDerivedId());</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a408765b6aa27065c9c0768e9f1061b55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a408765b6aa27065c9c0768e9f1061b55" kindref="member">setOverwriteSceneGraphics</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>overwrite)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_overwrite_scene_graphics(getDerivedId(),</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>overwrite);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1af6ab10d33ea91a625198b311e30afd53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1af6ab10d33ea91a625198b311e30afd53" kindref="member">getOutputTimeDependentVertices</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="245"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_get_output_time_dependent_vertices(getDerivedId());</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1afd42de9653011eeb82ff2fcb31258cac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1afd42de9653011eeb82ff2fcb31258cac" kindref="member">setOutputTimeDependentVertices</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputTimeDependentVertices)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_output_time_dependent_vertices(getDerivedId(),</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputTimeDependentVertices);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a8bf067f56d3f084ebd10d9d7869419f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a8bf067f56d3f084ebd10d9d7869419f3" kindref="member">getOutputTimeDependentColours</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="271"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_get_output_time_dependent_colours(getDerivedId());</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1ae531efe50c37e1b42f06ad599e274eb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1ae531efe50c37e1b42f06ad599e274eb6" kindref="member">setOutputTimeDependentColours</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputTimeDependentColours)</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_output_time_dependent_colours(getDerivedId(),</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputTimeDependentColours);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a03e42a101a1a6dec2415fd790af9d73c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a03e42a101a1a6dec2415fd790af9d73c" kindref="member">getOutputTimeDependentNormals</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="297"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_get_output_time_dependent_normals(getDerivedId());</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a30244f1b40b90069e389dfa927a182a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a30244f1b40b90069e389dfa927a182a3" kindref="member">setOutputTimeDependentNormals</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputTimeDependentNormals)</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_output_time_dependent_normals(getDerivedId(),</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputTimeDependentNormals);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a6001e376a26d18d4bd37efb79323af77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a6001e376a26d18d4bd37efb79323af77" kindref="member">getOutputIsInline</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="322"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_get_output_is_inline(getDerivedId());</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a0e5cfcd3dc7469ef928be87439e6a904" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene_1a0e5cfcd3dc7469ef928be87439e6a904" kindref="member">setOutputIsInline</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputIsInline)</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_streaminformation_scene_set_output_is_inline(getDerivedId(),<sp/>outputIsInline);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a5f4ffb13c6f36ac3e015b4921d72b64c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Streaminformation_1a5f4ffb13c6f36ac3e015b4921d72b64c" kindref="member">Streaminformation::castScene</ref>()</highlight></codeline>
+<codeline lineno="350"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>(cmzn_streaminformation_cast_scene(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="classCMLibs_1_1Zinc_1_1Scene_1acf57f60fb68464fcd216cc7e7d19296a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1acf57f60fb68464fcd216cc7e7d19296a" kindref="member">Scene::createStreaminformationScene</ref>()</highlight></codeline>
+<codeline lineno="355"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cmzn_streaminformation_scene_id</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmzn_scene_create_streaminformation_scene(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="classCMLibs_1_1Zinc_1_1Scene_1a722b28d3bbfe78bed14da60ad93f4432" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a722b28d3bbfe78bed14da60ad93f4432" kindref="member">Scene::write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>&amp;<sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="361"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_write(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>.getDerivedId());</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="classCMLibs_1_1Zinc_1_1Scene_1a5b19b116df62b67db53c9ca6bc0b3539" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1Scene_1a5b19b116df62b67db53c9ca6bc0b3539" kindref="member">Scene::read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>&amp;<sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>)</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scene_read(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="classCMLibs_1_1Zinc_1_1StreaminformationScene" kindref="compound">StreaminformationScene</ref>.getDerivedId());</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/streamscene.hpp"/>
+  </compounddef>
+</doxygen>

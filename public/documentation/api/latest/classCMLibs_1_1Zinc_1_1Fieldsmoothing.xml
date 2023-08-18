@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Fieldsmoothing" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Fieldsmoothing</compoundname>
+    <includes refid="fieldsmoothing_8hpp" local="no">fieldsmoothing.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a413c0109e2fcb50907cd2176873dcaad" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Algorithm</name>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a413c0109e2fcb50907cd2176873dcaadaf503e2f3467a5ea56f501aa26b2f36c5" prot="public">
+          <name>ALGORITHM_INVALID</name>
+          <initializer>= CMZN_FIELDSMOOTHING_ALGORITHM_INVALID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid algorithm </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a413c0109e2fcb50907cd2176873dcaada0506528389c1f66ba78be06550a16ce8" prot="public">
+          <name>ALGORITHM_AVERAGE_DELTA_DERIVATIVES_UNSCALED</name>
+          <initializer>= CMZN_FIELDSMOOTHING_ALGORITHM_AVERAGE_DELTA_DERIVATIVES_UNSCALED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sets unit scale factors with first derivatives set to average of nodal value deltas along neighbouring lines. Default algorithm. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Algorithm for smoothing a field with derivative degrees of freedom. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="66" column="1" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="65" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1ab65453cc7414a6b4ac59bb199546dba3" prot="protected" static="no" mutable="no">
+        <type>cmzn_fieldsmoothing_id</type>
+        <definition>cmzn_fieldsmoothing_id CMLibs::Zinc::Fieldsmoothing::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="31" column="24" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a806f33d97fdae83d5f9ff04661c83edc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldsmoothing::Fieldsmoothing</definition>
+        <argsstring>()</argsstring>
+        <name>Fieldsmoothing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="35" column="1" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="35" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a4be6a652bd71994193c99b3e4310dccd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldsmoothing::Fieldsmoothing</definition>
+        <argsstring>(cmzn_fieldsmoothing_id in_fieldsmoothing_id)</argsstring>
+        <name>Fieldsmoothing</name>
+        <param>
+          <type>cmzn_fieldsmoothing_id</type>
+          <declname>in_fieldsmoothing_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="39" column="10" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a33c5c2727b4dabf5e667f96e30cfb004" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldsmoothing::Fieldsmoothing</definition>
+        <argsstring>(const Fieldsmoothing &amp;fieldsmoothing)</argsstring>
+        <name>Fieldsmoothing</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing" kindref="compound">Fieldsmoothing</ref> &amp;</type>
+          <declname>fieldsmoothing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="43" column="1" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a92560c2941e4be276f573ec281ea144d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing" kindref="compound">Fieldsmoothing</ref> &amp;</type>
+        <definition>Fieldsmoothing&amp; CMLibs::Zinc::Fieldsmoothing::operator=</definition>
+        <argsstring>(const Fieldsmoothing &amp;fieldsmoothing)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing" kindref="compound">Fieldsmoothing</ref> &amp;</type>
+          <declname>fieldsmoothing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="47" column="16" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1abc22197aad6c983c1eba2b731439cb6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldsmoothing::~Fieldsmoothing</definition>
+        <argsstring>()</argsstring>
+        <name>~Fieldsmoothing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="56" column="1" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a04887cfb307b853fc1886303236a60a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Fieldsmoothing::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing" kindref="compound">Fieldsmoothing</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="79" column="6" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1acbf5789d3cf9e4f3de12aab0f4ce1969" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_fieldsmoothing_id</type>
+        <definition>cmzn_fieldsmoothing_id CMLibs::Zinc::Fieldsmoothing::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing" kindref="compound">Fieldsmoothing</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing" kindref="compound">Fieldsmoothing</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="89" column="24" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a90db6544e62990def817782d20c7e086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldsmoothing::setAlgorithm</definition>
+        <argsstring>(Algorithm algorithm)</argsstring>
+        <name>setAlgorithm</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a413c0109e2fcb50907cd2176873dcaad" kindref="member">Algorithm</ref></type>
+          <declname>algorithm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the smoothing algorithm to be used for smoothing a field.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> field module owning the fields to be smoothed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The smoothing algorithm to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new field smoothing, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="101" column="5" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1aec0bd6c2ce2ecfcd42253bb3a7ddb447" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldsmoothing::setTime</definition>
+        <argsstring>(double time)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the time at which to smooth the field, if time varying.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time value to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldsmoothing.hpp" line="113" column="5" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameters for smoothing a field. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1a3cc6edbc68ea5c5492b28f1b285fc432" kindref="member">Field::smooth</ref></para>
+</simplesect>
+Specification of algorithm and parameters for smoothing a field. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/fieldsmoothing.hpp" line="29" column="1" bodyfile="auto_comments_output/fieldsmoothing.hpp" bodystart="28" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a413c0109e2fcb50907cd2176873dcaad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>Algorithm</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a413c0109e2fcb50907cd2176873dcaada0506528389c1f66ba78be06550a16ce8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>ALGORITHM_AVERAGE_DELTA_DERIVATIVES_UNSCALED</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a413c0109e2fcb50907cd2176873dcaadaf503e2f3467a5ea56f501aa26b2f36c5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>ALGORITHM_INVALID</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a806f33d97fdae83d5f9ff04661c83edc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>Fieldsmoothing</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a4be6a652bd71994193c99b3e4310dccd" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>Fieldsmoothing</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a33c5c2727b4dabf5e667f96e30cfb004" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>Fieldsmoothing</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1acbf5789d3cf9e4f3de12aab0f4ce1969" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1ab65453cc7414a6b4ac59bb199546dba3" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a04887cfb307b853fc1886303236a60a9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a92560c2941e4be276f573ec281ea144d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1a90db6544e62990def817782d20c7e086" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>setAlgorithm</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1aec0bd6c2ce2ecfcd42253bb3a7ddb447" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>setTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldsmoothing_1abc22197aad6c983c1eba2b731439cb6b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldsmoothing</scope><name>~Fieldsmoothing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

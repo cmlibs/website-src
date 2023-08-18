@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="scenecoordinatesystem_8hpp" kind="file" language="C++">
+    <compoundname>scenecoordinatesystem.hpp</compoundname>
+    <includes local="yes">scenecoordinatesystem.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>auto_comments_output/scenecoordinatesystem.hpp</label>
+        <link refid="scenecoordinatesystem_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scenecoordinatesystem.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Enumerated type for identifying scene and window coordinate systems. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_SCENECOORDINATESYSTEM_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_SCENECOORDINATESYSTEM_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scenecoordinatesystem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ad96d133c7a0084b948efdb751c4ca400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ad96d133c7a0084b948efdb751c4ca400" kindref="member">SCENECOORDINATESYSTEM_INVALID</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_INVALID,</highlight></codeline>
+<codeline lineno="30" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a9fc7451fcdbe58f712d065ee3697da0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a9fc7451fcdbe58f712d065ee3697da0e" kindref="member">SCENECOORDINATESYSTEM_LOCAL</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_LOCAL,</highlight></codeline>
+<codeline lineno="34" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a61c369a1486f08e33472937f4ec2d12b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a61c369a1486f08e33472937f4ec2d12b" kindref="member">SCENECOORDINATESYSTEM_WORLD</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_WORLD,</highlight></codeline>
+<codeline lineno="38" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a4817af2b2ebfa897842ed82658431bf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a4817af2b2ebfa897842ed82658431bf0" kindref="member">SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FILL</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FILL,</highlight></codeline>
+<codeline lineno="42" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ac8c47d6cd1440a6762b2353ac800a86c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ac8c47d6cd1440a6762b2353ac800a86c" kindref="member">SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_CENTRE</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_CENTRE,</highlight></codeline>
+<codeline lineno="46" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a716c417eb5c358303b603243afcdcb19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a716c417eb5c358303b603243afcdcb19" kindref="member">SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_LEFT</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_LEFT,</highlight></codeline>
+<codeline lineno="50" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a277564bb5fa32b474fa2b80f691132e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a277564bb5fa32b474fa2b80f691132e0" kindref="member">SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_RIGHT</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_RIGHT,</highlight></codeline>
+<codeline lineno="54" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ac2d798e79c68e818f621490725883007" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391ac2d798e79c68e818f621490725883007" kindref="member">SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_BOTTOM</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_BOTTOM,</highlight></codeline>
+<codeline lineno="58" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a4e333f35ddba0ab4ac4e4ecec05ff359" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a4e333f35ddba0ab4ac4e4ecec05ff359" kindref="member">SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_TOP</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_NORMALISED_WINDOW_FIT_TOP,</highlight></codeline>
+<codeline lineno="62" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a6b86f593b0bc8d35a03a6fabb642c3f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391a6b86f593b0bc8d35a03a6fabb642c3f8" kindref="member">SCENECOORDINATESYSTEM_WINDOW_PIXEL_BOTTOM_LEFT</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_WINDOW_PIXEL_BOTTOM_LEFT,</highlight></codeline>
+<codeline lineno="66" refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391af0807d001335bf839cfab632343d0dee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391af0807d001335bf839cfab632343d0dee" kindref="member">SCENECOORDINATESYSTEM_WINDOW_PIXEL_TOP_LEFT</ref><sp/>=<sp/>CMZN_SCENECOORDINATESYSTEM_WINDOW_PIXEL_TOP_LEFT</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref><sp/>ScenecoordinatesystemEnumFromString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cmzn_scenecoordinatesystem_enum_from_string(name));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ScenecoordinatesystemEnumToString(<ref refid="namespaceCMLibs_1_1Zinc_1ad1f76ef76163881124d8c2a946826391" kindref="member">Scenecoordinatesystem</ref><sp/>system)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmzn_scenecoordinatesystem_enum_to_string(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">cmzn_scenecoordinatesystem</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(system));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/scenecoordinatesystem.hpp"/>
+  </compounddef>
+</doxygen>

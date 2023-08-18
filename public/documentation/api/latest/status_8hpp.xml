@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="status_8hpp" kind="file" language="C++">
+    <compoundname>status.hpp</compoundname>
+    <includes local="yes">cmlibs/zinc/status.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>cmlibs/zinc/status.h</label>
+      </node>
+      <node id="1">
+        <label>auto_comments_output/status.hpp</label>
+        <link refid="status_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceCMLibs">CMLibs</innernamespace>
+    <innernamespace refid="namespaceCMLibs_1_1Zinc">CMLibs::Zinc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>C++ function status/error codes. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="comment">/*<sp/>Zinc<sp/>Library</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/>This<sp/>Source<sp/>Code<sp/>Form<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>Mozilla<sp/>Public</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/>License,<sp/>v.<sp/>2.0.<sp/>If<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>MPL<sp/>was<sp/>not<sp/>distributed<sp/>with<sp/>this</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/>file,<sp/>You<sp/>can<sp/>obtain<sp/>one<sp/>at<sp/>http://mozilla.org/MPL/2.0/.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CMZN_STATUS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMZN_STATUS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmlibs/zinc/status.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCMLibs" kindref="compound">CMLibs</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Zinc</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9" kindref="member">Status</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a7fba3ea29914c0b76e3c1908546a134a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a7fba3ea29914c0b76e3c1908546a134a" kindref="member">WARNING_PART_DONE</ref><sp/>=<sp/>CMZN_WARNING_PART_DONE,</highlight></codeline>
+<codeline lineno="40" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ae9dc3bad80a968ce95267d2170a90527" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ae9dc3bad80a968ce95267d2170a90527" kindref="member">ERROR_IN_USE</ref><sp/>=<sp/>CMZN_ERROR_IN_USE,</highlight></codeline>
+<codeline lineno="43" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a98ef578647ee7b51cb11e3a773701a59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a98ef578647ee7b51cb11e3a773701a59" kindref="member">ERROR_ARGUMENT_CONTEXT</ref><sp/>=<sp/>CMZN_ERROR_ARGUMENT_CONTEXT,</highlight></codeline>
+<codeline lineno="45" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ac5a98f4e53d4179ee4196e50982da8d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ac5a98f4e53d4179ee4196e50982da8d4" kindref="member">ERROR_NOT_IMPLEMENTED</ref><sp/>=<sp/>CMZN_ERROR_NOT_IMPLEMENTED,</highlight></codeline>
+<codeline lineno="47" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ac12f2b2ff5e91d764f486172de4a6bc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ac12f2b2ff5e91d764f486172de4a6bc1" kindref="member">ERROR_INCOMPATIBLE_DATA</ref><sp/>=<sp/>CMZN_ERROR_INCOMPATIBLE_DATA,</highlight></codeline>
+<codeline lineno="49" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a2f5acfbee43b2a8dc5bea7b7059c5794" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a2f5acfbee43b2a8dc5bea7b7059c5794" kindref="member">ERROR_ALREADY_EXISTS</ref><sp/>=<sp/>CMZN_ERROR_ALREADY_EXISTS,</highlight></codeline>
+<codeline lineno="51" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ab0928ff1924d73c9aaff1cd6f4f2bb97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9ab0928ff1924d73c9aaff1cd6f4f2bb97" kindref="member">ERROR_NOT_FOUND</ref><sp/>=<sp/>CMZN_ERROR_NOT_FOUND,</highlight></codeline>
+<codeline lineno="53" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9acbcab8d72836d00a575bacad1c6443bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9acbcab8d72836d00a575bacad1c6443bf" kindref="member">ERROR_MEMORY</ref><sp/>=<sp/>CMZN_ERROR_MEMORY,</highlight></codeline>
+<codeline lineno="55" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">ERROR_ARGUMENT</ref><sp/>=<sp/>CMZN_ERROR_ARGUMENT,</highlight></codeline>
+<codeline lineno="57" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a04a74c1c8a25b8f5fbba1efa2969bd13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a04a74c1c8a25b8f5fbba1efa2969bd13" kindref="member">ERROR_GENERAL</ref><sp/>=<sp/>CMZN_ERROR_GENERAL,</highlight></codeline>
+<codeline lineno="59" refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">OK</ref><sp/>=<sp/>CMZN_OK</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Zinc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="auto_comments_output/status.hpp"/>
+  </compounddef>
+</doxygen>

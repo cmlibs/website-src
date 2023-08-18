@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Materialiterator" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Materialiterator</compoundname>
+    <includes refid="material_8hpp" local="no">material.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Materialiterator_1ae1821c2b83cbc55b8399a578b9608475" prot="private" static="no" mutable="no">
+        <type>cmzn_materialiterator_id</type>
+        <definition>cmzn_materialiterator_id CMLibs::Zinc::Materialiterator::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="361" column="26" bodyfile="auto_comments_output/material.hpp" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialiterator_1a7df73f0ee01b35ffc74fd98635c2156e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialiterator::Materialiterator</definition>
+        <argsstring>()</argsstring>
+        <name>Materialiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="365" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="365" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialiterator_1a2d6504a687a7b89a9c92a4b0b255534d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialiterator::Materialiterator</definition>
+        <argsstring>(cmzn_materialiterator_id iterator_id)</argsstring>
+        <name>Materialiterator</name>
+        <param>
+          <type>cmzn_materialiterator_id</type>
+          <declname>iterator_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="369" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="369" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialiterator_1a57556c83976c291132acfeadf81058b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialiterator::Materialiterator</definition>
+        <argsstring>(const Materialiterator &amp;materialiterator)</argsstring>
+        <name>Materialiterator</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Materialiterator" kindref="compound">Materialiterator</ref> &amp;</type>
+          <declname>materialiterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="373" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="373" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialiterator_1a9c9aade817e9cca938ba103de44eacf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Materialiterator" kindref="compound">Materialiterator</ref> &amp;</type>
+        <definition>Materialiterator&amp; CMLibs::Zinc::Materialiterator::operator=</definition>
+        <argsstring>(const Materialiterator &amp;materialiterator)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Materialiterator" kindref="compound">Materialiterator</ref> &amp;</type>
+          <declname>materialiterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="377" column="18" bodyfile="auto_comments_output/material.hpp" bodystart="377" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialiterator_1ac8d847cac240c6324b6c13416ae344ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Materialiterator::~Materialiterator</definition>
+        <argsstring>()</argsstring>
+        <name>~Materialiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="388" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="388" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialiterator_1affa964bb5249b5574b1e619c704e8d02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Materialiterator::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Materialiterator" kindref="compound">Materialiterator</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="401" column="6" bodyfile="auto_comments_output/material.hpp" bodystart="401" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Materialiterator_1a6ec96c6ebd22e3c9006ba5eeb2e6c424" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Material" kindref="compound">Material</ref></type>
+        <definition>Material CMLibs::Zinc::Materialiterator::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the next material in the container being iterated over then advances the iterator position. The caller is required to destroy the returned material handle.</para>
+<para><simplesect kind="return"><para>Handle to the next material, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/material.hpp" line="413" column="10" bodyfile="auto_comments_output/material.hpp" bodystart="413" bodyend="416"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator for looping through all the materials in a materialmodule. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An iterator for looping through all the materials in a materialmodule. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/material.hpp" line="358" column="1" bodyfile="auto_comments_output/material.hpp" bodystart="357" bodyend="417"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialiterator_1ae1821c2b83cbc55b8399a578b9608475" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Materialiterator</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialiterator_1affa964bb5249b5574b1e619c704e8d02" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialiterator</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialiterator_1a7df73f0ee01b35ffc74fd98635c2156e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialiterator</scope><name>Materialiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialiterator_1a2d6504a687a7b89a9c92a4b0b255534d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialiterator</scope><name>Materialiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialiterator_1a57556c83976c291132acfeadf81058b0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialiterator</scope><name>Materialiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialiterator_1a6ec96c6ebd22e3c9006ba5eeb2e6c424" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialiterator</scope><name>next</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialiterator_1a9c9aade817e9cca938ba103de44eacf0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialiterator</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Materialiterator_1ac8d847cac240c6324b6c13416ae344ad" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Materialiterator</scope><name>~Materialiterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

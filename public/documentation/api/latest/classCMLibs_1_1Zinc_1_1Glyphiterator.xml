@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Glyphiterator" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Glyphiterator</compoundname>
+    <includes refid="glyph_8hpp" local="no">glyph.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Glyphiterator_1a7e9f87c0164ee342b637f2b9495bf4f0" prot="private" static="no" mutable="no">
+        <type>cmzn_glyphiterator_id</type>
+        <definition>cmzn_glyphiterator_id CMLibs::Zinc::Glyphiterator::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="666" column="23" bodyfile="auto_comments_output/glyph.hpp" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphiterator_1a50547ccd7a91dce145f973f70ac4fa6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphiterator::Glyphiterator</definition>
+        <argsstring>()</argsstring>
+        <name>Glyphiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="670" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="670" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphiterator_1a1511ad1c57b5ab6893755f2cad420579" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphiterator::Glyphiterator</definition>
+        <argsstring>(cmzn_glyphiterator_id iterator_id)</argsstring>
+        <name>Glyphiterator</name>
+        <param>
+          <type>cmzn_glyphiterator_id</type>
+          <declname>iterator_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="674" column="10" bodyfile="auto_comments_output/glyph.hpp" bodystart="674" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphiterator_1ae8d35f384dde3a1cf0eb455b30fdf405" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphiterator::Glyphiterator</definition>
+        <argsstring>(const Glyphiterator &amp;glyphiterator)</argsstring>
+        <name>Glyphiterator</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphiterator" kindref="compound">Glyphiterator</ref> &amp;</type>
+          <declname>glyphiterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="678" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="678" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphiterator_1af541f67c5408f86fbbe15c6a108a19f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphiterator" kindref="compound">Glyphiterator</ref> &amp;</type>
+        <definition>Glyphiterator&amp; CMLibs::Zinc::Glyphiterator::operator=</definition>
+        <argsstring>(const Glyphiterator &amp;glyphiterator)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Glyphiterator" kindref="compound">Glyphiterator</ref> &amp;</type>
+          <declname>glyphiterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="682" column="15" bodyfile="auto_comments_output/glyph.hpp" bodystart="682" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphiterator_1a459aeb1dbc4cee683133fc68543848c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Glyphiterator::~Glyphiterator</definition>
+        <argsstring>()</argsstring>
+        <name>~Glyphiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="693" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="693" bodyend="699"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphiterator_1a17243055d2b25e5346b100dcb591ada2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Glyphiterator::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Glyphiterator" kindref="compound">Glyphiterator</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="706" column="6" bodyfile="auto_comments_output/glyph.hpp" bodystart="706" bodyend="709"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Glyphiterator_1ae47407003ec26db5b94f4c132193bf5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyph" kindref="compound">Glyph</ref></type>
+        <definition>Glyph CMLibs::Zinc::Glyphiterator::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the next glyph in the container being iterated over then advances the iterator position. The caller is required to destroy the returned glyph handle.</para>
+<para><simplesect kind="return"><para>Handle to the next glyph, or NULL/invalid handle if none or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/glyph.hpp" line="718" column="7" bodyfile="auto_comments_output/glyph.hpp" bodystart="718" bodyend="721"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator for looping through all the glyphs in a glyphmodule. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An iterator for looping through all the glyphs in a glyphmodule. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/glyph.hpp" line="663" column="1" bodyfile="auto_comments_output/glyph.hpp" bodystart="662" bodyend="722"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1a50547ccd7a91dce145f973f70ac4fa6d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphiterator</scope><name>Glyphiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1a1511ad1c57b5ab6893755f2cad420579" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphiterator</scope><name>Glyphiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1ae8d35f384dde3a1cf0eb455b30fdf405" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphiterator</scope><name>Glyphiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1a7e9f87c0164ee342b637f2b9495bf4f0" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Glyphiterator</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1a17243055d2b25e5346b100dcb591ada2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphiterator</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1ae47407003ec26db5b94f4c132193bf5a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphiterator</scope><name>next</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1af541f67c5408f86fbbe15c6a108a19f1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphiterator</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Glyphiterator_1a459aeb1dbc4cee683133fc68543848c0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Glyphiterator</scope><name>~Glyphiterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

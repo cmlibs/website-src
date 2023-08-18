@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Timesequence" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Timesequence</compoundname>
+    <includes refid="timesequence_8hpp" local="no">timesequence.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Timesequence_1a66ac157b34b3b36424a948f2d8e1c8de" prot="protected" static="no" mutable="no">
+        <type>cmzn_timesequence_id</type>
+        <definition>cmzn_timesequence_id CMLibs::Zinc::Timesequence::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="38" column="22" bodyfile="auto_comments_output/timesequence.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1ab4cb6cb113079699c70a10818ce49f7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timesequence::Timesequence</definition>
+        <argsstring>()</argsstring>
+        <name>Timesequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="42" column="1" bodyfile="auto_comments_output/timesequence.hpp" bodystart="42" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1a96fa526b2baf69473772f0a64b2fe11e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timesequence::Timesequence</definition>
+        <argsstring>(cmzn_timesequence_id in_time_sequence_id)</argsstring>
+        <name>Timesequence</name>
+        <param>
+          <type>cmzn_timesequence_id</type>
+          <declname>in_time_sequence_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="46" column="10" bodyfile="auto_comments_output/timesequence.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1acb71bf04f0c4bdae6405dafb528ef5f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timesequence::Timesequence</definition>
+        <argsstring>(const Timesequence &amp;timeSequence)</argsstring>
+        <name>Timesequence</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> &amp;</type>
+          <declname>timeSequence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="50" column="1" bodyfile="auto_comments_output/timesequence.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1a4d21c148f72722279e9e15e50bbbb42c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> &amp;</type>
+        <definition>Timesequence&amp; CMLibs::Zinc::Timesequence::operator=</definition>
+        <argsstring>(const Timesequence &amp;timeSequence)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> &amp;</type>
+          <declname>timeSequence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="54" column="14" bodyfile="auto_comments_output/timesequence.hpp" bodystart="54" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1a6e812f0bb48f42c5dc9e8dbd8b9da23b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Timesequence::~Timesequence</definition>
+        <argsstring>()</argsstring>
+        <name>~Timesequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="65" column="1" bodyfile="auto_comments_output/timesequence.hpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1a58b102aee919e377c1a4a5a400363012" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Timesequence::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="78" column="6" bodyfile="auto_comments_output/timesequence.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1ac00482cc18d025f2c7e4f59537c2d531" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_timesequence_id</type>
+        <definition>cmzn_timesequence_id CMLibs::Zinc::Timesequence::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Timesequence" kindref="compound">Timesequence</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="88" column="22" bodyfile="auto_comments_output/timesequence.hpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1ae90f75c58bc285ed5f9a64c472da6c0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Timesequence::getNumberOfTimes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfTimes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of times in the time sequence.</para>
+<para><simplesect kind="return"><para>The number of times. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="98" column="5" bodyfile="auto_comments_output/timesequence.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1a398c111ed704cb42dbe573a7e9cbfc23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CMLibs::Zinc::Timesequence::getTime</definition>
+        <argsstring>(int timeIndex) const</argsstring>
+        <name>getTime</name>
+        <param>
+          <type>int</type>
+          <declname>timeIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the time at the given time_index in the time sequence.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the time to get, starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The time or 0 if error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="109" column="8" bodyfile="auto_comments_output/timesequence.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Timesequence_1af9efecf867e398425b99a5ac480e0f6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Timesequence::setTime</definition>
+        <argsstring>(int timeIndex, double time)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>int</type>
+          <declname>timeIndex</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the time for the given time_index in the time sequence. This can only be done while the time sequence is not in use by other objects. If the sequence does not have as many times as the &lt;time_index&gt; then it will be expanded and the unspecified times also set to &lt;time&gt;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the time to set, starting at 1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/timesequence.hpp" line="124" column="5" bodyfile="auto_comments_output/timesequence.hpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A non-decreasing list of times at which nodal parameters can be stored. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A non-decreasing list of times at which nodal parameters can be stored. Setting a timesequence for a field in a nodetemplate establishes storage for N values of each component x type x version at the node (with N = the number of times in the timesequence), indexed by looking up time in the timesequence and linearly interpolating between stored times. Note that if time-varying parameters are required, a time sequence must be set when the node field is first defined: it is not currently possible to add time variation to a node field that is not time-varying (but it is possible to merge or add times to an existing time-varying node field).</para>
+<para><simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule_1a2cde509da78fd6a758ed7126307e5808" kindref="member">Fieldmodule::getMatchingTimesequence</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Nodetemplate_1a1db3241232aecb5a36ebeab4806aae5e" kindref="member">Nodetemplate::setTimesequence</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="auto_comments_output/timesequence.hpp" line="36" column="1" bodyfile="auto_comments_output/timesequence.hpp" bodystart="35" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1ac00482cc18d025f2c7e4f59537c2d531" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1ae90f75c58bc285ed5f9a64c472da6c0e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>getNumberOfTimes</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1a398c111ed704cb42dbe573a7e9cbfc23" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>getTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1a66ac157b34b3b36424a948f2d8e1c8de" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1a58b102aee919e377c1a4a5a400363012" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1a4d21c148f72722279e9e15e50bbbb42c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1af9efecf867e398425b99a5ac480e0f6a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>setTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1ab4cb6cb113079699c70a10818ce49f7f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>Timesequence</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1a96fa526b2baf69473772f0a64b2fe11e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>Timesequence</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1acb71bf04f0c4bdae6405dafb528ef5f0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>Timesequence</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Timesequence_1a6e812f0bb48f42c5dc9e8dbd8b9da23b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Timesequence</scope><name>~Timesequence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

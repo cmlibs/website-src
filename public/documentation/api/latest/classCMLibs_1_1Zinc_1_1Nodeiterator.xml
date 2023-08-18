@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Nodeiterator" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Nodeiterator</compoundname>
+    <includes refid="node_8hpp" local="no">node.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Nodeiterator_1a9a6c1a362ce1753fc2fcbba5b64d4214" prot="private" static="no" mutable="no">
+        <type>cmzn_nodeiterator_id</type>
+        <definition>cmzn_nodeiterator_id CMLibs::Zinc::Nodeiterator::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="206" column="22" bodyfile="auto_comments_output/node.hpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeiterator_1ad477c5ac6f6e2386c76c5428fa20582f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodeiterator::Nodeiterator</definition>
+        <argsstring>()</argsstring>
+        <name>Nodeiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="210" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="210" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeiterator_1ac1b2b71fb3a0b86ee21e4d4beeedfc6e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodeiterator::Nodeiterator</definition>
+        <argsstring>(cmzn_nodeiterator_id node_iterator_id)</argsstring>
+        <name>Nodeiterator</name>
+        <param>
+          <type>cmzn_nodeiterator_id</type>
+          <declname>node_iterator_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="214" column="10" bodyfile="auto_comments_output/node.hpp" bodystart="214" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeiterator_1ae302915e9415541e8b26227ed1c23a87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodeiterator::Nodeiterator</definition>
+        <argsstring>(const Nodeiterator &amp;nodeIterator)</argsstring>
+        <name>Nodeiterator</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeiterator" kindref="compound">Nodeiterator</ref> &amp;</type>
+          <declname>nodeIterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="218" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="218" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeiterator_1aab0053a8cee4fe54f118e9338fbf7e19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodeiterator" kindref="compound">Nodeiterator</ref> &amp;</type>
+        <definition>Nodeiterator&amp; CMLibs::Zinc::Nodeiterator::operator=</definition>
+        <argsstring>(const Nodeiterator &amp;nodeIterator)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeiterator" kindref="compound">Nodeiterator</ref> &amp;</type>
+          <declname>nodeIterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="222" column="14" bodyfile="auto_comments_output/node.hpp" bodystart="222" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeiterator_1ac4645c4d3f164f6f7fa355e6f83451a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Nodeiterator::~Nodeiterator</definition>
+        <argsstring>()</argsstring>
+        <name>~Nodeiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="233" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="233" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeiterator_1a0d015094f5d9c16d32b9c7c6e8312319" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Nodeiterator::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Nodeiterator" kindref="compound">Nodeiterator</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="246" column="6" bodyfile="auto_comments_output/node.hpp" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Nodeiterator_1a7b5274df4e5fdcda46479838598db549" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref></type>
+        <definition>Node CMLibs::Zinc::Nodeiterator::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to the next node in the container being iterated over then advances the iterator position. The caller is required to destroy the returned node handle.</para>
+<para><simplesect kind="return"><para>Handle to the next node, or NULL/invalid handle if none remaining or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/node.hpp" line="258" column="6" bodyfile="auto_comments_output/node.hpp" bodystart="258" bodyend="261"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator for looping through all the nodes in a nodeset. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An iterator for looping through all the nodes in a nodeset. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/node.hpp" line="203" column="1" bodyfile="auto_comments_output/node.hpp" bodystart="202" bodyend="262"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeiterator_1a9a6c1a362ce1753fc2fcbba5b64d4214" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Nodeiterator</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeiterator_1a0d015094f5d9c16d32b9c7c6e8312319" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeiterator</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeiterator_1a7b5274df4e5fdcda46479838598db549" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeiterator</scope><name>next</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeiterator_1ad477c5ac6f6e2386c76c5428fa20582f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeiterator</scope><name>Nodeiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeiterator_1ac1b2b71fb3a0b86ee21e4d4beeedfc6e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeiterator</scope><name>Nodeiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeiterator_1ae302915e9415541e8b26227ed1c23a87" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeiterator</scope><name>Nodeiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeiterator_1aab0053a8cee4fe54f118e9338fbf7e19" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeiterator</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Nodeiterator_1ac4645c4d3f164f6f7fa355e6f83451a2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Nodeiterator</scope><name>~Nodeiterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

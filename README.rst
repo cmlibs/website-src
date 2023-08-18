@@ -1,4 +1,9 @@
-Production version of CMLibs website
-====================================
+CMLibs.org website source
+=========================
 
-Do **not** make changes to this repository. It is generated from a source repository. See the source repository https://github.com/cmlibs/website-src for instructions on how to build and deploy this website.
+This repository contains the source files for the cmlibs.org website.
+The website is built using GitHub actions and published at staging.cmlibs.org for the staging branch, and cmlibs.org for the production branch.
+The website gets built and deployed when pull requests are merged in.
+New changes should come from a pull request to the staging branch.
+Deployment to production should only be made through pull requests from staging, hot fixes would be the main reason this sometimes doesn't happen.
+

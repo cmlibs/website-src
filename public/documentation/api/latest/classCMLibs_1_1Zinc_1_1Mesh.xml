@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Mesh" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Mesh</compoundname>
+    <derivedcompoundref refid="classCMLibs_1_1Zinc_1_1MeshGroup" prot="public" virt="non-virtual">CMLibs::Zinc::MeshGroup</derivedcompoundref>
+    <includes refid="mesh_8hpp" local="no">mesh.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Mesh_1ac994c380a17de447ca7556adfca0eb5a" prot="protected" static="no" mutable="no">
+        <type>cmzn_mesh_id</type>
+        <definition>cmzn_mesh_id CMLibs::Zinc::Mesh::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="38" column="14" bodyfile="auto_comments_output/mesh.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a6fe4d48e95de4e937b8a7e04202ee12f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Mesh::Mesh</definition>
+        <argsstring>()</argsstring>
+        <name>Mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="42" column="1" bodyfile="auto_comments_output/mesh.hpp" bodystart="42" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a2d7eea826b42dfa0d1e4e9e01386c0f6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Mesh::Mesh</definition>
+        <argsstring>(cmzn_mesh_id mesh_id)</argsstring>
+        <name>Mesh</name>
+        <param>
+          <type>cmzn_mesh_id</type>
+          <declname>mesh_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="46" column="10" bodyfile="auto_comments_output/mesh.hpp" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a70ca495d2dc91d2e2d276b92493211ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Mesh::Mesh</definition>
+        <argsstring>(const Mesh &amp;mesh)</argsstring>
+        <name>Mesh</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="49" column="1" bodyfile="auto_comments_output/mesh.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a757c2694c676c53fbfeee9bc58ad518f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Mesh::~Mesh</definition>
+        <argsstring>()</argsstring>
+        <name>~Mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="53" column="1" bodyfile="auto_comments_output/mesh.hpp" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a91369ddca086e16c9c1201973f2e30ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Mesh::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="66" column="6" bodyfile="auto_comments_output/mesh.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1acb105b54966e5bcb8974c84fa06bbca9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+        <definition>Mesh&amp; CMLibs::Zinc::Mesh::operator=</definition>
+        <argsstring>(const Mesh &amp;mesh)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="71" column="6" bodyfile="auto_comments_output/mesh.hpp" bodystart="71" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a08165062ff3de78db6cefcb328242c2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_mesh_id</type>
+        <definition>cmzn_mesh_id CMLibs::Zinc::Mesh::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="87" column="14" bodyfile="auto_comments_output/mesh.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1ae49e8199389756170f10c509647a3b80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1MeshGroup" kindref="compound">MeshGroup</ref></type>
+        <definition>MeshGroup CMLibs::Zinc::Mesh::castGroup</definition>
+        <argsstring>()</argsstring>
+        <name>castGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the mesh is a mesh group i.e. subset of elements from a master mesh, get the mesh group specific interface for add/remove functions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mesh to be cast. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to derived mesh group, or NULL/invalid handle if wrong type or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="99" column="18" bodyfile="auto_comments_output/mesh.hpp" bodystart="454" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a2c6ee66e93fe0a23e835b94db1289ab0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Mesh::containsElement</definition>
+        <argsstring>(const Element &amp;element) const</argsstring>
+        <name>containsElement</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether the element is from the mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to query about. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean true if element is in the mesh, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="107" column="6" bodyfile="auto_comments_output/mesh.hpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1ac2c722fd38ace1817808ba905bd0dbc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementfieldtemplate" kindref="compound">Elementfieldtemplate</ref></type>
+        <definition>Elementfieldtemplate CMLibs::Zinc::Mesh::createElementfieldtemplate</definition>
+        <argsstring>(const Elementbasis &amp;basis)</argsstring>
+        <name>createElementfieldtemplate</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementbasis" kindref="compound">Elementbasis</ref> &amp;</type>
+          <declname>basis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an element field template to describe parameter mapping and interpolation of a scalar field / field component over elements of the mesh. The new template defaults to NODE parameter mapping mode, with the standard number of nodes for the element basis. For Lagrange, simplex and constant basis function types there are as many nodes as basis functions and the single parameter per node has VALUE label. For Hermite bases with multiple functions per node, default parameters are expected in numerical order of the node value label e.g. for bicubic Hermite the first four functions are for the first node and expected in order: VALUE D_DS1 D_DS2 D2_DS1DS2. By default, versions are initialised to 1, and no scaling is used. In all cases local nodes cycle fastest in lowest element xi direction.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>basis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element basis which will be used for interpolation, which must have the same dimension as the mesh. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new element field template, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="130" column="22" bodyfile="auto_comments_output/mesh.hpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a4761dfe90dcbe287bcfa09139c87194c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref></type>
+        <definition>Elementtemplate CMLibs::Zinc::Mesh::createElementtemplate</definition>
+        <argsstring>()</argsstring>
+        <name>createElementtemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a blank template from which new elements can be created in this mesh. Also used for defining new fields over elements. The new element template does not have a valid shape, which allows adding fields to existing elements without changing shape, however a valid shape must be set to create new elements with this element template.</para>
+<para><simplesect kind="return"><para>Handle to new element template, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="144" column="17" bodyfile="auto_comments_output/mesh.hpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a727e61b4ea1fb8c14c9574764544bf37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref></type>
+        <definition>Element CMLibs::Zinc::Mesh::createElement</definition>
+        <argsstring>(int identifier, const Elementtemplate &amp;elementTemplate)</argsstring>
+        <name>createElement</name>
+        <param>
+          <type>int</type>
+          <declname>identifier</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> &amp;</type>
+          <declname>elementTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new element in this mesh with shape and fields described by the element_template. Returns handle to new element. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Mesh_1afb89b728097dfb2544a0b1085c80451b" kindref="member">Mesh::defineElement</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-negative integer identifier of new element, or -1 to automatically generate, starting from 1. Fails if supplied identifier already used by an existing element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elementTemplate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Template describing element shape and fields to define or undefine. Must be valid, with a valid shape. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to new element, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="161" column="9" bodyfile="auto_comments_output/mesh.hpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1ab99b680e21925e862fe453dad42de958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Elementiterator" kindref="compound">Elementiterator</ref></type>
+        <definition>Elementiterator CMLibs::Zinc::Mesh::createElementiterator</definition>
+        <argsstring>()</argsstring>
+        <name>createElementiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an element iterator object for iterating through the elements in the mesh which are ordered from lowest to highest identifier. The iterator initially points at the position before the first element, so the first call to the element iterator next method returns the first element and advances the iterator. Iterator becomes invalid if mesh is modified or any of its elements are given new identifiers. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Elementiterator_1a284df18e75e2bc001c4631607b4e83ba" kindref="member">Elementiterator::next</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to new element iterator, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="178" column="17" bodyfile="auto_comments_output/mesh.hpp" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1afb89b728097dfb2544a0b1085c80451b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Mesh::defineElement</definition>
+        <argsstring>(int identifier, const Elementtemplate &amp;elementTemplate)</argsstring>
+        <name>defineElement</name>
+        <param>
+          <type>int</type>
+          <declname>identifier</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Elementtemplate" kindref="compound">Elementtemplate</ref> &amp;</type>
+          <declname>elementTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new element in this mesh with shape and fields described by the element_template. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Mesh_1a727e61b4ea1fb8c14c9574764544bf37" kindref="member">Mesh::createElement</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-negative integer identifier of new element, or -1 to automatically generate, starting from 1. Fails if supplied identifier already used by an existing element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elementTemplate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Template describing element shape and fields to define or undefine. Must be valid, with a valid shape. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="195" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1acba61019b5cabfa282a5e277c1530f9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Mesh::destroyAllElements</definition>
+        <argsstring>()</argsstring>
+        <name>destroyAllElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy all elements in mesh, also removing them from any related groups. All affected element iterators for the mesh or groups are invalidated. All handles to the destroyed element become invalid.</para>
+<para><simplesect kind="return"><para>Result OK if all elements destroyed, or an error code if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="207" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a6d91ab26cd7de6551f5e2bd73fadebf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Mesh::destroyElement</definition>
+        <argsstring>(const Element &amp;element)</argsstring>
+        <name>destroyElement</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy the element if it is in the mesh. Removes element from any related groups it is in. All handles to the destroyed element become invalid. All affected element iterators for the mesh or groups are invalidated.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to destroy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if element destroyed, or an error code if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="220" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a7431e5ca04eb9368ab5a0b19717de632" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Mesh::destroyElementsConditional</definition>
+        <argsstring>(const Field &amp;conditionalField)</argsstring>
+        <name>destroyElementsConditional</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>conditionalField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy all elements in the mesh for which the conditional field is true i.e. non-zero valued in element. These elements are removed from any related groups they are in. All handles to removed elements become invalid. All affected element iterators for the mesh or groups are invalidated. Results are undefined if conditional field is not constant over element. Note that group and element group fields are valid conditional fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conditionalField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> which if non-zero in the element indicates it is to be destroyed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result OK if all elements passing condition are destroyed, or an error code if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="238" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="238" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a3002ceb5b34470ced80d754acdb3f5ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref></type>
+        <definition>Element CMLibs::Zinc::Mesh::findElementByIdentifier</definition>
+        <argsstring>(int identifier) const</argsstring>
+        <name>findElementByIdentifier</name>
+        <param>
+          <type>int</type>
+          <declname>identifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a handle to the element in the mesh with this identifier.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-negative integer identifier of element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to element, or NULL/invalid handle if not found or failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="250" column="9" bodyfile="auto_comments_output/mesh.hpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a3b98facff4a7bed4bfb331ca832e7853" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Differentialoperator" kindref="compound">Differentialoperator</ref></type>
+        <definition>Differentialoperator CMLibs::Zinc::Mesh::getChartDifferentialoperator</definition>
+        <argsstring>(int order, int term) const</argsstring>
+        <name>getChartDifferentialoperator</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the differential operator giving a field derivative of the given order with respect to the mesh&apos;s chart. The term identifies which of the possible differential operator terms are available for the order and dimension of the mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The order of the derivative, from 1 (first derivative) up to current internally supported maximum order 3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which of the (dimensions)^order terms is required, starting at 1, or -1 to evaluate all terms. For order 1, the term specifies derivative with respect to the same numbered element chart/xi direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to differential operator, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="269" column="22" bodyfile="auto_comments_output/mesh.hpp" bodystart="269" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a9ee3c927079c87c244db85ade6626272" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Mesh::getDimension</definition>
+        <argsstring>() const</argsstring>
+        <name>getDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of dimensions of the mesh.</para>
+<para><simplesect kind="return"><para>dimension of mesh. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="280" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a9c82b08ec6e058e0b6c58f7694dd7235" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldmodule" kindref="compound">Fieldmodule</ref></type>
+        <definition>Fieldmodule CMLibs::Zinc::Mesh::getFieldmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns handle to field module for region this mesh belongs to.</para>
+<para><simplesect kind="return"><para>Handle to field module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="290" column="20" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1789" bodyend="1792"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a47b95f7bc2b111e337e781fe0380d6c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref></type>
+        <definition>Mesh CMLibs::Zinc::Mesh::getMasterMesh</definition>
+        <argsstring>() const</argsstring>
+        <name>getMasterMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the master mesh which owns the elements for this mesh. Can be the same as the supplied mesh if it is a master.</para>
+<para><simplesect kind="return"><para>Handle to the master mesh, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="298" column="6" bodyfile="auto_comments_output/mesh.hpp" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a853ada38c1f0c61c872c505a774c6aa2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Mesh::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the name of the mesh.</para>
+<para><simplesect kind="see"><para>Void::cmznDeallocate </para>
+</simplesect>
+<simplesect kind="return"><para>On success: allocated string containing mesh name. Up to caller to free using Void::cmznDeallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="310" column="6" bodyfile="auto_comments_output/mesh.hpp" bodystart="310" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Mesh_1a606f6eb7c8220373417c4d1beea6ee8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Mesh::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of elements in the mesh.</para>
+<para><simplesect kind="return"><para>Number of elements in mesh. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/mesh.hpp" line="320" column="5" bodyfile="auto_comments_output/mesh.hpp" bodystart="320" bodyend="323"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A finite element mesh consisting of a set of elements of fixed dimension. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A finite element mesh consisting of a set of elements of fixed dimension. Note that <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> elements are not iso-parametric, meaning each field must be individually defined on them, specifying the basis and parameter mapping. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CMLibs::Zinc::MeshGroup</label>
+        <link refid="classCMLibs_1_1Zinc_1_1MeshGroup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CMLibs::Zinc::Mesh</label>
+        <link refid="classCMLibs_1_1Zinc_1_1Mesh"/>
+      </node>
+    </inheritancegraph>
+    <location file="auto_comments_output/mesh.hpp" line="35" column="1" bodyfile="auto_comments_output/mesh.hpp" bodystart="34" bodyend="325"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1ae49e8199389756170f10c509647a3b80" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>castGroup</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a2c6ee66e93fe0a23e835b94db1289ab0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>containsElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a727e61b4ea1fb8c14c9574764544bf37" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>createElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1ac2c722fd38ace1817808ba905bd0dbc4" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>createElementfieldtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1ab99b680e21925e862fe453dad42de958" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>createElementiterator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a4761dfe90dcbe287bcfa09139c87194c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>createElementtemplate</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1afb89b728097dfb2544a0b1085c80451b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>defineElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1acba61019b5cabfa282a5e277c1530f9a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>destroyAllElements</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a6d91ab26cd7de6551f5e2bd73fadebf1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>destroyElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a7431e5ca04eb9368ab5a0b19717de632" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>destroyElementsConditional</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a3002ceb5b34470ced80d754acdb3f5ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>findElementByIdentifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a3b98facff4a7bed4bfb331ca832e7853" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>getChartDifferentialoperator</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a9ee3c927079c87c244db85ade6626272" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>getDimension</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a9c82b08ec6e058e0b6c58f7694dd7235" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>getFieldmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a08165062ff3de78db6cefcb328242c2b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a47b95f7bc2b111e337e781fe0380d6c9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>getMasterMesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a853ada38c1f0c61c872c505a774c6aa2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a606f6eb7c8220373417c4d1beea6ee8b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>getSize</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1ac994c380a17de447ca7556adfca0eb5a" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a91369ddca086e16c9c1201973f2e30ac" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a6fe4d48e95de4e937b8a7e04202ee12f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>Mesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a2d7eea826b42dfa0d1e4e9e01386c0f6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>Mesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a70ca495d2dc91d2e2d276b92493211ff" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>Mesh</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1acb105b54966e5bcb8974c84fa06bbca9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Mesh_1a757c2694c676c53fbfeee9bc58ad518f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Mesh</scope><name>~Mesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

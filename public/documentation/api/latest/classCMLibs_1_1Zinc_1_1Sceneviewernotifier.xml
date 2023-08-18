@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Sceneviewernotifier</compoundname>
+    <includes refid="sceneviewer_8hpp" local="no">sceneviewer.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a2739022f0cb22e2a584c882347e03b77" prot="protected" static="no" mutable="no">
+        <type>cmzn_sceneviewernotifier_id</type>
+        <definition>cmzn_sceneviewernotifier_id CMLibs::Zinc::Sceneviewernotifier::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="165" column="29" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a389745796578a26e30d8087d70e0572f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewernotifier::Sceneviewernotifier</definition>
+        <argsstring>()</argsstring>
+        <name>Sceneviewernotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="169" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="169" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a3908736ef265b41f1305347d92655f64" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewernotifier::Sceneviewernotifier</definition>
+        <argsstring>(cmzn_sceneviewernotifier_id in_sceneviewernotifier_id)</argsstring>
+        <name>Sceneviewernotifier</name>
+        <param>
+          <type>cmzn_sceneviewernotifier_id</type>
+          <declname>in_sceneviewernotifier_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="173" column="10" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="173" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a3fcd83de3e4276d37e00751a81ec0f54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewernotifier::Sceneviewernotifier</definition>
+        <argsstring>(const Sceneviewernotifier &amp;sceneviewerNotifier)</argsstring>
+        <name>Sceneviewernotifier</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" kindref="compound">Sceneviewernotifier</ref> &amp;</type>
+          <declname>sceneviewerNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="177" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a2f25d04ae10d7c845df0aa08423a763d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" kindref="compound">Sceneviewernotifier</ref> &amp;</type>
+        <definition>Sceneviewernotifier&amp; CMLibs::Zinc::Sceneviewernotifier::operator=</definition>
+        <argsstring>(const Sceneviewernotifier &amp;sceneviewerNotifier)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" kindref="compound">Sceneviewernotifier</ref> &amp;</type>
+          <declname>sceneviewerNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="181" column="21" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="181" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1ad8e672f3651c5d3bf9fbc7373b21203e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Sceneviewernotifier::~Sceneviewernotifier</definition>
+        <argsstring>()</argsstring>
+        <name>~Sceneviewernotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="192" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="192" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a5fc1064d77e904625198f7103ddb6620" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Sceneviewernotifier::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" kindref="compound">Sceneviewernotifier</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="205" column="6" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a189f64e343a8f048d522aef64feb2b3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_sceneviewernotifier_id</type>
+        <definition>cmzn_sceneviewernotifier_id CMLibs::Zinc::Sceneviewernotifier::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" kindref="compound">Sceneviewernotifier</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier" kindref="compound">Sceneviewernotifier</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="215" column="29" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a02f37f0813c5c7680fe194d6dd0bdb31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewernotifier::setCallback</definition>
+        <argsstring>(Sceneviewercallback &amp;callback)</argsstring>
+        <name>setCallback</name>
+        <param>
+          <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewercallback" kindref="compound">Sceneviewercallback</ref> &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign the callback function and user data for the sceneviewer notifier. This function also starts the callback.</para>
+<para><simplesect kind="see"><para>cmzn_sceneviewernotifier_callback_function </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function to be called when event is triggered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Void pointer to user object. User must ensure this object&apos;s lifetime exceeds the duration for which callbacks are active. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="230" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="230" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a2f67e00f739e163a599c5e8207a41b51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Sceneviewernotifier::clearCallback</definition>
+        <argsstring>()</argsstring>
+        <name>clearCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop and clear scene viewer callback. This will stop the callback and also remove the callback function from the sceneviewer notifier.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/sceneviewer.hpp" line="242" column="5" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="242" bodyend="245"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages individual user notification of changes with a scene viewer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages individual user notification of changes with a scene viewer. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/sceneviewer.hpp" line="163" column="1" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="162" bodyend="246"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a2f67e00f739e163a599c5e8207a41b51" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>clearCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a189f64e343a8f048d522aef64feb2b3d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a2739022f0cb22e2a584c882347e03b77" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a5fc1064d77e904625198f7103ddb6620" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a2f25d04ae10d7c845df0aa08423a763d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a389745796578a26e30d8087d70e0572f" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>Sceneviewernotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a3908736ef265b41f1305347d92655f64" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>Sceneviewernotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a3fcd83de3e4276d37e00751a81ec0f54" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>Sceneviewernotifier</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1a02f37f0813c5c7680fe194d6dd0bdb31" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>setCallback</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Sceneviewernotifier_1ad8e672f3651c5d3bf9fbc7373b21203e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Sceneviewernotifier</scope><name>~Sceneviewernotifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

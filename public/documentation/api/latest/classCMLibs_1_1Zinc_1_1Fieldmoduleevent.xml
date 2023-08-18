@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Fieldmoduleevent</compoundname>
+    <includes refid="fieldmodule_8hpp" local="no">fieldmodule.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a596b541acf5c47302baaa6f836f9f275" prot="protected" static="no" mutable="no">
+        <type>cmzn_fieldmoduleevent_id</type>
+        <definition>cmzn_fieldmoduleevent_id CMLibs::Zinc::Fieldmoduleevent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1546" column="26" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1546" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a43e23681442dfd6c6114aed4a1861a47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldmoduleevent::Fieldmoduleevent</definition>
+        <argsstring>()</argsstring>
+        <name>Fieldmoduleevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1550" column="1" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1550" bodyend="1551"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1ab267af31dc1cb69f5ec609f5683ee6f7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldmoduleevent::Fieldmoduleevent</definition>
+        <argsstring>(cmzn_fieldmoduleevent_id in_fieldmoduleevent_id)</argsstring>
+        <name>Fieldmoduleevent</name>
+        <param>
+          <type>cmzn_fieldmoduleevent_id</type>
+          <declname>in_fieldmoduleevent_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1554" column="10" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1554" bodyend="1556"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1aeb69a695757d7e16a2cf3a18891e3895" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldmoduleevent::Fieldmoduleevent</definition>
+        <argsstring>(const Fieldmoduleevent &amp;fieldmoduleEvent)</argsstring>
+        <name>Fieldmoduleevent</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" kindref="compound">Fieldmoduleevent</ref> &amp;</type>
+          <declname>fieldmoduleEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1558" column="1" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1558" bodyend="1560"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a6b0206542c0409bc71c0e45b09e1ff99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" kindref="compound">Fieldmoduleevent</ref> &amp;</type>
+        <definition>Fieldmoduleevent&amp; CMLibs::Zinc::Fieldmoduleevent::operator=</definition>
+        <argsstring>(const Fieldmoduleevent &amp;fieldmoduleEvent)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" kindref="compound">Fieldmoduleevent</ref> &amp;</type>
+          <declname>fieldmoduleEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1562" column="18" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1562" bodyend="1569"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a5cc0ba24cf7862ab60fe6a73e34886d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldmoduleevent::~Fieldmoduleevent</definition>
+        <argsstring>()</argsstring>
+        <name>~Fieldmoduleevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1571" column="1" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1571" bodyend="1577"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a155efec8c8c9baf1522d9f932f5fb714" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Fieldmoduleevent::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" kindref="compound">Fieldmoduleevent</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1584" column="6" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1584" bodyend="1587"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a217fe709daf13a396e10da65eb4728a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_fieldmoduleevent_id</type>
+        <definition>cmzn_fieldmoduleevent_id CMLibs::Zinc::Fieldmoduleevent::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" kindref="compound">Fieldmoduleevent</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent" kindref="compound">Fieldmoduleevent</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1594" column="26" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1594" bodyend="1597"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a5a72e448f0b198caa6502c9e6388a323" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1a8403aa300e3620a468043658194301e2" kindref="member">Field::ChangeFlags</ref></type>
+        <definition>Field::ChangeFlags CMLibs::Zinc::Fieldmoduleevent::getFieldChangeFlags</definition>
+        <argsstring>(const Field &amp;field) const</argsstring>
+        <name>getFieldChangeFlags</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how the field has changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" kindref="member">Field::ChangeFlag</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to query about. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" kindref="member">Field::ChangeFlag</ref> values. Returns CMZN_FIELD_CHANGE_FLAG_NONE in case of invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1608" column="20" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1608" bodyend="1611"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a04893bf9da0c73654684c4244536501a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Meshchanges" kindref="compound">Meshchanges</ref></type>
+        <definition>Meshchanges CMLibs::Zinc::Fieldmoduleevent::getMeshchanges</definition>
+        <argsstring>(const Mesh &amp;mesh) const</argsstring>
+        <name>getMeshchanges</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get object describing changes to elements in a mesh including elements involved in partial change to fields. Note that changes to nodes are propagated to elements referencing them, and changes to parent elements are propagated to their faces. The logic for this is conservative e.g. it assumes all fields use all nodes, so you may sometimes get false notification of changes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mesh to get change information for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to mesh changes, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1625" column="13" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1625" bodyend="1628"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a9b1e48df03919175ac6945fcaf6d356d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Nodesetchanges" kindref="compound">Nodesetchanges</ref></type>
+        <definition>Nodesetchanges CMLibs::Zinc::Fieldmoduleevent::getNodesetchanges</definition>
+        <argsstring>(const Nodeset &amp;nodeset) const</argsstring>
+        <name>getNodesetchanges</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Nodeset" kindref="compound">Nodeset</ref> &amp;</type>
+          <declname>nodeset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get object describing changes to nodes in a nodeset including nodes involved in partial change to field.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nodeset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nodeset to get change information for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to nodeset changes, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1637" column="16" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1637" bodyend="1640"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a69940ff504834b177bbab07158e1639a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Field_1a8403aa300e3620a468043658194301e2" kindref="member">Field::ChangeFlags</ref></type>
+        <definition>Field::ChangeFlags CMLibs::Zinc::Fieldmoduleevent::getSummaryFieldChangeFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getSummaryFieldChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how fields in the field module have changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" kindref="member">Field::ChangeFlag</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Field_1a1553ad8504fd57ae5d076e5964d6f1bf" kindref="member">Field::ChangeFlag</ref> values. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldmodule.hpp" line="1649" column="20" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1649" bodyend="1652"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about changes to fields and other objects in the field module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Information about changes to fields and other objects in the field module, sent with each callback from the fieldmodule notifier. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/fieldmodule.hpp" line="1544" column="1" bodyfile="auto_comments_output/fieldmodule.hpp" bodystart="1543" bodyend="1654"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a43e23681442dfd6c6114aed4a1861a47" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>Fieldmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1ab267af31dc1cb69f5ec609f5683ee6f7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>Fieldmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1aeb69a695757d7e16a2cf3a18891e3895" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>Fieldmoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a5a72e448f0b198caa6502c9e6388a323" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>getFieldChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a217fe709daf13a396e10da65eb4728a0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a04893bf9da0c73654684c4244536501a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>getMeshchanges</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a9b1e48df03919175ac6945fcaf6d356d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>getNodesetchanges</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a69940ff504834b177bbab07158e1639a" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>getSummaryFieldChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a596b541acf5c47302baaa6f836f9f275" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a155efec8c8c9baf1522d9f932f5fb714" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a6b0206542c0409bc71c0e45b09e1ff99" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldmoduleevent_1a5cc0ba24cf7862ab60fe6a73e34886d7" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldmoduleevent</scope><name>~Fieldmoduleevent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

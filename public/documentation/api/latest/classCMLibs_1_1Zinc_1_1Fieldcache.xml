@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Fieldcache" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Fieldcache</compoundname>
+    <includes refid="fieldcache_8hpp" local="no">fieldcache.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a2859d2ef6f109b7037651a26c2e1699a" prot="protected" static="no" mutable="no">
+        <type>cmzn_fieldcache_id</type>
+        <definition>cmzn_fieldcache_id CMLibs::Zinc::Fieldcache::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="38" column="20" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a3ec8506edf6a483466c797d33efbf207" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldcache::Fieldcache</definition>
+        <argsstring>()</argsstring>
+        <name>Fieldcache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="42" column="1" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="42" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a4c6d7abf780df165539980be64a7e757" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldcache::Fieldcache</definition>
+        <argsstring>(cmzn_fieldcache_id in_field_cache_id)</argsstring>
+        <name>Fieldcache</name>
+        <param>
+          <type>cmzn_fieldcache_id</type>
+          <declname>in_field_cache_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="46" column="10" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1ab37eed148e88428f897bf250c3b37e67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldcache::Fieldcache</definition>
+        <argsstring>(const Fieldcache &amp;fieldCache)</argsstring>
+        <name>Fieldcache</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>fieldCache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="50" column="1" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a13e7e7a4434f2c51fa55e1531bdfd8da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+        <definition>Fieldcache&amp; CMLibs::Zinc::Fieldcache::operator=</definition>
+        <argsstring>(const Fieldcache &amp;fieldCache)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> &amp;</type>
+          <declname>fieldCache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="54" column="12" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="54" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a672943d1358ba5fae0b38ed4bb3effbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Fieldcache::~Fieldcache</definition>
+        <argsstring>()</argsstring>
+        <name>~Fieldcache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="65" column="1" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a34b5478907335062602e767c2cafd7a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Fieldcache::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="78" column="6" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a3ace21d34085d891d9acdef1d5f127c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_fieldcache_id</type>
+        <definition>cmzn_fieldcache_id CMLibs::Zinc::Fieldcache::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Fieldcache" kindref="compound">Fieldcache</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="88" column="20" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1adde45474b2f702a0f5d66a3a5c1cb37b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldcache::clearLocation</definition>
+        <argsstring>()</argsstring>
+        <name>clearLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears domain locations held in the field cache. Call this function before evaluating fields in a different domain (e.g. nodes &lt;-&gt; elements &lt;-&gt; point) to ensure false field values at the last domain location are not returned. Note that all domain locations are cleared by this function including time which is reset to 0.0, so these need to be set again if needed.</para>
+<para><simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="102" column="5" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a3e9abbd14ccf3e97e6e12c196a364c34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fieldrange" kindref="compound">Fieldrange</ref></type>
+        <definition>Fieldrange CMLibs::Zinc::Fieldcache::createFieldrange</definition>
+        <argsstring>()</argsstring>
+        <name>createFieldrange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a field range object to store range of a field&apos;s values over a domain, the locations at which each component minimum or maximum occurs and the field values there.</para>
+<para><simplesect kind="return"><para>Handle to new field range object, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="115" column="19" bodyfile="auto_comments_output/fieldrange.hpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a33d064f73a95e52683699cd13a1da7c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldcache::setElement</definition>
+        <argsstring>(const Element &amp;element)</argsstring>
+        <name>setElement</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prescribes an element location without specifying the location in its local &apos;xi&apos; chart coordinates (which are all reset to 0). Suitable only for evaluating or assigning to fields that are constant across the element. Note: replaces any other spatial location in cache (e.g. node.) but time is unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to set. Must belong to same region as cache. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="127" column="5" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a24321d28413caa8fb5c0d274aa939eec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldcache::setMeshLocation</definition>
+        <argsstring>(const Element &amp;element, int coordinatesCount, const double *coordinatesIn)</argsstring>
+        <name>setMeshLocation</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coordinatesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>coordinatesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prescribes a location in a mesh as an element plus local &apos;xi&apos; chart coordinates, for field evaluation or assignment with the cache. Note: replaces any other spatial location in cache (e.g. node.) but time is unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element the location is in. Must belong to same region as cache. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the local coordinates array, checked to be not less than the element dimension. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coordinatesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location in element&apos;s local &apos;xi&apos; coordinate chart. Value is not checked; caller is responsible for supplying locations within the bounds of the element shape. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="147" column="5" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="147" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a03ca4c16246747a4a43a321a8283134e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldcache::setFieldReal</definition>
+        <argsstring>(const Field &amp;referenceField, int valuesCount, const double *valuesIn)</argsstring>
+        <name>setFieldReal</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Field" kindref="compound">Field</ref> &amp;</type>
+          <declname>referenceField</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valuesCount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>valuesIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prescribes a value of a field for subsequent evaluation and assignment with the cache. Note: currently treated as a spatial location, replacing any other spatial location in cache (e.g. element, node) but time is unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>referenceField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field whose values are to be prescribed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesInCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the values array. Can be less than the number of field components, and if so it is padded with zeroes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valuesIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field values to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="166" column="5" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="166" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a2a68cbaee4c22a5a51579dbcb310962b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldcache::setNode</definition>
+        <argsstring>(const Node &amp;node)</argsstring>
+        <name>setNode</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prescribes a node location for field evaluation or assignment with the cache. Note: replaces any other spatial location in cache (e.g. element) but time is unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node to set as spatial location. Must belong to same region as cache. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="182" column="5" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Fieldcache_1a4e9db8ffd1e34e06b2b1d0588f7aaf4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Fieldcache::setTime</definition>
+        <argsstring>(double time)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prescribes the time for field evaluation or assignment with the cache.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time value to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/fieldcache.hpp" line="193" column="5" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cache for setting domain locations at which fields are evaluated or assigned. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Cache for setting domain locations at which fields are to be evaluated or assigned, and for storing intermediate values and data structures so that multiple evaluations are more efficient. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/fieldcache.hpp" line="36" column="1" bodyfile="auto_comments_output/fieldcache.hpp" bodystart="35" bodyend="197"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1adde45474b2f702a0f5d66a3a5c1cb37b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>clearLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a3e9abbd14ccf3e97e6e12c196a364c34" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>createFieldrange</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a3ec8506edf6a483466c797d33efbf207" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>Fieldcache</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a4c6d7abf780df165539980be64a7e757" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>Fieldcache</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1ab37eed148e88428f897bf250c3b37e67" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>Fieldcache</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a3ace21d34085d891d9acdef1d5f127c1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a2859d2ef6f109b7037651a26c2e1699a" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a34b5478907335062602e767c2cafd7a1" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a13e7e7a4434f2c51fa55e1531bdfd8da" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a33d064f73a95e52683699cd13a1da7c2" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>setElement</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a03ca4c16246747a4a43a321a8283134e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>setFieldReal</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a24321d28413caa8fb5c0d274aa939eec" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>setMeshLocation</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a2a68cbaee4c22a5a51579dbcb310962b" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>setNode</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a4e9db8ffd1e34e06b2b1d0588f7aaf4c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>setTime</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Fieldcache_1a672943d1358ba5fae0b38ed4bb3effbc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Fieldcache</scope><name>~Fieldcache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

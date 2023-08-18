@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Context" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Context</compoundname>
+    <includes refid="context_8hpp" local="no">context.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Context_1a8328ddf9a5a76f66aa71f0fe93bf992a" prot="private" static="no" mutable="no">
+        <type>cmzn_context_id</type>
+        <definition>cmzn_context_id CMLibs::Zinc::Context::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="54" column="17" bodyfile="auto_comments_output/context.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a67d491aed93d1c790210b01667a49b60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Context::Context</definition>
+        <argsstring>()</argsstring>
+        <name>Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="58" column="1" bodyfile="auto_comments_output/context.hpp" bodystart="58" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a2fad0900e5d79c1eb92b5a0c7425d01c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Context::Context</definition>
+        <argsstring>(const char *contextName)</argsstring>
+        <name>Context</name>
+        <param>
+          <type>const char *</type>
+          <declname>contextName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="61" column="1" bodyfile="auto_comments_output/context.hpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a6ecd2170ebc437795cf3c759bd2986a0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Context::Context</definition>
+        <argsstring>(cmzn_context_id context_id)</argsstring>
+        <name>Context</name>
+        <param>
+          <type>cmzn_context_id</type>
+          <declname>context_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="66" column="10" bodyfile="auto_comments_output/context.hpp" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1abed7ce027a7e7d8261b16ed9ac0c95ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Context::Context</definition>
+        <argsstring>(const Context &amp;context)</argsstring>
+        <name>Context</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="70" column="1" bodyfile="auto_comments_output/context.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1ac1e397a09ebeee6653b5fc734faa6627" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Context::~Context</definition>
+        <argsstring>()</argsstring>
+        <name>~Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="74" column="1" bodyfile="auto_comments_output/context.hpp" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a3517e60d0fe4c367ff961abd0a7a5570" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Context::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="87" column="6" bodyfile="auto_comments_output/context.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1aca688ae21ff051c107e81fa6a6504e2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref> &amp;</type>
+        <definition>Context&amp; CMLibs::Zinc::Context::operator=</definition>
+        <argsstring>(const Context &amp;context)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="92" column="9" bodyfile="auto_comments_output/context.hpp" bodystart="92" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a0516dc7cfa59a986bd3089f8c0e2c0f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_context_id</type>
+        <definition>cmzn_context_id CMLibs::Zinc::Context::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Context" kindref="compound">Context</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="108" column="17" bodyfile="auto_comments_output/context.hpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a4d9c60a4225c8e5a7004263ce08fe399" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Context::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an allocated string containing context name/identifier.</para>
+<para><simplesect kind="return"><para>Allocated string containing context name, or 0 on failure. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="119" column="6" bodyfile="auto_comments_output/context.hpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1aa9188bdc6211cfe615ce9b4ea2319f37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Context::getVersion</definition>
+        <argsstring>(int *versionOut3) const</argsstring>
+        <name>getVersion</name>
+        <param>
+          <type>int *</type>
+          <declname>versionOut3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the version number of this <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> library. It will return the major version, minor version and patch version in a 3 component integer array.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>versionOut3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of size 3 to hold the values of the version number, they are the major version, minor version and patch version respectively. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="132" column="5" bodyfile="auto_comments_output/context.hpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a87d5e611cc364d81090fc7335d33a994" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* CMLibs::Zinc::Context::getRevision</definition>
+        <argsstring>() const</argsstring>
+        <name>getRevision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the revision number of this <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> library.</para>
+<para><simplesect kind="return"><para>Revision of this <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> library on success, 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="142" column="12" bodyfile="auto_comments_output/context.hpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a689fc4f8db188b676eaa4c13fbbd689d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Context::getVersionString</definition>
+        <argsstring>() const</argsstring>
+        <name>getVersionString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the version string of this <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> library. The version string will be output in the following format &quot;[major version].[minor version].[patch version].r[revision(M)](.Debug)&quot; (M) indicates this binary contains local modifications that are not included in the revision, and (.Debug) indicates this binary is not optimised.</para>
+<para><simplesect kind="return"><para>on success : allocated string containing version details. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="157" column="6" bodyfile="auto_comments_output/context.hpp" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1af560c7e5a65b0e63d87ad20059d82aee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Context::createRegion</definition>
+        <argsstring>()</argsstring>
+        <name>createRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new region and return a handle to it. Use this function to create a region forming the root of an independent region tree. Equivalent to region create region method. Compare with region create child/subregion methods which create and add a region to the tree. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1aaed20eb7d15fd51d8491ae585160132f" kindref="member">Region::createRegion</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1ab1c8a207aa763654326e1ed2a7c04179" kindref="member">Region::createChild</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Region_1ad5944bd3272749a6c19186a1a1d6ac25" kindref="member">Region::createSubregion</ref></para>
+</simplesect>
+<simplesect kind="return"><para>Handle to new region, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="173" column="15" bodyfile="auto_comments_output/region.hpp" bodystart="498" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a26a8528c4c13cc222106d1b9e50f83dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref></type>
+        <definition>Region CMLibs::Zinc::Context::getDefaultRegion</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the default region in the context. A convenience for applications that need only one region tree.</para>
+<para><simplesect kind="return"><para>Handle to region, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="181" column="15" bodyfile="auto_comments_output/region.hpp" bodystart="488" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1ad272fe59dbdf2414404421e530d5d53c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Context::setDefaultRegion</definition>
+        <argsstring>(const Region &amp;region)</argsstring>
+        <name>setDefaultRegion</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Region" kindref="compound">Region</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the default region in the context. A convenience for applications that need only one region tree.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new default region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise any other status code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="190" column="12" bodyfile="auto_comments_output/region.hpp" bodystart="493" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a05f64945beaf448f1042cb95e55b91b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Fontmodule" kindref="compound">Fontmodule</ref></type>
+        <definition>Fontmodule CMLibs::Zinc::Context::getFontmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the font module which manages fonts for rendering text in graphics.</para>
+<para><simplesect kind="return"><para>Handle to the font module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="197" column="19" bodyfile="auto_comments_output/font.hpp" bodystart="404" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1aee9fd294af87abf21d786dbc97ed9269" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Glyphmodule" kindref="compound">Glyphmodule</ref></type>
+        <definition>Glyphmodule CMLibs::Zinc::Context::getGlyphmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getGlyphmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the glyph module which stores static graphics for visualising points, vectors, axes etc. Note on startup no glyphs are defined and glyph module functions need to be called to define standard glyphs.</para>
+<para><simplesect kind="return"><para>Handle to the glyph module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="206" column="20" bodyfile="auto_comments_output/glyph.hpp" bodystart="1194" bodyend="1197"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a6084205299daa3a550bcb7c37743c06d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Lightmodule" kindref="compound">Lightmodule</ref></type>
+        <definition>Lightmodule CMLibs::Zinc::Context::getLightmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getLightmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the light module which manages lights used to calculate the final colour of vertices in combination with material colour.</para>
+<para><simplesect kind="return"><para>Handle to the light module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="214" column="20" bodyfile="auto_comments_output/light.hpp" bodystart="666" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1ad7f7b47b550feadbf74ccd7bd6bb5e64" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Logger" kindref="compound">Logger</ref></type>
+        <definition>Logger CMLibs::Zinc::Context::getLogger</definition>
+        <argsstring>() const</argsstring>
+        <name>getLogger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the logger which logs debug messages.</para>
+<para><simplesect kind="return"><para>Handle to the logger, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="221" column="15" bodyfile="auto_comments_output/logger.hpp" bodystart="429" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a50d95940d5554f6dd4f26417874b0504" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Materialmodule" kindref="compound">Materialmodule</ref></type>
+        <definition>Materialmodule CMLibs::Zinc::Context::getMaterialmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaterialmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the material module which manages materials used to colour, texture and shade graphics. Note on startup only materials &quot;default&quot; and &quot;default_selected&quot; are defined, as white and red, respectively. Additional standard and custom materials can be defined using material module functions.</para>
+<para><simplesect kind="return"><para>Handle to the material module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="231" column="23" bodyfile="auto_comments_output/material.hpp" bodystart="908" bodyend="911"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1ad47b1a8dc421ee7bc8e8fbf73ad73c52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Scenefiltermodule" kindref="compound">Scenefiltermodule</ref></type>
+        <definition>Scenefiltermodule CMLibs::Zinc::Context::getScenefiltermodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getScenefiltermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the scene filter module which manages scenefilter objects for filtering contents of scenes with scenepicker and sceneviewer etc.</para>
+<para><simplesect kind="return"><para>Handle to the scene filter module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="239" column="26" bodyfile="auto_comments_output/scenefilter.hpp" bodystart="518" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1ac02c51d444e01e532ddf90fb84f06231" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Sceneviewermodule" kindref="compound">Sceneviewermodule</ref></type>
+        <definition>Sceneviewermodule CMLibs::Zinc::Context::getSceneviewermodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getSceneviewermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a handle to a sceneviewer module which manages sceneviewer objects for rendering 3-D scenes into rectangular windows or canvases using OpenGL.</para>
+<para><simplesect kind="return"><para>Handle to the sceneviewer module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="247" column="26" bodyfile="auto_comments_output/sceneviewer.hpp" bodystart="1462" bodyend="1465"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a6584092be5564eb780978d5de204aa89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shadermodule" kindref="compound">Shadermodule</ref></type>
+        <definition>Shadermodule CMLibs::Zinc::Context::getShadermodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getShadermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the shader module which manages objects controlling shading of materials.</para>
+<para><simplesect kind="return"><para>Handle to the shader module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="254" column="21" bodyfile="auto_comments_output/shader.hpp" bodystart="545" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1a6cc8a47069526c263b24c4430cabba94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrummodule" kindref="compound">Spectrummodule</ref></type>
+        <definition>Spectrummodule CMLibs::Zinc::Context::getSpectrummodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpectrummodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the spectrum module which manages spectrum objects controlling how graphics data fields are converted into colours.</para>
+<para><simplesect kind="return"><para>Handle to the spectrum module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="262" column="23" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1454" bodyend="1457"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1afb3163301287667e8b3905cc1c8e3aed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Tessellationmodule" kindref="compound">Tessellationmodule</ref></type>
+        <definition>Tessellationmodule CMLibs::Zinc::Context::getTessellationmodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getTessellationmodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the tessellation module which manages objects controlling how curves are approximated by line segments in graphics.</para>
+<para><simplesect kind="return"><para>Handle to the tesselation module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="270" column="27" bodyfile="auto_comments_output/tessellation.hpp" bodystart="783" bodyend="786"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Context_1aac047d56ed4084a21be3cc4f9b08fe9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Timekeepermodule" kindref="compound">Timekeepermodule</ref></type>
+        <definition>Timekeepermodule CMLibs::Zinc::Context::getTimekeepermodule</definition>
+        <argsstring>() const</argsstring>
+        <name>getTimekeepermodule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the timekeeper module which manages objects for synchronising time across zinc objects.</para>
+<para><simplesect kind="return"><para>Handle to the timekeeper module, or NULL/invalid handle on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/context.hpp" line="278" column="25" bodyfile="auto_comments_output/timekeeper.hpp" bodystart="313" bodyend="316"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The context is the primary object created for each instance of <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The context is the primary object created for each instance of <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref>. All other objects are created or obtained directly or indirectly from it. If multiple contexts are used, ensure that only objects stemming from the same context are used together. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/context.hpp" line="51" column="1" bodyfile="auto_comments_output/context.hpp" bodystart="50" bodyend="280"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a67d491aed93d1c790210b01667a49b60" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>Context</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a2fad0900e5d79c1eb92b5a0c7425d01c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>Context</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a6ecd2170ebc437795cf3c759bd2986a0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>Context</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1abed7ce027a7e7d8261b16ed9ac0c95ca" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>Context</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1af560c7e5a65b0e63d87ad20059d82aee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>createRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a26a8528c4c13cc222106d1b9e50f83dc" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getDefaultRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a05f64945beaf448f1042cb95e55b91b0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getFontmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1aee9fd294af87abf21d786dbc97ed9269" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getGlyphmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a0516dc7cfa59a986bd3089f8c0e2c0f8" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a6084205299daa3a550bcb7c37743c06d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getLightmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1ad7f7b47b550feadbf74ccd7bd6bb5e64" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getLogger</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a50d95940d5554f6dd4f26417874b0504" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getMaterialmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a4d9c60a4225c8e5a7004263ce08fe399" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a87d5e611cc364d81090fc7335d33a994" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getRevision</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1ad47b1a8dc421ee7bc8e8fbf73ad73c52" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getScenefiltermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1ac02c51d444e01e532ddf90fb84f06231" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getSceneviewermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a6584092be5564eb780978d5de204aa89" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getShadermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a6cc8a47069526c263b24c4430cabba94" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getSpectrummodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1afb3163301287667e8b3905cc1c8e3aed" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getTessellationmodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1aac047d56ed4084a21be3cc4f9b08fe9c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getTimekeepermodule</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1aa9188bdc6211cfe615ce9b4ea2319f37" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getVersion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a689fc4f8db188b676eaa4c13fbbd689d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>getVersionString</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a8328ddf9a5a76f66aa71f0fe93bf992a" prot="private" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1a3517e60d0fe4c367ff961abd0a7a5570" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1aca688ae21ff051c107e81fa6a6504e2d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1ad272fe59dbdf2414404421e530d5d53c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>setDefaultRegion</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Context_1ac1e397a09ebeee6653b5fc734faa6627" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Context</scope><name>~Context</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

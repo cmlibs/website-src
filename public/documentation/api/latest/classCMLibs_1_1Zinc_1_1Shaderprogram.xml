@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Shaderprogram" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Shaderprogram</compoundname>
+    <includes refid="shader_8hpp" local="no">shader.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a3e10725c0d7b038e8e121f0538dea227" prot="protected" static="no" mutable="no">
+        <type>cmzn_shaderprogram_id</type>
+        <definition>cmzn_shaderprogram_id CMLibs::Zinc::Shaderprogram::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="33" column="23" bodyfile="auto_comments_output/shader.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a82356f2f26b059d5fc0440b7ffa94e0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shaderprogram::Shaderprogram</definition>
+        <argsstring>()</argsstring>
+        <name>Shaderprogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="37" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a5142e9584ced4e38b083988c004f7fe0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shaderprogram::Shaderprogram</definition>
+        <argsstring>(cmzn_shaderprogram_id in_shaderprogram_id)</argsstring>
+        <name>Shaderprogram</name>
+        <param>
+          <type>cmzn_shaderprogram_id</type>
+          <declname>in_shaderprogram_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="41" column="10" bodyfile="auto_comments_output/shader.hpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a7822bd026789f73ade4d0b44985c938c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shaderprogram::Shaderprogram</definition>
+        <argsstring>(const Shaderprogram &amp;shaderprogram)</argsstring>
+        <name>Shaderprogram</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> &amp;</type>
+          <declname>shaderprogram</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="45" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a56eedf085a17b604ccac336b3de450e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> &amp;</type>
+        <definition>Shaderprogram&amp; CMLibs::Zinc::Shaderprogram::operator=</definition>
+        <argsstring>(const Shaderprogram &amp;shaderprogram)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> &amp;</type>
+          <declname>shaderprogram</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="49" column="15" bodyfile="auto_comments_output/shader.hpp" bodystart="49" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a92cfb93f83d369a0b98eddec92d4b938" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Shaderprogram::~Shaderprogram</definition>
+        <argsstring>()</argsstring>
+        <name>~Shaderprogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="60" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a6112a969b4347a2dfe99c49a1cca49f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Shaderprogram::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="73" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1aad03262239878ff8f38dbd69ab8b07a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_shaderprogram_id</type>
+        <definition>cmzn_shaderprogram_id CMLibs::Zinc::Shaderprogram::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram" kindref="compound">Shaderprogram</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="83" column="23" bodyfile="auto_comments_output/shader.hpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1adefcd6699a991500258bb7f8e03f2bee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Shaderprogram::isManaged</definition>
+        <argsstring>() const</argsstring>
+        <name>isManaged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get managed status of shader program in its owning shader module. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a74d64ef7e937845702f41aeefccdf87e" kindref="member">Shaderprogram::setManaged</ref></para>
+</simplesect>
+<simplesect kind="return"><para>1 (true) if shader program is managed, otherwise 0 (false). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="94" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a74d64ef7e937845702f41aeefccdf87e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderprogram::setManaged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setManaged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set managed status of shader program in its owning shader module. If set (managed) the shader program will remain indefinitely in the shader program module even if no external references are held. If not set (unmanaged) the shader program will be automatically removed from the module when no longer referenced externally, effectively marking it as pending destruction. All new objects are unmanaged unless stated otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value for the managed flag: true or false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> on success, otherwise <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a9213ca4da2588b2f8e939d9645668908" kindref="member">CMLibs::Zinc::ERROR_ARGUMENT</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="111" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1ad8638beb16880648fd9747b09066f001" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Shaderprogram::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an allocated string containing shader program name.</para>
+<para><simplesect kind="return"><para>allocated string containing shader program name, or NULL on failure. Up to caller to free using cmzn_deallocate(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="122" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a25440ab803d582836f71256a38cd2d2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderprogram::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/change name for shader program. Must be unique in the shader program module.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name to be set to the shader program </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set/change name for shader program, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="134" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a08b8dc8faafb29a8e81d4302f1962a21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Shaderprogram::getVertexShader</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertexShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the vertex shader that has been set for this program.</para>
+<para><simplesect kind="return"><para>allocated string of the vertex shader this should be freed afterward, 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="145" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1adf7813bdf1d3d1282613a50596a5a71d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderprogram::setVertexShader</definition>
+        <argsstring>(const char *vertex_shader_string)</argsstring>
+        <name>setVertexShader</name>
+        <param>
+          <type>const char *</type>
+          <declname>vertex_shader_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/change the vertex shader to be compiled for shader program. The provided string will be compiled at run time if no error is encountered. Only GLSL is currently supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertex_shader_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string for the vertex shader to be compiled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set/change vertex string for shader program, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="159" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a60df203ba97aab5aa41fd096d3bbe1d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* CMLibs::Zinc::Shaderprogram::getFragmentShader</definition>
+        <argsstring>() const</argsstring>
+        <name>getFragmentShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the fragment shader that has been set for this program.</para>
+<para><simplesect kind="return"><para>allocated string of the fragment shader this should be freed afterward, 0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="170" column="6" bodyfile="auto_comments_output/shader.hpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Shaderprogram_1a3becb609433ccfed926283a4ec30ee5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMLibs::Zinc::Shaderprogram::setFragmentShader</definition>
+        <argsstring>(const char *fragment_shader_string)</argsstring>
+        <name>setFragmentShader</name>
+        <param>
+          <type>const char *</type>
+          <declname>fragment_shader_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/change the fragment shader to be compiled for shader program. The provided string will be compiled at run time if no error is encountered. Only GLSL is currently supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fragment_shader_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string for the fragment shader to be compiled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status <ref refid="namespaceCMLibs_1_1Zinc_1af8a9881f3a06e3e24858b11ddb3f6de9a4f1327b31c1f572158bfee8728e553e8" kindref="member">CMLibs::Zinc::OK</ref> if successfully set/change vertex string for shader program, any other value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/shader.hpp" line="184" column="5" bodyfile="auto_comments_output/shader.hpp" bodystart="184" bodyend="187"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> shader program provide an object to set opengl shaders. Only GLSL is currently supported. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="namespaceCMLibs_1_1Zinc" kindref="compound">Zinc</ref> shader program object manages OpenGL shader programs to be passed to the GPU / rendering pipeline. It allows specification of vertex and fragment shaders which when applied to a material, optionally with a set of shader uniforms, affects vertex positions/values and fragment colour and lighting to create special effects. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/shader.hpp" line="31" column="1" bodyfile="auto_comments_output/shader.hpp" bodystart="30" bodyend="189"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a60df203ba97aab5aa41fd096d3bbe1d6" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>getFragmentShader</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1aad03262239878ff8f38dbd69ab8b07a5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1ad8638beb16880648fd9747b09066f001" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>getName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a08b8dc8faafb29a8e81d4302f1962a21" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>getVertexShader</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a3e10725c0d7b038e8e121f0538dea227" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1adefcd6699a991500258bb7f8e03f2bee" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>isManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a6112a969b4347a2dfe99c49a1cca49f5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a56eedf085a17b604ccac336b3de450e9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a3becb609433ccfed926283a4ec30ee5e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>setFragmentShader</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a74d64ef7e937845702f41aeefccdf87e" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>setManaged</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a25440ab803d582836f71256a38cd2d2d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>setName</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1adf7813bdf1d3d1282613a50596a5a71d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>setVertexShader</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a82356f2f26b059d5fc0440b7ffa94e0d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>Shaderprogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a5142e9584ced4e38b083988c004f7fe0" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>Shaderprogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a7822bd026789f73ade4d0b44985c938c" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>Shaderprogram</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Shaderprogram_1a92cfb93f83d369a0b98eddec92d4b938" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Shaderprogram</scope><name>~Shaderprogram</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

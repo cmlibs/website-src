@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kind="class" language="C++" prot="public">
+    <compoundname>CMLibs::Zinc::Spectrummoduleevent</compoundname>
+    <includes refid="spectrum_8hpp" local="no">spectrum.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a25d5c1d7eaedf79fa7dc816d54a6e6de" prot="protected" static="no" mutable="no">
+        <type>cmzn_spectrummoduleevent_id</type>
+        <definition>cmzn_spectrummoduleevent_id CMLibs::Zinc::Spectrummoduleevent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1245" column="29" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1ab546c7fa87421c0c79b8e51c669bb8f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrummoduleevent::Spectrummoduleevent</definition>
+        <argsstring>()</argsstring>
+        <name>Spectrummoduleevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1249" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1249" bodyend="1250"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a3458f947cd30fc42265b0eaefc00709d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrummoduleevent::Spectrummoduleevent</definition>
+        <argsstring>(cmzn_spectrummoduleevent_id in_spectrummodule_event_id)</argsstring>
+        <name>Spectrummoduleevent</name>
+        <param>
+          <type>cmzn_spectrummoduleevent_id</type>
+          <declname>in_spectrummodule_event_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1253" column="10" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1253" bodyend="1255"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1aa9bb2c01f5464408c7056998b51c2c70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrummoduleevent::Spectrummoduleevent</definition>
+        <argsstring>(const Spectrummoduleevent &amp;spectrummoduleEvent)</argsstring>
+        <name>Spectrummoduleevent</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref> &amp;</type>
+          <declname>spectrummoduleEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1257" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1257" bodyend="1259"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1acfcb532f3450636907a6da60f90ef2f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref> &amp;</type>
+        <definition>Spectrummoduleevent&amp; CMLibs::Zinc::Spectrummoduleevent::operator=</definition>
+        <argsstring>(const Spectrummoduleevent &amp;spectrummoduleEvent)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref> &amp;</type>
+          <declname>spectrummoduleEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1261" column="21" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1261" bodyend="1268"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1ae846f6b86238e35713ffc5eb9b102750" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMLibs::Zinc::Spectrummoduleevent::~Spectrummoduleevent</definition>
+        <argsstring>()</argsstring>
+        <name>~Spectrummoduleevent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1270" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1270" bodyend="1276"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a14c429040e15c24cd7cd8fa2f081f025" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMLibs::Zinc::Spectrummoduleevent::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if this is a valid <ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref> object.</para>
+<para><simplesect kind="return"><para>Status True if object is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1283" column="6" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1283" bodyend="1286"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a9eb4f20003262cc13add75ff5c23a659" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cmzn_spectrummoduleevent_id</type>
+        <definition>cmzn_spectrummoduleevent_id CMLibs::Zinc::Spectrummoduleevent::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the C handle of the <ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref> object.</para>
+<para><simplesect kind="return"><para>C handle of <ref refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent" kindref="compound">Spectrummoduleevent</ref> if this objects is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1293" column="29" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1293" bodyend="1296"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1af8e2e0d6137a17d9d6a4553fec05d706" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1abf9f390f5704d50cd2f63cce9ae97383" kindref="member">Spectrum::ChangeFlags</ref></type>
+        <definition>Spectrum::ChangeFlags CMLibs::Zinc::Spectrummoduleevent::getSpectrumChangeFlags</definition>
+        <argsstring>(const Spectrum &amp;spectrum) const</argsstring>
+        <name>getSpectrumChangeFlags</name>
+        <param>
+          <type>const <ref refid="classCMLibs_1_1Zinc_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spectrum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how the spectrum has changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1" kindref="member">Spectrum::ChangeFlag</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spectrum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spectrum to query about. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1" kindref="member">Spectrum::ChangeFlag</ref> values. Returns CMZN_SPECTRUM_CHANGE_FLAG_NONE in case of invalid arguments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1307" column="23" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1307" bodyend="1310"/>
+      </memberdef>
+      <memberdef kind="function" id="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a7b1fbdf9870a5ec1b5080260053555af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1abf9f390f5704d50cd2f63cce9ae97383" kindref="member">Spectrum::ChangeFlags</ref></type>
+        <definition>Spectrum::ChangeFlags CMLibs::Zinc::Spectrummoduleevent::getSummarySpectrumChangeFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getSummarySpectrumChangeFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get logical OR of flags indicating how spectrums in the spectrum module have changed. <simplesect kind="see"><para><ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1" kindref="member">Spectrum::ChangeFlag</ref></para>
+</simplesect>
+<simplesect kind="return"><para>The change flags summarising the change: logical OR of enum <ref refid="classCMLibs_1_1Zinc_1_1Spectrum_1a57b2043ccb7d6010374e60f02979eca1" kindref="member">Spectrum::ChangeFlag</ref> values. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="auto_comments_output/spectrum.hpp" line="1319" column="23" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1319" bodyend="1322"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about changes to spectrums in the spectrum module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Information about changes to spectrums in the spectrum module, sent with each callback from the spectrummodule notifier. </para>
+    </detaileddescription>
+    <location file="auto_comments_output/spectrum.hpp" line="1243" column="1" bodyfile="auto_comments_output/spectrum.hpp" bodystart="1242" bodyend="1324"/>
+    <listofallmembers>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a9eb4f20003262cc13add75ff5c23a659" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>getId</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1af8e2e0d6137a17d9d6a4553fec05d706" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>getSpectrumChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a7b1fbdf9870a5ec1b5080260053555af" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>getSummarySpectrumChangeFlags</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a25d5c1d7eaedf79fa7dc816d54a6e6de" prot="protected" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>id</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a14c429040e15c24cd7cd8fa2f081f025" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>isValid</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1acfcb532f3450636907a6da60f90ef2f9" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>operator=</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1ab546c7fa87421c0c79b8e51c669bb8f5" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>Spectrummoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1a3458f947cd30fc42265b0eaefc00709d" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>Spectrummoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1aa9bb2c01f5464408c7056998b51c2c70" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>Spectrummoduleevent</name></member>
+      <member refid="classCMLibs_1_1Zinc_1_1Spectrummoduleevent_1ae846f6b86238e35713ffc5eb9b102750" prot="public" virt="non-virtual"><scope>CMLibs::Zinc::Spectrummoduleevent</scope><name>~Spectrummoduleevent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
