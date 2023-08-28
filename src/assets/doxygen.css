@@ -4,7 +4,7 @@
 /* @import './general.css';  Causes doubling up of CSS styles.*/
 
 /* Remove box and shadow from code.  The font and colour is plenty! */
-.v-application pre {
+.DefaultLayout pre {
     background: none;
     border: none;
     border-radius: 0.3rem;
@@ -15,12 +15,12 @@
     margin-bottom: 0.3rem;
 }
 
-.v-application code::before,
-.v-application code::after {
+.DefaultLayout code::before,
+.DefaultLayout code::after {
     display: none;
 }
 
-.theme--light.v-application code {
+.theme--light.DefaultLayout code {
     color: var(--code-colour);
     font-size: 100%;
 }

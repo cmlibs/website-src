@@ -4,14 +4,7 @@
  Main style for the whole site.
 */
 
-.class-container h1:before {
-  content: ' ';
-  position: absolute;
-  top: 12vh;
-  background: #a04dbe;
-  width: 80px;
-  height: 12px;
-}
+
 
 h1 {
   color: var(--mid-red);
@@ -201,7 +194,7 @@ code.xref {
   }
 }
 
-.DefaultLayout[data-v-d06cd781] {
+.DefaultLayout {
   margin: 0;
   padding-bottom: 15vh;
 }

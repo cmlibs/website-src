@@ -12,12 +12,18 @@ const router = createRouter({
     {
       path: '/documentation',
       name: 'documentation',
-      component: () => import('../views/DocumentationView.vue')
-    },
-    {
-      path: '/documentation/api/:pageName?',
-      name: 'apidocs-page',
-      component: () => import('../views/APIDocumentationView.vue')
+      component: () => import('../views/DocumentationIndexView.vue'),
+      children: [
+        {
+          path: '',
+          component: () => import('../views/DocumentationView.vue')
+        },
+        {
+          path: 'api/:pageName?',
+          name: 'apidocs-page',
+          component: () => import('../views/APIDocumentationView.vue')
+        },
+      ],
     },
     {
       path: '/about',
