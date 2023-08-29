@@ -11,7 +11,7 @@ const router = createRouter({
     },
     {
       path: '/documentation',
-      name: 'documentation',
+      name: 'Documentation',
       component: () => import('../views/DocumentationIndexView.vue'),
       children: [
         {

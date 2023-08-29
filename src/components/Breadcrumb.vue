@@ -1,44 +1,48 @@
-//Breadcrumb.vue
-
 <template>
-  <w-breadcrumbs :items="breadList" xl />
+  <w-breadcrumbs :items="breadcrumbData" xl />
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      breadList: []
-    };
-  },
-  watch: {
-    $route() {
-      this.getBreadcrumb();
-    }
-  },
-  methods: {
-    isHome(route) {
-      console.log("matched home", route.name === "home")
-      return route.name === "home";
-    },
-    getBreadcrumb() {
-      let matched = this.$route.matched;
-      console.log("matched", matched)
-      console.log("matched", matched[0].path)
-      console.log("matched", this.$route.params)
-      let matched_list = [{ label: matched[0].name, route: matched[0].path }]
-      if (this.$route.params.pageName) {
-        matched_list = matched_list.concat([{ label: this.$route.params.pageName, route: matched[1].path }])
-      }
-      if (!this.isHome(matched[0])) {
-        matched = [{ route: "/", label: "Home" }].concat(matched_list);
-        console.log("matched concat", matched)
-      }
-      this.breadList = matched;
-    }
-  },
-  created() {
-    this.getBreadcrumb();
-  }
+<script setup>
+import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute()
+const breadcrumbData = ref([]);
+
+const getBreadcrumbData = () => {
+  let matched_list = route.matched;
+  breadcrumbData.value = create_wbreadcrumb_list(matched_list)
 };
+
+watch(
+  route,
+  () => {
+    getBreadcrumbData();
+  },
+  {
+    immediate: true,
+  }
+);
+
+function isHome(item) {
+  return item.name === "home";
+};
+
+function create_wbreadcrumb_list(matched_list) {
+  let wbreadcrumb_list = []
+  matched_list.forEach(element => {
+    if (!isHome(element)) {
+      if (element.name == "apidocs-page") {
+        wbreadcrumb_list = wbreadcrumb_list.concat([{ label: route.params.pageName, route: element.path }]);
+      } else if (element.name) {
+        wbreadcrumb_list = wbreadcrumb_list.concat([{ label: element.name, route: element.path }]);
+      }
+    }
+  });
+  if (wbreadcrumb_list.length) {
+    wbreadcrumb_list = [{ route: "/", label: "Home" }].concat(wbreadcrumb_list)
+  }
+  return wbreadcrumb_list
+}
+
 </script>

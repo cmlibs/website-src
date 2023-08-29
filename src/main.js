@@ -18,9 +18,6 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(installVue3DoxygenXml)
-
-// WaveUI 
-
 app.use(WaveUI, {
   breakpoints: {
     xs: 400,
