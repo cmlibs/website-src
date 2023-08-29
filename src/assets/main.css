@@ -7,7 +7,7 @@
 
 
 h1 {
-  color: var(--mid-red);
+  color: var(--color-heading);
   margin-bottom: 0.5em;
   border-bottom: solid 0.05rem var(--terminal-colour);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  color: #333333;
+  color: var(--color-subheading);
   margin-bottom: 0.5em;
   margin-top: 1em;
   border-bottom: solid 0.05rem var(--terminal-colour);
@@ -44,14 +44,14 @@ h2 {
 h2 {
   position: relative;
   padding-bottom: 0.5em;
-  border-bottom: solid 2px #a04dbe;
+  border-bottom: solid 2px var(--cmlibs-main-colour);
 }
 
 h2:before {
   content: ' ';
   position: absolute;
   bottom: 0;
-  background: #a04dbe;
+  background: var(--cmlibs-main-colour);
   width: 60px;
   height: 6px;
 }
@@ -65,7 +65,7 @@ h3 {
 }
 
 .DefaultLayout a {
-  color: var(--link-colour);
+  color: var(--text-link-colour);
   font-weight: 500;
 }
 
@@ -206,9 +206,13 @@ footer {
   height: 12vh;
   /* Height of the footer */
   text-align: center;
-  background-color: var(--mid-red);
+  background-color: var(--cmlibs-main-colour);
   padding: 2rem;
   color: white;
+}
+
+footer>a {
+  color: var(--link-colour) !important;
 }
 
 #footer-ack {
