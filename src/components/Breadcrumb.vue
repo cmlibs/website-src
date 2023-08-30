@@ -11,7 +11,7 @@ const breadcrumbData = ref([]);
 
 const getBreadcrumbData = () => {
   let matched_list = route.matched;
-  breadcrumbData.value = create_wbreadcrumb_list(matched_list)
+  breadcrumbData.value = create_breadcrumb_list(matched_list)
 };
 
 watch(
@@ -28,21 +28,21 @@ function isHome(item) {
   return item.name === "home";
 };
 
-function create_wbreadcrumb_list(matched_list) {
-  let wbreadcrumb_list = []
+function create_breadcrumb_list(matched_list) {
+  let breadcrumb_list = []
   matched_list.forEach(element => {
     if (!isHome(element)) {
       if (element.name == "apidocs-page") {
-        wbreadcrumb_list = wbreadcrumb_list.concat([{ label: route.params.pageName, route: element.path }]);
+        breadcrumb_list = breadcrumb_list.concat([{ label: route.params.pageName, route: element.path }]);
       } else if (element.name) {
-        wbreadcrumb_list = wbreadcrumb_list.concat([{ label: element.name, route: element.path }]);
+        breadcrumb_list = breadcrumb_list.concat([{ label: element.name, route: element.path }]);
       }
     }
   });
-  if (wbreadcrumb_list.length) {
-    wbreadcrumb_list = [{ route: "/", label: "Home" }].concat(wbreadcrumb_list)
+  if (breadcrumb_list.length) {
+    breadcrumb_list = [{ route: "/", label: "Home" }].concat(breadcrumb_list)
   }
-  return wbreadcrumb_list
+  return breadcrumb_list
 }
 
 </script>
