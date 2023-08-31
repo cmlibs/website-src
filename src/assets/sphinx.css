@@ -57,8 +57,8 @@ code {
   padding-top: 0.3em;
   padding-bottom: 0.2em;
   border-radius: 3px;
-  background: var(--bg-color);
-  border: 1px solid var(--code-bg-color);
+  background: var(--code-bg-colour);
+  border: 1px solid var(--code-bg-border-colour);
   color: var(--code-colour);
 }
 
