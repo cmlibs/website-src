@@ -16,7 +16,7 @@ jobs:
           node-version: 18.x
 
       - name: Checkout branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Write SSH keys
         run: |
