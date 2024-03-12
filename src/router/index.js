@@ -17,6 +17,7 @@ const router = createRouter({
         } else {
           next()
         }
+      }
     },
     {
       path: '/documentation',
